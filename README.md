@@ -1,1 +1,2 @@
-# cloud
+## Payments
+A Payments APIs index.
