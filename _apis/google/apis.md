@@ -1,3 +1,4 @@
+---
 name: Google
 description: >-
   Google Cloud APIs are programmatic interfaces to Google Cloud Platform
@@ -91,3 +92,4 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: google
+---
