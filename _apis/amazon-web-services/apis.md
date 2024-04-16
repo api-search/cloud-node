@@ -5557,7 +5557,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot-jobs-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot-jobs-data
-  - name: iot-roborunner
+  - name: AWS IoT Roborunner
     description: >-
       <p>An example service, deployed with the Octane Service creator, which
       will echo the string</p>
@@ -5576,7 +5576,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot-roborunner-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot-roborunner
-  - name: internetmonitor
+  - name: Amazon CloudWatch Internet Monitor
     description: >-
       <p>Amazon CloudWatch Internet Monitor provides visibility into how
       internet issues impact the performance and availability between your
@@ -5622,7 +5622,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/internetmonitor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:internetmonitor
-  - name: iotanalytics
+  - name: AWS IoT Analytics
     description: >-
       <p>IoT Analytics allows you to collect large amounts of device data,
       process messages, and store them. You can then query the data and run
@@ -5662,7 +5662,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotanalytics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotanalytics
-  - name: inspector2
+  - name: Amazon Inspector
     description: >-
       <p>Amazon Inspector is a vulnerability discovery service that automates
       continuous scanning for security vulnerabilities within your Amazon EC2,
@@ -5682,7 +5682,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/inspector2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:inspector2
-  - name: iotdeviceadvisor
+  - name: AWS IoT Core Device Advisor
     description: >-
       <p>Amazon Web Services IoT Core Device Advisor is a cloud-based, fully
       managed test capability for validating IoT devices during device software
@@ -5711,7 +5711,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotdeviceadvisor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotdeviceadvisor
-  - name: iot1click-projects
+  - name: AWS IoT 1-Click Projects
     description: <p>The AWS IoT 1-Click Projects API Reference</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -5728,7 +5728,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot1click-projects-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot1click-projects
-  - name: iotevents-data
+  - name: AWS IoT Events
     description: >-
       <p>IoT Events monitors your equipment or device fleets for failures or
       changes in operation, and triggers actions when such events occur. You can
@@ -5752,7 +5752,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotevents-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotevents-data
-  - name: iotfleethub
+  - name: Fleet Hub for AWS IoT Device Management
     description: >-
       <p>With Fleet Hub for AWS IoT Device Management you can build stand-alone
       web applications for monitoring the health of your device fleets.</p>
@@ -5773,7 +5773,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotfleethub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotfleethub
-  - name: iot-data
+  - name: AWS IoT Data
     description: >-
       <fullname>IoT data</fullname> <p>IoT data enables secure, bi-directional
       communication between Internet-connected things (such as sensors,
@@ -5803,7 +5803,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot-data
-  - name: iot1click-devices
+  - name: AWS IoT 1-Click Devices
     description: >-
       <p>Describes all of the AWS IoT 1-Click device-related API operations for
       the service.
@@ -5846,7 +5846,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotsecuretunneling-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotsecuretunneling
-  - name: iotthingsgraph
+  - name: AWS IoT Things Graph
     description: >-
       <fullname>AWS IoT Things Graph</fullname> <p>AWS IoT Things Graph provides
       an integrated set of tools that enable developers to connect devices and
@@ -5872,7 +5872,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotthingsgraph-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotthingsgraph
-  - name: iotfleetwise
+  - name: AWS IoT FleetWise
     description: >-
       <p>Amazon Web Services IoT FleetWise is a fully managed service that you
       can use to collect, model, and transfer vehicle data to the Amazon Web
@@ -5898,7 +5898,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotfleetwise-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotfleetwise
-  - name: ivs
+  - name: Amazon Interactive Video Service (IVS)
     description: >-
       <p> <b>Introduction</b> </p> <p>The Amazon Interactive Video Service (IVS)
       API is REST compatible, using a standard HTTP API and an Amazon Web
@@ -6090,7 +6090,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ivs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ivs
-  - name: iotevents
+  - name: AWS IoT Events
     description: >-
       <p>AWS IoT Events monitors your equipment or device fleets for failures or
       changes in operation, and triggers actions when such events occur. You can
@@ -6111,7 +6111,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotevents-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotevents
-  - name: iotsitewise
+  - name: AWS IoT SiteWise
     description: >-
       <p>Welcome to the IoT SiteWise API Reference. IoT SiteWise is an Amazon
       Web Services service that connects <a
@@ -6137,7 +6137,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotsitewise-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotsitewise
-  - name: iottwinmaker
+  - name: AWS IoT TwinMaker
     description: >-
       <p>IoT TwinMaker is a service with which you can build operational digital
       twins of physical systems. IoT TwinMaker overlays measurements and
@@ -6160,7 +6160,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iottwinmaker-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iottwinmaker
-  - name: kafkaconnect
+  - name: AWS Kafka Connect
     description: <p/>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -6177,7 +6177,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kafkaconnect-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kafkaconnect
-  - name: ivs-realtime
+  - name: Amazon Interactive Video Service (IVS) Realtime
     description: >-
       <p> <b>Introduction</b> </p> <p>The Amazon Interactive Video Service (IVS)
       real-time API is REST compatible, using a standard HTTP API and an AWS
@@ -6284,7 +6284,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ivs-realtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ivs-realtime
-  - name: ivschat
+  - name: Amazon IVS Chat
     description: >-
       <p> <b>Introduction</b> </p> <p>The Amazon IVS Chat control-plane API
       enables you to create and manage Amazon IVS Chat resources. You also need
@@ -6419,7 +6419,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ivschat-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ivschat
-  - name: kafka
+  - name: Amazon MSK Clusters
     description: <p>The operations for managing an Amazon MSK cluster.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -6436,7 +6436,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kafka-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kafka
-  - name: kendra
+  - name: Amazon Kendra
     description: <p>Amazon Kendra is a service for indexing large document sets.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -6453,7 +6453,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kendra-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kendra
-  - name: keyspaces
+  - name: Amazon Keyspaces
     description: >-
       <p>Amazon Keyspaces (for Apache Cassandra) is a scalable, highly
       available, and managed Apache Cassandra-compatible database service.
@@ -6495,7 +6495,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/keyspaces-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:keyspaces
-  - name: iotwireless
+  - name: AWS IoT Wireless
     description: >-
       <p>AWS IoT Wireless provides bi-directional communication between
       internet-connected wireless devices and the AWS Cloud. To onboard both
@@ -6526,7 +6526,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotwireless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotwireless
-  - name: kinesis-video-media
+  - name: Amazon Kinesis Video Media
     description: <p/>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -6543,7 +6543,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesis-video-media-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis-video-media
-  - name: kendra-ranking
+  - name: Amazon Kendra Intelligent Ranking
     description: >-
       <p>Amazon Kendra Intelligent Ranking uses Amazon Kendra semantic search
       capabilities to intelligently re-rank a search service's results.</p>
@@ -6562,7 +6562,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kendra-ranking-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kendra-ranking
-  - name: kinesis-video-archived-media
+  - name: Amazon Kinesis Video Archived Media
     description: <p/>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -6580,7 +6580,7 @@ apis:
         url: >-
           overlays/kinesis-video-archived-media-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis-video-archived-media
-  - name: kinesisvideo
+  - name: Amazon Kinesis Video
     description: <p/>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -6597,7 +6597,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesisvideo-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesisvideo
-  - name: kinesisanalyticsv2
+  - name: Amazon Kinesis Data Analytics
     description: >-
       <p>Amazon Kinesis Data Analytics is a fully managed service that you can
       use to process and analyze streaming data using Java, SQL, or Scala. The
@@ -6619,7 +6619,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesisanalyticsv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesisanalyticsv2
-  - name: kinesisanalytics
+  - name: Amazon Kinesis Analytics
     description: >-
       <fullname>Amazon Kinesis Analytics</fullname> <p> <b>Overview</b> </p>
       <note> <p>This documentation is for version 1 of the Amazon Kinesis Data
@@ -6644,7 +6644,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesisanalytics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesisanalytics
-  - name: kinesis-video-signaling
+  - name: Amazon Kinesis Video Streams Signaling
     description: >-
       <p>Kinesis Video Streams Signaling Service is a intermediate service that
       establishes a communication channel for discovering peers, transmitting
@@ -6665,7 +6665,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesis-video-signaling-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis-video-signaling
-  - name: lambda
+  - name: AWS Lambda
     description: >-
       <fullname>AWS Lambda</fullname> <p><b>Overview</b></p> <p>This is the AWS
       Lambda API Reference. The AWS Lambda Developer Guide provides additional
@@ -6689,7 +6689,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lambda-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lambda
-  - name: kinesis
+  - name: Amazon Kinesis Data Streams
     description: >-
       <fullname>Amazon Kinesis Data Streams Service API Reference</fullname>
       <p>Amazon Kinesis Data Streams is a managed service that scales
@@ -6709,7 +6709,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesis-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis
-  - name: kms
+  - name: AWS Key Management Service (KMS)
     description: >-
       <fullname>Key Management Service</fullname> <p>Key Management Service
       (KMS) is an encryption and key management web service. This guide
@@ -6793,7 +6793,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kms
-  - name: launch-wizard
+  - name: AWS Launch Wizard
     description: >-
       <p>Launch Wizard offers a guided way of sizing, configuring, and deploying
       Amazon Web Services resources for third party applications, such as
@@ -6815,7 +6815,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/launch-wizard-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:launch-wizard
-  - name: lex-models
+  - name: Amazon Lex Build-Time Actions
     description: >-
       <fullname>Amazon Lex Build-Time Actions</fullname> <p> Amazon Lex is an
       AWS service for building conversational voice and text interfaces. Use
@@ -6836,7 +6836,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lex-models-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lex-models
-  - name: license-manager
+  - name: AWS License Manager
     description: >-
       <p>License Manager makes it easier to manage licenses from software
       vendors across multiple Amazon Web Services accounts and on-premises
@@ -6856,7 +6856,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/license-manager-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:license-manager
-  - name: license-manager-user-subscriptions
+  - name: AWS License Manager
     description: >-
       <p>With License Manager, you can create user-based subscriptions to
       utilize licensed software with a per user subscription fee on Amazon EC2
@@ -6877,7 +6877,7 @@ apis:
         url: >-
           overlays/license-manager-user-subscriptions-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:license-manager-user-subscriptions
-  - name: lightsail
+  - name: Amazon Lightsail
     description: >-
       <p>Amazon Lightsail is the easiest way to get started with Amazon Web
       Services (Amazon Web Services) for developers who need to build websites
@@ -6914,7 +6914,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lightsail-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lightsail
-  - name: lookoutequipment
+  - name: Amazon Lookout for Equipment
     description: >-
       <p>Amazon Lookout for Equipment is a machine learning service that uses
       advanced analytics to identify anomalies in machines from sensor data for
@@ -6934,7 +6934,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lookoutequipment-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lookoutequipment
-  - name: lakeformation
+  - name: AWS Lake Formation
     description: >-
       <fullname>Lake Formation</fullname> <p>Defines the public endpoint for the
       Lake Formation service.</p>
@@ -6953,7 +6953,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lakeformation-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lakeformation
-  - name: logs
+  - name: Amazon CloudWatch Logs
     description: >-
       <p>You can use Amazon CloudWatch Logs to monitor, store, and access your
       log files from EC2 instances, CloudTrail, and other sources. You can then
@@ -6997,7 +6997,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/logs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:logs
-  - name: lookoutmetrics
+  - name: Amazon Lookout for Metrics
     description: >-
       <p>This is the <i>Amazon Lookout for Metrics API Reference</i>. For an
       introduction to the service with tutorials for getting started, visit <a
@@ -7018,7 +7018,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lookoutmetrics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lookoutmetrics
-  - name: lookoutvision
+  - name: Amazon Lookout for Vision
     description: >-
       <p>This is the Amazon Lookout for Vision API Reference. It provides
       descriptions of actions, data types, common parameters, and common
@@ -7044,7 +7044,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lookoutvision-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lookoutvision
-  - name: kinesis-video-webrtc-storage
+  - name: AWS Kinesis Video WebRTC Storage
     description: <p> </p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7062,7 +7062,7 @@ apis:
         url: >-
           overlays/kinesis-video-webrtc-storage-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis-video-webrtc-storage
-  - name: license-manager-linux-subscriptions
+  - name: AWS License Manager for Linux Subscriptions
     description: >-
       <p>With License Manager, you can discover and track your commercial Linux
       subscriptions on running Amazon EC2 instances.</p>
@@ -7082,7 +7082,7 @@ apis:
         url: >-
           overlays/license-manager-linux-subscriptions-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:license-manager-linux-subscriptions
-  - name: machinelearning
+  - name: Amazon Machine Learning
     description: Definition of the public APIs exposed by Amazon Machine Learning
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7099,7 +7099,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/machinelearning-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:machinelearning
-  - name: macie2
+  - name: Amazon Macie
     description: >-
       <p>Amazon Macie is a fully managed data security and data privacy service
       that uses machine learning and pattern matching to help you discover and
@@ -7125,7 +7125,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/macie2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:macie2
-  - name: m2
+  - name: Amazon Web Services Mainframe Modernization
     description: >-
       <p>Amazon Web Services Mainframe Modernization provides tools and
       resources to help you plan and implement migration and modernization from
@@ -7149,7 +7149,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/m2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:m2
-  - name: location
+  - name: AWS Location
     description: >-
       <p>"Suite of geospatial services including Maps, Places, Routes, Tracking,
       and Geofencing"</p>
@@ -7168,7 +7168,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/location-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:location
-  - name: marketplace-catalog
+  - name: AWS Marketplace Catalog
     description: >-
       <p>Catalog API actions allow you to manage your entities through list,
       describe, and update capabilities. An entity can be a product or an offer
@@ -7192,7 +7192,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/marketplace-catalog-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-catalog
-  - name: managedblockchain-query
+  - name: Amazon Managed Blockchain (AMB)
     description: >-
       <p>Amazon Managed Blockchain (AMB) Query provides you with convenient
       access to multi-blockchain network data, which makes it easier for you to
@@ -7218,7 +7218,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/managedblockchain-query-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:managedblockchain-query
-  - name: marketplace-deployment
+  - name: AWS Marketplace Deployment
     description: >-
       <p>The AWS Marketplace Deployment Service supports the Quick Launch
       experience, which is a deployment option for software as a service (SaaS)
@@ -7242,7 +7242,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/marketplace-deployment-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-deployment
-  - name: mediaconnect
+  - name: AWS Elemental MediaConnect
     description: API for AWS Elemental MediaConnect
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7259,7 +7259,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediaconnect-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediaconnect
-  - name: managedblockchain
+  - name: Amazon Managed Blockchain
     description: >-
       <p/> <p>Amazon Managed Blockchain is a fully managed service for creating
       and managing blockchain networks using open-source frameworks. Blockchain
@@ -7289,7 +7289,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/managedblockchain-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:managedblockchain
-  - name: mediaconvert
+  - name: AWS Elemental MediaConvert
     description: AWS Elemental MediaConvert
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7306,7 +7306,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediaconvert-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediaconvert
-  - name: medialive
+  - name:  AWS Elemental MediaLive
     description: API for AWS Elemental MediaLive
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7323,7 +7323,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/medialive-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:medialive
-  - name: mediapackage-vod
+  - name: AWS Elemental MediaPackage VOD
     description: AWS Elemental MediaPackage VOD
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7340,7 +7340,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediapackage-vod-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediapackage-vod
-  - name: mediapackage
+  - name: AWS Elemental MediaPackage
     description: AWS Elemental MediaPackage
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7357,7 +7357,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediapackage-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediapackage
-  - name: marketplace-agreement
+  - name: AWS Marketplace Agreement
     description: >-
       <p>AWS Marketplace is a curated digital catalog that customers can use to
       find, buy, deploy, and manage third-party software, data, and services to
@@ -7389,7 +7389,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/marketplace-agreement-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-agreement
-  - name: mediastore
+  - name: AWS Elemental MediaStore
     description: >-
       <p>An AWS Elemental MediaStore container is a namespace that holds folders
       and objects. You use a container endpoint to create, read, and delete
@@ -7409,7 +7409,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediastore-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediastore
-  - name: mediastore-data
+  - name: AWS Elemental MediaStore Data
     description: >-
       <p>An AWS Elemental MediaStore asset is an object, similar to an object in
       the Amazon S3 service. Objects are the fundamental entities that are
@@ -7429,7 +7429,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediastore-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediastore-data
-  - name: marketplacecommerceanalytics
+  - name: AWS Marketplace Commerce Analytics
     description: Provides AWS Marketplace business intelligence data on-demand.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7447,7 +7447,7 @@ apis:
         url: >-
           overlays/marketplacecommerceanalytics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplacecommerceanalytics
-  - name: meteringmarketplace
+  - name: AWS Marketplace Metering Service
     description: >-
       <fullname>AWS Marketplace Metering Service</fullname> <p>This reference
       provides descriptions of the low-level AWS Marketplace Metering Service
@@ -7501,7 +7501,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/meteringmarketplace-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:meteringmarketplace
-  - name: mgn
+  - name: Application Migration
     description: <p>The Application Migration Service service.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7518,7 +7518,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mgn-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mgn
-  - name: medical-imaging
+  - name: AWS HealthImaging
     description: >-
       <p>This is the <i>AWS HealthImaging API Reference</i>. AWS HealthImaging
       is a HIPAA-eligible service that helps health care providers and their
@@ -7636,7 +7636,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/medical-imaging-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:medical-imaging
-  - name: migration-hub-refactor-spaces
+  - name: AWS Migration Hub Refactor Spaces
     description: >-
       <p><fullname>Amazon Web Services Migration Hub Refactor Spaces</fullname>
       <p>This API reference provides descriptions, syntax, and other details
@@ -7667,7 +7667,7 @@ apis:
         url: >-
           overlays/migration-hub-refactor-spaces-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migration-hub-refactor-spaces
-  - name: mediapackagev2
+  - name: AWS Elemental MediaPackage
     description: >-
       <note> <p>This guide is intended for creating AWS Elemental MediaPackage
       resources in MediaPackage Version 2 (v2) starting from May 2023. To get
@@ -7705,7 +7705,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediapackagev2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediapackagev2
-  - name: memorydb
+  - name: AWS MemoryDB for Redis
     description: >-
       <p>MemoryDB for Redis is a fully managed, Redis-compatible, in-memory
       database that delivers ultra-fast performance and Multi-AZ durability for
@@ -7729,7 +7729,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/memorydb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:memorydb
-  - name: migrationhub-config
+  - name: AWS Migration Hub
     description: >-
       <p>The AWS Migration Hub home region APIs are available specifically for
       working with your Migration Hub home region. You can use these APIs to
@@ -7760,7 +7760,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhub-config-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhub-config
-  - name: migrationhubstrategy
+  - name: AWS Migration Hub Strategy Recommendations
     description: >-
       <p><fullname>Migration Hub Strategy Recommendations</fullname> <p>This API
       reference provides descriptions, syntax, and other details about each of
@@ -7785,7 +7785,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhubstrategy-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhubstrategy
-  - name: migrationhuborchestrator
+  - name: AWS Migration Hub Orchestrator
     description: >-
       <p>This API reference provides descriptions, syntax, and other details
       about each of the actions and data types for AWS Migration Hub
@@ -7808,7 +7808,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhuborchestrator-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhuborchestrator
-  - name: mobile
+  - name: AWS Mobile
     description: >-
       <p> AWS Mobile Service provides mobile app and website developers with
       capabilities required to configure AWS resources and bootstrap their
@@ -7829,7 +7829,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mobile-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mobile
-  - name: mediatailor
+  - name: AWS Elemental MediaTailor
     description: >-
       <p>Use the AWS Elemental MediaTailor SDKs and CLI to configure scalable ad
       insertion and linear channels. With MediaTailor, you can assemble existing
@@ -7858,7 +7858,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediatailor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediatailor
-  - name: mturk-requester
+  - name: Amazon Mechanical Turk
     description: <fullname>Amazon Mechanical Turk API Reference</fullname>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -7875,7 +7875,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mturk-requester-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mturk-requester
-  - name: monitoring
+  - name: Amazon CloudWatch Monitors
     description: >-
       <p>Amazon CloudWatch monitors your Amazon Web Services (Amazon Web
       Services) resources and the applications you run on Amazon Web Services in
@@ -7906,7 +7906,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/monitoring-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:monitoring
-  - name: mwaa
+  - name: Amazon Managed Workflows for Apache Airflow
     description: >-
       <p><fullname>Amazon Managed Workflows for Apache Airflow</fullname>
       <p>This section contains the Amazon Managed Workflows for Apache Airflow
@@ -7956,7 +7956,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mwaa-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mwaa
-  - name: neptune
+  - name: Amazon Neptune
     description: >-
       <fullname>Amazon Neptune</fullname> <p>Amazon Neptune is a fast, reliable,
       fully-managed graph database service that makes it easy to build and run
@@ -7992,7 +7992,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/neptune-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:neptune
-  - name: mq
+  - name: Amazon MQ
     description: >-
       <p>Amazon MQ is a managed message broker service for Apache ActiveMQ and
       RabbitMQ that makes it easy to set up and operate message brokers in the
@@ -8014,7 +8014,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mq-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mq
-  - name: models.lex.v2
+  - name: AWS Lex Models
     description: <p/>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -8031,7 +8031,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/modelslexv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:modelslexv2
-  - name: neptune-graph
+  - name: Amazon Neptune Analytics
     description: >-
       <p>Neptune Analytics is a new analytics database engine for Amazon Neptune
       that helps customers get to insights faster by quickly processing large
@@ -8052,7 +8052,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/neptune-graph-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:neptune-graph
-  - name: neptunedata
+  - name: Amazon Neptune Data
     description: >-
       <p><fullname>Neptune Data API</fullname> <p>The Amazon Neptune data API
       provides SDK support for more than 40 of Neptune's data operations,
@@ -8075,7 +8075,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/neptunedata-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:neptunedata
-  - name: nimble
+  - name: Amazon Nimble Studio
     description: >-
       <p>Welcome to the Amazon Nimble Studio API reference. This API reference
       provides methods, schema, resources, parameters, and more to help you get
@@ -8097,7 +8097,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/nimble-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:nimble
-  - name: networkmonitor
+  - name: Amazon CloudWatch Network Monitor
     description: >-
       <p>Amazon CloudWatch Network Monitor is an Amazon Web Services active
       network monitoring service that identifies if a network issues exists
@@ -8128,7 +8128,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/networkmonitor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:networkmonitor
-  - name: omics
+  - name: AWS HealthOmics
     description: >-
       <p>This is the <i>AWS HealthOmics API Reference</i>. For an introduction
       to the service, see <a
@@ -8149,7 +8149,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/omics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:omics
-  - name: oam
+  - name: Amazon CloudWatch Observability Access Manager
     description: >-
       <p>Use Amazon CloudWatch Observability Access Manager to create and manage
       links between source accounts and monitoring accounts by using
@@ -8183,7 +8183,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/oam-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:oam
-  - name: network-firewall
+  - name: AWS Network Firewall
     description: >-
       <p>This is the API Reference for Network Firewall. This guide is for
       developers who need detailed information about the Network Firewall API
@@ -8254,7 +8254,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/network-firewall-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:network-firewall
-  - name: opensearchserverless
+  - name: Amazon OpenSearch Serverless
     description: >-
       <p>Use the Amazon OpenSearch Serverless API to create, configure, and
       manage OpenSearch Serverless collections and security policies.</p>
@@ -8281,7 +8281,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/opensearchserverless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opensearchserverless
-  - name: opensearch
+  - name: Amazon OpenSearch
     description: >-
       <p>Use the Amazon OpenSearch Service configuration API to create,
       configure, and manage OpenSearch Service domains.</p> <p>For sample code
@@ -8311,7 +8311,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/opensearch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opensearch
-  - name: organizations
+  - name: Amazon Organizations
     description: >-
       <p>Organizations is a web service that enables you to consolidate your
       multiple Amazon Web Services accounts into an <i>organization</i> and
@@ -8378,7 +8378,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/organizations-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:organizations
-  - name: opsworkscm
+  - name: AWS OpsWorks CM
     description: >-
       <fullname>AWS OpsWorks CM</fullname> <p>AWS OpsWorks for configuration
       management (CM) is a service that runs and manages configuration
@@ -8440,7 +8440,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/opsworkscm-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opsworkscm
-  - name: osis
+  - name: Amazon OpenSearch Ingestion
     description: >-
       <p>Use the Amazon OpenSearch Ingestion API to create and manage ingestion
       pipelines. OpenSearch Ingestion is a fully managed data collector that
@@ -8463,7 +8463,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/osis-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:osis
-  - name: panorama
+  - name: AWS Panorama
     description: >-
       <p><fullname>AWS Panorama</fullname> <p> <b>Overview</b> </p> <p>This is
       the <i>AWS Panorama API Reference</i>. For an introduction to the service,
@@ -8485,7 +8485,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/panorama-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:panorama
-  - name: opsworks
+  - name: AWS OpsWorks
     description: >-
       <fullname>AWS OpsWorks</fullname> <p>Welcome to the <i>AWS OpsWorks Stacks
       API Reference</i>. This guide provides descriptions, syntax, and usage
@@ -8554,7 +8554,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/opsworks-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opsworks
-  - name: payment-cryptography
+  - name: AWS Payment Cryptography Control Plane
     description: >-
       <p>Amazon Web Services Payment Cryptography Control Plane APIs manage
       encryption keys for use during payment-related cryptographic operations.
@@ -8598,7 +8598,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/payment-cryptography-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:payment-cryptography
-  - name: pca-connector-ad
+  - name: AWS Private CA Connector for Active Directory
     description: >-
       <p>Amazon Web Services Private CA Connector for Active Directory creates a
       connector between Amazon Web Services Private CA and Active Directory (AD)
@@ -8621,7 +8621,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/pca-connector-ad-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pca-connector-ad
-  - name: personalize-events
+  - name: Amazon Personalize Events
     description: >-
       <p>Amazon Personalize can consume real-time user event data, such as
       <i>stream</i> or <i>click</i> data, and use it for model training either
@@ -8643,7 +8643,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/personalize-events-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:personalize-events
-  - name: networkmanager
+  - name: AWS Cloud WAN Core Network
     description: >-
       <p>Amazon Web Services enables you to centrally manage your Amazon Web
       Services Cloud WAN core network and your Transit Gateway network across
@@ -8663,7 +8663,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/networkmanager-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:networkmanager
-  - name: outposts
+  - name: AWS Outposts
     description: >-
       <p>Amazon Web Services Outposts is a fully managed service that extends
       Amazon Web Services infrastructure, APIs, and tools to customer premises.
