@@ -34,7 +34,7 @@ layout: default
                                 <li><a href="{{ api.baseURL }}">Base URL</a></li>
                             {% endif %}
                             {% for property in api.properties %}
-                                <li><a href="{{ property.url }}">{{ property.type }}</a></li>
+                                <li><a href="../{{ property.url }}">{{ property.type }}</a></li>
                             {% endfor %}    
                         </ul>
 
