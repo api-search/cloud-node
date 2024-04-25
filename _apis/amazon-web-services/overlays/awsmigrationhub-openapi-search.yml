@@ -24,5 +24,4 @@ paths:
         on the provided details, call <code>ListDiscoveredResources</code>.</
       tags:
         - Attributes
-        - Put
         - Resources
