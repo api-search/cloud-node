@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: PutResourceAttributes
+      summary: Put Resource Attributes
       description: >-
         <p>Provides identifying details of the resource being migrated so that
         it can be associated in the Application Discovery Service repository.
@@ -23,6 +23,6 @@ paths:
         association occurs or not. To confirm if an association was found based
         on the provided details, call <code>ListDiscoveredResources</code>.</
       tags:
+        - Attributes
         - Put
         - Resources
-        - Attributes
