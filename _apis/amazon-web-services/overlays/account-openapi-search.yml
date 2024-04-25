@@ -4,7 +4,7 @@ info:
 paths:
   /deleteAlternateContact:
     POST:
-      summary: DeleteAlternateContact
+      summary: Delete Alternate Contact
       description: >-
         <p>Deletes the specified alternate contact from an Amazon Web Services
         account.</p> <p>For complete details about how to use the alternate
@@ -19,14 +19,12 @@ paths:
         trusted access for Amazon Web Services Account Management</a>.</p>
         </note>
       tags:
+        - Alternate
+        - Contacts
         - Delete
-        - Alternate
-        - Contacts
-        - Alternate
-        - Contacts
   /disableRegion:
     POST:
-      summary: DisableRegion
+      summary: Disable Region
       description: <p>Disables (opts-out) a particular Region for an account.</p>
       tags:
         - Disable
@@ -36,17 +34,16 @@ paths:
         - Regions
   /enableRegion:
     POST:
-      summary: EnableRegion
+      summary: Enable Region
       description: <p>Enables (opts-in) a particular Region for an account.</p>
       tags:
-        - Enable
-        - Regions
         - Alternate
         - Contacts
+        - Enable
         - Regions
   /getAlternateContact:
     POST:
-      summary: GetAlternateContact
+      summary: Get Alternate Contact
       description: >-
         <p>Retrieves the specified alternate contact attached to an Amazon Web
         Services account.</p> <p>For complete details about how to use the
@@ -61,15 +58,12 @@ paths:
         trusted access for Amazon Web Services Account Management</a>.</p>
         </note>
       tags:
-        - Get
-        - Alternate
-        - Contacts
         - Alternate
         - Contacts
         - Regions
   /getContactInformation:
     POST:
-      summary: GetContactInformation
+      summary: Get Contact Information
       description: >-
         <p>Retrieves the primary contact information of an Amazon Web Services
         account.</p> <p>For complete details about how to use the primary
@@ -77,27 +71,20 @@ paths:
         href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html">Update
         the primary and alternate contact information</a>.</p>
       tags:
-        - Get
-        - Contacts
-        - Information
         - Alternate
         - Contacts
-        - Regions
         - Information
+        - Regions
   /getRegionOptStatus:
     POST:
-      summary: GetRegionOptStatus
+      summary: Get Region Opt Status
       description: <p>Retrieves the opt-in status of a particular Region.</p>
       tags:
-        - Get
-        - Regions
-        - Opt
-        - Status
         - Alternate
         - Contacts
-        - Regions
         - Information
         - Opt
+        - Regions
         - Status
   /listRegions:
     POST:
@@ -107,18 +94,16 @@ paths:
         statuses. Optionally, this list can be filtered by the
         <code>region-opt-status-contains</code> parameter. </p>
       tags:
-        - Lists
-        - Regions
         - Alternate
         - Contacts
-        - Regions
         - Information
+        - Lists
         - Opt
-        - Status
         - Regions
+        - Status
   /putAlternateContact:
     POST:
-      summary: PutAlternateContact
+      summary: Put Alternate Contact
       description: >-
         <p>Modifies the specified alternate contact attached to an Amazon Web
         Services account.</p> <p>For complete details about how to use the
@@ -133,16 +118,13 @@ paths:
         trusted access for Amazon Web Services Account Management</a>.</p>
         </note>
       tags:
-        - Put
         - Alternate
         - Contacts
-        - Alternate
-        - Contacts
-        - Regions
         - Information
         - Opt
-        - Status
+        - Put
         - Regions
+        - Status
   /putContactInformation:
     POST:
       summary: PutContactInformation
