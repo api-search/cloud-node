@@ -11,7 +11,7 @@ layout: none
 "created": "2024/04/13",
 "modified": "2024/04/13",
 "tags": {{ site.keywords | jsonify }},
-"includes": [{% for api in site.apis %}{% if api.url contains "apis.md" %}{% assign pos = api.url | size | minus: 1 %}{% assign len = api.url | size %}{% assign url = api.url | slice: 0, pos %}{% assign url = url | slice: 1, len %} 
+"includes": [{% for api in site.apis %}{% if api.url contains "overlays" %}{% else %}{% assign pos = api.url | size | minus: 1 %}{% assign len = api.url | size %}{% assign url = api.url | slice: 0, pos %}{% assign url = url | slice: 1, len %} 
     {
     "name": "{{ api.name | strip_newlines }}",
     "url": "https://raw.githubusercontent.com/api-search/{{ site.node }}/main/_{{ url }}.md"
