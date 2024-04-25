@@ -57,7 +57,7 @@ paths:
         - Rules
   /access-preview:
     GET:
-      summary: ListAccessPreviews
+      summary: List Access Previews
       description: <p>Retrieves a list of access previews for the specified analyzer.</p>
       tags:
         - Access
@@ -88,7 +88,7 @@ paths:
         - Rules
   /analyzer/{analyzerName}/archive-rule:
     GET:
-      summary: ListArchiveRules
+      summary: List Archive Rules
       description: >-
         <p>Retrieves a list of archive rules created for the specified
         analyzer.</p>
@@ -106,7 +106,7 @@ paths:
         - Rules
   /analyzer/{analyzerName}:
     GET:
-      summary: GetAnalyzer
+      summary: Get Analyzer
       description: <p>Retrieves information about the specified analyzer.</p>
       tags:
         - Access
@@ -121,7 +121,7 @@ paths:
         - Rules
   /analyzer/{analyzerName}/archive-rule/{ruleName}:
     PUT:
-      summary: UpdateArchiveRule
+      summary: Update Archive Rule
       description: <p>Updates the criteria and values for the specified archive rule.</p>
       tags:
         - Access
@@ -156,7 +156,7 @@ paths:
         - Rules
   /analyzed-resource:
     POST:
-      summary: ListAnalyzedResources
+      summary: List Analyzed Resources
       description: >-
         <p>Retrieves a list of resources of the specified type that have been
         analyzed by the specified analyzer..</p>
@@ -194,7 +194,7 @@ paths:
         - Rules
   /findingv2/{id}:
     GET:
-      summary: GetFindingV2
+      summary: Get Finding V2
       description: <p>Retrieves information about the specified finding.</p>
       tags:
         - Access
