@@ -21,7 +21,6 @@ paths:
       tags:
         - Alternate
         - Contacts
-        - Delete
   /disableRegion:
     POST:
       summary: Disable Region
@@ -88,7 +87,7 @@ paths:
         - Status
   /listRegions:
     POST:
-      summary: ListRegions
+      summary: List Regions
       description: >-
         <p>Lists all the Regions for a given account and their respective opt-in
         statuses. Optionally, this list can be filtered by the
@@ -122,12 +121,11 @@ paths:
         - Contacts
         - Information
         - Opt
-        - Put
         - Regions
         - Status
   /putContactInformation:
     POST:
-      summary: PutContactInformation
+      summary: Put Contact Information
       description: >-
         <p>Updates the primary contact information of an Amazon Web Services
         account.</p> <p>For complete details about how to use the primary
@@ -135,13 +133,9 @@ paths:
         href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html">Update
         the primary and alternate contact informatio
       tags:
-        - Put
-        - Contacts
-        - Information
         - Alternate
         - Contacts
-        - Regions
         - Information
         - Opt
-        - Status
         - Regions
+        - Status
