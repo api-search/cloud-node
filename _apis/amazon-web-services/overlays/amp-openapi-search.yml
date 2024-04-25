@@ -4,83 +4,78 @@ info:
 paths:
   /workspaces/{workspaceId}/alertmanager/definition:
     PUT:
-      summary: PutAlertManagerDefinition
+      summary: Put Alert Manager Definition
       description: >-
         <p>Updates an existing alert manager definition in a workspace. If the
         workspace does not already have an alert manager definition, don't use
         this operation to create it. Instead, use
         <code>CreateAlertManagerDefinition</code>.</p>
       tags:
-        - Put
+        - Alert Management
         - Alerts
-        - Managers
         - Definitions
         - Identifiers
-        - Alert Management
-        - Definitions
+        - Managers
   /workspaces/{workspaceId}/logging:
     PUT:
-      summary: UpdateLoggingConfiguration
+      summary: Update Logging Configuration
       description: >-
         <p>Updates the log group ARN or the workspace ID of the current logging
         configuration.</p>
       tags:
-        - Update
-        - Logging
-        - Configurations
-        - Identifiers
         - Alert Management
+        - Configurations
         - Definitions
+        - Identifiers
         - Logging
+        - Update
   /workspaces/{workspaceId}/rulegroupsnamespaces:
     GET:
-      summary: ListRuleGroupsNamespaces
+      summary: List Rule Groups Namespaces
       description: <p>Returns a list of rule groups namespaces in a workspace.</p>
       tags:
-        - Lists
-        - Rules
-        - Groups
-        - Namespaces
-        - Identifiers
         - Alert Management
         - Definitions
+        - Groups
+        - Identifiers
+        - Lists
         - Logging
+        - Namespaces
         - Rule Groups Namespaces
+        - Rules
   /scrapers:
     GET:
-      summary: ListScrapers
+      summary: List Scrapers
       description: >-
         <p>The <code>ListScrapers</code> operation lists all of the scrapers in
         your account. This includes scrapers being created or deleted. You can
         optionally filter the returned list.</p>
       tags:
-        - Lists
-        - Scrapers
-        - Identifiers
         - Alert Management
         - Definitions
+        - Identifiers
+        - Lists
         - Logging
         - Rule Groups Namespaces
         - Scrapers
   /workspaces:
     GET:
-      summary: ListWorkspaces
+      summary: List Workspaces
       description: >-
         <p>Lists all of the Amazon Managed Service for Prometheus workspaces in
         your account. This includes workspaces being created or deleted. </p>
       tags:
-        - Lists
-        - Workspaces
-        - Identifiers
         - Alert Management
         - Definitions
+        - Identifiers
+        - Lists
         - Logging
         - Rule Groups Namespaces
         - Scrapers
         - Workspaces
   /workspaces/{workspaceId}/rulegroupsnamespaces/{name}:
     PUT:
-      summary: PutRuleGroupsNamespace
+      summary: Put Rule Groups Namespace
       description: >-
         <p>Updates an existing rule groups namespace within a workspace. A rule
         groups namespace is associated with exactly one rules file. A workspace
@@ -90,107 +85,101 @@ paths:
         use this operation to add tags to an existing rule groups namespace.
         Instead, use <code>TagResource</code>.</p>
       tags:
-        - Put
-        - Rules
-        - Groups
-        - Namespaces
-        - Identifiers
         - Alert Management
         - Definitions
+        - Groups
+        - Identifiers
         - Logging
+        - Names
+        - Namespaces
         - Rule Groups Namespaces
+        - Rules
         - Scrapers
         - Workspaces
-        - Names
   /scrapers/{scraperId}:
     GET:
-      summary: DescribeScraper
+      summary: Describe Scraper
       description: >-
         <p>The <code>DescribeScraper</code> operation displays information about
         an existing scraper.</p>
       tags:
-        - Describe
-        - Scrapers
-        - Identifiers
         - Alert Management
         - Definitions
+        - Describe
+        - Identifiers
         - Logging
+        - Names
         - Rule Groups Namespaces
         - Scrapers
         - Workspaces
-        - Names
   /workspaces/{workspaceId}:
     GET:
-      summary: DescribeWorkspace
+      summary: Describe Workspace
       description: <p>Returns information about an existing workspace. </p>
       tags:
-        - Describe
-        - Workspaces
-        - Identifiers
         - Alert Management
         - Definitions
+        - Describe
+        - Identifiers
         - Logging
+        - Names
         - Rule Groups Namespaces
         - Scrapers
         - Workspaces
-        - Names
   /scraperconfiguration:
     GET:
-      summary: GetDefaultScraperConfiguration
+      summary: Get Default Scraper Configuration
       description: >-
         <p>The <code>GetDefaultScraperConfiguration</code> operation returns the
         default scraper configuration used when Amazon EKS creates a scraper for
         you.</p>
       tags:
-        - Get
-        - Default
-        - Scrapers
-        - Configurations
-        - Identifiers
         - Alert Management
+        - Configurations
+        - Default
         - Definitions
+        - Identifiers
         - Logging
+        - Names
         - Rule Groups Namespaces
+        - Scraper Configurations
         - Scrapers
         - Workspaces
-        - Names
-        - Scraper Configurations
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: Untag Resource
       description: >-
         <p>Removes the specified tags from an Amazon Managed Service for
         Prometheus resource. The only resources that can be tagged are
         workspaces and rule groups namespaces. </p>
       tags:
-        - Untag
-        - Resources
-        - Identifiers
+        - ARN
         - Alert Management
         - Definitions
+        - Identifiers
         - Logging
-        - Rule Groups Namespaces
-        - Scrapers
-        - Workspaces
         - Names
+        - Resources
+        - Rule Groups Namespaces
         - Scraper Configurations
-        - ARN
+        - Scrapers
+        - Untag
+        - Workspaces
   /workspaces/{workspaceId}/alias:
     POST:
-      summary: UpdateWorkspaceAlias
+      summary: Update Workspace Alias
       description: <p>Updates the alias of an existing work
       tags:
+        - ARN
+        - Alert Management
+        - Ali
+        - Alias
+        - Definitions
+        - Identifiers
+        - Logging
+        - Names
+        - Rule Groups Namespaces
+        - Scraper Configurations
+        - Scrapers
         - Update
         - Workspaces
-        - Alias
-        - Identifiers
-        - Alert Management
-        - Definitions
-        - Logging
-        - Rule Groups Namespaces
-        - Scrapers
-        - Workspaces
-        - Names
-        - Scraper Configurations
-        - ARN
-        - Ali
