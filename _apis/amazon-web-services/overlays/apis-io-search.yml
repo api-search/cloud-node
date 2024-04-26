@@ -1,4 +1,3 @@
----
 name: Amazon Web Services
 description: >-
   Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand
@@ -24,7 +23,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Certificates
+      - Options
+      - Update
     properties:
       - type: Documentation
         url: https://example.com
@@ -12509,4 +12511,3 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: amazon-web-services
----
