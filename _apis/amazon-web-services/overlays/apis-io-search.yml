@@ -71,7 +71,33 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Archive
+      - Rules
+      - Generated
+      - Identifiers
+      - Policies
+      - Access
+      - Checks
+      - Grants
+      - Lists
+      - Preview
+      - Previews
+      - Analyzer
+      - Analyzers
+      - Names
+      - Update
+      - Findings
+      - Analyzed
+      - Resources
+      - V2
+      - Generation
+      - Start
+      - ARN
+      - Untag
+      - Scans
+      - Validate
+      - Validations
     properties:
       - type: Documentation
         url: https://example.com
