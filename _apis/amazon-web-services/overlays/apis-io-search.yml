@@ -164,30 +164,34 @@ apis:
     humanURL: https://example.com
     baseURL: https://example.com
     tags:
-      - Alert Management
       - Alerts
+      - Alert  Management
       - Definitions
       - Identifiers
       - Managers
       - Configurations
       - Logging
-      - Update
       - Groups
       - Lists
       - Namespaces
-      - Rule Groups Namespaces
+      - Rule  Groups  Namespaces
       - Rules
       - Scrapers
       - Workspaces
       - Names
+      - Rule  Groups  Namespaces
       - Describe
       - Default
-      - Scraper Configurations
+      - Scraper  Configurations
       - ARN
       - Resources
       - Untag
+      - Alert  Management
       - Ali
       - Alias
+      - Rule  Groups  Namespaces
+      - Scraper  Configurations
+      - Update
     properties:
       - type: Documentation
         url: https://example.com
