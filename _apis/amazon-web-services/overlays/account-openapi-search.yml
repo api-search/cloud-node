@@ -6,25 +6,23 @@ paths:
     POST:
       summary: Delete Alternate Contact
       description: >-
-        <p>Deletes the specified alternate contact from an Amazon Web Services
-        account.</p> <p>For complete details about how to use the alternate
-        contact operations, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html">Access
-        or updating the alternate contacts</a>.</p> <note> <p>Before you can
-        update the alternate contact information for an Amazon Web Services
-        account that is managed by Organizations, you must first enable
-        integration between Amazon Web Services Account Management and
-        Organizations. For more information, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-trusted-access.html">Enabling
-        trusted access for Amazon Web Services Account Management</a>.</p>
-        </note>
+        This API allows you to remove a specified alternate contact from an
+        Amazon Web Services account. To learn more about using alternate contact
+        operations, please refer to the documentation on accessing or updating
+        alternate contacts. In order to update alternate contact information for
+        an Amazon Web Services account managed by Organizations, integration
+        between Amazon Web Services Account Management and Organizations must be
+        enabled first. For more details, refer to the information on enabling
+        trusted access for Amazon Web Services Account Management.
       tags:
         - Alternate
         - Contacts
   /disableRegion:
     POST:
       summary: Disable Region
-      description: <p>Disables (opts-out) a particular Region for an account.</p>
+      description: >-
+        This API allows users to opt-out of a specific region for their account,
+        effectively disabling it.
       tags:
         - Disable
         - Regions
@@ -34,7 +32,9 @@ paths:
   /enableRegion:
     POST:
       summary: Enable Region
-      description: <p>Enables (opts-in) a particular Region for an account.</p>
+      description: >-
+        This API allows users to opt-in to a specific region for their account,
+        enabling access and functionality specific to that region.
       tags:
         - Alternate
         - Contacts
@@ -44,18 +44,15 @@ paths:
     POST:
       summary: Get Alternate Contact
       description: >-
-        <p>Retrieves the specified alternate contact attached to an Amazon Web
-        Services account.</p> <p>For complete details about how to use the
-        alternate contact operations, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html">Access
-        or updating the alternate contacts</a>.</p> <note> <p>Before you can
-        update the alternate contact information for an Amazon Web Services
-        account that is managed by Organizations, you must first enable
-        integration between Amazon Web Services Account Management and
-        Organizations. For more information, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-trusted-access.html">Enabling
-        trusted access for Amazon Web Services Account Management</a>.</p>
-        </note>
+        This API retrieves the designated alternate contact associated with an
+        Amazon Web Services account. Detailed instructions on utilizing
+        alternate contact operations can be found in the documentation for
+        accessing or updating alternate contacts. Prior to modifying alternate
+        contact information for an Amazon Web Services account overseen by
+        Organizations, integration between Amazon Web Services Account
+        Management and Organizations must be enabled. Visit the resources on
+        enabling trusted access for Amazon Web Services Account Management for
+        further guidance.
       tags:
         - Alternate
         - Contacts
@@ -64,11 +61,10 @@ paths:
     POST:
       summary: Get Contact Information
       description: >-
-        <p>Retrieves the primary contact information of an Amazon Web Services
-        account.</p> <p>For complete details about how to use the primary
-        contact operations, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html">Update
-        the primary and alternate contact information</a>.</p>
+        This API retrieves the primary contact details associated with an Amazon
+        Web Services account. For a comprehensive guide on using the primary
+        contact functions, please refer to the documentation on updating the
+        primary and alternate contact information.
       tags:
         - Alternate
         - Contacts
@@ -77,7 +73,7 @@ paths:
   /getRegionOptStatus:
     POST:
       summary: Get Region Opt Status
-      description: <p>Retrieves the opt-in status of a particular Region.</p>
+      description: This API retrieves the opt-in status for a specific region.
       tags:
         - Alternate
         - Contacts
@@ -89,9 +85,10 @@ paths:
     POST:
       summary: List Regions
       description: >-
-        <p>Lists all the Regions for a given account and their respective opt-in
-        statuses. Optionally, this list can be filtered by the
-        <code>region-opt-status-contains</code> parameter. </p>
+        This API provides a list of all Regions associated with a specific
+        account, along with their corresponding opt-in statuses. Users have the
+        option to further filter the results by using the
+        region-opt-status-contains parameter.
       tags:
         - Alternate
         - Contacts
@@ -104,18 +101,15 @@ paths:
     POST:
       summary: Put Alternate Contact
       description: >-
-        <p>Modifies the specified alternate contact attached to an Amazon Web
-        Services account.</p> <p>For complete details about how to use the
-        alternate contact operations, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html">Access
-        or updating the alternate contacts</a>.</p> <note> <p>Before you can
-        update the alternate contact information for an Amazon Web Services
-        account that is managed by Organizations, you must first enable
-        integration between Amazon Web Services Account Management and
-        Organizations. For more information, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-trusted-access.html">Enabling
-        trusted access for Amazon Web Services Account Management</a>.</p>
-        </note>
+        This API allows users to modify the designated alternate contact for an
+        Amazon Web Services account. Detailed instructions on utilizing
+        alternate contact operations can be found in the guide for accessing or
+        updating alternate contacts. It is important to note that in order to
+        update alternate contact information for an Amazon Web Services account
+        managed by Organizations, users must first enable integration between
+        Amazon Web Services Account Management and Organizations. More
+        information on enabling trusted access for Amazon Web Services Account
+        Management can be found for further assistance.
       tags:
         - Alternate
         - Contacts
@@ -127,11 +121,10 @@ paths:
     POST:
       summary: Put Contact Information
       description: >-
-        <p>Updates the primary contact information of an Amazon Web Services
-        account.</p> <p>For complete details about how to use the primary
-        contact operations, see <a
-        href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html">Update
-        the primary and alternate contact informatio
+        This API allows for the updating of primary contact information on an
+        Amazon Web Services account. For a comprehensive guide on utilizing the
+        primary contact operations, refer to the instructions on updating both
+        primary and alternate contact details.
       tags:
         - Alternate
         - Contacts
