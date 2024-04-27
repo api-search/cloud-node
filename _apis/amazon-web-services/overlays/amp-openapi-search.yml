@@ -6,10 +6,10 @@ paths:
     PUT:
       summary: Put Alert Manager Definition
       description: >-
-        <p>Updates an existing alert manager definition in a workspace. If the
-        workspace does not already have an alert manager definition, don't use
-        this operation to create it. Instead, use
-        <code>CreateAlertManagerDefinition</code>.</p>
+        This API operation is used to modify an alert manager definition in a
+        workspace. If the workspace does not yet have an alert manager
+        definition, it is recommended to create one using the
+        CreateAlertManagerDefinition API instead of using this operation.
       tags:
         - Alert Management
         - Alerts
@@ -20,8 +20,8 @@ paths:
     PUT:
       summary: Update Logging Configuration
       description: >-
-        <p>Updates the log group ARN or the workspace ID of the current logging
-        configuration.</p>
+        This API allows users to update either the log group ARN or the
+        workspace ID associated with the current logging configuration.
       tags:
         - Alert Management
         - Configurations
@@ -32,7 +32,9 @@ paths:
   /workspaces/{workspaceId}/rulegroupsnamespaces:
     GET:
       summary: List Rule Groups Namespaces
-      description: <p>Returns a list of rule groups namespaces in a workspace.</p>
+      description: >-
+        The API provides a collection of rule groups namespaces within a
+        specified workspace.
       tags:
         - Alert Management
         - Definitions
@@ -47,9 +49,10 @@ paths:
     GET:
       summary: List Scrapers
       description: >-
-        <p>The <code>ListScrapers</code> operation lists all of the scrapers in
-        your account. This includes scrapers being created or deleted. You can
-        optionally filter the returned list.</p>
+        The ListScrapers operation allows you to view a list of all scrapers
+        associated with your account, including those that are in the process of
+        being created or deleted. You also have the option to apply filters to
+        customize the list of scrapers returned.
       tags:
         - Alert Management
         - Definitions
@@ -62,8 +65,9 @@ paths:
     GET:
       summary: List Workspaces
       description: >-
-        <p>Lists all of the Amazon Managed Service for Prometheus workspaces in
-        your account. This includes workspaces being created or deleted. </p>
+        The API allows users to view a comprehensive list of all Amazon Managed
+        Service for Prometheus workspaces within their account, including those
+        currently undergoing creation or deletion processes.
       tags:
         - Alert Management
         - Definitions
@@ -77,13 +81,15 @@ paths:
     PUT:
       summary: Put Rule Groups Namespace
       description: >-
-        <p>Updates an existing rule groups namespace within a workspace. A rule
-        groups namespace is associated with exactly one rules file. A workspace
-        can have multiple rule groups namespaces.</p> <p>Use this operation only
-        to update existing rule groups namespaces. To create a new rule groups
-        namespace, use <code>CreateRuleGroupsNamespace</code>.</p> <p>You can't
-        use this operation to add tags to an existing rule groups namespace.
-        Instead, use <code>TagResource</code>.</p>
+        This API enables users to modify an existing rule groups namespace
+        within a workspace. Each rule groups namespace is associated with a
+        single rules file, and a workspace can contain several rule groups
+        namespaces. This functionality is specifically designed for updating
+        existing rule groups namespaces. For creating a new rule groups
+        namespace, users should utilize the CreateRuleGroupsNamespace function.
+        It is important to note that adding tags to an existing rule groups
+        namespace is not supported by this operation; instead, users should use
+        the TagResource function for this purpose.
       tags:
         - Alert Management
         - Definitions
@@ -100,8 +106,8 @@ paths:
     GET:
       summary: Describe Scraper
       description: >-
-        <p>The <code>DescribeScraper</code> operation displays information about
-        an existing scraper.</p>
+        The DescribeScraper operation provides details about a pre-existing
+        scraper in the system.
       tags:
         - Alert Management
         - Definitions
@@ -115,7 +121,9 @@ paths:
   /workspaces/{workspaceId}:
     GET:
       summary: Describe Workspace
-      description: <p>Returns information about an existing workspace. </p>
+      description: >-
+        This API provides details and data pertaining to a specified workspace
+        that already exists.
       tags:
         - Alert Management
         - Definitions
@@ -130,9 +138,9 @@ paths:
     GET:
       summary: Get Default Scraper Configuration
       description: >-
-        <p>The <code>GetDefaultScraperConfiguration</code> operation returns the
-        default scraper configuration used when Amazon EKS creates a scraper for
-        you.</p>
+        The GetDefaultScraperConfiguration operation retrieves the default
+        scraper configuration that Amazon EKS employs when creating a scraper on
+        your behalf.
       tags:
         - Alert Management
         - Configurations
@@ -149,9 +157,9 @@ paths:
     DELETE:
       summary: Untag Resource
       description: >-
-        <p>Removes the specified tags from an Amazon Managed Service for
-        Prometheus resource. The only resources that can be tagged are
-        workspaces and rule groups namespaces. </p>
+        This API allows users to remove specified tags from Amazon Managed
+        Service for Prometheus resources. Workspaces and rule group namespaces
+        are the only resources that can be tagged.
       tags:
         - ARN
         - Alert Management
@@ -168,7 +176,9 @@ paths:
   /workspaces/{workspaceId}/alias:
     POST:
       summary: Update Workspace Alias
-      description: <p>Updates the alias of an existing work
+      description: >-
+        This API allows you to change or update the alias for a work that
+        already exists in the system.
       tags:
         - ARN
         - Alert Management
