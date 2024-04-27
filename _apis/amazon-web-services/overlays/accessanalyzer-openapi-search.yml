@@ -18,23 +18,19 @@ paths:
         <p>Retrieves the policy that was generated using
         <code>StartPolicyGeneration</code>. </p>
       tags:
-        - Archive
         - Generated
-        - Identifiers
+        - Generation
+        - Job Identifier
         - Policies
-        - Rules
   /policy/check-access-not-granted:
     POST:
       summary: Check Access Not Granted
       description: <p>Checks whether the specified access isn't allowed by a policy.</p>
       tags:
         - Access
-        - Archive
         - Checks
         - Grants
-        - Identifiers
         - Policies
-        - Rules
   /policy/check-no-new-access:
     POST:
       summary: Check No New Access
@@ -49,43 +45,24 @@ paths:
         <code>existingPolicyDocument</code> request parameter.</p>
       tags:
         - Access
-        - Archive
         - Checks
-        - Grants
-        - Identifiers
         - Policies
-        - Rules
   /access-preview:
     GET:
       summary: List Access Previews
       description: <p>Retrieves a list of access previews for the specified analyzer.</p>
       tags:
         - Access
-        - Archive
-        - Checks
-        - Grants
-        - Identifiers
         - Lists
-        - Policies
-        - Preview
         - Previews
-        - Rules
   /analyzer:
     GET:
       summary: ListAnalyzers
       description: <p>Retrieves a list of analyzers.</p>
       tags:
-        - Access
         - Analyzer
         - Analyzers
-        - Archive
-        - Checks
-        - Grants
-        - Identifiers
         - Lists
-        - Policies
-        - Preview
-        - Rules
   /analyzer/{analyzerName}/archive-rule:
     GET:
       summary: List Archive Rules
@@ -93,48 +70,26 @@ paths:
         <p>Retrieves a list of archive rules created for the specified
         analyzer.</p>
       tags:
-        - Access
         - Analyzer
+        - Analyzername
         - Archive
-        - Checks
-        - Grants
-        - Identifiers
         - Lists
-        - Names
-        - Policies
-        - Preview
+        - Rules
         - Rules
   /analyzer/{analyzerName}:
     GET:
       summary: Get Analyzer
       description: <p>Retrieves information about the specified analyzer.</p>
       tags:
-        - Access
         - Analyzer
-        - Archive
-        - Checks
-        - Grants
-        - Identifiers
-        - Names
-        - Policies
-        - Preview
-        - Rules
   /analyzer/{analyzerName}/archive-rule/{ruleName}:
     PUT:
       summary: Update Archive Rule
       description: <p>Updates the criteria and values for the specified archive rule.</p>
       tags:
-        - Access
         - Analyzer
         - Archive
-        - Checks
-        - Grants
-        - Identifiers
-        - Names
-        - Policies
-        - Preview
         - Rules
-        - Update
   /access-preview/{accessPreviewId}:
     POST:
       summary: List Access Preview Findings
@@ -143,17 +98,9 @@ paths:
         specified access preview.</p>
       tags:
         - Access
-        - Analyzer
-        - Archive
-        - Checks
         - Findings
-        - Grants
-        - Identifiers
         - Lists
-        - Names
-        - Policies
-        - Preview
-        - Rules
+        - Previews
   /analyzed-resource:
     POST:
       summary: List Analyzed Resources
@@ -161,75 +108,28 @@ paths:
         <p>Retrieves a list of resources of the specified type that have been
         analyzed by the specified analyzer..</p>
       tags:
-        - Access
         - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
-        - Grants
-        - Identifiers
         - Lists
-        - Names
-        - Policies
-        - Preview
         - Resources
-        - Rules
   /finding/{id}:
     GET:
       summary: Get Finding
       description: <p>Retrieves information about the specified finding.</p>
       tags:
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
         - Findings
-        - Grants
-        - Identifiers
-        - Names
-        - Policies
-        - Preview
-        - Resources
-        - Rules
   /findingv2/{id}:
     GET:
       summary: Get Finding V2
       description: <p>Retrieves information about the specified finding.</p>
       tags:
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
         - Findings
-        - Grants
         - Identifiers
-        - Names
-        - Policies
-        - Preview
-        - Resources
-        - Rules
-        - V2
   /finding:
     PUT:
       summary: Update Findings
       description: <p>Updates the status for the specified findings.</p>
       tags:
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
         - Findings
-        - Grants
-        - Identifiers
-        - Names
-        - Policies
-        - Preview
-        - Resources
-        - Rules
-        - Update
   /findingv2:
     POST:
       summary: List Findings V2
@@ -240,60 +140,22 @@ paths:
         href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-filter-keys.html">IAM
         Access Analyzer filter keys</a> in the <b>IAM User Guide</b>.</p>
       tags:
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
         - Findings
-        - Grants
-        - Identifiers
-        - Lists
-        - Names
-        - Policies
-        - Preview
-        - Resources
-        - Rules
   /policy/generation:
     PUT:
       summary: Start Policy Generation
       description: <p>Starts the policy generation request.</p>
       tags:
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
-        - Findings
         - Generation
-        - Grants
-        - Identifiers
-        - Names
         - Policies
-        - Preview
-        - Resources
-        - Rules
         - Start
   /tags/{resourceArn}:
     DELETE:
       summary: Untag Resource
       description: <p>Removes a tag from the specified resource.</p>
       tags:
-        - ARN
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
-        - Findings
-        - Generation
-        - Grants
-        - Identifiers
-        - Names
-        - Policies
-        - Preview
         - Resources
-        - Rules
+        - Tags
         - Untag
   /resource/scan:
     POST:
@@ -302,21 +164,7 @@ paths:
         <p>Immediately starts a scan of the policies applied to the specified
         resource.</p>
       tags:
-        - ARN
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
-        - Findings
-        - Generation
-        - Grants
-        - Identifiers
-        - Names
-        - Policies
-        - Preview
         - Resources
-        - Rules
         - Scans
         - Start
   /policy/validation:
@@ -328,21 +176,6 @@ paths:
         recommendations to resolve the issue and enable you to author functional
         policies that meet security best pract
       tags:
-        - ARN
-        - Access
-        - Analyzed
-        - Analyzer
-        - Archive
-        - Checks
-        - Findings
-        - Generation
-        - Grants
-        - Identifiers
-        - Names
         - Policies
-        - Preview
-        - Resources
-        - Rules
-        - Scans
         - Validate
         - Validations
