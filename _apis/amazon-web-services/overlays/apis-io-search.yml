@@ -97,12 +97,12 @@ apis:
     aid: amazon-web-services:accessanalyzer
   - name: AWS Migration Hub
     description: >-
-      <p>The AWS Migration Hub API methods help to obtain server and application
-      migration status and integrate your resource-specific migration tool by
-      providing a programmatic interface to Migration Hub.</p> <p>Remember that
-      you must set your AWS Migration Hub home region before you call any of
-      these APIs, or a <code>HomeRegionNotSetException</code> error will be
-      returned. Also, you must make the API calls while in your home region.</p>
+      The AWS Migration Hub API allows users to access server and application
+      migration status and seamlessly integrate resource-specific migration
+      tools through a programmatic interface. It is important to set your AWS
+      Migration Hub home region before utilizing any API methods to avoid
+      receiving a HomeRegionNotSetException error. Additionally, all API calls
+      must be made from within your designated home region.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -121,7 +121,9 @@ apis:
         url: overlays/awsmigrationhub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:awsmigrationhub
   - name: AWS Account Management
-    description: <p>Operations for Amazon Web Services Account Management</p>
+    description: >-
+      This API provides a set of functionalities for managing Amazon Web
+      Services accounts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -148,27 +150,44 @@ apis:
     aid: amazon-web-services:account
   - name: Amazon Managed Service for Prometheus (AMP)
     description: >-
-      <p>Amazon Managed Service for Prometheus is a serverless,
-      Prometheus-compatible monitoring service for container metrics that makes
-      it easier to securely monitor container environments at scale. With Amazon
-      Managed Service for Prometheus, you can use the same open-source
-      Prometheus data model and query language that you use today to monitor the
-      performance of your containerized workloads, and also enjoy improved
-      scalability, availability, and security without having to manage the
-      underlying infrastructure.</p> <p>For more information about Amazon
-      Managed Service for Prometheus, see the <a
-      href="https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html">Amazon
-      Managed Service for Prometheus</a> User Guide.</p> <p>Amazon Managed
-      Service for Prometheus includes two APIs.</p> <ul> <li> <p>Use the Amazon
-      Web Services API described in this guide to manage Amazon Managed Service
-      for Prometheus resources, such as workspaces, rule groups, and alert
-      managers.</p> </li> <li> <p>Use the <a
-      href="https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-Prometheus-Compatible-Apis">Prometheus-compatible
-      API</a> to work within your Prometheus workspace.</p> </li> </ul>
+      The Amazon Managed Service for Prometheus API is a serverless monitoring
+      service designed for container metrics. It allows users to securely
+      monitor container environments at scale using the familiar open-source
+      Prometheus data model and query language. This service provides improved
+      scalability, availability, and security without the need to manage
+      underlying infrastructure. The API includes both an Amazon Web Services
+      API for managing resources such as workspaces, rule groups, and alert
+      managers, as well as a Prometheus-compatible API for working within the
+      Prometheus workspace. For more information, refer to the Amazon Managed
+      Service for Prometheus User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alert Management
+      - Alerts
+      - Definitions
+      - Identifiers
+      - Managers
+      - Configurations
+      - Logging
+      - Update
+      - Groups
+      - Lists
+      - Namespaces
+      - Rule Groups Namespaces
+      - Rules
+      - Scrapers
+      - Workspaces
+      - Names
+      - Describe
+      - Default
+      - Scraper Configurations
+      - ARN
+      - Resources
+      - Untag
+      - Ali
+      - Alias
     properties:
       - type: Documentation
         url: https://example.com
@@ -181,7 +200,12 @@ apis:
         url: overlays/amp-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:amp
   - name: AWS Amplify Admin
-    description: <p>AWS Amplify Admin API</p>
+    description: >-
+      The AWS Amplify Admin API is a robust cloud-based service that allows
+      developers to easily manage and interact with various aspects of their
+      Amplify projects. It provides seamless integration and automation for
+      administrative tasks, enabling streamlined development workflows and
+      improved project management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
