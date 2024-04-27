@@ -11,8 +11,8 @@ paths:
         definition, it is recommended to create one using the
         CreateAlertManagerDefinition API instead of using this operation.
       tags:
-        - Alert Management
         - Alerts
+        - Alert Management
         - Definitions
         - Identifiers
         - Managers
@@ -23,12 +23,9 @@ paths:
         This API allows users to update either the log group ARN or the
         workspace ID associated with the current logging configuration.
       tags:
-        - Alert Management
         - Configurations
-        - Definitions
         - Identifiers
         - Logging
-        - Update
   /workspaces/{workspaceId}/rulegroupsnamespaces:
     GET:
       summary: List Rule Groups Namespaces
@@ -36,12 +33,9 @@ paths:
         The API provides a collection of rule groups namespaces within a
         specified workspace.
       tags:
-        - Alert Management
-        - Definitions
         - Groups
         - Identifiers
         - Lists
-        - Logging
         - Namespaces
         - Rule Groups Namespaces
         - Rules
@@ -54,12 +48,7 @@ paths:
         being created or deleted. You also have the option to apply filters to
         customize the list of scrapers returned.
       tags:
-        - Alert Management
-        - Definitions
-        - Identifiers
         - Lists
-        - Logging
-        - Rule Groups Namespaces
         - Scrapers
   /workspaces:
     GET:
@@ -69,13 +58,7 @@ paths:
         Service for Prometheus workspaces within their account, including those
         currently undergoing creation or deletion processes.
       tags:
-        - Alert Management
-        - Definitions
-        - Identifiers
         - Lists
-        - Logging
-        - Rule Groups Namespaces
-        - Scrapers
         - Workspaces
   /workspaces/{workspaceId}/rulegroupsnamespaces/{name}:
     PUT:
@@ -91,17 +74,12 @@ paths:
         namespace is not supported by this operation; instead, users should use
         the TagResource function for this purpose.
       tags:
-        - Alert Management
-        - Definitions
         - Groups
         - Identifiers
-        - Logging
         - Names
         - Namespaces
         - Rule Groups Namespaces
         - Rules
-        - Scrapers
-        - Workspaces
   /scrapers/{scraperId}:
     GET:
       summary: Describe Scraper
@@ -109,15 +87,9 @@ paths:
         The DescribeScraper operation provides details about a pre-existing
         scraper in the system.
       tags:
-        - Alert Management
-        - Definitions
         - Describe
         - Identifiers
-        - Logging
-        - Names
-        - Rule Groups Namespaces
         - Scrapers
-        - Workspaces
   /workspaces/{workspaceId}:
     GET:
       summary: Describe Workspace
@@ -125,14 +97,8 @@ paths:
         This API provides details and data pertaining to a specified workspace
         that already exists.
       tags:
-        - Alert Management
-        - Definitions
         - Describe
         - Identifiers
-        - Logging
-        - Names
-        - Rule Groups Namespaces
-        - Scrapers
         - Workspaces
   /scraperconfiguration:
     GET:
@@ -142,17 +108,10 @@ paths:
         scraper configuration that Amazon EKS employs when creating a scraper on
         your behalf.
       tags:
-        - Alert Management
         - Configurations
         - Default
-        - Definitions
-        - Identifiers
-        - Logging
-        - Names
-        - Rule Groups Namespaces
         - Scraper Configurations
         - Scrapers
-        - Workspaces
   /tags/{resourceArn}:
     DELETE:
       summary: Untag Resource
@@ -162,17 +121,8 @@ paths:
         are the only resources that can be tagged.
       tags:
         - ARN
-        - Alert Management
-        - Definitions
-        - Identifiers
-        - Logging
-        - Names
         - Resources
-        - Rule Groups Namespaces
-        - Scraper Configurations
-        - Scrapers
         - Untag
-        - Workspaces
   /workspaces/{workspaceId}/alias:
     POST:
       summary: Update Workspace Alias
