@@ -12,14 +12,10 @@ modified: 2023/11/6
 specificationVersion: '0.16'
 tags: []
 apis:
-  - name: Amazon Certificate Manager (AC<)
+  - name: Amazon Certificate Manager (AC)
     description: >-
-      <fullname>Certificate Manager</fullname> <p>You can use Certificate
-      Manager (ACM) to manage SSL/TLS certificates for your Amazon Web
-      Services-based websites and applications. For more information about using
-      ACM, see the <a
-      href="https://docs.aws.amazon.com/acm/latest/userguide/">Certificate
-      Manager User Guide</a>.</p>
+      You can use Certificate Manager (ACM) to manage SSL/TLS certificates for
+      your Amazon Web Services-based websites and applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
