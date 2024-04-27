@@ -12,12 +12,12 @@ modified: 2023/11/6
 specificationVersion: '0.16'
 tags: []
 apis:
-  - name: Amazon Certificate Manager (AC)
+  - name: AWS Certificate Manager
     description: >-
       Manage SSL/TLS certificates for your AWS-based websites and applications
       using Certificate Manager (ACM).
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/certificate-manager/
     baseURL: https://example.com
     tags:
       - Certificates
@@ -25,7 +25,7 @@ apis:
       - Update
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/certificate-manager/
       - type: OpenAPI
         url: properties/acm-openapi-original.yml
     overlays:
