@@ -14,8 +14,8 @@ tags: []
 apis:
   - name: Amazon Certificate Manager (AC)
     description: >-
-      You can use Certificate Manager (ACM) to manage SSL/TLS certificates for
-      your Amazon Web Services-based websites and applications.
+      Manage SSL/TLS certificates for your AWS-based websites and applications
+      using Certificate Manager (ACM).
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -36,34 +36,24 @@ apis:
     aid: amazon-web-services:acm
   - name: Amazon Identity and Access Management Access Analyzer
     description: >-
-      <p>Identity and Access Management Access Analyzer helps you to set,
-      verify, and refine your IAM policies by providing a suite of capabilities.
-      Its features include findings for external and unused access, basic and
-      custom policy checks for validating policies, and policy generation to
-      generate fine-grained policies. To start using IAM Access Analyzer to
-      identify external or unused access, you first need to create an
-      analyzer.</p> <p> <b>External access analyzers</b> help identify potential
-      risks of accessing resources by enabling you to identify any resource
-      policies that grant access to an external principal. It does this by using
-      logic-based reasoning to analyze resource-based policies in your Amazon
-      Web Services environment. An external principal can be another Amazon Web
-      Services account, a root user, an IAM user or role, a federated user, an
-      Amazon Web Services service, or an anonymous user. You can also use IAM
-      Access Analyzer to preview public and cross-account access to your
-      resources before deploying permissions changes.</p> <p> <b>Unused access
-      analyzers</b> help identify potential identity access risks by enabling
-      you to identify unused IAM roles, unused access keys, unused console
-      passwords, and IAM principals with unused service and action-level
-      permissions.</p> <p>Beyond findings, IAM Access Analyzer provides basic
-      and custom policy checks to validate IAM policies before deploying
-      permissions changes. You can use policy generation to refine permissions
-      by attaching a policy generated using access activity logged in CloudTrail
-      logs. </p> <p>This guide describes the IAM Access Analyzer operations that
-      you can call programmatically. For general information about IAM Access
-      Analyzer, see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html">Identity
-      and Access Management Access Analyzer</a> in the <b>IAM User
-      Guide</b>.</p>
+      The IAM Access Analyzer API provides a set of tools to help users manage
+      their Identity and Access Management policies effectively. This includes
+      features such as identifying external and unused access, conducting basic
+      and custom policy checks, and generating fine-grained policies. 
+
+
+      To use IAM Access Analyzer, users must first create an analyzer to
+      identify potential risks and access issues. External access analyzers help
+      identify resources with policies granting access to external principals,
+      while unused access analyzers highlight unused IAM roles, access keys, and
+      permissions. 
+
+
+      IAM Access Analyzer also offers policy validation checks and the ability
+      to refine permissions by generating policies based on CloudTrail logs.
+      This guide outlines the various operations that can be performed
+      programmatically with IAM Access Analyzer. For more information, refer to
+      the IAM User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
