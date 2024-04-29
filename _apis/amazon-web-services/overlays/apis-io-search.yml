@@ -28,6 +28,14 @@ apis:
         url: https://aws.amazon.com/certificate-manager/
       - type: OpenAPI
         url: properties/acm-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/certificate-manager//pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/certificate-manager//getting-started/
+      - type: Partners
+        url: https://aws.amazon.com/certificate-manager//partners/
+      - type: Events
+        url: https://aws.amazon.com/certificate-manager//events/
     overlays:
       - type: APIs.io Search
         url: overlays/acm-openapi-search.yml
