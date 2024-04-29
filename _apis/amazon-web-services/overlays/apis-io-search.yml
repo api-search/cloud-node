@@ -63,7 +63,7 @@ apis:
       programmatically with IAM Access Analyzer. For more information, refer to
       the IAM User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/access-analyzer/
     baseURL: https://example.com
     tags:
       - Archive
@@ -94,7 +94,7 @@ apis:
       - Validations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/access-analyzer/
       - type: OpenAPI
         url: properties/accessanalyzer-openapi-original.yml
     overlays:
@@ -112,14 +112,14 @@ apis:
       receiving a HomeRegionNotSetException error. Additionally, all API calls
       must be made from within your designated home region.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/migration-hub/
     baseURL: https://example.com
     tags:
       - Attributes
       - Resources
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/migration-hub/
       - type: OpenAPI
         url: properties/awsmigrationhub-openapi-original.yml
     overlays:
@@ -133,7 +133,7 @@ apis:
       This API provides a set of functionalities for managing Amazon Web
       Services accounts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/organizations/
     baseURL: https://example.com
     tags:
       - Alternate
@@ -147,7 +147,7 @@ apis:
       - Lists
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/organizations/
       - type: OpenAPI
         url: properties/account-openapi-original.yml
     overlays:
@@ -169,7 +169,7 @@ apis:
       Prometheus workspace. For more information, refer to the Amazon Managed
       Service for Prometheus User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/prometheus/
     baseURL: https://example.com
     tags:
       - Alerts
@@ -202,7 +202,7 @@ apis:
       - Update
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/prometheus/
       - type: OpenAPI
         url: properties/amp-openapi-original.yml
     overlays:
@@ -219,12 +219,12 @@ apis:
       administrative tasks, enabling streamlined development workflows and
       improved project management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.amplify.aws/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.amplify.aws/
       - type: OpenAPI
         url: properties/amplifybackend-openapi-original.yml
     overlays:
@@ -241,12 +241,12 @@ apis:
       web applications to APIs that run on Lambda, Amazon EC2, or other publicly
       addressable web services that are hosted outside of AWS.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/api-gateway/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/api-gateway/
       - type: OpenAPI
         url: properties/apigateway-openapi-original.yml
     overlays:
@@ -258,12 +258,12 @@ apis:
   - name: Amazon API Gateway V2
     description: <p>Amazon API Gateway V2</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/api-gateway/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/api-gateway/
       - type: OpenAPI
         url: properties/apigatewayv2-openapi-original.yml
     overlays:
@@ -298,12 +298,12 @@ apis:
       href="https://console.aws.amazon.com/servicequotas/">Service Quotas</a>
       console.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/private-ca/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/private-ca/
       - type: OpenAPI
         url: properties/acm-pca-openapi-original.yml
     overlays:
@@ -330,12 +330,12 @@ apis:
       href="https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html">Amplify
       User Guide</a>.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/amplify/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/amplify/
       - type: OpenAPI
         url: properties/amplifyuibuilder-openapi-original.yml
     overlays:
@@ -354,12 +354,12 @@ apis:
       the endpoint corresponding to your API's custom domain and base path, if
       applicable.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/api-gateway/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/api-gateway/
       - type: OpenAPI
         url: properties/apigatewaymanagementapi-openapi-original.yml
     overlays:
@@ -405,12 +405,12 @@ apis:
       href="http://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html">AppConfig
       User Guide</a>.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/appconfig/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/appconfig/
       - type: OpenAPI
         url: properties/appconfig-openapi-original.yml
     overlays:
