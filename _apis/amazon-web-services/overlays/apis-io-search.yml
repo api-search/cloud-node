@@ -36,6 +36,16 @@ apis:
         url: https://aws.amazon.com/certificate-manager//partners/
       - type: Events
         url: https://aws.amazon.com/certificate-manager//events/
+      - type: Features
+        url: https://aws.amazon.com/certificate-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/certificate-manager/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/certificate-manager/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/certificate-manager/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/certificate-manager/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/acm-openapi-search.yml
