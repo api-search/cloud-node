@@ -227,6 +227,20 @@ apis:
         url: https://aws.amazon.com/prometheus/
       - type: OpenAPI
         url: properties/amp-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/prometheus/features/
+      - type: Pricing
+        url: https://aws.amazon.com/prometheus/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/prometheus/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/prometheus/customers/
+      - type: Partners
+        url: https://aws.amazon.com/prometheus/partners/
+      - type: Resources
+        url: https://aws.amazon.com/prometheus/resources/
+      - type: Videos
+        url: https://aws.amazon.com/prometheus/videos/
     overlays:
       - type: APIs.io Search
         url: overlays/amp-openapi-search.yml
@@ -271,6 +285,23 @@ apis:
         url: https://aws.amazon.com/api-gateway/
       - type: OpenAPI
         url: properties/apigateway-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/api-gateway/features/
+      - type: Pricing
+        url: https://aws.amazon.com/api-gateway/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/api-gateway/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/api-gateway/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/api-gateway/faqs/
+      - type: ''
+        url: https://console.aws.amazon.com/apigateway/
+      - type: Documentation
+        url: https://console.aws.amazon.com/apigateway/
+      - type: Websockets
+        url: >-
+          https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-overview.html
     overlays:
       - type: APIs.io Search
         url: overlays/apigateway-openapi-search.yml
