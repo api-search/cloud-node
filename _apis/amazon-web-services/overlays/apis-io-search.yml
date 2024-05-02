@@ -178,7 +178,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/account-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:account
-  - name: Amazon Managed Service for Prometheus (AMP)
+  - name: Amazon Managed Service for Prometheus
     description: >-
       The Amazon Managed Service for Prometheus API is a serverless monitoring
       service designed for container metrics. It allows users to securely
@@ -508,12 +508,12 @@ apis:
       href="https://docs.aws.amazon.com/cli/latest/reference/appfabric/index.html">AppFabric
       section of the CLI Reference</a>.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appfabric/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appfabric/
       - type: OpenAPI
         url: properties/appfabric-openapi-original.yml
     overlays:
@@ -555,12 +555,12 @@ apis:
       href="https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm">
       <i>Authorize Apps with OAuth</i> </a> documentation.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appflow/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appflow/
       - type: OpenAPI
         url: properties/appflow-openapi-original.yml
     overlays:
@@ -602,47 +602,27 @@ apis:
     aid: amazon-web-services:application-insights
   - name: application-autoscaling
     description: >-
-      <p>With Application Auto Scaling, you can configure automatic scaling for
-      the following resources:</p> <ul> <li> <p>Amazon AppStream 2.0 fleets</p>
-      </li> <li> <p>Amazon Aurora Replicas</p> </li> <li> <p>Amazon Comprehend
-      document classification and entity recognizer endpoints</p> </li> <li>
-      <p>Amazon DynamoDB tables and global secondary indexes throughput
-      capacity</p> </li> <li> <p>Amazon ECS services</p> </li> <li> <p>Amazon
-      ElastiCache for Redis clusters (replication groups)</p> </li> <li>
-      <p>Amazon EMR clusters</p> </li> <li> <p>Amazon Keyspaces (for Apache
-      Cassandra) tables</p> </li> <li> <p>Lambda function provisioned
-      concurrency</p> </li> <li> <p>Amazon Managed Streaming for Apache Kafka
-      broker storage</p> </li> <li> <p>Amazon Neptune clusters</p> </li> <li>
-      <p>Amazon SageMaker endpoint variants</p> </li> <li> <p>Amazon SageMaker
-      Serverless endpoint provisioned concurrency</p> </li> <li> <p>Amazon
-      SageMaker inference components</p> </li> <li> <p>Spot Fleets (Amazon
-      EC2)</p> </li> <li> <p>Custom resources provided by your own applications
-      or services</p> </li> </ul> <p>To learn more about Application Auto
-      Scaling, see the <a
-      href="https://docs.aws.amazon.com/autoscaling/application/userguide/what-is-application-auto-scaling.html">Application
-      Auto Scaling User Guide</a>.</p> <p> <b>API Summary</b> </p> <p>The
-      Application Auto Scaling service API includes three key sets of actions:
-      </p> <ul> <li> <p>Register and manage scalable targets - Register Amazon
-      Web Services or custom resources as scalable targets (a resource that
-      Application Auto Scaling can scale), set minimum and maximum capacity
-      limits, and retrieve information on existing scalable targets.</p> </li>
-      <li> <p>Configure and manage automatic scaling - Define scaling policies
-      to dynamically scale your resources in response to CloudWatch alarms,
-      schedule one-time or recurring scaling actions, and retrieve your recent
-      scaling activity history.</p> </li> <li> <p>Suspend and resume scaling -
-      Temporarily suspend and later resume automatic scaling by calling the <a
-      href="https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html">RegisterScalableTarget</a>
-      API action for any Application Auto Scaling scalable target. You can
-      suspend and resume (individually or in combination) scale-out activities
-      that are triggered by a scaling policy, scale-in activities that are
-      triggered by a scaling policy, and scheduled scaling.</p> </li> </ul>
+      AWS Auto Scaling monitors your applications and automatically adjusts
+      capacity to maintain steady, predictable performance at the lowest
+      possible cost. Using AWS Auto Scaling, it’s easy to setup application
+      scaling for multiple resources across multiple services in minutes. The
+      service provides a simple, powerful user interface that lets you build
+      scaling plans for resources including Amazon EC2 instances and Spot
+      Fleets, Amazon ECS tasks, Amazon DynamoDB tables and indexes, and Amazon
+      Aurora Replicas. AWS Auto Scaling makes scaling simple with
+      recommendations that allow you to optimize performance, costs, or balance
+      between them. If you’re already using Amazon EC2 Auto Scaling to
+      dynamically scale your Amazon EC2 instances, you can now combine it with
+      AWS Auto Scaling to scale additional resources for other AWS services.
+      With AWS Auto Scaling, your applications always have the right resources
+      at the right time.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/autoscaling/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/autoscaling/
       - type: OpenAPI
         url: properties/application-autoscaling-openapi-original.yml
     overlays:
@@ -651,16 +631,13 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/application-autoscaling-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:application-autoscaling
-  - name: appintegrations
+  - name: Amazon AppIntegrations
     description: >-
-      <p>The Amazon AppIntegrations service enables you to configure and reuse
-      connections to external applications.</p> <p>For information about how you
-      can use external applications with Amazon Connect, see <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/crm.html">Set
-      up pre-built integrations</a> and <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-wisdom.html">Deliver
-      information to agents using Amazon Connect Wisdom</a> in the <i>Amazon
-      Connect Administrator Guide</i>.</p>
+      The Amazon AppIntegrations API allows users to easily set up connections
+      with external applications for seamless integration. Utilize pre-built
+      integrations and share information with agents using Amazon Connect Wisdom
+      by following the guidelines provided in the Amazon Connect Administrator
+      Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
