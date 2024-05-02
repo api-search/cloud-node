@@ -600,22 +600,21 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/application-insights-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:application-insights
-  - name: application-autoscaling
+  - name: AWS Auto Scaling
     description: >-
-      AWS Auto Scaling monitors your applications and automatically adjusts
-      capacity to maintain steady, predictable performance at the lowest
-      possible cost. Using AWS Auto Scaling, it’s easy to setup application
-      scaling for multiple resources across multiple services in minutes. The
-      service provides a simple, powerful user interface that lets you build
-      scaling plans for resources including Amazon EC2 instances and Spot
-      Fleets, Amazon ECS tasks, Amazon DynamoDB tables and indexes, and Amazon
-      Aurora Replicas. AWS Auto Scaling makes scaling simple with
-      recommendations that allow you to optimize performance, costs, or balance
-      between them. If you’re already using Amazon EC2 Auto Scaling to
-      dynamically scale your Amazon EC2 instances, you can now combine it with
-      AWS Auto Scaling to scale additional resources for other AWS services.
-      With AWS Auto Scaling, your applications always have the right resources
-      at the right time.
+      AWS Auto Scaling is a service that automatically adjusts the capacity of
+      your applications to maintain consistent performance at the most
+      cost-effective rate. It allows you to easily set up scaling for multiple
+      resources across various services in just minutes. With a user-friendly
+      interface, you can create scaling plans for resources such as Amazon EC2
+      instances, Amazon ECS tasks, Amazon DynamoDB tables, Amazon Aurora
+      Replicas, and Spot Fleets. 
+
+
+      The service provides recommendations to optimize performance, costs, or a
+      balance of both, making scaling straightforward. If you are currently
+      using Amazon EC2 Auto Scaling, you can integrate it with AWS Auto Scaling
+      to scale additional resources for other AWS services. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/autoscaling/
     baseURL: https://example.com
@@ -625,6 +624,14 @@ apis:
         url: https://aws.amazon.com/autoscaling/
       - type: OpenAPI
         url: properties/application-autoscaling-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/autoscaling/features/
+      - type: Pricing
+        url: https://aws.amazon.com/autoscaling/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/autoscaling/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/autoscaling/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/application-autoscaling-openapi-search.yml
@@ -653,23 +660,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/appintegrations-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appintegrations
-  - name: applicationcostprofiler
+  - name: AWS Application Cost Profiler
     description: >-
-      <p>This reference provides descriptions of the AWS Application Cost
-      Profiler API.</p> <p>The AWS Application Cost Profiler API provides
-      programmatic access to view, create, update, and delete application cost
-      report definitions, as well as to import your usage data into the
-      Application Cost Profiler service.</p> <p>For more information about using
-      this service, see the <a
-      href="https://docs.aws.amazon.com/application-cost-profiler/latest/userguide/introduction.html">AWS
-      Application Cost Profiler User Guide</a>.</p>
+      The AWS Application Cost Profiler API allows users to interact with
+      application cost report definitions by offering the ability to view,
+      create, update, and delete them. Additionally, users can import usage data
+      into the Application Cost Profiler service through this API. For detailed
+      instructions on how to utilize this service, please refer to the AWS
+      Application Cost Profiler User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-application-cost-profiler/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-application-cost-profiler/
       - type: OpenAPI
         url: properties/applicationcostprofiler-openapi-original.yml
     overlays:
@@ -678,112 +684,142 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/applicationcostprofiler-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:applicationcostprofiler
-  - name: appmesh
+  - name: AWS App Mesh
     description: >-
-      <p>AWS App Mesh is a service mesh based on the Envoy proxy that makes it
-      easy to monitor and
-               control containerized microservices. App Mesh standardizes how your microservices
-               communicate, giving you end-to-end visibility and helping to ensure high-availability for
-               your applications.</p>
-               <p>App Mesh gives you consistent visibility and network traffic controls for every
-               microservice in an application. You can use App Mesh with Amazon ECS
-               (using the Amazon EC2 launch type), Amazon EKS, and Kubernetes on AWS.</p>
-               <note>
-                  <p>App Mesh supports containerized microservice applications that use service discovery
-                  naming for their components. To use App Mesh, you must have a containerized application
-                  running on Amazon EC2 instances, hosted in either Amazon ECS, Amazon EKS, or Kubernetes on AWS. For
-                  more information about service discovery on Amazon ECS, see <a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html">Service Discovery</a> in the
-                     <i>Amazon Elastic Container Service Developer Guide</i>. Kubernetes <code>kube-dns</code> is supported.
-                  For more information, see <a href="https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/">DNS
-                     for Services and Pods</a> in the Kubernetes documentation.</p>
-               </note>
+      The AWS App Mesh is a service mesh built on the Envoy proxy that
+      simplifies the monitoring and management of containerized microservices.
+      By standardizing communication between microservices, App Mesh provides
+      comprehensive visibility and ensures high availability for applications.
+      It offers consistent visibility and control over network traffic for each
+      microservice within an application, and is compatible with Amazon ECS,
+      Amazon EKS, and Kubernetes on AWS. App Mesh is designed for containerized
+      microservice applications utilizing service discovery naming for
+      components, and requires a containerized application running on Amazon EC2
+      instances within Amazon ECS, Amazon EKS, or Kubernetes on AWS. Support for
+      service discovery on Amazon ECS can be found in the Amazon Elastic
+      Container Service Developer Guide, while Kubernetes kube-dns is also
+      supported with further information available in the Kubernetes
+      documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/app-mesh/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/app-mesh/
       - type: OpenAPI
         url: properties/appmesh-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/app-mesh/features/
+      - type: Pricing
+        url: https://aws.amazon.com/app-mesh/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/app-mesh/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/app-mesh/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/app-mesh/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/appmesh-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/appmesh-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appmesh
-  - name: appsync
+  - name: AWS AppSync
     description: >-
       <p>AppSync provides API actions for creating and interacting with data
       sources using GraphQL from your application.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appsync/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appsync/
       - type: OpenAPI
         url: properties/appsync-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/appsync/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/appsync/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/appsync/customers/
+      - type: Resources
+        url: https://aws.amazon.com/appsync/resources/
+      - type: Blog
+        url: https://aws.amazon.com/appsync/blog/
+      - type: Introspection
+        url: >-
+          https://docs.aws.amazon.com/appsync/latest/devguide/rds-introspection.html
     overlays:
       - type: APIs.io Search
         url: overlays/appsync-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/appsync-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appsync
-  - name: appstream
+  - name: Amazon AppStream
     description: >-
-      <fullname>Amazon AppStream 2.0</fullname> <p>This is the <i>Amazon
-      AppStream 2.0 API Reference</i>. This documentation provides descriptions
-      and syntax for each of the actions and data types in AppStream 2.0.
-      AppStream 2.0 is a fully managed, secure application streaming service
-      that lets you stream desktop applications to users without rewriting
-      applications. AppStream 2.0 manages the AWS resources that are required to
-      host and run your applications, scales automatically, and provides access
-      to your users on demand. </p> <note> <p>You can call the AppStream 2.0 API
-      operations by using an interface VPC endpoint (interface endpoint). For
-      more information, see <a
-      href="https://docs.aws.amazon.com/appstream2/latest/developerguide/access-api-cli-through-interface-vpc-endpoint.html">Access
-      AppStream 2.0 API Operations and CLI Commands Through an Interface VPC
-      Endpoint</a> in the <i>Amazon AppStream 2.0 Administration Guide</i>.</p>
-      </note> <p>To learn more about AppStream 2.0, see the following
-      resources:</p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/appstream2">Amazon AppStream 2.0 product
-      page</a> </p> </li> <li> <p> <a
-      href="http://aws.amazon.com/documentation/appstream2">Amazon AppStream 2.0
-      documentation</a> </p> </li> </ul>
+      Explore the Amazon AppStream 2.0 API Reference to access detailed
+      descriptions and syntax for actions and data types within the service.
+      Amazon AppStream 2.0 is a secure, fully managed application streaming
+      service that allows you to effortlessly stream desktop applications to
+      users without the need for application rewriting. AppStream 2.0 handles
+      the management of AWS resources necessary for running your applications,
+      automatically scales as needed, and offers on-demand access to users.
+      Interact with the AppStream 2.0 API operations utilizing an interface VPC
+      endpoint for streamlined connectivity. For additional guidance, refer to
+      the Amazon AppStream 2.0 Administration Guide and resources such as the
+      product page and documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appstream2/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appstream2/
       - type: OpenAPI
         url: properties/appstream-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/appstream2/features/
+      - type: Pricing
+        url: https://aws.amazon.com/appstream2/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/appstream2/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/appstream2/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/appstream2/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/appstream2/customers/
+      - type: Vendors
+        url: https://aws.amazon.com/appstream2/software-vendors/
+      - type: Enterprise
+        url: https://aws.amazon.com/appstream2/enterprises/
+      - type: Education
+        url: https://aws.amazon.com/appstream2/education/
     overlays:
       - type: APIs.io Search
         url: overlays/appstream-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/appstream-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appstream
-  - name: amplify
+  - name: Amplify
     description: >-
-      <p>Amplify enables developers to develop and deploy cloud-powered mobile
-      and web apps. Amplify Hosting provides a continuous delivery and hosting
-      service for web applications. For more information, see the <a
-      href="https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html">Amplify
-      Hosting User Guide</a>. The Amplify Framework is a comprehensive set of
-      SDKs, libraries, tools, and documentation for client app development. For
-      more information, see the <a href="https://docs.amplify.aws/">Amplify
-      Framework.</a> </p>
+      Amplify is an API designed to facilitate the development and deployment of
+      cloud-powered mobile and web applications. Amplify Hosting offers a
+      continuous delivery and hosting service specifically tailored for web
+      applications. To learn more about Amplify Hosting, refer to the user
+      guide. The Amplify Framework is a robust collection of SDKs, libraries,
+      tools, and documentation designed to assist in client app development. For
+      additional details on the Amplify Framework, please visit the
+      corresponding resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/amplify/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/amplify/
       - type: OpenAPI
         url: properties/amplify-openapi-original.yml
     overlays:
