@@ -194,23 +194,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/apigateway-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:apigateway
-  - name: Amazon API Gateway V2
-    description: <p>Amazon API Gateway V2</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/apigatewayv2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/apigatewayv2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/apigatewayv2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:apigatewayv2
   - name: Amazon Web Services Private Certificate Authority
     description: >-
       <p>This is the <i>Amazon Web Services Private Certificate Authority API
@@ -283,30 +266,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/amplifyuibuilder-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:amplifyuibuilder
-  - name: Amazon API Gateway Management
-    description: >-
-      <p>The Amazon API Gateway Management API allows you to directly manage
-      runtime aspects of your deployed APIs. To use it, you must explicitly set
-      the SDK's endpoint to point to the endpoint of your deployed API. The
-      endpoint will be of the form
-      https://{api-id}.execute-api.{region}.amazonaws.com/{stage}, or will be
-      the endpoint corresponding to your API's custom domain and base path, if
-      applicable.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/apigatewaymanagementapi-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/apigatewaymanagementapi-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/apigatewaymanagementapi-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:apigatewaymanagementapi
   - name: Amazon AppConfig
     description: >-
       <p>Use AppConfig, a capability of Amazon Web Services Systems Manager, to
