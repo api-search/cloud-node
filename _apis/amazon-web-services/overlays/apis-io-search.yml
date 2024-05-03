@@ -1204,183 +1204,207 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/braket-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:braket
-  - name: cloudcontrol
+  - name: AWS Cloud Control
     description: >-
-      <p>For more information about Amazon Web Services Cloud Control API, see
-      the <a
-      href="https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/what-is-cloudcontrolapi.html">Amazon
-      Web Services Cloud Control API User Guide</a>.</p>
+      The AWS Cloud Control API simplifies the management of AWS and third-party
+      services by providing a standardized set of APIs for developers and
+      partners. With five key operations (CRUDL), users can easily create, read,
+      update, delete, and list their cloud infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudcontrolapi/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudcontrolapi/
       - type: OpenAPI
         url: properties/cloudcontrol-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/cloudcontrolapi/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/cloudcontrolapi/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/cloudcontrolapi/faqs/
+      - type: User Guide
+        url: >-
+          https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/what-is-cloudcontrolapi.html
     overlays:
       - type: APIs.io Search
         url: overlays/cloudcontrol-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cloudcontrol-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudcontrol
-  - name: clouddirectory
+  - name: Amazon Cloud Directory
     description: >-
-      <fullname>Amazon Cloud Directory</fullname> <p>Amazon Cloud Directory is a
-      component of the AWS Directory Service that simplifies the development and
-      management of cloud-scale web, mobile, and IoT applications. This guide
-      describes the Cloud Directory operations that you can call
-      programmatically and includes detailed information on data types and
-      errors. For information about AWS Directory Services features, see <a
-      href="https://aws.amazon.com/directoryservice/">AWS Directory Service</a>
-      and the <a
-      href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">AWS
-      Directory Service Administration Guide</a>.</p>
+      The Amazon Cloud Directory is a feature within the AWS Directory Service
+      designed to streamline the creation and organization of large-scale cloud
+      applications for web, mobile, and IoT platforms. This documentation
+      provides a comprehensive overview of Cloud Directory operations that can
+      be accessed programmatically, offering detailed insights into data types
+      and potential errors. To learn more about additional features within AWS
+      Directory Services, please refer to the AWS Directory Service and the AWS
+      Directory Service Administration Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloud-directory/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloud-directory/
       - type: OpenAPI
         url: properties/clouddirectory-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloud-directory/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloud-directory/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloud-directory/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/cloud-directory/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/clouddirectory-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/clouddirectory-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:clouddirectory
-  - name: cloudformation
+  - name: AWS CloudFormation
     description: >-
-      <fullname>CloudFormation</fullname> <p>CloudFormation allows you to create
-      and manage Amazon Web Services infrastructure deployments predictably and
-      repeatedly. You can use CloudFormation to leverage Amazon Web Services
-      products, such as Amazon Elastic Compute Cloud, Amazon Elastic Block
-      Store, Amazon Simple Notification Service, Elastic Load Balancing, and
-      Auto Scaling to build highly reliable, highly scalable, cost-effective
-      applications without creating or configuring the underlying Amazon Web
-      Services infrastructure.</p> <p>With CloudFormation, you declare all your
-      resources and dependencies in a template file. The template defines a
-      collection of resources as a single unit called a stack. CloudFormation
-      creates and deletes all member resources of the stack together and manages
-      all dependencies between the resources for you.</p> <p>For more
-      information about CloudFormation, see the <a
-      href="http://aws.amazon.com/cloudformation/">CloudFormation product
-      page</a>.</p> <p>CloudFormation makes use of other Amazon Web Services
-      products. If you need additional technical information about a specific
-      Amazon Web Services product, you can find the product's technical
-      documentation at <a
-      href="https://docs.aws.amazon.com/">docs.aws.amazon.com</a>.</p>
+      CloudFormation is an Amazon Web Services tool that allows users to easily
+      create and manage infrastructure deployments in a predictable and
+      repeatable manner. With CloudFormation, you can utilize various AWS
+      products like EC2, EBS, SNS, ELB, and Auto Scaling to build reliable and
+      scalable applications without needing to manually configure the underlying
+      infrastructure. By declaring resources and their dependencies in a
+      template file, CloudFormation organizes them into a stack, enabling
+      seamless creation and deletion of all resources within the stack while
+      managing dependencies between them.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudformation/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudformation/
       - type: OpenAPI
         url: properties/cloudformation-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudformation/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudformation/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudformation/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/cloudformation/resources/
+      - type: Partners
+        url: https://aws.amazon.com/cloudformation/partners/
+      - type: FAQs
+        url: https://aws.amazon.com/cloudformation/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cloudformation-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cloudformation-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudformation
-  - name: cloud9
+  - name: AWS Cloud9
     description: >-
-      <fullname>Cloud9</fullname> <p>Cloud9 is a collection of tools that you
-      can use to code, build, run, test, debug, and release software in the
-      cloud.</p> <p>For more information about Cloud9, see the <a
-      href="https://docs.aws.amazon.com/cloud9/latest/user-guide">Cloud9 User
-      Guide</a>.</p> <p>Cloud9 supports these operations:</p> <ul> <li> <p>
-      <code>CreateEnvironmentEC2</code>: Creates an Cloud9 development
-      environment, launches an Amazon EC2 instance, and then connects from the
-      instance to the environment.</p> </li> <li> <p>
-      <code>CreateEnvironmentMembership</code>: Adds an environment member to an
-      environment.</p> </li> <li> <p> <code>DeleteEnvironment</code>: Deletes an
-      environment. If an Amazon EC2 instance is connected to the environment,
-      also terminates the instance.</p> </li> <li> <p>
-      <code>DeleteEnvironmentMembership</code>: Deletes an environment member
-      from an environment.</p> </li> <li> <p>
-      <code>DescribeEnvironmentMemberships</code>: Gets information about
-      environment members for an environment.</p> </li> <li> <p>
-      <code>DescribeEnvironments</code>: Gets information about
-      environments.</p> </li> <li> <p> <code>DescribeEnvironmentStatus</code>:
-      Gets status information for an environment.</p> </li> <li> <p>
-      <code>ListEnvironments</code>: Gets a list of environment identifiers.</p>
-      </li> <li> <p> <code>ListTagsForResource</code>: Gets the tags for an
-      environment.</p> </li> <li> <p> <code>TagResource</code>: Adds tags to an
-      environment.</p> </li> <li> <p> <code>UntagResource</code>: Removes tags
-      from an environment.</p> </li> <li> <p> <code>UpdateEnvironment</code>:
-      Changes the settings of an existing environment.</p> </li> <li> <p>
-      <code>UpdateEnvironmentMembership</code>: Changes the settings of an
-      existing environment member for an environment.</p> </li> </ul>
+      The Cloud9 API provides a wide range of tools for coding, building,
+      running, testing, debugging, and releasing software in the cloud. Users
+      can access these features through operations such as creating a
+      development environment on Amazon EC2, managing environment memberships,
+      deleting environments and members, getting information about environments
+      and members, listing environments, managing tags, and updating environment
+      settings. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloud9/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloud9/
       - type: OpenAPI
         url: properties/cloud9-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/cloud9/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloud9/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/cloud9/faqs/
+      - type: Environments
+        url: >-
+          https://aws.amazon.com/blogs/aws/aws-cloud9-cloud-developer-environments/
     overlays:
       - type: APIs.io Search
         url: overlays/cloud9-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cloud9-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloud9
-  - name: cloudfront
+  - name: Amazon CloudFront
     description: >-
-      <fullname>Amazon CloudFront</fullname> <p>Amazon CloudFront is a global
-      content delivery network (CDN) service that accelerates delivery of your
-      websites, APIs, video content or other web assets. It integrates with
-      other Amazon Web Services products to give developers and businesses an
-      easy way to accelerate content to end users with no minimum usage
-      commitments.</p>
+      Amazon CloudFront is a reliable global content delivery network (CDN)
+      service that speeds up the delivery of websites, APIs, video content, and
+      other web assets. By seamlessly integrating with various Amazon Web
+      Services products, developers and businesses can effortlessly optimize
+      content delivery to end users without any mandatory usage requirements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudfront/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudfront/
       - type: OpenAPI
         url: properties/cloudfront-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudfront/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudfront/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudfront/getting-started/
+      - type: Media
+        url: https://aws.amazon.com/cloudfront/media/
+      - type: Custoners
+        url: https://aws.amazon.com/cloudfront/customers/
+      - type: Partners
+        url: https://aws.amazon.com/cloudfront/partners/
+      - type: Resources
+        url: https://aws.amazon.com/cloudfront/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/cloudfront/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cloudfront-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cloudfront-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudfront
-  - name: cleanroomsml
+  - name: AWS Clean Rooms ML
     description: >-
-      <p>Welcome to the <i>Amazon Web Services Clean Rooms ML API
-      Reference</i>.</p> <p>Amazon Web Services Clean Rooms ML provides a
-      privacy-enhancing method for two parties to identify similar users in
-      their data without the need to share their data with each other. The first
-      party brings the training data to Clean Rooms so that they can create and
-      configure an audience model (lookalike model) and associate it with a
-      collaboration. The second party then brings their seed data to Clean Rooms
-      and generates an audience (lookalike segment) that resembles the training
-      data.</p> <p>To learn more about Amazon Web Services Clean Rooms ML
-      concepts, procedures, and best practices, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/userguide/machine-learning.html">Clean
-      Rooms User Guide</a>.</p> <p>To learn more about SQL commands, functions,
-      and conditions supported in Clean Rooms, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html">Clean
-      Rooms SQL Reference</a>.</p>
+      Introducing the Amazon Web Services Clean Rooms ML API Reference, a
+      solution that offers a secure way for two parties to identify similar
+      users in their datasets without sharing their data. First, one party
+      provides training data to create and configure an audience model, which is
+      associated with a collaboration. Then, the second party brings their seed
+      data to generate an audience that closely resembles the training data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/clean-rooms/ml/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/clean-rooms/ml/
       - type: OpenAPI
         url: properties/cleanroomsml-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/clean-rooms/ml/
+      - type: FAQs
+        url: https://aws.amazon.com/clean-rooms/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/clean-rooms/customers/
+      - type: Partners
+        url: https://aws.amazon.com/clean-rooms/partners/
+      - type: Pricing
+        url: https://aws.amazon.com/clean-rooms/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/clean-rooms/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/cleanroomsml-openapi-search.yml
