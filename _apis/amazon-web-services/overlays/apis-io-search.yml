@@ -1150,28 +1150,54 @@ apis:
         url: https://aws.amazon.com/clean-rooms/
       - type: OpenAPI
         url: properties/cleanrooms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/clean-rooms/#
+      - type: FAQs
+        url: https://aws.amazon.com/clean-rooms/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/clean-rooms/customers/
+      - type: Partners
+        url: https://aws.amazon.com/clean-rooms/partners/
+      - type: Pricing
+        url: https://aws.amazon.com/clean-rooms/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/clean-rooms/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/cleanrooms-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cleanrooms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cleanrooms
-  - name: braket
+  - name: ' Amazon Braket'
     description: >-
-      <p>The Amazon Braket API Reference provides information about the
-      operations and structures supported in Amazon Braket.</p> <p>Additional
-      Resources:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/braket/latest/developerguide/what-is-braket.html">Amazon
-      Braket Developer Guide</a> </p> </li> </ul>
+      Amazon Braket is a comprehensive and user-friendly quantum computing
+      service designed to support researchers and developers in leveraging the
+      power of quantum technology to enhance their research and speed up
+      discovery processes. With Amazon Braket, users have access to an
+      integrated development environment that enables them to experiment with
+      and create quantum algorithms, validate them using quantum circuit
+      simulators, and execute them on a variety of quantum hardware platforms.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/braket/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/braket/
       - type: OpenAPI
         url: properties/braket-openapi-original.yml
+      - type: Getting Started
+        url: https://aws.amazon.com/braket/#
+      - type: Quantum Computers
+        url: https://aws.amazon.com/braket/#
+      - type: Customers
+        url: https://aws.amazon.com/braket/customers/
+      - type: Features
+        url: https://aws.amazon.com/braket/features/
+      - type: Pricing
+        url: https://aws.amazon.com/braket/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/braket/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/braket-openapi-search.yml
