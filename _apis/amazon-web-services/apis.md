@@ -104,23 +104,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/awsmigrationhub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:awsmigrationhub
-  - name: AWS Account Management
-    description: <p>Operations for Amazon Web Services Account Management</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/account-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/account-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/account-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:account
   - name: amp
     description: >-
       <p>Amazon Managed Service for Prometheus is a serverless,
@@ -155,23 +138,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/amp-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:amp
-  - name: AWS Amplify Admin
-    description: <p>AWS Amplify Admin API</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/amplifybackend-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/amplifybackend-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/amplifybackend-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:amplifybackend
   - name: Amazon API Gateway
     description: >-
       <fullname>Amazon API Gateway</fullname> <p>Amazon API Gateway helps
@@ -234,38 +200,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/acm-pca-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:acm-pca
-  - name: Amazon Amplify UI Builder
-    description: >-
-      <p>The Amplify UI Builder API provides a programmatic interface for
-      creating and configuring user interface (UI) component libraries and
-      themes for use in your Amplify applications. You can then connect these UI
-      components to an application's backend Amazon Web Services resources.</p>
-      <p>You can also use the Amplify Studio visual designer to create UI
-      components and model data for an app. For more information, see <a
-      href="https://docs.amplify.aws/console/adminui/intro">Introduction</a> in
-      the <i>Amplify Docs</i>.</p> <p>The Amplify Framework is a comprehensive
-      set of SDKs, libraries, tools, and documentation for client app
-      development. For more information, see the <a
-      href="https://docs.amplify.aws/">Amplify Framework</a>. For more
-      information about deploying an Amplify application to Amazon Web Services,
-      see the <a
-      href="https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html">Amplify
-      User Guide</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/amplifyuibuilder-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/amplifyuibuilder-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/amplifyuibuilder-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:amplifyuibuilder
   - name: Amazon AppConfig
     description: >-
       <p>Use AppConfig, a capability of Amazon Web Services Systems Manager, to
@@ -317,66 +251,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/appconfig-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appconfig
-  - name: Amazon AppConfig Data
-    description: >-
-      <p>AppConfig Data provides the data plane APIs your application uses to
-      retrieve configuration data. Here's how it works:</p> <p>Your application
-      retrieves configuration data by first establishing a configuration session
-      using the AppConfig Data <a>StartConfigurationSession</a> API action. Your
-      session's client then makes periodic calls to
-      <a>GetLatestConfiguration</a> to check for and retrieve the latest data
-      available.</p> <p>When calling <code>StartConfigurationSession</code>,
-      your code sends the following information:</p> <ul> <li> <p>Identifiers
-      (ID or name) of an AppConfig application, environment, and configuration
-      profile that the session tracks.</p> </li> <li> <p>(Optional) The minimum
-      amount of time the session's client must wait between calls to
-      <code>GetLatestConfiguration</code>.</p> </li> </ul> <p>In response,
-      AppConfig provides an <code>InitialConfigurationToken</code> to be given
-      to the session's client and used the first time it calls
-      <code>GetLatestConfiguration</code> for that session.</p> <important>
-      <p>This token should only be used once in your first call to
-      <code>GetLatestConfiguration</code>. You <i>must</i> use the new token in
-      the <code>GetLatestConfiguration</code> response
-      (<code>NextPollConfigurationToken</code>) in each subsequent call to
-      <code>GetLatestConfiguration</code>.</p> </important> <p>When calling
-      <code>GetLatestConfiguration</code>, your client code sends the most
-      recent <code>ConfigurationToken</code> value it has and receives in
-      response:</p> <ul> <li> <p> <code>NextPollConfigurationToken</code>: the
-      <code>ConfigurationToken</code> value to use on the next call to
-      <code>GetLatestConfiguration</code>.</p> </li> <li> <p>
-      <code>NextPollIntervalInSeconds</code>: the duration the client should
-      wait before making its next call to <code>GetLatestConfiguration</code>.
-      This duration may vary over the course of the session, so it should be
-      used instead of the value sent on the
-      <code>StartConfigurationSession</code> call.</p> </li> <li> <p>The
-      configuration: the latest data intended for the session. This may be empty
-      if the client already has the latest version of the configuration.</p>
-      </li> </ul> <important> <p>The <code>InitialConfigurationToken</code> and
-      <code>NextPollConfigurationToken</code> should only be used once. To
-      support long poll use cases, the tokens are valid for up to 24 hours. If a
-      <code>GetLatestConfiguration</code> call uses an expired token, the system
-      returns <code>BadRequestException</code>.</p> </important> <p>For more
-      information and to view example CLI commands that show how to retrieve a
-      configuration using the AppConfig Data
-      <code>StartConfigurationSession</code> and
-      <code>GetLatestConfiguration</code> API actions, see <a
-      href="http://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-retrieving-the-configuration">Retrieving
-      the configuration</a> in the <i>AppConfig User Guide</i>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/appconfigdata-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/appconfigdata-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/appconfigdata-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:appconfigdata
   - name: AWS AppFabric
     description: >-
       <p>Amazon Web Services AppFabric quickly connects software as a service
@@ -455,37 +329,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/appflow-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appflow
-  - name: Amazon CloudWatch Application Insights
-    description: >-
-      <fullname>Amazon CloudWatch Application Insights</fullname> <p> Amazon
-      CloudWatch Application Insights is a service that helps you detect common
-      problems with your applications. It enables you to pinpoint the source of
-      issues in your applications (built with technologies such as Microsoft
-      IIS, .NET, and Microsoft SQL Server), by providing key insights into
-      detected problems.</p> <p>After you onboard your application, CloudWatch
-      Application Insights identifies, recommends, and sets up metrics and logs.
-      It continuously analyzes and correlates your metrics and logs for unusual
-      behavior to surface actionable problems with your application. For
-      example, if your application is slow and unresponsive and leading to HTTP
-      500 errors in your Application Load Balancer (ALB), Application Insights
-      informs you that a memory pressure problem with your SQL Server database
-      is occurring. It bases this analysis on impactful metrics and log errors.
-      </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/application-insights-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/application-insights-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/application-insights-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:application-insights
   - name: Amazon Application Auto Scaling
     description: >-
       <p>With Application Auto Scaling, you can configure automatic scaling for
@@ -537,31 +380,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/application-autoscaling-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:application-autoscaling
-  - name: Amazon AppIntegrations
-    description: >-
-      <p>The Amazon AppIntegrations service enables you to configure and reuse
-      connections to external applications.</p> <p>For information about how you
-      can use external applications with Amazon Connect, see <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/crm.html">Set
-      up pre-built integrations</a> and <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-wisdom.html">Deliver
-      information to agents using Amazon Connect Wisdom</a> in the <i>Amazon
-      Connect Administrator Guide</i>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/appintegrations-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/appintegrations-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/appintegrations-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:appintegrations
   - name: AWS Application Cost Profiler
     description: >-
       <p>This reference provides descriptions of the AWS Application Cost
@@ -874,52 +692,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/auditmanager-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:auditmanager
-  - name: Amazon Zonal Shift
-    description: >-
-      <p>Welcome to the Zonal Shift API Reference Guide for Amazon Route 53
-      Application Recovery Controller (Route 53 ARC).</p> <p>You can start a
-      zonal shift to move traffic for a load balancer resource away from an
-      Availability Zone to help your application recover quickly from an
-      impairment in an Availability Zone. For example, you can recover your
-      application from a developer's bad code deployment or from an Amazon Web
-      Services infrastructure failure in a single Availability Zone.</p> <p>You
-      can also configure zonal autoshift for a load balancer resource. Zonal
-      autoshift is a capability in Route 53 ARC where Amazon Web Services shifts
-      away application resource traffic from an Availability Zone, on your
-      behalf, to help reduce your time to recovery during events. Amazon Web
-      Services shifts away traffic for resources that are enabled for zonal
-      autoshift whenever Amazon Web Services determines that there's an issue in
-      the Availability Zone that could potentially affect customers.</p> <p>To
-      ensure that zonal autoshift is safe for your application, you must also
-      configure practice runs when you enable zonal autoshift for a resource.
-      Practice runs start weekly zonal shifts for a resource, to shift traffic
-      for the resource out of an Availability Zone. Practice runs make sure, on
-      a regular basis, that you have enough capacity in all the Availability
-      Zones in an Amazon Web Services Region for your application to continue to
-      operate normally when traffic for a resource is shifted away from one
-      Availability Zone.</p> <important> <p>You must prescale resource capacity
-      in all Availability Zones in the Region where your application is
-      deployed, before you configure practice runs or enable zonal autoshift for
-      a resource. You should not rely on scaling on demand when an autoshift or
-      practice run starts. </p> </important> <p>For more information about using
-      zonal shift and zonal autoshift, see the <a
-      href="https://docs.aws.amazon.com/r53recovery/latest/dg/what-is-route53-recovery.html">Amazon
-      Route 53 Application Recovery Controller Developer Guide</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/arc-zonal-shift-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/arc-zonal-shift-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/arc-zonal-shift-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:arc-zonal-shift
   - name: AWS Auto Scaling
     description: >-
       <fullname>AWS Auto Scaling</fullname> <p>Use AWS Auto Scaling to create
@@ -953,52 +725,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/autoscaling-plans-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:autoscaling-plans
-  - name: AWS Backup Gateway
-    description: >-
-      <p><fullname>Backup gateway</fullname> <p>Backup gateway connects Backup
-      to your hypervisor, so you can create, store, and restore backups of your
-      virtual machines (VMs) anywhere, whether on-premises or in the VMware
-      Cloud (VMC) on Amazon Web Services.</p> <p>Add on-premises resources by
-      connecting to a hypervisor through a gateway. Backup will automatically
-      discover the resources in your hypervisor.</p> <p>Use Backup to assign
-      virtual or on-premises resources to a backup plan, or run on-demand
-      backups. Once you have backed up your resources, you can view them and
-      restore them like any resource supported by Backup.</p> <p>To download the
-      Amazon Web Services software to get started, navigate to the Backup
-      console, choose <b>Gateways</b>, then choose <b>Create
-      gateway</b>.</p></p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/backup-gateway-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/backup-gateway-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/backup-gateway-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:backup-gateway
-  - name: AWS Backup Storage
-    description: The frontend service for Cryo Storage.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/backupstorage-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/backupstorage-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/backupstorage-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:backupstorage
   - name: AWS Backup
     description: >-
       <fullname>Backup</fullname> <p>Backup is a unified backup service designed
