@@ -971,19 +971,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/bedrock-agent-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:bedrock-agent-runtime
-  - name: bedrock
+  - name: Amazon Bedrock - delete
     description: >-
-      <p>Describes the API operations for creating and managing Amazon Bedrock
-      models.</p>
+      Describes the API operations for creating and managing Amazon Bedrock
+      models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
+    humanURL: https://aws.amazon.com/bedrock/
+    baseURL: https://example.coms
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/bedrock/
       - type: OpenAPI
         url: properties/bedrock-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/bedrock/#
+      - type: Pricing
+        url: https://aws.amazon.com/bedrock/pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/bedrock-openapi-search.yml
@@ -1028,45 +1032,46 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/bedrock-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:bedrock-runtime
-  - name: billingconductor
+  - name: AWS Billing Conductor
     description: >-
-      <p>Amazon Web Services Billing Conductor is a fully managed service that
-      you can use to customize a <a
-      href="https://docs.aws.amazon.com/billingconductor/latest/userguide/understanding-eb.html#eb-other-definitions">proforma</a>
-      version of your billing data each month, to accurately show or chargeback
-      your end customers. Amazon Web Services Billing Conductor doesn't change
-      the way you're billed by Amazon Web Services each month by design.
-      Instead, it provides you with a mechanism to configure, generate, and
-      display rates to certain customers over a given billing period. You can
-      also analyze the difference between the rates you apply to your accounting
-      groupings relative to your actual rates from Amazon Web Services. As a
-      result of your Amazon Web Services Billing Conductor configuration, the
-      payer account can also see the custom rate applied on the billing details
-      page of the <a href="https://console.aws.amazon.com/billing">Amazon Web
-      Services Billing console</a>, or configure a cost and usage report per
-      billing group.</p> <p>This documentation shows how you can configure
-      Amazon Web Services Billing Conductor using its API. For more information
-      about using the <a
-      href="https://console.aws.amazon.com/billingconductor/">Amazon Web
-      Services Billing Conductor</a> user interface, see the <a
-      href="https://docs.aws.amazon.com/billingconductor/latest/userguide/what-is-billingconductor.html">
-      Amazon Web Services Billing Conductor User Guide</a>.</p>
+      The Amazon Web Services Billing Conductor API is a fully managed service
+      that allows you to customize your billing data each month for accurate
+      showback or chargeback to your end customers. It does not alter the way
+      you are billed by AWS, but rather enables you to configure, generate, and
+      display rates for specific customers during a billing period. You can also
+      compare the rates you set to your actual AWS rates. With the API, payer
+      accounts can view custom rates on the billing details page or set up cost
+      and usage reports per billing group. This documentation provides
+      instructions on configuring the AWS Billing Conductor API. For more
+      details on using the user interface, refer to the Amazon Web Services
+      Billing Conductor User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/
       - type: OpenAPI
         url: properties/billingconductor-openapi-original.yml
+      - type: Features
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-billing-conductor/features/
+      - type: Pricing
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-billing-conductor/pricing/
+      - type: Getting Started
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-billing-conductor/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/billingconductor-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/billingconductor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:billingconductor
-  - name: budgets
+  - name: AWS Budgets
     description: >-
       <p>Use the Amazon Web Services Budgets API to plan your service usage,
       service costs, and instance reservations. This API reference provides
@@ -1097,102 +1102,112 @@ apis:
       href="https://aws.amazon.com/aws-cost-management/pricing/">Amazon Web
       Services Cost Management Pricing</a>.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-budgets/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-cost-management/aws-budgets/
       - type: OpenAPI
         url: properties/budgets-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/aws-cost-management/aws-budgets/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/aws-cost-management/aws-budgets/faqs/
+      - type: Reports
+        url: >-
+          https://aws.amazon.com/blogs/aws-cloud-financial-management/launch-aws-budgets-reports/
     overlays:
       - type: APIs.io Search
         url: overlays/budgets-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/budgets-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:budgets
-  - name: ce
+  - name: AWS  Cost Explorer
     description: >-
-      <p>You can use the Cost Explorer API to programmatically query your cost
-      and usage data. You can query for aggregated data such as total monthly
-      costs or total daily usage. You can also query for granular data. This
-      might include the number of daily write operations for Amazon DynamoDB
-      database tables in your production environment. </p> <p>Service
-      Endpoint</p> <p>The Cost Explorer API provides the following endpoint:</p>
-      <ul> <li> <p> <code>https://ce.us-east-1.amazonaws.com</code> </p> </li>
-      </ul> <p>For information about the costs that are associated with the Cost
-      Explorer API, see <a
-      href="http://aws.amazon.com/aws-cost-management/pricing/">Amazon Web
-      Services Cost Management Pricing</a>.</p>
+      The Cost Explorer API allows you to access your cost and usage data
+      programmatically. You can retrieve aggregated information like total
+      monthly costs or daily usage, as well as more detailed data such as
+      specific operations for services like Amazon DynamoDB. The service
+      endpoint for the Cost Explorer API is https://ce.us-east-1.amazonaws.com.
+      For pricing details, refer to Amazon Web Services Cost Management Pricing.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
+    baseURL: https://ce.us-east-1.amazonaws.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
       - type: OpenAPI
         url: properties/ce-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/features/
+      - type: Pricing
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/faqs/
+      - type: Getting Started
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-explorer/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/ce-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ce-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ce
-  - name: chime
+  - name: AWS Chime
     description: >-
-      <important> <p> <b>Most of these APIs are no longer supported and will not
-      be updated.</b> We recommend using the latest versions in the <a
-      href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/welcome.html">Amazon
-      Chime SDK API reference</a>, in the Amazon Chime SDK.</p> <p>Using the
-      latest versions requires migrating to dedicated namespaces. For more
-      information, refer to <a
-      href="https://docs.aws.amazon.com/chime-sdk/latest/dg/migrate-from-chm-namespace.html">Migrating
-      from the Amazon Chime namespace</a> in the <i>Amazon Chime SDK Developer
-      Guide</i>.</p> </important> <p>The Amazon Chime application programming
-      interface (API) is designed so administrators can perform key tasks, such
-      as creating and managing Amazon Chime accounts, users, and Voice
-      Connectors. This guide provides detailed information about the Amazon
-      Chime API, including operations, types, inputs and outputs, and error
-      codes.</p> <p>You can use an AWS SDK, the AWS Command Line Interface (AWS
-      CLI), or the REST API to make API calls for Amazon Chime. We recommend
-      using an AWS SDK or the AWS CLI. The page for each API action contains a
-      <i>See Also</i> section that includes links to information about using the
-      action with a language-specific AWS SDK or the AWS CLI.</p> <dl> <dt>Using
-      an AWS SDK</dt> <dd> <p> You don't need to write code to calculate a
-      signature for request authentication. The SDK clients authenticate your
-      requests by using access keys that you provide. For more information about
-      AWS SDKs, see the <a href="http://aws.amazon.com/developer/">AWS Developer
-      Center</a>. </p> </dd> <dt>Using the AWS CLI</dt> <dd> <p>Use your access
-      keys with the AWS CLI to make API calls. For information about setting up
-      the AWS CLI, see <a
-      href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html">Installing
-      the AWS Command Line Interface</a> in the <i>AWS Command Line Interface
-      User Guide</i>. For a list of available Amazon Chime commands, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/chime/index.html">Amazon
-      Chime commands</a> in the <i>AWS CLI Command Reference</i>. </p> </dd>
-      <dt>Using REST APIs</dt> <dd> <p>If you use REST to make API calls, you
-      must authenticate your request by providing a signature. Amazon Chime
-      supports Signature Version 4. For more information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a> in the <i>Amazon Web Services General
-      Reference</i>.</p> <p>When making REST API calls, use the service name
-      <code>chime</code> and REST endpoint
-      <code>https://service.chime.aws.amazon.com</code>.</p> </dd> </dl>
-      <p>Administrative permissions are controlled using AWS Identity and Access
-      Management (IAM). For more information, see <a
-      href="https://docs.aws.amazon.com/chime/latest/ag/security-iam.html">Identity
-      and Access Management for Amazon Chime</a> in the <i>Amazon Chime
-      Administration Guide</i>.</p>
+      Amazon Chime is a communications service that lets you meet, chat, and
+      place business calls inside and outside your organization, all using a
+      single application.
+
+
+      With Amazon Chime, customers can:
+
+
+      Conduct and attend online meetings with HD video, audio, screen sharing,
+      meeting chat, dial-in numbers, and in-room video conference support;
+
+      Use chat and chat rooms for persistent communications across desktop and
+      mobile devices;
+
+      Administer enterprise users, manage policies, and setup SSO or other
+      advanced features in minutes using the Amazon Chime management console.
+
+      Amazon Chime offers an easy-to-use app available for Windows, Mac, web,
+      iOS, and Android devices.
+
+
+      For a set of real-time communications components to quickly add messaging,
+      audio, video, and screen sharing capabilities to your web or mobile
+      applications, please visit Amazon Chime SDK.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/chime/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/chime/
       - type: OpenAPI
         url: properties/chime-openapi-original.yml
+      - type: Contact
+        url: https://pages.awscloud.com/chime-contact-us
+      - type: SDK
+        url: https://aws.amazon.com/chime/chime-sdk/
+      - type: Downloads
+        url: https://aws.amazon.com/chime/download/
+      - type: Answers
+        url: http://answers.chime.aws
+      - type: Pricing
+        url: https://aws.amazon.com/chime/pricing/
+      - type: Customers
+        url: https://aws.amazon.com/chime/customers/
+      - type: FAQs
+        url: https://aws.amazon.com/chime/faq/
+      - type: Getting Started
+        url: https://aws.amazon.com/chime/getting-started/
+      - type: Features
+        url: https://aws.amazon.com/chime/features/
     overlays:
       - type: APIs.io Search
         url: overlays/chime-openapi-search.yml
@@ -1292,27 +1307,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/chime-sdk-meetings-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:chime-sdk-meetings
-  - name: cleanrooms
+  - name: AWS Clean Rooms
     description: >-
-      <p>Welcome to the <i>Clean Rooms API Reference</i>.</p> <p>Clean Rooms is
-      an Amazon Web Services service that helps multiple parties to join their
-      data together in a secure collaboration workspace. In the collaboration,
-      members who can query and receive results can get insights into the
-      collective datasets without either party getting access to the other
-      party's raw data.</p> <p>To learn more about Clean Rooms concepts,
-      procedures, and best practices, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html">Clean
-      Rooms User Guide</a>.</p> <p>To learn more about SQL commands, functions,
-      and conditions supported in Clean Rooms, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html">Clean
-      Rooms SQL Reference</a>.</p>
+      Introducing the Clean Rooms API, designed for use with Amazon Web
+      Services. This API allows multiple parties to securely collaborate and
+      combine their data in a shared workspace. This collaborative environment
+      enables members to query and receive insights from aggregated datasets
+      without exposing raw data to other parties. For a comprehensive
+      understanding of Clean Rooms usage, refer to the Clean Rooms User Guide.
+      To explore the SQL commands, functions, and conditions supported by Clean
+      Rooms, consult the Clean Rooms SQL Reference.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/clean-rooms/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/clean-rooms/
       - type: OpenAPI
         url: properties/cleanrooms-openapi-original.yml
     overlays:
