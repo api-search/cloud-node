@@ -935,16 +935,36 @@ apis:
         url: overlays/bcm-data-exports-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:bcm-data-exports
   - name: Amazon Bedrock Agent
-    description: <p>Amazon Bedrock Agent</p>
+    description: >-
+      Enhance the capabilities of generative AI applications by allowing them to
+      seamlessly perform complex multi-step tasks across various company systems
+      and data sources. Amazon Bedrock agents improve operational efficiency,
+      customer service, and decision-making processes whilst simultaneously
+      driving down costs and fostering innovation within the organization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/bedrock/agents/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/bedrock/agents/
       - type: OpenAPI
         url: properties/bedrock-agent-runtime-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/bedrock/agents/#
+      - type: Pricing
+        url: >-
+          https://aws.amazon.com/bedrock/pricing/?refid=0eaabb80-ee46-4e73-94ae-368ffb759b62
+      - type: Models
+        url: https://aws.amazon.com/bedrock/agents/
+      - type: FAQs
+        url: >-
+          https://aws.amazon.com/bedrock/faqs/?refid=0eaabb80-ee46-4e73-94ae-368ffb759b62
+      - type: Testimonials
+        url: https://aws.amazon.com/bedrock/testimonials/
+      - type: Resources
+        url: >-
+          https://aws.amazon.com/bedrock/resources/?refid=0eaabb80-ee46-4e73-94ae-368ffb759b62
     overlays:
       - type: APIs.io Search
         url: overlays/bedrock-agent-runtime-openapi-search.yml
