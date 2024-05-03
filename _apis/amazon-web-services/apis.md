@@ -104,40 +104,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/awsmigrationhub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:awsmigrationhub
-  - name: amp
-    description: >-
-      <p>Amazon Managed Service for Prometheus is a serverless,
-      Prometheus-compatible monitoring service for container metrics that makes
-      it easier to securely monitor container environments at scale. With Amazon
-      Managed Service for Prometheus, you can use the same open-source
-      Prometheus data model and query language that you use today to monitor the
-      performance of your containerized workloads, and also enjoy improved
-      scalability, availability, and security without having to manage the
-      underlying infrastructure.</p> <p>For more information about Amazon
-      Managed Service for Prometheus, see the <a
-      href="https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html">Amazon
-      Managed Service for Prometheus</a> User Guide.</p> <p>Amazon Managed
-      Service for Prometheus includes two APIs.</p> <ul> <li> <p>Use the Amazon
-      Web Services API described in this guide to manage Amazon Managed Service
-      for Prometheus resources, such as workspaces, rule groups, and alert
-      managers.</p> </li> <li> <p>Use the <a
-      href="https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIReference.html#AMP-APIReference-Prometheus-Compatible-Apis">Prometheus-compatible
-      API</a> to work within your Prometheus workspace.</p> </li> </ul>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/amp-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/amp-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/amp-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:amp
   - name: Amazon API Gateway
     description: >-
       <fullname>Amazon API Gateway</fullname> <p>Amazon API Gateway helps
@@ -778,64 +744,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/batch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:batch
-  - name: AWS Data Exports
-    description: >-
-      <p>You can use the Data Exports API to create customized exports from
-      multiple Amazon Web Services cost management and billing datasets, such as
-      cost and usage data and cost optimization recommendations.</p> <p>The Data
-      Exports API provides the following endpoint:</p> <ul> <li>
-      <p>https://bcm-data-exports.us-east-1.api.aws</p> </li> </ul>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/bcm-data-exports-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bcm-data-exports-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bcm-data-exports-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bcm-data-exports
-  - name: bedrock-agent-runtime
-    description: <p>Amazon Bedrock Agent</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/bedrock-agent-runtime-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bedrock-agent-runtime-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bedrock-agent-runtime-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bedrock-agent-runtime
-  - name: AWS Bedrock
-    description: >-
-      <p>Describes the API operations for creating and managing Amazon Bedrock
-      models.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/bedrock-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bedrock-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bedrock-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bedrock
   - name: AWS Bedrock Agent
     description: >-
       <p>An example service, deployed with the Octane Service creator, which
@@ -855,25 +763,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/bedrock-agent-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:bedrock-agent
-  - name: AWS Bedrock Runtime
-    description: >-
-      <p>Describes the API operations for running inference using Bedrock
-      models.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/bedrock-runtime-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bedrock-runtime-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bedrock-runtime-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bedrock-runtime
   - name: AWS Billing Conductor
     description: >-
       <p>Amazon Web Services Billing Conductor is a fully managed service that

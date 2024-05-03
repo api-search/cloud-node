@@ -912,28 +912,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/batch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:batch
-  - name: bcm-data-exports
-    description: >-
-      <p>You can use the Data Exports API to create customized exports from
-      multiple Amazon Web Services cost management and billing datasets, such as
-      cost and usage data and cost optimization recommendations.</p> <p>The Data
-      Exports API provides the following endpoint:</p> <ul> <li>
-      <p>https://bcm-data-exports.us-east-1.api.aws</p> </li> </ul>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/bcm-data-exports-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bcm-data-exports-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bcm-data-exports-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bcm-data-exports
   - name: Amazon Bedrock Agent
     description: >-
       Enhance the capabilities of generative AI applications by allowing them to
@@ -971,67 +949,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/bedrock-agent-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:bedrock-agent-runtime
-  - name: Amazon Bedrock - delete
-    description: >-
-      Describes the API operations for creating and managing Amazon Bedrock
-      models.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://aws.amazon.com/bedrock/
-    baseURL: https://example.coms
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://aws.amazon.com/bedrock/
-      - type: OpenAPI
-        url: properties/bedrock-openapi-original.yml
-      - type: Features
-        url: https://aws.amazon.com/bedrock/#
-      - type: Pricing
-        url: https://aws.amazon.com/bedrock/pricing/
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bedrock-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bedrock-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bedrock
-  - name: bedrock-agent
-    description: >-
-      <p>An example service, deployed with the Octane Service creator, which
-      will echo the string</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/bedrock-agent-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bedrock-agent-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bedrock-agent-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bedrock-agent
-  - name: bedrock-runtime
-    description: >-
-      <p>Describes the API operations for running inference using Bedrock
-      models.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/bedrock-runtime-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/bedrock-runtime-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bedrock-runtime-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bedrock-runtime
   - name: AWS Billing Conductor
     description: >-
       The Amazon Web Services Billing Conductor API is a fully managed service
