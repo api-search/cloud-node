@@ -1434,21 +1434,34 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/chime-sdk-messaging-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:chime-sdk-messaging
-  - name: cloudhsmv2
+  - name: AWS CloudHSM
     description: >-
-      <p>For more information about AWS CloudHSM, see <a
-      href="http://aws.amazon.com/cloudhsm/">AWS CloudHSM</a> and the <a
-      href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS CloudHSM
-      User Guide</a>.</p>
+      The AWS CloudHSM API provides a secure and compliant solution for managing
+      and accessing keys on FIPS-validated hardware. With customer-owned,
+      single-tenant HSM instances running in your Virtual Private Cloud (VPC),
+      you can easily meet corporate, contractual, and regulatory data security
+      requirements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudhsm/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudhsm/
       - type: OpenAPI
         url: properties/cloudhsmv2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudhsm/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudhsm/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudhsm/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/cloudhsm/resources/
+      - type: Customers
+        url: https://aws.amazon.com/cloudhsm/customers/
+      - type: FAQs
+        url: https://aws.amazon.com/cloudhsm/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cloudhsmv2-openapi-search.yml
@@ -1483,26 +1496,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudsearchdomain-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudsearchdomain
-  - name: cloudsearch
+  - name: Amazon CloudSearch
     description: >-
-      <fullname>Amazon CloudSearch Configuration Service</fullname> <p>You use
-      the Amazon CloudSearch configuration service to create, configure, and
-      manage search domains. Configuration service requests are submitted using
-      the AWS Query protocol. AWS Query requests are HTTP or HTTPS requests
-      submitted via HTTP GET or POST with a query parameter named Action.</p>
-      <p>The endpoint for configuration service requests is region-specific:
-      cloudsearch.<i>region</i>.amazonaws.com. For example,
-      cloudsearch.us-east-1.amazonaws.com. For a current list of supported
-      regions and endpoints, see <a
-      href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region"
-      target="_blank">Regions and Endpoints</a>.</p>
+      Amazon CloudSearch, is a cloud-based service that simplifies the process
+      of setting up, managing, and expanding a search solution for your website.
+      It allows you to easily search through extensive datasets, including web
+      pages, documents, forum posts, and product information. With Amazon
+      CloudSearch, you can enhance your website with search functionality
+      without the need for extensive expertise or concerns about hardware
+      management. The service seamlessly adjusts to fluctuating data volumes and
+      traffic levels to ensure optimal performance at all times.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/cloudsearch/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/cloudsearch/
       - type: OpenAPI
         url: properties/cloudsearch-openapi-original.yml
     overlays:
@@ -1511,26 +1521,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudsearch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudsearch
-  - name: cloudtrail-data
+  - name: AWS CloudTrail
     description: >-
-      <p>The CloudTrail Data Service lets you ingest events into CloudTrail from
-      any source in your hybrid environments, such as in-house or SaaS
-      applications hosted on-premises or in the cloud, virtual machines, or
-      containers. You can store, access, analyze, troubleshoot and take action
-      on this data without maintaining multiple log aggregators and reporting
-      tools. After you run <code>PutAuditEvents</code> to ingest your
-      application activity into CloudTrail, you can use CloudTrail Lake to
-      search, query, and analyze the data that is logged from your
-      applications.</p>
+      With AWS CloudTrail, you can monitor your AWS deployments in the cloud by
+      getting a history of AWS API calls for your account, including API calls
+      made by using the AWS Management Console, the AWS SDKs, the command line
+      tools, and higher-level AWS services. You can also identify which users
+      and accounts called AWS APIs for services that support CloudTrail, the
+      source IP address from which the calls were made, and when the calls
+      occurred. You can integrate CloudTrail into applications using the API,
+      automate trail creation for your organization, check the status of your
+      trails, and control how administrators turn CloudTrail logging on and off.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/cloudtrail/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/cloudtrail/
       - type: OpenAPI
         url: properties/cloudtrail-data-openapi-original.yml
+      - type: User Guide
+        url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/index.html
+      - type: Partners
+        url: >-
+          https://docs.aws.amazon.com/awscloudtrail/latest/partner-onboarding/cloudtrail-lake-partner-onboarding.html
     overlays:
       - type: APIs.io Search
         url: overlays/cloudtrail-data-openapi-search.yml
@@ -1568,86 +1583,24 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudhsm-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudhsm
-  - name: codecatalyst
+  - name: Amazon CodeCatalyst
     description: >-
-      <p>Welcome to the Amazon CodeCatalyst API reference. This reference
-      provides descriptions of operations and data types for Amazon
-      CodeCatalyst. You can use the Amazon CodeCatalyst API to work with the
-      following objects. </p> <p>Spaces, by calling the following:</p> <ul> <li>
-      <p> <a>DeleteSpace</a>, which deletes a space.</p> </li> <li> <p>
-      <a>GetSpace</a>, which returns information about a space.</p> </li> <li>
-      <p> <a>GetSubscription</a>, which returns information about the Amazon Web
-      Services account used for billing purposes and the billing plan for the
-      space.</p> </li> <li> <p> <a>ListSpaces</a>, which retrieves a list of
-      spaces.</p> </li> <li> <p> <a>UpdateSpace</a>, which changes one or more
-      values for a space.</p> </li> </ul> <p>Projects, by calling the
-      following:</p> <ul> <li> <p> <a>CreateProject</a> which creates a project
-      in a specified space.</p> </li> <li> <p> <a>GetProject</a>, which returns
-      information about a project.</p> </li> <li> <p> <a>ListProjects</a>, which
-      retrieves a list of projects in a space.</p> </li> </ul> <p>Users, by
-      calling the following:</p> <ul> <li> <p> <a>GetUserDetails</a>, which
-      returns information about a user in Amazon CodeCatalyst.</p> </li> </ul>
-      <p>Source repositories, by calling the following:</p> <ul> <li> <p>
-      <a>CreateSourceRepository</a>, which creates an empty Git-based source
-      repository in a specified project.</p> </li> <li> <p>
-      <a>CreateSourceRepositoryBranch</a>, which creates a branch in a specified
-      repository where you can work on code.</p> </li> <li> <p>
-      <a>DeleteSourceRepository</a>, which deletes a source repository.</p>
-      </li> <li> <p> <a>GetSourceRepository</a>, which returns information about
-      a source repository.</p> </li> <li> <p>
-      <a>GetSourceRepositoryCloneUrls</a>, which returns information about the
-      URLs that can be used with a Git client to clone a source repository.</p>
-      </li> <li> <p> <a>ListSourceRepositories</a>, which retrieves a list of
-      source repositories in a project.</p> </li> <li> <p>
-      <a>ListSourceRepositoryBranches</a>, which retrieves a list of branches in
-      a source repository.</p> </li> </ul> <p>Dev Environments and the Amazon
-      Web Services Toolkits, by calling the following:</p> <ul> <li> <p>
-      <a>CreateDevEnvironment</a>, which creates a Dev Environment, where you
-      can quickly work on the code stored in the source repositories of your
-      project.</p> </li> <li> <p> <a>DeleteDevEnvironment</a>, which deletes a
-      Dev Environment.</p> </li> <li> <p> <a>GetDevEnvironment</a>, which
-      returns information about a Dev Environment.</p> </li> <li> <p>
-      <a>ListDevEnvironments</a>, which retrieves a list of Dev Environments in
-      a project.</p> </li> <li> <p> <a>ListDevEnvironmentSessions</a>, which
-      retrieves a list of active Dev Environment sessions in a project.</p>
-      </li> <li> <p> <a>StartDevEnvironment</a>, which starts a specified Dev
-      Environment and puts it into an active state.</p> </li> <li> <p>
-      <a>StartDevEnvironmentSession</a>, which starts a session to a specified
-      Dev Environment.</p> </li> <li> <p> <a>StopDevEnvironment</a>, which stops
-      a specified Dev Environment and puts it into an stopped state.</p> </li>
-      <li> <p> <a>StopDevEnvironmentSession</a>, which stops a session for a
-      specified Dev Environment.</p> </li> <li> <p> <a>UpdateDevEnvironment</a>,
-      which changes one or more values for a Dev Environment.</p> </li> </ul>
-      <p>Workflows, by calling the following:</p> <ul> <li> <p>
-      <a>GetWorkflow</a>, which returns information about a workflow.</p> </li>
-      <li> <p> <a>GetWorkflowRun</a>, which returns information about a
-      specified run of a workflow.</p> </li> <li> <p> <a>ListWorkflowRuns</a>,
-      which retrieves a list of runs of a specified workflow.</p> </li> <li> <p>
-      <a>ListWorkflows</a>, which retrieves a list of workflows in a specified
-      project.</p> </li> <li> <p> <a>StartWorkflowRun</a>, which starts a run of
-      a specified workflow.</p> </li> </ul> <p>Security, activity, and resource
-      management in Amazon CodeCatalyst, by calling the following:</p> <ul> <li>
-      <p> <a>CreateAccessToken</a>, which creates a personal access token (PAT)
-      for the current user.</p> </li> <li> <p> <a>DeleteAccessToken</a>, which
-      deletes a specified personal access token (PAT).</p> </li> <li> <p>
-      <a>ListAccessTokens</a>, which lists all personal access tokens (PATs)
-      associated with a user.</p> </li> <li> <p> <a>ListEventLogs</a>, which
-      retrieves a list of events that occurred during a specified time period in
-      a space.</p> </li> <li> <p> <a>VerifySession</a>, which verifies whether
-      the calling user has a valid Amazon CodeCatalyst login and session.</p>
-      </li> </ul> <note> <p>If you are using the Amazon CodeCatalyst APIs with
-      an SDK or the CLI, you must configure your computer to work with Amazon
-      CodeCatalyst and single sign-on (SSO). For more information, see <a
-      href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/set-up-cli.html">Setting
-      up to use the CLI with Amazon CodeCatalyst</a> and the SSO documentation
-      for your SDK.</p> </note>
+      Amazon CodeCatalyst is a unified software development service for
+      development teams to quickly build, deliver and scale applications on AWS
+      while adhering to organization-specific best practices. Developers can
+      automate development tasks and innovate faster with generative AI
+      capabilities, and spend less time setting up project tools, managing CI/CD
+      pipelines, provisioning and configuring various development environments
+      or coordinating with team members. IT Leaders can codify organizational
+      best practices at scale via application blueprints to ensure compliance
+      across teams with scale.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codecatalyst/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codecatalyst/
       - type: OpenAPI
         url: properties/codecatalyst-openapi-original.yml
     overlays:
@@ -1656,7 +1609,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/codecatalyst-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:codecatalyst
-  - name: cloudfront-keyvaluestore
+  - name: Amazon CloudFront KeyValueStore
     description: >-
       <p>Amazon CloudFront KeyValueStore Service to View and Update Data in a
       KVS Resource</p>
@@ -1675,29 +1628,36 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudfront-keyvaluestore-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudfront-keyvaluestore
-  - name: codebuild
-    description: >-
-      <fullname>CodeBuild</fullname> <p>CodeBuild is a fully managed build
-      service in the cloud. CodeBuild compiles your source code, runs unit
-      tests, and produces artifacts that are ready to deploy. CodeBuild
-      eliminates the need to provision, manage, and scale your own build
-      servers. It provides prepackaged build environments for the most popular
-      programming languages and build tools, such as Apache Maven, Gradle, and
-      more. You can also fully customize build environments in CodeBuild to use
-      your own build tools. CodeBuild scales automatically to meet peak build
-      requests. You pay only for the build time you consume. For more
-      information about CodeBuild, see the <i> <a
-      href="https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html">CodeBuild
-      User Guide</a>.</i> </p>
+  - name: AWS CodeBuild
+    description: >+
+      AWS CodeBuild is a fully managed continuous integration service that
+      compiles source code, runs tests, and produces ready-to-deploy software
+      packages. With CodeBuild, you don’t need to provision, manage, and scale
+      your own build servers. You just specify the location of your source code
+      and choose your build settings, and CodeBuild will run your build scripts
+      for compiling, testing, and packaging your code.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codebuild/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codebuild/
       - type: OpenAPI
         url: properties/codebuild-openapi-original.yml
+      - type: Testimonials
+        url: https://aws.amazon.com/codebuild/customer-testimonials/
+      - type: Integrations
+        url: https://aws.amazon.com/codebuild/product-integrations/
+      - type: FAQs
+        url: https://aws.amazon.com/codebuild/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/codebuild/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/codebuild/pricing/
+      - type: Features
+        url: https://aws.amazon.com/codebuild/features/
     overlays:
       - type: APIs.io Search
         url: overlays/codebuild-openapi-search.yml
