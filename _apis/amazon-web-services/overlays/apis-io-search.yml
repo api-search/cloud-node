@@ -874,32 +874,38 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/backup-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:backup
-  - name: batch
+  - name: AWS Batch
     description: >-
-      <fullname>Batch</fullname> <p>Using Batch, you can run batch computing
-      workloads on the Amazon Web Services Cloud. Batch computing is a common
-      means for developers, scientists, and engineers to access large amounts of
-      compute resources. Batch uses the advantages of the batch computing to
-      remove the undifferentiated heavy lifting of configuring and managing
-      required infrastructure. At the same time, it also adopts a familiar batch
+      Batch Using Batch, you can run batch computing workloads on the Amazon Web
+      Services Cloud. Batch computing is a common means for developers,
+      scientists, and engineers to access large amounts of compute resources.
+      Batch uses the advantages of the batch computing to remove the
+      undifferentiated heavy lifting of configuring and managing required
+      infrastructure. At the same time, it also adopts a familiar batch
       computing software approach. You can use Batch to efficiently provision
       resources d, and work toward eliminating capacity constraints, reducing
-      your overall compute costs, and delivering results more quickly.</p> <p>As
-      a fully managed service, Batch can run batch computing workloads of any
+      your overall compute costs, and delivering results more quickly. As a
+      fully managed service, Batch can run batch computing workloads of any
       scale. Batch automatically provisions compute resources and optimizes
       workload distribution based on the quantity and scale of your specific
       workloads. With Batch, there's no need to install or manage batch
       computing software. This means that you can focus on analyzing results and
-      solving your specific problems instead.</p>
+      solving your specific problems instead.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/batch/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/batch/
       - type: OpenAPI
         url: properties/batch-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/batch/features/?nc=sn&loc=2
+      - type: Pricing
+        url: https://aws.amazon.com/batch/pricing/?nc=sn&loc=3
+      - type: FAQs
+        url: https://aws.amazon.com/batch/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/batch-openapi-search.yml
@@ -928,7 +934,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/bcm-data-exports-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:bcm-data-exports
-  - name: bedrock-agent-runtime
+  - name: Amazon Bedrock Agent
     description: <p>Amazon Bedrock Agent</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
