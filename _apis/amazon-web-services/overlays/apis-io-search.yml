@@ -1411,29 +1411,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cleanroomsml-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cleanroomsml
-  - name: chime-sdk-messaging
-    description: >-
-      <p>The Amazon Chime SDK messaging APIs in this section allow software
-      developers to send and receive messages in custom messaging applications.
-      These APIs depend on the frameworks provided by the Amazon Chime SDK
-      identity APIs. For more information about the messaging APIs, see <a
-      href="https://docs.aws.amazon.com/chime/latest/APIReference/API_Operations_Amazon_Chime_SDK_Messaging.html">Amazon
-      Chime SDK messaging</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/chime-sdk-messaging-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/chime-sdk-messaging-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/chime-sdk-messaging-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:chime-sdk-messaging
   - name: AWS CloudHSM
     description: >-
       The AWS CloudHSM API provides a secure and compliant solution for managing
@@ -1468,34 +1445,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudhsmv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudhsmv2
-  - name: cloudsearchdomain
-    description: >-
-      <p>You use the AmazonCloudSearch2013 API to upload documents to a search
-      domain and search those documents. </p> <p>The endpoints for submitting
-      <code>UploadDocuments</code>, <code>Search</code>, and
-      <code>Suggest</code> requests are domain-specific. To get the endpoints
-      for your domain, use the Amazon CloudSearch configuration service
-      <code>DescribeDomains</code> action. The domain endpoints are also
-      displayed on the domain dashboard in the Amazon CloudSearch console. You
-      submit suggest requests to the search endpoint. </p> <p>For more
-      information, see the <a
-      href="http://docs.aws.amazon.com/cloudsearch/latest/developerguide">Amazon
-      CloudSearch Developer Guide</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/cloudsearchdomain-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/cloudsearchdomain-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/cloudsearchdomain-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:cloudsearchdomain
   - name: Amazon CloudSearch
     description: >-
       Amazon CloudSearch, is a cloud-based service that simplifies the process
@@ -1552,37 +1501,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudtrail-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudtrail-data
-  - name: cloudhsm
-    description: >-
-      <fullname>AWS CloudHSM Service</fullname> <p>This is documentation for
-      <b>AWS CloudHSM Classic</b>. For more information, see <a
-      href="http://aws.amazon.com/cloudhsm/faqs-classic/">AWS CloudHSM Classic
-      FAQs</a>, the <a
-      href="https://docs.aws.amazon.com/cloudhsm/classic/userguide/">AWS
-      CloudHSM Classic User Guide</a>, and the <a
-      href="https://docs.aws.amazon.com/cloudhsm/classic/APIReference/">AWS
-      CloudHSM Classic API Reference</a>.</p> <p> <b>For information about the
-      current version of AWS CloudHSM</b>, see <a
-      href="http://aws.amazon.com/cloudhsm/">AWS CloudHSM</a>, the <a
-      href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS CloudHSM
-      User Guide</a>, and the <a
-      href="https://docs.aws.amazon.com/cloudhsm/latest/APIReference/">AWS
-      CloudHSM API Reference</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/cloudhsm-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/cloudhsm-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/cloudhsm-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:cloudhsm
   - name: Amazon CodeCatalyst
     description: >-
       Amazon CodeCatalyst is a unified software development service for
@@ -1609,25 +1527,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/codecatalyst-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:codecatalyst
-  - name: Amazon CloudFront KeyValueStore
-    description: >-
-      <p>Amazon CloudFront KeyValueStore Service to View and Update Data in a
-      KVS Resource</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/cloudfront-keyvaluestore-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/cloudfront-keyvaluestore-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/cloudfront-keyvaluestore-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:cloudfront-keyvaluestore
   - name: AWS CodeBuild
     description: >+
       AWS CodeBuild is a fully managed continuous integration service that
