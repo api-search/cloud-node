@@ -2740,7 +2740,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/dax-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:dax
-  - name: discovery
+  - name: AWS Application Discovery Service
     description: >-
       <fullname>Amazon Web Services Application Discovery Service</fullname>
       <p>Amazon Web Services Application Discovery Service (Application
@@ -2807,21 +2807,33 @@ apis:
       inspect collected data before it is shared with the service.</p>
       </important>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/application-discovery/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/application-discovery/
       - type: OpenAPI
         url: properties/discovery-openapi-original.yml
+      - type: Feature
+        url: https://aws.amazon.com/application-discovery/features/
+      - type: Pricing
+        url: https://aws.amazon.com/application-discovery/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/application-discovery/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/application-discovery/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/application-discovery/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/application-discovery/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/discovery-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/discovery-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:discovery
-  - name: ds
+  - name: AWS Directory Service
     description: >-
       <fullname>Directory Service</fullname> <p>Directory Service is a web
       service that makes it easy for you to setup and run directories in the
@@ -2841,140 +2853,189 @@ apis:
       and install them, see <a href="http://aws.amazon.com/tools/">Tools for
       Amazon Web Services</a>.</p> </note>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/directoryservice/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/directoryservice/
       - type: OpenAPI
         url: properties/ds-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/directoryservice/features/
+      - type: Pricing
+        url: https://aws.amazon.com/directoryservice/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/directoryservice/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/directoryservice/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/ds-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ds-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ds
-  - name: drs
-    description: <p>AWS Elastic Disaster Recovery Service.</p>
+  - name: AWS Elastic Disaster Recovery Service
+    description: >-
+      AWS Elastic Disaster Recovery (AWS DRS), helps to reduce downtime and
+      prevent data loss by quickly and reliably recovering on-premises and
+      cloud-based applications. It utilizes cost-effective storage, minimal
+      computing resources, and offers point-in-time recovery for optimal
+      efficiency.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/disaster-recovery/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/disaster-recovery/
       - type: OpenAPI
         url: properties/drs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/disaster-recovery/features/
+      - type: Pricing
+        url: https://aws.amazon.com/disaster-recovery/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/disaster-recovery/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/disaster-recovery/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/drs-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/drs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:drs
-  - name: dms
+  - name: AWS Database Migration Service
     description: >-
-      <fullname>Database Migration Service</fullname> <p>Database Migration
-      Service (DMS) can migrate your data to and from the most widely used
-      commercial and open-source databases such as Oracle, PostgreSQL, Microsoft
-      SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP
-      Adaptive Server Enterprise (ASE). The service supports homogeneous
-      migrations such as Oracle to Oracle, as well as heterogeneous migrations
-      between different database platforms, such as Oracle to MySQL or SQL
-      Server to PostgreSQL.</p> <p>For more information about DMS, see <a
-      href="https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html">What
-      Is Database Migration Service?</a> in the <i>Database Migration Service
-      User Guide.</i> </p>
+      Our Database Migration Service (DMS) is a flexible tool that can
+      seamlessly move data between a variety of commercial and open-source
+      databases, including Oracle, PostgreSQL, Microsoft SQL Server, Amazon
+      Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server
+      Enterprise (ASE). DMS supports both homogeneous migrations (e.g. Oracle to
+      Oracle) and heterogeneous migrations between different database platforms
+      (e.g. Oracle to MySQL or SQL Server to PostgreSQL). 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/dms/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/dms/
       - type: OpenAPI
         url: properties/dms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/dms/features/
+      - type: Schema Conversion Tool
+        url: https://aws.amazon.com/dms/schema-conversion-tool/
+      - type: Pricing
+        url: https://aws.amazon.com/dms/pricing/
+      - type: Resources
+        url: https://docs.aws.amazon.com/dms/
+      - type: Partners
+        url: https://aws.amazon.com/dms/partners/
+      - type: Customers
+        url: https://aws.amazon.com/dms/testimonials/
     overlays:
       - type: APIs.io Search
         url: overlays/dms-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/dms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:dms
-  - name: ebs
+  - name: Amazon Elastic Block Store
     description: >-
-      <p>You can use the Amazon Elastic Block Store (Amazon EBS) direct APIs to
+      Use the Amazon Elastic Block Store (Amazon EBS) direct APIs to easily
       create Amazon EBS snapshots, write data directly to your snapshots, read
-      data on your snapshots, and identify the differences or changes between
-      two snapshots. If you’re an independent software vendor (ISV) who offers
-      backup services for Amazon EBS, the EBS direct APIs make it more efficient
-      and cost-effective to track incremental changes on your Amazon EBS volumes
-      through snapshots. This can be done without having to create new volumes
-      from snapshots, and then use Amazon Elastic Compute Cloud (Amazon EC2)
-      instances to compare the differences.</p> <p>You can create incremental
-      snapshots directly from data on-premises into volumes and the cloud to use
-      for quick disaster recovery. With the ability to write and read snapshots,
-      you can write your on-premises data to an snapshot during a disaster. Then
-      after recovery, you can restore it back to Amazon Web Services or
-      on-premises from the snapshot. You no longer need to build and maintain
-      complex mechanisms to copy data to and from Amazon EBS.</p> <p>This API
-      reference provides detailed information about the actions, data types,
-      parameters, and errors of the EBS direct APIs. For more information about
-      the elements that make up the EBS direct APIs, and examples of how to use
-      them effectively, see <a
-      href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-accessing-snapshot.html">Accessing
-      the Contents of an Amazon EBS Snapshot</a> in the <i>Amazon Elastic
-      Compute Cloud User Guide</i>. For more information about the supported
-      Amazon Web Services Regions, endpoints, and service quotas for the EBS
-      direct APIs, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/ebs-service.html">Amazon
-      Elastic Block Store Endpoints and Quotas</a> in the <i>Amazon Web Services
-      General Reference</i>.</p>
+      data on your snapshots, and identify differences or changes between two
+      snapshots. Independent software vendors (ISVs) offering backup services
+      for Amazon EBS can benefit from the efficiency and cost-effectiveness of
+      tracking incremental changes on Amazon EBS volumes through snapshots using
+      these APIs. By creating incremental snapshots directly from on-premises
+      data into volumes and the cloud, you can quickly enable disaster recovery.
+      The ability to write and read snapshots allows you to write your
+      on-premises data to a snapshot during a disaster and restore it back to
+      Amazon Web Services or on-premises after recovery without the need for
+      complex mechanisms. This API reference provides detailed information about
+      actions, data types, parameters, and errors of the EBS direct APIs. For
+      further information on the elements of the EBS direct APIs and effective
+      use cases, refer to the Amazon Elastic Compute Cloud User Guide. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ebs/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ebs/
       - type: OpenAPI
         url: properties/ebs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ebs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ebs/pricing/
+      - type: Volume Types
+        url: https://aws.amazon.com/ebs/volume-types/
+      - type: Resources
+        url: https://aws.amazon.com/ebs/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/ebs/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/ebs/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/ebs/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/ebs-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ebs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ebs
-  - name: docdb
+  - name: Amazon DocumentDB
     description: >-
-      <p>Amazon DocumentDB is a fast, reliable, and fully managed database
-      service. Amazon DocumentDB makes it easy to set up, operate, and scale
-      MongoDB-compatible databases in the cloud. With Amazon DocumentDB, you can
-      run the same application code and use the same drivers and tools that you
-      use with MongoDB.</p>
+      Amazon DocumentDB is a cloud-based database service that offers fast and
+      reliable performance. It is fully managed and compatible with MongoDB,
+      making it easy to set up, operate, and scale databases. With Amazon
+      DocumentDB, you can seamlessly run your existing application code and
+      access the same drivers and tools you currently use with MongoDB.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/documentdb/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/documentdb/
       - type: OpenAPI
         url: properties/docdb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/documentdb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/documentdb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/documentdb/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/documentdb/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/documentdb/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/documentdb/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/docdb-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/docdb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:docdb
-  - name: docdb-elastic
-    description: <p>The new Amazon Elastic DocumentDB service endpoint.</p>
+  - name: Amazon Elastic DocumentDB
+    description: >-
+      The Amazon DocumentDB API offers elastic clusters that can handle high
+      volumes of reads/writes per second and store petabytes of data. These
+      clusters make it easier for developers to work with Amazon DocumentDB by
+      removing the need to select, oversee, or update instances.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-using-elastic-clusters.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-using-elastic-clusters.html
       - type: OpenAPI
         url: properties/docdb-elastic-openapi-original.yml
     overlays:
@@ -2983,18 +3044,20 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/docdb-elastic-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:docdb-elastic
-  - name: ec2-instance-connect
+  - name: Amazon EC2 Instance Connect
     description: >-
-      <p>Amazon EC2 Instance Connect enables system administrators to publish
-      one-time use SSH public keys to EC2, providing users a simple and secure
-      way to connect to their instances.</p>
+      Amazon EC2 Instance Connect allows system administrators to generate and
+      share one-time use SSH public keys on EC2, offering users a convenient and
+      reliable method to access their instances securely.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
       - type: OpenAPI
         url: properties/ec2-instance-connect-openapi-original.yml
     overlays:
@@ -3003,70 +3066,119 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ec2-instance-connect-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ec2-instance-connect
-  - name: dynamodb
+  - name: Amazon DynamoDB
     description: >-
-      <p>Amazon DynamoDB is a fast, highly scalable, highly available,
-      cost-effective non-relational database service.</p> <p>Amazon DynamoDB
-      removes traditional scalability limitations on data storage while
-      maintaining low latency and predictable performance.</p>
+      My API, Amazon DynamoDB, is a NoSQL database service that operates in a
+      serverless environment, allowing you to build modern applications of any
+      size. With DynamoDB, you only pay for the resources you use, and the
+      database can scale down to zero, eliminating cold starts, version
+      upgrades, maintenance windows, patching, and downtime. Additionally,
+      DynamoDB provides a wide range of security controls and compliance
+      standards. 
+
+
+      For applications that are globally distributed, DynamoDB offers global
+      tables, a multi-Region, multi-active database with a 99.999% availability
+      SLA for increased resilience. The reliability of DynamoDB is further
+      enhanced with managed backups, point-in-time recovery, and other
+      features. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/dynamodb/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/dynamodb/
       - type: OpenAPI
         url: properties/dynamodb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/dynamodb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/dynamodb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/dynamodb/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/dynamodb/getting-started/
+      - type: Migrations
+        url: https://aws.amazon.com/dynamodb/migrations/
+      - type: Partners
+        url: https://aws.amazon.com/dynamodb/partners/
+      - type: Solutions
+        url: https://aws.amazon.com/dynamodb/solutions-by-industry/
+      - type: FAQs
+        url: https://aws.amazon.com/dynamodb/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/dynamodb/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/dynamodb-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/dynamodb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:dynamodb
-  - name: ec2
+  - name: Amazon Elastic Compute Cloud
     description: >-
-      <fullname>Amazon Elastic Compute Cloud</fullname> <p>Amazon Elastic
-      Compute Cloud (Amazon EC2) provides resizable computing capacity in the
-      Amazon Web Services (AWS) cloud. Using Amazon EC2 eliminates your need to
-      invest in hardware up front, so you can develop and deploy applications
-      faster.</p>
+      The Amazon Elastic Compute Cloud (Amazon EC2) API provides a comprehensive
+      compute platform with a wide range of instance options and the latest
+      technology choices in processors, storage, networking, operating systems,
+      and purchase models to suit your workload requirements. We are the leading
+      cloud provider to support Intel, AMD, and Arm processors, offer on-demand
+      EC2 Mac instances, and feature 400 Gbps Ethernet networking. Our API
+      delivers exceptional price performance for machine learning training and
+      the most cost-effective inference instances in the cloud. AWS has the
+      largest number of SAP, high performance computing (HPC), ML, and Windows
+      workloads compared to any other cloud provider.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ec2/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ec2/
       - type: OpenAPI
         url: properties/ec2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ec2/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ec2/pricing/
+      - type: Instance Types
+        url: https://aws.amazon.com/ec2/instance-types/
+      - type: FAQs
+        url: https://aws.amazon.com/ec2/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/ec2/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/ec2/resources/
+      - type: Videos
+        url: https://aws.amazon.com/ec2/videos/
+      - type: Customers
+        url: https://aws.amazon.com/ec2/customers/
+      - type: Cost Optimizations
+        url: https://aws.amazon.com/ec2/cost-and-capacity/
     overlays:
       - type: APIs.io Search
         url: overlays/ec2-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ec2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ec2
-  - name: eks
+  - name: Amazon Elastic Kubernetes Service
     description: >-
-      <p>Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service
-      that makes it easy for you to run Kubernetes on Amazon Web Services
-      without needing to setup or maintain your own Kubernetes control plane.
-      Kubernetes is an open-source system for automating the deployment,
-      scaling, and management of containerized applications.</p> <p>Amazon EKS
-      runs up-to-date versions of the open-source Kubernetes software, so you
-      can use all the existing plugins and tooling from the Kubernetes
-      community. Applications running on Amazon EKS are fully compatible with
-      applications running on any standard Kubernetes environment, whether
-      running in on-premises data centers or public clouds. This means that you
-      can easily migrate any standard Kubernetes application to Amazon EKS
-      without any code modification required.</p>
+      Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed service
+      designed to simplify the process of running Kubernetes on Amazon Web
+      Services. With Amazon EKS, users can easily deploy, scale, and manage
+      containerized applications without the need to set up or maintain their
+      own Kubernetes control plane. Amazon EKS ensures that users are always
+      using the latest versions of the open-source Kubernetes software, allowing
+      them to leverage existing plugins and tools from the Kubernetes community.
+      Applications running on Amazon EKS are fully compatible with those running
+      on standard Kubernetes environments, making migration effortless and
+      requiring no code modifications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/eks/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/eks/
       - type: OpenAPI
         url: properties/eks-openapi-original.yml
     overlays:
