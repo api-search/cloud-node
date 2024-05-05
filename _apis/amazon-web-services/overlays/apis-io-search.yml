@@ -2312,84 +2312,91 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/controltower-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:controltower
-  - name: databrew
+  - name: AWS Glue DataBrew
     description: >-
-      <p>Glue DataBrew is a visual, cloud-scale data-preparation service.
-      DataBrew simplifies data preparation tasks, targeting data issues that are
-      hard to spot and time-consuming to fix. DataBrew empowers users of all
-      technical levels to visualize the data and perform one-click data
-      transformations, with no coding required.</p>
+      DataBrew is a user-friendly API designed to simplify the data preparation
+      process by allowing users of all technical levels to visualize and
+      transform data with just one click. This visual, cloud-scale service
+      targets and resolves data issues that are difficult to identify and
+      time-consuming to address, making data preparation more efficient and
+      accessible. With DataBrew, coding is not required, making it an intuitive
+      and convenient tool for data preparation tasks.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/glue/features/databrew/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/glue/features/databrew/
       - type: OpenAPI
         url: properties/databrew-openapi-original.yml
+      - type: About
+        url: https://docs.aws.amazon.com/databrew/latest/dg/what-is.html
     overlays:
       - type: APIs.io Search
         url: overlays/databrew-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/databrew-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:databrew
-  - name: customer-profiles
+  - name: Amazon Connect Customer Profiles
     description: >-
-      <fullname>Amazon Connect Customer Profiles</fullname> <p>Amazon Connect
-      Customer Profiles is a unified customer profile for your contact center
-      that has pre-built connectors powered by AppFlow that make it easy to
-      combine customer information from third party applications, such as
-      Salesforce (CRM), ServiceNow (ITSM), and your enterprise resource planning
-      (ERP), with contact history from your Amazon Connect contact center. If
-      you're new to Amazon Connect, you might find it helpful to review the <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/">Amazon
-      Connect Administrator Guide</a>.</p>
+      The Amazon Connect Customer Profiles API offers a centralized customer
+      profile solution for contact centers, featuring pre-built connectors
+      utilizing AppFlow technology. These connectors seamlessly integrate
+      customer data from third-party applications like Salesforce, ServiceNow,
+      and ERP systems with contact history from your Amazon Connect contact
+      center. If you are a new user, the Amazon Connect Administrator Guide can
+      assist you in familiarizing yourself with the platform.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/customer-profiles/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/customer-profiles/
       - type: OpenAPI
         url: properties/customer-profiles-openapi-original.yml
+      - type: Use Cases
+        url: https://aws.amazon.com/connect/customer-profiles/
     overlays:
       - type: APIs.io Search
         url: overlays/customer-profiles-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/customer-profiles-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:customer-profiles
-  - name: cur
+  - name: AWS Cost and Usage Report
     description: >-
-      <p>You can use the Amazon Web Services Cost and Usage Report API to
-      programmatically create, query, and delete Amazon Web Services Cost and
-      Usage Report definitions.</p> <p>Amazon Web Services Cost and Usage Report
-      track the monthly Amazon Web Services costs and usage associated with your
-      Amazon Web Services account. The report contains line items for each
-      unique combination of Amazon Web Services product, usage type, and
-      operation that your Amazon Web Services account uses. You can configure
-      the Amazon Web Services Cost and Usage Report to show only the data that
-      you want, using the Amazon Web Services Cost and Usage Report API.</p>
-      <p>Service Endpoint</p> <p>The Amazon Web Services Cost and Usage Report
-      API provides the following endpoint:</p> <ul> <li>
-      <p>cur.us-east-1.amazonaws.com</p> </li> </ul>
+      With the Amazon Web Services Cost and Usage Report API, you can manage
+      Cost and Usage Report definitions programmatically. This API allows you to
+      create, query, and delete Cost and Usage Report definitions, which track
+      monthly costs and usage associated with your Amazon Web Services account.
+      Each report contains line items for unique combinations of AWS products,
+      usage types, and operations used within your account. Using the API, you
+      can customize the data displayed in your Cost and Usage Report. The
+      service endpoint for the API is cur.us-east-1.amazonaws.com.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
       - type: OpenAPI
         url: properties/cur-openapi-original.yml
+      - type: Features
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/features/
+      - type: FAQs
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cur-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cur-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cur
-  - name: datasync
+  - name: AWS DataSync
     description: >-
       <fullname>DataSync</fullname> <p>DataSync is an online data movement and
       discovery service that simplifies data migration and helps you quickly,
@@ -2400,258 +2407,263 @@ apis:
       href="https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html">DataSync
       User Guide</a> </i>.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/datasync/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/datasync/
       - type: OpenAPI
         url: properties/datasync-openapi-original.yml
+      - type: Discovery
+        url: https://aws.amazon.com/datasync/discovery/
+      - type: Customers
+        url: https://aws.amazon.com/datasync/customers/
+      - type: FAQs
+        url: https://aws.amazon.com/datasync/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/datasync/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/datasync/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/datasync/pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/datasync-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/datasync-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:datasync
-  - name: datazone
+  - name: Amazon DataZone
     description: >-
-      <p>Amazon DataZone is a data management service that enables you to
-      catalog, discover, govern, share, and analyze your data. With Amazon
-      DataZone, you can share and access your data across accounts and supported
-      regions. Amazon DataZone simplifies your experience across Amazon Web
-      Services services, including, but not limited to, Amazon Redshift, Amazon
-      Athena, Amazon Web Services Glue, and Amazon Web Services Lake
-      Formation.</p>
+      Amazon DataZone is a comprehensive data management service designed to
+      streamline the organization, governance, and analysis of your data. This
+      API allows you to easily catalog, discover, and share your data across
+      accounts and regions. With Amazon DataZone, you can seamlessly integrate
+      with various Amazon Web Services offerings such as Redshift, Athena, Glue,
+      and Lake Formation to enhance your data management capabilities.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/datazone/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/datazone/
       - type: OpenAPI
         url: properties/datazone-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/datazone/features/
+      - type: FAQs
+        url: https://aws.amazon.com/datazone/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/datazone/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/datazone/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/datazone/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/datazone-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/datazone-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:datazone
-  - name: dataexchange
+  - name: AWS Data Exchange
     description: >-
-      <p>AWS Data Exchange is a service that makes it easy for AWS customers to
+      AWS Data Exchange is a service that makes it easy for AWS customers to
       exchange data in the cloud. You can use the AWS Data Exchange APIs to
-      create, update, manage, and access file-based data set in the AWS
-      Cloud.</p> <p>As a subscriber, you can view and access the data sets that
-      you have an entitlement to through a subscription. You can use the APIs to
-      download or copy your entitled data sets to Amazon Simple Storage Service
-      (Amazon S3) for use across a variety of AWS analytics and machine learning
-      services.</p> <p>As a provider, you can create and manage your data sets
-      that you would like to publish to a product. Being able to package and
-      provide your data sets into products requires a few steps to determine
-      eligibility. For more information, visit the <i>AWS Data Exchange User
-      Guide</i>.</p> <p>A data set is a collection of data that can be changed
-      or updated over time. Data sets can be updated using revisions, which
-      represent a new version or incremental change to a data set. A revision
-      contains one or more assets. An asset in AWS Data Exchange is a piece of
-      data that can be stored as an Amazon S3 object, Redshift datashare, API
-      Gateway API, AWS Lake Formation data permission, or Amazon S3 data access.
-      The asset can be a structured data file, an image file, or some other data
-      file. Jobs are asynchronous import or export operations used to create or
-      copy assets.</p>
+      create, update, manage, and access file-based data set in the AWS Cloud.
+      As a subscriber, you can view and access the data sets that you have an
+      entitlement to through a subscription. You can use the APIs to download or
+      copy your entitled data sets to Amazon Simple Storage Service (Amazon S3)
+      for use across a variety of AWS analytics and machine learning services.
+      As a provider, you can create and manage your data sets that you would
+      like to publish to a product. Being able to package and provide your data
+      sets into products requires a few steps to determine eligibility. For more
+      information, visit the AWS Data Exchange User Guide. A data set is a
+      collection of data that can be changed or updated over time. Data sets can
+      be updated using revisions, which represent a new version or incremental
+      change to a data set. A revision contains one or more assets. An asset in
+      AWS Data Exchange is a piece of data that can be stored as an Amazon S3
+      object, Redshift datashare, API Gateway API, AWS Lake Formation data
+      permission, or Amazon S3 data access. The asset can be a structured data
+      file, an image file, or some other data file. Jobs are asynchronous import
+      or export operations used to create or copy assets.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/data-exchange/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/data-exchange/
       - type: OpenAPI
         url: properties/dataexchange-openapi-original.yml
+      - type: Updates
+        url: https://aws.amazon.com/data-exchange/latest-updates/
+      - type: Updates
+        url: https://aws.amazon.com/data-exchange/latest-updates/
+      - type: Providers
+        url: https://aws.amazon.com/data-exchange/providers/
     overlays:
       - type: APIs.io Search
         url: overlays/dataexchange-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/dataexchange-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:dataexchange
-  - name: datapipeline
+  - name: AWS Data Pipeline
     description: >-
-      <p>AWS Data Pipeline configures and manages a data-driven workflow called
-      a pipeline. AWS Data Pipeline handles the details of scheduling and
-      ensuring that data dependencies are met so that your application can focus
-      on processing the data.</p> <p>AWS Data Pipeline provides a JAR
-      implementation of a task runner called AWS Data Pipeline Task Runner. AWS
-      Data Pipeline Task Runner provides logic for common data management
-      scenarios, such as performing database queries and running data analysis
-      using Amazon Elastic MapReduce (Amazon EMR). You can use AWS Data Pipeline
-      Task Runner as your task runner, or you can write your own task runner to
-      provide custom data management.</p> <p>AWS Data Pipeline implements two
-      main sets of functionality. Use the first set to create a pipeline and
-      define data sources, schedules, dependencies, and the transforms to be
-      performed on the data. Use the second set in your task runner application
-      to receive the next task ready for processing. The logic for performing
-      the task, such as querying the data, running data analysis, or converting
-      the data from one format to another, is contained within the task runner.
-      The task runner performs the task assigned to it by the web service,
-      reporting progress to the web service as it does so. When the task is
-      done, the task runner reports the final success or failure of the task to
-      the web service.</p>
+      AWS Data Pipeline configures and manages a data-driven workflow called a
+      pipeline. AWS Data Pipeline handles the details of scheduling and ensuring
+      that data dependencies are met so that your application can focus on
+      processing the data. AWS Data Pipeline provides a JAR implementation of a
+      task runner called AWS Data Pipeline Task Runner. AWS Data Pipeline Task
+      Runner provides logic for common data management scenarios, such as
+      performing database queries and running data analysis using Amazon Elastic
+      MapReduce (Amazon EMR). You can use AWS Data Pipeline Task Runner as your
+      task runner, or you can write your own task runner to provide custom data
+      management. AWS Data Pipeline implements two main sets of functionality.
+      Use the first set to create a pipeline and define data sources, schedules,
+      dependencies, and the transforms to be performed on the data. Use the
+      second set in your task runner application to receive the next task ready
+      for processing. The logic for performing the task, such as querying the
+      data, running data analysis, or converting the data from one format to
+      another, is contained within the task runner. The task runner performs the
+      task assigned to it by the web service, reporting progress to the web
+      service as it does so. When the task is done, the task runner reports the
+      final success or failure of the task to the web service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/data-pipeline/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/data-pipeline/
       - type: OpenAPI
         url: properties/datapipeline-openapi-original.yml
+      - type: Guide
+        url: >-
+          https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/datapipeline-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/datapipeline-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:datapipeline
-  - name: devicefarm
+  - name: AWS Device Farm
     description: >-
-      <p>Welcome to the AWS Device Farm API documentation, which contains APIs
-      for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm
-      makes it possible for you to test your web applications on desktop
-      browsers using Selenium. The APIs for desktop browser testing contain
-      <code>TestGrid</code> in their names. For more information, see <a
-      href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web
-      Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing
-      on real mobile devices</p> <p>Device Farm makes it possible for you to
-      test apps on physical phones, tablets, and other devices in the cloud. For
-      more information, see the <a
-      href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device
-      Farm Developer Guide</a>.</p> </li> </ul>
+      Explore the AWS Device Farm API documentation, offering APIs for two main
+      testing services: desktop browser testing and real mobile device testing.
+      Use Device Farm to test your web applications on desktop browsers with
+      Selenium through the TestGrid-named APIs. For testing on physical phones,
+      tablets, and other devices in the cloud, refer to the Device Farm
+      Developer Guide for more information.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/device-farm/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/device-farm/
       - type: OpenAPI
         url: properties/devicefarm-openapi-original.yml
+      - type: Device List
+        url: https://aws.amazon.com/device-farm/device-list/
+      - type: Pricing
+        url: https://aws.amazon.com/device-farm/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/device-farm/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/device-farm/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/devicefarm-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/devicefarm-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:devicefarm
-  - name: directconnect
+  - name: AWS Direct Connect
     description: >-
-      <p>Direct Connect links your internal network to an Direct Connect
-      location over a standard Ethernet fiber-optic cable. One end of the cable
-      is connected to your router, the other to an Direct Connect router. With
-      this connection in place, you can create virtual interfaces directly to
-      the Amazon Web Services Cloud (for example, to Amazon EC2 and Amazon S3)
-      and to Amazon VPC, bypassing Internet service providers in your network
-      path. A connection provides access to all Amazon Web Services Regions
-      except the China (Beijing) and (China) Ningxia Regions. Amazon Web
-      Services resources in the China Regions can only be accessed through
-      locations associated with those Regions.</p>
+      Direct Connect allows you to establish a high-speed, private connection
+      between your internal network and an Direct Connect location using a
+      standard Ethernet fiber-optic cable. By connecting your router to an
+      Direct Connect router, you can create virtual interfaces directly to the
+      Amazon Web Services Cloud, including Amazon EC2 and Amazon S3, as well as
+      Amazon VPC. This connection bypasses Internet service providers in your
+      network path, providing a more secure and reliable link to AWS resources.
+      Please note that Direct Connect provides access to all Amazon Web Services
+      Regions except for the China (Beijing) and (China) Ningxia Regions, which
+      require connections associated with those specific regions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/directconnect/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/directconnect/
       - type: OpenAPI
         url: properties/directconnect-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/directconnect/features/
+      - type: Pricing
+        url: https://aws.amazon.com/directconnect/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/directconnect/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/directconnect/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/directconnect/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/directconnect-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/directconnect-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:directconnect
-  - name: detective
+  - name: AWS Detective
     description: >-
-      <p>Detective uses machine learning and purpose-built visualizations to
-      help you to analyze and investigate security issues across your Amazon Web
-      Services (Amazon Web Services) workloads. Detective automatically extracts
-      time-based events such as login attempts, API calls, and network traffic
-      from CloudTrail and Amazon Virtual Private Cloud (Amazon VPC) flow logs.
-      It also extracts findings detected by Amazon GuardDuty.</p> <p>The
-      Detective API primarily supports the creation and management of behavior
-      graphs. A behavior graph contains the extracted data from a set of member
-      accounts, and is created and managed by an administrator account.</p>
-      <p>To add a member account to the behavior graph, the administrator
-      account sends an invitation to the account. When the account accepts the
-      invitation, it becomes a member account in the behavior graph.</p>
-      <p>Detective is also integrated with Organizations. The organization
-      management account designates the Detective administrator account for the
-      organization. That account becomes the administrator account for the
-      organization behavior graph. The Detective administrator account is also
-      the delegated administrator account for Detective in Organizations.</p>
-      <p>The Detective administrator account can enable any organization account
-      as a member account in the organization behavior graph. The organization
-      accounts do not receive invitations. The Detective administrator account
-      can also invite other accounts to the organization behavior graph.</p>
-      <p>Every behavior graph is specific to a Region. You can only use the API
-      to manage behavior graphs that belong to the Region that is associated
-      with the currently selected endpoint.</p> <p>The administrator account for
-      a behavior graph can use the Detective API to do the following:</p> <ul>
-      <li> <p>Enable and disable Detective. Enabling Detective creates a new
-      behavior graph.</p> </li> <li> <p>View the list of member accounts in a
-      behavior graph.</p> </li> <li> <p>Add member accounts to a behavior
-      graph.</p> </li> <li> <p>Remove member accounts from a behavior graph.</p>
-      </li> <li> <p>Apply tags to a behavior graph.</p> </li> </ul> <p>The
-      organization management account can use the Detective API to select the
-      delegated administrator for Detective.</p> <p>The Detective administrator
-      account for an organization can use the Detective API to do the
-      following:</p> <ul> <li> <p>Perform all of the functions of an
-      administrator account.</p> </li> <li> <p>Determine whether to
-      automatically enable new organization accounts as member accounts in the
-      organization behavior graph.</p> </li> </ul> <p>An invited member account
-      can use the Detective API to do the following:</p> <ul> <li> <p>View the
-      list of behavior graphs that they are invited to.</p> </li> <li> <p>Accept
-      an invitation to contribute to a behavior graph.</p> </li> <li> <p>Decline
-      an invitation to contribute to a behavior graph.</p> </li> <li> <p>Remove
-      their account from a behavior graph.</p> </li> </ul> <p>All API actions
-      are logged as CloudTrail events. See <a
-      href="https://docs.aws.amazon.com/detective/latest/adminguide/logging-using-cloudtrail.html">Logging
-      Detective API Calls with CloudTrail</a>.</p> <note> <p>We replaced the
-      term "master account" with the term "administrator account." An
-      administrator account is used to centrally manage multiple accounts. In
-      the case of Detective, the administrator account manages the accounts in
-      their behavior graph.</p> </note>
+      The Amazon Detective API streamlines the investigation process for
+      security teams, enabling faster and more efficient analysis. By leveraging
+      prebuilt data aggregations, summaries, and context provided by Amazon
+      Detective, users can quickly assess and understand potential security
+      threats.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/detective/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/detective/
       - type: OpenAPI
         url: properties/detective-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/detective/features/
+      - type: Pricing
+        url: https://aws.amazon.com/detective/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/detective/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/detective/faqs/
+      - type: FAQs
+        url: https://aws.amazon.com/detective/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/detective-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/detective-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:detective
-  - name: dlm
+  - name: Amazon Data Lifecycle Manager
     description: >-
-      <fullname>Amazon Data Lifecycle Manager</fullname> <p>With Amazon Data
-      Lifecycle Manager, you can manage the lifecycle of your Amazon Web
-      Services resources. You create lifecycle policies, which are used to
-      automate operations on the specified resources.</p> <p>Amazon Data
-      Lifecycle Manager supports Amazon EBS volumes and snapshots. For
-      information about using Amazon Data Lifecycle Manager with Amazon EBS, see
-      <a
-      href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html">
-      Amazon Data Lifecycle Manager</a> in the <i>Amazon EC2 User Guide</i>.</p>
+      Amazon Data Lifecycle Manager With Amazon Data Lifecycle Manager, you can
+      manage the lifecycle of your Amazon Web Services resources. You create
+      lifecycle policies, which are used to automate operations on the specified
+      resources. Amazon Data Lifecycle Manager supports Amazon EBS volumes and
+      snapshots. For information about using Amazon Data Lifecycle Manager with
+      Amazon EBS, see  Amazon Data Lifecycle Manager in the Amazon EC2 User
+      Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html
       - type: OpenAPI
         url: properties/dlm-openapi-original.yml
     overlays:
@@ -2660,60 +2672,68 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/dlm-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:dlm
-  - name: devops-guru
+  - name: Amazon DevOps Guru
     description: >-
-      <p> Amazon DevOps Guru is a fully managed service that helps you identify
-      anomalous behavior in business critical operational applications. You
-      specify the Amazon Web Services resources that you want DevOps Guru to
-      cover, then the Amazon CloudWatch metrics and Amazon Web Services
-      CloudTrail events related to those resources are analyzed. When anomalous
-      behavior is detected, DevOps Guru creates an <i>insight</i> that includes
-      recommendations, related events, and related metrics that can help you
-      improve your operational applications. For more information, see <a
-      href="https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html">What
-      is Amazon DevOps Guru</a>. </p> <p> You can specify 1 or 2 Amazon Simple
-      Notification Service topics so you are notified every time a new insight
-      is created. You can also enable DevOps Guru to generate an OpsItem in
-      Amazon Web Services Systems Manager for each insight to help you manage
-      and track your work addressing insights. </p> <p> To learn about the
-      DevOps Guru workflow, see <a
-      href="https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html#how-it-works">How
-      DevOps Guru works</a>. To learn about DevOps Guru concepts, see <a
-      href="https://docs.aws.amazon.com/devops-guru/latest/userguide/concepts.html">Concepts
-      in DevOps Guru</a>. </p>
+      Amazon DevOps Guru is a managed service designed to detect abnormal
+      behavior in critical operational applications. Users can select the Amazon
+      Web Services resources they want DevOps Guru to monitor, allowing the
+      service to analyze CloudWatch metrics and CloudTrail events related to
+      those resources. When unusual behavior is identified, DevOps Guru
+      generates insights with recommendations, associated events, and metrics to
+      assist in optimizing operational applications. Users can opt to receive
+      notifications for new insights through Amazon SNS topics, and may also
+      enable the creation of OpsItems in Amazon Systems Manager for each insight
+      to aid in tracking and managing relevant tasks. For more details on the
+      API, refer to the Amazon DevOps Guru documentation, including information
+      on the workflow and key concepts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/devops-guru/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/devops-guru/
       - type: OpenAPI
         url: properties/devops-guru-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/devops-guru/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/devops-guru/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/devops-guru/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/devops-guru/customers/
+      - type: Partners
+        url: https://aws.amazon.com/devops-guru/partners/
+      - type: Features
+        url: https://aws.amazon.com/devops-guru/features/
     overlays:
       - type: APIs.io Search
         url: overlays/devops-guru-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/devops-guru-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:devops-guru
-  - name: dax
+  - name: Amazon DynamoDB Accelerator (DAX)
     description: >-
-      <p>DAX is a managed caching service engineered for Amazon DynamoDB. DAX
-      dramatically speeds up database reads by caching frequently-accessed data
-      from DynamoDB, so applications can access that data with sub-millisecond
-      latency. You can create a DAX cluster easily, using the AWS Management
-      Console. With a few simple modifications to your code, your application
-      can begin taking advantage of the DAX cluster and realize significant
-      improvements in read performance.</p>
+      DAX is a managed caching service designed specifically for Amazon
+      DynamoDB. It significantly boosts database read speeds by storing
+      frequently accessed data from DynamoDB, allowing applications to retrieve
+      that data with extremely low latency. Setting up a DAX cluster is a
+      straightforward process through the AWS Management Console. By making some
+      minor adjustments to your code, your application can seamlessly integrate
+      with the DAX cluster and experience notable enhancements in read
+      performance.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/dynamodbaccelerator/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/dynamodbaccelerator/
       - type: OpenAPI
         url: properties/dax-openapi-original.yml
+      - type: Customers
+        url: https://aws.amazon.com/dynamodbaccelerator/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/dax-openapi-search.yml
