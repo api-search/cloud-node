@@ -3181,236 +3181,300 @@ apis:
         url: https://aws.amazon.com/eks/
       - type: OpenAPI
         url: properties/eks-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/eks/features/
+      - type: Pricing
+        url: https://aws.amazon.com/eks/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/eks/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/eks/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/eks/customers/
+      - type: Partners
+        url: https://aws.amazon.com/eks/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/eks-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/eks-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:eks
-  - name: ecr
+  - name: Amazon Elastic Container Registry
     description: >-
-      <fullname>Amazon Elastic Container Registry</fullname> <p>Amazon Elastic
-      Container Registry (Amazon ECR) is a managed container image registry
-      service. Customers can use the familiar Docker CLI, or their preferred
-      client, to push, pull, and manage images. Amazon ECR provides a secure,
-      scalable, and reliable registry for your Docker or Open Container
-      Initiative (OCI) images. Amazon ECR supports private repositories with
-      resource-based permissions using IAM so that specific users or Amazon EC2
-      instances can access repositories and images.</p> <p>Amazon ECR has
-      service endpoints in each supported Region. For more information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/ecr.html">Amazon ECR
-      endpoints</a> in the <i>Amazon Web Services General Reference</i>.</p>
+      The Amazon Elastic Container Registry (Amazon ECR) is a managed service
+      that allows customers to store and manage container images securely. Users
+      can easily push, pull, and manage images using the Docker CLI or their
+      preferred client. Amazon ECR supports private repositories with
+      resource-based permissions using IAM, allowing specific users or Amazon
+      EC2 instances to access repositories and images. With service endpoints
+      available in each supported region, Amazon ECR provides a reliable and
+      scalable solution for storing Docker or OCI images.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ecr/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ecr/
       - type: OpenAPI
         url: properties/ecr-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ecr/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ecr/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/ecr/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/ecr/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/ecr/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/ecr/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/ecr-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ecr-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ecr
-  - name: ecs
+  - name: Amazon Elastic Container Service
     description: >-
-      <fullname>Amazon Elastic Container Service</fullname> <p>Amazon Elastic
-      Container Service (Amazon ECS) is a highly scalable, fast, container
-      management service. It makes it easy to run, stop, and manage Docker
-      containers. You can host your cluster on a serverless infrastructure
-      that's managed by Amazon ECS by launching your services or tasks on
-      Fargate. For more control, you can host your tasks on a cluster of Amazon
-      Elastic Compute Cloud (Amazon EC2) or External (on-premises) instances
-      that you manage.</p> <p>Amazon ECS makes it easy to launch and stop
-      container-based applications with simple API calls. This makes it easy to
-      get the state of your cluster from a centralized service, and gives you
-      access to many familiar Amazon EC2 features.</p> <p>You can use Amazon ECS
-      to schedule the placement of containers across your cluster based on your
-      resource needs, isolation policies, and availability requirements. With
-      Amazon ECS, you don't need to operate your own cluster management and
-      configuration management systems. You also don't need to worry about
-      scaling your management infrastructure. </p>
+      Amazon Elastic Container Service (Amazon ECS) is a robust container
+      management service provided by Amazon. It enables easy running, stopping,
+      and management of Docker containers with high scalability and speed.
+      Amazon ECS allows you to host your container clusters on a serverless
+      infrastructure using Fargate or on Amazon EC2 instances that you manage.
+      With Amazon ECS, you can effortlessly launch and stop container-based
+      applications through simple API calls and benefit from centralized
+      monitoring capabilities and familiar Amazon EC2 features. Additionally,
+      Amazon ECS offers advanced scheduling capabilities for placing containers
+      based on resource requirements, isolation policies, and availability
+      needs. By using Amazon ECS, you can simplify cluster management,
+      configuration, and scalability, eliminating the need for your own cluster
+      and configuration management systems.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ecs/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ecs/
       - type: OpenAPI
         url: properties/ecs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ecs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ecs/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/ecs/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/ecs/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/ecs/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/ecs/customers/
+      - type: Partners
+        url: https://aws.amazon.com/ecs/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/ecs-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ecs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ecs
-  - name: elasticache
+  - name: Amazon ElastiCache
     description: >-
-      <fullname>Amazon ElastiCache</fullname> <p>Amazon ElastiCache is a web
-      service that makes it easier to set up, operate, and scale a distributed
-      cache in the cloud.</p> <p>With ElastiCache, customers get all of the
-      benefits of a high-performance, in-memory cache with less of the
-      administrative burden involved in launching and managing a distributed
-      cache. The service makes setup, scaling, and cluster failure handling much
-      simpler than in a self-managed cache deployment.</p> <p>In addition,
-      through integration with Amazon CloudWatch, customers get enhanced
-      visibility into the key performance statistics associated with their cache
-      and can receive alarms if a part of their cache runs hot.</p>
+      Amazon ElastiCache is a convenient web service that simplifies the process
+      of setting up, operating, and expanding a distributed cache in the cloud.
+      By utilizing ElastiCache, users can enjoy the advantages of a
+      high-performance, in-memory cache without the extensive administrative
+      tasks typically associated with launching and maintaining a distributed
+      cache. The service streamlines setup, scaling, and cluster failure
+      management compared to a self-managed cache deployment. Additionally,
+      Amazon ElastiCache offers integration with Amazon CloudWatch, providing
+      users with increased visibility into the important performance metrics of
+      their cache and the ability to receive alerts if any parts of their cache
+      become overloaded.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/elasticache/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/elasticache/
       - type: OpenAPI
         url: properties/elasticache-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/elasticache/features/
+      - type: Pricing
+        url: https://aws.amazon.com/elasticache/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/elasticache/resources/
+      - type: Migrations
+        url: https://aws.amazon.com/elasticache/migrations/
+      - type: FAQs
+        url: https://aws.amazon.com/elasticache/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/elasticache/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticache-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/elasticache-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticache
-  - name: ecr-public
+  - name: Amazon Elastic Container Registry Public
     description: >-
-      <fullname>Amazon Elastic Container Registry Public</fullname> <p>Amazon
-      Elastic Container Registry Public (Amazon ECR Public) is a managed
-      container image registry service. Amazon ECR provides both public and
-      private registries to host your container images. You can use the Docker
-      CLI or your preferred client to push, pull, and manage images. Amazon ECR
-      provides a secure, scalable, and reliable registry for your Docker or Open
-      Container Initiative (OCI) images. Amazon ECR supports public repositories
-      with this API. For information about the Amazon ECR API for private
-      repositories, see <a
-      href="https://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html">Amazon
-      Elastic Container Registry API Reference</a>.</p>
+      The Amazon Elastic Container Registry Public (Amazon ECR Public) is a
+      managed service that allows you to host and manage container images in
+      both public and private registries. You can utilize popular tools like the
+      Docker CLI to push, pull, and manage images within a secure, scalable, and
+      reliable registry for Docker or OCI images. This API specifically supports
+      public repositories within Amazon ECR, while private repository
+      functionality can be found in the Amazon Elastic Container Registry API
+      Reference.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/AmazonECR/latest/public/what-is-ecr.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/AmazonECR/latest/public/what-is-ecr.html
       - type: OpenAPI
         url: properties/ecr-public-openapi-original.yml
+      - type: Gallery
+        url: https://gallery.ecr.aws/
     overlays:
       - type: APIs.io Search
         url: overlays/ecr-public-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ecr-public-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ecr-public
-  - name: elasticfilesystem
+  - name: Amazon Elastic File System
     description: >-
-      <fullname>Amazon Elastic File System</fullname> <p>Amazon Elastic File
-      System (Amazon EFS) provides simple, scalable file storage for use with
-      Amazon EC2 Linux and Mac instances in the Amazon Web Services Cloud. With
-      Amazon EFS, storage capacity is elastic, growing and shrinking
-      automatically as you add and remove files, so that your applications have
-      the storage they need, when they need it. For more information, see the <a
-      href="https://docs.aws.amazon.com/efs/latest/ug/api-reference.html">Amazon
-      Elastic File System API Reference</a> and the <a
-      href="https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html">Amazon
-      Elastic File System User Guide</a>.</p>
+      Introducing Amazon Elastic File System (Amazon EFS), a user-friendly,
+      scalable file storage solution designed for seamless integration with
+      Amazon EC2 Linux and Mac instances within the AWS Cloud. With Amazon EFS,
+      storage capacity dynamically adjusts to accommodate your changing file
+      needs, ensuring your applications always have the necessary storage
+      resources available. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/efs/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/efs/
       - type: OpenAPI
         url: properties/elasticfilesystem-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/efs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/efs/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/efs/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/efs/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/efs/faq/
+      - type: Customers
+        url: https://aws.amazon.com/efs/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticfilesystem-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/elasticfilesystem-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticfilesystem
-  - name: elasticloadbalancing
+  - name: AWS Elastic Load Balancing
     description: >-
-      <fullname>Elastic Load Balancing</fullname> <p>A load balancer can
-      distribute incoming traffic across your EC2 instances. This enables you to
-      increase the availability of your application. The load balancer also
-      monitors the health of its registered instances and ensures that it routes
-      traffic only to healthy instances. You configure your load balancer to
-      accept incoming traffic by specifying one or more listeners, which are
-      configured with a protocol and port number for connections from clients to
-      the load balancer and a protocol and port number for connections from the
-      load balancer to the instances.</p> <p>Elastic Load Balancing supports
-      three types of load balancers: Application Load Balancers, Network Load
-      Balancers, and Classic Load Balancers. You can select a load balancer
-      based on your application needs. For more information, see the <a
-      href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/">Elastic
-      Load Balancing User Guide</a>.</p> <p>This reference covers the 2012-06-01
-      API, which supports Classic Load Balancers. The 2015-12-01 API supports
-      Application Load Balancers and Network Load Balancers.</p> <p>To get
-      started, create a load balancer with one or more listeners using
-      <a>CreateLoadBalancer</a>. Register your instances with the load balancer
-      using <a>RegisterInstancesWithLoadBalancer</a>.</p> <p>All Elastic Load
-      Balancing operations are <i>idempotent</i>, which means that they complete
-      at most one time. If you repeat an operation, it succeeds with a 200 OK
-      response code.</p>
+      Elastic Load Balancing is a feature that allows you to distribute incoming
+      traffic across your EC2 instances, increasing the availability of your
+      application. The load balancer monitors the health of registered instances
+      and ensures that traffic is only routed to healthy instances. You can
+      configure your load balancer by specifying listeners that determine how
+      traffic is accepted, including protocols and port numbers. Elastic Load
+      Balancing offers three types of load balancers - Application Load
+      Balancers, Network Load Balancers, and Classic Load Balancers - so you can
+      choose the one that best suits your application needs. For more
+      information, please refer to the Elastic Load Balancing User Guide. The
+      API documentation covers the 2012-06-01 API for Classic Load Balancers,
+      while the 2015-12-01 API supports Application Load Balancers and Network
+      Load Balancers. To begin using Elastic Load Balancing, create a load
+      balancer with listeners using CreateLoadBalancer and register your
+      instances using RegisterInstancesWithLoadBalancer. All operations in
+      Elastic Load Balancing are idempotent, meaning they only complete once and
+      will succeed if repeated with a 200 OK response code.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/elasticloadbalancing/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/elasticloadbalancing/
       - type: OpenAPI
         url: properties/elasticloadbalancing-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/elasticloadbalancing/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/elasticloadbalancing/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/elasticloadbalancing/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/elasticloadbalancing/partners/
+      - type: Customers
+        url: https://aws.amazon.com/elasticloadbalancing/customers/
+      - type: Features
+        url: https://aws.amazon.com/elasticloadbalancing/features/
+      - type: Application Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/application-load-balancer/
+      - type: Network Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/network-load-balancer/
+      - type: Gateway Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer/
+      - type: Classic Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/classic-load-balancer/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticloadbalancing-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/elasticloadbalancing-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticloadbalancing
-  - name: elasticbeanstalk
+  - name: AWS Elastic Beanstalk
     description: >-
-      <fullname>AWS Elastic Beanstalk</fullname> <p>AWS Elastic Beanstalk makes
-      it easy for you to create, deploy, and manage scalable, fault-tolerant
-      applications running on the Amazon Web Services cloud.</p> <p>For more
-      information about this product, go to the <a
-      href="http://aws.amazon.com/elasticbeanstalk/">AWS Elastic Beanstalk</a>
-      details page. The location of the latest AWS Elastic Beanstalk WSDL is <a
-      href="https://elasticbeanstalk.s3.amazonaws.com/doc/2010-12-01/AWSElasticBeanstalk.wsdl">https://elasticbeanstalk.s3.amazonaws.com/doc/2010-12-01/AWSElasticBeanstalk.wsdl</a>.
-      To install the Software Development Kits (SDKs), Integrated Development
-      Environment (IDE) Toolkits, and command line tools that enable you to
-      access the API, go to <a href="http://aws.amazon.com/tools/">Tools for
-      Amazon Web Services</a>.</p> <p> <b>Endpoints</b> </p> <p>For a list of
-      region-specific endpoints that AWS Elastic Beanstalk supports, go to <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#elasticbeanstalk_region">Regions
-      and Endpoints</a> in the <i>Amazon Web Services Glossary</i>.</p>
+      AWS Elastic Beanstalk makes it easy to develop, deploy, and maintain
+      resilient and scalable applications in the Amazon Web Services cloud.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/elasticbeanstalk/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/elasticbeanstalk/
       - type: OpenAPI
         url: properties/elasticbeanstalk-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/elasticbeanstalk/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/elasticbeanstalk/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/elasticbeanstalk/developer-resources/
+      - type: FAQs
+        url: https://aws.amazon.com/elasticbeanstalk/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/elasticbeanstalk/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticbeanstalk-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/elasticbeanstalk-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticbeanstalk
-  - name: elastic-inference
+  - name: AWS Elastic Inference
     description: >-
-      <p> Elastic Inference public APIs. </p> <p> February 15, 2023: Starting
-      April 15, 2023, AWS will not onboard new customers to Amazon Elastic
-      Inference (EI), and will help current customers migrate their workloads to
-      options that offer better price and performance. After April 15, 2023, new
-      customers will not be able to launch instances with Amazon EI accelerators
-      in Amazon SageMaker, Amazon ECS, or Amazon EC2. However, customers who
-      have used Amazon EI at least once during the past 30-day period are
-      considered current customers and will be able to continue using the
-      service. </p>
+      Elastic Inference public APIs.   February 15, 2023: Starting April 15,
+      2023, AWS will not onboard new customers to Amazon Elastic Inference (EI),
+      and will help current customers migrate their workloads to options that
+      offer better price and performance. After April 15, 2023, new customers
+      will not be able to launch instances with Amazon EI accelerators in Amazon
+      SageMaker, Amazon ECS, or Amazon EC2. However, customers who have used
+      Amazon EI at least once during the past 30-day period are considered
+      current customers and will be able to continue using the service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3426,7 +3490,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/elastic-inference-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elastic-inference
-  - name: eks-auth
+  - name: Amazon EKS Auth
     description: >-
       <p>The Amazon EKS Auth API and the <code>AssumeRoleForPodIdentity</code>
       action are only used by the EKS Pod Identity Agent.</p>
@@ -3445,31 +3509,24 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/eks-auth-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:eks-auth
-  - name: elasticloadbalancingv2
+  - name: Elastic Load Balancing
     description: >-
-      <fullname>Elastic Load Balancing</fullname> <p>A load balancer distributes
-      incoming traffic across targets, such as your EC2 instances. This enables
-      you to increase the availability of your application. The load balancer
-      also monitors the health of its registered targets and ensures that it
-      routes traffic only to healthy targets. You configure your load balancer
-      to accept incoming traffic by specifying one or more listeners, which are
-      configured with a protocol and port number for connections from clients to
-      the load balancer. You configure a target group with a protocol and port
-      number for connections from the load balancer to the targets, and with
-      health check settings to be used when checking the health status of the
-      targets.</p> <p>Elastic Load Balancing supports the following types of
-      load balancers: Application Load Balancers, Network Load Balancers,
-      Gateway Load Balancers, and Classic Load Balancers. This reference covers
-      the following load balancer types:</p> <ul> <li> <p>Application Load
-      Balancer - Operates at the application layer (layer 7) and supports HTTP
-      and HTTPS.</p> </li> <li> <p>Network Load Balancer - Operates at the
-      transport layer (layer 4) and supports TCP, TLS, and UDP.</p> </li> <li>
-      <p>Gateway Load Balancer - Operates at the network layer (layer 3).</p>
-      </li> </ul> <p>For more information, see the <a
-      href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/">Elastic
-      Load Balancing User Guide</a>.</p> <p>All Elastic Load Balancing
-      operations are idempotent, which means that they complete at most one
-      time. If you repeat an operation, it succeeds.</p>
+      My API, Elastic Load Balancing, is a service that distributes incoming
+      traffic across targets, such as EC2 instances, to increase the
+      availability of your application. The load balancer monitors the health of
+      its registered targets and routes traffic only to healthy targets. You can
+      configure your load balancer to accept incoming traffic by specifying
+      listeners with protocols and port numbers for client connections.
+      Additionally, you can configure target groups with protocols, port
+      numbers, and health check settings for connections from the load balancer
+      to the targets. Elastic Load Balancing supports various types of load
+      balancers, including Application Load Balancers, Network Load Balancers,
+      Gateway Load Balancers, and Classic Load Balancers. This API reference
+      covers the specifics of Application Load Balancers, Network Load
+      Balancers, and Gateway Load Balancers. All operations within Elastic Load
+      Balancing are idempotent, ensuring that they complete successfully at most
+      one time. For more information, refer to the Elastic Load Balancing User
+      Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3485,22 +3542,39 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/elasticloadbalancingv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticloadbalancingv2
-  - name: elasticmapreduce
+  - name: Amazon EMR
     description: >-
-      <p>Amazon EMR is a web service that makes it easier to process large
-      amounts of data efficiently. Amazon EMR uses Hadoop processing combined
-      with several Amazon Web Services services to do tasks such as web
-      indexing, data mining, log file analysis, machine learning, scientific
-      simulation, and data warehouse management.</p>
+      The API provided by Amazon EMR is a powerful web service designed to
+      streamline the processing of large datasets with efficiency. By leveraging
+      Hadoop processing and integrating various Amazon Web Services, this tool
+      allows for seamless execution of tasks like web indexing, data mining, log
+      file analysis, machine learning, scientific simulation, and data warehouse
+      management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/emr/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/emr/
       - type: OpenAPI
         url: properties/elasticmapreduce-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/emr/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/emr/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/emr/partners/
+      - type: Getting Started
+        url: https://aws.amazon.com/emr/getting-started/
+      - type: Features
+        url: https://aws.amazon.com/emr/features/
+      - type: Studio
+        url: https://aws.amazon.com/emr/features/studio/
+      - type: Notebooks
+        url: https://aws.amazon.com/emr/features/notebooks/
+      - type: Serverless
+        url: https://aws.amazon.com/emr/serverless/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticmapreduce-openapi-search.yml
