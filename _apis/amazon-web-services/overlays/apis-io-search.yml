@@ -3754,31 +3754,39 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/entitlementmarketplace-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:entitlementmarketplace
-  - name: entityresolution
+  - name: AWS Entity Resolution
     description: >-
-      <p>Welcome to the <i>Entity Resolution API Reference</i>.</p> <p>Entity
-      Resolution is an Amazon Web Services service that provides pre-configured
-      entity resolution capabilities that enable developers and analysts at
-      advertising and marketing companies to build an accurate and complete view
-      of their consumers.</p> <p> With Entity Resolution, you can match source
-      records containing consumer identifiers, such as name, email address, and
-      phone number. This is true even when these records have incomplete or
-      conflicting identifiers. For example, Entity Resolution can effectively
-      match a source record from a customer relationship management (CRM) system
-      with a source record from a marketing system containing campaign
-      information.</p> <p>To learn more about Entity Resolution concepts,
-      procedures, and best practices, see the <a
-      href="https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html">Entity
-      Resolution User Guide</a>.</p>
+      Discover the capabilities of the Entity Resolution API, a part of Amazon
+      Web Services that simplifies the process of matching consumer identifiers
+      within source records. By utilizing Entity Resolution, developers and
+      analysts in the advertising and marketing industries can effortlessly
+      create a comprehensive and accurate view of their customers. Even when
+      faced with conflicting or incomplete information, this service can
+      effectively match records from various systems, such as CRM and marketing
+      platforms. For a more in-depth understanding of Entity Resolution
+      principles, processes, and recommendations, refer to the Entity Resolution
+      User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/entity-resolution/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/entity-resolution/
       - type: OpenAPI
         url: properties/entityresolution-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/entity-resolution/features/
+      - type: FAQs
+        url: https://aws.amazon.com/entity-resolution/faqs/
+      - type: Pricing
+        url: https://aws.amazon.com/entity-resolution/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/entity-resolution/resources/
+      - type: Customers
+        url: https://aws.amazon.com/entity-resolution/customers/
+      - type: Partners
+        url: https://aws.amazon.com/entity-resolution/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/entityresolution-openapi-search.yml
