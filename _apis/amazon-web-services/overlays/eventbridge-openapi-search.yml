@@ -4,13 +4,11 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateEndpoint
+      summary: Update Endpoint
       description: >-
-        <p>Update an existing endpoint. For more information about global
-        endpoints, see <a
-        href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html">Making
-        applications Regional-fault tolerant with global endpoints and event
-        replication</a> in the <i>Amazon EventBridge User Guid
+        Revise the existing endpoint in my API. Learn more about global
+        endpoints and enhancing regional fault tolerance through event
+        replication in the Amazon EventBridge User Guide.
       tags:
         - Update
         - Endpoints
