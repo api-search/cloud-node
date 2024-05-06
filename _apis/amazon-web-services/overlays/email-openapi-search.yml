@@ -6,7 +6,7 @@ paths:
     POST:
       summary: Verify Email Identity
       description: >-
-        rAdds an email address to the list of identities for your Amazon SES
+        Adds an email address to the list of identities for your Amazon SES
         account in the current AWS Region and initiates a verification process
         by sending a verification email to the specified address. This operation
         can only be executed once per second.
