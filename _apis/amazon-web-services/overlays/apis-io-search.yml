@@ -3867,48 +3867,62 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/events-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:events
-  - name: firehose
+  - name: Amazon Kinesis Data Firehose
     description: >-
-      <fullname>Amazon Kinesis Data Firehose API Reference</fullname> <p>Amazon
-      Kinesis Data Firehose is a fully managed service that delivers real-time
-      streaming data to destinations such as Amazon Simple Storage Service
-      (Amazon S3), Amazon OpenSearch Service, Amazon Redshift, Splunk, and
-      various other supportd destinations.</p>
+      The Amazon Kinesis Data Firehose API is a comprehensive tool for managing
+      real-time streaming data delivery to a variety of destinations, including
+      Amazon S3, Amazon OpenSearch Service, Amazon Redshift, Splunk, and more.
+      This fully managed service streamlines the process of transmitting data
+      effectively and efficiently.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/firehose/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/firehose/
       - type: OpenAPI
         url: properties/firehose-openapi-original.yml
+      - type: FAQs
+        url: https://aws.amazon.com/firehose/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/firehose/resources/
+      - type: Customers
+        url: https://aws.amazon.com/firehose/customers/
+      - type: Partners
+        url: https://aws.amazon.com/firehose/partners/
+      - type: Pricing
+        url: https://aws.amazon.com/firehose/pricing/
+      - type: Features
+        url: https://aws.amazon.com/firehose/features/
     overlays:
       - type: APIs.io Search
         url: overlays/firehose-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/firehose-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:firehose
-  - name: evidently
+  - name: Amazon CloudWatch Evidently
     description: >-
-      <p>You can use Amazon CloudWatch Evidently to safely validate new features
-      by serving them to a specified percentage of your users while you roll out
-      the feature. You can monitor the performance of the new feature to help
-      you decide when to ramp up traffic to your users. This helps you reduce
-      risk and identify unintended consequences before you fully launch the
-      feature.</p> <p>You can also conduct A/B experiments to make feature
-      design decisions based on evidence and data. An experiment can test as
-      many as five variations at once. Evidently collects experiment data and
-      analyzes it using statistical methods. It also provides clear
-      recommendations about which variations perform better. You can test both
-      user-facing features and backend features.</p>
+      Utilize Amazon CloudWatch Evidently API to securely introduce and test new
+      features to a percentage of your user base before full deployment.
+      Monitoring the performance of these new features allows you to make
+      informed decisions on when to increase user traffic. This helps in
+      minimizing risks and uncovering any unintended consequences prior to a
+      complete rollout. Additionally, conduct A/B experiments to guide feature
+      design decisions with evidence and data. With the ability to test up to
+      five variations simultaneously, Evidently collects experiment data and
+      employs statistical analysis to offer clear recommendations on the
+      best-performing variations. This API supports testing of both user-facing
+      and backend features.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Evidently.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Evidently.html
       - type: OpenAPI
         url: properties/evidently-openapi-original.yml
     overlays:
@@ -3917,17 +3931,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/evidently-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:evidently
-  - name: forecast
-    description: <p>Provides APIs for creating and managing Amazon Forecast resources.</p>
+  - name: Amazon Forecast
+    description: >-
+      My API, Amazon Forecast, is a powerful tool designed for businesses
+      looking to analyze and predict time-series data using machine learning.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/forecast/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/forecast/
       - type: OpenAPI
         url: properties/forecast-openapi-original.yml
+      - type: Partners
+        url: https://aws.amazon.com/forecast/partners/
+      - type: Customers
+        url: https://aws.amazon.com/forecast/customers/
+      - type: Resources
+        url: https://aws.amazon.com/forecast/resources/
+      - type: Embedded Solutions
+        url: https://aws.amazon.com/forecast/embedded-solutions/
+      - type: Pricing
+        url: https://aws.amazon.com/forecast/pricing/
+      - type: Features
+        url: https://aws.amazon.com/forecast/features/
     overlays:
       - type: APIs.io Search
         url: overlays/forecast-openapi-search.yml
