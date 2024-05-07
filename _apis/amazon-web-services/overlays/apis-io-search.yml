@@ -3664,32 +3664,29 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/email-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:email
-  - name: emr-serverless
+  - name: Amazon EMR Serverless
     description: >-
-      <p>Amazon EMR Serverless is a new deployment option for Amazon EMR. Amazon
-      EMR Serverless provides a serverless runtime environment that simplifies
-      running analytics applications using the latest open source frameworks
-      such as Apache Spark and Apache Hive. With Amazon EMR Serverless, you
-      don’t have to configure, optimize, secure, or operate clusters to run
-      applications with these frameworks.</p> <p>The API reference to Amazon EMR
-      Serverless is <code>emr-serverless</code>. The <code>emr-serverless</code>
-      prefix is used in the following scenarios: </p> <ul> <li> <p>It is the
-      prefix in the CLI commands for Amazon EMR Serverless. For example,
-      <code>aws emr-serverless start-job-run</code>.</p> </li> <li> <p>It is the
-      prefix before IAM policy actions for Amazon EMR Serverless. For example,
-      <code>"Action": ["emr-serverless:StartJobRun"]</code>. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-actions">Policy
-      actions for Amazon EMR Serverless</a>.</p> </li> <li> <p>It is the prefix
-      used in Amazon EMR Serverless service endpoints. For example,
-      <code>emr-serverless.us-east-2.amazonaws.com</code>.</p> </li> </ul>
+      Introducing Amazon EMR Serverless, a new deployment option for Amazon EMR
+      that offers a serverless runtime environment for running analytics
+      applications with popular open source frameworks like Apache Spark and
+      Apache Hive. With Amazon EMR Serverless, there is no need to configure,
+      optimize, secure, or manage clusters when using these frameworks. The API
+      reference for Amazon EMR Serverless is emr-serverless, which is used in
+      CLI commands, IAM policy actions, and service endpoints. For example, you
+      can use commands like "aws emr-serverless start-job-run" and IAM policy
+      actions like "Action": ["emr-serverless:StartJobRun"]. Check out the
+      Policy actions for Amazon EMR Serverless for more information. Service
+      endpoints for Amazon EMR Serverless will use the prefix emr-serverless,
+      such as emr-serverless.us-east-2.amazonaws.com.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html
+    baseURL: https://emr-serverless.[region].amazonaws.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html
       - type: OpenAPI
         url: properties/emr-serverless-openapi-original.yml
     overlays:
@@ -3698,28 +3695,26 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/emr-serverless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:emr-serverless
-  - name: es
+  - name: Amazon Elasticsearch Configuration Service
     description: >-
-      <fullname>Amazon Elasticsearch Configuration Service</fullname> <p>Use the
-      Amazon Elasticsearch Configuration API to create, configure, and manage
-      Elasticsearch domains.</p> <p>For sample code that uses the Configuration
-      API, see the <a
-      href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-samples.html">Amazon
-      Elasticsearch Service Developer Guide</a>. The guide also contains <a
-      href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-request-signing.html">sample
-      code for sending signed HTTP requests to the Elasticsearch APIs</a>.</p>
-      <p>The endpoint for configuration service requests is region-specific:
-      es.<i>region</i>.amazonaws.com. For example, es.us-east-1.amazonaws.com.
-      For a current list of supported regions and endpoints, see <a
-      href="http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions"
-      target="_blank">Regions and Endpoints</a>.</p>
+      Utilize the Amazon Elasticsearch Configuration Service API for creating,
+      customizing, and overseeing Elasticsearch domains. Developers can refer to
+      the Amazon Elasticsearch Service Developer Guide for sample code
+      showcasing the Configuration API in action, as well as instructions for
+      sending signed HTTP requests to Elasticsearch APIs. Configuration service
+      requests are region-specific, with endpoints following the format
+      es.region.amazonaws.com (e.g. es.us-east-1.amazonaws.com). For a
+      comprehensive list of supported regions and corresponding endpoints,
+      please refer to the Regions and Endpoints documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html
+    baseURL: https://es.[region].amazonaws.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html
       - type: OpenAPI
         url: properties/es-openapi-original.yml
     overlays:
@@ -3728,24 +3723,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/es-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:es
-  - name: entitlement.marketplace
+  - name: AWS Marketplace Entitlement Service
     description: >-
-      <fullname>AWS Marketplace Entitlement Service</fullname> <p>This reference
-      provides descriptions of the AWS Marketplace Entitlement Service API.</p>
-      <p>AWS Marketplace Entitlement Service is used to determine the
-      entitlement of a customer to a given product. An entitlement represents
-      capacity in a product owned by the customer. For example, a customer might
-      own some number of users or seats in an SaaS application or some amount of
-      data capacity in a multi-tenant database.</p> <p> <b>Getting Entitlement
-      Records</b> </p> <ul> <li> <p> <i>GetEntitlements</i>- Gets the
-      entitlements for a Marketplace product.</p> </li> </ul>
+      The AWS Marketplace Entitlement Service API documentation provides an
+      overview of how to use the service to determine a customer's entitlement
+      to a specific product. Entitlements represent the capacity or access a
+      customer has to a particular product, such as user seats in an SaaS
+      application or data capacity in a database. The GetEntitlements function
+      retrieves entitlement records for a Marketplace product.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace/latest/userguide/checking-entitlements.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace/latest/userguide/checking-entitlements.html
       - type: OpenAPI
         url: properties/entitlementmarketplace-openapi-original.yml
     overlays:
@@ -3962,22 +3956,32 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/forecast-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:forecast
-  - name: fis
+  - name: AWS Fault Injection Simulator
     description: >-
-      <p>Fault Injection Simulator is a managed service that enables you to
-      perform fault injection experiments on your Amazon Web Services workloads.
-      For more information, see the <a
-      href="https://docs.aws.amazon.com/fis/latest/userguide/">Fault Injection
-      Simulator User Guide</a>.</p>
+      AWS Fault Injection Service (FIS), a component of the AWS Resilience Hub,
+      is a comprehensive service designed to enhance an application's
+      performance, observability, and resilience through the implementation of
+      fault injection experiments. By streamlining the setup and execution of
+      controlled fault injection tests across various AWS services, FIS empowers
+      teams to increase their confidence in the reliability of their
+      applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/fis/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/fis/
       - type: OpenAPI
         url: properties/fis-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/fis/features/
+      - type: Pricing
+        url: https://aws.amazon.com/fis/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/fis/faqs/
+      - type: Pricing
+        url: https://aws.amazon.com/fis/pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/fis-openapi-search.yml
@@ -4001,62 +4005,75 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/forecastquery-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:forecastquery
-  - name: frauddetector
+  - name: Amazon Fraud Detector
     description: >-
-      <p>This is the Amazon Fraud Detector API Reference. This guide is for
-      developers who need detailed information about Amazon Fraud Detector API
-      actions, data types, and errors. For more information about Amazon Fraud
-      Detector features, see the <a
-      href="https://docs.aws.amazon.com/frauddetector/latest/ug/">Amazon Fraud
-      Detector User Guide</a>.</p> <p>We provide the Query API as well as AWS
-      software development kits (SDK) for Amazon Fraud Detector in Java and
-      Python programming languages.</p> <p>The Amazon Fraud Detector Query API
-      provides HTTPS requests that use the HTTP verb GET or POST and a Query
-      parameter <code>Action</code>. AWS SDK provides libraries, sample code,
-      tutorials, and other resources for software developers who prefer to build
-      applications using language-specific APIs instead of submitting a request
-      over HTTP or HTTPS. These libraries provide basic functions that
-      automatically take care of tasks such as cryptographically signing your
-      requests, retrying requests, and handling error responses, so that it is
-      easier for you to get started. For more information about the AWS SDKs, go
-      to <a href="https://aws.amazon.com/developer/tools/">Tools to build on
-      AWS</a> page, scroll down to the <b>SDK</b> section, and choose plus (+)
-      sign to expand the section. </p>
+      This is a comprehensive API reference for the Amazon Fraud Detector,
+      designed for developers seeking in-depth information on API actions, data
+      types, and errors. To learn more about the features of Amazon Fraud
+      Detector, refer to the accompanying User Guide. We offer the Query API and
+      AWS SDKs for Amazon Fraud Detector in Java and Python programming
+      languages. The Query API allows for HTTPS requests using GET or POST
+      methods with a Query parameter Action. The AWS SDKs provide libraries,
+      code samples, tutorials, and additional resources for developers who
+      prefer language-specific APIs for building applications. These libraries
+      streamline tasks such as request signing, error handling, and request
+      retries to simplify the development process. To explore the AWS SDK tools,
+      visit the Tools to build on AWS page, expand the SDK section by clicking
+      the plus sign.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/fraud-detector/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/fraud-detector/
       - type: OpenAPI
         url: properties/frauddetector-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/fraud-detector/features/
+      - type: Pricing
+        url: https://aws.amazon.com/fraud-detector/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/fraud-detector/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/fraud-detector/resources/
+      - type: Customers
+        url: https://aws.amazon.com/fraud-detector/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/frauddetector-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/frauddetector-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:frauddetector
-  - name: fms
+  - name: AWS Firewall Manager
     description: >-
-      <p>This is the <i>Firewall Manager API Reference</i>. This guide is for
-      developers who need detailed information about the Firewall Manager API
-      actions, data types, and errors. For detailed information about Firewall
-      Manager features, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html">Firewall
-      Manager Developer Guide</a>.</p> <p>Some API actions require explicit
-      resource permissions. For information, see the developer guide topic <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/fms-security_iam_service-with-iam.html#fms-security_iam_service-with-iam-roles-service">Service
-      roles for Firewall Manager</a>. </p>
+      Welcome to the Firewall Manager API Reference. This comprehensive guide is
+      designed for developers seeking in-depth information on the various
+      actions, data types, and errors associated with the Firewall Manager API.
+      For a more detailed overview of Firewall Manager features, please refer to
+      the Firewall Manager Developer Guide. Please note that certain API actions
+      may necessitate specific resource permissions. For more information on
+      this topic, please consult the developer guide section on Service roles
+      for Firewall Manager.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/firewall-manager/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/firewall-manager/
       - type: OpenAPI
         url: properties/fms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/firewall-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/firewall-manager/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/firewall-manager/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/firewall-manager/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/firewall-manager/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/fms-openapi-search.yml
