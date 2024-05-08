@@ -3455,45 +3455,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/elasticfilesystem-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticfilesystem
-  - name: AWS Elastic Load Balancing
-    description: >-
-      <fullname>Elastic Load Balancing</fullname> <p>A load balancer can
-      distribute incoming traffic across your EC2 instances. This enables you to
-      increase the availability of your application. The load balancer also
-      monitors the health of its registered instances and ensures that it routes
-      traffic only to healthy instances. You configure your load balancer to
-      accept incoming traffic by specifying one or more listeners, which are
-      configured with a protocol and port number for connections from clients to
-      the load balancer and a protocol and port number for connections from the
-      load balancer to the instances.</p> <p>Elastic Load Balancing supports
-      three types of load balancers: Application Load Balancers, Network Load
-      Balancers, and Classic Load Balancers. You can select a load balancer
-      based on your application needs. For more information, see the <a
-      href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/">Elastic
-      Load Balancing User Guide</a>.</p> <p>This reference covers the 2012-06-01
-      API, which supports Classic Load Balancers. The 2015-12-01 API supports
-      Application Load Balancers and Network Load Balancers.</p> <p>To get
-      started, create a load balancer with one or more listeners using
-      <a>CreateLoadBalancer</a>. Register your instances with the load balancer
-      using <a>RegisterInstancesWithLoadBalancer</a>.</p> <p>All Elastic Load
-      Balancing operations are <i>idempotent</i>, which means that they complete
-      at most one time. If you repeat an operation, it succeeds with a 200 OK
-      response code.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/elasticloadbalancing-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/elasticloadbalancing-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/elasticloadbalancing-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:elasticloadbalancing
   - name: AWS Elastic Beanstalk
     description: >-
       <fullname>AWS Elastic Beanstalk</fullname> <p>AWS Elastic Beanstalk makes
@@ -3525,51 +3486,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/elasticbeanstalk-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticbeanstalk
-  - name: AWS Elastic Inference
-    description: >-
-      <p> Elastic Inference public APIs. </p> <p> February 15, 2023: Starting
-      April 15, 2023, AWS will not onboard new customers to Amazon Elastic
-      Inference (EI), and will help current customers migrate their workloads to
-      options that offer better price and performance. After April 15, 2023, new
-      customers will not be able to launch instances with Amazon EI accelerators
-      in Amazon SageMaker, Amazon ECS, or Amazon EC2. However, customers who
-      have used Amazon EI at least once during the past 30-day period are
-      considered current customers and will be able to continue using the
-      service. </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/elastic-inference-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/elastic-inference-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/elastic-inference-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:elastic-inference
-  - name: Amazon EKS Auth
-    description: >-
-      <p>The Amazon EKS Auth API and the <code>AssumeRoleForPodIdentity</code>
-      action are only used by the EKS Pod Identity Agent.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/eks-auth-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/eks-auth-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/eks-auth-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:eks-auth
   - name: Elastic Load Balancing V2
     description: >-
       <fullname>Elastic Load Balancing</fullname> <p>A load balancer distributes
@@ -3881,38 +3797,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/eventbridge-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:eventbridge
-  - name: Amazon EventBridge
-    description: >-
-      <p>Amazon EventBridge helps you to respond to state changes in your Amazon
-      Web Services resources. When your resources change state, they
-      automatically send events to an event stream. You can create rules that
-      match selected events in the stream and route them to targets to take
-      action. You can also use rules to take action on a predetermined schedule.
-      For example, you can configure rules to:</p> <ul> <li> <p>Automatically
-      invoke an Lambda function to update DNS entries when an event notifies you
-      that Amazon EC2 instance enters the running state.</p> </li> <li>
-      <p>Direct specific API records from CloudTrail to an Amazon Kinesis data
-      stream for detailed analysis of potential security or availability
-      risks.</p> </li> <li> <p>Periodically invoke a built-in target to create a
-      snapshot of an Amazon EBS volume.</p> </li> </ul> <p>For more information
-      about the features of Amazon EventBridge, see the <a
-      href="https://docs.aws.amazon.com/eventbridge/latest/userguide">Amazon
-      EventBridge User Guide</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/events-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/events-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/events-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:events
   - name: Amazon Kinesis Data Firehose
     description: >-
       <fullname>Amazon Kinesis Data Firehose API Reference</fullname> <p>Amazon
@@ -4002,23 +3886,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/fis-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:fis
-  - name: Amazon Forecast Query
-    description: <p>Provides APIs for creating and managing Amazon Forecast resources.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/forecastquery-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/forecastquery-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/forecastquery-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:forecastquery
   - name: Amazon Fraud Detector
     description: >-
       <p>This is the Amazon Fraud Detector API Reference. This guide is for
@@ -4138,34 +4005,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/gamelift-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:gamelift
-  - name: AWS Free Tier
-    description: >-
-      <p>You can use the Amazon Web Services Free Tier API to query
-      programmatically your Free Tier usage data.</p> <p>Free Tier tracks your
-      monthly usage data for all free tier offers that are associated with your
-      Amazon Web Services account. You can use the Free Tier API to filter and
-      show only the data that you want.</p> <p>Service endpoint</p> <p>The Free
-      Tier API provides the following endpoint:</p> <ul> <li>
-      <p>https://freetier.us-east-1.api.aws</p> </li> </ul> <p>For more
-      information, see <a
-      href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-free-tier.html">Using
-      the Amazon Web Services Free Tier</a> in the <i>Billing User
-      Guide</i>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/freetier-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/freetier-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/freetier-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:freetier
   - name: AWS Global Accelerator
     description: >-
       <fullname>Global Accelerator</fullname> <p>This is the <i>Global
@@ -4299,25 +4138,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/finspace-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:finspace-data
-  - name: finspace
-    description: >-
-      <p>The FinSpace management service provides the APIs for managing FinSpace
-      environments.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/finspace-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/finspace-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/finspace-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:finspace
   - name: fsAmazon FSx
     description: >-
       <p>Amazon FSx is a fully managed service that makes it easy for storage
