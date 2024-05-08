@@ -4080,57 +4080,35 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/fms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:fms
-  - name: gamelift
+  - name: Amazon GameLift
     description: >-
-      <p>Amazon GameLift provides solutions for hosting session-based
-      multiplayer game servers in the cloud, including tools for deploying,
-      operating, and scaling game servers. Built on Amazon Web Services global
-      computing infrastructure, GameLift helps you deliver high-performance,
-      high-reliability, low-cost game servers while dynamically scaling your
-      resource usage to meet player demand. </p> <p> <b>About Amazon GameLift
-      solutions</b> </p> <p>Get more information on these Amazon GameLift
-      solutions in the <a
-      href="https://docs.aws.amazon.com/gamelift/latest/developerguide/">Amazon
-      GameLift Developer Guide</a>.</p> <ul> <li> <p>Amazon GameLift managed
-      hosting -- Amazon GameLift offers a fully managed service to set up and
-      maintain computing machines for hosting, manage game session and player
-      session life cycle, and handle security, storage, and performance
-      tracking. You can use automatic scaling tools to balance player demand and
-      hosting costs, configure your game session management to minimize player
-      latency, and add FlexMatch for matchmaking.</p> </li> <li> <p>Managed
-      hosting with Realtime Servers -- With Amazon GameLift Realtime Servers,
-      you can quickly configure and set up ready-to-go game servers for your
-      game. Realtime Servers provides a game server framework with core Amazon
-      GameLift infrastructure already built in. Then use the full range of
-      Amazon GameLift managed hosting features, including FlexMatch, for your
-      game.</p> </li> <li> <p>Amazon GameLift FleetIQ -- Use Amazon GameLift
-      FleetIQ as a standalone service while hosting your games using EC2
-      instances and Auto Scaling groups. Amazon GameLift FleetIQ provides
-      optimizations for game hosting, including boosting the viability of
-      low-cost Spot Instances gaming. For a complete solution, pair the Amazon
-      GameLift FleetIQ and FlexMatch standalone services.</p> </li> <li>
-      <p>Amazon GameLift FlexMatch -- Add matchmaking to your game hosting
-      solution. FlexMatch is a customizable matchmaking service for multiplayer
-      games. Use FlexMatch as integrated with Amazon GameLift managed hosting or
-      incorporate FlexMatch as a standalone service into your own hosting
-      solution.</p> </li> </ul> <p> <b>About this API Reference</b> </p> <p>This
-      reference guide describes the low-level service API for Amazon GameLift.
-      With each topic in this guide, you can find links to language-specific SDK
-      guides and the Amazon Web Services CLI reference. Useful links:</p> <ul>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-awssdk.html">Amazon
-      GameLift API operations listed by tasks</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-components.html">
-      Amazon GameLift tools and resources</a> </p> </li> </ul>
+      The Amazon GameLift API offers comprehensive cloud hosting solutions for
+      session-based multiplayer game servers. It includes features for
+      deploying, managing, and expanding game servers seamlessly. Leveraging
+      Amazon Web Services' robust global computing network, GameLift ensures
+      top-tier performance, reliability, and cost-efficiency for your game
+      servers. With the ability to adjust resource allocation in real-time to
+      accommodate fluctuations in player activity, GameLift enables developers
+      to meet player demand effectively.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/gamelift/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/gamelift/
       - type: OpenAPI
         url: properties/gamelift-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/gamelift/pricing/
+      - type: Features
+        url: https://aws.amazon.com/gamelift/features/
+      - type: Resources
+        url: https://aws.amazon.com/gamelift/resources/
+      - type: Faq
+        url: https://aws.amazon.com/gamelift/faq/
+      - type: Getting-started
+        url: https://aws.amazon.com/gamelift/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/gamelift-openapi-search.yml
@@ -4165,133 +4143,135 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/freetier-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:freetier
-  - name: globalaccelerator
+  - name: Global Accelerator
     description: >-
-      <fullname>Global Accelerator</fullname> <p>This is the <i>Global
-      Accelerator API Reference</i>. This guide is for developers who need
-      detailed information about Global Accelerator API actions, data types, and
-      errors. For more information about Global Accelerator features, see the <a
-      href="https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html">Global
-      Accelerator Developer Guide</a>.</p> <p>Global Accelerator is a service in
-      which you create <i>accelerators</i> to improve the performance of your
-      applications for local and global users. Depending on the type of
-      accelerator you choose, you can gain additional benefits. </p> <ul> <li>
-      <p>By using a standard accelerator, you can improve availability of your
-      internet applications that are used by a global audience. With a standard
-      accelerator, Global Accelerator directs traffic to optimal endpoints over
-      the Amazon Web Services global network. </p> </li> <li> <p>For other
-      scenarios, you might choose a custom routing accelerator. With a custom
-      routing accelerator, you can use application logic to directly map one or
-      more users to a specific endpoint among many endpoints.</p> </li> </ul>
-      <important> <p>Global Accelerator is a global service that supports
-      endpoints in multiple Amazon Web Services Regions but you must specify the
-      US West (Oregon) Region to create, update, or otherwise work with
-      accelerators. That is, for example, specify <code>--region
-      us-west-2</code> on Amazon Web Services CLI commands.</p> </important>
-      <p>By default, Global Accelerator provides you with static IP addresses
-      that you associate with your accelerator. The static IP addresses are
-      anycast from the Amazon Web Services edge network. For IPv4, Global
-      Accelerator provides two static IPv4 addresses. For dual-stack, Global
-      Accelerator provides a total of four addresses: two static IPv4 addresses
-      and two static IPv6 addresses. With a standard accelerator for IPv4,
-      instead of using the addresses that Global Accelerator provides, you can
-      configure these entry points to be IPv4 addresses from your own IP address
-      ranges that you bring to Global Accelerator (BYOIP). </p> <p>For a
-      standard accelerator, they distribute incoming application traffic across
-      multiple endpoint resources in multiple Amazon Web Services Regions ,
-      which increases the availability of your applications. Endpoints for
-      standard accelerators can be Network Load Balancers, Application Load
-      Balancers, Amazon EC2 instances, or Elastic IP addresses that are located
-      in one Amazon Web Services Region or multiple Amazon Web Services Regions.
-      For custom routing accelerators, you map traffic that arrives to the
-      static IP addresses to specific Amazon EC2 servers in endpoints that are
-      virtual private cloud (VPC) subnets.</p> <important> <p>The static IP
-      addresses remain assigned to your accelerator for as long as it exists,
-      even if you disable the accelerator and it no longer accepts or routes
-      traffic. However, when you <i>delete</i> an accelerator, you lose the
-      static IP addresses that are assigned to it, so you can no longer route
-      traffic by using them. You can use IAM policies like tag-based permissions
-      with Global Accelerator to limit the users who have permissions to delete
-      an accelerator. For more information, see <a
-      href="https://docs.aws.amazon.com/global-accelerator/latest/dg/access-control-manage-access-tag-policies.html">Tag-based
-      policies</a>.</p> </important> <p>For standard accelerators, Global
-      Accelerator uses the Amazon Web Services global network to route traffic
-      to the optimal regional endpoint based on health, client location, and
-      policies that you configure. The service reacts instantly to changes in
-      health or configuration to ensure that internet traffic from clients is
-      always directed to healthy endpoints.</p> <p>For more information about
-      understanding and using Global Accelerator, see the <a
-      href="https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html">Global
-      Accelerator Developer Guide</a>.</p>
+      Global Accelerator is a powerful API service that allows developers to
+      create accelerators to enhance the performance of their applications for
+      both local and global users. This API Reference provides detailed
+      information on Global Accelerator API actions, data types, and errors,
+      catering to developers looking to leverage Global Accelerator features.
+
+
+      Global Accelerator offers two types of accelerators - standard and custom
+      routing. With a standard accelerator, traffic is directed to optimal
+      endpoints over the Amazon Web Services global network, improving
+      availability for internet applications used by a global audience. On the
+      other hand, a custom routing accelerator allows developers to map users to
+      specific endpoints using application logic.
+
+
+      Global Accelerator is a global service supporting endpoints in multiple
+      Amazon Web Services Regions, with the US West (Oregon) Region being the
+      default for creating, updating, and managing accelerators. The API
+      provides static IP addresses, anycast from the Amazon Web Services edge
+      network, with two static IPv4 addresses for standard accelerators and four
+      addresses for dual-stack accelerators.
+
+
+      Standard accelerators distribute incoming application traffic across
+      various endpoint resources in multiple Amazon Web Services Regions, such
+      as Network Load Balancers, Application Load Balancers, Amazon EC2
+      instances, or Elastic IP addresses. Custom routing accelerators map
+      traffic arriving at static IP addresses to specific Amazon EC2 servers in
+      virtual private cloud (VPC) subnets.
+
+
+      Static IP addresses remain assigned to accelerators even if disabled, but
+      are lost upon deletion. IAM policies, including tag-based permissions, can
+      be used to control accelerator deletion permissions.
+
+
+      Global Accelerator utilizes the Amazon Web Services global network to
+      route traffic to optimal regional endpoints based on health, client
+      location, and configured policies. The service reacts instantly to changes
+      in health or configuration to ensure continuous, efficient traffic routing
+      for clients.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/global-accelerator/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/global-accelerator/
       - type: OpenAPI
         url: properties/globalaccelerator-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/global-accelerator/features/
+      - type: Pricing
+        url: https://aws.amazon.com/global-accelerator/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/global-accelerator/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/global-accelerator/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/globalaccelerator-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/globalaccelerator-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:globalaccelerator
-  - name: glacier
+  - name: Amazon S3 Glacier
     description: >-
-      <p> Amazon S3 Glacier (Glacier) is a storage solution for "cold data."</p>
-      <p>Glacier is an extremely low-cost storage service that provides secure,
-      durable, and easy-to-use storage for data backup and archival. With
-      Glacier, customers can store their data cost effectively for months,
-      years, or decades. Glacier also enables customers to offload the
-      administrative burdens of operating and scaling storage to AWS, so they
-      don't have to worry about capacity planning, hardware provisioning, data
-      replication, hardware failure and recovery, or time-consuming hardware
-      migrations.</p> <p>Glacier is a great storage choice when low storage cost
-      is paramount and your data is rarely retrieved. If your application
-      requires fast or frequent access to your data, consider using Amazon S3.
-      For more information, see <a href="http://aws.amazon.com/s3/">Amazon
-      Simple Storage Service (Amazon S3)</a>.</p> <p>You can store any kind of
-      data in any format. There is no maximum limit on the total amount of data
-      you can store in Glacier.</p> <p>If you are a first-time user of Glacier,
-      we recommend that you begin by reading the following sections in the
-      <i>Amazon S3 Glacier Developer Guide</i>:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html">What
-      is Amazon S3 Glacier</a> - This section of the Developer Guide describes
-      the underlying data model, the operations it supports, and the AWS SDKs
-      that you can use to interact with the service.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/amazonglacier/latest/dev/amazon-glacier-getting-started.html">Getting
-      Started with Amazon S3 Glacier</a> - The Getting Started section walks you
-      through the process of creating a vault, uploading archives, creating jobs
-      to download archives, retrieving the job output, and deleting
-      archives.</p> </li> </ul>
+      Amazon S3 Glacier (Glacier) is a cost-effective storage solution designed
+      for long-term storage of infrequently accessed data. It provides secure,
+      durable, and easy-to-use storage for data backup and archival purposes.
+      With Glacier, users can store data for extended periods without worrying
+      about capacity planning or hardware management. Glacier is ideal for when
+      low storage costs are a priority and data retrieval is rare. For
+      applications requiring fast or frequent access to data, Amazon S3 is
+      recommended. Users can store data in any format without limits on the
+      total amount of data stored in Glacier. To get started with Glacier, users
+      can refer to the Amazon S3 Glacier Developer Guide for information on the
+      data model, supported operations, and interacting with the service. The
+      guide also provides instructions for creating vaults, uploading and
+      downloading archives, managing jobs, and deleting archives.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/s3/storage-classes/glacier/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/s3/storage-classes/glacier/
       - type: OpenAPI
         url: properties/glacier-openapi-original.yml
+      - type: Instant-retrieval
+        url: https://aws.amazon.com/s3/storage-classes/glacier/instant-retrieval/
     overlays:
       - type: APIs.io Search
         url: overlays/glacier-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/glacier-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:glacier
-  - name: finspace-data
-    description: <p> The FinSpace APIs let you take actions inside the FinSpace.</p>
+  - name: AWS FinSpace
+    description: >-
+      Experience seamless data processing and analytics tailored for Capital
+      Markets with our API, which offers Managed kdb Insights. Take advantage of
+      our free AWS training to enhance your skills and advance your career with
+      AWS Cloud Practitioner Essentials. Say goodbye to operational tasks such
+      as provisioning, configuring, and maintaining infrastructure for kdb
+      analytics engines. Keep up with financial market volatility by managing
+      spend effectively through features like autoscaling and high availability
+      multi-AZ for kdb applications. Easily launch new kdb analytics
+      infrastructure when needed and fast-track the migration of on-premises kdb
+      systems to AWS.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/finspace/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/finspace/
       - type: OpenAPI
         url: properties/finspace-data-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/finspace/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/finspace/getting-started/
+      - type: Partners
+        url: https://aws.amazon.com/finspace/partners/
+      - type: Faqs
+        url: https://aws.amazon.com/finspace/faqs/
+      - type: Getting-started
+        url: https://aws.amazon.com/finspace/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/finspace-data-openapi-search.yml
@@ -4317,138 +4297,195 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/finspace-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:finspace
-  - name: fsx
+  - name: Amazon FSx
     description: >-
-      <p>Amazon FSx is a fully managed service that makes it easy for storage
-      and application administrators to launch and use shared file storage.</p>
+      The Amazon FSx API simplifies the process of launching, managing, and
+      expanding feature-rich, high-performance file systems in the cloud. With
+      its reliability, security, scalability, and numerous capabilities, Amazon
+      FSx supports a variety of workloads. Leveraging the latest AWS
+      technologies in compute, networking, and disk storage, Amazon FSx delivers
+      high performance at a lower total cost of ownership. This fully managed
+      service takes care of hardware provisioning, patching, and backups,
+      enabling users to concentrate on their applications, end users, and
+      business growth.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/fsx/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/fsx/
       - type: OpenAPI
         url: properties/fsx-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/fsx/pricing/
+      - type: Netapp-ontap
+        url: https://aws.amazon.com/fsx/netapp-ontap/
+      - type: Openzfs
+        url: https://aws.amazon.com/fsx/openzfs/
+      - type: Windows
+        url: https://aws.amazon.com/fsx/windows/
+      - type: Lustre
+        url: https://aws.amazon.com/fsx/lustre/
     overlays:
       - type: APIs.io Search
         url: overlays/fsx-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/fsx-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:fsx
-  - name: greengrassv2
+  - name: AWS IoT Greengrass
     description: >-
-      <p>IoT Greengrass brings local compute, messaging, data management, sync,
-      and ML inference capabilities to edge devices. This enables devices to
-      collect and analyze data closer to the source of information, react
-      autonomously to local events, and communicate securely with each other on
-      local networks. Local devices can also communicate securely with Amazon
-      Web Services IoT Core and export IoT data to the Amazon Web Services
-      Cloud. IoT Greengrass developers can use Lambda functions and components
-      to create and deploy applications to fleets of edge devices for local
-      operation.</p> <p>IoT Greengrass Version 2 provides a new major version of
-      the IoT Greengrass Core software, new APIs, and a new console. Use this
-      API reference to learn how to use the IoT Greengrass V2 API operations to
-      manage components, manage deployments, and core devices.</p> <p>For more
-      information, see <a
-      href="https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-iot-greengrass.html">What
-      is IoT Greengrass?</a> in the <i>IoT Greengrass V2 Developer
-      Guide</i>.</p>
+      IoT Greengrass brings local compute, messaging, data management, sync, and
+      ML inference capabilities to edge devices. This enables devices to collect
+      and analyze data closer to the source of information, react autonomously
+      to local events, and communicate securely with each other on local
+      networks. Local devices can also communicate securely with Amazon Web
+      Services IoT Core and export IoT data to the Amazon Web Services Cloud.
+      IoT Greengrass developers can use Lambda functions and components to
+      create and deploy applications to fleets of edge devices for local
+      operation. IoT Greengrass Version 2 provides a new major version of the
+      IoT Greengrass Core software, new APIs, and a new console. Use this API
+      reference to learn how to use the IoT Greengrass V2 API operations to
+      manage components, manage deployments, and core devices.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/greengrass/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/greengrass/
       - type: OpenAPI
         url: properties/greengrassv2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/greengrass/features/
+      - type: Ml
+        url: https://aws.amazon.com/greengrass/ml/
+      - type: Pricing
+        url: https://aws.amazon.com/greengrass/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/greengrass/partners/
+      - type: Getting-started
+        url: https://aws.amazon.com/greengrass/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/greengrass/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/greengrassv2-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/greengrassv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:greengrassv2
-  - name: glue
+  - name: AWS Glue
     description: >-
-      <fullname>Glue</fullname> <p>Defines the public endpoint for the Glue
-      service.</p>
+      The first step in any analytics or machine learning project is ensuring
+      your data is prepared for quality results. AWS Glue is a serverless data
+      integration service that streamlines and simplifies the data preparation
+      process, making it faster and more cost-effective. With AWS Glue, you can
+      easily connect to over 70 different data sources, organize and manage your
+      data in a centralized catalog, and visually create, execute, and monitor
+      ETL pipelines to efficiently load data into your data lakes.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/glue/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/glue/
       - type: OpenAPI
         url: properties/glue-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/glue/features/
+      - type: Pricing
+        url: https://aws.amazon.com/glue/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/glue/partners/
+      - type: Getting Started
+        url: https://aws.amazon.com/glue/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/glue/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/glue/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/glue/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/glue-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/glue-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:glue
-  - name: grafana
+  - name: Amazon Managed Grafana
     description: >-
-      <p>Amazon Managed Grafana is a fully managed and secure data visualization
-      service that you can use to instantly query, correlate, and visualize
-      operational metrics, logs, and traces from multiple sources. Amazon
-      Managed Grafana makes it easy to deploy, operate, and scale Grafana, a
-      widely deployed data visualization tool that is popular for its extensible
-      data support.</p> <p>With Amazon Managed Grafana, you create logically
-      isolated Grafana servers called <i>workspaces</i>. In a workspace, you can
-      create Grafana dashboards and visualizations to analyze your metrics,
-      logs, and traces without having to build, package, or deploy any hardware
-      to run Grafana servers. </p>
+      Amazon Managed Grafana is a managed and secure data visualization service
+      that allows you to easily query, correlate, and visualize operational
+      metrics, logs, and traces from various sources. It simplifies the
+      deployment, operation, and scalability of Grafana, a popular data
+      visualization tool known for its flexible data support. Users can create
+      isolated Grafana servers, called workspaces, where they can design
+      dashboards and visualizations to analyze their data without the need for
+      hardware deployment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/grafana/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/grafana/
       - type: OpenAPI
         url: properties/grafana-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/grafana/features/
+      - type: Pricing
+        url: https://aws.amazon.com/grafana/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/grafana/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/grafana/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/grafana/customers/
+      - type: Partners
+        url: https://aws.amazon.com/grafana/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/grafana-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/grafana-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:grafana
-  - name: guardduty
+  - name: Amazon GuardDuty
     description: >-
-      <p>Amazon GuardDuty is a continuous security monitoring service that
-      analyzes and processes the following foundational data sources - VPC flow
-      logs, Amazon Web Services CloudTrail management event logs, CloudTrail S3
-      data event logs, EKS audit logs, DNS logs, Amazon EBS volume data, runtime
-      activity belonging to container workloads, such as Amazon EKS, Amazon ECS
-      (including Amazon Web Services Fargate), and Amazon EC2 instances. It uses
-      threat intelligence feeds, such as lists of malicious IPs and domains, and
-      machine learning to identify unexpected, potentially unauthorized, and
-      malicious activity within your Amazon Web Services environment. This can
-      include issues like escalations of privileges, uses of exposed
-      credentials, or communication with malicious IPs, domains, or presence of
-      malware on your Amazon EC2 instances and container workloads. For example,
-      GuardDuty can detect compromised EC2 instances and container workloads
-      serving malware, or mining bitcoin. </p> <p>GuardDuty also monitors Amazon
-      Web Services account access behavior for signs of compromise, such as
-      unauthorized infrastructure deployments like EC2 instances deployed in a
-      Region that has never been used, or unusual API calls like a password
-      policy change to reduce password strength. </p> <p>GuardDuty informs you
-      about the status of your Amazon Web Services environment by producing
-      security findings that you can view in the GuardDuty console or through
-      Amazon EventBridge. For more information, see the <i> <a
-      href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html">Amazon
-      GuardDuty User Guide</a> </i>. </p>
+      Amazon GuardDuty is a security monitoring service that continuously
+      analyzes various data sources within your Amazon Web Services environment,
+      such as VPC flow logs, CloudTrail event logs, EKS audit logs, DNS logs,
+      and more. It leverages threat intelligence feeds and machine learning to
+      detect unauthorized and malicious activity, including escalations of
+      privileges, credential misuse, and communication with malicious IPs and
+      domains. GuardDuty can identify compromised instances and container
+      workloads, as well as unauthorized infrastructure deployments and unusual
+      API calls. Security findings can be viewed in the GuardDuty console or
+      through Amazon EventBridge to keep you informed about the security status
+      of your AWS environment. To learn more, refer to the Amazon GuardDuty User
+      Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/guardduty/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/guardduty/
       - type: OpenAPI
         url: properties/guardduty-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/guardduty/features/
+      - type: Pricing
+        url: https://aws.amazon.com/guardduty/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/guardduty/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/guardduty/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/guardduty/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/guardduty/resources/partners/
+      - type: Customers
+        url: https://aws.amazon.com/guardduty/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/guardduty-openapi-search.yml
