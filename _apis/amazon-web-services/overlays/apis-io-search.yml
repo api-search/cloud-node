@@ -5227,23 +5227,36 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotsitewise-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotsitewise
-  - name: iottwinmaker
+  - name: IoT TwinMaker
     description: >-
-      <p>IoT TwinMaker is a service with which you can build operational digital
-      twins of physical systems. IoT TwinMaker overlays measurements and
-      analysis from real-world sensors, cameras, and enterprise applications so
-      you can create data visualizations to monitor your physical factory,
-      building, or industrial plant. You can use this real-world data to monitor
-      operations and diagnose and repair errors.</p>
+      IoT TwinMaker is a cutting-edge service that allows users to create
+      accurate digital replicas, also known as digital twins, of physical
+      systems. By integrating data from a variety of sources including sensors,
+      cameras, and enterprise applications, users can generate detailed
+      visualizations to effectively monitor the performance of their factories,
+      buildings, or industrial plants. This real-time data can be utilized for
+      operational monitoring, error detection, and troubleshooting purposes.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-twinmaker/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-twinmaker/
       - type: OpenAPI
         url: properties/iottwinmaker-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-twinmaker/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-twinmaker/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/iot-twinmaker/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/iot-twinmaker/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/iot-twinmaker/customers/
+      - type: Partners
+        url: https://aws.amazon.com/iot-twinmaker/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/iottwinmaker-openapi-search.yml
@@ -5374,133 +5387,29 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ivs-realtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ivs-realtime
-  - name: ivschat
+  - name: Amazon IVS Chat
     description: >-
-      <p> <b>Introduction</b> </p> <p>The Amazon IVS Chat control-plane API
-      enables you to create and manage Amazon IVS Chat resources. You also need
-      to integrate with the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/chat-messaging-api.html">
-      Amazon IVS Chat Messaging API</a>, to enable users to interact with chat
-      rooms in real time.</p> <p>The API is an AWS regional service. For a list
-      of supported regions and Amazon IVS Chat HTTPS service endpoints, see the
-      Amazon IVS Chat information on the <a
-      href="https://docs.aws.amazon.com/general/latest/gr/ivs.html">Amazon IVS
-      page</a> in the <i>AWS General Reference</i>. </p> <p> <b>Notes on
-      terminology:</b> </p> <ul> <li> <p>You create service applications using
-      the Amazon IVS Chat API. We refer to these as <i>applications</i>.</p>
-      </li> <li> <p>You create front-end client applications (browser and
-      Android/iOS apps) using the Amazon IVS Chat Messaging API. We refer to
-      these as <i>clients</i>. </p> </li> </ul> <p> <b>Resources</b> </p> <p>The
-      following resources are part of Amazon IVS Chat:</p> <ul> <li> <p>
-      <b>LoggingConfiguration</b> — A configuration that allows customers to
-      store and record sent messages in a chat room. See the Logging
-      Configuration endpoints for more information.</p> </li> <li> <p>
-      <b>Room</b> — The central Amazon IVS Chat resource through which clients
-      connect to and exchange chat messages. See the Room endpoints for more
-      information.</p> </li> </ul> <p> <b>Tagging</b> </p> <p>A <i>tag</i> is a
-      metadata label that you assign to an AWS resource. A tag comprises a
-      <i>key</i> and a <i>value</i>, both set by you. For example, you might set
-      a tag as <code>topic:nature</code> to label a particular video category.
-      See <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html">Tagging
-      AWS Resources</a> for more information, including restrictions that apply
-      to tags and "Tag naming limits and requirements"; Amazon IVS Chat has no
-      service-specific constraints beyond what is documented there.</p> <p>Tags
-      can help you identify and organize your AWS resources. For example, you
-      can use the same tag for different resources to indicate that they are
-      related. You can also use tags to manage access (see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html">Access
-      Tags</a>).</p> <p>The Amazon IVS Chat API has these tag-related endpoints:
-      <a>TagResource</a>, <a>UntagResource</a>, and <a>ListTagsForResource</a>.
-      The following resource supports tagging: Room.</p> <p>At most 50 tags can
-      be applied to a resource.</p> <p> <b>API Access Security</b> </p> <p>Your
-      Amazon IVS Chat applications (service applications and clients) must be
-      authenticated and authorized to access Amazon IVS Chat resources. Note the
-      differences between these concepts:</p> <ul> <li> <p>
-      <i>Authentication</i> is about verifying identity. Requests to the Amazon
-      IVS Chat API must be signed to verify your identity.</p> </li> <li> <p>
-      <i>Authorization</i> is about granting permissions. Your IAM roles need to
-      have permissions for Amazon IVS Chat API requests.</p> </li> </ul>
-      <p>Users (viewers) connect to a room using secure access tokens that you
-      create using the <a>CreateChatToken</a> endpoint through the AWS SDK. You
-      call CreateChatToken for every user’s chat session, passing identity and
-      authorization information about the user.</p> <p> <b>Signing API
-      Requests</b> </p> <p>HTTP API requests must be signed with an AWS SigV4
-      signature using your AWS security credentials. The AWS Command Line
-      Interface (CLI) and the AWS SDKs take care of signing the underlying API
-      calls for you. However, if your application calls the Amazon IVS Chat HTTP
-      API directly, it’s your responsibility to sign the requests.</p> <p>You
-      generate a signature using valid AWS credentials for an IAM role that has
-      permission to perform the requested action. For example, DeleteMessage
-      requests must be made using an IAM role that has the
-      <code>ivschat:DeleteMessage</code> permission.</p> <p>For more
-      information:</p> <ul> <li> <p>Authentication and generating signatures —
-      See <a
-      href="https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html">Authenticating
-      Requests (Amazon Web Services Signature Version 4)</a> in the <i>Amazon
-      Web Services General Reference</i>.</p> </li> <li> <p>Managing Amazon IVS
-      permissions — See <a
-      href="https://docs.aws.amazon.com/ivs/latest/userguide/security-iam.html">Identity
-      and Access Management</a> on the Security page of the <i>Amazon IVS User
-      Guide</i>.</p> </li> </ul> <p> <b>Amazon Resource Names (ARNs)</b> </p>
-      <p>ARNs uniquely identify AWS resources. An ARN is required when you need
-      to specify a resource unambiguously across all of AWS, such as in IAM
-      policies and API calls. For more information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon
-      Resource Names</a> in the <i>AWS General Reference</i>.</p> <p>
-      <b>Messaging Endpoints</b> </p> <ul> <li> <p> <a>DeleteMessage</a> — Sends
-      an event to a specific room which directs clients to delete a specific
-      message; that is, unrender it from view and delete it from the client’s
-      chat history. This event’s <code>EventName</code> is
-      <code>aws:DELETE_MESSAGE</code>. This replicates the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-deletemessage-publish.html">
-      DeleteMessage</a> WebSocket operation in the Amazon IVS Chat Messaging
-      API.</p> </li> <li> <p> <a>DisconnectUser</a> — Disconnects all
-      connections using a specified user ID from a room. This replicates the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-disconnectuser-publish.html">
-      DisconnectUser</a> WebSocket operation in the Amazon IVS Chat Messaging
-      API.</p> </li> <li> <p> <a>SendEvent</a> — Sends an event to a room. Use
-      this within your application’s business logic to send events to clients of
-      a room; e.g., to notify clients to change the way the chat UI is
-      rendered.</p> </li> </ul> <p> <b>Chat Token Endpoint</b> </p> <ul> <li>
-      <p> <a>CreateChatToken</a> — Creates an encrypted token that is used by a
-      chat participant to establish an individual WebSocket chat connection to a
-      room. When the token is used to connect to chat, the connection is valid
-      for the session duration specified in the request. The token becomes
-      invalid at the token-expiration timestamp included in the response.</p>
-      </li> </ul> <p> <b>Room Endpoints</b> </p> <ul> <li> <p> <a>CreateRoom</a>
-      — Creates a room that allows clients to connect and pass messages.</p>
-      </li> <li> <p> <a>DeleteRoom</a> — Deletes the specified room.</p> </li>
-      <li> <p> <a>GetRoom</a> — Gets the specified room.</p> </li> <li> <p>
-      <a>ListRooms</a> — Gets summary information about all your rooms in the
-      AWS region where the API request is processed. </p> </li> <li> <p>
-      <a>UpdateRoom</a> — Updates a room’s configuration.</p> </li> </ul> <p>
-      <b>Logging Configuration Endpoints</b> </p> <ul> <li> <p>
-      <a>CreateLoggingConfiguration</a> — Creates a logging configuration that
-      allows clients to store and record sent messages.</p> </li> <li> <p>
-      <a>DeleteLoggingConfiguration</a> — Deletes the specified logging
-      configuration.</p> </li> <li> <p> <a>GetLoggingConfiguration</a> — Gets
-      the specified logging configuration.</p> </li> <li> <p>
-      <a>ListLoggingConfigurations</a> — Gets summary information about all your
-      logging configurations in the AWS region where the API request is
-      processed.</p> </li> <li> <p> <a>UpdateLoggingConfiguration</a> — Updates
-      a specified logging configuration.</p> </li> </ul> <p> <b>Tags
-      Endpoints</b> </p> <ul> <li> <p> <a>ListTagsForResource</a> — Gets
-      information about AWS tags for the specified ARN.</p> </li> <li> <p>
-      <a>TagResource</a> — Adds or updates tags for the AWS resource with the
-      specified ARN.</p> </li> <li> <p> <a>UntagResource</a> — Removes tags from
-      the resource with the specified ARN.</p> </li> </ul> <p>All the above are
-      HTTP operations. There is a separate <i>messaging</i> API for managing
-      Chat resources; see the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/chat-messaging-api.html">
-      Amazon IVS Chat Messaging API Reference</a>.</p>
+      The Amazon IVS Chat control-plane API allows you to create and manage
+      resources for Amazon IVS Chat, and integrate with the Amazon IVS Chat
+      Messaging API for real-time chat room interactions. This regional AWS
+      service includes resources such as LoggingConfiguration and Room, which
+      can be tagged for organization and access management. Users must be
+      authenticated and authorized to access resources, with API requests
+      requiring AWS SigV4 signatures for security. Messaging endpoints like
+      DeleteMessage and DisconnectUser handle specific chat actions, while the
+      Chat Token Endpoint generates encrypted tokens for individual WebSocket
+      connections. Room endpoints like CreateRoom and DeleteRoom manage room
+      creation and deletion, while Logging Configuration Endpoints handle
+      message recording. Tags endpoints allow for tagging AWS resources, with a
+      limit of 50 tags per resource. For more detailed information on API
+      requests and permissions, refer to the Amazon IVS Chat API documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ivs/features/chat/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ivs/features/chat/
       - type: OpenAPI
         url: properties/ivschat-openapi-original.yml
     overlays:
@@ -5509,105 +5418,146 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ivschat-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ivschat
-  - name: kafka
-    description: <p>The operations for managing an Amazon MSK cluster.</p>
+  - name: Amazon MSK
+    description: >-
+      Amazon Managed Streaming for Apache Kafka (Amazon MSK) simplifies the
+      process of ingesting and processing real-time streaming data by offering a
+      fully managed Apache Kafka service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/msk/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/msk/
       - type: OpenAPI
         url: properties/kafka-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/msk/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/msk/getting-started/
+      - type: Partners
+        url: https://aws.amazon.com/msk/partners/
+      - type: Customer-success
+        url: https://aws.amazon.com/msk/customer-success/
+      - type: Resources
+        url: https://aws.amazon.com/msk/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/msk/faqs/
+      - type: Features
+        url: https://aws.amazon.com/msk/features/
     overlays:
       - type: APIs.io Search
         url: overlays/kafka-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/kafka-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kafka
-  - name: kendra
-    description: <p>Amazon Kendra is a service for indexing large document sets.</p>
+  - name: Amazon Kendra
+    description: >-
+      Amazon Kendra is a sophisticated enterprise search tool that simplifies
+      the process of searching through multiple content repositories by
+      providing pre-installed connectors.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/kendra/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/kendra/
       - type: OpenAPI
         url: properties/kendra-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/kendra/features/
+      - type: Connectors
+        url: https://aws.amazon.com/kendra/connectors/
+      - type: Pricing
+        url: https://aws.amazon.com/kendra/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/kendra/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/kendra/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/kendra/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/kendra-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/kendra-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kendra
-  - name: keyspaces
+  - name: Amazon Keyspaces
     description: >-
-      <p>Amazon Keyspaces (for Apache Cassandra) is a scalable, highly
-      available, and managed Apache Cassandra-compatible database service.
-      Amazon Keyspaces makes it easy to migrate, run, and scale Cassandra
-      workloads in the Amazon Web Services Cloud. With just a few clicks on the
-      Amazon Web Services Management Console or a few lines of code, you can
-      create keyspaces and tables in Amazon Keyspaces, without deploying any
-      infrastructure or installing software. </p> <p>In addition to supporting
-      Cassandra Query Language (CQL) requests via open-source Cassandra drivers,
-      Amazon Keyspaces supports data definition language (DDL) operations to
-      manage keyspaces and tables using the Amazon Web Services SDK and CLI, as
-      well as infrastructure as code (IaC) services and tools such as
-      CloudFormation and Terraform. This API reference describes the supported
-      DDL operations in detail.</p> <p>For the list of all supported CQL APIs,
-      see <a
-      href="https://docs.aws.amazon.com/keyspaces/latest/devguide/cassandra-apis.html">Supported
-      Cassandra APIs, operations, and data types in Amazon Keyspaces</a> in the
-      <i>Amazon Keyspaces Developer Guide</i>.</p> <p>To learn how Amazon
-      Keyspaces API actions are recorded with CloudTrail, see <a
-      href="https://docs.aws.amazon.com/keyspaces/latest/devguide/logging-using-cloudtrail.html#service-name-info-in-cloudtrail">Amazon
-      Keyspaces information in CloudTrail</a> in the <i>Amazon Keyspaces
-      Developer Guide</i>.</p> <p>For more information about Amazon Web Services
-      APIs, for example how to implement retry logic or how to sign Amazon Web
-      Services API requests, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-apis.html">Amazon
-      Web Services APIs</a> in the <i>General Reference</i>.</p>
+      Amazon Keyspaces (for Apache Cassandra) is a managed, highly scalable, and
+      reliable database service that is compatible with Apache Cassandra. This
+      service makes it simple to migrate, operate, and expand Cassandra
+      workloads within the Amazon Web Services Cloud environment. Users can
+      easily create keyspaces and tables in Amazon Keyspaces with just a few
+      clicks on the Amazon Web Services Management Console or through a few
+      lines of code, without the need to set up any infrastructure or install
+      software. 
+
+
+      In addition to supporting Cassandra Query Language (CQL) requests using
+      open-source Cassandra drivers, Amazon Keyspaces also facilitates data
+      definition language (DDL) operations for managing keyspaces and tables
+      through the Amazon Web Services SDK and CLI, as well as infrastructure as
+      code (IaC) services like CloudFormation and Terraform. This API reference
+      provides a detailed description of the supported DDL operations. For a
+      comprehensive list of all supported CQL APIs, operations, and data types
+      in Amazon Keyspaces, please refer to the Amazon Keyspaces Developer Guide.
+      Additionally, information on how Amazon Keyspaces API actions are logged
+      with CloudTrail can be found in the Developer Guide as well. For further
+      insights on Amazon Web Services APIs, including implementing retry logic
+      and signing API requests, consult the General Reference.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/keyspaces/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/keyspaces/
       - type: OpenAPI
         url: properties/keyspaces-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/keyspaces/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/keyspaces/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/keyspaces/customers/
+      - type: Resources
+        url: https://aws.amazon.com/keyspaces/resources/
+      - type: Getting-started
+        url: https://aws.amazon.com/keyspaces/getting-started/
+      - type: Scaling-data
+        url: https://aws.amazon.com/keyspaces/scaling-data/
+      - type: Features
+        url: https://aws.amazon.com/keyspaces/features/
+      - type: Regions
+        url: https://aws.amazon.com/keyspaces/multi-region-replication/
     overlays:
       - type: APIs.io Search
         url: overlays/keyspaces-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/keyspaces-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:keyspaces
-  - name: iotwireless
+  - name: AWS IoT Wireless
     description: >-
-      <p>AWS IoT Wireless provides bi-directional communication between
-      internet-connected wireless devices and the AWS Cloud. To onboard both
-      LoRaWAN and Sidewalk devices to AWS IoT, use the IoT Wireless API. These
-      wireless devices use the Low Power Wide Area Networking (LPWAN)
-      communication protocol to communicate with AWS IoT.</p> <p>Using the API,
-      you can perform create, read, update, and delete operations for your
-      wireless devices, gateways, destinations, and profiles. After onboarding
-      your devices, you can use the API operations to set log levels and monitor
-      your devices with CloudWatch.</p> <p>You can also use the API operations
-      to create multicast groups and schedule a multicast session for sending a
-      downlink message to devices in the group. By using Firmware Updates
-      Over-The-Air (FUOTA) API operations, you can create a FUOTA task and
-      schedule a session to update the firmware of individual devices or an
-      entire group of devices in a multicast group.</p>
+      The AWS IoT Wireless API allows for bi-directional communication between
+      internet-connected wireless devices and the AWS Cloud. It supports
+      onboarding of LoRaWAN and Sidewalk devices, which use the Low Power Wide
+      Area Networking (LPWAN) protocol to communicate with AWS IoT. With the
+      API, users can perform CRUD operations for wireless devices, gateways,
+      destinations, and profiles. Additionally, users can set log levels,
+      monitor devices with CloudWatch, create multicast groups, and schedule
+      multicast sessions for sending downlink messages. The Firmware Updates
+      Over-The-Air (FUOTA) API allows for creating FUOTA tasks and scheduling
+      firmware updates for individual devices or multicast groups.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/iot-wireless/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/iot-wireless/
       - type: OpenAPI
         url: properties/iotwireless-openapi-original.yml
     overlays:
@@ -5633,19 +5583,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesis-video-media-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis-video-media
-  - name: kendra-ranking
+  - name: Amazon Kendra Intelligent Ranking
     description: >-
-      <p>Amazon Kendra Intelligent Ranking uses Amazon Kendra semantic search
-      capabilities to intelligently re-rank a search service's results.</p>
+      Amazon Kendra Intelligent Ranking leverages the advanced semantic search
+      capabilities of Amazon Kendra to intelligently re-prioritize the search
+      results provided by a search service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/kendra/latest/dg/intelligent-rerank.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/kendra/latest/dg/intelligent-rerank.html
       - type: OpenAPI
         url: properties/kendra-ranking-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/kendra/intelligent-ranking-pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/kendra-ranking-openapi-search.yml
@@ -5709,23 +5662,20 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesisanalyticsv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesisanalyticsv2
-  - name: kinesisanalytics
+  - name: Amazon Kinesis Analytics
     description: >-
-      <fullname>Amazon Kinesis Analytics</fullname> <p> <b>Overview</b> </p>
-      <note> <p>This documentation is for version 1 of the Amazon Kinesis Data
-      Analytics API, which only supports SQL applications. Version 2 of the API
-      supports SQL and Java applications. For more information about version 2,
-      see <a href="/kinesisanalytics/latest/apiv2/Welcome.html">Amazon Kinesis
-      Data Analytics API V2 Documentation</a>.</p> </note> <p>This is the
-      <i>Amazon Kinesis Analytics v1 API Reference</i>. The Amazon Kinesis
-      Analytics Developer Guide provides additional information. </p>
+      Introducing Amazon Kinesis Analytics API Version 1, tailored for SQL
+      applications. For Java application support, refer to Version 2
+      documentation in the Amazon Kinesis Data Analytics API V2 Documentation.
+      Explore the Amazon Kinesis Analytics version 1 API Reference and the
+      Amazon Kinesis Analytics Developer Guide for further insights.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/kinesisanalytics/latest/dev/what-is.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/kinesisanalytics/latest/dev/what-is.html
       - type: OpenAPI
         url: properties/kinesisanalytics-openapi-original.yml
     overlays:
@@ -5755,24 +5705,35 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kinesis-video-signaling-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis-video-signaling
-  - name: lambda
+  - name: AWS Lambda
     description: >-
-      <fullname>AWS Lambda</fullname> <p><b>Overview</b></p> <p>This is the AWS
-      Lambda API Reference. The AWS Lambda Developer Guide provides additional
-      information. For the service overview, go to <a
-      href="http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">What is
-      AWS Lambda</a>, and for information about how the service works, go to <a
-      href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">AWS
-      LambdaL How it Works</a> in the AWS Lambda Developer Guide.</p>
+      This is the API Reference for AWS Lambda, a serverless computing service
+      provided by Amazon Web Services. For a more in-depth understanding of AWS
+      Lambda, please refer to the AWS Lambda Developer Guide. You can also visit
+      "What is AWS Lambda" for a service overview and "AWS Lambda How it Works"
+      in the AWS Lambda Developer Guide for detailed information on how the
+      service functions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lambda/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lambda/
       - type: OpenAPI
         url: properties/lambda-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lambda/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lambda/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/lambda/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/lambda/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/lambda/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/lambda/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/lambda-openapi-search.yml
