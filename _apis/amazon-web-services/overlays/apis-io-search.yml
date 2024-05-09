@@ -5367,145 +5367,127 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lambda-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lambda
-  - name: kinesis
+  - name: Amazon Kinesis Data Streams
     description: >-
-      <fullname>Amazon Kinesis Data Streams Service API Reference</fullname>
-      <p>Amazon Kinesis Data Streams is a managed service that scales
-      elastically for real-time processing of streaming big data.</p>
+      The Amazon Kinesis Data Streams Service API Reference provides developers
+      with access to a managed service that can dynamically scale for processing
+      streaming big data in real-time.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/kinesis/data-streams/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/kinesis/data-streams/
       - type: OpenAPI
         url: properties/kinesis-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/kinesis/data-streams/features/
+      - type: Pricing
+        url: https://aws.amazon.com/kinesis/data-streams/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/kinesis/data-streams/getting-started/
+      - type: Customers
+        url: https://aws.amazon.com/kinesis/data-streams/customers/
+      - type: Integrations
+        url: https://aws.amazon.com/kinesis/data-streams/integrations/
+      - type: Resources
+        url: https://aws.amazon.com/kinesis/data-streams/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/kinesis/data-streams/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/kinesis-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/kinesis-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis
-  - name: kms
+  - name: AWS Key Management Service
     description: >-
-      <fullname>Key Management Service</fullname> <p>Key Management Service
-      (KMS) is an encryption and key management web service. This guide
-      describes the KMS operations that you can call programmatically. For
-      general information about KMS, see the <a
-      href="https://docs.aws.amazon.com/kms/latest/developerguide/"> <i>Key
-      Management Service Developer Guide</i> </a>.</p> <note> <p>KMS has
-      replaced the term <i>customer master key (CMK)</i> with <i>KMS key</i> and
-      <i>KMS key</i>. The concept has not changed. To prevent breaking changes,
-      KMS is keeping some variations of this term.</p> <p>Amazon Web Services
-      provides SDKs that consist of libraries and sample code for various
-      programming languages and platforms (Java, Ruby, .Net, macOS, Android,
-      etc.). The SDKs provide a convenient way to create programmatic access to
-      KMS and other Amazon Web Services services. For example, the SDKs take
-      care of tasks such as signing requests (see below), managing errors, and
-      retrying requests automatically. For more information about the Amazon Web
-      Services SDKs, including how to download and install them, see <a
-      href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p>
-      </note> <p>We recommend that you use the Amazon Web Services SDKs to make
-      programmatic API calls to KMS.</p> <p>If you need to use FIPS 140-2
-      validated cryptographic modules when communicating with Amazon Web
-      Services, use the FIPS endpoint in your preferred Amazon Web Services
-      Region. For more information about the available FIPS endpoints, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/kms.html#kms_region">Service
-      endpoints</a> in the Key Management Service topic of the <i>Amazon Web
-      Services General Reference</i>.</p> <p>All KMS API calls must be signed
-      and be transmitted using Transport Layer Security (TLS). KMS recommends
-      you always use the latest supported TLS version. Clients must also support
-      cipher suites with Perfect Forward Secrecy (PFS) such as Ephemeral
-      Diffie-Hellman (DHE) or Elliptic Curve Ephemeral Diffie-Hellman (ECDHE).
-      Most modern systems such as Java 7 and later support these modes.</p> <p>
-      <b>Signing Requests</b> </p> <p>Requests must be signed using an access
-      key ID and a secret access key. We strongly recommend that you do not use
-      your Amazon Web Services account root access key ID and secret access key
-      for everyday work. You can use the access key ID and secret access key for
-      an IAM user or you can use the Security Token Service (STS) to generate
-      temporary security credentials and use those to sign requests. </p> <p>All
-      KMS requests must be signed with <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4</a>.</p> <p> <b>Logging API Requests</b> </p> <p>KMS supports
-      CloudTrail, a service that logs Amazon Web Services API calls and related
-      events for your Amazon Web Services account and delivers them to an Amazon
-      S3 bucket that you specify. By using the information collected by
-      CloudTrail, you can determine what requests were made to KMS, who made the
-      request, when it was made, and so on. To learn more about CloudTrail,
-      including how to turn it on and find your log files, see the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/">CloudTrail
-      User Guide</a>.</p> <p> <b>Additional Resources</b> </p> <p>For more
-      information about credentials and request signing, see the following:</p>
-      <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html">Amazon
-      Web Services Security Credentials</a> - This topic provides general
-      information about the types of credentials used to access Amazon Web
-      Services.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary
-      Security Credentials</a> - This section of the <i>IAM User Guide</i>
-      describes how to create and use temporary security credentials.</p> </li>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a> - This set of topics walks you through the
-      process of signing a request using an access key ID and a secret access
-      key.</p> </li> </ul> <p> <b>Commonly Used API Operations</b> </p> <p>Of
-      the API operations discussed in this guide, the following will prove the
-      most useful for most applications. You will likely perform operations
-      other than these, such as creating keys and assigning policies, by using
-      the console.</p> <ul> <li> <p> <a>Encrypt</a> </p> </li> <li> <p>
-      <a>Decrypt</a> </p> </li> <li> <p> <a>GenerateDataKey</a> </p> </li> <li>
-      <p> <a>GenerateDataKeyWithoutPlaintext</a> </p> </li> </ul>
+      The Key Management Service (KMS) API is an encryption and key management
+      web service that allows you to programmatically call various operations. 
+
+
+      KMS has replaced the term customer master key (CMK) with KMS key, but the
+      concept remains the same. Amazon Web Services provides SDKs for various
+      programming languages and platforms to create programmatic access to KMS. 
+
+
+      It is recommended to use the SDKs for API calls to KMS, and to use the
+      FIPS endpoint for communicating with Amazon Web Services if needed. All
+      KMS API calls must be signed and transmitted using Transport Layer
+      Security (TLS) with the latest supported version. 
+
+
+      Requests must be signed using an access key ID and a secret access key,
+      preferably not using the root access key ID and secret key. Logging of API
+      requests is supported through CloudTrail. 
+
+
+      Additional resources are available for credentials and request signing.
+      The API operations Encrypt, Decrypt, GenerateDataKey, and
+      GenerateDataKeyWithoutPlaintext are commonly used and helpful for most
+      applications. Other operations may be performed using the console.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/kms/
       - type: OpenAPI
         url: properties/kms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/kms/features/
+      - type: Pricing
+        url: https://aws.amazon.com/kms/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/kms/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/kms/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/kms/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/kms-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/kms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kms
-  - name: launch-wizard
+  - name: AWS Launch Wizard
     description: >-
-      <p>Launch Wizard offers a guided way of sizing, configuring, and deploying
-      Amazon Web Services resources for third party applications, such as
-      Microsoft SQL Server Always On and HANA based SAP systems, without the
-      need to manually identify and provision individual Amazon Web Services
-      resources.</p>
+      Launch Wizard is a tool that simplifies the process of sizing,
+      configuring, and deploying Amazon Web Services resources for third party
+      applications, including Microsoft SQL Server Always On and HANA based SAP
+      systems. This streamlined approach eliminates the need for manual
+      identification and provisioning of individual AWS resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/launchwizard/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/launchwizard/
       - type: OpenAPI
         url: properties/launch-wizard-openapi-original.yml
+      - type: Faq
+        url: https://aws.amazon.com/launchwizard/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/launch-wizard-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/launch-wizard-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:launch-wizard
-  - name: lex-models
+  - name: Amazon Lex Build-Time Actions
     description: >-
-      <fullname>Amazon Lex Build-Time Actions</fullname> <p> Amazon Lex is an
-      AWS service for building conversational voice and text interfaces. Use
-      these actions to create, update, and delete conversational bots for new
-      and existing client applications. </p>
+      Build voice and text conversational interfaces with Amazon Lex API for
+      AWS. These actions will allow you to easily create, update, and delete
+      chatbots for both new and existing client applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/lex/latest/dg/API_Operations.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/lex/latest/dg/API_Operations.html
       - type: OpenAPI
         url: properties/lex-models-openapi-original.yml
     overlays:
@@ -5514,20 +5496,30 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lex-models-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lex-models
-  - name: license-manager
+  - name: AWS License Manager
     description: >-
-      <p>License Manager makes it easier to manage licenses from software
-      vendors across multiple Amazon Web Services accounts and on-premises
-      servers.</p>
+      The License Manager API simplifies the management of software licenses for
+      various vendors across numerous Amazon Web Services accounts and physical
+      servers located on-premises.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/license-manager/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/license-manager/
       - type: OpenAPI
         url: properties/license-manager-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/license-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/license-manager/pricing/
+      - type: Customers
+        url: https://aws.amazon.com/license-manager/customers/
+      - type: Resources
+        url: https://aws.amazon.com/license-manager/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/license-manager/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/license-manager-openapi-search.yml
@@ -5555,37 +5547,42 @@ apis:
         url: >-
           overlays/license-manager-user-subscriptions-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:license-manager-user-subscriptions
-  - name: lightsail
+  - name: Amazon Lightsail
     description: >-
-      <p>Amazon Lightsail is the easiest way to get started with Amazon Web
-      Services (Amazon Web Services) for developers who need to build websites
-      or web applications. It includes everything you need to launch your
-      project quickly - instances (virtual private servers), container services,
-      storage buckets, managed databases, SSD-based block storage, static IP
-      addresses, load balancers, content delivery network (CDN) distributions,
-      DNS management of registered domains, and resource snapshots (backups) -
-      for a low, predictable monthly price.</p> <p>You can manage your Lightsail
-      resources using the Lightsail console, Lightsail API, Command Line
-      Interface (CLI), or SDKs. For more information about Lightsail concepts
-      and tasks, see the <a
-      href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-set-up-access-keys-to-use-sdk-api-cli">Amazon
-      Lightsail Developer Guide</a>.</p> <p>This API Reference provides detailed
-      information about the actions, data types, parameters, and errors of the
-      Lightsail service. For more information about the supported Amazon Web
-      Services Regions, endpoints, and service quotas of the Lightsail service,
-      see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/lightsail.html">Amazon
-      Lightsail Endpoints and Quotas</a> in the <i>Amazon Web Services General
-      Reference</i>.</p>
+      The Amazon Lightsail API is a user-friendly platform that offers
+      developers a simple way to leverage Amazon Web Services for building
+      websites and web applications. It provides a wide range of essential
+      features, including virtual private servers, container services, storage
+      options, managed databases, and more, all at a cost-effective monthly
+      rate. With the ability to manage resources through the Lightsail console,
+      API, CLI, and SDKs, developers can easily launch and maintain their
+      projects. Detailed information on Lightsail services, actions, data types,
+      parameters, and errors can be found in the API Reference, while additional
+      information on Regions, endpoints, and service quotas can be accessed in
+      the Amazon Lightsail Endpoints and Quotas guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lightsail/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lightsail/
       - type: OpenAPI
         url: properties/lightsail-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/lightsail/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/lightsail/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/lightsail/resources/
+      - type: Faq
+        url: https://aws.amazon.com/lightsail/faq/
+      - type: Customers
+        url: https://aws.amazon.com/lightsail/customers/
+      - type: Features
+        url: https://aws.amazon.com/lightsail/features/
+      - type: Research
+        url: https://aws.amazon.com/lightsail/research/
     overlays:
       - type: APIs.io Search
         url: overlays/lightsail-openapi-search.yml
