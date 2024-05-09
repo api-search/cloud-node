@@ -4319,51 +4319,86 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/guardduty-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:guardduty
-  - name: greengrass
+  - name: AWS IoT Greengrass
     description: >-
-      AWS IoT Greengrass seamlessly extends AWS onto physical devices so they
-      can act locally on the data they generate, while still using the cloud for
-      management, analytics, and durable storage. AWS IoT Greengrass ensures
-      your devices can respond quickly to local events and operate with
-      intermittent connectivity. AWS IoT Greengrass minimizes the cost of
-      transmitting data to the cloud by allowing you to author AWS Lambda
-      functions that execute locally.
+      My API, AWS IoT Greengrass, extends the capabilities of AWS to physical
+      devices, enabling them to process data locally while still utilizing the
+      cloud for management, analytics, and storage. This allows devices to
+      respond quickly to local events even with intermittent connectivity,
+      minimizing the cost of transmitting data to the cloud by enabling the
+      execution of AWS Lambda functions locally.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/greengrass/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/greengrass/
       - type: OpenAPI
         url: properties/greengrass-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/greengrass/features/
+      - type: Ml
+        url: https://aws.amazon.com/greengrass/ml/
+      - type: Pricing
+        url: https://aws.amazon.com/greengrass/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/greengrass/partners/
+      - type: Getting-started
+        url: https://aws.amazon.com/greengrass/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/greengrass/faqs/
+      - type: Device-tester
+        url: https://aws.amazon.com/greengrass/device-tester/
     overlays:
       - type: APIs.io Search
         url: overlays/greengrass-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/greengrass-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:greengrass
-  - name: healthlake
+  - name: AWS HealthLake
     description: >-
-      <p>AWS HealthLake is a HIPAA eligibile service that allows customers to
-      store, transform, query, and analyze their FHIR-formatted data in a
-      consistent fashion in the cloud.</p>
+      AWS HealthLake is a service designed for healthcare companies that need a
+      comprehensive view of individual and patient population health data. This
+      HIPAA-eligible service utilizes FHIR API transactions to securely store
+      and transform data into a queryable format at a large scale. Healthcare
+      organizations can easily import large volumes of health data, including
+      medical reports and patient notes, from on-premises systems to the cloud
+      using the HealthLake FHIR-based APIs. Additionally, HealthLake offers
+      built-in natural language processing models to extract meaningful medical
+      information from raw health data, such as medications, procedures, and
+      diagnoses, making it easier for customers to analyze and understand their
+      data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/healthlake/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/healthlake/
       - type: OpenAPI
         url: properties/healthlake-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/healthlake/features/
+      - type: Pricing
+        url: https://aws.amazon.com/healthlake/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/healthlake/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/healthlake/resources/
+      - type: Customers
+        url: https://aws.amazon.com/healthlake/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/healthlake/customers/
+      - type: Partners
+        url: https://aws.amazon.com/healthlake/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/healthlake-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/healthlake-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:healthlake
-  - name: honeycode
+  - name: 'Amazon Honeycode '
     description: >-
       <p> Amazon Honeycode is a fully managed service that allows you to quickly
       build mobile and web apps for teams—without programming. Build Honeycode
@@ -4384,73 +4419,85 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/honeycode-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:honeycode
-  - name: iam
+  - name: AWS Identity and Access Management
     description: >-
-      <fullname>Identity and Access Management</fullname> <p>Identity and Access
-      Management (IAM) is a web service for securely controlling access to
-      Amazon Web Services services. With IAM, you can centrally manage users,
-      security credentials such as access keys, and permissions that control
-      which Amazon Web Services resources users and applications can access. For
-      more information about IAM, see <a
-      href="http://aws.amazon.com/iam/">Identity and Access Management (IAM)</a>
-      and the <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/">Identity and
-      Access Management User Guide</a>.</p>
+      IAM is a trusted web service that enables secure access control for Amazon
+      Web Services. It offers centralized management of users, access keys, and
+      permissions to regulate access to AWS resources. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/
       - type: OpenAPI
         url: properties/iam-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iam/features/
+      - type: Getting Started
+        url: https://aws.amazon.com/iam/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/iam/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/iam/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/iam-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iam-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iam
-  - name: groundstation
+  - name: AWS Ground Station
     description: >-
-      <p>Welcome to the AWS Ground Station API Reference. AWS Ground Station is
-      a fully managed service that enables you to control satellite
+      Welcome to the AWS Ground Station API Reference. AWS Ground Station is a
+      fully managed service that enables you to control satellite
       communications, downlink and process satellite data, and scale your
       satellite operations efficiently and cost-effectively without having to
-      build or manage your own ground station infrastructure.</p>
+      build or manage your own ground station infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ground-station/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ground-station/
       - type: OpenAPI
         url: properties/groundstation-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ground-station/features/
+      - type: Locations
+        url: https://aws.amazon.com/ground-station/locations/
+      - type: Pricing
+        url: https://aws.amazon.com/ground-station/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/ground-station/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/ground-station/faqs/
+      - type: Features
+        url: https://aws.amazon.com/ground-station/features/
     overlays:
       - type: APIs.io Search
         url: overlays/groundstation-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/groundstation-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:groundstation
-  - name: identitystore
+  - name: AWS  Identity Store
     description: >-
-      <p>The Identity Store service used by IAM Identity Center provides a
-      single place to retrieve all of your identities (users and groups). For
-      more information, see the <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">IAM
-      Identity Center User Guide</a>.</p> <p>This reference guide describes the
-      identity store operations that you can call programmatically and includes
-      detailed information about data types and errors.</p> <note> <p>IAM
-      Identity Center uses the <code>sso</code> and <code>identitystore</code>
-      API namespaces.</p> </note>
+      The API for the Identity Store service within IAM Identity Center is a
+      central hub for accessing all user and group identities. You can find
+      detailed information on how to use this service in the IAM Identity Center
+      User Guide, which outlines the available identity store operations that
+      can be accessed programmatically. The API utilizes the sso and
+      identitystore namespaces for seamless integration with your systems.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/welcome.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/welcome.html
       - type: OpenAPI
         url: properties/identitystore-openapi-original.yml
     overlays:
@@ -4459,29 +4506,33 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/identitystore-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:identitystore
-  - name: imagebuilder
+  - name: AWS EC2 Image Builder
     description: >-
-      <p>EC2 Image Builder is a fully managed Amazon Web Services service that
-      makes it easier to automate the creation, management, and deployment of
-      customized, secure, and up-to-date "golden" server images that are
-      pre-installed and pre-configured with software and settings to meet
-      specific IT standards.</p>
+      The API for EC2 Image Builder is a comprehensive AWS service designed to
+      streamline the process of automating the creation, control, and
+      distribution of personalized, secure, and current server images which are
+      pre-loaded and pre-configured with software and settings according to
+      required IT guidelines.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/image-builder/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/image-builder/
       - type: OpenAPI
         url: properties/imagebuilder-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/image-builder/features/
+      - type: Faqs
+        url: https://aws.amazon.com/image-builder/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/imagebuilder-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/imagebuilder-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:imagebuilder
-  - name: importexport
+  - name: AWS Import/Export Service
     description: >-
       <fullname>AWS Import/Export Service</fullname> AWS Import/Export
       accelerates transferring large amounts of data between the AWS cloud and
@@ -4505,86 +4556,94 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/importexport-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:importexport
-  - name: inspector-scan
+  - name: Amazon Inspector Scan
     description: >-
-      <p>Amazon Inspector Scan is a vulnerability discovery service that scans a
-      provided Software Bill of Materials (SBOM) for security
-      vulnerabilities.</p>
+      The Amazon Inspector API effortlessly identifies workloads, such as Amazon
+      EC2 instances, containers, and Lambda functions, and conducts thorough
+      scans to detect software vulnerabilities and unintentional network risks.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/inspector/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/inspector/
       - type: OpenAPI
         url: properties/inspector-scan-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/inspector/features/
+      - type: Pricing
+        url: https://aws.amazon.com/inspector/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/inspector/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/inspector/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/inspector/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/inspector/customers/
+      - type: Partners
+        url: https://aws.amazon.com/inspector/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/inspector-scan-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/inspector-scan-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:inspector-scan
-  - name: health
+  - name: AWS Health
     description: >-
-      <fullname>Health</fullname> <p>The Health API provides access to the
-      Health information that appears in the <a
-      href="https://health.aws.amazon.com/health/home">Health Dashboard</a>. You
-      can use the API operations to get information about events that might
-      affect your Amazon Web Services and resources.</p> <p>You must have a
-      Business, Enterprise On-Ramp, or Enterprise Support plan from <a
-      href="http://aws.amazon.com/premiumsupport/">Amazon Web Services
-      Support</a> to use the Health API. If you call the Health API from an
-      Amazon Web Services account that doesn't have a Business, Enterprise
-      On-Ramp, or Enterprise Support plan, you receive a
-      <code>SubscriptionRequiredException</code> error.</p> <p>For API access,
-      you need an access key ID and a secret access key. Use temporary
-      credentials instead of long-term access keys when possible. Temporary
-      credentials include an access key ID, a secret access key, and a security
-      token that indicates when the credentials expire. For more information,
-      see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html">Best
-      practices for managing Amazon Web Services access keys</a> in the
-      <i>Amazon Web Services General Reference</i>.</p> <p>You can use the
-      Health endpoint health.us-east-1.amazonaws.com (HTTPS) to call the Health
-      API operations. Health supports a multi-Region application architecture
-      and has two regional endpoints in an active-passive configuration. You can
-      use the high availability endpoint example to determine which Amazon Web
-      Services Region is active, so that you can get the latest information from
-      the API. For more information, see <a
-      href="https://docs.aws.amazon.com/health/latest/ug/health-api.html">Accessing
-      the Health API</a> in the <i>Health User Guide</i>.</p> <p>For
-      authentication of requests, Health uses the <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a>.</p> <p>If your Amazon Web Services account
-      is part of Organizations, you can use the Health organizational view
-      feature. This feature provides a centralized view of Health events across
-      all accounts in your organization. You can aggregate Health events in real
-      time to identify accounts in your organization that are affected by an
-      operational event or get notified of security vulnerabilities. Use the
-      organizational view API operations to enable this feature and return event
-      information. For more information, see <a
-      href="https://docs.aws.amazon.com/health/latest/ug/aggregate-events.html">Aggregating
-      Health events</a> in the <i>Health User Guide</i>.</p> <note> <p>When you
-      use the Health API operations to return Health events, see the following
-      recommendations:</p> <ul> <li> <p>Use the <a
-      href="https://docs.aws.amazon.com/health/latest/APIReference/API_Event.html#AWSHealth-Type-Event-eventScopeCode">eventScopeCode</a>
-      parameter to specify whether to return Health events that are public or
-      account-specific.</p> </li> <li> <p>Use pagination to view all events from
-      the response. For example, if you call the
-      <code>DescribeEventsForOrganization</code> operation to get all events in
-      your organization, you might receive several page results. Specify the
-      <code>nextToken</code> in the next request to return more results.</p>
-      </li> </ul> </note>
+      The Health API grants access to Health information displayed in the Health
+      Dashboard. Users can utilize API operations to retrieve data on events
+      that may impact their Amazon Web Services and resources. A Business,
+      Enterprise On-Ramp, or Enterprise Support plan from Amazon Web Services
+      Support is required to access the Health API. Attempting to use the API
+      without the appropriate plan will result in a
+      SubscriptionRequiredException error. Access to the API necessitates an
+      access key ID and secret access key, with a recommendation to utilize
+      temporary credentials over long-term access keys when feasible. Temporary
+      credentials encompass an access key ID, secret access key, and security
+      token indicating expiration. The Health API endpoint
+      health.us-east-1.amazonaws.com (HTTPS) can be accessed to call API
+      operations. Health supports a multi-Region application architecture with
+      two regional endpoints in an active-passive configuration. The high
+      availability endpoint example can be utilized to identify the active
+      Amazon Web Services Region for obtaining the most current information.
+      Authentication for requests is carried out using the Signature Version 4
+      Signing Process. Users with accounts under Organizations can leverage the
+      Health organizational view feature for a centralized view of Health events
+      across all accounts in the organization. This allows for real-time
+      aggregation of events to identify affected accounts or be notified of
+      security vulnerabilities. By using the organizational view API operations,
+      users can enable this feature and retrieve event information.
+      Recommendations when utilizing the Health API for returning Health events
+      include specifying the eventScopeCode parameter to determine the type of
+      Health events to return (public or account-specific) and utilizing
+      pagination to view all response events, particularly when using operations
+      like DescribeEventsForOrganization to retrieve events across the
+      organization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/health/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/health/
       - type: OpenAPI
         url: properties/health-openapi-original.yml
+      - type: Case-studies
+        url: https://aws.amazon.com/health/case-studies/
+      - type: Life Science Solutions
+        url: https://aws.amazon.com/health/life-sciences/solutions/
+      - type: Genomics Solutions
+        url: https://aws.amazon.com/health/genomics/solutions/
+      - type: Healthcare Solutions
+        url: https://aws.amazon.com/health/healthcare/solutions/
+      - type: Providers
+        url: https://aws.amazon.com/health/providers/
+      - type: Payors
+        url: https://aws.amazon.com/health/payors/
+      - type: Healthtech
+        url: https://aws.amazon.com/health/healthtech/
     overlays:
       - type: APIs.io Search
         url: overlays/health-openapi-search.yml
@@ -4613,63 +4672,63 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/inspector-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:inspector
-  - name: iot
+  - name: AWS IoT
     description: >-
-      <fullname>IoT</fullname> <p>IoT provides secure, bi-directional
-      communication between Internet-connected devices (such as sensors,
-      actuators, embedded devices, or smart appliances) and the Amazon Web
-      Services cloud. You can discover your custom IoT-Data endpoint to
-      communicate with, configure rules for data processing and integration with
-      other services, organize resources associated with each device (Registry),
-      configure logging, and create and manage policies and credentials to
-      authenticate devices.</p> <p>The service endpoints that expose this API
-      are listed in <a
-      href="https://docs.aws.amazon.com/general/latest/gr/iot-core.html">Amazon
-      Web Services IoT Core Endpoints and Quotas</a>. You must use the endpoint
-      for the region that has the resources you want to access.</p> <p>The
-      service name used by <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Amazon
-      Web Services Signature Version 4</a> to sign the request is:
-      <i>execute-api</i>.</p> <p>For more information about how IoT works, see
-      the <a
-      href="https://docs.aws.amazon.com/iot/latest/developerguide/aws-iot-how-it-works.html">Developer
-      Guide</a>.</p> <p>For information about how to use the credentials
-      provider for IoT, see <a
-      href="https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html">Authorizing
-      Direct Calls to Amazon Web Services Services</a>.</p>
+      The IoT API enables secure communication between Internet-connected
+      devices and the Amazon Web Services cloud. Users can access custom
+      IoT-Data endpoints, set up data processing rules, integrate with other
+      services, manage device resources, configure logging, and create
+      authentication policies and credentials. The API is available through
+      Amazon Web Services IoT Core Endpoints and Quotas, with different
+      endpoints for accessing region-specific resources. Requests are signed
+      using the service name "execute-api", and more information can be found in
+      the Developer Guide and credentials provider documentation for IoT.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot/
       - type: OpenAPI
         url: properties/iot-openapi-original.yml
+      - type: Customers
+        url: https://aws.amazon.com/iot/customers/
+      - type: News
+        url: https://aws.amazon.com/iot/iot-events-partner-news/
+      - type: Partners
+        url: https://aws.amazon.com/iot/partner-solutions/
+      - type: Solutions
+        url: https://aws.amazon.com/iot/solutions/
+      - type: Resources
+        url: https://aws.amazon.com/iot/resources/
+      - type: Blog
+        url: https://aws.amazon.com/iot/blog/
+      - type: Customers
+        url: https://aws.amazon.com/iot/customers/
+      - type: Edukit
+        url: https://aws.amazon.com/iot/edukit/
     overlays:
       - type: APIs.io Search
         url: overlays/iot-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iot-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot
-  - name: iot-jobs-data
+  - name: AWS IoT Jobs
     description: >-
-      <p>AWS IoT Jobs is a service that allows you to define a set of jobs —
-      remote operations that are sent to and executed on one or more devices
-      connected to AWS IoT. For example, you can define a job that instructs a
-      set of devices to download and install application or firmware updates,
-      reboot, rotate certificates, or perform remote troubleshooting
-      operations.</p> <p> To create a job, you make a job document which is a
-      description of the remote operations to be performed, and you specify a
-      list of targets that should perform the operations. The targets can be
-      individual things, thing groups or both.</p> <p> AWS IoT Jobs sends a
-      message to inform the targets that a job is available. The target starts
-      the execution of the job by downloading the job document, performing the
-      operations it specifies, and reporting its progress to AWS IoT. The Jobs
-      service provides commands to track the progress of a job on a specific
-      target and for all the targets of the job</p>
+      AWS IoT Jobs is a service that allows you to create and manage a set of
+      remote operations to be executed on devices connected to AWS IoT. These
+      operations can include tasks such as downloading updates, installing
+      firmware, rebooting devices, rotating certificates, and troubleshooting.
+      To create a job, you define a job document detailing the operations and
+      specify a list of targets for the job to be executed on. Targets can be
+      individual devices, groups of devices, or a combination of both. Once a
+      job is created, AWS IoT Jobs notifies the targets, triggering them to
+      download the job document, execute the specified operations, and report
+      back progress to AWS IoT. The service also provides commands to track the
+      progress of a job on specific targets and across all targets.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html
     baseURL: https://example.com
     tags: []
     properties:
@@ -4702,44 +4761,44 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot-roborunner-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot-roborunner
-  - name: internetmonitor
+  - name: Amazon CloudWatch Internet Monitor
     description: >-
-      <p>Amazon CloudWatch Internet Monitor provides visibility into how
-      internet issues impact the performance and availability between your
-      applications hosted on Amazon Web Services and your end users. It can
-      reduce the time it takes for you to diagnose internet issues from days to
-      minutes. Internet Monitor uses the connectivity data that Amazon Web
-      Services captures from its global networking footprint to calculate a
-      baseline of performance and availability for internet traffic. This is the
-      same data that Amazon Web Services uses to monitor internet uptime and
-      availability. With those measurements as a baseline, Internet Monitor
-      raises awareness for you when there are significant problems for your end
-      users in the different geographic locations where your application
-      runs.</p> <p>Internet Monitor publishes internet measurements to
-      CloudWatch Logs and CloudWatch Metrics, to easily support using CloudWatch
-      tools with health information for geographies and networks specific to
-      your application. Internet Monitor sends health events to Amazon
-      EventBridge so that you can set up notifications. If an issue is caused by
-      the Amazon Web Services network, you also automatically receive an Amazon
-      Web Services Health Dashboard notification with the steps that Amazon Web
-      Services is taking to mitigate the problem.</p> <p>To use Internet
-      Monitor, you create a <i>monitor</i> and associate your application's
-      resources with it - VPCs, NLBs, CloudFront distributions, or WorkSpaces
-      directories - so Internet Monitor can determine where your application's
-      internet traffic is. Internet Monitor then provides internet measurements
-      from Amazon Web Services that are specific to the locations and ASNs
-      (typically, internet service providers or ISPs) that communicate with your
-      application.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html">Using
-      Amazon CloudWatch Internet Monitor</a> in the <i>Amazon CloudWatch User
-      Guide</i>.</p>
+      Amazon CloudWatch Internet Monitor provides visibility into how internet
+      issues impact the performance and availability between your applications
+      hosted on Amazon Web Services and your end users. It can reduce the time
+      it takes for you to diagnose internet issues from days to minutes.
+      Internet Monitor uses the connectivity data that Amazon Web Services
+      captures from its global networking footprint to calculate a baseline of
+      performance and availability for internet traffic. This is the same data
+      that Amazon Web Services uses to monitor internet uptime and availability.
+      With those measurements as a baseline, Internet Monitor raises awareness
+      for you when there are significant problems for your end users in the
+      different geographic locations where your application runs. Internet
+      Monitor publishes internet measurements to CloudWatch Logs and CloudWatch
+      Metrics, to easily support using CloudWatch tools with health information
+      for geographies and networks specific to your application. Internet
+      Monitor sends health events to Amazon EventBridge so that you can set up
+      notifications. If an issue is caused by the Amazon Web Services network,
+      you also automatically receive an Amazon Web Services Health Dashboard
+      notification with the steps that Amazon Web Services is taking to mitigate
+      the problem. To use Internet Monitor, you create a monitor and associate
+      your application's resources with it - VPCs, NLBs, CloudFront
+      distributions, or WorkSpaces directories - so Internet Monitor can
+      determine where your application's internet traffic is. Internet Monitor
+      then provides internet measurements from Amazon Web Services that are
+      specific to the locations and ASNs (typically, internet service providers
+      or ISPs) that communicate with your application. For more information, see
+      Using Amazon CloudWatch Internet Monitor in the Amazon CloudWatch User
+      Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html
       - type: OpenAPI
         url: properties/internetmonitor-openapi-original.yml
     overlays:
@@ -4748,40 +4807,41 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/internetmonitor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:internetmonitor
-  - name: iotanalytics
+  - name: AWS IoT Analytics
     description: >-
-      <p>IoT Analytics allows you to collect large amounts of device data,
-      process messages, and store them. You can then query the data and run
-      sophisticated analytics on it. IoT Analytics enables advanced data
-      exploration through integration with Jupyter Notebooks and data
-      visualization through integration with Amazon QuickSight.</p>
-      <p>Traditional analytics and business intelligence tools are designed to
-      process structured data. IoT data often comes from devices that record
-      noisy processes (such as temperature, motion, or sound). As a result the
-      data from these devices can have significant gaps, corrupted messages, and
-      false readings that must be cleaned up before analysis can occur. Also,
-      IoT data is often only meaningful in the context of other data from
-      external sources. </p> <p>IoT Analytics automates the steps required to
-      analyze data from IoT devices. IoT Analytics filters, transforms, and
-      enriches IoT data before storing it in a time-series data store for
-      analysis. You can set up the service to collect only the data you need
-      from your devices, apply mathematical transforms to process the data, and
-      enrich the data with device-specific metadata such as device type and
-      location before storing it. Then, you can analyze your data by running
-      queries using the built-in SQL query engine, or perform more complex
-      analytics and machine learning inference. IoT Analytics includes pre-built
-      models for common IoT use cases so you can answer questions like which
-      devices are about to fail or which customers are at risk of abandoning
-      their wearable devices.</p>
+      IoT Analytics is a powerful tool designed to streamline the collection,
+      processing, storage, and analysis of large amounts of device data. This
+      API allows users to easily query and run sophisticated analytics on IoT
+      data, enabling advanced exploration and visualization through integration
+      with Jupyter Notebooks and Amazon QuickSight. Traditional analytics tools
+      are often ill-equipped to handle the noisy and messy data generated by IoT
+      devices, which can contain gaps, corrupted messages, and false readings.
+      IoT Analytics automates the cleaning and enrichment of IoT data before
+      storing it in a time-series data store for analysis. Users can customize
+      the data collection process, apply mathematical transforms, and enrich
+      data with device-specific metadata for more meaningful insights. The API
+      also offers built-in models for common IoT use cases, empowering users to
+      make informed decisions based on predictive analytics and machine learning
+      inference.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-analytics/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-analytics/
       - type: OpenAPI
         url: properties/iotanalytics-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-analytics/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-analytics/pricing/
+      - type: Faq
+        url: https://aws.amazon.com/iot-analytics/faq/
+      - type: Resources
+        url: https://aws.amazon.com/iot-analytics/resources/
+      - type: Partners
+        url: https://aws.amazon.com/iot-analytics/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/iotanalytics-openapi-search.yml
@@ -4808,119 +4868,152 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/inspector2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:inspector2
-  - name: iotdeviceadvisor
+  - name: AWS IoT Core Device Advisor
     description: >-
-      <p>Amazon Web Services IoT Core Device Advisor is a cloud-based, fully
-      managed test capability for validating IoT devices during device software
-      development. Device Advisor provides pre-built tests that you can use to
-      validate IoT devices for reliable and secure connectivity with Amazon Web
-      Services IoT Core before deploying devices to production. By using Device
-      Advisor, you can confirm that your devices can connect to Amazon Web
-      Services IoT Core, follow security best practices and, if applicable,
-      receive software updates from IoT Device Management. You can also download
-      signed qualification reports to submit to the Amazon Web Services Partner
-      Network to get your device qualified for the Amazon Web Services Partner
-      Device Catalog without the need to send your device in and wait for it to
-      be tested.</p>
+      Amazon Web Services IoT Core Device Advisor is a cloud-based testing
+      service designed to verify the functionality and security of IoT devices
+      before deployment. It offers a range of pre-built tests to ensure reliable
+      connectivity with Amazon Web Services IoT Core. With Device Advisor, you
+      can confirm that your devices adhere to security standards, receive
+      software updates, and generate qualification reports for submission to the
+      Amazon Web Services Partner Network. This allows you to quickly qualify
+      your device for the Amazon Web Services Partner Device Catalog without the
+      need for physical testing.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-core/device-advisor/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-core/device-advisor/
       - type: OpenAPI
         url: properties/iotdeviceadvisor-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-core/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-core/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/iot-core/getting-started/
+      - type: Features
+        url: https://aws.amazon.com/iot-core/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/iot/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/iotdeviceadvisor-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iotdeviceadvisor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotdeviceadvisor
-  - name: iot1click-projects
-    description: <p>The AWS IoT 1-Click Projects API Reference</p>
+  - name: ' AWS IoT 1-Click Projects'
+    description: >-
+      Our API allows AWS IoT 1-Click devices to easily and securely connect to
+      AWS IoT Core upon deployment, eliminating the need for manual certificate
+      management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-1-click/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-1-click/
       - type: OpenAPI
         url: properties/iot1click-projects-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-1-click/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-1-click/pricing/
+      - type: Devices
+        url: https://aws.amazon.com/iot-1-click/devices/
+      - type: Faq
+        url: https://aws.amazon.com/iot-1-click/faq/
+      - type: Features
+        url: https://aws.amazon.com/iot-1-click/features/
     overlays:
       - type: APIs.io Search
         url: overlays/iot1click-projects-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iot1click-projects-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot1click-projects
-  - name: iotevents-data
+  - name: AWS IoT Events
     description: >-
-      <p>IoT Events monitors your equipment or device fleets for failures or
-      changes in operation, and triggers actions when such events occur. You can
-      use IoT Events Data API commands to send inputs to detectors, list
-      detectors, and view or update a detector's status.</p> <p> For more
-      information, see <a
-      href="https://docs.aws.amazon.com/iotevents/latest/developerguide/what-is-iotevents.html">What
-      is IoT Events?</a> in the <i>IoT Events Developer Guide</i>.</p>
+      The IoT Events API allows you to track the status and performance of your
+      equipment or device fleets, enabling you to detect failures or changes in
+      operation and take appropriate actions. With IoT Events Data API, you can
+      interact with detectors by sending inputs, listing detectors, and
+      accessing or modifying their status. To learn more, refer to the "What is
+      IoT Events?" section in the IoT Events Developer Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-events/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-events/
       - type: OpenAPI
         url: properties/iotevents-data-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-events/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-events/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/iot-events/faqs/
+      - type: Features
+        url: https://aws.amazon.com/iot-events/features/
     overlays:
       - type: APIs.io Search
         url: overlays/iotevents-data-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iotevents-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotevents-data
-  - name: iotfleethub
+  - name: AWS IoT Device Management
     description: >-
-      <p>With Fleet Hub for AWS IoT Device Management you can build stand-alone
-      web applications for monitoring the health of your device fleets.</p>
-      <note> <p>Fleet Hub for AWS IoT Device Management is in public preview and
-      is subject to change.</p> </note>
+      AWS IoT Device Management simplifies the process of registering,
+      organizing, monitoring, and remotely managing IoT devices on a large
+      scale. Seamlessly integrate with AWS IoT Core for cloud device
+      connectivity and management, as well as with AWS IoT Device Defender for
+      auditing and monitoring the security posture of your fleet.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-device-management/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-device-management/
       - type: OpenAPI
         url: properties/iotfleethub-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-device-management/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-device-management/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/iot-device-management/resources/
+      - type: Faq
+        url: https://aws.amazon.com/iot-device-management/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/iotfleethub-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iotfleethub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotfleethub
-  - name: iot-data
+  - name: AWS IoT Data
     description: >-
-      <fullname>IoT data</fullname> <p>IoT data enables secure, bi-directional
-      communication between Internet-connected things (such as sensors,
-      actuators, embedded devices, or smart appliances) and the Amazon Web
-      Services cloud. It implements a broker for applications and things to
-      publish messages over HTTP (Publish) and retrieve, update, and delete
-      shadows. A shadow is a persistent representation of your things and their
-      state in the Amazon Web Services cloud.</p> <p>Find the endpoint address
-      for actions in IoT data by running this CLI command:</p> <p> <code>aws iot
-      describe-endpoint --endpoint-type iot:Data-ATS</code> </p> <p>The service
-      name used by <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Amazon
-      Web ServicesSignature Version 4</a> to sign requests is:
-      <i>iotdevicegateway</i>.</p>
+      My API, IoT data, facilitates secure communication between
+      Internet-connected devices and the Amazon Web Services cloud. It acts as a
+      broker for devices to publish messages via HTTP and manage shadows,
+      persistent representations of the device state in the AWS cloud. To find
+      the endpoint address for IoT data actions, use the CLI command: aws iot
+      describe-endpoint --endpoint-type iot:Data-ATS. Requests to the API are
+      signed using the service name iotdevicegateway for Amazon Web Services
+      Signature Version 4.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html
       - type: OpenAPI
         url: properties/iot-data-openapi-original.yml
     overlays:
@@ -4929,19 +5022,20 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot-data
-  - name: iot1click-devices
+  - name: AWS IoT 1-Click devices
     description: >-
-      <p>Describes all of the AWS IoT 1-Click device-related API operations for
-      the service.
-       Also provides sample requests, responses, and errors for the supported web services
-       protocols.</p>
+      Manufacturing partners of AWS IoT 1-Click develop devices that
+      effortlessly connect to the AWS Cloud upon unboxing. These supported
+      devices come pre-provisioned with certificates during manufacturing,
+      eliminating the need for writing firmware or device-specific code to
+      utilize them.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-1-click/devices/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-1-click/devices/
       - type: OpenAPI
         url: properties/iot1click-devices-openapi-original.yml
     overlays:
