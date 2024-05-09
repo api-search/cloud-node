@@ -4320,27 +4320,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/healthlake-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:healthlake
-  - name: Amazon Honeycode
-    description: >-
-      <p> Amazon Honeycode is a fully managed service that allows you to quickly
-      build mobile and web apps for teams—without programming. Build Honeycode
-      apps for managing almost anything, like projects, customers, operations,
-      approvals, resources, and even your team. </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/honeycode-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/honeycode-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/honeycode-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:honeycode
   - name: AWS Identity and Access Management
     description: >-
       <fullname>Identity and Access Management</fullname> <p>Identity and Access
@@ -4438,30 +4417,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/imagebuilder-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:imagebuilder
-  - name: AWS Import/Export Service
-    description: >-
-      <fullname>AWS Import/Export Service</fullname> AWS Import/Export
-      accelerates transferring large amounts of data between the AWS cloud and
-      portable storage devices that you mail to us. AWS Import/Export transfers
-      data directly onto and off of your storage devices using Amazon's
-      high-speed internal network and bypassing the Internet. For large data
-      sets, AWS Import/Export is often faster than Internet transfer and more
-      cost effective than upgrading your connectivity.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/importexport-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/importexport-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/importexport-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:importexport
   - name: Amazon Inspector Scan
     description: >-
       <p>Amazon Inspector Scan is a vulnerability discovery service that scans a
@@ -4548,28 +4503,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/health-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:health
-  - name: Amazon Inspector
-    description: >-
-      <fullname>Amazon Inspector</fullname> <p>Amazon Inspector enables you to
-      analyze the behavior of your AWS resources and to identify potential
-      security issues. For more information, see <a
-      href="https://docs.aws.amazon.com/inspector/latest/userguide/inspector_introduction.html">
-      Amazon Inspector User Guide</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/inspector-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/inspector-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/inspector-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:inspector
   - name: AWS IoT
     description: >-
       <fullname>IoT</fullname> <p>IoT provides secure, bi-directional
@@ -4640,25 +4573,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot-jobs-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot-jobs-data
-  - name: AWS IoT Roborunner
-    description: >-
-      <p>An example service, deployed with the Octane Service creator, which
-      will echo the string</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/iot-roborunner-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/iot-roborunner-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/iot-roborunner-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:iot-roborunner
   - name: Amazon CloudWatch Internet Monitor
     description: >-
       <p>Amazon CloudWatch Internet Monitor provides visibility into how
@@ -4745,26 +4659,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotanalytics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotanalytics
-  - name: Amazon Inspector
-    description: >-
-      <p>Amazon Inspector is a vulnerability discovery service that automates
-      continuous scanning for security vulnerabilities within your Amazon EC2,
-      Amazon ECR, and Amazon Web Services Lambda environments.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/inspector2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/inspector2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/inspector2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:inspector2
   - name: AWS IoT Core Device Advisor
     description: >-
       <p>Amazon Web Services IoT Core Device Advisor is a cloud-based, fully
@@ -4929,32 +4823,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotsecuretunneling-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotsecuretunneling
-  - name: AWS IoT Things Graph
-    description: >-
-      <fullname>AWS IoT Things Graph</fullname> <p>AWS IoT Things Graph provides
-      an integrated set of tools that enable developers to connect devices and
-      services that use different standards, such as units of measure and
-      communication protocols. AWS IoT Things Graph makes it possible to build
-      IoT applications with little to no code by connecting devices and services
-      and defining how they interact at an abstract level.</p> <p>For more
-      information about how AWS IoT Things Graph works, see the <a
-      href="https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-whatis.html">User
-      Guide</a>.</p> <p>The AWS IoT Things Graph service is discontinued.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/iotthingsgraph-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/iotthingsgraph-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/iotthingsgraph-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:iotthingsgraph
   - name: AWS IoT FleetWise
     description: >-
       <p>Amazon Web Services IoT FleetWise is a fully managed service that you
@@ -5243,130 +5111,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iottwinmaker-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iottwinmaker
-  - name: AWS Kafka Connect
-    description: <p/>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kafkaconnect-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kafkaconnect-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/kafkaconnect-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kafkaconnect
-  - name: Amazon Interactive Video Service (IVS) Realtime
-    description: >-
-      <p> <b>Introduction</b> </p> <p>The Amazon Interactive Video Service (IVS)
-      real-time API is REST compatible, using a standard HTTP API and an AWS
-      EventBridge event stream for responses. JSON is used for both requests and
-      responses, including errors. </p> <p>Terminology:</p> <ul> <li> <p>A
-      <i>stage</i> is a virtual space where participants can exchange video in
-      real time.</p> </li> <li> <p>A <i>participant token</i> is a token that
-      authenticates a participant when they join a stage.</p> </li> <li> <p>A
-      <i>participant object</i> represents participants (people) in the stage
-      and contains information about them. When a token is created, it includes
-      a participant ID; when a participant uses that token to join a stage, the
-      participant is associated with that participant ID. There is a 1:1 mapping
-      between participant tokens and participants.</p> </li> <li> <p>Server-side
-      composition: The <i>composition</i> process composites participants of a
-      stage into a single video and forwards it to a set of outputs (e.g., IVS
-      channels). Composition endpoints support this process.</p> </li> <li>
-      <p>Server-side composition: A <i>composition</i> controls the look of the
-      outputs, including how participants are positioned in the video.</p> </li>
-      </ul> <p> <b>Resources</b> </p> <p>The following resources contain
-      information about your IVS live stream (see <a
-      href="https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started.html">Getting
-      Started with Amazon IVS Real-Time Streaming</a>):</p> <ul> <li> <p>
-      <b>Stage</b> — A stage is a virtual space where participants can exchange
-      video in real time.</p> </li> </ul> <p> <b>Tagging</b> </p> <p>A
-      <i>tag</i> is a metadata label that you assign to an AWS resource. A tag
-      comprises a <i>key</i> and a <i>value</i>, both set by you. For example,
-      you might set a tag as <code>topic:nature</code> to label a particular
-      video category. See <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html">Tagging
-      AWS Resources</a> for more information, including restrictions that apply
-      to tags and "Tag naming limits and requirements"; Amazon IVS stages has no
-      service-specific constraints beyond what is documented there.</p> <p>Tags
-      can help you identify and organize your AWS resources. For example, you
-      can use the same tag for different resources to indicate that they are
-      related. You can also use tags to manage access (see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html">Access
-      Tags</a>).</p> <p>The Amazon IVS real-time API has these tag-related
-      endpoints: <a>TagResource</a>, <a>UntagResource</a>, and
-      <a>ListTagsForResource</a>. The following resource supports tagging:
-      Stage.</p> <p>At most 50 tags can be applied to a resource.</p> <p>
-      <b>Stages Endpoints</b> </p> <ul> <li> <p> <a>CreateParticipantToken</a> —
-      Creates an additional token for a specified stage. This can be done after
-      stage creation or when tokens expire.</p> </li> <li> <p>
-      <a>CreateStage</a> — Creates a new stage (and optionally participant
-      tokens).</p> </li> <li> <p> <a>DeleteStage</a> — Shuts down and deletes
-      the specified stage (disconnecting all participants).</p> </li> <li> <p>
-      <a>DisconnectParticipant</a> — Disconnects a specified participant and
-      revokes the participant permanently from a specified stage.</p> </li> <li>
-      <p> <a>GetParticipant</a> — Gets information about the specified
-      participant token.</p> </li> <li> <p> <a>GetStage</a> — Gets information
-      for the specified stage.</p> </li> <li> <p> <a>GetStageSession</a> — Gets
-      information for the specified stage session.</p> </li> <li> <p>
-      <a>ListParticipantEvents</a> — Lists events for a specified participant
-      that occurred during a specified stage session.</p> </li> <li> <p>
-      <a>ListParticipants</a> — Lists all participants in a specified stage
-      session.</p> </li> <li> <p> <a>ListStages</a> — Gets summary information
-      about all stages in your account, in the AWS region where the API request
-      is processed.</p> </li> <li> <p> <a>ListStageSessions</a> — Gets all
-      sessions for a specified stage.</p> </li> <li> <p> <a>UpdateStage</a> —
-      Updates a stage’s configuration.</p> </li> </ul> <p> <b>Composition
-      Endpoints</b> </p> <ul> <li> <p> <a>GetComposition</a> — Gets information
-      about the specified Composition resource.</p> </li> <li> <p>
-      <a>ListCompositions</a> — Gets summary information about all Compositions
-      in your account, in the AWS region where the API request is processed.</p>
-      </li> <li> <p> <a>StartComposition</a> — Starts a Composition from a stage
-      based on the configuration provided in the request.</p> </li> <li> <p>
-      <a>StopComposition</a> — Stops and deletes a Composition resource. Any
-      broadcast from the Composition resource is stopped.</p> </li> </ul> <p>
-      <b>EncoderConfiguration Endpoints</b> </p> <ul> <li> <p>
-      <a>CreateEncoderConfiguration</a> — Creates an EncoderConfiguration
-      object.</p> </li> <li> <p> <a>DeleteEncoderConfiguration</a> — Deletes an
-      EncoderConfiguration resource. Ensures that no Compositions are using this
-      template; otherwise, returns an error.</p> </li> <li> <p>
-      <a>GetEncoderConfiguration</a> — Gets information about the specified
-      EncoderConfiguration resource.</p> </li> <li> <p>
-      <a>ListEncoderConfigurations</a> — Gets summary information about all
-      EncoderConfigurations in your account, in the AWS region where the API
-      request is processed.</p> </li> </ul> <p> <b>StorageConfiguration
-      Endpoints</b> </p> <ul> <li> <p> <a>CreateStorageConfiguration</a> —
-      Creates a new storage configuration, used to enable recording to Amazon
-      S3.</p> </li> <li> <p> <a>DeleteStorageConfiguration</a> — Deletes the
-      storage configuration for the specified ARN.</p> </li> <li> <p>
-      <a>GetStorageConfiguration</a> — Gets the storage configuration for the
-      specified ARN.</p> </li> <li> <p> <a>ListStorageConfigurations</a> — Gets
-      summary information about all storage configurations in your account, in
-      the AWS region where the API request is processed.</p> </li> </ul> <p>
-      <b>Tags Endpoints</b> </p> <ul> <li> <p> <a>ListTagsForResource</a> — Gets
-      information about AWS tags for the specified ARN.</p> </li> <li> <p>
-      <a>TagResource</a> — Adds or updates tags for the AWS resource with the
-      specified ARN.</p> </li> <li> <p> <a>UntagResource</a> — Removes tags from
-      the resource with the specified ARN.</p> </li> </ul>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/ivs-realtime-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/ivs-realtime-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/ivs-realtime-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:ivs-realtime
   - name: Amazon IVS Chat
     description: >-
       <p> <b>Introduction</b> </p> <p>The Amazon IVS Chat control-plane API
@@ -5609,23 +5353,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iotwireless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotwireless
-  - name: Amazon Kinesis Video Media
-    description: <p/>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kinesis-video-media-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kinesis-video-media-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/kinesis-video-media-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kinesis-video-media
   - name: Amazon Kendra Intelligent Ranking
     description: >-
       <p>Amazon Kendra Intelligent Ranking uses Amazon Kendra semantic search
@@ -5645,109 +5372,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/kendra-ranking-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kendra-ranking
-  - name: Amazon Kinesis Video Archived Media
-    description: <p/>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kinesis-video-archived-media-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kinesis-video-archived-media-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: >-
-          overlays/kinesis-video-archived-media-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kinesis-video-archived-media
-  - name: Amazon Kinesis Video
-    description: <p/>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kinesisvideo-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kinesisvideo-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/kinesisvideo-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kinesisvideo
-  - name: Amazon Kinesis Data Analytics
-    description: >-
-      <p>Amazon Kinesis Data Analytics is a fully managed service that you can
-      use to process and analyze streaming data using Java, SQL, or Scala. The
-      service enables you to quickly author and run Java, SQL, or Scala code
-      against streaming sources to perform time series analytics, feed real-time
-      dashboards, and create real-time metrics.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kinesisanalyticsv2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kinesisanalyticsv2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/kinesisanalyticsv2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kinesisanalyticsv2
-  - name: Amazon Kinesis Analytics
-    description: >-
-      <fullname>Amazon Kinesis Analytics</fullname> <p> <b>Overview</b> </p>
-      <note> <p>This documentation is for version 1 of the Amazon Kinesis Data
-      Analytics API, which only supports SQL applications. Version 2 of the API
-      supports SQL and Java applications. For more information about version 2,
-      see <a href="/kinesisanalytics/latest/apiv2/Welcome.html">Amazon Kinesis
-      Data Analytics API V2 Documentation</a>.</p> </note> <p>This is the
-      <i>Amazon Kinesis Analytics v1 API Reference</i>. The Amazon Kinesis
-      Analytics Developer Guide provides additional information. </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kinesisanalytics-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kinesisanalytics-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/kinesisanalytics-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kinesisanalytics
-  - name: Amazon Kinesis Video Streams Signaling
-    description: >-
-      <p>Kinesis Video Streams Signaling Service is a intermediate service that
-      establishes a communication channel for discovering peers, transmitting
-      offers and answers in order to establish peer-to-peer connection in webRTC
-      technology.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kinesis-video-signaling-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kinesis-video-signaling-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/kinesis-video-signaling-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kinesis-video-signaling
   - name: AWS Lambda
     description: >-
       <fullname>AWS Lambda</fullname> <p><b>Overview</b></p> <p>This is the AWS
