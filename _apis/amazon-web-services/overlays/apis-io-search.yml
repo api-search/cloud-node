@@ -5589,81 +5589,86 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lightsail-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lightsail
-  - name: lookoutequipment
+  - name: Amazon Lookout for Equipment
     description: >-
-      <p>Amazon Lookout for Equipment is a machine learning service that uses
+      Amazon Lookout for Equipment is a machine learning service that uses
       advanced analytics to identify anomalies in machines from sensor data for
-      use in predictive maintenance. </p>
+      use in predictive maintenance.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lookout-for-equipment/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lookout-for-equipment/
       - type: OpenAPI
         url: properties/lookoutequipment-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lookout-for-equipment/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lookout-for-equipment/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/lookout-for-equipment/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/lookout-for-equipment/resources/
+      - type: Customers
+        url: https://aws.amazon.com/lookout-for-equipment/customers/
+      - type: Partners
+        url: https://aws.amazon.com/lookout-for-equipment/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/lookoutequipment-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/lookoutequipment-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lookoutequipment
-  - name: lakeformation
+  - name: AWS Lake Formation
     description: >-
-      <fullname>Lake Formation</fullname> <p>Defines the public endpoint for the
-      Lake Formation service.</p>
+      The AWS Lake Formation API streamlines data permissions management and
+      facilitates seamless sharing within and outside your organization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lake-formation/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lake-formation/
       - type: OpenAPI
         url: properties/lakeformation-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lake-formation/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lake-formation/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/lake-formation/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/lake-formation/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/lakeformation-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/lakeformation-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lakeformation
-  - name: logs
+  - name: Amazon CloudWatch Logs
     description: >-
-      <p>You can use Amazon CloudWatch Logs to monitor, store, and access your
-      log files from EC2 instances, CloudTrail, and other sources. You can then
-      retrieve the associated log data from CloudWatch Logs using the CloudWatch
-      console. Alternatively, you can use CloudWatch Logs commands in the Amazon
-      Web Services CLI, CloudWatch Logs API, or CloudWatch Logs SDK.</p> <p>You
-      can use CloudWatch Logs to:</p> <ul> <li> <p> <b>Monitor logs from EC2
-      instances in real time</b>: You can use CloudWatch Logs to monitor
-      applications and systems using log data. For example, CloudWatch Logs can
-      track the number of errors that occur in your application logs. Then, it
-      can send you a notification whenever the rate of errors exceeds a
-      threshold that you specify. CloudWatch Logs uses your log data for
-      monitoring so no code changes are required. For example, you can monitor
-      application logs for specific literal terms (such as
-      "NullReferenceException"). You can also count the number of occurrences of
-      a literal term at a particular position in log data (such as "404" status
-      codes in an Apache access log). When the term you are searching for is
-      found, CloudWatch Logs reports the data to a CloudWatch metric that you
-      specify.</p> </li> <li> <p> <b>Monitor CloudTrail logged events</b>: You
-      can create alarms in CloudWatch and receive notifications of particular
-      API activity as captured by CloudTrail. You can use the notification to
-      perform troubleshooting.</p> </li> <li> <p> <b>Archive log data</b>: You
-      can use CloudWatch Logs to store your log data in highly durable storage.
-      You can change the log retention setting so that any log events earlier
-      than this setting are automatically deleted. The CloudWatch Logs agent
-      helps to quickly send both rotated and non-rotated log data off of a host
-      and into the log service. You can then access the raw log data when you
-      need it.</p> </li> </ul>
+      My API allows you to monitor, store, and access log files from EC2
+      instances, CloudTrail, and other sources using Amazon CloudWatch Logs. You
+      can retrieve log data through the CloudWatch console, AWS CLI, API, or
+      SDK. With CloudWatch Logs, you can monitor real-time logs from EC2
+      instances, track errors in application logs, set up notifications for
+      error thresholds, search for specific terms in logs, and create alarms for
+      CloudTrail events. Additionally, you can archive log data in highly
+      durable storage and adjust retention settings to automatically delete old
+      log events. The CloudWatch Logs agent simplifies the process of sending
+      log data to the service for quick access when needed.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
       - type: OpenAPI
         url: properties/logs-openapi-original.yml
     overlays:
@@ -5672,47 +5677,67 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/logs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:logs
-  - name: lookoutmetrics
+  - name: Amazon Lookout for Metrics
     description: >-
-      <p>This is the <i>Amazon Lookout for Metrics API Reference</i>. For an
-      introduction to the service with tutorials for getting started, visit <a
-      href="https://docs.aws.amazon.com/lookoutmetrics/latest/dev">Amazon
-      Lookout for Metrics Developer Guide</a>.</p>
+      My API, Amazon Lookout for Metrics, leverages machine learning technology
+      to identify and explain abnormal patterns in business and operational
+      datasets.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lookout-for-metrics/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lookout-for-metrics/
       - type: OpenAPI
         url: properties/lookoutmetrics-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lookout-for-metrics/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lookout-for-metrics/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/lookout-for-metrics/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/lookout-for-metrics/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/lookout-for-metrics/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/lookoutmetrics-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/lookoutmetrics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lookoutmetrics
-  - name: lookoutvision
+  - name: Amazon Lookout for Vision
     description: >-
-      <p>This is the Amazon Lookout for Vision API Reference. It provides
-      descriptions of actions, data types, common parameters, and common
-      errors.</p> <p>Amazon Lookout for Vision enables you to find visual
-      defects in industrial products, accurately and at scale. It uses computer
-      vision to identify missing components in an industrial product, damage to
-      vehicles or structures, irregularities in production lines, and even
-      minuscule defects in silicon wafers — or any other physical item where
-      quality is important such as a missing capacitor on printed circuit
-      boards.</p>
+      The Amazon Lookout for Vision API offers details on actions, data types,
+      parameters, and errors. This API allows users to detect visual defects in
+      various industrial products with precision and efficiency. By utilizing
+      computer vision technology, it can identify missing parts in products,
+      damages in vehicles or structures, inconsistencies in manufacturing lines,
+      and even tiny imperfections in items like silicon wafers or printed
+      circuit boards. Lookout for Vision is a powerful tool for ensuring quality
+      in production processes.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lookout-for-vision/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lookout-for-vision/
       - type: OpenAPI
         url: properties/lookoutvision-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lookout-for-vision/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lookout-for-vision/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/lookout-for-vision/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/lookout-for-vision/resources/
+      - type: Partners
+        url: https://aws.amazon.com/lookout-for-vision/partners/
+      - type: Customers
+        url: https://aws.amazon.com/lookout-for-vision/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/lookoutvision-openapi-search.yml
@@ -5757,26 +5782,45 @@ apis:
         url: >-
           overlays/license-manager-linux-subscriptions-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:license-manager-linux-subscriptions
-  - name: machinelearning
-    description: Definition of the public APIs exposed by Amazon Machine Learning
+  - name: Amazon Machine Learning
+    description: >-
+      The API provided by AWS allows users to leverage machine learning
+      capabilities at scale, offering a wide range of services, infrastructure,
+      and deployment resources. Trusted by over 100,000 customers, from major
+      corporations to new businesses, AWS machine learning services are used to
+      tackle business challenges and foster innovation. Amazon SageMaker, a key
+      component of the API, enables users to create, train, and implement
+      machine learning models efficiently and effectively by providing
+      specialized tools and infrastructure for every stage of the machine
+      learning process.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ai/machine-learning/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ai/machine-learning/
       - type: OpenAPI
         url: properties/machinelearning-openapi-original.yml
+      - type: Infrastructure
+        url: https://aws.amazon.com/ai/infrastructure/
+      - type: Learn
+        url: https://aws.amazon.com/machine-learning/learn/
+      - type: Resources
+        url: https://aws.amazon.com/ai/resources/
+      - type: Use Cases
+        url: https://aws.amazon.com/machine-learning/ai-use-cases/
+      - type: Partners
+        url: https://aws.amazon.com/machine-learning/partner-solutions/
     overlays:
       - type: APIs.io Search
         url: overlays/machinelearning-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/machinelearning-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:machinelearning
-  - name: macie2
+  - name: Amazon Macie
     description: >-
-      <p>Amazon Macie is a fully managed data security and data privacy service
+      Amazon Macie is a fully managed data security and data privacy service
       that uses machine learning and pattern matching to help you discover and
       protect your sensitive data in AWS. Macie automates the discovery of
       sensitive data, such as PII and intellectual property, to provide you with
@@ -5784,16 +5828,26 @@ apis:
       provides an inventory of your Amazon S3 buckets, which it continually
       monitors for you. If Macie detects sensitive data or potential data access
       issues, it generates detailed findings for you to review and act upon as
-      necessary.</p>
+      necessary.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/macie/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/macie/
       - type: OpenAPI
         url: properties/macie2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/macie/features/
+      - type: Pricing
+        url: https://aws.amazon.com/macie/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/macie/getting-started/
+      - type: Faq
+        url: https://aws.amazon.com/macie/faq/
+      - type: Resources
+        url: https://aws.amazon.com/macie/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/macie2-openapi-search.yml
