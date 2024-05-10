@@ -7187,21 +7187,27 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/opsworkscm-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opsworkscm
-  - name: osis
+  - name: Amazon OpenSearch Ingestion
     description: >-
-      <p>Use the Amazon OpenSearch Ingestion API to create and manage ingestion
-      pipelines. OpenSearch Ingestion is a fully managed data collector that
-      delivers real-time log and trace data to OpenSearch Service domains. For
-      more information, see <a
-      href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html">Getting
-      data into your cluster using OpenSearch Ingestion</a>.</p>
+      The Amazon OpenSearch Ingestion API is a fully managed, serverless data
+      collection tool designed to deliver real-time log, metric, and trace data
+      to Amazon OpenSearch Service domains and OpenSearch Serverless
+      collections. With OpenSearch Ingestion, there is no longer a need for
+      third-party solutions like Logstash or Jaeger to ingest data into your
+      OpenSearch Service domains and OpenSearch Serverless collections. Simply
+      configure your data producers to send data to OpenSearch Ingestion, and it
+      will automatically deliver the data to the specified domain or collection.
+      Additionally, you can customize OpenSearch Ingestion to transform your
+      data before delivering it.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html
       - type: OpenAPI
         url: properties/osis-openapi-original.yml
     overlays:
@@ -7210,22 +7216,38 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/osis-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:osis
-  - name: panorama
+  - name: AWS Panorama
     description: >-
-      <p><fullname>AWS Panorama</fullname> <p> <b>Overview</b> </p> <p>This is
-      the <i>AWS Panorama API Reference</i>. For an introduction to the service,
-      see <a
-      href="https://docs.aws.amazon.com/panorama/latest/dev/panorama-welcome.html">What
-      is AWS Panorama?</a> in the <i>AWS Panorama Developer Guide</i>.</p></p>
+      AWS Panorama is a set of machine learning (ML) tools and software
+      development kit (SDK) that enables the integration of computer vision (CV)
+      capabilities into on-site internet protocol (IP) cameras.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/panorama/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/panorama/
       - type: OpenAPI
         url: properties/panorama-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/panorama/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/panorama/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/panorama/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/panorama/customers/
+      - type: Partners
+        url: https://aws.amazon.com/panorama/partners/
+      - type: Partners
+        url: https://aws.amazon.com/panorama/partners/
+      - type: Use-cases
+        url: https://aws.amazon.com/panorama/use-cases/
+      - type: Developers
+        url: https://aws.amazon.com/panorama/developers/
+      - type: Appliance
+        url: https://aws.amazon.com/panorama/appliance/
     overlays:
       - type: APIs.io Search
         url: overlays/panorama-openapi-search.yml
@@ -7301,42 +7323,37 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/opsworks-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opsworks
-  - name: payment-cryptography
+  - name: AWS Payment Cryptography Control Plane
     description: >-
-      <p>Amazon Web Services Payment Cryptography Control Plane APIs manage
-      encryption keys for use during payment-related cryptographic operations.
-      You can create, import, export, share, manage, and delete keys. You can
-      also manage Identity and Access Management (IAM) policies for keys. For
-      more information, see <a
-      href="https://docs.aws.amazon.com/payment-cryptography/latest/userguide/security-iam.html">Identity
-      and access management</a> in the <i>Amazon Web Services Payment
-      Cryptography User Guide.</i> </p> <p>To use encryption keys for
-      payment-related transaction processing and associated cryptographic
-      operations, you use the <a
-      href="https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/Welcome.html">Amazon
-      Web Services Payment Cryptography Data Plane</a>. You can perform actions
-      like encrypt, decrypt, generate, and verify payment-related data.</p>
-      <p>All Amazon Web Services Payment Cryptography API calls must be signed
-      and transmitted using Transport Layer Security (TLS). We recommend you
-      always use the latest supported TLS version for logging API requests. </p>
-      <p>Amazon Web Services Payment Cryptography supports CloudTrail for
-      control plane operations, a service that logs Amazon Web Services API
-      calls and related events for your Amazon Web Services account and delivers
-      them to an Amazon S3 bucket you specify. By using the information
-      collected by CloudTrail, you can determine what requests were made to
-      Amazon Web Services Payment Cryptography, who made the request, when it
-      was made, and so on. If you don't conﬁgure a trail, you can still view the
-      most recent events in the CloudTrail console. For more information, see
-      the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/">CloudTrail
-      User Guide</a>.</p>
+      The Amazon Web Services Payment Cryptography Control Plane APIs are used
+      to manage encryption keys for payment-related cryptographic operations.
+      With these APIs, you can create, import, export, share, manage, and delete
+      keys, as well as manage Identity and Access Management (IAM) policies. For
+      detailed instructions, refer to the Identity and access management section
+      in the Amazon Web Services Payment Cryptography User Guide.
+
+
+      For payment-related transaction processing and associated cryptographic
+      operations, the Amazon Web Services Payment Cryptography Data Plane is
+      used. This allows you to perform actions such as encrypting, decrypting,
+      generating, and verifying payment-related data. All API calls must be
+      signed and transmitted using Transport Layer Security (TLS), with the
+      latest supported version recommended for logging API requests.
+
+
+      CloudTrail is supported for control plane operations, a service that logs
+      Amazon Web Services API calls and events related to your account. This
+      information can help you track requests made to Amazon Web Services
+      Payment Cryptography, including who made the request and when. If you do
+      not configure a trail, you can still view the most recent events in the
+      CloudTrail console. For more details, consult the CloudTrail User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/payment-cryptography/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/payment-cryptography/
       - type: OpenAPI
         url: properties/payment-cryptography-openapi-original.yml
     overlays:
@@ -7345,21 +7362,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/payment-cryptography-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:payment-cryptography
-  - name: pca-connector-ad
+  - name: AWS Private CA Connector for Active Directory
     description: >-
-      <p>Amazon Web Services Private CA Connector for Active Directory creates a
-      connector between Amazon Web Services Private CA and Active Directory (AD)
-      that enables you to provision security certificates for AD signed by a
-      private CA that you own. For more information, see <a
-      href="https://docs.aws.amazon.com/privateca/latest/userguide/ad-connector.html">Amazon
-      Web Services Private CA Connector for Active Directory</a>.</p>
+      The Amazon Web Services Private CA Connector for Active Directory
+      establishes a connection between Amazon Web Services Private CA and Active
+      Directory, allowing you to generate security certificates for Active
+      Directory that are signed by your own private CA. For further details,
+      visit the Amazon Web Services Private CA Connector for Active Directory
+      documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad.html
       - type: OpenAPI
         url: properties/pca-connector-ad-openapi-original.yml
     overlays:
@@ -7368,20 +7387,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/pca-connector-ad-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pca-connector-ad
-  - name: personalize-events
+  - name: Amazon Personalize
     description: >-
-      <p>Amazon Personalize can consume real-time user event data, such as
-      <i>stream</i> or <i>click</i> data, and use it for model training either
-      alone or combined with historical data. For more information see <a
-      href="https://docs.aws.amazon.com/personalize/latest/dg/recording-item-interaction-events.html">Recording
-      item interaction events</a>.</p>
+      The Amazon Personalize API enables the consumption of real-time user event
+      data, such as streaming or click data, for model training purposes. This
+      data can be used on its own or in combination with historical data. For
+      further details, refer to the documentation on Recording item interaction
+      events.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/personalize/latest/dg/API_Types_Amazon_Personalize_Events.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/personalize/latest/dg/API_Types_Amazon_Personalize_Events.html
       - type: OpenAPI
         url: properties/personalize-events-openapi-original.yml
     overlays:
@@ -7390,18 +7411,20 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/personalize-events-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:personalize-events
-  - name: networkmanager
+  - name: 'AWS Cloud WAN Core Network '
     description: >-
-      <p>Amazon Web Services enables you to centrally manage your Amazon Web
-      Services Cloud WAN core network and your Transit Gateway network across
-      Amazon Web Services accounts, Regions, and on-premises locations.</p>
+      Our API allows you to efficiently manage your Amazon Web Services Cloud
+      WAN core network and Transit Gateway network across multiple AWS accounts,
+      Regions, and on-premises locations.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html
       - type: OpenAPI
         url: properties/networkmanager-openapi-original.yml
     overlays:
@@ -7410,22 +7433,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/networkmanager-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:networkmanager
-  - name: outposts
+  - name: AWS Outposts
     description: >-
-      <p>Amazon Web Services Outposts is a fully managed service that extends
-      Amazon Web Services infrastructure, APIs, and tools to customer premises.
-      By providing local access to Amazon Web Services managed infrastructure,
-      Amazon Web Services Outposts enables customers to build and run
-      applications on premises using the same programming interfaces as in
-      Amazon Web Services Regions, while using local compute and storage
-      resources for lower latency and local data processing needs.</p>
+      Amazon Web Services Outposts is a service that brings Amazon Web Services
+      infrastructure, APIs, and tools to customer premises in a fully managed
+      capacity. With Outposts, customers can access AWS managed infrastructure
+      locally, allowing for the development and operation of applications on
+      premises with the same programming interfaces as in AWS Regions. This
+      enables users to utilize local compute and storage resources for lower
+      latency and fulfill local data processing requirements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/outposts/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/outposts/
       - type: OpenAPI
         url: properties/outposts-openapi-original.yml
     overlays:
@@ -7451,19 +7474,33 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/personalize-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:personalize-runtime
-  - name: personalize
+  - name: Amazon Personalize
     description: >-
-      <p>Amazon Personalize is a machine learning service that makes it easy to
-      add individualized recommendations to customers.</p>
+      Amazon Personalize simplifies the process of integrating personalized
+      recommendations powered by machine learning into various platforms,
+      including websites, applications, and email marketing systems, thereby
+      facilitating your digital transformation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/personalize/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/personalize/
       - type: OpenAPI
         url: properties/personalize-openapi-original.yml
+      - type: Featurs
+        url: https://aws.amazon.com/personalize/features/
+      - type: Pricing
+        url: https://aws.amazon.com/personalize/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/personalize/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/personalize/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/personalize/customers/
+      - type: Partners
+        url: https://aws.amazon.com/personalize/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/personalize-openapi-search.yml
