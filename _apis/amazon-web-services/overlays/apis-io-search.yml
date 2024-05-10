@@ -6650,139 +6650,152 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mturk-requester-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mturk-requester
-  - name: monitoring
-    description: >-
-      <p>Amazon CloudWatch monitors your Amazon Web Services (Amazon Web
-      Services) resources and the applications you run on Amazon Web Services in
-      real time. You can use CloudWatch to collect and track metrics, which are
-      the variables you want to measure for your resources and applications.</p>
-      <p>CloudWatch alarms send notifications or automatically change the
-      resources you are monitoring based on rules that you define. For example,
-      you can monitor the CPU usage and disk reads and writes of your Amazon EC2
-      instances. Then, use this data to determine whether you should launch
-      additional instances to handle increased load. You can also use this data
-      to stop under-used instances to save money.</p> <p>In addition to
-      monitoring the built-in metrics that come with Amazon Web Services, you
-      can monitor your own custom metrics. With CloudWatch, you gain system-wide
-      visibility into resource utilization, application performance, and
-      operational health.</p>
+  - name: Amazon CloudWatch
+    description: >+
+      Amazon CloudWatch is a service that monitors applications, responds to
+      performance changes, optimizes resource use, and provides insights into
+      operational health. By collecting data across AWS resources, CloudWatch
+      gives visibility into system-wide performance and allows users to set
+      alarms, automatically react to changes, and gain a unified view of
+      operational health.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudwatch/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudwatch/
       - type: OpenAPI
         url: properties/monitoring-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudwatch/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudwatch/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudwatch/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/cloudwatch/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/cloudwatch/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/monitoring-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/monitoring-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:monitoring
-  - name: mwaa
+  - name: Amazon Managed Workflows for Apache Airflow
     description: >-
-      <p><fullname>Amazon Managed Workflows for Apache Airflow</fullname>
-      <p>This section contains the Amazon Managed Workflows for Apache Airflow
-      (MWAA) API reference documentation. For more information, see <a
-      href="https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html">What
-      is Amazon MWAA?</a>.</p> <p> <b>Endpoints</b> </p> <ul> <li> <p>
-      <code>api.airflow.{region}.amazonaws.com</code> - This endpoint is used
-      for environment management.</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateEnvironment.html">CreateEnvironment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_DeleteEnvironment.html">DeleteEnvironment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_GetEnvironment.html">GetEnvironment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_ListEnvironments.html">ListEnvironments</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_ListTagsForResource.html">ListTagsForResource</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_TagResource.html">TagResource</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_UntagResource.html">UntagResource</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_UpdateEnvironment.html">UpdateEnvironment</a>
-      </p> </li> </ul> </li> <li> <p>
-      <code>env.airflow.{region}.amazonaws.com</code> - This endpoint is used to
-      operate the Airflow environment.</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateCliToken.html
-      ">CreateCliToken</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateWebLoginToken.html">CreateWebLoginToken</a>
-      </p> </li> </ul> </li> </ul> <p> <b>Regions</b> </p> <p>For a list of
-      supported regions, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/mwaa.html">Amazon MWAA
-      endpoints and quotas</a> in the <i>Amazon Web Services General
-      Reference</i>.</p></p>
+      Amazon Managed Workflows for Apache Airflow (Amazon MWAA) is a service
+      that helps you organize and automate your tasks by utilizing Directed
+      Acyclic Graphs (DAGs) written in Python. Your DAGs, plugins, and Python
+      requirements are stored in an Amazon Simple Storage Service (S3) bucket
+      provided by you. You can easily manage and monitor your workflows through
+      various interfaces such as the AWS Management Console, command line
+      interface (CLI), software development kit (SDK), or the Apache Airflow
+      user interface (UI).
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/managed-workflows-for-apache-airflow/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/
       - type: OpenAPI
         url: properties/mwaa-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/features/
+      - type: Pricing
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/pricing/
+      - type: Getting-started
+        url: >-
+          https://aws.amazon.com/managed-workflows-for-apache-airflow/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/mwaa-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/mwaa-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mwaa
-  - name: neptune
+  - name: Amazon Neptune
     description: >-
-      <fullname>Amazon Neptune</fullname> <p>Amazon Neptune is a fast, reliable,
-      fully-managed graph database service that makes it easy to build and run
-      applications that work with highly connected datasets. The core of Amazon
-      Neptune is a purpose-built, high-performance graph database engine
-      optimized for storing billions of relationships and querying the graph
-      with milliseconds latency. Amazon Neptune supports popular graph models
-      Property Graph and W3C's RDF, and their respective query languages Apache
-      TinkerPop Gremlin and SPARQL, allowing you to easily build queries that
-      efficiently navigate highly connected datasets. Neptune powers graph use
-      cases such as recommendation engines, fraud detection, knowledge graphs,
-      drug discovery, and network security.</p> <p>This interface reference for
-      Amazon Neptune contains documentation for a programming or command line
-      interface you can use to manage Amazon Neptune. Note that Amazon Neptune
-      is asynchronous, which means that some interfaces might require techniques
-      such as polling or callback functions to determine when a command has been
-      applied. In this reference, the parameter descriptions indicate whether a
-      command is applied immediately, on the next instance reboot, or during the
+      Amazon Neptune Amazon Neptune is a fast, reliable, fully-managed graph
+      database service that makes it easy to build and run applications that
+      work with highly connected datasets. The core of Amazon Neptune is a
+      purpose-built, high-performance graph database engine optimized for
+      storing billions of relationships and querying the graph with milliseconds
+      latency. Amazon Neptune supports popular graph models Property Graph and
+      W3C's RDF, and their respective query languages Apache TinkerPop Gremlin
+      and SPARQL, allowing you to easily build queries that efficiently navigate
+      highly connected datasets. Neptune powers graph use cases such as
+      recommendation engines, fraud detection, knowledge graphs, drug discovery,
+      and network security. This interface reference for Amazon Neptune contains
+      documentation for a programming or command line interface you can use to
+      manage Amazon Neptune. Note that Amazon Neptune is asynchronous, which
+      means that some interfaces might require techniques such as polling or
+      callback functions to determine when a command has been applied. In this
+      reference, the parameter descriptions indicate whether a command is
+      applied immediately, on the next instance reboot, or during the
       maintenance window. The reference structure is as follows, and we list
-      following some related topics from the user guide.</p>
+      following some related topics from the user guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/neptune/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/neptune/
       - type: OpenAPI
         url: properties/neptune-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/neptune/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/neptune/faqs/
+      - type: Features
+        url: https://aws.amazon.com/neptune/features/
+      - type: Global-database
+        url: https://aws.amazon.com/neptune/global-database/
+      - type: Machine-learning
+        url: https://aws.amazon.com/neptune/machine-learning/
+      - type: Serverless
+        url: https://aws.amazon.com/neptune/serverless/
+      - type: Getting-started
+        url: https://aws.amazon.com/neptune/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/neptune-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/neptune-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:neptune
-  - name: mq
+  - name: Amazon MQ
     description: >-
-      <p>Amazon MQ is a managed message broker service for Apache ActiveMQ and
-      RabbitMQ that makes it easy to set up and operate message brokers in the
-      cloud. A message broker allows software applications and components to
-      communicate using various programming languages, operating systems, and
-      formal messaging protocols.</p>
+      Amazon MQ is an API service that manages message brokers for Apache
+      ActiveMQ and RabbitMQ, simplifying the setup and operation of message
+      brokers in the cloud. Message brokers enable communication between
+      software applications and components, supporting multiple programming
+      languages, operating systems, and messaging protocols.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/amazon-mq/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/amazon-mq/
       - type: OpenAPI
         url: properties/mq-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/amazon-mq/features/
+      - type: Pricing
+        url: https://aws.amazon.com/amazon-mq/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/amazon-mq/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/amazon-mq/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/amazon-mq/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/mq-openapi-search.yml
@@ -6806,19 +6819,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/modelslexv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:modelslexv2
-  - name: neptune-graph
+  - name: Neptune Analytics
     description: >-
-      <p>Neptune Analytics is a new analytics database engine for Amazon Neptune
-      that helps customers get to insights faster by quickly processing large
-      amounts of graph data, invoking popular graph analytic algorithms in
-      low-latency queries, and getting analytics results in seconds.</p>
+      Neptune Analytics is a cutting-edge analytics database engine designed for
+      Amazon Neptune, enabling users to efficiently analyze vast amounts of
+      graph data. By leveraging high-speed processing capabilities and executing
+      popular graph analytic algorithms through rapid queries, Neptune Analytics
+      greatly accelerates the insights generation process, delivering analytics
+      results within seconds.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html
       - type: OpenAPI
         url: properties/neptune-graph-openapi-original.yml
     overlays:
@@ -6827,14 +6844,14 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/neptune-graph-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:neptune-graph
-  - name: neptunedata
+  - name: Neptune Data
     description: >-
-      <p><fullname>Neptune Data API</fullname> <p>The Amazon Neptune data API
-      provides SDK support for more than 40 of Neptune's data operations,
-      including data loading, query execution, data inquiry, and machine
-      learning. It supports the Gremlin and openCypher query languages, and is
-      available in all SDK languages. It automatically signs API requests and
-      greatly simplifies integrating Neptune into your applications.</p></p>
+      Neptune Data API The Amazon Neptune data API provides SDK support for more
+      than 40 of Neptune's data operations, including data loading, query
+      execution, data inquiry, and machine learning. It supports the Gremlin and
+      openCypher query languages, and is available in all SDK languages. It
+      automatically signs API requests and greatly simplifies integrating
+      Neptune into your applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -6850,51 +6867,57 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/neptunedata-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:neptunedata
-  - name: nimble
+  - name: Amazon Nimble Studio
     description: >-
-      <p>Welcome to the Amazon Nimble Studio API reference. This API reference
-      provides methods, schema, resources, parameters, and more to help you get
-      the most out of Nimble Studio.</p> <p>Nimble Studio is a virtual studio
-      that empowers visual effects, animation, and interactive content teams to
-      create content securely within a scalable, private cloud service.</p>
+      Thank you for visiting the Amazon Nimble Studio API documentation. This
+      comprehensive reference guide offers detailed information on methods,
+      schema, resources, and parameters to maximize your utilization of Nimble
+      Studio. Nimble Studio is a cutting-edge virtual studio designed to support
+      visual effects, animation, and interactive content teams, enabling them to
+      create securely within a flexible, private cloud environment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/nimble-studio/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/nimble-studio/
       - type: OpenAPI
         url: properties/nimble-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/nimble-studio/features/
+      - type: Pricing
+        url: https://aws.amazon.com/nimble-studio/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/nimble-studio/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/nimble-studio/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/nimble-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/nimble-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:nimble
-  - name: networkmonitor
+  - name: Amazon CloudWatch Network Monitor
     description: >-
-      <p>Amazon CloudWatch Network Monitor is an Amazon Web Services active
-      network monitoring service that identifies if a network issues exists
-      within the Amazon Web Services network or your own company network. Within
-      Network Monitor you'll choose the source VPCs and subnets from the Amazon
-      Web Services network in which you operate and then you'll choose the
-      destination IP addresses from your on-premises network. From these sources
-      and destinations, Network Monitor creates a monitor containing all the
-      possible source and destination combinations, each of which is called a
-      probe, within a single monitor. These probes then monitor network traffic
-      to help you identify where network issues might be affecting your
-      traffic.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html">Using
-      Amazon CloudWatch Network Monitor</a> in the <i>Amazon CloudWatch User
-      Guide</i>.</p>
+      Amazon CloudWatch Network Monitor is an active network monitoring service
+      provided by Amazon Web Services. It is designed to identify network issues
+      within either the AWS network or your own company's network. With Network
+      Monitor, users can select source VPCs and subnets from AWS and specify
+      destination IP addresses from their own on-premises network. The service
+      then creates a monitor with all possible source-destination combinations,
+      known as probes, to monitor network traffic and detect any issues that may
+      be impacting traffic flow. For detailed instructions on how to use Amazon
+      CloudWatch Network Monitor, please refer to the Amazon CloudWatch User
+      Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html
       - type: OpenAPI
         url: properties/networkmonitor-openapi-original.yml
     overlays:
@@ -6903,21 +6926,34 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/networkmonitor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:networkmonitor
-  - name: omics
+  - name: AWS HealthOmics
     description: >-
-      <p>This is the <i>AWS HealthOmics API Reference</i>. For an introduction
-      to the service, see <a
-      href="https://docs.aws.amazon.com/omics/latest/dev/">What is AWS
-      HealthOmics?</a> in the <i>AWS HealthOmics User Guide</i>.</p>
+      AWS HealthOmics is a specialized platform designed to assist healthcare
+      and life science organizations, as well as their software partners, in
+      storing, retrieving, and analyzing various omics data including genomic
+      and transcriptomic data. By leveraging this service, users can extract
+      valuable insights from the data to enhance health outcomes. The platform
+      also enables large-scale analysis and facilitates collaborative research
+      efforts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/healthomics/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/healthomics/
       - type: OpenAPI
         url: properties/omics-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/healthomics/features/
+      - type: Pricing
+        url: https://aws.amazon.com/healthomics/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/healthomics/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/healthomics/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/healthomics/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/omics-openapi-search.yml
