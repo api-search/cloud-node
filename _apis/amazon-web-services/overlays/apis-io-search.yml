@@ -5854,65 +5854,88 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/macie2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:macie2
-  - name: m2
+  - name: AWS Mainframe Modernization
     description: >-
-      <p>Amazon Web Services Mainframe Modernization provides tools and
-      resources to help you plan and implement migration and modernization from
-      mainframes to Amazon Web Services managed runtime environments. It
-      provides tools for analyzing existing mainframe applications, developing
-      or updating mainframe applications using COBOL or PL/I, and implementing
-      an automated pipeline for continuous integration and continuous delivery
-      (CI/CD) of the applications.</p>
+      The Amazon Web Services Mainframe Modernization API offers a comprehensive
+      suite of tools and support for seamlessly transitioning from mainframes to
+      AWS managed runtime environments. It includes features for examining
+      current mainframe applications, creating or enhancing applications with
+      COBOL or PL/I, and setting up a streamlined automated process for
+      continuous integration and delivery of the applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mainframe-modernization/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mainframe-modernization/
       - type: OpenAPI
         url: properties/m2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mainframe-modernization/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mainframe-modernization/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/mainframe-modernization/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/mainframe-modernization/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/m2-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/m2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:m2
-  - name: location
+  - name: AWS Location
     description: >-
-      <p>"Suite of geospatial services including Maps, Places, Routes, Tracking,
-      and Geofencing"</p>
+      Amazon Location Service makes it easy for developers to add location
+      functionality, such as maps, points of interest, geocoding, routing,
+      tracking, and geofencing, to their applications without sacrificing data
+      security and user privacy.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/location/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/location/
       - type: OpenAPI
         url: properties/location-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/location/features/
+      - type: Pricing
+        url: https://aws.amazon.com/location/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/location/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/location/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/location/customers/
+      - type: Data-providers
+        url: https://aws.amazon.com/location/data-providers/
     overlays:
       - type: APIs.io Search
         url: overlays/location-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/location-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:location
-  - name: marketplace-catalog
+  - name: AWS Marketplace Catalog
     description: >-
-      <p>Catalog API actions allow you to manage your entities through list,
-      describe, and update capabilities. An entity can be a product or an offer
-      on AWS Marketplace. </p> <p>You can automate your entity update process by
-      integrating the AWS Marketplace Catalog API with your AWS Marketplace
-      product build or deployment pipelines. You can also create your own
-      applications on top of the Catalog API to manage your products on AWS
-      Marketplace.</p>
+      The AWS Marketplace Catalog API enables users to interact with their
+      entities, such as products or offers on AWS Marketplace, by providing
+      functionality for listing, describing, and updating them. By integrating
+      the AWS Marketplace Catalog API with product build or deployment
+      pipelines, users can streamline the process of updating entities.
+      Additionally, users can develop custom applications leveraging the Catalog
+      API to effectively manage their products on AWS Marketplace.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html
       - type: OpenAPI
         url: properties/marketplace-catalog-openapi-original.yml
     overlays:
@@ -5921,48 +5944,58 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/marketplace-catalog-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-catalog
-  - name: managedblockchain-query
+  - name: Amazon Managed Blockchain (AMB)
     description: >-
-      <p>Amazon Managed Blockchain (AMB) Query provides you with convenient
-      access to multi-blockchain network data, which makes it easier for you to
-      extract contextual data related to blockchain activity. You can use AMB
-      Query to read data from public blockchain networks, such as Bitcoin
-      Mainnet and Ethereum Mainnet. You can also get information such as the
-      current and historical balances of addresses, or you can get a list of
-      blockchain transactions for a given time period. Additionally, you can get
-      details of a given transaction, such as transaction events, which you can
-      further analyze or use in business logic for your applications.</p>
+      The Amazon Managed Blockchain (AMB) Query API allows users to easily
+      access multi-blockchain network data, enabling them to extract relevant
+      information regarding blockchain activity. This API allows users to read
+      data from public blockchain networks like Bitcoin Mainnet and Ethereum
+      Mainnet, providing details such as current and historical balances of
+      addresses, as well as a list of blockchain transactions within a specified
+      time frame. Users can also retrieve specific transaction details,
+      including transaction events, which can be further analyzed or
+      incorporated into business logic for various applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/managed-blockchain/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/managed-blockchain/
       - type: OpenAPI
         url: properties/managedblockchain-query-openapi-original.yml
+      - type: Getting-started
+        url: https://aws.amazon.com/managed-blockchain/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/managed-blockchain/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/managed-blockchain/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/managed-blockchain/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/managedblockchain-query-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/managedblockchain-query-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:managedblockchain-query
-  - name: marketplace-deployment
+  - name: AWS Marketplace Deployment
     description: >-
-      <p>The AWS Marketplace Deployment Service supports the Quick Launch
+      The AWS Marketplace Deployment Service supports the Quick Launch
       experience, which is a deployment option for software as a service (SaaS)
       products. Quick Launch simplifies and reduces the time, resources, and
       steps required to configure, deploy, and launch a products. The AWS
       Marketplace Deployment Service provides sellers with a secure method for
       passing deployment parameters (for example, API keys and external IDs) to
-      buyers during the Quick Launch experience.</p>
+      buyers during the Quick Launch experience.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/welcome.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/welcome.html
       - type: OpenAPI
         url: properties/marketplace-deployment-openapi-original.yml
     overlays:
@@ -5971,17 +6004,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/marketplace-deployment-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-deployment
-  - name: mediaconnect
-    description: API for AWS Elemental MediaConnect
+  - name: AWS Elemental MediaConnect
+    description: >-
+      AWS Elemental MediaConnect is an advanced live video transport service
+      that combines the reliability and security of satellite and fiber-optic
+      technology with the flexibility, agility, and cost-effectiveness of
+      IP-based networks.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediaconnect/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediaconnect/
       - type: OpenAPI
         url: properties/mediaconnect-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/mediaconnect/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediaconnect/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/mediaconnect/faqs/
+      - type: Ready
+        url: https://aws.amazon.com/mediaconnect/ready/
+      - type: Features
+        url: https://aws.amazon.com/mediaconnect/features/
     overlays:
       - type: APIs.io Search
         url: overlays/mediaconnect-openapi-search.yml
@@ -6018,49 +6065,80 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/managedblockchain-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:managedblockchain
-  - name: mediaconvert
-    description: AWS Elemental MediaConvert
+  - name: AWS Elemental MediaConvert
+    description: >-
+      AWS Elemental MediaConvert is a high-quality video transcoding service
+      designed for creating live stream content for broadcast and multi-screen
+      delivery on a large scale.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediaconvert/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediaconvert/
       - type: OpenAPI
         url: properties/mediaconvert-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mediaconvert/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mediaconvert/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediaconvert/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/mediaconvert/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/mediaconvert/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/mediaconvert-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/mediaconvert-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediaconvert
-  - name: medialive
-    description: API for AWS Elemental MediaLive
+  - name: AWS Elemental MediaLive
+    description: >-
+      AWS Elemental MediaLive is a professional live video processing service
+      designed to produce high-quality streams for distribution to both
+      broadcast televisions and internet-connected devices.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/medialive/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/medialive/
       - type: OpenAPI
         url: properties/medialive-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/medialive/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/medialive/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/medialive/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/medialive/faqs/
+      - type: Features
+        url: https://aws.amazon.com/medialive/features/
     overlays:
       - type: APIs.io Search
         url: overlays/medialive-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/medialive-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:medialive
-  - name: mediapackage-vod
-    description: AWS Elemental MediaPackage VOD
+  - name: AWS Elemental MediaPackage
+    description: >-
+      AWS Elemental MediaPackage is a just-in-time video packaging and
+      origination service that delivers highly secure, scalable, and reliable
+      video streams to a wide variety of playback devices. AWS Elemental
+      MediaPackage enriches audience experience with live, video on demand
+      (VOD), live-to-VOD, and catch-up TV features.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/mediapackage/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/mediapackage/
       - type: OpenAPI
         url: properties/mediapackage-vod-openapi-original.yml
     overlays:
@@ -6086,30 +6164,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediapackage-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediapackage
-  - name: marketplace-agreement
+  - name: AWS Marketplace Agreement API
     description: >-
-      <p>AWS Marketplace is a curated digital catalog that customers can use to
-      find, buy, deploy, and manage third-party software, data, and services to
-      build solutions and run their businesses. The AWS Marketplace Agreement
-      Service provides an API interface that helps AWS Marketplace sellers
-      manage their product-related agreements, including listing, searching, and
-      filtering agreements.</p> <p>To manage agreements in AWS Marketplace, you
-      must ensure that your AWS Identity and Access Management (IAM) policies
-      and roles are set up. The user must have the required policies/permissions
-      that allow them to carry out the actions in AWS:</p> <ul> <li> <p>
-      <code>DescribeAgreement</code> – Grants permission to users to obtain
-      detailed meta data about any of their agreements.</p> </li> <li> <p>
-      <code>GetAgreementTerms</code> – Grants permission to users to obtain
-      details about the terms of an agreement.</p> </li> <li> <p>
-      <code>SearchAgreements</code> – Grants permission to users to search
-      through all their agreements.</p> </li> </ul>
+      The AWS Marketplace API enables sellers to manage product-related
+      agreements, including listing, searching, and filtering agreements. To use
+      this API, sellers must ensure that their AWS IAM policies and roles are
+      properly configured. Users must have the necessary permissions to carry
+      out actions such as describing agreements, getting agreement terms, and
+      searching through all agreements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace-agreements/latest/api-reference/welcome.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace-agreements/latest/api-reference/welcome.html
       - type: OpenAPI
         url: properties/marketplace-agreement-openapi-original.yml
     overlays:
@@ -6118,20 +6189,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/marketplace-agreement-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-agreement
-  - name: mediastore
+  - name: AWS Marketplace
     description: >-
-      <p>An AWS Elemental MediaStore container is a namespace that holds folders
-      and objects. You use a container endpoint to create, read, and delete
-      objects. </p>
+      The AWS Elemental MediaStore API is designed to provide high-performance
+      storage specifically tailored for media content, offering reliable
+      consistency and minimal latency to support the seamless delivery of live
+      streaming video content.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediastore/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediastore/
       - type: OpenAPI
         url: properties/mediastore-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mediastore/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mediastore/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediastore/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/mediastore/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/mediastore/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/mediastore-openapi-search.yml
@@ -6158,15 +6240,21 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediastore-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediastore-data
-  - name: marketplacecommerceanalytics
-    description: Provides AWS Marketplace business intelligence data on-demand.
+  - name: AWS Marketplace Commerce Analytics Service
+    description: >-
+      The AWS Marketplace Commerce Analytics Service allows you to access
+      product and customer data from AWS Marketplace through a programmable
+      interface. Upon signing up for the service, you can retrieve usage,
+      subscription, and billing reports using the AWS SDK.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html
       - type: OpenAPI
         url: properties/marketplacecommerceanalytics-openapi-original.yml
     overlays:
@@ -6176,71 +6264,78 @@ apis:
         url: >-
           overlays/marketplacecommerceanalytics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplacecommerceanalytics
-  - name: meteringmarketplace
+  - name: AWS Marketplace Metering Service
     description: >-
-      <fullname>AWS Marketplace Metering Service</fullname> <p>This reference
-      provides descriptions of the low-level AWS Marketplace Metering Service
-      API.</p> <p>AWS Marketplace sellers can use this API to submit usage data
-      for custom usage dimensions.</p> <p>For information on the permissions you
-      need to use this API, see <a
-      href="https://docs.aws.amazon.com/marketplace/latest/userguide/iam-user-policy-for-aws-marketplace-actions.html">AWS
-      Marketplace metering and entitlement API permissions</a> in the <i>AWS
-      Marketplace Seller Guide.</i> </p> <p> <b>Submitting Metering Records</b>
-      </p> <ul> <li> <p> <i>MeterUsage</i> - Submits the metering record for an
-      AWS Marketplace product. <code>MeterUsage</code> is called from an EC2
-      instance or a container running on EKS or ECS.</p> </li> <li> <p>
-      <i>BatchMeterUsage</i> - Submits the metering record for a set of
-      customers. <code>BatchMeterUsage</code> is called from a
-      software-as-a-service (SaaS) application.</p> </li> </ul> <p> <b>Accepting
-      New Customers</b> </p> <ul> <li> <p> <i>ResolveCustomer</i> - Called by a
+      AWS Marketplace Metering Service This reference provides descriptions of
+      the low-level AWS Marketplace Metering Service API. AWS Marketplace
+      sellers can use this API to submit usage data for custom usage dimensions.
+      For information on the permissions you need to use this API, see AWS
+      Marketplace metering and entitlement API permissions in the AWS
+      Marketplace Seller Guide.   Submitting Metering Records     MeterUsage -
+      Submits the metering record for an AWS Marketplace product. MeterUsage is
+      called from an EC2 instance or a container running on EKS or ECS.   
+      BatchMeterUsage - Submits the metering record for a set of customers.
+      BatchMeterUsage is called from a software-as-a-service (SaaS)
+      application.    Accepting New Customers     ResolveCustomer - Called by a
       SaaS application during the registration process. When a buyer visits your
       website during the registration process, the buyer submits a Registration
       Token through the browser. The Registration Token is resolved through this
-      API to obtain a <code>CustomerIdentifier</code> along with the
-      <code>CustomerAWSAccountId</code> and <code>ProductCode</code>.</p> </li>
-      </ul> <p> <b>Entitlement and Metering for Paid Container Products</b> </p>
-      <ul> <li> <p>Paid container software products sold through AWS Marketplace
-      must integrate with the AWS Marketplace Metering Service and call the
-      <code>RegisterUsage</code> operation for software entitlement and
-      metering. Free and BYOL products for Amazon ECS or Amazon EKS aren't
-      required to call <code>RegisterUsage</code>, but you can do so if you want
-      to receive usage data in your seller reports. For more information on
-      using the <code>RegisterUsage</code> operation, see <a
-      href="https://docs.aws.amazon.com/marketplace/latest/userguide/container-based-products.html">Container-Based
-      Products</a>. </p> </li> </ul> <p> <code>BatchMeterUsage</code> API calls
-      are captured by AWS CloudTrail. You can use Cloudtrail to verify that the
-      SaaS metering records that you sent are accurate by searching for records
-      with the <code>eventName</code> of <code>BatchMeterUsage</code>. You can
-      also use CloudTrail to audit records over time. For more information, see
-      the <i> <a
-      href="http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html">AWS
-      CloudTrail User Guide</a>.</i> </p>
+      API to obtain a CustomerIdentifier along with the CustomerAWSAccountId and
+      ProductCode.    Entitlement and Metering for Paid Container Products   
+      Paid container software products sold through AWS Marketplace must
+      integrate with the AWS Marketplace Metering Service and call the
+      RegisterUsage operation for software entitlement and metering. Free and
+      BYOL products for Amazon ECS or Amazon EKS aren't required to call
+      RegisterUsage, but you can do so if you want to receive usage data in your
+      seller reports. For more information on using the RegisterUsage operation,
+      see Container-Based Products.     BatchMeterUsage API calls are captured
+      by AWS CloudTrail. You can use Cloudtrail to verify that the SaaS metering
+      records that you sent are accurate by searching for records with the
+      eventName of BatchMeterUsage. You can also use CloudTrail to audit records
+      over time. For more information, see the  AWS CloudTrail User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/marketplace/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/marketplace/
       - type: OpenAPI
         url: properties/meteringmarketplace-openapi-original.yml
+      - type: Seller Guide
+        url: https://docs.aws.amazon.com/marketplace/latest/userguide/index.html
+      - type: Buyer Guide
+        url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/meteringmarketplace-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/meteringmarketplace-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:meteringmarketplace
-  - name: mgn
-    description: <p>The Application Migration Service service.</p>
+  - name: AWS Application Migration Service
+    description: >-
+      The AWS Application Migration Service streamlines the migration of your
+      source servers to run directly on AWS, reducing the need for manual
+      processes that are time-consuming and prone to errors. It also offers
+      convenient optimization options for modernizing your applications, both
+      through pre-built configurations and custom settings.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/application-migration-service/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/application-migration-service/
       - type: OpenAPI
         url: properties/mgn-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/application-migration-service/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/application-migration-service/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/application-migration-service/resources/
+      - type: Windows
+        url: https://aws.amazon.com/application-migration-service/windows/
     overlays:
       - type: APIs.io Search
         url: overlays/mgn-openapi-search.yml
