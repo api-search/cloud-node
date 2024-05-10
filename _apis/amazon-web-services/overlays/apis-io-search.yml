@@ -7870,192 +7870,202 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/qbusiness-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:qbusiness
-  - name: pi
+  - name: Amazon RDS Performance Insights
     description: >-
-      <fullname>Amazon RDS Performance Insights</fullname> <p>Amazon RDS
-      Performance Insights enables you to monitor and explore different
-      dimensions of database load based on data captured from a running DB
-      instance. The guide provides detailed information about Performance
-      Insights data types, parameters and errors.</p> <p>When Performance
-      Insights is enabled, the Amazon RDS Performance Insights API provides
-      visibility into the performance of your DB instance. Amazon CloudWatch
-      provides the authoritative source for Amazon Web Services service-vended
-      monitoring metrics. Performance Insights offers a domain-specific view of
-      DB load.</p> <p>DB load is measured as average active sessions.
-      Performance Insights provides the data to API consumers as a
-      two-dimensional time-series dataset. The time dimension provides DB load
-      data for each time point in the queried time range. Each time point
-      decomposes overall load in relation to the requested dimensions, measured
-      at that time point. Examples include SQL, Wait event, User, and Host.</p>
-      <ul> <li> <p>To learn more about Performance Insights and Amazon Aurora DB
-      instances, go to the <i> <a
-      href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.html">
-      Amazon Aurora User Guide</a> </i>. </p> </li> <li> <p>To learn more about
-      Performance Insights and Amazon RDS DB instances, go to the <i> <a
-      href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html">
-      Amazon RDS User Guide</a> </i>. </p> </li> <li> <p>To learn more about
-      Performance Insights and Amazon DocumentDB clusters, go to the <i> <a
-      href="https://docs.aws.amazon.com/documentdb/latest/developerguide/performance-insights.html">
-      Amazon DocumentDB Developer Guide</a> </i>.</p> </li> </ul>
+      The Amazon RDS Performance Insights API allows you to monitor and analyze
+      various aspects of database load by capturing data from a running DB
+      instance. This guide provides detailed information on Performance Insights
+      data types, parameters, and errors. With Performance Insights enabled, the
+      API offers visibility into the performance of your DB instance. Amazon
+      CloudWatch serves as the source for monitoring metrics, while Performance
+      Insights provides a specialized view of DB load, measured in average
+      active sessions. The data is presented to API consumers as a
+      two-dimensional time-series dataset, with the time dimension showing DB
+      load data for each time point in the queried time range. Each time point
+      breaks down overall load in relation to requested dimensions, such as SQL,
+      Wait event, User, and Host.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/rds/performance-insights/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/rds/performance-insights/
       - type: OpenAPI
         url: properties/pi-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/rds/performance-insights/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/rds/performance-insights/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/rds/performance-insights/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/pi-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/pi-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pi
-  - name: pricing
+  - name: AWS Price List
     description: >-
-      <p>The Amazon Web Services Price List API is a centralized and convenient
-      way to programmatically query Amazon Web Services for services, products,
-      and pricing information. The Amazon Web Services Price List uses
-      standardized product attributes such as <code>Location</code>,
-      <code>Storage Class</code>, and <code>Operating System</code>, and
-      provides prices at the SKU level. You can use the Amazon Web Services
-      Price List to do the following:</p> <ul> <li> <p>Build cost control and
-      scenario planning tools</p> </li> <li> <p>Reconcile billing data</p> </li>
-      <li> <p>Forecast future spend for budgeting purposes</p> </li> <li>
-      <p>Provide cost benefit analysis that compare your internal workloads with
-      Amazon Web Services</p> </li> </ul> <p>Use <code>GetServices</code>
-      without a service code to retrieve the service codes for all Amazon Web
-      Services, then <code>GetServices</code> with a service code to retrieve
-      the attribute names for that service. After you have the service code and
-      attribute names, you can use <code>GetAttributeValues</code> to see what
-      values are available for an attribute. With the service code and an
-      attribute name and value, you can use <code>GetProducts</code> to find
-      specific products that you're interested in, such as an
-      <code>AmazonEC2</code> instance, with a <code>Provisioned IOPS</code>
-      <code>volumeType</code>.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html">Using
-      the Amazon Web Services Price List API</a> in the <i>Billing User
-      Guide</i>.</p>
+      The Amazon Web Services Price List API is a user-friendly tool that allows
+      you to access Amazon Web Services' services, products, and pricing
+      information through programmatic queries. The API utilizes standardized
+      product attributes like Location, Storage Class, and Operating System, and
+      provides pricing at the SKU level. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/pricing/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/pricing/
       - type: OpenAPI
         url: properties/pricing-openapi-original.yml
+      - type: Cost-optimization
+        url: https://aws.amazon.com/pricing/cost-optimization/
     overlays:
       - type: APIs.io Search
         url: overlays/pricing-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/pricing-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pricing
-  - name: qldb-session
+  - name: Amazon QLDB
     description: >-
-      <p>The transactional data APIs for Amazon QLDB</p> <note> <p>Instead of
-      interacting directly with this API, we recommend using the QLDB driver or
-      the QLDB shell to execute data transactions on a ledger.</p> <ul> <li>
-      <p>If you are working with an AWS SDK, use the QLDB driver. The driver
-      provides a high-level abstraction layer above this <i>QLDB Session</i>
-      data plane and manages <code>SendCommand</code> API calls for you. For
-      information and a list of supported programming languages, see <a
-      href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
-      started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.</p>
-      </li> <li> <p>If you are working with the AWS Command Line Interface (AWS
-      CLI), use the QLDB shell. The shell is a command line interface that uses
-      the QLDB driver to interact with a ledger. For information, see <a
-      href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
-      Amazon QLDB using the QLDB shell</a>.</p> </li> </ul> </note>
+      The recommended way to interact with the transactional data APIs for
+      Amazon QLDB is to use the QLDB driver or the QLDB shell for executing data
+      transactions on a ledger. When working with an AWS SDK, it is advised to
+      use the QLDB driver, which abstracts the data plane and manages
+      SendCommand API calls. For more information and a list of supported
+      programming languages, refer to the Amazon QLDB Developer Guide. If using
+      the AWS Command Line Interface (AWS CLI), utilize the QLDB shell as a
+      command line interface that interacts with a ledger through the QLDB
+      driver. Instructions can be found in the guide on accessing Amazon QLDB
+      using the QLDB shell.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/qldb/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/qldb/
       - type: OpenAPI
         url: properties/qldb-session-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/qldb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/qldb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/qldb/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/qldb/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/qldb/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/qldb-session-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/qldb-session-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:qldb-session
-  - name: ram
+  - name: Resource Access Manager
     description: >-
-      <p>This is the <i>Resource Access Manager API Reference</i>. This
-      documentation provides descriptions and syntax for each of the actions and
-      data types in RAM. RAM is a service that helps you securely share your
-      Amazon Web Services resources to other Amazon Web Services accounts. If
-      you use Organizations to manage your accounts, then you can share your
-      resources with your entire organization or to organizational units (OUs).
-      For supported resource types, you can also share resources with individual
-      Identity and Access Management (IAM) roles and users. </p> <p>To learn
-      more about RAM, see the following resources:</p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/ram">Resource Access Manager product page</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/ram/latest/userguide/">Resource Access
-      Manager User Guide</a> </p> </li> </ul>
+      The Resource Access Manager API Reference is a comprehensive guide that
+      details all actions and data types available in RAM. RAM is a service
+      designed to facilitate secure resource sharing between different Amazon
+      Web Services accounts. This documentation provides users with the
+      necessary information to effectively utilize RAM's features, including the
+      ability to share resources with entire Organizations or specific
+      organizational units. Additionally, supported resource types can be shared
+      with individual IAM roles and users. For more information on RAM, please
+      refer to the following resources: Resource Access Manager product page and
+      Resource Access Manager User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ram/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ram/
       - type: OpenAPI
         url: properties/ram-openapi-original.yml
+      - type: FAQs
+        url: https://aws.amazon.com/ram/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/ram-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ram-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ram
-  - name: rds-data
+  - name: AWS RDS
     description: >-
-      <p><fullname>RDS Data API</fullname> <p>Amazon RDS provides an HTTP
-      endpoint to run SQL statements on an Amazon Aurora DB cluster. To run
-      these statements, you use the RDS Data API (Data API).</p> <p>Data API is
-      available with the following types of Aurora databases:</p> <ul> <li>
-      <p>Aurora PostgreSQL - Serverless v2, Serverless v1, and provisioned</p>
-      </li> <li> <p>Aurora MySQL - Serverless v1 only</p> </li> </ul> <p>For
-      more information about the Data API, see <a
-      href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html">Using
-      RDS Data API</a> in the <i>Amazon Aurora User Guide</i>.</p></p>
+      The RDS Data API from Amazon RDS allows users to execute SQL statements on
+      an Amazon Aurora DB cluster via an HTTP endpoint. This API is compatible
+      with various types of Aurora databases, including Aurora PostgreSQL
+      (Serverless v2, Serverless v1, and provisioned) and Aurora MySQL
+      (Serverless v1). Detailed instructions on utilizing the Data API can be
+      found in the Amazon Aurora User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/rds/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/rds/
       - type: OpenAPI
         url: properties/rds-data-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/rds/features/
+      - type: Pricing
+        url: https://aws.amazon.com/rds/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/rds/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/rds/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/rds/customers/
+      - type: Partners
+        url: https://aws.amazon.com/rds/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/rds-data-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/rds-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rds-data
-  - name: quicksight
+  - name: Amazon QuickSight
     description: >-
-      <fullname>Amazon QuickSight API Reference</fullname> <p>Amazon QuickSight
-      is a fully managed, serverless business intelligence service for the
-      Amazon Web Services Cloud that makes it easy to extend data and insights
-      to every user in your organization. This API reference contains
-      documentation for a programming interface that you can use to manage
-      Amazon QuickSight. </p>
+      Amazon QuickSight provides businesses with expansive and unified business
+      intelligence solutions. Through modern interactive dashboards, paginated
+      reports, natural language queries, and embedded analytics, all users can
+      access reliable data to meet their analytical needs. With Amazon Q
+      integration, business analysts and users can quickly build, discover, and
+      share valuable insights using natural language, ultimately making informed
+      decisions faster.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/quicksight/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/quicksight/
       - type: OpenAPI
         url: properties/quicksight-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/quicksight/features/
+      - type: Gallery
+        url: https://aws.amazon.com/quicksight/gallery/
+      - type: Pricing
+        url: https://aws.amazon.com/quicksight/pricing/
+      - type: Customers
+        url: https://aws.amazon.com/quicksight/customers/
+      - type: Partners
+        url: https://aws.amazon.com/quicksight/partners/
+      - type: Blogs
+        url: https://aws.amazon.com/quicksight/resources/blog/
+      - type: Case Studies
+        url: https://aws.amazon.com/quicksight/resources/case_studies/
+      - type: Learning Resources
+        url: https://aws.amazon.com/quicksight/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/quicksight/resources/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/quicksight-openapi-search.yml
