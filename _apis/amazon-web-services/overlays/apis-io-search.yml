@@ -6342,109 +6342,21 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mgn-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mgn
-  - name: medical-imaging
+  - name: AWS HealthImaging
     description: >-
-      <p>This is the <i>AWS HealthImaging API Reference</i>. AWS HealthImaging
-      is a HIPAA-eligible service that helps health care providers and their
-      medical imaging ISV partners store, transform, and apply machine learning
-      to medical images. For an introduction to the service, see the <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/what-is.html">
-      <i>AWS HealthImaging Developer Guide</i> </a>.</p> <note> <p>We recommend
-      using one of the AWS Software Development Kits (SDKs) for your programming
-      language, as they take care of request authentication, serialization, and
-      connection management. For more information, see <a
-      href="http://aws.amazon.com/developer/tools">Tools to build on
-      AWS</a>.</p> <p>For information about using HealthImaging API actions in
-      one of the language-specific AWS SDKs, refer to the <i>See Also</i> link
-      at the end of each section that describes an API action or data type.</p>
-      </note> <p>The following sections list AWS HealthImaging API actions
-      categorized according to functionality. Links are provided to actions
-      within this Reference, along with links back to corresponding sections in
-      the <i>AWS HealthImaging Developer Guide</i> where you can view console
-      procedures and CLI/SDK code examples.</p> <p class="title"> <b>Data store
-      actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_CreateDatastore.html">CreateDatastore</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/create-data-store.html">Creating
-      a data store</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDatastore.html">GetDatastore</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-data-store.html">Getting
-      data store properties</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDatastores.html">ListDatastores</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/list-data-stores.html">Listing
-      data stores</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteDatastore.html">DeleteDatastore</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/delete-data-store.html">Deleting
-      a data store</a>.</p> </li> </ul> <p class="title"> <b>Import job
-      actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_StartDICOMImportJob.html">StartDICOMImportJob</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/start-dicom-import-job.html">Starting
-      an import job</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDICOMImportJob.html">GetDICOMImportJob</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-dicom-import-job.html">Getting
-      import job properties</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDICOMImportJobs.html">ListDICOMImportJobs</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/list-dicom-import-jobs.html">Listing
-      import jobs</a>.</p> </li> </ul> <p class="title"> <b>Image set access
-      actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_SearchImageSets.html">SearchImageSets</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/search-image-sets.html">Searching
-      image sets</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSet.html">GetImageSet</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-set-properties.html">Getting
-      image set properties</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html">GetImageSetMetadata</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-set-metadata.html">Getting
-      image set metadata</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageFrame.html">GetImageFrame</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-frame.html">Getting
-      image set pixel data</a>.</p> </li> </ul> <p class="title"> <b>Image set
-      modification actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListImageSetVersions.html">ListImageSetVersions</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/list-image-set-versions.html">Listing
-      image set versions</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_UpdateImageSetMetadata.html">UpdateImageSetMetadata</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/update-image-set-metadata.html">Updating
-      image set metadata</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_CopyImageSet.html">CopyImageSet</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/copy-image-set.html">Copying
-      an image set</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteImageSet.html">DeleteImageSet</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/delete-image-set.html">Deleting
-      an image set</a>.</p> </li> </ul> <p class="title"> <b>Tagging actions</b>
-      </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_TagResource.html">TagResource</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-data-store.html">Tagging
-      a data store</a> and <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-image-set.html">Tagging
-      an image set</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListTagsForResource.html">ListTagsForResource</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-data-store.html">Tagging
-      a data store</a> and <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-image-set.html">Tagging
-      an image set</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_UntagResource.html">UntagResource</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-data-store.html">Tagging
-      a data store</a> and <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-image-set.html">Tagging
-      an image set</a>.</p> </li> </ul>
+      The AWS HealthImaging API is a HIPAA-eligible service designed to assist
+      health care providers and their medical imaging ISV partners in storing,
+      transforming, and applying machine learning to medical images. To get
+      started with the service, refer to the AWS HealthImaging Developer Guide.
+      We recommend utilizing the AWS Software Development Kits (SDKs) for your
+      programming language to streamline authentication, serialization, and
+      connection management. For further details and tools to work with AWS,
+      please refer to the Tools to build on AWS documentation. The API actions
+      within AWS HealthImaging are categorized based on functionality, such as
+      Data store actions, Import job actions, Image set access actions, Image
+      set modification actions, and Tagging actions. Each section provides links
+      to corresponding sections in the developer guide for console procedures
+      and examples in CLI/SDK code.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -6454,34 +6366,42 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/medical-imaging-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/healthimaging/features/
+      - type: Pricing
+        url: https://aws.amazon.com/healthimaging/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/healthimaging/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/healthimaging/customers/
+      - type: Resources
+        url: https://aws.amazon.com/healthimaging/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/medical-imaging-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/medical-imaging-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:medical-imaging
-  - name: migration-hub-refactor-spaces
+  - name: Amazon Web Services Migration Hub Refactor Spaces
     description: >-
-      <p><fullname>Amazon Web Services Migration Hub Refactor Spaces</fullname>
-      <p>This API reference provides descriptions, syntax, and other details
-      about each of the actions and data types for Amazon Web Services Migration
-      Hub Refactor Spaces (Refactor Spaces). The topic for each action shows the
-      API request parameters and the response. Alternatively, you can use one of
-      the Amazon Web Services SDKs to access an API that is tailored to the
-      programming language or platform that you're using. For more information,
-      see <a href="https://aws.amazon.com/tools/#SDKs">Amazon Web Services
-      SDKs</a>.</p> <p>To share Refactor Spaces environments with other Amazon
-      Web Services accounts or with Organizations and their OUs, use Resource
-      Access Manager's <code>CreateResourceShare</code> API. See <a
-      href="https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html">CreateResourceShare</a>
-      in the <i>Amazon Web Services RAM API Reference</i>.</p></p>
+      This API documentation provides detailed information about the actions and
+      data types available in the Amazon Web Services Migration Hub Refactor
+      Spaces API. Each action includes the API request parameters and response
+      details. Alternatively, you can leverage Amazon Web Services SDKs for
+      programming language-specific access to the API. To share Refactor Spaces
+      environments with other Amazon Web Services accounts or Organizations and
+      their OUs, utilize Resource Access Manager's CreateResourceShare API.
+      Visit the Amazon Web Services RAM API Reference for more information on
+      CreateResourceShare.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/what-is-mhub-refactor-spaces.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/what-is-mhub-refactor-spaces.html
       - type: OpenAPI
         url: properties/migration-hub-refactor-spaces-openapi-original.yml
     overlays:
@@ -6529,24 +6449,32 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediapackagev2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediapackagev2
-  - name: memorydb
+  - name: AWS MemoryDB
     description: >-
-      <p>MemoryDB for Redis is a fully managed, Redis-compatible, in-memory
-      database that delivers ultra-fast performance and Multi-AZ durability for
-      modern applications built using microservices architectures. MemoryDB
-      stores the entire database in-memory, enabling low latency and high
-      throughput data access. It is compatible with Redis, a popular open source
-      data store, enabling you to leverage Redis’ flexible and friendly data
-      structures, APIs, and commands.</p>
+      MemoryDB for Redis is a managed in-memory database that offers fast
+      performance and Multi-AZ durability for microservices applications. It
+      stores the entire database in-memory for low latency and high throughput
+      access. Compatible with Redis, it supports Redis' data structures, APIs,
+      and commands.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/memorydb/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/memorydb/
       - type: OpenAPI
         url: properties/memorydb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/memorydb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/memorydb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/memorydb/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/memorydb/faqs/
+      - type: Sla
+        url: https://aws.amazon.com/memorydb/sla/
     overlays:
       - type: APIs.io Search
         url: overlays/memorydb-openapi-search.yml
@@ -6584,23 +6512,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhub-config-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhub-config
-  - name: migrationhubstrategy
+  - name: Migration Hub Strategy Recommendations
     description: >-
-      <p><fullname>Migration Hub Strategy Recommendations</fullname> <p>This API
-      reference provides descriptions, syntax, and other details about each of
-      the actions and data types for Migration Hub Strategy Recommendations
-      (Strategy Recommendations). The topic for each action shows the API
-      request parameters and the response. Alternatively, you can use one of the
-      AWS SDKs to access an API that is tailored to the programming language or
-      platform that you're using. For more information, see <a
-      href="http://aws.amazon.com/tools/#SDKs">AWS SDKs</a>.</p></p>
+      This API reference provides comprehensive information on the actions and
+      data types available for Migration Hub Strategy Recommendations (Strategy
+      Recommendations). Each action includes details on API request parameters
+      and response. Additionally, users have the option to utilize AWS SDKs for
+      a more streamlined API access tailored to their specific programming
+      language or platform. For further details, refer to AWS SDKs
+      documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/migrationhub/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/migrationhub/
       - type: OpenAPI
         url: properties/migrationhubstrategy-openapi-original.yml
     overlays:
@@ -6609,21 +6536,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhubstrategy-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhubstrategy
-  - name: migrationhuborchestrator
+  - name: AWS Migration Hub Orchestrator.
     description: >-
-      <p>This API reference provides descriptions, syntax, and other details
-      about each of the actions and data types for AWS Migration Hub
-      Orchestrator. he topic for each action shows the API request parameters
-      and the response. Alternatively, you can use one of the AWS SDKs to access
-      an API that is tailored to the programming language or platform that
-      you're using.</p>
+      This API reference provides descriptions, syntax, and other details about
+      each of the actions and data types for AWS Migration Hub Orchestrator. he
+      topic for each action shows the API request parameters and the response.
+      Alternatively, you can use one of the AWS SDKs to access an API that is
+      tailored to the programming language or platform that you're using.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/what-is-migrationhub-orchestrator.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/what-is-migrationhub-orchestrator.html
       - type: OpenAPI
         url: properties/migrationhuborchestrator-openapi-original.yml
     overlays:
@@ -6632,12 +6560,12 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhuborchestrator-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhuborchestrator
-  - name: mobile
+  - name: AWS Mobile
     description: >-
-      <p> AWS Mobile Service provides mobile app and website developers with
+      AWS Mobile Service provides mobile app and website developers with
       capabilities required to configure AWS resources and bootstrap their
       developer desktop projects with the necessary SDKs, constants, tools and
-      samples to make use of those resources. </p>
+      samples to make use of those resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -6653,46 +6581,69 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mobile-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mobile
-  - name: mediatailor
+  - name: AWS Elemental MediaTailor
     description: >-
-      <p>Use the AWS Elemental MediaTailor SDKs and CLI to configure scalable ad
-      insertion and linear channels. With MediaTailor, you can assemble existing
-      content into a linear stream and serve targeted ads to viewers while
-      maintaining broadcast quality in over-the-top (OTT) video applications.
-      For information about using the service, including detailed information
-      about the settings covered in this guide, see the <a
-      href="https://docs.aws.amazon.com/mediatailor/latest/ug/">AWS Elemental
-      MediaTailor User Guide</a>.</p> <p>Through the SDKs and the CLI you manage
-      AWS Elemental MediaTailor configurations and channels the same as you do
-      through the console. For example, you specify ad insertion behavior and
-      mapping information for the origin server and the ad decision server
-      (ADS).</p>
+      AWS Elemental MediaTailor is a versatile platform designed for video
+      providers to easily create customized linear over-the-top (OTT) channels
+      by leveraging their existing video content. With this service, users can
+      seamlessly monetize their channels and live streams through personalized
+      ad insertion, enhancing the overall viewing experience for audiences.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediatailor/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediatailor/
       - type: OpenAPI
         url: properties/mediatailor-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mediatailor/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mediatailor/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediatailor/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/mediatailor/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/mediatailor/resources/
+      - type: Integrations
+        url: https://aws.amazon.com/mediatailor/integrations/
     overlays:
       - type: APIs.io Search
         url: overlays/mediatailor-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/mediatailor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediatailor
-  - name: mturk-requester
-    description: <fullname>Amazon Mechanical Turk API Reference</fullname>
+  - name: Amazon Mechanical Turk
+    description: >-
+      My API, Amazon Mechanical Turk (MTurk), offers a platform for individuals
+      and businesses to easily outsource tasks to a distributed workforce. These
+      tasks can range from data validation and research to more subjective tasks
+      like survey participation and content moderation. MTurk allows companies
+      to leverage a global workforce to streamline processes, improve data
+      collection and analysis, and enhance machine learning projects.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://www.mturk.com/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://www.mturk.com/
       - type: OpenAPI
         url: properties/mturk-requester-openapi-original.yml
+      - type: Worker
+        url: https://www.mturk.com/worker
+      - type: Product
+        url: https://www.mturk.com/product-details
+      - type: Pricing
+        url: https://www.mturk.com/pricing
+      - type: Help
+        url: https://www.mturk.com/help
+      - type: Resources
+        url: https://www.mturk.com/resources
+      - type: Customers
+        url: https://www.mturk.com/customers
     overlays:
       - type: APIs.io Search
         url: overlays/mturk-requester-openapi-search.yml
