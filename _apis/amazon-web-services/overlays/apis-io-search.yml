@@ -7537,45 +7537,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/payment-cryptography-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:payment-cryptography-data
-  - name: pinpoint-email
+  - name: Amazon Pinpoint Email
     description: >-
-      <fullname>Amazon Pinpoint Email Service</fullname> <p>Welcome to the
-      <i>Amazon Pinpoint Email API Reference</i>. This guide provides
-      information about the Amazon Pinpoint Email API (version 1.0), including
-      supported operations, data types, parameters, and schemas.</p> <p> <a
-      href="https://aws.amazon.com/pinpoint">Amazon Pinpoint</a> is an AWS
-      service that you can use to engage with your customers across multiple
-      messaging channels. You can use Amazon Pinpoint to send email, SMS text
-      messages, voice messages, and push notifications. The Amazon Pinpoint
-      Email API provides programmatic access to options that are unique to the
-      email channel and supplement the options provided by the Amazon Pinpoint
-      API.</p> <p>If you're new to Amazon Pinpoint, you might find it helpful to
-      also review the <a
-      href="https://docs.aws.amazon.com/pinpoint/latest/developerguide/welcome.html">Amazon
-      Pinpoint Developer Guide</a>. The <i>Amazon Pinpoint Developer Guide</i>
-      provides tutorials, code samples, and procedures that demonstrate how to
-      use Amazon Pinpoint features programmatically and how to integrate Amazon
-      Pinpoint functionality into mobile apps and other types of applications.
-      The guide also provides information about key topics such as Amazon
-      Pinpoint integration with other AWS services and the limits that apply to
-      using the service.</p> <p>The Amazon Pinpoint Email API is available in
-      several AWS Regions and it provides an endpoint for each of these Regions.
-      For a list of all the Regions and endpoints where the API is currently
-      available, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region">AWS
-      Service Endpoints</a> in the <i>Amazon Web Services General Reference</i>.
-      To learn more about AWS Regions, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande-manage.html">Managing
-      AWS Regions</a> in the <i>Amazon Web Services General Reference</i>.</p>
-      <p>In each Region, AWS maintains multiple Availability Zones. These
-      Availability Zones are physically isolated from each other, but are united
-      by private, low-latency, high-throughput, and highly redundant network
-      connections. These Availability Zones enable us to provide very high
-      levels of availability and redundancy, while also minimizing latency. To
-      learn more about the number of Availability Zones that are available in
-      each Region, see <a
-      href="http://aws.amazon.com/about-aws/global-infrastructure/">AWS Global
-      Infrastructure</a>.</p>
+      Welcome to the Amazon Pinpoint Email API Reference, version 1.0. This
+      guide provides detailed information on the Amazon Pinpoint Email API,
+      including supported operations, data types, parameters, and schemas.
+      Amazon Pinpoint is an AWS service that allows you to engage with customers
+      through various messaging channels such as email, SMS text messages, voice
+      messages, and push notifications. The Amazon Pinpoint Email API offers
+      unique programmatic access to email channel options in addition to those
+      provided by the Amazon Pinpoint API. New users may benefit from reviewing
+      the Amazon Pinpoint Developer Guide, which includes tutorials, code
+      samples, and procedures for utilizing Amazon Pinpoint features and
+      integrating them into applications. Information on Amazon Pinpoint
+      integration with other AWS services and service limitations is also
+      available in the guide.
+
+
+      The Amazon Pinpoint Email API is accessible in multiple AWS Regions, each
+      with its own endpoint. For a full list of Regions and endpoints where the
+      API is available, consult the AWS Service Endpoints in the Amazon Web
+      Services General Reference. To learn more about AWS Regions and their
+      corresponding Availability Zones—which provide high availability,
+      redundancy, and low latency through private network connections—refer to
+      Managing AWS Regions in the AWS General Reference and AWS Global
+      Infrastructure documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -7608,46 +7594,36 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/pinpoint-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pinpoint
-  - name: pinpoint-sms-voice-v2
+  - name: Amazon Pinpoint SMS and Voice
     description: >-
-      <p>Welcome to the <i>Amazon Pinpoint SMS and Voice, version 2 API
-      Reference</i>. This guide provides information about Amazon Pinpoint SMS
-      and Voice, version 2 API resources, including supported HTTP methods,
-      parameters, and schemas.</p> <p>Amazon Pinpoint is an Amazon Web Services
-      service that you can use to engage with your recipients across multiple
-      messaging channels. The Amazon Pinpoint SMS and Voice, version 2 API
-      provides programmatic access to options that are unique to the SMS and
-      voice channels and supplements the resources provided by the Amazon
-      Pinpoint API.</p> <p>If you're new to Amazon Pinpoint, it's also helpful
-      to review the <a
-      href="https://docs.aws.amazon.com/pinpoint/latest/developerguide/welcome.html">
-      Amazon Pinpoint Developer Guide</a>. The <i>Amazon Pinpoint Developer
-      Guide</i> provides tutorials, code samples, and procedures that
-      demonstrate how to use Amazon Pinpoint features programmatically and how
-      to integrate Amazon Pinpoint functionality into mobile apps and other
-      types of applications. The guide also provides key information, such as
-      Amazon Pinpoint integration with other Amazon Web Services services, and
-      the quotas that apply to use of the service.</p> <p> <b>Regional
-      availability</b> </p> <p>The <i>Amazon Pinpoint SMS and Voice, version 2
-      API Reference</i> is available in several Amazon Web Services Regions and
-      it provides an endpoint for each of these Regions. For a list of all the
-      Regions and endpoints where the API is currently available, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region">Amazon
-      Web Services Service Endpoints</a> and <a
-      href="https://docs.aws.amazon.com/general/latest/gr/pinpoint.html">Amazon
-      Pinpoint endpoints and quotas</a> in the Amazon Web Services General
-      Reference. To learn more about Amazon Web Services Regions, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande-manage.html">Managing
-      Amazon Web Services Regions</a> in the Amazon Web Services General
-      Reference.</p> <p>In each Region, Amazon Web Services maintains multiple
-      Availability Zones. These Availability Zones are physically isolated from
-      each other, but are united by private, low-latency, high-throughput, and
-      highly redundant network connections. These Availability Zones enable us
-      to provide very high levels of availability and redundancy, while also
-      minimizing latency. To learn more about the number of Availability Zones
-      that are available in each Region, see <a
-      href="https://aws.amazon.com/about-aws/global-infrastructure/">Amazon Web
-      Services Global Infrastructure.</a> </p>
+      Welcome to the Amazon Pinpoint SMS and Voice, version 2 API Reference.
+      This guide offers comprehensive information on the resources available
+      through the Amazon Pinpoint SMS and Voice, version 2 API, including
+      supported HTTP methods, parameters, and schemas. Amazon Pinpoint is a
+      service provided by Amazon Web Services that allows you to engage with
+      your recipients through various messaging channels. The Amazon Pinpoint
+      SMS and Voice, version 2 API offers programmatic access to features
+      specific to the SMS and voice channels, enhancing the capabilities
+      provided by the Amazon Pinpoint API.
+
+
+      If you are new to Amazon Pinpoint, we recommend reviewing the Amazon
+      Pinpoint Developer Guide, which offers tutorials, code samples, and
+      procedures on how to leverage Amazon Pinpoint features programmatically
+      and integrate them into different types of applications. Additionally, the
+      guide includes essential information on Amazon Pinpoint integration with
+      other AWS services and the applicable usage quotas.
+
+
+      The Amazon Pinpoint SMS and Voice, version 2 API Reference is accessible
+      in multiple AWS Regions, with a designated endpoint for each Region. For a
+      complete list of available Regions and endpoints, please refer to the
+      Amazon Web Services Service Endpoints and Amazon Pinpoint endpoints and
+      quotas in the AWS General Reference. AWS maintains multiple Availability
+      Zones within each Region, ensuring high availability, redundancy, and
+      minimal latency. For detailed information on the number of Availability
+      Zones in each Region, visit the Amazon Web Services Global Infrastructure
+      page.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -7663,22 +7639,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/pinpoint-sms-voice-v2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pinpoint-sms-voice-v2
-  - name: pipes
+  - name: Amazon EventBridge Pipes
     description: >-
-      <p>Amazon EventBridge Pipes connects event sources to targets. Pipes
-      reduces the need for specialized knowledge and integration code when
-      developing event driven architectures. This helps ensures consistency
-      across your company’s applications. With Pipes, the target can be any
-      available EventBridge target. To set up a pipe, you select the event
-      source, add optional event filtering, define optional enrichment, and
-      select the target for the event data. </p>
+      The Amazon EventBridge Pipes API seamlessly connects event sources to
+      targets, simplifying the development of event-driven architectures by
+      eliminating the need for specialized knowledge and integration code. This
+      tool ensures consistency across a company's applications by allowing any
+      available EventBridge target to be used. To create a pipe, users simply
+      select the event source, configure optional event filtering and
+      enrichment, and choose the target for the event data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html
       - type: OpenAPI
         url: properties/pipes-openapi-original.yml
     overlays:
@@ -7687,248 +7663,207 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/pipes-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pipes
-  - name: proton
+  - name: AWS Proton
     description: >-
-      <p>This is the Proton Service API Reference. It provides descriptions,
-      syntax and usage examples for each of the <a
-      href="https://docs.aws.amazon.com/proton/latest/APIReference/API_Operations.html">actions</a>
-      and <a
-      href="https://docs.aws.amazon.com/proton/latest/APIReference/API_Types.html">data
-      types</a> for the Proton service.</p> <p>The documentation for each action
-      shows the Query API request parameters and the XML response.</p>
-      <p>Alternatively, you can use the Amazon Web Services CLI to access an
-      API. For more information, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html">Amazon
-      Web Services Command Line Interface User Guide</a>.</p> <p>The Proton
-      service is a two-pronged automation framework. Administrators create
-      service templates to provide standardized infrastructure and deployment
-      tooling for serverless and container based applications. Developers, in
-      turn, select from the available service templates to automate their
-      application or service deployments.</p> <p>Because administrators define
-      the infrastructure and tooling that Proton deploys and manages, they need
-      permissions to use all of the listed API operations.</p> <p>When
-      developers select a specific infrastructure and tooling set, Proton
-      deploys their applications. To monitor their applications that are running
-      on Proton, developers need permissions to the service <i>create</i>,
-      <i>list</i>, <i>update</i> and <i>delete</i> API operations and the
-      service instance <i>list</i> and <i>update</i> API operations.</p> <p>To
-      learn more about Proton, see the <a
-      href="https://docs.aws.amazon.com/proton/latest/userguide/Welcome.html">Proton
-      User Guide</a>.</p> <p> <b>Ensuring Idempotency</b> </p> <p>When you make
-      a mutating API request, the request typically returns a result before the
-      asynchronous workflows of the operation are complete. Operations might
-      also time out or encounter other server issues before they're complete,
-      even if the request already returned a result. This might make it
-      difficult to determine whether the request succeeded. Moreover, you might
-      need to retry the request multiple times to ensure that the operation
-      completes successfully. However, if the original request and the
-      subsequent retries are successful, the operation occurs multiple times.
-      This means that you might create more resources than you intended.</p> <p>
-      <i>Idempotency</i> ensures that an API request action completes no more
-      than one time. With an idempotent request, if the original request action
-      completes successfully, any subsequent retries complete successfully
-      without performing any further actions. However, the result might contain
-      updated information, such as the current creation status.</p> <p>The
-      following lists of APIs are grouped according to methods that ensure
-      idempotency.</p> <p> <b>Idempotent create APIs with a client token</b>
-      </p> <p>The API actions in this list support idempotency with the use of a
-      <i>client token</i>. The corresponding Amazon Web Services CLI commands
-      also support idempotency using a client token. A client token is a unique,
-      case-sensitive string of up to 64 ASCII characters. To make an idempotent
-      API request using one of these actions, specify a client token in the
-      request. We recommend that you <i>don't</i> reuse the same client token
-      for other API requests. If you don’t provide a client token for these
-      APIs, a default client token is automatically provided by SDKs.</p>
-      <p>Given a request action that has succeeded:</p> <p>If you retry the
-      request using the same client token and the same parameters, the retry
-      succeeds without performing any further actions other than returning the
-      original resource detail data in the response.</p> <p>If you retry the
-      request using the same client token, but one or more of the parameters are
-      different, the retry throws a <code>ValidationException</code> with an
-      <code>IdempotentParameterMismatch</code> error.</p> <p>Client tokens
-      expire eight hours after a request is made. If you retry the request with
-      the expired token, a new resource is created.</p> <p>If the original
-      resource is deleted and you retry the request, a new resource is
-      created.</p> <p>Idempotent create APIs with a client token:</p> <ul> <li>
-      <p>CreateEnvironmentTemplateVersion</p> </li> <li>
-      <p>CreateServiceTemplateVersion</p> </li> <li>
-      <p>CreateEnvironmentAccountConnection</p> </li> </ul> <p> <b>Idempotent
-      create APIs</b> </p> <p>Given a request action that has succeeded:</p>
-      <p>If you retry the request with an API from this group, and the original
-      resource <i>hasn't</i> been modified, the retry succeeds without
-      performing any further actions other than returning the original resource
-      detail data in the response.</p> <p>If the original resource has been
-      modified, the retry throws a <code>ConflictException</code>.</p> <p>If you
-      retry with different input parameters, the retry throws a
-      <code>ValidationException</code> with an
-      <code>IdempotentParameterMismatch</code> error.</p> <p>Idempotent create
-      APIs:</p> <ul> <li> <p>CreateEnvironmentTemplate</p> </li> <li>
-      <p>CreateServiceTemplate</p> </li> <li> <p>CreateEnvironment</p> </li>
-      <li> <p>CreateService</p> </li> </ul> <p> <b>Idempotent delete APIs</b>
-      </p> <p>Given a request action that has succeeded:</p> <p>When you retry
-      the request with an API from this group and the resource was deleted, its
-      metadata is returned in the response.</p> <p>If you retry and the resource
-      doesn't exist, the response is empty.</p> <p>In both cases, the retry
-      succeeds.</p> <p>Idempotent delete APIs:</p> <ul> <li>
-      <p>DeleteEnvironmentTemplate</p> </li> <li>
-      <p>DeleteEnvironmentTemplateVersion</p> </li> <li>
-      <p>DeleteServiceTemplate</p> </li> <li>
-      <p>DeleteServiceTemplateVersion</p> </li> <li>
-      <p>DeleteEnvironmentAccountConnection</p> </li> </ul> <p> <b>Asynchronous
-      idempotent delete APIs</b> </p> <p>Given a request action that has
-      succeeded:</p> <p>If you retry the request with an API from this group, if
-      the original request delete operation status is
-      <code>DELETE_IN_PROGRESS</code>, the retry returns the resource detail
-      data in the response without performing any further actions.</p> <p>If the
-      original request delete operation is complete, a retry returns an empty
-      response.</p> <p>Asynchronous idempotent delete APIs:</p> <ul> <li>
-      <p>DeleteEnvironment</p> </li> <li> <p>DeleteService</p> </li> </ul>
+      The Proton Service API Reference provides detailed descriptions, syntax,
+      and usage examples for the various actions and data types available within
+      the Proton service. The API documentation includes Query API request
+      parameters and XML responses for each action. Users can also access the
+      API using the Amazon Web Services CLI. 
+
+
+      The Proton service is an automation framework that allows administrators
+      to create service templates for standardized infrastructure and deployment
+      tooling for serverless and container-based applications. Developers can
+      then select from these templates to automate their application or service
+      deployments. 
+
+
+      Administrators need permission to use all API operations to define the
+      infrastructure and tooling that Proton deploys and manages. Developers
+      require permissions for service create, list, update, and delete API
+      operations, as well as service instance list and update API operations to
+      monitor their applications running on Proton. 
+
+
+      For additional information on Proton, users can refer to the Proton User
+      Guide. The concept of idempotency is important when making mutating API
+      requests to prevent duplicate resource creation. The API provides support
+      for idempotency using client tokens with specific API actions, ensuring
+      that requests are only processed once. 
+
+
+      Additionally, there are different groups of APIs that support idempotency,
+      including create APIs with a client token, create APIs without a client
+      token, delete APIs, and asynchronous delete APIs. Understanding how
+      idempotency works can help users manage their resources efficiently and
+      avoid unintended duplicate actions during API requests.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/proton/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/proton/
       - type: OpenAPI
         url: properties/proton-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/proton/features/
+      - type: Pricing
+        url: https://aws.amazon.com/proton/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/proton/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/proton/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/proton/partners/
+      - type: Features
+        url: https://aws.amazon.com/proton/features/
     overlays:
       - type: APIs.io Search
         url: overlays/proton-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/proton-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:proton
-  - name: privatenetworks
+  - name: AWS Private 5G
     description: >-
-      <p>Amazon Web Services Private 5G is a managed service that makes it easy
-      to deploy, operate, and scale your own private mobile network at your
-      on-premises location. Private 5G provides the pre-configured hardware and
-      software for mobile networks, helps automate setup, and scales capacity on
-      demand to support additional devices as needed.</p>
+      The Amazon Web Services Private 5G API offers a managed solution for
+      setting up and expanding your private mobile network on-site. It includes
+      pre-configured hardware and software, simplifies setup with automation,
+      and allows for seamless scalability to accommodate more devices when
+      necessary.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/private5g/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/private5g/
       - type: OpenAPI
         url: properties/privatenetworks-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/private5g/features/
+      - type: Pricing
+        url: https://aws.amazon.com/private5g/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/private5g/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/private5g/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/privatenetworks-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/privatenetworks-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:privatenetworks
-  - name: polly
+  - name: Amazon Polly
     description: >-
-      <p>Amazon Polly is a web service that makes it easy to synthesize speech
-      from text.</p> <p>The Amazon Polly service provides API operations for
-      synthesizing high-quality speech from plain text and Speech Synthesis
-      Markup Language (SSML), along with managing pronunciations lexicons that
-      enable you to get the best results for your application domain.</p>
+      Amazon Polly is a web service that makes it easy to synthesize speech from
+      text. The Amazon Polly service provides API operations for synthesizing
+      high-quality speech from plain text and Speech Synthesis Markup Language
+      (SSML), along with managing pronunciations lexicons that enable you to get
+      the best results for your application domain.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/polly/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/polly/
       - type: OpenAPI
         url: properties/polly-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/polly/features/
+      - type: Pricing
+        url: https://aws.amazon.com/polly/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/polly/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/polly/resources/
+      - type: Customers
+        url: https://aws.amazon.com/polly/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/polly-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/polly-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:polly
-  - name: qconnect
+  - name: Amazon Q in Connect
     description: >-
-      <note> <p> <b>Powered by Amazon Bedrock</b>: Amazon Web Services
-      implements <a
-      href="https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html">automated
-      abuse detection</a>. Because Amazon Q in Connect is built on Amazon
-      Bedrock, users can take full advantage of the controls implemented in
-      Amazon Bedrock to enforce safety, security, and the responsible use of
-      artificial intelligence (AI).</p> </note> <p>Amazon Q in Connect is a
-      generative AI customer service assistant. It is an LLM-enhanced evolution
-      of Amazon Connect Wisdom that delivers real-time recommendations to help
-      contact center agents resolve customer issues quickly and accurately.</p>
-      <p>Amazon Q automatically detects customer intent during calls and chats
-      using conversational analytics and natural language understanding (NLU).
-      It then provides agents with immediate, real-time generative responses and
-      suggested actions, and links to relevant documents and articles. Agents
-      can also query Amazon Q directly using natural language or keywords to
-      answer customer requests.</p> <p>Use the Amazon Q in Connect APIs to
-      create an assistant and a knowledge base, for example, or manage content
-      by uploading custom files.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/amazon-q-connect.html">Use
-      Amazon Q in Connect for generative AI powered agent assistance in
-      real-time</a> in the <i>Amazon Connect Administrator Guide</i>.</p>
+      The Amazon Q in Connect API is an upgraded version of Amazon Connect
+      Wisdom that utilizes generative AI to provide agents with suggested
+      responses and actions to resolve customer inquiries quickly and enhance
+      customer satisfaction. Instead of having knowledge articles, wikis, and
+      FAQs scattered across various repositories, Amazon Q in Connect integrates
+      them into one platform. This eliminates the need for agents to search
+      through multiple sources of information, saving time and improving the
+      customer experience. By analyzing the real-time conversation with
+      customers and utilizing relevant company content, Amazon Q in Connect
+      automatically recommends responses and actions for agents to better assist
+      customers. Additionally, agents can use natural language to search through
+      connected knowledge sources to access generated responses, recommended
+      actions, and additional information.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/q/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/q/
       - type: OpenAPI
         url: properties/qconnect-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/connect/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/connect/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/connect/resources/
+      - type: Customers
+        url: https://aws.amazon.com/connect/customers/
+      - type: Partners
+        url: https://aws.amazon.com/connect/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/qconnect-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/qconnect-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:qconnect
-  - name: qbusiness
+  - name: Amazon Q
     description: >-
-      <note> <p>Amazon Q is in preview release and is subject to change.</p>
-      </note> <p>This is the <i>Amazon Q (for business use)</i> API Reference.
-      Amazon Q is a fully managed, generative-AI powered enterprise chat
-      assistant that you can deploy within your organization. Amazon Q enhances
-      employee productivity by supporting key tasks such as question-answering,
-      knowledge discovery, writing email messages, summarizing text, drafting
-      document outlines, and brainstorming ideas. Users ask questions of Amazon
-      Q and get answers that are presented in a conversational manner. For an
-      introduction to the service, see the <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/what-is.html">
-      <i>Amazon Q (for business use) Developer Guide</i> </a>.</p> <p>For an
-      overview of the Amazon Q APIs, see <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/api-ref.html#api-overview">Overview
-      of Amazon Q API operations</a>.</p> <p>For information about the IAM
-      access control permissions you need to use this API, see <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/iam-roles.html">IAM
-      roles for Amazon Q</a> in the <i>Amazon Q (for business use) Developer
-      Guide</i>.</p> <p>You can use the following AWS SDKs to access Amazon Q
-      APIs:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-cpp">AWS SDK for C++</a> </p>
-      </li> <li> <p> <a href="https://docs.aws.amazon.com/sdk-for-go">AWS SDK
-      for Go</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-java">AWS SDK for Java</a> </p>
-      </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-javascript">AWS SDK for
-      JavaScript</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-net">AWS SDK for .NET</a> </p>
-      </li> <li> <p> <a href="https://docs.aws.amazon.com/pythonsdk">AWS SDK for
-      Python (Boto3)</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-ruby">AWS SDK for Ruby</a> </p>
-      </li> </ul> <p>The following resources provide additional information
-      about using the Amazon Q API:</p> <ul> <li> <p> <i> <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/setting-up.html">Setting
-      up for Amazon Q</a> </i> </p> </li> <li> <p> <i> <a
-      href="https://awscli.amazonaws.com/v2/documentation/api/latest/reference/qbusiness/index.html">Amazon
-      Q CLI Reference</a> </i> </p> </li> <li> <p> <i> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/amazonq.html">Amazon
-      Web Services General Reference</a> </i> </p> </li> </ul>
+      The Amazon Q API is currently in preview release and may be subject to
+      change. This API Reference is for Amazon Q (for business use), a fully
+      managed enterprise chat assistant powered by generative AI that can be
+      deployed within your organization. Designed to enhance employee
+      productivity, Amazon Q supports tasks such as question-answering,
+      knowledge discovery, email writing, text summarization, document
+      outlining, and idea brainstorming. Users can ask questions to Amazon Q and
+      receive answers in a conversational format.
+
+
+      For more information on getting started with the service, refer to the
+      Amazon Q (for business use) Developer Guide. To learn about the available
+      API operations, check out the Overview of Amazon Q API operations. Details
+      on the required IAM access control permissions can be found in the IAM
+      roles for Amazon Q section of the Developer Guide.
+
+
+      To access the Amazon Q APIs, you can utilize the following AWS SDKs: AWS
+      SDK for C++, Go, Java, JavaScript, .NET, Python (Boto3), and Ruby.
+      Additional resources for using the Amazon Q API include setting up for
+      Amazon Q, the Amazon Q CLI Reference, and the Amazon Web Services General
+      Reference.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/q/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/q/
       - type: OpenAPI
         url: properties/qbusiness-openapi-original.yml
+      - type: Getting Started
+        url: https://aws.amazon.com/q/getting-started/
+      - type: Customers
+        url: https://aws.amazon.com/q/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/qbusiness-openapi-search.yml
