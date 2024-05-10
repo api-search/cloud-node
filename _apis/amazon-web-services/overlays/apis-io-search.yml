@@ -8722,17 +8722,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/runtimelexv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:runtimelexv2
-  - name: route53-recovery-control-config
+  - name: Amazon Route 53 Application Recovery Controller
     description: >-
-      <p>Recovery Control Configuration API Reference for Amazon Route 53
-      Application Recovery Controller</p>
+      The Amazon Route 53 Application Recovery Controller provides monitoring
+      and coordination for application recovery across AWS Regions and
+      Availability Zones. By streamlining the recovery process and reducing
+      manual steps, this tool helps ensure that applications and resources are
+      prepared for recovery. With insights into readiness and simplified
+      management, the Application Recovery Controller enhances the reliability
+      of application recovery efforts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/route53/application-recovery-controller/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/route53/application-recovery-controller/
       - type: OpenAPI
         url: properties/route53-recovery-control-config-openapi-original.yml
     overlays:
@@ -8742,17 +8747,19 @@ apis:
         url: >-
           overlays/route53-recovery-control-config-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53-recovery-control-config
-  - name: s3control
+  - name: 'AWS S3 Control '
     description: >-
-      <p> Amazon Web Services S3 Control provides access to Amazon S3 control
-      plane actions. </p>
+      My API, Amazon Web Services S3 Control, allows users to perform control
+      plane actions on Amazon S3.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_AWS_S3_Control.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_AWS_S3_Control.html
       - type: OpenAPI
         url: properties/s3control-openapi-original.yml
     overlays:
@@ -8761,87 +8768,142 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/s3control-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:s3control
-  - name: sagemaker-a2i-runtime
+  - name: Amazon Augmented AI
     description: >-
-      <p>Amazon Augmented AI (Amazon A2I) adds the benefit of human judgment to
-      any machine learning application. When an AI application can't evaluate
-      data with a high degree of confidence, human reviewers can take over. This
-      human review is called a human review workflow. To create and start a
-      human review workflow, you need three resources: a <i>worker task
-      template</i>, a <i>flow definition</i>, and a <i>human loop</i>.</p>
-      <p>For information about these resources and prerequisites for using
-      Amazon A2I, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-getting-started.html">Get
-      Started with Amazon Augmented AI</a> in the Amazon SageMaker Developer
-      Guide.</p> <p>This API reference includes information about API actions
-      and data types that you can use to interact with Amazon A2I
-      programmatically. Use this guide to:</p> <ul> <li> <p>Start a human loop
-      with the <code>StartHumanLoop</code> operation when using Amazon A2I with
-      a <i>custom task type</i>. To learn more about the difference between
-      custom and built-in task types, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-task-types-general.html">Use
-      Task Types </a>. To learn how to start a human loop using this API, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-start-human-loop.html#a2i-instructions-starthumanloop">Create
-      and Start a Human Loop for a Custom Task Type </a> in the Amazon SageMaker
-      Developer Guide.</p> </li> <li> <p>Manage your human loops. You can list
-      all human loops that you have created, describe individual human loops,
-      and stop and delete human loops. To learn more, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-monitor-humanloop-results.html">Monitor
-      and Manage Your Human Loop </a> in the Amazon SageMaker Developer
-      Guide.</p> </li> </ul> <p>Amazon A2I integrates APIs from various AWS
-      services to create and start human review workflows for those services. To
-      learn how Amazon A2I uses these APIs, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-api-references.html">Use
-      APIs in Amazon A2I</a> in the Amazon SageMaker Developer Guide.</p>
+      Amazon Augmented AI (Amazon A2I) enhances machine learning applications by
+      incorporating human judgment when necessary. Human reviewers can step in
+      when an AI application is unable to assess data confidently, through a
+      process known as a human review workflow. To initiate a human review
+      workflow, three key resources are required: a worker task template, a flow
+      definition, and a human loop. For detailed information on these resources
+      and the prerequisites for utilizing Amazon A2I, refer to the "Get Started
+      with Amazon Augmented AI" section in the Amazon SageMaker Developer Guide.
+
+
+      This API reference provides insights into the API actions and data types
+      that can be utilized to interact with Amazon A2I programmatically. It
+      allows you to:
+
+      - Commence a human loop using the StartHumanLoop operation for custom task
+      types in Amazon A2I. For further clarification on custom versus built-in
+      task types, consult the "Use Task Types" section. To understand how to
+      initiate a human loop using this API, refer to the "Create and Start a
+      Human Loop for a Custom Task Type" section in the Amazon SageMaker
+      Developer Guide.
+
+      - Manage your human loops efficiently. This includes listing all created
+      human loops, describing individual human loops, and terminating or
+      removing them as needed. For more details, see the "Monitor and Manage
+      Your Human Loop" section in the Amazon SageMaker Developer Guide.
+
+      - Integration of APIs from different AWS services allows Amazon A2I to
+      establish and commence human review workflows for those services. To grasp
+      how Amazon A2I leverages these APIs, refer to the "Use APIs in Amazon A2I"
+      section in the Amazon SageMaker Developer Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/augmented-ai/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/augmented-ai/
       - type: OpenAPI
         url: properties/sagemaker-a2i-runtime-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/augmented-ai/features/
+      - type: Pricing
+        url: https://aws.amazon.com/augmented-ai/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/augmented-ai/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/augmented-ai/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/augmented-ai/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/sagemaker-a2i-runtime-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sagemaker-a2i-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-a2i-runtime
-  - name: sagemaker
+  - name: AWS SageMaker
     description: >-
-      <p>Provides APIs for creating and managing SageMaker resources. </p>
-      <p>Other Resources:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html#first-time-user">SageMaker
-      Developer Guide</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/Welcome.html">Amazon
-      Augmented AI Runtime API Reference</a> </p> </li> </ul>
+      Amazon SageMaker is a fully managed service that provides a comprehensive
+      set of tools for high-performance, cost-effective machine learning (ML)
+      for any scenario. With SageMaker, you can create, train, and deploy ML
+      models at scale using various tools like notebooks, debuggers, profilers,
+      pipelines, MLOps, and more within a single integrated development
+      environment (IDE). SageMaker offers simplified access control and
+      visibility into your ML projects to meet governance requirements.
+      Additionally, you can create and fine-tune your own FMs - large models
+      trained on massive datasets - with specialized tools for experimentation,
+      retraining, and deployment. Access to a wide range of pretrained models,
+      including public FMs, is also available for easy deployment with just a
+      few clicks.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sagemaker/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sagemaker/
       - type: OpenAPI
         url: properties/sagemaker-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sagemaker/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sagemaker/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/sagemaker/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/sagemaker/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/sagemaker/resources/
+      - type: Partners
+        url: https://aws.amazon.com/sagemaker/partners/
+      - type: Customers
+        url: https://aws.amazon.com/sagemaker/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/sagemaker-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sagemaker-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker
-  - name: s3
-    description: <p/>
+  - name: AWS S3
+    description: >-
+      The API for Amazon Simple Storage Service (Amazon S3) provides an object
+      storage solution with top-notch scalability, data availability, security,
+      and performance. It caters to customers of varying sizes and industries,
+      offering the ability to store and secure any volume of data for a wide
+      range of purposes, including data lakes, cloud-native applications, and
+      mobile apps. With versatile storage options and user-friendly management
+      tools, users can effectively manage costs, categorize data, and set
+      precise access permissions to align with their unique business,
+      organizational, and compliance needs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/s3/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/s3/
       - type: OpenAPI
         url: properties/s3-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/s3/pricing/
+      - type: Security
+        url: https://aws.amazon.com/s3/security/
+      - type: Faqs
+        url: https://aws.amazon.com/s3/faqs/
+      - type: Features
+        url: https://aws.amazon.com/s3/features/
+      - type: Getting-started
+        url: https://aws.amazon.com/s3/getting-started/
+      - type: Videos
+        url: https://aws.amazon.com/s3/videos/
+      - type: Customers
+        url: https://aws.amazon.com/s3/customers/
+      - type: Resources
+        url: https://aws.amazon.com/s3/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/s3-openapi-search.yml
