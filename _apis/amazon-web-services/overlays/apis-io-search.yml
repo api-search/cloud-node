@@ -8072,97 +8072,112 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/quicksight-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:quicksight
-  - name: redshift
+  - name: Amazon Redshift
     description: >-
-      <fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This is
-      an interface reference for Amazon Redshift. It contains documentation for
-      one of the programming or command line interfaces you can use to manage
-      Amazon Redshift clusters. Note that Amazon Redshift is asynchronous, which
-      means that some interfaces may require techniques, such as polling or
-      asynchronous callback handlers, to determine when a command has been
-      applied. In this reference, the parameter descriptions indicate whether a
-      change is applied immediately, on the next instance reboot, or during the
-      next maintenance window. For a summary of the Amazon Redshift cluster
-      management interfaces, go to <a
-      href="https://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
-      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift
-      manages all the work of setting up, operating, and scaling a data
-      warehouse: provisioning capacity, monitoring and backing up the cluster,
-      and applying patches and upgrades to the Amazon Redshift engine. You can
-      focus on using your data to acquire new insights for your business and
-      customers.</p> <p>If you are a first-time user of Amazon Redshift, we
-      recommend that you begin by reading the <a
-      href="https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
-      Redshift Getting Started Guide</a>.</p> <p>If you are a database
-      developer, the <a
-      href="https://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
-      Redshift Database Developer Guide</a> explains how to design, build,
-      query, and maintain the databases that make up your data warehouse. </p>
+      Amazon Redshift is a comprehensive data warehouse solution offered by
+      Amazon Web Services. This API reference provides documentation for the
+      various programming and command line interfaces available for managing
+      Amazon Redshift clusters. It is important to note that Amazon Redshift
+      operates asynchronously, requiring techniques such as polling or
+      asynchronous callback handlers to track the status of commands. The
+      parameter descriptions in this reference specify whether a change takes
+      effect immediately, upon the next instance reboot, or during the next
+      maintenance window. Amazon Redshift handles tasks such as provisioning
+      capacity, monitoring, backup, and applying patches and upgrades to the
+      engine, allowing users to focus on leveraging their data for business
+      insights. For users new to Amazon Redshift, it is recommended to start
+      with the Getting Started Guide. Database developers can refer to the
+      Database Developer Guide for information on designing, building, querying,
+      and maintaining databases within their data warehouse.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/redshift/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/redshift/
       - type: OpenAPI
         url: properties/redshift-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/redshift/features/
+      - type: Pricing
+        url: https://aws.amazon.com/redshift/pricing/
+      - type: Customer Success
+        url: https://aws.amazon.com/redshift/customer-success/
+      - type: Solutions
+        url: https://aws.amazon.com/redshift/solutions/
+      - type: Resources
+        url: https://aws.amazon.com/redshift/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/redshift/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/redshift/faqs/
+      - type: Migrations
+        url: https://aws.amazon.com/big-data/datalakes-and-analytics/migrations/
+      - type: Partners
+        url: https://aws.amazon.com/redshift/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/redshift-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/redshift-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:redshift
-  - name: rbin
+  - name: AWS Recycle Bin
     description: >-
-      <p>This is the <i>Recycle Bin API Reference</i>. This documentation
-      provides descriptions and syntax for each of the actions and data types in
-      Recycle Bin.</p> <p>Recycle Bin is a resource recovery feature that
-      enables you to restore accidentally deleted snapshots and EBS-backed AMIs.
-      When using Recycle Bin, if your resources are deleted, they are retained
-      in the Recycle Bin for a time period that you specify.</p> <p>You can
-      restore a resource from the Recycle Bin at any time before its retention
-      period expires. After you restore a resource from the Recycle Bin, the
-      resource is removed from the Recycle Bin, and you can then use it in the
-      same way you use any other resource of that type in your account. If the
-      retention period expires and the resource is not restored, the resource is
-      permanently deleted from the Recycle Bin and is no longer available for
-      recovery. For more information about Recycle Bin, see <a
-      href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recycle-bin.html">
-      Recycle Bin</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.</p>
+      This is the API Reference for Recycle Bin, a feature that allows you to
+      recover accidentally deleted snapshots and EBS-backed AMIs. The
+      documentation provides detailed descriptions and syntax for each action
+      and data type within Recycle Bin. When you use Recycle Bin, any deleted
+      resources are stored in the bin for a specified time period. You have the
+      ability to restore a resource from the Recycle Bin before the retention
+      period expires. Once a resource is restored, it is removed from the
+      Recycle Bin and can be used like any other resource in your account.
+      However, if the retention period expires without restoring the resource,
+      it will be permanently deleted from the Recycle Bin and cannot be
+      recovered.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/recyclebin/latest/APIReference/Welcome.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/recyclebin/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/rbin-openapi-original.yml
+      - type: User Guide
+        url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recycle-bin.html
+      - type: Command Line Interface
+        url: https://docs.aws.amazon.com/cli/latest/reference/rbin/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/rbin-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/rbin-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rbin
-  - name: redshift-data
+  - name: Amazon Redshift
     description: >-
-      <p>You can use the Amazon Redshift Data API to run queries on Amazon
-      Redshift tables. You can run SQL statements, which are committed if the
-      statement succeeds. </p> <p>For more information about the Amazon Redshift
-      Data API and CLI usage examples, see <a
-      href="https://docs.aws.amazon.com/redshift/latest/mgmt/data-api.html">Using
-      the Amazon Redshift Data API</a> in the <i>Amazon Redshift Management
-      Guide</i>. </p>
+      Utilize the Amazon Redshift Data API to execute queries on Amazon Redshift
+      tables by running SQL statements. Successful statements will be committed.
+      Refer to the Amazon Redshift Management Guide for further details on the
+      Amazon Redshift Data API and CLI usage examples.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/redshift/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/redshift/
       - type: OpenAPI
         url: properties/redshift-data-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/redshift/features/
+      - type: Pricing
+        url: https://aws.amazon.com/redshift/pricing/
+      - type: Customer Success
+        url: https://aws.amazon.com/redshift/customer-success/
+      - type: Solutions
+        url: https://aws.amazon.com/redshift/solutions/
     overlays:
       - type: APIs.io Search
         url: overlays/redshift-data-openapi-search.yml
@@ -8186,264 +8201,127 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/qldb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:qldb
-  - name: rekognition
+  - name: Amazon Rekognition
     description: >-
-      <p>This is the API Reference for <a
-      href="https://docs.aws.amazon.com/rekognition/latest/dg/images.html">Amazon
-      Rekognition Image</a>, <a
-      href="https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/what-is.html">Amazon
-      Rekognition Custom Labels</a>, <a
-      href="https://docs.aws.amazon.com/rekognition/latest/dg/video.html">Amazon
-      Rekognition Stored Video</a>, <a
-      href="https://docs.aws.amazon.com/rekognition/latest/dg/streaming-video.html">Amazon
-      Rekognition Streaming Video</a>. It provides descriptions of actions, data
-      types, common parameters, and common errors.</p> <p> <b>Amazon Rekognition
-      Image</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_AssociateFaces.html">AssociateFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CompareFaces.html">CompareFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateCollection.html">CreateCollection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateUser.html">CreateUser</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteCollection.html">DeleteCollection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteFaces.html">DeleteFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteUser.html">DeleteUser</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeCollection.html">DescribeCollection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectFaces.html">DetectFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectLabels.html">DetectLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectModerationLabels.html">DetectModerationLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectProtectiveEquipment.html">DetectProtectiveEquipment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectText.html">DetectText</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DisassociateFaces.html">DisassociateFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetCelebrityInfo.html">GetCelebrityInfo</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetMediaAnalysisJob.html">GetMediaAnalysisJob</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_IndexFaces.html">IndexFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListCollections.html">ListCollections</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListMediaAnalysisJob.html">ListMediaAnalysisJob</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListFaces.html">ListFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListFaces.html">ListUsers</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RecognizeCelebrities.html">RecognizeCelebrities</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFaces.html">SearchFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFacesByImage.html">SearchFacesByImage</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchUsers.html">SearchUsers</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchUsersByImage.html">SearchUsersByImage</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartMediaAnalysisJob.html">StartMediaAnalysisJob</a>
-      </p> </li> </ul> <p> <b>Amazon Rekognition Custom Labels</b> </p> <ul>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CopyProjectVersion.html">CopyProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateDataset.html">CreateDataset</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateProject.html">CreateProject</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateProjectVersion.html">CreateProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteDataset.html">DeleteDataset</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProject.html">DeleteProject</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectPolicy.html">DeleteProjectPolicy</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectVersion.html">DeleteProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeDataset.html">DescribeDataset</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjects.html">DescribeProjects</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjectVersions.html">DescribeProjectVersions</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectCustomLabels.html">DetectCustomLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DistributeDatasetEntries.html">DistributeDatasetEntries</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListDatasetEntries.html">ListDatasetEntries</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListDatasetLabels.html">ListDatasetLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListProjectPolicies.html">ListProjectPolicies</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_PutProjectPolicy.html">PutProjectPolicy</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartProjectVersion.html">StartProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopProjectVersion.html">StopProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_UpdateDatasetEntries.html">UpdateDatasetEntries</a>
-      </p> </li> </ul> <p> <b>Amazon Rekognition Video Stored Video</b> </p>
-      <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetCelebrityRecognition.html">GetCelebrityRecognition</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetContentModeration.html">GetContentModeration</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetFaceDetection.html">GetFaceDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetFaceSearch.html">GetFaceSearch</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetLabelDetection.html">GetLabelDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetPersonTracking.html">GetPersonTracking</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetSegmentDetection.html">GetSegmentDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetTextDetection.html">GetTextDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartCelebrityRecognition.html">StartCelebrityRecognition</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartContentModeration.html">StartContentModeration</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartFaceDetection.html">StartFaceDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartFaceSearch.html">StartFaceSearch</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartLabelDetection.html">StartLabelDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartPersonTracking.html">StartPersonTracking</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartSegmentDetection.html">StartSegmentDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartTextDetection.html">StartTextDetection</a>
-      </p> </li> </ul> <p> <b>Amazon Rekognition Video Streaming Video</b> </p>
-      <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor.html">CreateStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteStreamProcessor.html">DeleteStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeStreamProcessor.html">DescribeStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListStreamProcessors.html">ListStreamProcessors</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartStreamProcessor.html">StartStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopStreamProcessor.html">StopStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_UpdateStreamProcessor.html">UpdateStreamProcessor</a>
-      </p> </li> </ul>
+      The Amazon Rekognition API provides endpoints for Amazon Rekognition
+      Image, Amazon Rekognition Custom Labels, Amazon Rekognition Stored Video,
+      and Amazon Rekognition Streaming Video. The API includes actions such as
+      detecting faces, labels, text, and celebrities, as well as functionalities
+      for creating collections, comparing faces, analyzing video content, and
+      managing datasets and projects. Common parameters and errors are also
+      documented to assist developers in integrating this API into their
+      applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/rekognition/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/rekognition/
       - type: OpenAPI
         url: properties/rekognition-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/rekognition/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/rekognition/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/rekognition/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/rekognition/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/rekognition-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/rekognition-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rekognition
-  - name: redshift-serverless
+  - name: Amazon Redshift Serverless
     description: >-
-      <p>This is an interface reference for Amazon Redshift Serverless. It
-      contains documentation for one of the programming or command line
-      interfaces you can use to manage Amazon Redshift Serverless. </p>
-      <p>Amazon Redshift Serverless automatically provisions data warehouse
-      capacity and intelligently scales the underlying resources based on
-      workload demands. Amazon Redshift Serverless adjusts capacity in seconds
-      to deliver consistently high performance and simplified operations for
-      even the most demanding and volatile workloads. Amazon Redshift Serverless
-      lets you focus on using your data to acquire new insights for your
-      business and customers. </p> <p> To learn more about Amazon Redshift
-      Serverless, see <a
-      href="https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-whatis.html">What
-      is Amazon Redshift Serverless</a>. </p>
+      This API reference provides documentation for an interface for managing
+      Amazon Redshift Serverless. This service automatically adjusts data
+      warehouse capacity and scales resources based on workload demands,
+      delivering high performance and simplified operations. With Amazon
+      Redshift Serverless, users can focus on utilizing their data to gain new
+      insights for their business and customers.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/redshift/redshift-serverless/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/redshift/redshift-serverless/
       - type: OpenAPI
         url: properties/redshift-serverless-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/redshift/features/
+      - type: Pricing
+        url: https://aws.amazon.com/redshift/pricing/
+      - type: Customer Success
+        url: https://aws.amazon.com/redshift/customer-success/
+      - type: Solutions
+        url: https://aws.amazon.com/redshift/solutions/
     overlays:
       - type: APIs.io Search
         url: overlays/redshift-serverless-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/redshift-serverless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:redshift-serverless
-  - name: resource-explorer-2
+  - name: AWS Resource Explorer
     description: >-
-      <p>Amazon Web Services Resource Explorer is a resource search and
-      discovery service. By using Resource Explorer, you can explore your
-      resources using an internet search engine-like experience. Examples of
-      resources include Amazon Relational Database Service (Amazon RDS)
-      instances, Amazon Simple Storage Service (Amazon S3) buckets, or Amazon
-      DynamoDB tables. You can search for your resources using resource metadata
-      like names, tags, and IDs. Resource Explorer can search across all of the
-      Amazon Web Services Regions in your account in which you turn the service
-      on, to simplify your cross-Region workloads.</p> <p>Resource Explorer
-      scans the resources in each of the Amazon Web Services Regions in your
-      Amazon Web Services account in which you turn on Resource Explorer.
-      Resource Explorer <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/getting-started-terms-and-concepts.html#term-index">creates
-      and maintains an index</a> in each Region, with the details of that
-      Region's resources.</p> <p>You can <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-aggregator-region.html">search
-      across all of the indexed Regions in your account</a> by designating one
-      of your Amazon Web Services Regions to contain the aggregator index for
-      the account. When you <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-aggregator-region-turn-on.html">promote
-      a local index in a Region to become the aggregator index for the
-      account</a>, Resource Explorer automatically replicates the index
-      information from all local indexes in the other Regions to the aggregator
-      index. Therefore, the Region with the aggregator index has a copy of all
-      resource information for all Regions in the account where you turned on
-      Resource Explorer. As a result, views in the aggregator index Region
-      include resources from all of the indexed Regions in your account.</p>
-      <p>For more information about Amazon Web Services Resource Explorer,
-      including how to enable and configure the service, see the <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/">Amazon
-      Web Services Resource Explorer User Guide</a>.</p>
+      Amazon Web Services Resource Explorer is a search and discovery service
+      that allows users to explore their resources using an internet search
+      engine-like experience. Examples of resources that can be searched for
+      include Amazon RDS instances, Amazon S3 buckets, and Amazon DynamoDB
+      tables. Users can search for resources using metadata such as names, tags,
+      and IDs. Resource Explorer can search across all AWS Regions in the user's
+      account to simplify cross-Region workloads. By turning on Resource
+      Explorer, users can scan and index resources in each Region, with the
+      option to designate one Region as the aggregator index for the account.
+      This aggregator index contains a copy of all resource information from all
+      Regions where Resource Explorer is enabled. Users can access a
+      comprehensive view of their resources across all indexed Regions in their
+      account. For more information on enabling and configuring Resource
+      Explorer, refer to the user guide provided by Amazon Web Services.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/resourceexplorer/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/resourceexplorer/
       - type: OpenAPI
         url: properties/resource-explorer-2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/resourceexplorer/features/
+      - type: Pricing
+        url: https://aws.amazon.com/resourceexplorer/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/resourceexplorer/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/resource-explorer-2-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/resource-explorer-2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:resource-explorer-2
-  - name: resourcegroupstaggingapi
-    description: <fullname>Resource Groups Tagging API</fullname>
+  - name: AWS Resource Groups Tagging
+    description: >-
+      An AWS resource can be labeled with a tag, which consists of a key and a
+      value defined by the user. For example, two Amazon EC2 instances can both
+      be given a tag key of "Stack," with one having a value of "Testing" and
+      the other having a value of "Production." Tagging is supported on all core
+      infrastructure resources that incur charges in AWS, as well as on most
+      other resources. Some resources only support tagging through their native
+      operations and do not yet support this API. Refer to the documentation of
+      a specific service for more information on its native tagging
+      capabilities.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html
       - type: OpenAPI
         url: properties/resourcegroupstaggingapi-openapi-original.yml
     overlays:
@@ -8452,46 +8330,64 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/resourcegroupstaggingapi-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:resourcegroupstaggingapi
-  - name: robomaker
+  - name: AWS RoboMaker
     description: >-
-      <p>This section provides documentation for the AWS RoboMaker API
-      operations.</p>
+      AWS RoboMaker is a cloud-based simulation service that enables robotics
+      developers to run, scale, and automate simulation without managing any
+      infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/robomaker/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/robomaker/
       - type: OpenAPI
         url: properties/robomaker-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/robomaker/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/robomaker/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/robomaker/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/robomaker/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/robomaker-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/robomaker-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:robomaker
-  - name: repostspace
+  - name: AWS re:Post Private
     description: >-
-      <p>AWS re:Post Private is a private version of AWS re:Post for enterprises
-      with Enterprise Support or Enterprise On-Ramp Support plans. It provides
-      access to knowledge and experts to accelerate cloud adoption and increase
-      developer productivity. With your organization-specific private re:Post,
-      you can build an organization-specific developer community that drives
-      efficiencies at scale and provides access to valuable knowledge resources.
-      Additionally, re:Post Private centralizes trusted AWS technical content
-      and offers private discussion forums to improve how your teams collaborate
-      internally and with AWS to remove technical obstacles, accelerate
-      innovation, and scale more efficiently in the cloud.</p>
+      re:Post Private is a tailored version of AWS re:Post designed exclusively
+      for enterprise customers with Enterprise Support or Enterprise On-Ramp
+      Support plans. This platform grants access to a wealth of knowledge and
+      expert guidance, enabling organizations to expedite their transition to
+      the cloud and enhance developer productivity. By utilizing a customized
+      private re:Post, companies can establish a dedicated developer community
+      that facilitates streamlined collaboration and offers access to invaluable
+      resources. Moreover, re:Post Private serves as a centralized hub for
+      authoritative AWS technical content and features private discussion forums
+      to foster improved teamwork and problem-solving both internally and in
+      partnership with AWS. Ultimately, this solution empowers teams to overcome
+      technical obstacles, drive innovation, and achieve greater operational
+      efficiency in the cloud environment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/repost-private/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/repost-private/
       - type: OpenAPI
         url: properties/repostspace-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/repost-private/features/
+      - type: Pricing
+        url: https://aws.amazon.com/repost-private/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/repost-private/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/repostspace-openapi-search.yml
@@ -8515,42 +8411,37 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/rds-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rds
-  - name: rolesanywhere
+  - name: AWS Identity and Access Management Roles Anywhere
     description: >-
-      <p>Identity and Access Management Roles Anywhere provides a secure way for
-      your workloads such as servers, containers, and applications that run
-      outside of Amazon Web Services to obtain temporary Amazon Web Services
-      credentials. Your workloads can use the same IAM policies and roles you
-      have for native Amazon Web Services applications to access Amazon Web
-      Services resources. Using IAM Roles Anywhere eliminates the need to manage
-      long-term credentials for workloads running outside of Amazon Web
-      Services.</p> <p> To use IAM Roles Anywhere, your workloads must use X.509
-      certificates issued by their certificate authority (CA). You register the
-      CA with IAM Roles Anywhere as a trust anchor to establish trust between
-      your public key infrastructure (PKI) and IAM Roles Anywhere. If you don't
-      manage your own PKI system, you can use Private Certificate Authority to
-      create a CA and then use that to establish trust with IAM Roles Anywhere.
-      </p> <p>This guide describes the IAM Roles Anywhere operations that you
-      can call programmatically. For more information about IAM Roles Anywhere,
-      see the <a
-      href="https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html">IAM
-      Roles Anywhere User Guide</a>.</p>
+      The API for Identity and Access Management Roles Anywhere enables secure
+      access for workloads running outside of Amazon Web Services to obtain
+      temporary AWS credentials. By leveraging IAM policies and roles, workloads
+      can access AWS resources without the need for long-term credentials
+      management. To utilize IAM Roles Anywhere, workloads must use X.509
+      certificates from their CA, which can be registered with IAM Roles
+      Anywhere to establish trust. For users without a PKI system, Private
+      Certificate Authority can be used to create a CA for trust establishment.
+      This API guide provides information on programmatically calling IAM Roles
+      Anywhere operations. For more details, refer to the IAM Roles Anywhere
+      User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/roles-anywhere/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/roles-anywhere/
       - type: OpenAPI
         url: properties/rolesanywhere-openapi-original.yml
+      - type: Resources
+        url: https://aws.amazon.com/iam/roles-anywhere/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/rolesanywhere-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/rolesanywhere-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rolesanywhere
-  - name: resource-groups
+  - name: AWS Resource Groups
     description: >-
       <p>Resource Groups lets you organize Amazon Web Services resources such as
       Amazon Elastic Compute Cloud instances, Amazon Relational Database Service
@@ -8580,12 +8471,12 @@ apis:
       </li> <li> <p>Searching Amazon Web Services resources based on a resource
       query</p> </li> </ul>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/resource-groups-openapi-original.yml
     overlays:
@@ -8594,61 +8485,21 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/resource-groups-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:resource-groups
-  - name: route53-recovery-cluster
+  - name: AWS Routing Control
     description: >-
-      <p>Welcome to the Routing Control (Recovery Cluster) API Reference Guide
-      for Amazon Route 53 Application Recovery Controller.</p> <p>With Route 53
-      ARC, you can use routing control with extreme reliability to recover
-      applications by rerouting traffic across Availability Zones or Amazon Web
-      Services Regions. Routing controls are simple on/off switches hosted on a
-      highly available cluster in Route 53 ARC. A cluster provides a set of five
-      redundant Regional endpoints against which you can run API calls to get or
-      update the state of routing controls. To implement failover, you set one
-      routing control to ON and another one to OFF, to reroute traffic from one
-      Availability Zone or Amazon Web Services Region to another. </p> <p> <i>Be
-      aware that you must specify a Regional endpoint for a cluster when you
-      work with API cluster operations to get or update routing control states
-      in Route 53 ARC.</i> In addition, you must specify the US West (Oregon)
-      Region for Route 53 ARC API calls. For example, use the parameter
-      <code>--region us-west-2</code> with AWS CLI commands. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.update.api.html">
-      Get and update routing control states using the API</a> in the Amazon
-      Route 53 Application Recovery Controller Developer Guide.</p> <p>This API
-      guide includes information about the API operations for how to get and
-      update routing control states in Route 53 ARC. To work with routing
-      control in Route 53 ARC, you must first create the required components
-      (clusters, control panels, and routing controls) using the recovery
-      cluster configuration API.</p> <p>For more information about working with
-      routing control in Route 53 ARC, see the following:</p> <ul> <li>
-      <p>Create clusters, control panels, and routing controls by using API
-      operations. For more information, see the <a
-      href="https://docs.aws.amazon.com/recovery-cluster/latest/api/">Recovery
-      Control Configuration API Reference Guide for Amazon Route 53 Application
-      Recovery Controller</a>.</p> </li> <li> <p>Learn about the components in
-      recovery control, including clusters, routing controls, and control
-      panels, and how to work with Route 53 ARC in the Amazon Web Services
-      console. For more information, see <a
-      href="https://docs.aws.amazon.com/r53recovery/latest/dg/introduction-components.html#introduction-components-routing">
-      Recovery control components</a> in the Amazon Route 53 Application
-      Recovery Controller Developer Guide.</p> </li> <li> <p>Route 53 ARC also
-      provides readiness checks that continually audit resources to help make
-      sure that your applications are scaled and ready to handle failover
-      traffic. For more information about the related API operations, see the <a
-      href="https://docs.aws.amazon.com/recovery-readiness/latest/api/">Recovery
-      Readiness API Reference Guide for Amazon Route 53 Application Recovery
-      Controller</a>.</p> </li> <li> <p>For more information about creating
-      resilient applications and preparing for recovery readiness with Route 53
-      ARC, see the <a
-      href="https://docs.aws.amazon.com/r53recovery/latest/dg/">Amazon Route 53
-      Application Recovery Controller Developer Guide</a>.</p> </li> </ul>
+      Welcome to the API Reference Guide for the Routing Control (Recovery
+      Cluster) feature in Amazon Route 53 Application Recovery Controller (ARC).
+      With Route 53 ARC, you can utilize routing control to recover applications
+      by redirecting traffic across different Availability Zones or Amazon Web
+      Services Regions with high reliability. Routing controls act as simple
+      on/off switches hosted on a highly available cluster within Route 53 ARC. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html
       - type: OpenAPI
         url: properties/route53-recovery-cluster-openapi-original.yml
     overlays:
@@ -8657,32 +8508,48 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/route53-recovery-cluster-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53-recovery-cluster
-  - name: route53
-    description: "<p>Amazon Route\_53 is a highly available and scalable Domain Name System (DNS) web service.</p> <p>You can use Route\_53 to:</p> <ul> <li> <p>Register domain names.</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-domain-registration.html\">How domain registration works</a>.</p> </li> <li> <p>Route internet traffic to the resources for your domain</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html\">How internet traffic is routed to your website or web application</a>.</p> </li> <li> <p>Check the health of your resources.</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html\">How Route\_53 checks the health of your resources</a>.</p> </li> </ul>"
+  - name: "Amazon Route\_53"
+    description: >-
+      My API, Amazon Route 53, is a robust and reliable Domain Name System (DNS)
+      web service that ensures high availability and scalability for connecting
+      user requests to internet applications hosted on AWS or on-premises
+      environments.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/route53/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/route53/
       - type: OpenAPI
         url: properties/route53-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/route53/features/
+      - type: Pricing
+        url: https://aws.amazon.com/route53/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/route53/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/route53/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/route53-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/route53-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53
-  - name: route53-recovery-readiness
-    description: <p>Recovery readiness</p>
+  - name: Amazon Route 53 Application Recovery Controller
+    description: >-
+      The Amazon Route 53 Application Recovery Controller (Route 53 ARC) allows
+      you to monitor the readiness of your applications and resources for
+      recovery and facilitates traffic redirection between AWS Regions or away
+      from Availability Zones to support application disaster recovery efforts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/amazonarc/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/amazonarc/
       - type: OpenAPI
         url: properties/route53-recovery-readiness-openapi-original.yml
     overlays:
@@ -8691,41 +8558,46 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/route53-recovery-readiness-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53-recovery-readiness
-  - name: resiliencehub
+  - name: AWS Resilience Hub
     description: >-
-      <p>Resilience Hub helps you proactively prepare and protect your Amazon
-      Web Services applications from disruptions. It offers continual resiliency
-      assessment and validation that integrates into your software development
-      lifecycle. This enables you to uncover resiliency weaknesses, ensure
-      recovery time objective (RTO) and recovery point objective (RPO) targets
-      for your applications are met, and resolve issues before they are released
-      into production. </p>
+      Resilience Hub is an API designed to help you protect your Amazon Web
+      Services applications by conducting continuous resiliency assessments and
+      validations. Integrated into your software development pipeline, it
+      proactively identifies and mitigates weaknesses in your applications,
+      ensures RTO and RPO targets are met, and resolves potential issues before
+      deployment to production.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/resilience-hub/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/resilience-hub/
       - type: OpenAPI
         url: properties/resiliencehub-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/resilience-hub/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/resilience-hub/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/resiliencehub-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/resiliencehub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:resiliencehub
-  - name: route53domains
+  - name: Amazon Route 53 Domains
     description: >-
-      <p>Amazon Route 53 API actions let you register domain names and perform
-      related operations.</p>
+      The Amazon Route 53 API allows users to easily register domain names and
+      carry out various related functions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
       - type: OpenAPI
         url: properties/route53domains-openapi-original.yml
     overlays:
@@ -8734,103 +8606,95 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/route53domains-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53domains
-  - name: route53resolver
+  - name: AWS route53 resolver
     description: >-
-      <p>When you create a VPC using Amazon VPC, you automatically get DNS
-      resolution within the VPC from Route 53 Resolver. By default, Resolver
-      answers DNS queries for VPC domain names such as domain names for EC2
-      instances or Elastic Load Balancing load balancers. Resolver performs
-      recursive lookups against public name servers for all other domain
-      names.</p> <p>You can also configure DNS resolution between your VPC and
-      your network over a Direct Connect or VPN connection:</p> <p> <b>Forward
-      DNS queries from resolvers on your network to Route 53 Resolver</b> </p>
-      <p>DNS resolvers on your network can forward DNS queries to Resolver in a
-      specified VPC. This allows your DNS resolvers to easily resolve domain
-      names for Amazon Web Services resources such as EC2 instances or records
-      in a Route 53 private hosted zone. For more information, see <a
-      href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How
-      DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a>
-      in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally
-      forward queries from a VPC to resolvers on your network</b> </p> <p>You
-      can configure Resolver to forward queries that it receives from EC2
-      instances in your VPCs to DNS resolvers on your network. To forward
-      selected queries, you create Resolver rules that specify the domain names
-      for the DNS queries that you want to forward (such as example.com), and
-      the IP addresses of the DNS resolvers on your network that you want to
-      forward the queries to. If a query matches multiple rules (example.com,
-      acme.example.com), Resolver chooses the rule with the most specific match
-      (acme.example.com) and forwards the query to the IP addresses that you
-      specified in that rule. For more information, see <a
-      href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How
-      Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a>
-      in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC,
-      Resolver is Regional. In each Region where you have VPCs, you can choose
-      whether to forward queries from your VPCs to your network (outbound
-      queries), from your network to your VPCs (inbound queries), or both.</p>
+      Amazon Route 53 Resolver offers comprehensive functionalities for
+      efficiently resolving DNS queries across AWS, the internet, and
+      on-premises networks. It also enables secure management of DNS within your
+      Amazon Virtual Private Cloud (VPC).
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/route53/resolver/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/route53/resolver/
       - type: OpenAPI
         url: properties/route53resolver-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/route53/features/
+      - type: Pricing
+        url: https://aws.amazon.com/route53/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/route53/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/route53/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/route53resolver-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/route53resolver-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53resolver
-  - name: runtime.lex
+  - name: Amazon Lex
     description: >-
-      <p>Amazon Lex provides both build and runtime endpoints. Each endpoint
-      provides a set of operations (API). Your conversational bot uses the
-      runtime API to understand user utterances (user input text or voice). For
-      example, suppose a user says "I want pizza", your bot sends this input to
-      Amazon Lex using the runtime API. Amazon Lex recognizes that the user
-      request is for the OrderPizza intent (one of the intents defined in the
-      bot). Then Amazon Lex engages in user conversation on behalf of the bot to
-      elicit required information (slot values, such as pizza size and crust
-      type), and then performs fulfillment activity (that you configured when
-      you created the bot). You use the build-time API to create and manage your
-      Amazon Lex bot. For a list of build-time operations, see the build-time
-      API, . </p>
+      Amazon Lex offers build and runtime endpoints, each with a specific set of
+      operations. Your conversational bot utilizes the runtime API to interpret
+      user input text or voice. For instance, if a user says "I want pizza," the
+      bot sends this input to Amazon Lex via the runtime API. Amazon Lex
+      identifies the user's request as the OrderPizza intent, engages in a
+      conversation to gather necessary information (such as pizza size and crust
+      type), and then carries out the fulfillment activity configured during bot
+      creation. The build-time API is used to create and manage your Amazon Lex
+      bot, providing a range of build-time operations. To view a list of these
+      operations, refer to the build-time API documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lex/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lex/
       - type: OpenAPI
         url: properties/runtimelex-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lex/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lex/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/lex/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/lex/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/lex/resources/
+      - type: Customers
+        url: https://aws.amazon.com/lex/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/runtimelex-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/runtimelex-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:runtimelex
-  - name: rum
+  - name: Amazon CloudWatch RUM
     description: >-
-      <p>With Amazon CloudWatch RUM, you can perform real-user monitoring to
-      collect client-side data about your web application performance from
-      actual user sessions in real time. The data collected includes page load
-      times, client-side errors, and user behavior. When you view this data, you
-      can see it all aggregated together and also see breakdowns by the browsers
-      and devices that your customers use.</p> <p>You can use the collected data
-      to quickly identify and debug client-side performance issues. CloudWatch
-      RUM helps you visualize anomalies in your application performance and find
-      relevant debugging data such as error messages, stack traces, and user
-      sessions. You can also use RUM to understand the range of end-user impact
-      including the number of users, geolocations, and browsers used.</p>
+      With Amazon CloudWatch RUM, you can monitor real user activities to gather
+      client-side information on your web application's performance from live
+      user sessions. This data includes load times, errors, and user actions.
+      View this data in aggregated form or broken down by browsers and devices
+      used by customers. Use this data to quickly pinpoint and resolve
+      client-side performance issues. CloudWatch RUM allows you to identify
+      anomalies in performance and access relevant debugging details like error
+      messages, stack traces, and user sessions. Additionally, RUM can help you
+      understand the extent of user impact, including user numbers, locations,
+      and browser types.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
       - type: OpenAPI
         url: properties/rum-openapi-original.yml
     overlays:
