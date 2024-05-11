@@ -5563,27 +5563,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/license-manager-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:license-manager
-  - name: AWS License Manager
-    description: >-
-      <p>With License Manager, you can create user-based subscriptions to
-      utilize licensed software with a per user subscription fee on Amazon EC2
-      instances.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/license-manager-user-subscriptions-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/license-manager-user-subscriptions-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: >-
-          overlays/license-manager-user-subscriptions-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:license-manager-user-subscriptions
   - name: Amazon Lightsail
     description: >-
       <p>Amazon Lightsail is the easiest way to get started with Amazon Web
@@ -5751,44 +5730,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/lookoutvision-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lookoutvision
-  - name: AWS Kinesis Video WebRTC Storage
-    description: <p> </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/kinesis-video-webrtc-storage-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/kinesis-video-webrtc-storage-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: >-
-          overlays/kinesis-video-webrtc-storage-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:kinesis-video-webrtc-storage
-  - name: AWS License Manager for Linux Subscriptions
-    description: >-
-      <p>With License Manager, you can discover and track your commercial Linux
-      subscriptions on running Amazon EC2 instances.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/license-manager-linux-subscriptions-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/license-manager-linux-subscriptions-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: >-
-          overlays/license-manager-linux-subscriptions-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:license-manager-linux-subscriptions
   - name: Amazon Machine Learning
     description: Definition of the public APIs exposed by Amazon Machine Learning
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -5966,36 +5907,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediaconnect-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediaconnect
-  - name: Amazon Managed Blockchain
-    description: >-
-      <p/> <p>Amazon Managed Blockchain is a fully managed service for creating
-      and managing blockchain networks using open-source frameworks. Blockchain
-      allows you to build applications where multiple parties can securely and
-      transparently run transactions and share data without the need for a
-      trusted, central authority.</p> <p>Managed Blockchain supports the
-      Hyperledger Fabric and Ethereum open-source frameworks. Because of
-      fundamental differences between the frameworks, some API actions or data
-      types may only apply in the context of one framework and not the other.
-      For example, actions related to Hyperledger Fabric network members such as
-      <code>CreateMember</code> and <code>DeleteMember</code> don't apply to
-      Ethereum.</p> <p>The description for each action indicates the framework
-      or frameworks to which it applies. Data types and properties that apply
-      only in the context of a particular framework are similarly indicated.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/managedblockchain-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/managedblockchain-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/managedblockchain-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:managedblockchain
   - name: AWS Elemental MediaConvert
     description: AWS Elemental MediaConvert
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -6030,40 +5941,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/medialive-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:medialive
-  - name: AWS Elemental MediaPackage VOD
-    description: AWS Elemental MediaPackage VOD
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/mediapackage-vod-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/mediapackage-vod-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/mediapackage-vod-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:mediapackage-vod
-  - name: AWS Elemental MediaPackage
-    description: AWS Elemental MediaPackage
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/mediapackage-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/mediapackage-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/mediapackage-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:mediapackage
   - name: AWS Marketplace Agreement
     description: >-
       <p>AWS Marketplace is a curated digital catalog that customers can use to
@@ -6374,44 +6251,6 @@ apis:
         url: >-
           overlays/migration-hub-refactor-spaces-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migration-hub-refactor-spaces
-  - name: AWS Elemental MediaPackage
-    description: >-
-      <note> <p>This guide is intended for creating AWS Elemental MediaPackage
-      resources in MediaPackage Version 2 (v2) starting from May 2023. To get
-      started with MediaPackage v2, create your MediaPackage resources. There
-      isn't an automated process to migrate your resources from MediaPackage v1
-      to MediaPackage v2. </p> <p>The names of the entities that you use to
-      access this API, like URLs and ARNs, all have the versioning information
-      added, like "v2", to distinguish from the prior version. If you used
-      MediaPackage prior to this release, you can't use the MediaPackage v2 CLI
-      or the MediaPackage v2 API to access any MediaPackage v1 resources.</p>
-      <p>If you created resources in MediaPackage v1, use video on demand (VOD)
-      workflows, and aren't looking to migrate to MediaPackage v2 yet, see the
-      <a
-      href="https://docs.aws.amazon.com/mediapackage/latest/apireference/what-is.html">MediaPackage
-      v1 Live API Reference</a>.</p> </note> <p>This is the AWS Elemental
-      MediaPackage v2 Live REST API Reference. It describes all the MediaPackage
-      API operations for live content in detail, and provides sample requests,
-      responses, and errors for the supported web services protocols.</p> <p>We
-      assume that you have the IAM permissions that you need to use MediaPackage
-      via the REST API. We also assume that you are familiar with the features
-      and operations of MediaPackage, as described in the AWS Elemental
-      MediaPackage User Guide.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/mediapackagev2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/mediapackagev2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/mediapackagev2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:mediapackagev2
   - name: AWS MemoryDB for Redis
     description: >-
       <p>MemoryDB for Redis is a fully managed, Redis-compatible, in-memory
@@ -6436,37 +6275,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/memorydb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:memorydb
-  - name: AWS Migration Hub
-    description: >-
-      <p>The AWS Migration Hub home region APIs are available specifically for
-      working with your Migration Hub home region. You can use these APIs to
-      determine a home region, as well as to create and work with controls that
-      describe the home region.</p> <ul> <li> <p>You must make API calls for
-      write actions (create, notify, associate, disassociate, import, or put)
-      while in your home region, or a <code>HomeRegionNotSetException</code>
-      error is returned.</p> </li> <li> <p>API calls for read actions (list,
-      describe, stop, and delete) are permitted outside of your home region.</p>
-      </li> <li> <p>If you call a write API outside the home region, an
-      <code>InvalidInputException</code> is returned.</p> </li> <li> <p>You can
-      call <code>GetHomeRegion</code> action to obtain the account's Migration
-      Hub home region.</p> </li> </ul> <p>For specific API usage, see the
-      sections that follow in this AWS Migration Hub Home Region API reference.
-      </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/migrationhub-config-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/migrationhub-config-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/migrationhub-config-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:migrationhub-config
   - name: AWS Migration Hub Strategy Recommendations
     description: >-
       <p><fullname>Migration Hub Strategy Recommendations</fullname> <p>This API
@@ -6515,27 +6323,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhuborchestrator-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhuborchestrator
-  - name: AWS Mobile
-    description: >-
-      <p> AWS Mobile Service provides mobile app and website developers with
-      capabilities required to configure AWS resources and bootstrap their
-      developer desktop projects with the necessary SDKs, constants, tools and
-      samples to make use of those resources. </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/mobile-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/mobile-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/mobile-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:mobile
   - name: AWS Elemental MediaTailor
     description: >-
       <p>Use the AWS Elemental MediaTailor SDKs and CLI to configure scalable ad
@@ -6721,23 +6508,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mq-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mq
-  - name: AWS Lex Models
-    description: <p/>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/modelslexv2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/modelslexv2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/modelslexv2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:modelslexv2
   - name: Amazon Neptune Analytics
     description: >-
       <p>Neptune Analytics is a new analytics database engine for Amazon Neptune
@@ -6759,29 +6529,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/neptune-graph-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:neptune-graph
-  - name: Amazon Neptune Data
-    description: >-
-      <p><fullname>Neptune Data API</fullname> <p>The Amazon Neptune data API
-      provides SDK support for more than 40 of Neptune's data operations,
-      including data loading, query execution, data inquiry, and machine
-      learning. It supports the Gremlin and openCypher query languages, and is
-      available in all SDK languages. It automatically signs API requests and
-      greatly simplifies integrating Neptune into your applications.</p></p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/neptunedata-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/neptunedata-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/neptunedata-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:neptunedata
   - name: Amazon Nimble Studio
     description: >-
       <p>Welcome to the Amazon Nimble Studio API reference. This API reference
@@ -7192,75 +6939,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/panorama-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:panorama
-  - name: AWS OpsWorks
-    description: >-
-      <fullname>AWS OpsWorks</fullname> <p>Welcome to the <i>AWS OpsWorks Stacks
-      API Reference</i>. This guide provides descriptions, syntax, and usage
-      examples for AWS OpsWorks Stacks actions and data types, including common
-      parameters and error codes. </p> <p>AWS OpsWorks Stacks is an application
-      management service that provides an integrated experience for overseeing
-      the complete application lifecycle. For information about this product, go
-      to the <a href="http://aws.amazon.com/opsworks/">AWS OpsWorks</a> details
-      page. </p> <p> <b>SDKs and CLI</b> </p> <p>The most common way to use the
-      AWS OpsWorks Stacks API is by using the AWS Command Line Interface (CLI)
-      or by using one of the AWS SDKs to implement applications in your
-      preferred language. For more information, see:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html">AWS
-      CLI</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/opsworks/AWSOpsWorksClient.html">AWS
-      SDK for Java</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdkfornet/latest/apidocs/html/N_Amazon_OpsWorks.htm">AWS
-      SDK for .NET</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/aws-sdk-php-2/latest/class-Aws.OpsWorks.OpsWorksClient.html">AWS
-      SDK for PHP 2</a> </p> </li> <li> <p> <a
-      href="http://docs.aws.amazon.com/sdkforruby/api/">AWS SDK for Ruby</a>
-      </p> </li> <li> <p> <a
-      href="http://aws.amazon.com/documentation/sdkforjavascript/">AWS SDK for
-      Node.js</a> </p> </li> <li> <p> <a
-      href="http://docs.pythonboto.org/en/latest/ref/opsworks.html">AWS SDK for
-      Python(Boto)</a> </p> </li> </ul> <p> <b>Endpoints</b> </p> <p>AWS
-      OpsWorks Stacks supports the following endpoints, all HTTPS. You must
-      connect to one of the following endpoints. Stacks can only be accessed or
-      managed within the endpoint in which they are created.</p> <ul> <li>
-      <p>opsworks.us-east-1.amazonaws.com</p> </li> <li>
-      <p>opsworks.us-east-2.amazonaws.com</p> </li> <li>
-      <p>opsworks.us-west-1.amazonaws.com</p> </li> <li>
-      <p>opsworks.us-west-2.amazonaws.com</p> </li> <li>
-      <p>opsworks.ca-central-1.amazonaws.com (API only; not available in the AWS
-      console)</p> </li> <li> <p>opsworks.eu-west-1.amazonaws.com</p> </li> <li>
-      <p>opsworks.eu-west-2.amazonaws.com</p> </li> <li>
-      <p>opsworks.eu-west-3.amazonaws.com</p> </li> <li>
-      <p>opsworks.eu-central-1.amazonaws.com</p> </li> <li>
-      <p>opsworks.ap-northeast-1.amazonaws.com</p> </li> <li>
-      <p>opsworks.ap-northeast-2.amazonaws.com</p> </li> <li>
-      <p>opsworks.ap-south-1.amazonaws.com</p> </li> <li>
-      <p>opsworks.ap-southeast-1.amazonaws.com</p> </li> <li>
-      <p>opsworks.ap-southeast-2.amazonaws.com</p> </li> <li>
-      <p>opsworks.sa-east-1.amazonaws.com</p> </li> </ul> <p> <b>Chef
-      Versions</b> </p> <p>When you call <a>CreateStack</a>, <a>CloneStack</a>,
-      or <a>UpdateStack</a> we recommend you use the
-      <code>ConfigurationManager</code> parameter to specify the Chef version.
-      The recommended and default value for Linux stacks is currently 12.
-      Windows stacks use Chef 12.2. For more information, see <a
-      href="https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-chef11.html">Chef
-      Versions</a>.</p> <note> <p>You can specify Chef 12, 11.10, or 11.4 for
-      your Linux stack. We recommend migrating your existing Linux stacks to
-      Chef 12 as soon as possible.</p> </note>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/opsworks-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/opsworks-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/opsworks-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:opsworks
   - name: AWS Payment Cryptography Control Plane
     description: >-
       <p>Amazon Web Services Payment Cryptography Control Plane APIs manage
@@ -7394,23 +7072,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/outposts-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:outposts
-  - name: AWS Personalize Runtime
-    description: <p/>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/personalize-runtime-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/personalize-runtime-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/personalize-runtime-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:personalize-runtime
   - name: Amazon Personalize
     description: >-
       <p>Amazon Personalize is a machine learning service that makes it easy to
@@ -7430,36 +7091,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/personalize-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:personalize
-  - name: AWS Payment Cryptography Data Plane
-    description: >-
-      <p>You use the Amazon Web Services Payment Cryptography Data Plane to
-      manage how encryption keys are used for payment-related transaction
-      processing and associated cryptographic operations. You can encrypt,
-      decrypt, generate, verify, and translate payment-related cryptographic
-      operations in Amazon Web Services Payment Cryptography. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/payment-cryptography/latest/userguide/data-operations.html">Data
-      operations</a> in the <i>Amazon Web Services Payment Cryptography User
-      Guide</i>.</p> <p>To manage your encryption keys, you use the <a
-      href="https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/Welcome.html">Amazon
-      Web Services Payment Cryptography Control Plane</a>. You can create,
-      import, export, share, manage, and delete keys. You can also manage
-      Identity and Access Management (IAM) policies for keys. </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/payment-cryptography-data-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/payment-cryptography-data-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/payment-cryptography-data-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:payment-cryptography-data
   - name: Amazon Pinpoint Email
     description: >-
       <fullname>Amazon Pinpoint Email Service</fullname> <p>Welcome to the
@@ -7514,23 +7145,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/pinpoint-email-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pinpoint-email
-  - name: Amazon Doc Engage
-    description: <p>Doc Engage API - Amazon Pinpoint API</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/pinpoint-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/pinpoint-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/pinpoint-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:pinpoint
   - name: Amazon Pinpoint SMS and Voice
     description: >-
       <p>Welcome to the <i>Amazon Pinpoint SMS and Voice, version 2 API
@@ -8147,23 +7761,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/redshift-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:redshift-data
-  - name: Amazon QLDB
-    description: <p>The resource management API for Amazon QLDB</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/qldb-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/qldb-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/qldb-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:qldb
   - name: AWS Rekognition
     description: >-
       <p>This is the API Reference for <a
@@ -8476,23 +8073,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/repostspace-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:repostspace
-  - name: Amazon RDS
-    description: null
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/rds-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/rds-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/rds-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:rds
   - name: AWS Identity and Access Management Roles Anywhere
     description: >-
       <p>Identity and Access Management Roles Anywhere provides a secure way for
@@ -8817,25 +8397,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/rum-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rum
-  - name: Amazon Lex V2 Runtime
-    description: >-
-      <p>This section contains documentation for the Amazon Lex V2 Runtime V2
-      API operations.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/runtimelexv2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/runtimelexv2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/runtimelexv2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:runtimelexv2
   - name: AWS Route 53 Recovery Control Configuration
     description: >-
       <p>Recovery Control Configuration API Reference for Amazon Route 53
@@ -9331,23 +8892,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/service-quotas-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:service-quotas
-  - name: Amazon SageMaker Runtime
-    description: <p> The Amazon SageMaker runtime API. </p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/runtimesagemaker-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/runtimesagemaker-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/runtimesagemaker-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:runtimesagemaker
   - name: AWS Cloud Map
     description: >-
       <fullname>Cloud Map</fullname> <p>With Cloud Map, you can configure public
@@ -9395,32 +8939,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/servicecatalog-appregistry-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:servicecatalog-appregistry
-  - name: Amazon SES
-    description: >-
-      <fullname>Amazon SES API v2</fullname> <p> <a
-      href="http://aws.amazon.com/ses">Amazon SES</a> is an Amazon Web Services
-      service that you can use to send email messages to your customers.</p>
-      <p>If you're new to Amazon SES API v2, you might find it helpful to review
-      the <a
-      href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/">Amazon
-      Simple Email Service Developer Guide</a>. The <i>Amazon SES Developer
-      Guide</i> provides information and code samples that demonstrate how to
-      use Amazon SES API v2 features programmatically.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/sesv2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/sesv2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/sesv2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:sesv2
   - name: AWS Shield Advanced
     description: >-
       <fullname>Shield Advanced</fullname> <p>This is the <i>Shield Advanced API
@@ -9506,23 +9024,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sms
-  - name: AWS Pinpoint SMS and Voice Messaging
-    description: Pinpoint SMS and Voice Messaging public facing APIs
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/sms-voice-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/sms-voice-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/sms-voice-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:sms-voice
   - name: Amazon Web Services Snow Device Management
     description: <p>Amazon Web Services Snow Device Management documentation.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9631,35 +9132,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/securityhub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:securityhub
-  - name: AWS Snowball
-    description: >-
-      <p>The Amazon Web Services Snow Family provides a petabyte-scale data
-      transport solution that uses secure devices to transfer large amounts of
-      data between your on-premises data centers and Amazon Simple Storage
-      Service (Amazon S3). The Snow Family commands described here provide
-      access to the same functionality that is available in the Amazon Web
-      Services Snow Family Management Console, which enables you to create and
-      manage jobs for a Snow Family device. To transfer data locally with a Snow
-      Family device, you'll need to use the Snowball Edge client or the Amazon
-      S3 API Interface for Snowball or OpsHub for Snow Family. For more
-      information, see the <a
-      href="https://docs.aws.amazon.com/AWSImportExport/latest/ug/api-reference.html">User
-      Guide</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/snowball-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/snowball-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/snowball-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:snowball
   - name: Amazon Simple Notification Service
     description: >-
       <fullname>Amazon Simple Notification Service</fullname> <p>Amazon Simple
@@ -9940,73 +9412,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ssm-sap-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ssm-sap
-  - name: AWS IAM Identity Center
-    description: >-
-      <p>IAM Identity Center (successor to Single Sign-On) helps you securely
-      create, or connect, your workforce identities and manage their access
-      centrally across Amazon Web Services accounts and applications. IAM
-      Identity Center is the recommended approach for workforce authentication
-      and authorization in Amazon Web Services, for organizations of any size
-      and type.</p> <note> <p>IAM Identity Center uses the <code>sso</code> and
-      <code>identitystore</code> API namespaces.</p> </note> <p>This reference
-      guide provides information on single sign-on operations which could be
-      used for access management of Amazon Web Services accounts. For
-      information about IAM Identity Center features, see the <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">IAM
-      Identity Center User Guide</a>.</p> <p>Many operations in the IAM Identity
-      Center APIs rely on identifiers for users and groups, known as principals.
-      For more information about how to work with principals and principal IDs
-      in IAM Identity Center, see the <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/welcome.html">Identity
-      Store API Reference</a>.</p> <note> <p>Amazon Web Services provides SDKs
-      that consist of libraries and sample code for various programming
-      languages and platforms (Java, Ruby, .Net, iOS, Android, and more). The
-      SDKs provide a convenient way to create programmatic access to IAM
-      Identity Center and other Amazon Web Services services. For more
-      information about the Amazon Web Services SDKs, including how to download
-      and install them, see <a href="http://aws.amazon.com/tools/">Tools for
-      Amazon Web Services</a>.</p> </note>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/sso-admin-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/sso-admin-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/sso-admin-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:sso-admin
-  - name: AWS Systems Manager Incident Manager
-    description: >-
-      <p>Systems Manager Incident Manager is an incident management console
-      designed to help users mitigate and recover from incidents affecting their
-      Amazon Web Services-hosted applications. An incident is any unplanned
-      interruption or reduction in quality of services.</p> <p>Incident Manager
-      increases incident resolution by notifying responders of impact,
-      highlighting relevant troubleshooting data, and providing collaboration
-      tools to get services back up and running. To achieve the primary goal of
-      reducing the time-to-resolution of critical incidents, Incident Manager
-      automates response plans and enables responder team escalation.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/ssm-contacts-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/ssm-contacts-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/ssm-contacts-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:ssm-contacts
   - name: AWS Step Functions
     description: >-
       <fullname>Step Functions</fullname> <p>Step Functions is a service that
@@ -10048,59 +9453,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/states-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:states
-  - name: AWS IAM Identity Center OpenID Connect (OIDC)
-    description: >-
-      <p>IAM Identity Center OpenID Connect (OIDC) is a web service that enables
-      a client (such as CLI or a native application) to register with IAM
-      Identity Center. The service also enables the client to fetch the user’s
-      access token upon successful authentication and authorization with IAM
-      Identity Center.</p> <note> <p>IAM Identity Center uses the
-      <code>sso</code> and <code>identitystore</code> API namespaces.</p>
-      </note> <p> <b>Considerations for Using This Guide</b> </p> <p>Before you
-      begin using this guide, we recommend that you first review the following
-      important information about how the IAM Identity Center OIDC service
-      works.</p> <ul> <li> <p>The IAM Identity Center OIDC service currently
-      implements only the portions of the OAuth 2.0 Device Authorization Grant
-      standard (<a
-      href="https://tools.ietf.org/html/rfc8628">https://tools.ietf.org/html/rfc8628</a>)
-      that are necessary to enable single sign-on authentication with the CLI.
-      </p> </li> <li> <p>With older versions of the CLI, the service only emits
-      OIDC access tokens, so to obtain a new token, users must explicitly
-      re-authenticate. To access the OIDC flow that supports token refresh and
-      doesn’t require re-authentication, update to the latest CLI version
-      (1.27.10 for CLI V1 and 2.9.0 for CLI V2) with support for OIDC token
-      refresh and configurable IAM Identity Center session durations. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/userguide/configure-user-session.html">Configure
-      Amazon Web Services access portal session duration </a>. </p> </li> <li>
-      <p>The access tokens provided by this service grant access to all Amazon
-      Web Services account entitlements assigned to an IAM Identity Center user,
-      not just a particular application.</p> </li> <li> <p>The documentation in
-      this guide does not describe the mechanism to convert the access token
-      into Amazon Web Services Auth (“sigv4”) credentials for use with
-      IAM-protected Amazon Web Services service endpoints. For more information,
-      see <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_GetRoleCredentials.html">GetRoleCredentials</a>
-      in the <i>IAM Identity Center Portal API Reference Guide</i>.</p> </li>
-      </ul> <p>For general information about IAM Identity Center, see <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">What
-      is IAM Identity Center?</a> in the <i>IAM Identity Center User
-      Guide</i>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/sso-oidc-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/sso-oidc-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/sso-oidc-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:sso-oidc
   - name: AWS Storage Gateway
     description: >-
       <fullname>Storage Gateway Service</fullname> <p>Storage Gateway is the
@@ -10216,63 +9568,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sts-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sts
-  - name: AWS Support
-    description: >-
-      <fullname>Amazon Web Services Support</fullname> <p>The <i>Amazon Web
-      Services Support API Reference</i> is intended for programmers who need
-      detailed information about the Amazon Web Services Support operations and
-      data types. You can use the API to manage your support cases
-      programmatically. The Amazon Web Services Support API uses HTTP methods
-      that return results in JSON format.</p> <note> <ul> <li> <p>You must have
-      a Business, Enterprise On-Ramp, or Enterprise Support plan to use the
-      Amazon Web Services Support API. </p> </li> <li> <p>If you call the Amazon
-      Web Services Support API from an account that doesn't have a Business,
-      Enterprise On-Ramp, or Enterprise Support plan, the
-      <code>SubscriptionRequiredException</code> error message appears. For
-      information about changing your support plan, see <a
-      href="http://aws.amazon.com/premiumsupport/">Amazon Web Services
-      Support</a>.</p> </li> </ul> </note> <p>You can also use the Amazon Web
-      Services Support API to access features for <a
-      href="http://aws.amazon.com/premiumsupport/trustedadvisor/">Trusted
-      Advisor</a>. You can return a list of checks and their descriptions, get
-      check results, specify checks to refresh, and get the refresh status of
-      checks.</p> <p>You can manage your support cases with the following Amazon
-      Web Services Support API operations:</p> <ul> <li> <p>The
-      <a>CreateCase</a>, <a>DescribeCases</a>, <a>DescribeAttachment</a>, and
-      <a>ResolveCase</a> operations create Amazon Web Services Support cases,
-      retrieve information about cases, and resolve cases.</p> </li> <li> <p>The
-      <a>DescribeCommunications</a>, <a>AddCommunicationToCase</a>, and
-      <a>AddAttachmentsToSet</a> operations retrieve and add communications and
-      attachments to Amazon Web Services Support cases.</p> </li> <li> <p>The
-      <a>DescribeServices</a> and <a>DescribeSeverityLevels</a> operations
-      return Amazon Web Service names, service codes, service categories, and
-      problem severity levels. You use these values when you call the
-      <a>CreateCase</a> operation.</p> </li> </ul> <p>You can also use the
-      Amazon Web Services Support API to call the Trusted Advisor operations.
-      For more information, see <a href="https://docs.aws.amazon.com/">Trusted
-      Advisor</a> in the <i>Amazon Web Services Support User Guide</i>.</p>
-      <p>For authentication of requests, Amazon Web Services Support uses <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a>.</p> <p>For more information about this
-      service and the endpoints to use, see <a
-      href="https://docs.aws.amazon.com/awssupport/latest/user/about-support-api.html">About
-      the Amazon Web Services Support API</a> in the <i>Amazon Web Services
-      Support User Guide</i>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/support-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/support-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/support-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:support
   - name: Amazon Simple Workflow
     description: >-
       <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon Simple
@@ -10304,56 +9599,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/swf-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:swf
-  - name: AWS Support App in Slack
-    description: >-
-      <p><fullname>Amazon Web Services Support App in Slack</fullname> <p>You
-      can use the Amazon Web Services Support App in Slack API to manage your
-      support cases in Slack for your Amazon Web Services account. After you
-      configure your Slack workspace and channel with the Amazon Web Services
-      Support App, you can perform the following tasks directly in your Slack
-      channel:</p> <ul> <li> <p>Create, search, update, and resolve your support
-      cases</p> </li> <li> <p>Request service quota increases for your
-      account</p> </li> <li> <p>Invite Amazon Web Services Support agents to
-      your channel so that you can chat directly about your support cases</p>
-      </li> </ul> <p>For more information about how to perform these actions in
-      Slack, see the following documentation in the <i>Amazon Web Services
-      Support User Guide</i>:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/awssupport/latest/user/aws-support-app-for-slack.html">Amazon
-      Web Services Support App in Slack</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/awssupport/latest/user/joining-a-live-chat-session.html">Joining
-      a live chat session with Amazon Web Services Support</a> </p> </li> <li>
-      <p> <a
-      href="https://docs.aws.amazon.com/awssupport/latest/user/service-quota-increase.html">Requesting
-      service quota increases</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/awssupport/latest/user/support-app-commands.html">Amazon
-      Web Services Support App commands in Slack</a> </p> </li> </ul> <p>You can
-      also use the Amazon Web Services Management Console instead of the Amazon
-      Web Services Support App API to manage your Slack configurations. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/awssupport/latest/user/authorize-slack-workspace.html">Authorize
-      a Slack workspace to enable the Amazon Web Services Support App</a>.</p>
-      <note> <ul> <li> <p>You must have a Business or Enterprise Support plan to
-      use the Amazon Web Services Support App API. </p> </li> <li> <p>For more
-      information about the Amazon Web Services Support App endpoints, see the
-      <a
-      href="https://docs.aws.amazon.com/general/latest/gr/awssupport.html#awssupport_app_region">Amazon
-      Web Services Support App in Slack endpoints</a> in the <i>Amazon Web
-      Services General Reference</i>.</p> </li> </ul> </note></p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/support-app-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/support-app-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/support-app-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:support-app
   - name: Amazon CloudWatch Synthetics
     description: >-
       <fullname>Amazon CloudWatch Synthetics</fullname> <p>You can use Amazon
@@ -10388,29 +9633,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/synthetics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:synthetics
-  - name: Amazon DynamoDB
-    description: >-
-      <fullname>Amazon DynamoDB</fullname> <p>Amazon DynamoDB Streams provides
-      API actions for accessing streams and processing stream records. To learn
-      more about application development with Streams, see <a
-      href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html">Capturing
-      Table Activity with DynamoDB Streams</a> in the Amazon DynamoDB Developer
-      Guide.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/streamsdynamodb-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/streamsdynamodb-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/streamsdynamodb-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:streamsdynamodb
   - name: Amazon Timestream Query
     description: <fullname>Amazon Timestream Query </fullname> <p/>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -10538,33 +9760,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/transcribe-streaming-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:transcribe-streaming
-  - name: Amazon Transcribe
-    description: >-
-      <p>Amazon Transcribe offers three main types of batch transcription:
-      <b>Standard</b>, <b>Medical</b>, and <b>Call Analytics</b>.</p> <ul> <li>
-      <p> <b>Standard transcriptions</b> are the most common option. Refer to
-      for details.</p> </li> <li> <p> <b>Medical transcriptions</b> are tailored
-      to medical professionals and incorporate medical terms. A common use case
-      for this service is transcribing doctor-patient dialogue into after-visit
-      notes. Refer to for details.</p> </li> <li> <p> <b>Call Analytics
-      transcriptions</b> are designed for use with call center audio on two
-      different channels; if you're looking for insight into customer service
-      calls, use this option. Refer to for details.</p> </li> </ul>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/transcribe-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/transcribe-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/transcribe-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:transcribe
   - name: AWS Telco Network Builder (TNB)
     description: >-
       <p> Amazon Web Services Telco Network Builder (TNB) is a network
@@ -10772,29 +9967,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/voice-id-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:voice-id
-  - name: Amazon Connect Wisdom
-    description: >-
-      <p>Amazon Connect Wisdom delivers agents the information they need to
-      solve customer issues as they're actively speaking with customers. Agents
-      can search across connected repositories from within their agent desktop
-      to find answers quickly. Use Amazon Connect Wisdom to create an assistant
-      and a knowledge base, for example, or manage content by uploading custom
-      files.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/wisdom-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/wisdom-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/wisdom-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:wisdom
   - name: AWS WAF Classic Regional
     description: >-
       <note> <p>This is <b>AWS WAF Classic Regional</b> documentation. For more
@@ -10930,32 +10102,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/wafv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:wafv2
-  - name: Amazon WorkLink
-    description: >-
-      <p>Amazon WorkLink is a cloud-based service that provides secure access to
-      internal websites and web apps from iOS and Android phones. In a single
-      step, your users, such as employees, can access internal websites as
-      efficiently as they access any other public website. They enter a URL in
-      their web browser, or choose a link to an internal website in an email.
-      Amazon WorkLink authenticates the user's access and securely renders
-      authorized internal web content in a secure rendering service in the AWS
-      cloud. Amazon WorkLink doesn't download or store any internal web content
-      on mobile devices.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/worklink-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/worklink-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/worklink-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:worklink
   - name: AWS WorkMail
     description: >-
       <p>WorkMail is a secure, managed business email and calendaring service
