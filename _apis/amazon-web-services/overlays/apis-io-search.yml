@@ -10552,125 +10552,130 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/transcribe-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:transcribe
-  - name: tnb
+  - name: AWS Telco Network Builder
     description: >-
-      <p> Amazon Web Services Telco Network Builder (TNB) is a network
-      automation service that helps you deploy and manage telecom networks. AWS
-      TNB helps you with the lifecycle management of your telecommunication
-      network functions throughout planning, deployment, and post-deployment
-      activities.</p>
+      The Amazon Web Services Telco Network Builder (TNB) is a network
+      automation service designed to assist in the deployment and management of
+      telecom networks. With AWS TNB, users can efficiently manage the lifecycle
+      of their telecommunication network functions, from initial planning to
+      deployment and ongoing maintenance.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/tnb/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/tnb/
       - type: OpenAPI
         url: properties/tnb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/tnb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/tnb/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/tnb/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/tnb-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/tnb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:tnb
-  - name: translate
+  - name: AWS Translate
     description: >-
-      <p>Provides translation of the input content from the source language to
-      the target language.</p>
+      Amazon Translate enables users to adapt content for a global audience and
+      efficiently translate and analyze a large amount of text to facilitate
+      communication across different languages.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/translate/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/translate/
       - type: OpenAPI
         url: properties/translate-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/translate/details/
+      - type: Pricing
+        url: https://aws.amazon.com/translate/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/translate/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/translate/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/translate/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/translate/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/translate-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/translate-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:translate
-  - name: verifiedpermissions
+  - name: Amazon Verified Permissions
     description: >-
-      <p>Amazon Verified Permissions is a permissions management service from
-      Amazon Web Services. You can use Verified Permissions to manage
-      permissions for your application, and authorize user access based on those
-      permissions. Using Verified Permissions, application developers can grant
-      access based on information about the users, resources, and requested
-      actions. You can also evaluate additional information like group
-      membership, attributes of the resources, and session context, such as time
-      of request and IP addresses. Verified Permissions manages these
-      permissions by letting you create and store authorization policies for
-      your applications, such as consumer-facing web sites and enterprise
-      business systems.</p> <p>Verified Permissions uses Cedar as the policy
-      language to express your permission requirements. Cedar supports both
+      Amazon Web Services offers Amazon Verified Permissions, a comprehensive
+      permissions management service for applications. By utilizing Verified
+      Permissions, developers can control user access through authorization
+      based on various factors such as user information, resource attributes,
+      and requested actions. This service allows for the creation and storage of
+      authorization policies using the Cedar policy language, supporting both
       role-based access control (RBAC) and attribute-based access control (ABAC)
-      authorization models.</p> <p>For more information about configuring,
-      administering, and using Amazon Verified Permissions in your applications,
-      see the <a
-      href="https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/">Amazon
-      Verified Permissions User Guide</a>.</p> <p>For more information about the
-      Cedar policy language, see the <a
-      href="https://docs.cedarpolicy.com/">Cedar Policy Language Guide</a>.</p>
-      <important> <p>When you write Cedar policies that reference principals,
-      resources and actions, you can define the unique identifiers used for each
-      of those elements. We strongly recommend that you follow these best
-      practices:</p> <ul> <li> <p> <b>Use values like universally unique
-      identifiers (UUIDs) for all principal and resource identifiers.</b> </p>
-      <p>For example, if user <code>jane</code> leaves the company, and you
-      later let someone else use the name <code>jane</code>, then that new user
-      automatically gets access to everything granted by policies that still
-      reference <code>User::"jane"</code>. Cedar can’t distinguish between the
-      new user and the old. This applies to both principal and resource
-      identifiers. Always use identifiers that are guaranteed unique and never
-      reused to ensure that you don’t unintentionally grant access because of
-      the presence of an old identifier in a policy.</p> <p>Where you use a UUID
-      for an entity, we recommend that you follow it with the // comment
-      specifier and the ‘friendly’ name of your entity. This helps to make your
-      policies easier to understand. For example: principal ==
-      User::"a1b2c3d4-e5f6-a1b2-c3d4-EXAMPLE11111", // alice</p> </li> <li> <p>
-      <b>Do not include personally identifying, confidential, or sensitive
-      information as part of the unique identifier for your principals or
-      resources.</b> These identifiers are included in log entries shared in
-      CloudTrail trails.</p> </li> </ul> </important> <p>Several operations
-      return structures that appear similar, but have different purposes. As new
-      functionality is added to the product, the structure used in a parameter
-      of one operation might need to change in a way that wouldn't make sense
-      for the same parameter in a different operation. To help you understand
-      the purpose of each, the following naming convention is used for the
-      structures:</p> <ul> <li> <p>Parameter type structures that end in
-      <code>Detail</code> are used in <code>Get</code> operations.</p> </li>
-      <li> <p>Parameter type structures that end in <code>Item</code> are used
-      in <code>List</code> operations.</p> </li> <li> <p>Parameter type
-      structures that use neither suffix are used in the mutating (create and
-      update) operations.</p> </li> </ul>
+      models. The Amazon Verified Permissions User Guide provides detailed
+      information on how to configure and administer this service in your
+      applications. Additionally, the Cedar Policy Language Guide offers
+      insights into crafting Cedar policies with unique identifiers for
+      principals, resources, and actions, emphasizing the use of universally
+      unique identifiers (UUIDs) to prevent unintentional access grants. Best
+      practices also advise against including sensitive information in
+      identifiers, as they may appear in log entries in CloudTrail trails.
+      Furthermore, naming conventions for structures in different operations
+      help clarify their purposes and usage within the service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/verified-permissions/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/verified-permissions/
       - type: OpenAPI
         url: properties/verifiedpermissions-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/verified-permissions/features/
+      - type: Getting Started
+        url: https://aws.amazon.com/verified-permissions/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/verified-permissions/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/verified-permissions/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/verified-permissions/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/verified-permissions/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/verifiedpermissions-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/verifiedpermissions-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:verifiedpermissions
-  - name: trustedadvisor
-    description: <p>TrustedAdvisor Public API</p>
+  - name: AWS TrustedAdvisor
+    description: >-
+      The AWS Trusted Advisor API offers a comprehensive solution to help users
+      optimize costs, enhance performance, bolster security and resilience, and
+      effectively operate in the cloud at scale. By continuously assessing your
+      AWS environment against industry best practices in categories like cost
+      optimization, performance, resilience, security, operational excellence,
+      and service limits, Trusted Advisor provides actionable recommendations to
+      address any areas of concern. With Trusted Advisor Priority, Enterprise
+      Support customers can efficiently prioritize and address the most critical
+      recommendations with the guidance of their AWS account team.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
       - type: OpenAPI
         url: properties/trustedadvisor-openapi-original.yml
     overlays:
@@ -10679,25 +10684,30 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/trustedadvisor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:trustedadvisor
-  - name: vpc-lattice
+  - name: Amazon VPC Lattice
     description: >-
-      <p>Amazon VPC Lattice is a fully managed application networking service
-      that you use to connect, secure, and monitor all of your services across
-      multiple accounts and virtual private clouds (VPCs). Amazon VPC Lattice
-      interconnects your microservices and legacy services within a logical
-      boundary, so that you can discover and manage them more efficiently. For
-      more information, see the <a
-      href="https://docs.aws.amazon.com/vpc-lattice/latest/ug/">Amazon VPC
-      Lattice User Guide</a> </p>
+      The Amazon VPC Lattice API is a comprehensive managed application
+      networking service designed to seamlessly connect, secure, and monitor all
+      services within your organization's various accounts and virtual private
+      clouds. By providing a logical boundary for interconnecting microservices
+      and legacy services, Amazon VPC Lattice enhances the efficiency of
+      discovery and management. Consult the Amazon VPC Lattice User Guide for
+      further details.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/vpc/lattice/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/vpc/lattice/
       - type: OpenAPI
         url: properties/vpc-lattice-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/vpc/lattice/features/
+      - type: Pricing
+        url: https://aws.amazon.com/vpc/lattice/pricing/
+      - type: FAQs
+        url: https://aws.amazon.com/vpc/lattice/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/vpc-lattice-openapi-search.yml
