@@ -10714,33 +10714,27 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/vpc-lattice-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:vpc-lattice
-  - name: waf
+  - name: AWS WAF Classic
     description: >-
-      <note> <p>This is <b>AWS WAF Classic</b> documentation. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p> <p> <b>For the latest version
-      of AWS WAF</b>, use the AWS WAFV2 API and see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">AWS
-      WAF Developer Guide</a>. With the latest version, AWS WAF has a single set
-      of endpoints for regional and global use. </p> </note> <p>This is the
-      <i>AWS WAF Classic API Reference</i> for using AWS WAF Classic with Amazon
-      CloudFront. The AWS WAF Classic actions and data types listed in the
-      reference are available for protecting Amazon CloudFront distributions.
-      You can use these actions and data types via the endpoint
-      <i>waf.amazonaws.com</i>. This guide is for developers who need detailed
-      information about the AWS WAF Classic API actions, data types, and errors.
-      For detailed information about AWS WAF Classic features and an overview of
-      how to use the AWS WAF Classic API, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p>
+      My API, AWS WAF Classic, is a web application firewall that allows you to
+      monitor HTTP and HTTPS requests directed towards Amazon API Gateway API,
+      Amazon CloudFront, or an Application Load Balancer. Additionally, AWS WAF
+      Classic enables you to manage access to your content by setting conditions
+      such as originating IP addresses or query string values. Depending on
+      these conditions, API Gateway, CloudFront, or an Application Load Balancer
+      can either fulfill the request with the desired content or respond with an
+      HTTP 403 status code (Forbidden). Furthermore, you have the ability to
+      configure CloudFront to display a custom error page when a request is
+      blocked.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html
       - type: OpenAPI
         url: properties/waf-openapi-original.yml
     overlays:
@@ -10749,20 +10743,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/waf-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:waf
-  - name: voice-id
+  - name: Amazon Connect Voice ID
     description: >-
-      <p>Amazon Connect Voice ID provides real-time caller authentication and
-      fraud risk detection, which make voice interactions in contact centers
-      more secure and efficient.</p>
+      Amazon Connect Voice ID is a cutting-edge feature within Amazon Connect
+      that leverages machine learning technology to revolutionize caller
+      authentication and fraud prevention in voice interactions. While
+      traditional contact centers rely on time-consuming knowledge-based
+      authentication methods, Voice ID uses the caller's unique voice
+      characteristics to provide instant and accurate caller verification at a
+      minimal cost. By analyzing voice patterns in real-time, the system enables
+      agents and IVR systems to quickly and securely confirm caller identity
+      without the need for laborious personal questions. Additionally, Voice ID
+      actively screens for potential fraudsters by cross-referencing against a
+      customizable watchlist, effectively reducing the risk of fraudulent
+      attacks and minimizing financial losses for businesses.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/voice-id/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/voice-id/
       - type: OpenAPI
         url: properties/voice-id-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/connect/features/
     overlays:
       - type: APIs.io Search
         url: overlays/voice-id-openapi-search.yml
@@ -10771,12 +10776,13 @@ apis:
     aid: amazon-web-services:voice-id
   - name: wisdom
     description: >-
-      <p>Amazon Connect Wisdom delivers agents the information they need to
-      solve customer issues as they're actively speaking with customers. Agents
-      can search across connected repositories from within their agent desktop
-      to find answers quickly. Use Amazon Connect Wisdom to create an assistant
-      and a knowledge base, for example, or manage content by uploading custom
-      files.</p>
+      Amazon Connect Wisdom is an API that provides agents with real-time access
+      to the information they require to resolve customer queries while in
+      conversation with customers. It enables agents to search through
+      integrated repositories directly from their agent interface in order to
+      locate solutions promptly. With Amazon Connect Wisdom, users can develop
+      an assistant and a knowledge base, as well as organize content through the
+      uploading of custom files.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -10792,36 +10798,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/wisdom-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:wisdom
-  - name: waf-regional
+  - name: AWS WAF Classic Regional
     description: >-
-      <note> <p>This is <b>AWS WAF Classic Regional</b> documentation. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p> <p> <b>For the latest version
-      of AWS WAF</b>, use the AWS WAFV2 API and see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">AWS
-      WAF Developer Guide</a>. With the latest version, AWS WAF has a single set
-      of endpoints for regional and global use. </p> </note> <p>This is the
-      <i>AWS WAF Regional Classic API Reference</i> for using AWS WAF Classic
-      with the AWS resources, Elastic Load Balancing (ELB) Application Load
-      Balancers and API Gateway APIs. The AWS WAF Classic actions and data types
-      listed in the reference are available for protecting Elastic Load
-      Balancing (ELB) Application Load Balancers and API Gateway APIs. You can
-      use these actions and data types by means of the endpoints listed in <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#waf_region">AWS
-      Regions and Endpoints</a>. This guide is for developers who need detailed
-      information about the AWS WAF Classic API actions, data types, and errors.
-      For detailed information about AWS WAF Classic features and an overview of
-      how to use the AWS WAF Classic API, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p>
+      This is the API documentation for AWS WAF Classic Regional, intended for
+      developers who are implementing AWS WAF Classic with AWS resources such as
+      Elastic Load Balancing (ELB) Application Load Balancers and API Gateway
+      APIs. For the most up-to-date version of AWS WAF, refer to the AWS WAFV2
+      API and Developer Guide, which now offers a unified set of endpoints for
+      both regional and global use. The AWS WAF Regional Classic API Reference
+      provides detailed information on AWS WAF Classic actions and data types
+      for protecting ELB Application Load Balancers and API Gateway APIs.
+      Developers can access these actions and data types through the listed
+      endpoints in AWS Regions and Endpoints. This guide is designed to offer
+      comprehensive information on API actions, data types, and errors for
+      developers using AWS WAF Classic. Additional resources and detailed
+      instructions on utilizing AWS WAF Classic can be found in the AWS WAF
+      Classic developer guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_AWS_WAF_Regional.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_AWS_WAF_Regional.html
       - type: OpenAPI
         url: properties/waf-regional-openapi-original.yml
     overlays:
@@ -10830,95 +10831,58 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/waf-regional-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:waf-regional
-  - name: wellarchitected
+  - name: AWS Well-Architected Tool
     description: >-
-      <fullname>Well-Architected Tool</fullname> <p>This is the
-      <i>Well-Architected Tool API Reference</i>. The WA Tool API provides
-      programmatic access to the <a
-      href="http://aws.amazon.com/well-architected-tool">Well-Architected
-      Tool</a> in the <a
-      href="https://console.aws.amazon.com/wellarchitected">Amazon Web Services
-      Management Console</a>. For information about the Well-Architected Tool,
-      see the <a
-      href="https://docs.aws.amazon.com/wellarchitected/latest/userguide/intro.html">Well-Architected
-      Tool User Guide</a>.</p>
+      The API offered by the AWS Well Architected Tool serves as a reliable
+      framework to assess your cloud architecture, enabling you to develop
+      scalable designs that can adapt and grow over time.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/well-architected-tool/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/well-architected-tool/
       - type: OpenAPI
         url: properties/wellarchitected-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/well-architected-tool/features/
+      - type: Pricing
+        url: https://aws.amazon.com/well-architected-tool/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/well-architected-tool/partners/
+      - type: Customers
+        url: https://aws.amazon.com/well-architected-tool/customers/
+      - type: FAQs
+        url: https://aws.amazon.com/well-architected-tool/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/well-architected-tool/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/wellarchitected-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/wellarchitected-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:wellarchitected
-  - name: wafv2
+  - name: AWS WAF
     description: >-
-      <fullname>WAF</fullname> <note> <p>This is the latest version of the
-      <b>WAF</b> API, released in November, 2019. The names of the entities that
-      you use to access this API, like endpoints and namespaces, all have the
-      versioning information added, like "V2" or "v2", to distinguish from the
-      prior version. We recommend migrating your resources to this version,
-      because it has a number of significant improvements.</p> <p>If you used
-      WAF prior to this release, you can't use this WAFV2 API to access any WAF
-      resources that you created before. You can access your old rules, web
-      ACLs, and other WAF resources only through the WAF Classic APIs. The WAF
-      Classic APIs have retained the prior names, endpoints, and namespaces.
-      </p> <p>For information, including how to migrate your WAF resources to
-      this version, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">WAF
-      Developer Guide</a>. </p> </note> <p>WAF is a web application firewall
-      that lets you monitor the HTTP and HTTPS requests that are forwarded to an
-      Amazon CloudFront distribution, Amazon API Gateway REST API, Application
-      Load Balancer, AppSync GraphQL API, Amazon Cognito user pool, App Runner
-      service, or Amazon Web Services Verified Access instance. WAF also lets
-      you control access to your content, to protect the Amazon Web Services
-      resource that WAF is monitoring. Based on conditions that you specify,
-      such as the IP addresses that requests originate from or the values of
-      query strings, the protected resource responds to requests with either the
-      requested content, an HTTP 403 status code (Forbidden), or with a custom
-      response. </p> <p>This API guide is for developers who need detailed
-      information about WAF API actions, data types, and errors. For detailed
-      information about WAF features and guidance for configuring and using WAF,
-      see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html">WAF
-      Developer Guide</a>.</p> <p>You can make calls using the endpoints listed
-      in <a href="https://docs.aws.amazon.com/general/latest/gr/waf.html">WAF
-      endpoints and quotas</a>. </p> <ul> <li> <p>For regional applications, you
-      can use any of the endpoints in the list. A regional application can be an
-      Application Load Balancer (ALB), an Amazon API Gateway REST API, an
-      AppSync GraphQL API, an Amazon Cognito user pool, an App Runner service,
-      or an Amazon Web Services Verified Access instance. </p> </li> <li> <p>For
-      Amazon CloudFront applications, you must use the API endpoint listed for
-      US East (N. Virginia): us-east-1.</p> </li> </ul> <p>Alternatively, you
-      can use one of the Amazon Web Services SDKs to access an API that's
-      tailored to the programming language or platform that you're using. For
-      more information, see <a href="http://aws.amazon.com/tools/#SDKs">Amazon
-      Web Services SDKs</a>.</p> <p>We currently provide two versions of the WAF
-      API: this API and the prior versions, the classic WAF APIs. This new API
-      provides the same functionality as the older versions, with the following
-      major improvements:</p> <ul> <li> <p>You use one API for both global and
-      regional applications. Where you need to distinguish the scope, you
-      specify a <code>Scope</code> parameter and set it to
-      <code>CLOUDFRONT</code> or <code>REGIONAL</code>. </p> </li> <li> <p>You
-      can define a web ACL or rule group with a single call, and update it with
-      a single call. You define all rule specifications in JSON format, and pass
-      them to your rule group or web ACL calls.</p> </li> <li> <p>The limits WAF
-      places on the use of rules more closely reflects the cost of running each
-      type of rule. Rule groups include capacity settings, so you know the
-      maximum cost of a rule group when you use it.</p> </li> </ul>
+      AWS WAF is a powerful web application firewall designed to safeguard your
+      AWS resources by monitoring and managing incoming web requests. It offers
+      protection for various resources like Amazon CloudFront distributions,
+      Amazon API Gateway REST APIs, Application Load Balancers, and AWS AppSync
+      GraphQL APIs. By setting up specific conditions, you can customize how AWS
+      WAF inspects web requests, such as filtering based on IP address, request
+      component values, or request rate. You can then take action on matching
+      requests, whether it's counting, blocking, allowing, or issuing challenges
+      like CAPTCHA puzzles to the client user or browser. Overall, AWS WAF
+      provides a flexible and proactive security solution for your web
+      applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/waf/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/waf/
       - type: OpenAPI
         url: properties/wafv2-openapi-original.yml
     overlays:
@@ -10953,182 +10917,174 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/worklink-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:worklink
-  - name: workmail
+  - name: Amazon WorkMail
     description: >-
-      <p>WorkMail is a secure, managed business email and calendaring service
-      with support for existing desktop and mobile email clients. You can access
-      your email, contacts, and calendars using Microsoft Outlook, your browser,
-      or other native iOS and Android email applications. You can integrate
-      WorkMail with your existing corporate directory and control both the keys
-      that encrypt your data and the location in which your data is stored.</p>
-      <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li>
-      <p>Listing and describing organizations</p> </li> </ul> <ul> <li>
-      <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li>
-      </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API
-      operations are Amazon-authenticated and certificate-signed. They not only
-      require the use of the AWS SDK, but also allow for the exclusive use of
-      AWS Identity and Access Management users and roles to help facilitate
-      access, trust, and permission policies. By creating a role and allowing an
-      IAM user to access the WorkMail site, the IAM user gains full
-      administrative visibility into the entire WorkMail organization (or as set
-      in the IAM policy). This includes, but is not limited to, the ability to
-      create, update, and delete users, groups, and resources. This allows
-      developers to perform the scenarios listed above, as well as give users
-      the ability to grant access on a selective basis using the IAM model.</p>
+      Amazon WorkMail is a secure and managed business email and calendar
+      service that allows users to access their email, contacts, and calendars
+      through various client applications such as Microsoft Outlook, native iOS
+      and Android email apps, and web browsers. It supports integration with
+      corporate directories, email journaling for compliance, encryption key
+      control, and data storage location control. Additionally, Amazon WorkMail
+      offers interoperability with Microsoft Exchange Server and programmable
+      management of users, groups, and resources through the Amazon WorkMail
+      SDK.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workmail/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workmail/
       - type: OpenAPI
         url: properties/workmail-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/workmail/features/
+      - type: Pricing
+        url: https://aws.amazon.com/workmail/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/workmail/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/workmail/faqs/
+      - type: Features
+        url: https://aws.amazon.com/workmail/features/
     overlays:
       - type: APIs.io Search
         url: overlays/workmail-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/workmail-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:workmail
-  - name: workspaces
+  - name: Amazon WorkSpaces
     description: >-
-      <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces
-      enables you to provision virtual, cloud-based Microsoft Windows or Amazon
-      Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces
-      eliminates the need to procure and deploy hardware or install complex
-      software. You can quickly add or remove users as your needs change. Users
-      can access their virtual desktops from multiple devices or web
-      browsers.</p> <p>This API Reference provides detailed information about
-      the actions, data types, parameters, and errors of the WorkSpaces service.
-      For more information about the supported Amazon Web Services Regions,
-      endpoints, and service quotas of the Amazon WorkSpaces service, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces
-      endpoints and quotas</a> in the <i>Amazon Web Services General
-      Reference</i>.</p> <p>You can also manage your WorkSpaces resources using
-      the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more
-      information about administering WorkSpaces, see the <a
-      href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon
-      WorkSpaces Administration Guide</a>. For more information about using the
-      Amazon WorkSpaces client application or web browser to access provisioned
-      WorkSpaces, see the <a
-      href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon
-      WorkSpaces User Guide</a>. For more information about using the CLI to
-      manage your WorkSpaces resources, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces
-      section of the CLI Reference</a>.</p>
+      Amazon WorkSpaces Service is a cloud-based platform that allows you to
+      easily provision virtual desktops for your users, eliminating the need for
+      hardware procurement and complex software installation. With WorkSpaces,
+      you can quickly add or remove users as needed and provide access to
+      virtual desktops from various devices and web browsers. This API Reference
+      provides detailed information on the actions, data types, parameters, and
+      errors of the WorkSpaces service. You can manage your WorkSpaces resources
+      through the WorkSpaces console, Command Line Interface (CLI), and SDKs.
+      For more information on administering WorkSpaces, accessing WorkSpaces
+      through the client application or web browser, and managing resources with
+      the CLI, refer to the provided guides and references.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workspaces/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workspaces/
       - type: OpenAPI
         url: properties/workspaces-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/workspaces/pricing/
+      - type: Web
+        url: https://aws.amazon.com/workspaces/web/
+      - type: Thin-client
+        url: https://aws.amazon.com/workspaces/thin-client/
+      - type: All-inclusive
+        url: https://aws.amazon.com/workspaces/all-inclusive/
+      - type: Core
+        url: https://aws.amazon.com/workspaces/core/
     overlays:
       - type: APIs.io Search
         url: overlays/workspaces-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/workspaces-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:workspaces
-  - name: workspaces-thin-client
+  - name: Amazon WorkSpaces Thin Client
     description: >-
-      <p>Amazon WorkSpaces Thin Client is a affordable device built to work with
-      Amazon Web Services End User Computing (EUC) virtual desktops to provide
-      users with a complete cloud desktop solution. WorkSpaces Thin Client is a
-      compact device designed to connect up to two monitors and USB devices like
-      a keyboard, mouse, headset, and webcam. To maximize endpoint security,
-      WorkSpaces Thin Client devices do not allow local data storage or
-      installation of unapproved applications. The WorkSpaces Thin Client device
-      ships preloaded with device management software.</p> <p>You can use these
-      APIs to complete WorkSpaces Thin Client tasks, such as creating
-      environments or viewing devices. For more information about WorkSpaces
-      Thin Client, including the required permissions to use the service, see
-      the <a
-      href="https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/">Amazon
-      WorkSpaces Thin Client Administrator Guide</a>. For more information about
-      using the Command Line Interface (CLI) to manage your WorkSpaces Thin
-      Client resources, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/workspaces-thin-client/index.html">WorkSpaces
-      Thin Client section of the CLI Reference</a>.</p>
+      The Amazon WorkSpaces Thin Client API is designed for use with Amazon Web
+      Services End User Computing (EUC) virtual desktops, providing users with a
+      cost-effective cloud desktop solution. The compact WorkSpaces Thin Client
+      device supports up to two monitors and various peripherals, such as
+      keyboards, mice, headsets, and webcams. These devices prioritize endpoint
+      security by restricting local data storage and unauthorized application
+      installations. Each WorkSpaces Thin Client comes preloaded with device
+      management software. Utilize these APIs to manage WorkSpaces Thin Client
+      tasks, like creating environments and viewing devices. Refer to the Amazon
+      WorkSpaces Thin Client Administrator Guide for more information on
+      permissions and CLI Reference for managing resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workspaces/thin-client/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workspaces/thin-client/
       - type: OpenAPI
         url: properties/workspaces-thin-client-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/workspaces/thin-client/features/
+      - type: Pricing
+        url: https://aws.amazon.com/workspaces/thin-client/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/workspaces/thin-client/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/workspaces/thin-client/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/workspaces/thin-client/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/workspaces-thin-client-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/workspaces-thin-client-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:workspaces-thin-client
-  - name: workdocs
+  - name: Amazon WorkDocs
     description: >-
-      <p>The Amazon WorkDocs API is designed for the following use cases:</p>
-      <ul> <li> <p>File Migration: File migration applications are supported for
-      users who want to migrate their files from an on-premises or off-premises
-      file system or service. Users can insert files into a user directory
-      structure, as well as allow for basic metadata changes, such as
-      modifications to the permissions of files.</p> </li> <li> <p>Security:
-      Support security applications are supported for users who have additional
-      security needs, such as antivirus or data loss prevention. The API
-      actions, along with CloudTrail, allow these applications to detect when
-      changes occur in Amazon WorkDocs. Then, the application can take the
-      necessary actions and replace the target file. If the target file violates
-      the policy, the application can also choose to email the user.</p> </li>
-      <li> <p>eDiscovery/Analytics: General administrative applications are
-      supported, such as eDiscovery and analytics. These applications can choose
-      to mimic or record the actions in an Amazon WorkDocs site, along with
-      CloudTrail, to replicate data for eDiscovery, backup, or analytical
-      applications.</p> </li> </ul> <p>All Amazon WorkDocs API actions are
-      Amazon authenticated and certificate-signed. They not only require the use
-      of the Amazon Web Services SDK, but also allow for the exclusive use of
-      IAM users and roles to help facilitate access, trust, and permission
-      policies. By creating a role and allowing an IAM user to access the Amazon
-      WorkDocs site, the IAM user gains full administrative visibility into the
-      entire Amazon WorkDocs site (or as set in the IAM policy). This includes,
-      but is not limited to, the ability to modify file permissions and upload
-      any file to any user. This allows developers to perform the three use
-      cases above, as well as give users the ability to grant access on a
-      selective basis using the IAM model.</p> <note> <p>The pricing for Amazon
-      WorkDocs APIs varies depending on the API call type for these actions:</p>
-      <ul> <li> <p> <code>READ (Get*)</code> </p> </li> <li> <p> <code>WRITE
-      (Activate*, Add*, Create*, Deactivate*, Initiate*, Update*)</code> </p>
-      </li> <li> <p> <code>LIST (Describe*)</code> </p> </li> <li> <p>
-      <code>DELETE*, CANCEL</code> </p> </li> </ul> <p>For information about
-      Amazon WorkDocs API pricing, see <a
-      href="https://aws.amazon.com/workdocs/pricing/">Amazon WorkDocs
-      Pricing</a>.</p> </note>
+      The Amazon WorkDocs API is tailored for a variety of use cases, including
+      file migration, security applications, and eDiscovery/analytics. The API
+      supports file migration applications for users looking to transfer files
+      from different systems, while also allowing for basic metadata changes.
+      Security applications can utilize the API actions to detect changes in
+      WorkDocs and take necessary actions to ensure data security. General
+      administrative applications, such as eDiscovery and analytics, can record
+      and replicate data from WorkDocs for backup and analysis purposes. 
+
+
+      All API actions are Amazon authenticated and require the use of the AWS
+      SDK. The API allows for the exclusive use of IAM users and roles to manage
+      access, trust, and permission policies. By creating roles and assigning
+      them to IAM users, developers can perform various use cases and grant
+      selective access to users based on the IAM model. 
+
+
+      Amazon WorkDocs API pricing varies based on the type of API call, with
+      options for reading, writing, listing, and deleting actions. More
+      information on pricing can be found on the Amazon WorkDocs Pricing page.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workdocs/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workdocs/
       - type: OpenAPI
         url: properties/workdocs-openapi-original.yml
+      - type: Sdk
+        url: https://aws.amazon.com/workdocs/sdk/
+      - type: Pricing
+        url: https://aws.amazon.com/workdocs/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/workdocs/resources/
+      - type: Faq
+        url: https://aws.amazon.com/workdocs/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/workdocs-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/workdocs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:workdocs
-  - name: workmailmessageflow
+  - name: AWS WorkMail Message Flow
     description: >-
       <p>The WorkMail Message Flow API provides access to email messages as they
       are being sent and received by a WorkMail organization.</p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/workmail/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/workmail/
       - type: OpenAPI
         url: properties/workmailmessageflow-openapi-original.yml
     overlays:
@@ -11137,45 +11093,63 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/workmailmessageflow-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:workmailmessageflow
-  - name: workspaces-web
+  - name: WorkSpaces Web
     description: >-
-      <p>WorkSpaces Web is a low cost, fully managed WorkSpace built
-      specifically to facilitate secure, web-based workloads. WorkSpaces Web
-      makes it easy for customers to safely provide their employees with access
-      to internal websites and SaaS web applications without the administrative
-      burden of appliances or specialized client software. WorkSpaces Web
-      provides simple policy tools tailored for user interactions, while
-      offloading common tasks like capacity management, scaling, and maintaining
-      browser images.</p>
+      The WorkSpaces Web API is a cost-effective, fully managed solution
+      designed to support secure web-based workloads. It streamlines the process
+      of granting employees access to internal websites and SaaS web
+      applications without the need for complex appliances or specialized client
+      software. With WorkSpaces Web, users can easily implement specific
+      policies for user interactions, while also offloading tasks such as
+      capacity management, scaling, and maintaining browser images.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workspaces/web/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workspaces/web/
       - type: OpenAPI
         url: properties/workspaces-web-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/workspaces/web/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/workspaces/web/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/workspaces/web/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/workspaces-web-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/workspaces-web-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:workspaces-web
-  - name: xray
+  - name: AWS X-Ray
     description: >-
-      <p>Amazon Web Services X-Ray provides APIs for managing debug traces and
-      retrieving service maps and other data created by processing those
-      traces.</p>
+      AWS X-Ray offers comprehensive visibility into the flow of requests within
+      your application, allowing you to analyze and filter visual data
+      pertaining to payloads, functions, traces, services, APIs, and other
+      components. Utilizing both no-code and low-code actions, AWS X-Ray
+      provides a seamless way to track and manage requests throughout your
+      application.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/xray/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/xray/
       - type: OpenAPI
         url: properties/xray-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/xray/features/
+      - type: Pricing
+        url: https://aws.amazon.com/xray/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/xray/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/xray/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/xray/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/xray-openapi-search.yml
