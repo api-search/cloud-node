@@ -407,10 +407,6 @@ apis:
         url: https://aws.amazon.com/app-mesh/faqs/
       - type: Resources
         url: https://aws.amazon.com/app-mesh/resources/
-      - type: ''
-        url: ''
-      - type: ''
-        url: ''
     overlays:
       - type: APIs.io Search
         url: overlays/appmesh-openapi-search.yml
