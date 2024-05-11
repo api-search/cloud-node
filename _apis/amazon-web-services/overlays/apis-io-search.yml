@@ -10056,113 +10056,94 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sso-oidc-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sso-oidc
-  - name: storagegateway
+  - name: AWS Storage Gateway Service
     description: >-
-      <fullname>Storage Gateway Service</fullname> <p>Storage Gateway is the
-      service that connects an on-premises software appliance with cloud-based
-      storage to provide seamless and secure integration between an
-      organization's on-premises IT environment and the Amazon Web Services
-      storage infrastructure. The service enables you to securely upload data to
-      the Amazon Web Services Cloud for cost effective backup and rapid disaster
-      recovery.</p> <p>Use the following links to get started using the
-      <i>Storage Gateway Service API Reference</i>:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/userguide/AWSStorageGatewayAPI.html#AWSStorageGatewayHTTPRequestsHeaders">Storage
-      Gateway required request headers</a>: Describes the required headers that
-      you must send with every POST request to Storage Gateway.</p> </li> <li>
-      <p> <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/userguide/AWSStorageGatewayAPI.html#AWSStorageGatewaySigningRequests">Signing
-      requests</a>: Storage Gateway requires that you authenticate every request
-      you send; this topic describes how sign such a request.</p> </li> <li> <p>
-      <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/userguide/AWSStorageGatewayAPI.html#APIErrorResponses">Error
-      responses</a>: Provides reference information about Storage Gateway
-      errors.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_Operations.html">Operations
-      in Storage Gateway</a>: Contains detailed descriptions of all Storage
-      Gateway operations, their request parameters, response elements, possible
-      errors, and examples of requests and responses.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/sg.html">Storage
-      Gateway endpoints and quotas</a>: Provides a list of each Amazon Web
-      Services Region and the endpoints available for use with Storage
-      Gateway.</p> </li> </ul> <note> <p>Storage Gateway resource IDs are in
-      uppercase. When you use these resource IDs with the Amazon EC2 API, EC2
-      expects resource IDs in lowercase. You must change your resource ID to
-      lowercase to use it with the EC2 API. For example, in Storage Gateway the
-      ID for a volume might be <code>vol-AA22BB012345DAF670</code>. When you use
-      this ID with the EC2 API, you must change it to
-      <code>vol-aa22bb012345daf670</code>. Otherwise, the EC2 API might not
-      behave as expected.</p> </note> <important> <p>IDs for Storage Gateway
-      volumes and Amazon EBS snapshots created from gateway volumes are changing
-      to a longer format. Starting in December 2016, all new volumes and
-      snapshots will be created with a 17-character string. Starting in April
-      2016, you will be able to use these longer IDs so you can test your
-      systems with the new format. For more information, see <a
-      href="http://aws.amazon.com/ec2/faqs/#longer-ids">Longer EC2 and EBS
-      resource IDs</a>.</p> <p>For example, a volume Amazon Resource Name (ARN)
-      with the longer volume ID format looks like the following:</p> <p>
-      <code>arn:aws:storagegateway:us-west-2:111122223333:gateway/sgw-12A3456B/volume/vol-1122AABBCCDDEEFFG</code>.</p>
-      <p>A snapshot ID with the longer ID format looks like the following:
-      <code>snap-78e226633445566ee</code>.</p> <p>For more information, see <a
-      href="http://forums.aws.amazon.com/ann.jspa?annID=3557">Announcement:
-      Heads-up – Longer Storage Gateway volume and snapshot IDs coming in
-      2016</a>.</p> </important>
+      The Storage Gateway Service API allows seamless and secure integration
+      between on-premises software appliances and cloud-based storage within
+      Amazon Web Services infrastructure. This service enables cost-effective
+      backup and rapid disaster recovery by allowing secure data uploads to the
+      AWS cloud. The API Reference provides information on required request
+      headers, authentication of requests, error responses, operations,
+      endpoints, and resource IDs. It is important to note that Storage Gateway
+      resource IDs are in uppercase, but must be converted to lowercase when
+      used with the EC2 API. Additionally, starting in December 2016, new
+      Storage Gateway volumes and Amazon EBS snapshots will have longer
+      17-character IDs, which can be tested starting in April 2016.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/storagegateway/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/storagegateway/
       - type: OpenAPI
         url: properties/storagegateway-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/storagegateway/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/storagegateway/getting-started/
+      - type: Developer-resources
+        url: https://aws.amazon.com/storagegateway/developer-resources/
+      - type: Faqs
+        url: https://aws.amazon.com/storagegateway/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/storagegateway/customers/
+      - type: Features
+        url: https://aws.amazon.com/storagegateway/features/
     overlays:
       - type: APIs.io Search
         url: overlays/storagegateway-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/storagegateway-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:storagegateway
-  - name: supplychain
+  - name: AWS Supply Chain
     description: >-
-      <p> AWS Supply Chain is a cloud-based application that works with your
-      enterprise resource planning (ERP) and supply chain management systems.
-      Using AWS Supply Chain, you can connect and extract your inventory,
-      supply, and demand related data from existing ERP or supply chain systems
-      into a single data model. </p> <p>The AWS Supply Chain API supports
-      configuration data import for Supply Planning.</p> <p> All AWS Supply
-      chain API operations are Amazon-authenticated and certificate-signed. They
-      not only require the use of the AWS SDK, but also allow for the exclusive
-      use of AWS Identity and Access Management users and roles to help
-      facilitate access, trust, and permission policies. </p>
+      The AWS Supply Chain API is a cloud-based application designed to
+      streamline supply chain management processes by connecting and extracting
+      inventory, supply, and demand data from existing ERP and supply chain
+      systems into a single data model. This API supports configuration data
+      import for Supply Planning and all operations are authenticated and signed
+      by Amazon certificates. The use of the AWS SDK is required, along with AWS
+      Identity and Access Management users and roles to ensure secure access and
+      permission policies.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-supply-chain/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-supply-chain/
       - type: OpenAPI
         url: properties/supplychain-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/aws-supply-chain/features/
+      - type: Pricing
+        url: https://aws.amazon.com/aws-supply-chain/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/aws-supply-chain/partners/
+      - type: Resources
+        url: https://aws.amazon.com/aws-supply-chain/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/supplychain-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/supplychain-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:supplychain
-  - name: sts
+  - name: AWS Security Token Service
     description: >-
-      <fullname>Security Token Service</fullname> <p>Security Token Service
-      (STS) enables you to request temporary, limited-privilege credentials for
-      users. This guide provides descriptions of the STS API. For more
-      information about using this service, see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary
-      Security Credentials</a>.</p>
+      Introducing the Security Token Service (STS) API, which allows you to
+      conveniently request temporary, restricted-access credentials for your
+      users. This documentation offers comprehensive explanations of the STS API
+      functionality, with detailed instructions on how to utilize this service
+      effectively. For further insights on using temporary security credentials,
+      refer to the resources on Temporary Security Credentials.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html
       - type: OpenAPI
         url: properties/sts-openapi-original.yml
     overlays:
@@ -10228,31 +10209,38 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/support-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:support
-  - name: swf
+  - name: Amazon Simple Workflow Service
     description: >-
-      <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon Simple
-      Workflow Service (Amazon SWF) makes it easy to build applications that use
-      Amazon's cloud to coordinate work across distributed components. In Amazon
-      SWF, a <i>task</i> represents a logical unit of work that is performed by
-      a component of your workflow. Coordinating tasks in a workflow involves
-      managing intertask dependencies, scheduling, and concurrency in accordance
-      with the logical flow of the application.</p> <p>Amazon SWF gives you full
-      control over implementing tasks and coordinating them without worrying
-      about underlying complexities such as tracking their progress and
-      maintaining their state.</p> <p>This documentation serves as reference
-      only. For a broader overview of the Amazon SWF programming model, see the
-      <i> <a
-      href="https://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
-      SWF Developer Guide</a> </i>.</p>
+      The Amazon Simple Workflow Service (Amazon SWF) simplifies the process of
+      building cloud-based applications that require coordination between
+      distributed components. Tasks in Amazon SWF represent individual units of
+      work within a workflow, with the service handling the management of
+      intertask dependencies, scheduling, and concurrency to maintain the
+      logical flow of the application. By offering full control over task
+      implementation and coordination, Amazon SWF removes the need to manage
+      underlying complexities like progress tracking and state maintenance. This
+      documentation provides a reference for using Amazon SWF, with additional
+      information available in the Amazon SWF Developer Guide for a
+      comprehensive understanding of the programming model.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/swf/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/swf/
       - type: OpenAPI
         url: properties/swf-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/swf/pricing/
+      - type: Testimonials
+        url: https://aws.amazon.com/swf/testimonials/
+      - type: Developer-resources
+        url: https://aws.amazon.com/swf/developer-resources/
+      - type: Faqs
+        url: https://aws.amazon.com/swf/faqs/
+      - type: Getting-started
+        url: https://aws.amazon.com/swf/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/swf-openapi-search.yml
@@ -10309,27 +10297,22 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/support-app-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:support-app
-  - name: synthetics
+  - name: Amazon CloudWatch Synthetics
     description: >-
-      <fullname>Amazon CloudWatch Synthetics</fullname> <p>You can use Amazon
-      CloudWatch Synthetics to continually monitor your services. You can create
-      and manage <i>canaries</i>, which are modular, lightweight scripts that
-      monitor your endpoints and APIs from the outside-in. You can set up your
-      canaries to run 24 hours a day, once per minute. The canaries help you
-      check the availability and latency of your web services and troubleshoot
-      anomalies by investigating load time data, screenshots of the UI, logs,
-      and metrics. The canaries seamlessly integrate with CloudWatch ServiceLens
-      to help you trace the causes of impacted nodes in your applications. For
-      more information, see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ServiceLens.html">Using
-      ServiceLens to Monitor the Health of Your Applications</a> in the
-      <i>Amazon CloudWatch User Guide</i>.</p> <p>Before you create and manage
-      canaries, be aware of the security considerations. For more information,
-      see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servicelens_canaries_security.html">Security
-      Considerations for Synthetics Canaries</a>.</p>
+      Amazon CloudWatch Synthetics provides a way to continuously monitor your
+      services by creating and managing canaries. These canaries are lightweight
+      scripts that monitor your endpoints and APIs externally, allowing you to
+      set them up to run 24/7, once per minute. By using canaries, you can
+      monitor the availability and latency of your web services, troubleshoot
+      anomalies, and investigate load time data, UI screenshots, logs, and
+      metrics. The canaries seamlessly integrate with CloudWatch ServiceLens to
+      help trace impacted nodes in your applications. For more information on
+      using ServiceLens, refer to the Amazon CloudWatch User Guide. Keep in mind
+      the security considerations before creating and managing canaries by
+      reading through the Security Considerations for Synthetics Canaries
+      documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/cloudwatch/
     baseURL: https://example.com
     tags: []
     properties:
@@ -10366,15 +10349,23 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/streamsdynamodb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:streamsdynamodb
-  - name: timestream-query
-    description: <fullname>Amazon Timestream Query </fullname> <p/>
+  - name: Amazon Timestream Query
+    description: >-
+      Easily store and analyze sensor data for IoT applications, metrics for
+      DevOps use cases, and telemetry for application monitoring scenarios like
+      clickstream data analysis with Amazon Timestream for LiveAnalytics. This
+      managed time-series database engine allows developers and DevOps teams to
+      run InfluxDB databases on AWS using open-source APIs for real-time
+      time-series applications. With Amazon Timestream for InfluxDB, setting up,
+      operating, and scaling time-series workloads for single-digit millisecond
+      query response times is a breeze.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/timestream/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/timestream/
       - type: OpenAPI
         url: properties/timestream-query-openapi-original.yml
     overlays:
@@ -10383,49 +10374,68 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/timestream-query-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:timestream-query
-  - name: textract
+  - name: Amazon Textract
     description: >-
-      <p>Amazon Textract detects and analyzes text in documents and converts it
-      into machine-readable text. This is the API reference documentation for
-      Amazon Textract.</p>
+      Amazon Textract is an advanced machine learning service that effortlessly
+      extracts text, handwriting, layout elements, and data from scanned
+      documents. Unlike traditional OCR tools, Textract can intelligently
+      identify and extract specific data from various types of documents,
+      including PDFs, images, tables, and forms. By leveraging the power of ML,
+      Textract eliminates the need for manual data extraction processes that are
+      time-consuming and often costly. With Textract, you can easily automate
+      document processing for tasks such as loans processing, invoice
+      processing, and receipt processing. Whether you choose to use one of our
+      pretrained models or customize features to suit your business needs,
+      Textract ensures accurate extraction of data in a matter of minutes,
+      making it a quick and efficient solution for your document processing
+      requirements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/textract/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/textract/
       - type: OpenAPI
         url: properties/textract-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/textract/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/textract/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/textract/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/textract/customers/
+      - type: Partners
+        url: https://aws.amazon.com/textract/partners/
+      - type: Features
+        url: https://aws.amazon.com/textract/features/
     overlays:
       - type: APIs.io Search
         url: overlays/textract-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/textract-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:textract
-  - name: timestream-write
+  - name: Amazon Timestream Write
     description: >-
-      <fullname>Amazon Timestream Write</fullname> <p>Amazon Timestream is a
-      fast, scalable, fully managed time-series database service that makes it
-      easy to store and analyze trillions of time-series data points per day.
-      With Timestream, you can easily store and analyze IoT sensor data to
-      derive insights from your IoT applications. You can analyze industrial
-      telemetry to streamline equipment management and maintenance. You can also
-      store and analyze log data and metrics to improve the performance and
-      availability of your applications. </p> <p>Timestream is built from the
-      ground up to effectively ingest, process, and store time-series data. It
-      organizes data to optimize query processing. It automatically scales based
-      on the volume of data ingested and on the query volume to ensure you
-      receive optimal performance while inserting and querying data. As your
-      data grows over time, Timestream’s adaptive query processing engine spans
-      across storage tiers to provide fast analysis while reducing costs.</p>
+      Amazon Timestream is a powerful time-series database service designed for
+      storing and analyzing large volumes of time-series data. It is fully
+      managed and scalable, allowing you to easily store and analyze trillions
+      of data points per day. Timestream is ideal for IoT sensor data analysis,
+      industrial telemetry management, and log data and metric analysis for
+      application performance improvement. The service is optimized for
+      efficient data processing and query optimization, automatically adjusting
+      to accommodate increasing data volumes and query loads. Timestream's
+      adaptive query processing engine ensures fast analysis across storage
+      tiers as your data grows, minimizing costs while delivering optimal
+      performance.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/timestream/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/timestream/
       - type: OpenAPI
         url: properties/timestream-write-openapi-original.yml
     overlays:
@@ -10434,59 +10444,81 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/timestream-write-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:timestream-write
-  - name: transfer
+  - name: AWS Transfer
     description: >-
-      <p>Transfer Family is a fully managed service that enables the transfer of
-      files over the File Transfer Protocol (FTP), File Transfer Protocol over
-      SSL (FTPS), or Secure Shell (SSH) File Transfer Protocol (SFTP) directly
-      into and out of Amazon Simple Storage Service (Amazon S3) or Amazon EFS.
-      Additionally, you can use Applicability Statement 2 (AS2) to transfer
-      files into and out of Amazon S3. Amazon Web Services helps you seamlessly
-      migrate your file transfer workflows to Transfer Family by integrating
-      with existing authentication systems, and providing DNS routing with
-      Amazon Route 53 so nothing changes for your customers and partners, or
-      their applications. With your data in Amazon S3, you can use it with
-      Amazon Web Services for processing, analytics, machine learning, and
-      archiving. Getting started with Transfer Family is easy since there is no
-      infrastructure to buy and set up.</p>
+      Transfer Family is a managed service that allows for the transfer of files
+      via FTP, FTPS, SFTP, and AS2 directly to and from Amazon S3 or Amazon EFS.
+      Amazon Web Services facilitates the seamless migration of file transfer
+      workflows to Transfer Family by integrating with existing authentication
+      systems and providing DNS routing via Amazon Route 53. This allows for a
+      smooth transition for customers and partners without any disruptions to
+      their applications. With data stored in Amazon S3, users can take
+      advantage of AWS services for processing, analytics, machine learning, and
+      archiving. The setup process for Transfer Family is simple as there is no
+      need to purchase or configure any infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-transfer-family/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-transfer-family/
       - type: OpenAPI
         url: properties/transfer-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/aws-transfer-family/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/aws-transfer-family/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/aws-transfer-family/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/aws-transfer-family/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/aws-transfer-family/customers/
+      - type: Partners
+        url: https://aws.amazon.com/aws-transfer-family/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/transfer-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/transfer-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:transfer
-  - name: transcribe-streaming
+  - name: Amazon Transcribe
     description: >-
-      <p>Amazon Transcribe streaming offers three main types of real-time
-      transcription: <b>Standard</b>, <b>Medical</b>, and <b>Call
-      Analytics</b>.</p> <ul> <li> <p> <b>Standard transcriptions</b> are the
-      most common option. Refer to for details.</p> </li> <li> <p> <b>Medical
-      transcriptions</b> are tailored to medical professionals and incorporate
-      medical terms. A common use case for this service is transcribing
-      doctor-patient dialogue in real time, so doctors can focus on their
-      patient instead of taking notes. Refer to for details.</p> </li> <li> <p>
-      <b>Call Analytics transcriptions</b> are designed for use with call center
-      audio on two different channels; if you're looking for insight into
-      customer service calls, use this option. Refer to for details.</p> </li>
-      </ul>
+      The Amazon Transcribe streaming API provides real-time transcription
+      services in three main categories: Standard, Medical, and Call Analytics. 
+
+
+      Standard transcriptions are suitable for general use cases, while Medical
+      transcriptions are specialized for medical professionals and incorporate
+      medical terminology. The Call Analytics option is specifically designed
+      for call center audio, providing insights into customer service
+      interactions.
+
+
+      For more information on each type of transcription, please refer to the
+      respective documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/transcribe/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/transcribe/
       - type: OpenAPI
         url: properties/transcribe-streaming-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/transcribe/features/
+      - type: Pricing
+        url: https://aws.amazon.com/transcribe/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/transcribe/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/transcribe/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/transcribe/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/transcribe/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/transcribe-streaming-openapi-search.yml
