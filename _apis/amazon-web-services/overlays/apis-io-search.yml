@@ -14,8 +14,12 @@ tags: []
 apis:
   - name: AWS Certificate Manager
     description: >-
-      Manage SSL/TLS certificates for your AWS-based websites and applications
-      using Certificate Manager (ACM).
+      Utilize the AWS Certificate Manager (ACM) to effortlessly handle the
+      provisioning, management, and deployment of SSL/TLS certificates for both
+      public and private use with AWS services and internal connected resources.
+      With ACM, the tedious tasks of purchasing, uploading, and renewing SSL/TLS
+      certificates are streamlined and automated, saving you valuable time and
+      effort.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/certificate-manager/
     baseURL: https://example.com
@@ -50,10 +54,10 @@ apis:
     aid: amazon-web-services:acm
   - name: Amazon Identity and Access Management Access Analyzer
     description: >-
-      The IAM Access Analyzer API provides a set of tools to help users manage
-      their Identity and Access Management policies effectively. This includes
-      features such as identifying external and unused access, conducting basic
-      and custom policy checks, and generating fine-grained policies. 
+      The API for IAM Access Analyzer offers users a variety of tools to
+      effectively manage their Identity and Access Management policies. These
+      tools include the ability to identify external and unused access, perform
+      basic and custom policy checks, and create highly detailed policies.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iam/access-analyzer/
     baseURL: https://example.com
@@ -97,12 +101,13 @@ apis:
     aid: amazon-web-services:accessanalyzer
   - name: AWS Migration Hub
     description: >-
-      The AWS Migration Hub API allows users to access server and application
-      migration status and seamlessly integrate resource-specific migration
-      tools through a programmatic interface. It is important to set your AWS
-      Migration Hub home region before utilizing any API methods to avoid
-      receiving a HomeRegionNotSetException error. Additionally, all API calls
-      must be made from within your designated home region.
+      The AWS Migration Hub API provides users with the ability to view server
+      and application migration progress and easily incorporate
+      resource-specific migration tools through a code-based interface. To
+      ensure smooth operation, it is crucial to specify your AWS Migration Hub
+      home region before using any API functions to prevent encountering a
+      HomeRegionNotSetException error. Furthermore, all API requests should
+      originate from within your assigned home region for proper functioning.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/migration-hub/
     baseURL: https://example.com
@@ -202,11 +207,12 @@ apis:
     aid: amazon-web-services:amp
   - name: Amazon API Gateway
     description: >-
-      <fullname>Amazon API Gateway</fullname> <p>Amazon API Gateway helps
-      developers deliver robust, secure, and scalable mobile and web application
-      back ends. API Gateway allows developers to securely connect mobile and
-      web applications to APIs that run on Lambda, Amazon EC2, or other publicly
-      addressable web services that are hosted outside of AWS.</p>
+      Amazon API Gateway is a powerful tool that enables developers to create
+      and manage secure and scalable back ends for mobile and web applications.
+      With API Gateway, developers can easily connect their applications to APIs
+      running on Lambda, Amazon EC2, or other external web services. This
+      ensures robust and reliable communication between applications and APIs,
+      all within a secure environment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/api-gateway/
     baseURL: https://example.com
@@ -241,29 +247,14 @@ apis:
     aid: amazon-web-services:apigateway
   - name: Amazon Web Services Private Certificate Authority
     description: >-
-      <p>This is the <i>Amazon Web Services Private Certificate Authority API
-      Reference</i>. It provides descriptions, syntax, and usage examples for
-      each of the actions and data types involved in creating and managing a
-      private certificate authority (CA) for your organization.</p> <p>The
-      documentation for each action shows the API request parameters and the
-      JSON response. Alternatively, you can use one of the Amazon Web Services
-      SDKs to access an API that is tailored to the programming language or
-      platform that you prefer. For more information, see <a
-      href="https://aws.amazon.com/tools/#SDKs">Amazon Web Services
-      SDKs</a>.</p> <p>Each Amazon Web Services Private CA API operation has a
-      quota that determines the number of times the operation can be called per
-      second. Amazon Web Services Private CA throttles API requests at different
-      rates depending on the operation. Throttling means that Amazon Web
-      Services Private CA rejects an otherwise valid request because the request
-      exceeds the operation's quota for the number of requests per second. When
-      a request is throttled, Amazon Web Services Private CA returns a <a
-      href="https://docs.aws.amazon.com/privateca/latest/APIReference/CommonErrors.html">ThrottlingException</a>
-      error. Amazon Web Services Private CA does not guarantee a minimum request
-      rate for APIs. </p> <p>To see an up-to-date list of your Amazon Web
-      Services Private CA quotas, or to request a quota increase, log into your
-      Amazon Web Services account and visit the <a
-      href="https://console.aws.amazon.com/servicequotas/">Service Quotas</a>
-      console.</p>
+      The API Reference for Amazon Web Services Private Certificate Authority
+      offers a detailed overview on setting up and controlling a private
+      certificate authority (CA) for your organization. It provides in-depth
+      explanations on each action and data type, including syntax and usage
+      examples. The documentation for each action includes information on API
+      request parameters and JSON responses. Additionally, users have the option
+      to utilize Amazon Web Services SDKs for accessing APIs that are customized
+      for their preferred programming language or platform.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/private-ca/
     baseURL: https://example.com
@@ -281,20 +272,13 @@ apis:
     aid: amazon-web-services:acm-pca
   - name: AWS Application Fabric
     description: >-
-      <p>Amazon Web Services AppFabric quickly connects software as a service
-      (SaaS) applications across your organization. This allows IT and security
-      teams to easily manage and secure applications using a standard schema,
-      and employees can complete everyday tasks faster using generative
-      artificial intelligence (AI). You can use these APIs to complete AppFabric
-      tasks, such as setting up audit log ingestions or viewing user access. For
-      more information about AppFabric, including the required permissions to
-      use the service, see the <a
-      href="https://docs.aws.amazon.com/appfabric/latest/adminguide/">Amazon Web
-      Services AppFabric Administration Guide</a>. For more information about
-      using the Command Line Interface (CLI) to manage your AppFabric resources,
-      see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/appfabric/index.html">AppFabric
-      section of the CLI Reference</a>.</p>
+      The Amazon Web Services AppFabric API offers effortless incorporation of
+      SaaS applications into your company's infrastructure, facilitating
+      streamlined oversight and protection by IT and security professionals
+      using a standardized data structure. Leveraging the capabilities of
+      generative AI, employees can simplify their daily workflows. Utilize the
+      APIs to execute a range of AppFabric tasks, including setting up audit log
+      data ingestion and tracking user permissions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/appfabric/
     baseURL: https://example.com
@@ -312,36 +296,13 @@ apis:
     aid: amazon-web-services:appfabric
   - name: Amazon AppFlow
     description: >-
-      <p>Welcome to the Amazon AppFlow API reference. This guide is for
-      developers who need detailed information about the Amazon AppFlow API
-      operations, data types, and errors. </p> <p>Amazon AppFlow is a fully
-      managed integration service that enables you to securely transfer data
-      between software as a service (SaaS) applications like Salesforce,
-      Marketo, Slack, and ServiceNow, and Amazon Web Services like Amazon S3 and
-      Amazon Redshift. </p> <p>Use the following links to get started on the
-      Amazon AppFlow API:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Operations.html">Actions</a>:
-      An alphabetical list of all Amazon AppFlow API operations.</p> </li> <li>
-      <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Types.html">Data
-      types</a>: An alphabetical list of all Amazon AppFlow data types.</p>
-      </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/CommonParameters.html">Common
-      parameters</a>: Parameters that all Query operations can use.</p> </li>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/CommonErrors.html">Common
-      errors</a>: Client and server errors that all operations can return.</p>
-      </li> </ul> <p>If you're new to Amazon AppFlow, we recommend that you
-      review the <a
-      href="https://docs.aws.amazon.com/appflow/latest/userguide/what-is-appflow.html">Amazon
-      AppFlow User Guide</a>.</p> <p>Amazon AppFlow API users can use
-      vendor-specific mechanisms for OAuth, and include applicable OAuth
-      attributes (such as <code>auth-code</code> and <code>redirecturi</code>)
-      with the connector-specific <code>ConnectorProfileProperties</code> when
-      creating a new connector profile using Amazon AppFlow API operations. For
-      example, Salesforce users can refer to the <a
-      href="https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm">
-      <i>Authorize Apps with OAuth</i> </a> documentation.</p>
+      Thank you for visiting the Amazon AppFlow API reference. This resource is
+      intended for developers looking for in-depth information on the
+      capabilities, data structures, and error handling of the Amazon AppFlow
+      API. Amazon AppFlow is a seamless integration service that enables secure
+      data transfer between a variety of software as a service (SaaS)
+      applications, such as Salesforce, Marketo, Slack, and ServiceNow, and
+      Amazon Web Services, including Amazon S3 and Amazon Redshift.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/appflow/
     baseURL: https://example.com
@@ -365,13 +326,7 @@ apis:
       resources across various services in just minutes. With a user-friendly
       interface, you can create scaling plans for resources such as Amazon EC2
       instances, Amazon ECS tasks, Amazon DynamoDB tables, Amazon Aurora
-      Replicas, and Spot Fleets. 
-
-
-      The service provides recommendations to optimize performance, costs, or a
-      balance of both, making scaling straightforward. If you are currently
-      using Amazon EC2 Auto Scaling, you can integrate it with AWS Auto Scaling
-      to scale additional resources for other AWS services. 
+      Replicas, and Spot Fleets.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/autoscaling/
     baseURL: https://example.com
@@ -397,12 +352,11 @@ apis:
     aid: amazon-web-services:application-autoscaling
   - name: AWS Application Cost Profiler
     description: >-
-      The AWS Application Cost Profiler API allows users to interact with
-      application cost report definitions by offering the ability to view,
-      create, update, and delete them. Additionally, users can import usage data
-      into the Application Cost Profiler service through this API. For detailed
-      instructions on how to utilize this service, please refer to the AWS
-      Application Cost Profiler User Guide.
+      The AWS Application Cost Profiler API enables users to manage application
+      cost report definitions, including viewing, creating, updating, and
+      deleting them. It also allows users to import usage data into the
+      Application Cost Profiler service. For more information on using this API,
+      please consult the AWS Application Cost Profiler User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/aws-cost-management/aws-application-cost-profiler/
     baseURL: https://example.com
@@ -421,20 +375,19 @@ apis:
     aid: amazon-web-services:applicationcostprofiler
   - name: AWS App Mesh
     description: >-
-      The AWS App Mesh is a service mesh built on the Envoy proxy that
-      simplifies the monitoring and management of containerized microservices.
-      By standardizing communication between microservices, App Mesh provides
-      comprehensive visibility and ensures high availability for applications.
-      It offers consistent visibility and control over network traffic for each
-      microservice within an application, and is compatible with Amazon ECS,
-      Amazon EKS, and Kubernetes on AWS. App Mesh is designed for containerized
-      microservice applications utilizing service discovery naming for
-      components, and requires a containerized application running on Amazon EC2
-      instances within Amazon ECS, Amazon EKS, or Kubernetes on AWS. Support for
-      service discovery on Amazon ECS can be found in the Amazon Elastic
-      Container Service Developer Guide, while Kubernetes kube-dns is also
-      supported with further information available in the Kubernetes
-      documentation.
+      The AWS App Mesh is a service mesh powered by the Envoy proxy that
+      streamlines the monitoring and management of containerized microservices.
+      It simplifies communication between microservices, providing in-depth
+      visibility and ensuring reliable availability for applications. App Mesh
+      offers consistent control over network traffic for each microservice in an
+      application and is compatible with Amazon ECS, Amazon EKS, and Kubernetes
+      on AWS. It is tailored for containerized microservice applications using
+      service discovery naming and requires a containerized application running
+      on Amazon EC2 instances within Amazon ECS, Amazon EKS, or Kubernetes on
+      AWS. Support for service discovery on Amazon ECS can be found in the
+      Amazon Elastic Container Service Developer Guide, while Kubernetes
+      kube-dns is also supported with additional information available in the
+      Kubernetes documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/app-mesh/
     baseURL: https://example.com
@@ -454,6 +407,10 @@ apis:
         url: https://aws.amazon.com/app-mesh/faqs/
       - type: Resources
         url: https://aws.amazon.com/app-mesh/resources/
+      - type: ''
+        url: ''
+      - type: ''
+        url: ''
     overlays:
       - type: APIs.io Search
         url: overlays/appmesh-openapi-search.yml
