@@ -9644,195 +9644,168 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/snowball-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:snowball
-  - name: sns
+  - name: Amazon Simple Notification Service
     description: >-
-      <fullname>Amazon Simple Notification Service</fullname> <p>Amazon Simple
-      Notification Service (Amazon SNS) is a web service that enables you to
-      build distributed web-enabled applications. Applications can use Amazon
-      SNS to easily push real-time notification messages to interested
-      subscribers over multiple delivery protocols. For more information about
-      this product see the <a href="http://aws.amazon.com/sns/">Amazon SNS
-      product page</a>. For detailed information about Amazon SNS features and
-      their associated API calls, see the <a
-      href="https://docs.aws.amazon.com/sns/latest/dg/">Amazon SNS Developer
-      Guide</a>. </p> <p>For information on the permissions you need to use this
-      API, see <a
-      href="https://docs.aws.amazon.com/sns/latest/dg/sns-authentication-and-access-control.html">Identity
-      and access management in Amazon SNS</a> in the <i>Amazon SNS Developer
-      Guide.</i> </p> <p>We also provide SDKs that enable you to access Amazon
-      SNS from your preferred programming language. The SDKs contain
-      functionality that automatically takes care of tasks such as:
-      cryptographically signing your service requests, retrying requests, and
-      handling error responses. For a list of available SDKs, go to <a
-      href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.
-      </p>
+      The Amazon Simple Notification Service (Amazon SNS) is a web service that
+      allows developers to create distributed web-enabled applications. With
+      Amazon SNS, applications can easily send real-time notification messages
+      to subscribers using multiple delivery protocols. To learn more about
+      Amazon SNS and its features, visit the Amazon SNS product page and refer
+      to the Amazon SNS Developer Guide for detailed API documentation.
+      Accessing Amazon SNS is made easy with our SDKs, which handle tasks like
+      signing service requests, retrying requests, and managing error responses.
+      Check out the Tools for Amazon Web Services page for a list of available
+      SDKs in various programming languages. For information on permissions
+      needed to use the API, refer to the Identity and Access Management section
+      in the Amazon SNS Developer Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sns/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sns/
       - type: OpenAPI
         url: properties/sns-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sns/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sns/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/sns/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/sns/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/sns-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sns-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sns
-  - name: sqs
+  - name: Amazon Simple Queue Service
     description: >-
-      <p>Welcome to the <i>Amazon SQS API Reference</i>.</p> <p>Amazon SQS is a
-      reliable, highly-scalable hosted queue for storing messages as they travel
-      between applications or microservices. Amazon SQS moves data between
-      distributed application components and helps you decouple these
-      components.</p> <p>For information on the permissions you need to use this
-      API, see <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-authentication-and-access-control.html">Identity
-      and access management</a> in the <i>Amazon SQS Developer Guide.</i> </p>
-      <p>You can use <a href="http://aws.amazon.com/tools/#sdk">Amazon Web
-      Services SDKs</a> to access Amazon SQS using your favorite programming
-      language. The SDKs perform tasks such as the following automatically:</p>
-      <ul> <li> <p>Cryptographically sign your service requests</p> </li> <li>
-      <p>Retry requests</p> </li> <li> <p>Handle error responses</p> </li> </ul>
-      <p> <b>Additional information</b> </p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/sqs/">Amazon SQS Product Page</a> </p> </li>
-      <li> <p> <i>Amazon SQS Developer Guide</i> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-making-api-requests.html">Making
-      API Requests</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-metadata.html#sqs-message-attributes">Amazon
-      SQS Message Attributes</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html">Amazon
-      SQS Dead-Letter Queues</a> </p> </li> </ul> </li> <li> <p> <a
-      href="http://docs.aws.amazon.com/cli/latest/reference/sqs/index.html">Amazon
-      SQS in the <i>Command Line Interface</i> </a> </p> </li> <li> <p>
-      <i>Amazon Web Services General Reference</i> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#sqs_region">Regions
-      and Endpoints</a> </p> </li> </ul> </li> </ul>
+      Introducing the Amazon SQS API Reference, a reliable and highly-scalable
+      hosted queue that facilitates the storage and transmission of messages
+      between applications and microservices. Amazon SQS effectively moves data
+      between distributed components, promoting decoupling. Refer to the Amazon
+      SQS Developer Guide for insights on permissions required to leverage this
+      API. Utilize Amazon Web Services SDKs in various programming languages to
+      access Amazon SQS effortlessly. The SDKs streamline tasks such as
+      cryptographically signing service requests, handling retries, and managing
+      error responses. For more information, browse through the Amazon SQS
+      Product Page, Developer Guide, API Requests, Message Attributes,
+      Dead-Letter Queues, Command Line Interface, AWS General Reference, and
+      Regions and Endpoints.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sqs/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sqs/
       - type: OpenAPI
         url: properties/sqs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sqs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sqs/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/sqs/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/sqs/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/sqs/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/sqs-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sqs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sqs
-  - name: servicecatalog
+  - name: AWS Service Catalog
     description: >-
-      <fullname>Service Catalog</fullname> <p> <a
-      href="http://aws.amazon.com/servicecatalog">Service Catalog</a> enables
-      organizations to create and manage catalogs of IT services that are
-      approved for Amazon Web Services. To get the most out of this
-      documentation, you should be familiar with the terminology discussed in <a
-      href="http://docs.aws.amazon.com/servicecatalog/latest/adminguide/what-is_concepts.html">Service
-      Catalog Concepts</a>.</p>
+      AWS Service Catalog is a tool that allows you to efficiently handle your
+      cloud resources by overseeing your infrastructure as code (IaC) templates,
+      which can be written in either CloudFormation or Terraform configurations.
+      This service helps you maintain compliance standards while enabling your
+      customers to easily deploy the necessary cloud resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/servicecatalog/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/servicecatalog/
       - type: OpenAPI
         url: properties/servicecatalog-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/servicecatalog/features/
+      - type: Pricing
+        url: https://aws.amazon.com/servicecatalog/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/servicecatalog/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/servicecatalog/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/servicecatalog/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/servicecatalog/customers/
+      - type: Partners
+        url: https://aws.amazon.com/servicecatalog/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/servicecatalog-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/servicecatalog-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:servicecatalog
-  - name: ssm
+  - name: AWS Systems Manager
     description: >-
-      <p>Amazon Web Services Systems Manager is the operations hub for your
-      Amazon Web Services applications and resources and a secure end-to-end
-      management solution for hybrid cloud environments that enables safe and
-      secure operations at scale.</p> <p>This reference is intended to be used
-      with the <a
-      href="https://docs.aws.amazon.com/systems-manager/latest/userguide/">Amazon
-      Web Services Systems Manager User Guide</a>. To get started, see <a
-      href="https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up.html">Setting
-      up Amazon Web Services Systems Manager</a>.</p> <p class="title">
-      <b>Related resources</b> </p> <ul> <li> <p>For information about each of
-      the capabilities that comprise Systems Manager, see <a
-      href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html#systems-manager-capabilities">Systems
-      Manager capabilities</a> in the <i>Amazon Web Services Systems Manager
-      User Guide</i>.</p> </li> <li> <p>For details about predefined runbooks
-      for Automation, a capability of Amazon Web Services Systems Manager, see
-      the <i> <a
-      href="https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-runbook-reference.html">Systems
-      Manager Automation runbook reference</a> </i>.</p> </li> <li> <p>For
-      information about AppConfig, a capability of Systems Manager, see the <i>
-      <a
-      href="https://docs.aws.amazon.com/appconfig/latest/userguide/">AppConfig
-      User Guide</a> </i> and the <i> <a
-      href="https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/">AppConfig
-      API Reference</a> </i>.</p> </li> <li> <p>For information about Incident
-      Manager, a capability of Systems Manager, see the <i> <a
-      href="https://docs.aws.amazon.com/incident-manager/latest/userguide/">Systems
-      Manager Incident Manager User Guide</a> </i> and the <i> <a
-      href="https://docs.aws.amazon.com/incident-manager/latest/APIReference/">Systems
-      Manager Incident Manager API Reference</a> </i>.</p> </li> </ul>
+      My API, AWS Systems Manager, provides a comprehensive and secure
+      management solution for resources across AWS and in both multicloud and
+      hybrid environments.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/systems-manager/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/systems-manager/
       - type: OpenAPI
         url: properties/ssm-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/systems-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/systems-manager/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/systems-manager/getting-started/
+      - type: Faq
+        url: https://aws.amazon.com/systems-manager/faq/
+      - type: Customers
+        url: https://aws.amazon.com/systems-manager/customers/
+      - type: Partners
+        url: https://aws.amazon.com/systems-manager/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/ssm-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/ssm-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ssm
-  - name: signer
+  - name: AWS Signer
     description: >-
-      <p>AWS Signer is a fully managed code-signing service to help you ensure
-      the trust and integrity of your code. </p> <p>Signer supports the
-      following applications:</p> <p>With code signing for AWS Lambda, you can
-      sign <a href="http://docs.aws.amazon.com/lambda/latest/dg/">AWS Lambda</a>
-      deployment packages. Integrated support is provided for <a
-      href="http://docs.aws.amazon.com/AmazonS3/latest/gsg/">Amazon S3</a>, <a
-      href="http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/">Amazon
-      CloudWatch</a>, and <a
-      href="http://docs.aws.amazon.com/awscloudtrail/latest/userguide/">AWS
-      CloudTrail</a>. In order to sign code, you create a signing profile and
-      then use Signer to sign Lambda zip files in S3. </p> <p>With code signing
-      for IoT, you can sign code for any IoT device that is supported by AWS.
-      IoT code signing is available for <a
-      href="http://docs.aws.amazon.com/freertos/latest/userguide/">Amazon
-      FreeRTOS</a> and <a
-      href="http://docs.aws.amazon.com/iot/latest/developerguide/">AWS IoT
-      Device Management</a>, and is integrated with <a
-      href="http://docs.aws.amazon.com/acm/latest/userguide/">AWS Certificate
-      Manager (ACM)</a>. In order to sign code, you import a third-party
-      code-signing certificate using ACM, and use that to sign updates in Amazon
-      FreeRTOS and AWS IoT Device Management. </p> <p>With Signer and the
-      Notation CLI from the <a href="https://notaryproject.dev/">Notary&#x2028;
-      Project</a>, you can sign container images stored in a container registry
-      such as Amazon Elastic Container Registry (ECR). The signatures are stored
-      in the registry alongside the images, where they are available for
-      verifying image authenticity and integrity.</p> <p>For more information
-      about Signer, see the <a
-      href="https://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html">AWS
-      Signer Developer Guide</a>.</p>
+      AWS Signer is a managed code-signing service designed to ensure the trust
+      and integrity of your code. This service supports code signing for various
+      applications such as AWS Lambda, IoT devices supported by AWS, and
+      container images stored in registries like Amazon Elastic Container
+      Registry (ECR). With AWS Signer, you can create signing profiles and use
+      them to sign Lambda deployment packages, IoT device code updates, and
+      container images. Integrated support is provided for services like Amazon
+      S3, Amazon CloudWatch, and AWS CloudTrail. For more details on how to use
+      AWS Signer, refer to the AWS Signer Developer Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/signer/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/signer/
       - type: OpenAPI
         url: properties/signer-openapi-original.yml
     overlays:
@@ -9841,24 +9814,27 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/signer-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:signer
-  - name: ssm-incidents
+  - name: AWS Systems Manager Incident Manager
     description: >-
-      <p>Systems Manager Incident Manager is an incident management console
-      designed to help users mitigate and recover from incidents affecting their
-      Amazon Web Services-hosted applications. An incident is any unplanned
-      interruption or reduction in quality of services. </p> <p>Incident Manager
-      increases incident resolution by notifying responders of impact,
-      highlighting relevant troubleshooting data, and providing collaboration
-      tools to get services back up and running. To achieve the primary goal of
-      reducing the time-to-resolution of critical incidents, Incident Manager
-      automates response plans and enables responder team escalation. </p>
+      My API, Systems Manager Incident Manager, is a comprehensive incident
+      management tool specifically designed to assist users in dealing with
+      unforeseen interruptions or service disruptions in their Amazon Web
+      Services-hosted applications. The platform aims to enhance incident
+      resolution by promptly alerting responders of the impact, presenting key
+      troubleshooting information, and offering collaborative features to
+      facilitate the swift restoration of services. With a focus on minimizing
+      downtime during critical incidents, Incident Manager streamlines response
+      procedures, automates action plans, and enables seamless escalation of
+      responder teams.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html
       - type: OpenAPI
         url: properties/ssm-incidents-openapi-original.yml
     overlays:
@@ -9867,55 +9843,58 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ssm-incidents-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ssm-incidents
-  - name: sso
+  - name: AWS IAM Identity Center
     description: >-
-      <p>AWS IAM Identity Center (successor to AWS Single Sign-On) Portal is a
-      web service that makes it easy for you to assign user access to IAM
-      Identity Center resources such as the AWS access portal. Users can get AWS
-      account applications and roles assigned to them and get federated into the
-      application.</p> <note> <p>Although AWS Single Sign-On was renamed, the
-      <code>sso</code> and <code>identitystore</code> API namespaces will
-      continue to retain their original name for backward compatibility
-      purposes. For more information, see <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html#renamed">IAM
-      Identity Center rename</a>.</p> </note> <p>This reference guide describes
-      the IAM Identity Center Portal operations that you can call
-      programatically and includes detailed information on data types and
-      errors.</p> <note> <p>AWS provides SDKs that consist of libraries and
-      sample code for various programming languages and platforms, such as Java,
-      Ruby, .Net, iOS, or Android. The SDKs provide a convenient way to create
-      programmatic access to IAM Identity Center and other AWS services. For
-      more information about the AWS SDKs, including how to download and install
-      them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web
-      Services</a>.</p> </note>
+      The AWS IAM Identity Center Portal is a web service that simplifies the
+      assignment of user access to IAM Identity Center resources, such as the
+      AWS access portal. Users can have AWS account applications and roles
+      assigned to them and be federated into the application. The API namespaces
+      for sso and identitystore will continue to use their original names for
+      backward compatibility. This reference guide provides detailed information
+      on the IAM Identity Center Portal operations that can be called
+      programmatically, including data types and errors. AWS offers SDKs with
+      libraries and sample code for various programming languages and platforms,
+      such as Java, Ruby, .Net, iOS, or Android, to facilitate programmatic
+      access to IAM Identity Center and other AWS services. To learn more about
+      the AWS SDKs and how to download and install them, visit the Tools for
+      Amazon Web Services webpage.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/identity-center/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/identity-center/
       - type: OpenAPI
         url: properties/sso-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iam/identity-center/features/
+      - type: FAQs
+        url: https://aws.amazon.com/iam/identity-center/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/iam/identity-center/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/sso-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sso-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sso
-  - name: ssm-sap
+  - name: AWS Systems Manager for SAP
     description: >-
-      <p>This API reference provides descriptions, syntax, and other details
-      about each of the actions and data types for AWS Systems Manager for SAP.
-      The topic for each action shows the API request parameters and responses.
-      </p>
+      AWS Systems Manager for SAP is a tool designed to automate the management
+      and operation of SAP applications on AWS. This integration allows for
+      seamless communication between AWS services and SAP applications running
+      on AWS. Users can easily access and utilize AWS Systems Manager for SAP
+      through AWS APIs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html
       - type: OpenAPI
         url: properties/ssm-sap-openapi-original.yml
     overlays:
@@ -9991,41 +9970,33 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ssm-contacts-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ssm-contacts
-  - name: states
+  - name: AWS Step Functions
     description: >-
-      <fullname>Step Functions</fullname> <p>Step Functions is a service that
-      lets you coordinate the components of distributed applications and
-      microservices using visual workflows.</p> <p>You can use Step Functions to
-      build applications from individual components, each of which performs a
-      discrete function, or <i>task</i>, allowing you to scale and change
-      applications quickly. Step Functions provides a console that helps
-      visualize the components of your application as a series of steps. Step
-      Functions automatically triggers and tracks each step, and retries steps
-      when there are errors, so your application executes predictably and in the
-      right order every time. Step Functions logs the state of each step, so you
-      can quickly diagnose and debug any issues.</p> <p>Step Functions manages
-      operations and underlying infrastructure to ensure your application is
-      available at any scale. You can run tasks on Amazon Web Services, your own
-      servers, or any system that has access to Amazon Web Services. You can
-      access and use Step Functions using the console, the Amazon Web Services
-      SDKs, or an HTTP API. For more information about Step Functions, see the
-      <i> <a
-      href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html">Step
-      Functions Developer Guide</a> </i>.</p> <important> <p>If you use the Step
-      Functions API actions using Amazon Web Services SDK integrations, make
-      sure the API actions are in camel case and parameter names are in Pascal
-      case. For example, you could use Step Functions API action
-      <code>startSyncExecution</code> and specify its parameter as
-      <code>StateMachineArn</code>.</p> </important>
+      My API, AWS Step Functions, is a tool that allows developers to easily
+      create visual workflows for utilizing AWS services, building distributed
+      applications, automating processes, orchestrating microservices, and
+      setting up data and machine learning pipelines.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/step-functions/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/step-functions/
       - type: OpenAPI
         url: properties/states-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/step-functions/features/
+      - type: Pricing
+        url: https://aws.amazon.com/step-functions/pricing/
+      - type: Use Cases
+        url: https://aws.amazon.com/step-functions/use-cases/
+      - type: Customers
+        url: https://aws.amazon.com/step-functions/customers/
+      - type: Getting Started
+        url: https://aws.amazon.com/step-functions/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/step-functions/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/states-openapi-search.yml
