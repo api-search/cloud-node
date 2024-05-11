@@ -8910,17 +8910,29 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/s3-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:s3
-  - name: sagemaker-edge
+  - name: AWS SageMaker Edge
     description: >-
-      <p>SageMaker Edge Manager dataplane service for communicating with active
-      agents.</p>
+      The API for Amazon SageMaker Edge Manager
+      (aws.greengrass.SageMakerEdgeManager) facilitates the installation of the
+      SageMaker Edge Manager agent binary. This component enables edge device
+      model management, allowing users to optimize, secure, monitor, and
+      maintain machine learning models across fleets of edge devices. The
+      SageMaker Edge Manager component takes care of installing and managing the
+      SageMaker Edge Manager agent lifecycle on the core device. Additionally,
+      users can leverage SageMaker Edge Manager to package and utilize SageMaker
+      Neo-compiled models as model components on Greengrass core devices. For
+      more details on incorporating the SageMaker Edge Manager agent on your
+      core device, refer to the documentation on using Amazon SageMaker Edge
+      Manager on Greengrass core devices.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html
       - type: OpenAPI
         url: properties/sagemaker-edge-openapi-original.yml
     overlays:
@@ -8929,28 +8941,27 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sagemaker-edge-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-edge
-  - name: sagemaker-featurestore-runtime
+  - name: Amazon SageMaker Feature Store
     description: >-
-      <p>Contains all data plane API operations and data types for the Amazon
-      SageMaker Feature Store. Use this API to put, delete, and retrieve (get)
-      features from a feature store.</p> <p>Use the following operations to
-      configure your <code>OnlineStore</code> and <code>OfflineStore</code>
-      features, and to create and manage feature groups:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFeatureGroup.html">CreateFeatureGroup</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFeatureGroup.html">DeleteFeatureGroup</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html">DescribeFeatureGroup</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFeatureGroups.html">ListFeatureGroups</a>
-      </p> </li> </ul>
+      The Amazon SageMaker Feature Store is a fully managed repository
+      specifically designed for storing, sharing, and managing features for
+      machine learning (ML) models. Features are the inputs necessary for ML
+      models during both training and inference. For example, in a music
+      playlist recommendation application, these features could include song
+      ratings, listening duration, and listener demographics. Ensuring high
+      quality features is crucial for accurate models, as features are utilized
+      by multiple teams repeatedly. Additionally, the challenge of synchronizing
+      offline batch-trained models with real-time inference models is addressed
+      by the SageMaker Feature Store. This platform provides a secure and
+      centralized store to process, standardize, and effectively utilize
+      features at scale throughout the ML lifecycle.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sagemaker/feature-store/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sagemaker/feature-store/
       - type: OpenAPI
         url: properties/sagemaker-featurestore-runtime-openapi-original.yml
     overlays:
@@ -8960,37 +8971,54 @@ apis:
         url: >-
           overlays/sagemaker-featurestore-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-featurestore-runtime
-  - name: s3outposts
-    description: <p>Amazon S3 on Outposts provides access to S3 on Outposts operations.</p>
+  - name: Amazon S3 on Outposts
+    description: >-
+      Amazon S3 on Outposts delivers object storage to your on-premises AWS
+      Outposts environment to meet local data processing and data residency
+      needs. Using the S3 APIs and features, S3 on Outposts makes it easy to
+      store, secure, tag, retrieve, report on, and control access to the data on
+      your Outpost. AWS Outposts is a fully managed service that extends AWS
+      infrastructure, services, and tools to virtually any data center,
+      co-location space, or on-premises facility for a truly consistent hybrid
+      experience
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/s3/outposts/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/s3/outposts/
       - type: OpenAPI
         url: properties/s3outposts-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/outposts/rack/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/outposts/rack/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/outposts/rack/getting-started/
+      - type: FAQs
+        url: https://aws.amazon.com/outposts/rack/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/outposts/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/s3outposts-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/s3outposts-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:s3outposts
-  - name: sagemaker-metrics
+  - name: Amazon SageMaker Metrics
     description: >-
-      <p>Contains all data plane API operations and data types for Amazon
-      SageMaker Metrics. Use these APIs to put and retrieve (get) features
-      related to your training run.</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_metrics_BatchPutMetrics.html">BatchPutMetrics</a>
-      </p> </li> </ul>
+      Contains all data plane API operations and data types for Amazon SageMaker
+      Metrics. Use these APIs to put and retrieve (get) features related to your
+      training run.    BatchPutMetrics
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html
       - type: OpenAPI
         url: properties/sagemaker-metrics-openapi-original.yml
     overlays:
@@ -8999,52 +9027,81 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sagemaker-metrics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-metrics
-  - name: sagemaker-geospatial
+  - name: Geospatial ML with Amazon SageMaker
     description: >-
-      <p>Provides APIs for creating and managing SageMaker geospatial
-      resources.</p>
+      My API, powered by Amazon SageMaker, offers specialized machine learning
+      features tailored for geospatial data analysis. With this API, users can
+      easily create, train, and deploy ML models using geospatial data sources.
+      Additionally, the API provides access to pre-built processing operations,
+      pretrained ML models, and visualization tools, enabling users to run
+      geospatial ML efficiently and on a large scale.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sagemaker/geospatial/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sagemaker/geospatial/
       - type: OpenAPI
         url: properties/sagemaker-geospatial-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sagemaker/geospatial/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sagemaker/geospatial/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/sagemaker/geospatial/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/sagemaker/geospatial/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/sagemaker/geospatial/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/sagemaker-geospatial-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sagemaker-geospatial-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-geospatial
-  - name: savingsplans
+  - name: AWS Savings Plans
     description: >-
-      <p>Savings Plans are a pricing model that offer significant savings on AWS
-      usage (for example, on Amazon EC2 instances). You commit to a consistent
-      amount of usage, in USD per hour, for a term of 1 or 3 years, and receive
-      a lower price for that usage. For more information, see the <a
-      href="https://docs.aws.amazon.com/savingsplans/latest/userguide/">AWS
-      Savings Plans User Guide</a>.</p>
+      Our API offers Savings Plans as a cost-effective pricing option for AWS
+      usage, such as on Amazon EC2 instances. Users can commit to a set usage
+      amount in USD per hour for a 1 or 3 year term, resulting in discounted
+      pricing. For further details, please refer to the AWS Savings Plans User
+      Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/savingsplans/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/savingsplans/
       - type: OpenAPI
         url: properties/savingsplans-openapi-original.yml
+      - type: Faq
+        url: https://aws.amazon.com/savingsplans/faq/
+      - type: Compute-pricing
+        url: https://aws.amazon.com/savingsplans/compute-pricing/
+      - type: Ml-pricing
+        url: https://aws.amazon.com/savingsplans/ml-pricing/
+      - type: Faq
+        url: https://aws.amazon.com/savingsplans/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/savingsplans-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/savingsplans-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:savingsplans
-  - name: schemas
-    description: <p>Amazon EventBridge Schema Registry</p>
+  - name: Amazon EventBridge Schema Registry
+    description: >-
+      My API allows you to define the structure of events sent to EventBridge
+      using schemas. EventBridge offers pre-defined schemas for events generated
+      by AWS services, but you can also create custom schemas or infer them from
+      events on an event bus. Once you have a schema, you can download code
+      bindings for popular programming languages to accelerate development. You
+      can manage schemas and work with code bindings from the EventBridge
+      console, API, or directly in your IDE using AWS toolkits. For serverless
+      apps that utilize events, consider using AWS Serverless Application Model.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schema.html
     baseURL: https://example.com
     tags: []
     properties:
@@ -9058,21 +9115,20 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/schemas-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:schemas
-  - name: scheduler
+  - name: Amazon EventBridge Scheduler
     description: >-
-      <p> Amazon EventBridge Scheduler is a serverless scheduler that allows you
-      to create, run, and manage tasks from one central, managed service.
-      EventBridge Scheduler delivers your tasks reliably, with built-in
-      mechanisms that adjust your schedules based on the availability of
-      downstream targets. The following reference lists the available API
-      actions, and data types for EventBridge Scheduler. </p>
+      The Amazon EventBridge Scheduler API is a serverless tool for scheduling
+      and managing tasks in one centralized service. It reliably delivers tasks
+      and adjusts schedules based on downstream target availability. This
+      reference provides a list of available API actions and data types for
+      EventBridge Scheduler.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/eventbridge/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/eventbridge/
       - type: OpenAPI
         url: properties/scheduler-openapi-original.yml
     overlays:
@@ -9081,7 +9137,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/scheduler-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:scheduler
-  - name: sdb
+  - name: Amazon SimpleDB
     description: >-
       Amazon SimpleDB is a web service providing the core database functions of
       data indexing and querying in the cloud. By offloading the time and effort
@@ -9099,113 +9155,101 @@ apis:
       href="http://aws.amazon.com/simpledb/">http://aws.amazon.com/simpledb/</a>
       for more information. </p>
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/simpledb/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/simpledb/
       - type: OpenAPI
         url: properties/sdb-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/simpledb/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/simpledb/getting-started/
+      - type: Developer-resources
+        url: https://aws.amazon.com/simpledb/developer-resources/
+      - type: Faqs
+        url: https://aws.amazon.com/simpledb/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/sdb-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sdb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sdb
-  - name: secretsmanager
+  - name: Amazon Web Services Secrets Manager
     description: >-
-      <fullname>Amazon Web Services Secrets Manager</fullname> <p>Amazon Web
-      Services Secrets Manager provides a service to enable you to store,
-      manage, and retrieve, secrets.</p> <p>This guide provides descriptions of
-      the Secrets Manager API. For more information about using this service,
-      see the <a
-      href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/introduction.html">Amazon
-      Web Services Secrets Manager User Guide</a>.</p> <p> <b>API Version</b>
-      </p> <p>This version of the Secrets Manager API Reference documents the
-      Secrets Manager API version 2017-10-17.</p> <p>For a list of endpoints,
-      see <a
-      href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/asm_access.html#endpoints">Amazon
-      Web Services Secrets Manager endpoints</a>.</p> <p> <b>Support and
-      Feedback for Amazon Web Services Secrets Manager</b> </p> <p>We welcome
-      your feedback. Send your comments to <a
-      href="mailto:awssecretsmanager-feedback@amazon.com">awssecretsmanager-feedback@amazon.com</a>,
-      or post your feedback and questions in the <a
-      href="http://forums.aws.amazon.com/forum.jspa?forumID=296">Amazon Web
-      Services Secrets Manager Discussion Forum</a>. For more information about
-      the Amazon Web Services Discussion Forums, see <a
-      href="http://forums.aws.amazon.com/help.jspa">Forums Help</a>.</p> <p>
-      <b>Logging API Requests</b> </p> <p>Amazon Web Services Secrets Manager
-      supports Amazon Web Services CloudTrail, a service that records Amazon Web
-      Services API calls for your Amazon Web Services account and delivers log
-      files to an Amazon S3 bucket. By using information that's collected by
-      Amazon Web Services CloudTrail, you can determine the requests
-      successfully made to Secrets Manager, who made the request, when it was
-      made, and so on. For more about Amazon Web Services Secrets Manager and
-      support for Amazon Web Services CloudTrail, see <a
-      href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitoring.html#monitoring_cloudtrail">Logging
-      Amazon Web Services Secrets Manager Events with Amazon Web Services
-      CloudTrail</a> in the <i>Amazon Web Services Secrets Manager User
-      Guide</i>. To learn more about CloudTrail, including enabling it and find
-      your log files, see the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/what_is_cloud_trail_top_level.html">Amazon
-      Web Services CloudTrail User Guide</a>.</p>
+      The AWS Secrets Manager API allows users to securely manage, fetch, and
+      update database credentials, API keys, and other sensitive information at
+      various stages of their existence.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/secrets-manager/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/secrets-manager/
       - type: OpenAPI
         url: properties/secretsmanager-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/secrets-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/secrets-manager/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/secrets-manager/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/secrets-manager/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/secrets-manager/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/secrets-manager/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/secretsmanager-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/secretsmanager-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:secretsmanager
-  - name: serverlessrepo
+  - name: AWS Serverless Application Repository
     description: >-
-      <p>The AWS Serverless Application Repository makes it easy for developers
-      and enterprises to quickly find
-       and deploy serverless applications in the AWS Cloud. For more information about serverless applications,
-       see Serverless Computing and Applications on the AWS website.</p><p>The AWS Serverless Application Repository is deeply integrated with the AWS Lambda console, so that developers of 
-       all levels can get started with serverless computing without needing to learn anything new. You can use category 
-       keywords to browse for applications such as web and mobile backends, data processing applications, or chatbots. 
-       You can also search for applications by name, publisher, or event source. To use an application, you simply choose it, 
-       configure any required fields, and deploy it with a few clicks. </p><p>You can also easily publish applications, sharing them publicly with the community at large, or privately
-       within your team or across your organization. To publish a serverless application (or app), you can use the
-       AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS SDKs to upload the code. Along with the
-       code, you upload a simple manifest file, also known as the AWS Serverless Application Model (AWS SAM) template.
-       For more information about AWS SAM, see AWS Serverless Application Model (AWS SAM) on the AWS Labs
-       GitHub repository.</p><p>The AWS Serverless Application Repository Developer Guide contains more information about the two developer
-       experiences available:</p><ul>
-       <li>
-       <p>Consuming Applications – Browse for applications and view information about them, including
-       source code and readme files. Also install, configure, and deploy applications of your choosing. </p>
-       <p>Publishing Applications – Configure and upload applications to make them available to other
-       developers, and publish new versions of applications. </p>
-       </li>
-       </ul>
+      The AWS Serverless Application Repository simplifies the process for
+      developers and businesses to discover and deploy serverless applications
+      in the AWS Cloud. This integration with the AWS Lambda console allows
+      developers of all skill levels to easily start with serverless computing.
+      Users can search for applications by category keywords such as web and
+      mobile backends, data processing, or chatbots, or by name, publisher, or
+      event source. Deploying an application is straightforward - simply select
+      it, configure any necessary fields, and deploy with a few clicks.
+      Applications can be published publicly or privately within a team or
+      organization. To publish a serverless app, code can be uploaded using the
+      AWS Management Console, AWS CLI, or AWS SDKs, along with a manifest file
+      known as the AWS Serverless Application Model (AWS SAM) template. The AWS
+      Serverless Application Repository Developer Guide offers detailed
+      information on the two available developer experiences: Consuming
+      Applications and Publishing Applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/serverless/serverlessrepo/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/serverless/serverlessrepo/
       - type: OpenAPI
         url: properties/serverlessrepo-openapi-original.yml
+      - type: Publishing
+        url: https://aws.amazon.com/serverless/serverlessrepo/publishing/
+      - type: Resources
+        url: https://aws.amazon.com/serverless/serverlessrepo/resources/
+      - type: Faqs
+        url: https://aws.amazon.com/serverless/serverlessrepo/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/serverlessrepo-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/serverlessrepo-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:serverlessrepo
-  - name: securitylake
+  - name: Amazon Security Lake
     description: >-
-      <p>Amazon Security Lake is a fully managed security data lake service. You
+      Amazon Security Lake is a fully managed security data lake service. You
       can use Security Lake to automatically centralize security data from
       cloud, on-premises, and custom sources into a data lake that's stored in
       your Amazon Web Services account. Amazon Web Services Organizations is an
@@ -9215,62 +9259,70 @@ apis:
       existing accounts to join your organization. Security Lake helps you
       analyze security data for a more complete understanding of your security
       posture across the entire organization. It can also help you improve the
-      protection of your workloads, applications, and data.</p> <p>The data lake
-      is backed by Amazon Simple Storage Service (Amazon S3) buckets, and you
-      retain ownership over your data.</p> <p>Amazon Security Lake integrates
-      with CloudTrail, a service that provides a record of actions taken by a
-      user, role, or an Amazon Web Services service. In Security Lake,
-      CloudTrail captures API calls for Security Lake as events. The calls
-      captured include calls from the Security Lake console and code calls to
-      the Security Lake API operations. If you create a trail, you can enable
-      continuous delivery of CloudTrail events to an Amazon S3 bucket, including
-      events for Security Lake. If you don't configure a trail, you can still
-      view the most recent events in the CloudTrail console in Event history.
-      Using the information collected by CloudTrail you can determine the
-      request that was made to Security Lake, the IP address from which the
-      request was made, who made the request, when it was made, and additional
-      details. To learn more about Security Lake information in CloudTrail, see
-      the <a
-      href="https://docs.aws.amazon.com/security-lake/latest/userguide/securitylake-cloudtrail.html">Amazon
-      Security Lake User Guide</a>.</p> <p>Security Lake automates the
-      collection of security-related log and event data from integrated Amazon
-      Web Services and third-party services. It also helps you manage the
-      lifecycle of data with customizable retention and replication settings.
-      Security Lake converts ingested data into Apache Parquet format and a
-      standard open-source schema called the Open Cybersecurity Schema Framework
-      (OCSF).</p> <p>Other Amazon Web Services and third-party services can
-      subscribe to the data that's stored in Security Lake for incident response
-      and security data analytics.</p>
+      protection of your workloads, applications, and data. The data lake is
+      backed by Amazon Simple Storage Service (Amazon S3) buckets, and you
+      retain ownership over your data. Amazon Security Lake integrates with
+      CloudTrail, a service that provides a record of actions taken by a user,
+      role, or an Amazon Web Services service. In Security Lake, CloudTrail
+      captures API calls for Security Lake as events. The calls captured include
+      calls from the Security Lake console and code calls to the Security Lake
+      API operations. If you create a trail, you can enable continuous delivery
+      of CloudTrail events to an Amazon S3 bucket, including events for Security
+      Lake. If you don't configure a trail, you can still view the most recent
+      events in the CloudTrail console in Event history. Using the information
+      collected by CloudTrail you can determine the request that was made to
+      Security Lake, the IP address from which the request was made, who made
+      the request, when it was made, and additional details. To learn more about
+      Security Lake information in CloudTrail, see the Amazon Security Lake User
+      Guide. Security Lake automates the collection of security-related log and
+      event data from integrated Amazon Web Services and third-party services.
+      It also helps you manage the lifecycle of data with customizable retention
+      and replication settings. Security Lake converts ingested data into Apache
+      Parquet format and a standard open-source schema called the Open
+      Cybersecurity Schema Framework (OCSF). Other Amazon Web Services and
+      third-party services can subscribe to the data that's stored in Security
+      Lake for incident response and security data analytics.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/security-lake/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/security-lake/
       - type: OpenAPI
         url: properties/securitylake-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/security-lake/features/
+      - type: Pricing
+        url: https://aws.amazon.com/security-lake/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/security-lake/getting-started/
+      - type: Faqs
+        url: https://aws.amazon.com/security-lake/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/security-lake/customers/
+      - type: Resources
+        url: https://aws.amazon.com/security-lake/resources/
+      - type: Partners
+        url: https://aws.amazon.com/security-lake/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/securitylake-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/securitylake-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:securitylake
-  - name: service-quotas
+  - name: AWS Service Quotas
     description: >-
-      <p>With Service Quotas, you can view and manage your quotas easily as your
-      Amazon Web Services workloads grow. Quotas, also referred to as limits,
-      are the maximum number of resources that you can create in your Amazon Web
-      Services account. For more information, see the <a
-      href="https://docs.aws.amazon.com/servicequotas/latest/userguide/">Service
-      Quotas User Guide</a>.</p>
+      Easily monitor and control your quotas as your Amazon Web Services
+      projects expand with Service Quotas. Limits, also known as quotas, define
+      the maximum number of resources you can generate within your AWS account. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html
       - type: OpenAPI
         url: properties/service-quotas-openapi-original.yml
     overlays:
@@ -9296,45 +9348,53 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/runtimesagemaker-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:runtimesagemaker
-  - name: servicediscovery
+  - name: AWS Cloud Map
     description: >-
-      <fullname>Cloud Map</fullname> <p>With Cloud Map, you can configure public
-      DNS, private DNS, or HTTP namespaces that your microservice applications
-      run in. When an instance becomes available, you can call the Cloud Map API
-      to register the instance with Cloud Map. For public or private DNS
-      namespaces, Cloud Map automatically creates DNS records and an optional
-      health check. Clients that submit public or private DNS queries, or HTTP
-      requests, for the service receive an answer that contains up to eight
-      healthy records. </p>
+      Our Cloud Map API allows you to easily set up and manage public DNS,
+      private DNS, or HTTP namespaces for your microservice applications. By
+      registering instances with Cloud Map via the API, you can ensure seamless
+      integration and availability. Cloud Map automatically creates DNS records
+      and optional health checks for public or private DNS namespaces, providing
+      clients with up to eight healthy records in response to queries or
+      requests.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloud-map/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloud-map/
       - type: OpenAPI
         url: properties/servicediscovery-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloud-map/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloud-map/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/cloud-map/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/servicediscovery-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/servicediscovery-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:servicediscovery
-  - name: servicecatalog-appregistry
+  - name: AWS Service Catalog
     description: >-
-      <p> Amazon Web Services Service Catalog AppRegistry enables organizations
-      to understand the application context of their Amazon Web Services
-      resources. AppRegistry provides a repository of your applications, their
-      resources, and the application metadata that you use within your
-      enterprise.</p>
+      AWS Service Catalog enables IT administrators to create, manage, and
+      distribute portfolios of approved products to end users, who can then
+      access the products they need in a personalized portal. Typical products
+      include servers, databases, websites, or applications that are deployed
+      using AWS resources (for example, an Amazon EC2 instance or an Amazon RDS
+      database). You can control which users have access to specific products to
+      enforce compliance with organizational business standards, manage product
+      lifecycles, and help users find and launch products with confidence.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/servicecatalog/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/servicecatalog/
       - type: OpenAPI
         url: properties/servicecatalog-appregistry-openapi-original.yml
     overlays:
@@ -9345,15 +9405,11 @@ apis:
     aid: amazon-web-services:servicecatalog-appregistry
   - name: sesv2
     description: >-
-      <fullname>Amazon SES API v2</fullname> <p> <a
-      href="http://aws.amazon.com/ses">Amazon SES</a> is an Amazon Web Services
-      service that you can use to send email messages to your customers.</p>
-      <p>If you're new to Amazon SES API v2, you might find it helpful to review
-      the <a
-      href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/">Amazon
-      Simple Email Service Developer Guide</a>. The <i>Amazon SES Developer
-      Guide</i> provides information and code samples that demonstrate how to
-      use Amazon SES API v2 features programmatically.</p>
+      The Amazon SES API v2 is a powerful tool for sending email messages to
+      your customers through Amazon Web Services. If you're just starting out
+      with this API, consider checking out the Amazon Simple Email Service
+      Developer Guide for helpful information and code samples on how to
+      integrate and utilize Amazon SES API v2 features in your projects.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -9369,85 +9425,90 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sesv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sesv2
-  - name: shield
+  - name: AWS Shield Advanced
     description: >-
-      <fullname>Shield Advanced</fullname> <p>This is the <i>Shield Advanced API
-      Reference</i>. This guide is for developers who need detailed information
-      about the Shield Advanced API actions, data types, and errors. For
-      detailed information about WAF and Shield Advanced features and an
-      overview of how to use the WAF and Shield Advanced APIs, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/">WAF and
-      Shield Developer Guide</a>.</p>
+      The Shield Advanced API Reference is a comprehensive guide for developers
+      seeking detailed information on the Shield Advanced API actions, data
+      types, and errors. To learn more about the WAF and Shield Advanced
+      features and how to effectively utilize the APIs, refer to the WAF and
+      Shield Developer Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/shield/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/shield/
       - type: OpenAPI
         url: properties/shield-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/shield/features/
+      - type: Pricing
+        url: https://aws.amazon.com/shield/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/shield/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/shield/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/shield-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/shield-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:shield
-  - name: simspaceweaver
+  - name: 'AWS SimSpace Weaver '
     description: >-
-      <p>SimSpace Weaver (SimSpace Weaver) is a service that you can use to
-      build and run large-scale spatial simulations in the Amazon Web Services
-      Cloud. For example, you can create crowd simulations, large real-world
-      environments, and immersive and interactive experiences. For more
-      information about SimSpace Weaver, see the <i> <a
-      href="https://docs.aws.amazon.com/simspaceweaver/latest/userguide/">SimSpace
-      Weaver User Guide</a> </i>.</p> <p>This API reference describes the API
-      operations and data types that you can use to communicate directly with
-      SimSpace Weaver.</p> <p>SimSpace Weaver also provides the SimSpace Weaver
-      app SDK, which you use for app development. The SimSpace Weaver app SDK
-      API reference is included in the SimSpace Weaver app SDK documentation.
-      This documentation is part of the SimSpace Weaver app SDK distributable
-      package.</p>
+      SimSpace Weaver is a cloud-based service on Amazon Web Services that
+      enables users to construct and deploy large spatial simulations. These
+      simulations can include crowd scenarios, real-world environments, and
+      immersive experiences. The SimSpace Weaver API allows direct interaction
+      with the service, providing detailed descriptions of available operations
+      and data structures. Additionally, the SimSpace Weaver app SDK is provided
+      for application development, with its own API reference included in the
+      SDK documentation. This documentation is included as part of the SimSpace
+      Weaver app SDK distributable package. For more information, refer to the
+      SimSpace Weaver User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/simspaceweaver/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/simspaceweaver/
       - type: OpenAPI
         url: properties/simspaceweaver-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/simspaceweaver/features/
+      - type: Pricing
+        url: https://aws.amazon.com/simspaceweaver/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/simspaceweaver/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/simspaceweaver-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/simspaceweaver-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:simspaceweaver
-  - name: sms
+  - name: AWS Application Migration Service
     description: >-
-      <important> <p> <b>Product update</b> </p> <p>We recommend <a
-      href="http://aws.amazon.com/application-migration-service">Amazon Web
-      Services Application Migration Service</a> (Amazon Web Services MGN) as
-      the primary migration service for lift-and-shift migrations. If Amazon Web
-      Services MGN is unavailable in a specific Amazon Web Services Region, you
-      can use the Server Migration Service APIs through March 2023.</p>
-      </important> <p>Server Migration Service (Server Migration Service) makes
-      it easier and faster for you to migrate your on-premises workloads to
-      Amazon Web Services. To learn more about Server Migration Service, see the
-      following resources:</p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/server-migration-service/">Server Migration
-      Service product page</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/server-migration-service/latest/userguide/">Server
-      Migration Service User Guide</a> </p> </li> </ul>
+      The AWS Application Migration Service streamlines the migration process by
+      automating the conversion of source servers to run on AWS, reducing manual
+      errors and saving time. It also offers a range of built-in and custom
+      optimization options to simplify application modernization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/application-migration-service/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/application-migration-service/
       - type: OpenAPI
         url: properties/sms-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/application-migration-service/pricing/
+      - type: Faqs
+        url: https://aws.amazon.com/application-migration-service/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/application-migration-service/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/sms-openapi-search.yml
@@ -9471,108 +9532,83 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sms-voice-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sms-voice
-  - name: snow-device-management
-    description: <p>Amazon Web Services Snow Device Management documentation.</p>
+  - name: AWS Snow Family
+    description: >-
+      Our API offers purpose-built devices designed to efficiently transfer
+      petabytes of data offline. You can lease a Snow device to seamlessly move
+      your data to the cloud. These devices have been field-tested for extreme
+      conditions and offer high levels of security and ruggedization, making
+      them suitable for compute and storage requirements. We offer a variety of
+      device options to cater to different needs, including space- or
+      weight-constrained environments, portability, and flexible networking
+      capabilities. The AWS Snow Family includes standard features that are
+      consistent across all device types. For more information on specific
+      specifications for each device type (Snowcone or Snowball), please visit
+      their respective feature pages.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/snow/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/snow/
       - type: OpenAPI
         url: properties/snow-device-management-openapi-original.yml
+      - type: Faqs
+        url: https://aws.amazon.com/snow/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/snow-device-management-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/snow-device-management-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:snow-device-management
-  - name: securityhub
+  - name: AWS Security Hub
     description: >-
-      <p>Security Hub provides you with a comprehensive view of your security
-      state in Amazon Web Services and helps you assess your Amazon Web Services
-      environment against security industry standards and best practices.</p>
-      <p>Security Hub collects security data across Amazon Web Services
-      accounts, Amazon Web Services, and supported third-party products and
-      helps you analyze your security trends and identify the highest priority
-      security issues.</p> <p>To help you manage the security state of your
-      organization, Security Hub supports multiple security standards. These
-      include the Amazon Web Services Foundational Security Best Practices
-      (FSBP) standard developed by Amazon Web Services, and external compliance
-      frameworks such as the Center for Internet Security (CIS), the Payment
-      Card Industry Data Security Standard (PCI DSS), and the National Institute
-      of Standards and Technology (NIST). Each standard includes several
-      security controls, each of which represents a security best practice.
-      Security Hub runs checks against security controls and generates control
-      findings to help you assess your compliance against security best
-      practices.</p> <p>In addition to generating control findings, Security Hub
-      also receives findings from other Amazon Web Services, such as Amazon
-      GuardDuty and Amazon Inspector, and supported third-party products. This
-      gives you a single pane of glass into a variety of security-related
-      issues. You can also send Security Hub findings to other Amazon Web
-      Services and supported third-party products.</p> <p>Security Hub offers
-      automation features that help you triage and remediate security issues.
-      For example, you can use automation rules to automatically update critical
-      findings when a security check fails. You can also leverage the
-      integration with Amazon EventBridge to trigger automatic responses to
-      specific findings.</p> <p>This guide, the <i>Security Hub API
-      Reference</i>, provides information about the Security Hub API. This
-      includes supported resources, HTTP methods, parameters, and schemas. If
-      you're new to Security Hub, you might find it helpful to also review the
-      <a
-      href="https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html">
-      <i>Security Hub User Guide</i> </a>. The user guide explains key concepts
-      and provides procedures that demonstrate how to use Security Hub features.
-      It also provides information about topics such as integrating Security Hub
-      with other Amazon Web Services.</p> <p>In addition to interacting with
-      Security Hub by making calls to the Security Hub API, you can use a
-      current version of an Amazon Web Services command line tool or SDK. Amazon
-      Web Services provides tools and SDKs that consist of libraries and sample
-      code for various languages and platforms, such as PowerShell, Java, Go,
-      Python, C++, and .NET. These tools and SDKs provide convenient,
-      programmatic access to Security Hub and other Amazon Web Services . They
-      also handle tasks such as signing requests, managing errors, and retrying
-      requests automatically. For information about installing and using the
-      Amazon Web Services tools and SDKs, see <a
-      href="http://aws.amazon.com/developer/tools/">Tools to Build on Amazon Web
-      Services</a>.</p> <p>With the exception of operations that are related to
-      central configuration, Security Hub API requests are executed only in the
-      Amazon Web Services Region that is currently active or in the specific
-      Amazon Web Services Region that you specify in your request. Any
-      configuration or settings change that results from the operation is
-      applied only to that Region. To make the same change in other Regions,
-      call the same API operation in each Region in which you want to apply the
-      change. When you use central configuration, API requests for enabling
-      Security Hub, standards, and controls are executed in the home Region and
-      all linked Regions. For a list of central configuration operations, see
-      the <a
-      href="https://docs.aws.amazon.com/securityhub/latest/userguide/central-configuration-intro.html#central-configuration-concepts">Central
-      configuration terms and concepts</a> section of the <i>Security Hub User
-      Guide</i>.</p> <p>The following throttling limits apply to Security Hub
-      API operations.</p> <ul> <li> <p> <code>BatchEnableStandards</code> -
-      <code>RateLimit</code> of 1 request per second. <code>BurstLimit</code> of
-      1 request per second.</p> </li> <li> <p> <code>GetFindings</code> -
-      <code>RateLimit</code> of 3 requests per second. <code>BurstLimit</code>
-      of 6 requests per second.</p> </li> <li> <p>
-      <code>BatchImportFindings</code> - <code>RateLimit</code> of 10 requests
-      per second. <code>BurstLimit</code> of 30 requests per second.</p> </li>
-      <li> <p> <code>BatchUpdateFindings</code> - <code>RateLimit</code> of 10
-      requests per second. <code>BurstLimit</code> of 30 requests per
-      second.</p> </li> <li> <p> <code>UpdateStandardsControl</code> -
-      <code>RateLimit</code> of 1 request per second. <code>BurstLimit</code> of
-      5 requests per second.</p> </li> <li> <p>All other operations -
-      <code>RateLimit</code> of 10 requests per second. <code>BurstLimit</code>
-      of 30 requests per second.</p> </li> </ul>
+      The Security Hub API offers a comprehensive view of your security state
+      within Amazon Web Services, allowing you to assess your environment
+      against industry standards and best practices. By collecting security data
+      across AWS accounts and third-party products, Security Hub enables
+      analysis of security trends and identification of high-priority issues.
+      Supporting multiple security standards, including AWS Foundational
+      Security Best Practices and external frameworks like CIS, PCI DSS, and
+      NIST, Security Hub runs checks against security controls to generate
+      findings that assess compliance. Additionally, Security Hub receives
+      findings from other AWS services and third-party products, providing a
+      centralized view of security-related issues. Automation features aid in
+      triaging and remediating security issues, while integration with Amazon
+      EventBridge allows for automatic responses. The Security Hub API Reference
+      provides details on supported resources, methods, parameters, and schemas,
+      complemented by the Security Hub User Guide which explains key concepts
+      and features. Tools and SDKs in various languages and platforms provide
+      programmatic access to Security Hub and other AWS services, managing tasks
+      such as error handling and request signing. Operations executed via the
+      Security Hub API are specific to the active AWS Region or as specified in
+      the request, with central configuration affecting all linked regions.
+      Throttling limits apply to API operations, ensuring optimal performance
+      and resource utilization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/security-hub/
     baseURL: https://example.com
     tags: []
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/security-hub/
       - type: OpenAPI
         url: properties/securityhub-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/security-hub/features/
+      - type: Pricing
+        url: https://aws.amazon.com/security-hub/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/security-hub/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/security-hub/resources/
+      - type: FAQs
+        url: https://aws.amazon.com/security-hub/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/security-hub/customers/
+      - type: Partners
+        url: https://aws.amazon.com/security-hub/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/securityhub-openapi-search.yml
