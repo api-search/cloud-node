@@ -4,196 +4,78 @@ info:
 paths:
   /apikeys:
     GET:
-      summary: GetApiKeys
+      summary: Get API Keys
       description: <p>Gets information about the current ApiKeys resource.</p>
       tags:
-        - Get
-        - APIs
         - Keys
-        - API Keys
   /restapis/{restapi_id}/authorizers:
     GET:
-      summary: GetAuthorizers
+      summary: Get Authorizers
       description: <p>Describe an existing Authorizers resource.</p>
       tags:
-        - Get
         - Authorizers
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
+        - Keys
   /domainnames/{domain_name}/basepathmappings:
     GET:
-      summary: GetBasePathMappings
+      summary: Get Base Path Mappings
       description: <p>Represents a collection of BasePathMapping resources.</p>
       tags:
-        - Get
-        - Base
-        - Paths
-        - Mapping
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
+        - Base Paths Mappings
         - Domain Names
-        - Domain_name
-        - Basepath Mappings
+        - Paths
   /restapis/{restapi_id}/deployments:
     GET:
-      summary: GetDeployments
+      summary: Get Deployments
       description: <p>Gets information about a Deployments collection.</p>
       tags:
-        - Get
-        - Deployments
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
         - Deployments
   /restapis/{restapi_id}/documentation/parts:
     PUT:
-      summary: ImportDocumentationParts
+      summary: Import Documentation Parts
       description: <p>Imports documentation parts</p>
       tags:
+        - Documentation
         - Import
-        - Documentation
-        - Parts
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
         - Parts
   /restapis/{restapi_id}/documentation/versions:
     GET:
-      summary: GetDocumentationVersions
+      summary: Get Documentation Versions
       description: <p>Gets documentation versions.</p>
       tags:
-        - Get
         - Documentation
-        - Versions
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
         - Versions
   /domainnames:
     GET:
-      summary: GetDomainNames
+      summary: Get Domain Names
       description: <p>Represents a collection of DomainName resources.</p>
       tags:
-        - Get
-        - Domains
+        - Domain
         - Names
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
   /restapis/{restapi_id}/models:
     GET:
-      summary: GetModels
+      summary: Get Models
       description: <p>Describes existing Models defined for a RestApi resource.</p>
       tags:
-        - Get
-        - Models
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
         - Models
   /restapis/{restapi_id}/requestvalidators:
     GET:
-      summary: GetRequestValidators
+      summary: Get Request Validators
       description: <p>Gets the RequestValidators collection of a given RestApi.</p>
       tags:
-        - Get
-        - Request
         - Validators
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
   /restapis/{restapi_id}/resources/{parent_id}:
     POST:
-      summary: CreateResource
+      summary: Create Resource
       description: <p>Creates a Resource resource.</p>
       tags:
-        - Create
         - Resources
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
   /restapis:
     GET:
-      summary: GetRestApis
+      summary: Get Rest Apis
       description: <p>Lists the RestApis resources for your collection.</p>
       tags:
-        - Get
-        - Rest
         - APIs
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
+        - REST
   /restapis/{restapi_id}/stages:
     GET:
       summary: GetStages
