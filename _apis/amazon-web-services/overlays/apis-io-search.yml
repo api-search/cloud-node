@@ -80,7 +80,6 @@ apis:
       - Findings
       - Analyzed
       - Resources
-      - V2
       - Generation
       - Start
       - ARN
