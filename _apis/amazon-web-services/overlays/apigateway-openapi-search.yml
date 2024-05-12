@@ -71,7 +71,7 @@ paths:
         - Resources
   /restapis:
     GET:
-      summary: Get Rest Apis
+      summary: Get REST Apis
       description: <p>Lists the RestApis resources for your collection.</p>
       tags:
         - APIs
@@ -311,998 +311,170 @@ paths:
         - Versions
   /usageplans/{usageplanId}/keys/{keyId}:
     GET:
-      summary: GetUsagePlanKey
+      summary: Get Usage Plan Key
       description: <p>Gets a usage plan key of a given key identifier.</p>
       tags:
-        - Get
-        - Usage
-        - Plan
-        - Keys
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
         - Identifiers
         - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
+        - Plan
+        - Usage
   /vpclinks/{vpclink_id}:
     PATCH:
-      summary: UpdateVpcLink
+      summary: Update Vpc Link
       description: <p>Updates an existing VpcLink of a specified identifier.</p>
       tags:
+        - Vpclinks
+        - Vpclink
         - Update
-        - VPC
+        - Vpc
         - Link
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
   /restapis/{restapi_id}/stages/{stage_name}/cache/authorizers:
     DELETE:
-      summary: FlushStageAuthorizersCache
+      summary: Flush Stage Authorizers Cache
       description: <p>Flushes all authorizer cache entries on a stage.</p>
       tags:
+        - Authorizers
+        - Cache
         - Flush
-        - Stage
-        - Authorizers
-        - Cache
-        - API Keys
+        - Names
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
         - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
   /restapis/{restapi_id}/stages/{stage_name}/cache/data:
     DELETE:
-      summary: FlushStageCache
+      summary: Flush Stage Cache
       description: <p>Flushes a stage's cache.</p>
       tags:
-        - Flush
-        - Stage
-        - Cache
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
         - Cache
         - Data
+        - Flush
+        - Names
+        - REST APIs
+        - Stages
   /clientcertificates:
     GET:
-      summary: GetClientCertificates
+      summary: Get Client Certificates
       description: <p>Gets a collection of ClientCertificate resources.</p>
       tags:
-        - Get
-        - Client
         - Certificates
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
+        - Clients
         - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
   /account:
     PATCH:
-      summary: UpdateAccount
+      summary: Update Account
       description: <p>Changes information about the current Account resource.</p>
       tags:
-        - Update
-        - Account
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
         - Account
   /restapis/{restapi_id}/stages/{stage_name}/exports/{export_type}:
     GET:
-      summary: GetExport
+      summary: Get Export
       description: <p>Exports a deployed version of a RestApi in a specified format.</p>
       tags:
-        - Get
-        - Export
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
         - Exports
-        - Export_type
+        - Names
+        - REST APIs
+        - Stages
+        - Types
   /restapis/{restapi_id}/gatewayresponses:
     GET:
-      summary: GetGatewayResponses
+      summary: Get Gateway Responses
       description: >-
         <p>Gets the GatewayResponses collection on the given RestApi. If an API
         developer has not added any definitions for gateway responses, the
         result will be the API Gateway-generated default GatewayResponses
         collection for the supported response types.</p>
       tags:
-        - Get
-        - Gateway
-        - Responses
-        - API Keys
+        - Gateways
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
         - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
   /restapis/{restapi_id}/models/{model_name}/default_template:
     GET:
-      summary: GetModelTemplate
+      summary: Get Model Template
       description: >-
         <p>Generates a sample mapping template that can be used to transform a
         payload into the structure of a model.</p>
       tags:
-        - Get
+        - Default
         - Models
-        - Templates
-        - API Keys
+        - Names
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
+        - Templates
   /restapis/{restapi_id}/resources:
     GET:
-      summary: GetResources
+      summary: Get Resources
       description: <p>Lists information about a collection of Resource resources.</p>
       tags:
-        - Get
         - Resources
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
   /restapis/{restapi_id}/stages/{stage_name}/sdks/{sdk_type}:
     GET:
-      summary: GetSdk
+      summary: Get SDK
       description: <p>Generates a client SDK for a RestApi and Stage.</p>
       tags:
-        - Get
-        - SDKs
-        - API Keys
+        - Names
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
         - SDKs
-        - Sdk_type
+        - Stages
+        - Types
   /sdktypes/{sdktype_id}:
     GET:
-      summary: GetSdkType
+      summary: Get Sdk Type
       description: <p>Gets an SDK type.</p>
       tags:
-        - Get
+        - SDK Types
         - SDKs
         - Types
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
-        - SDKs
-        - Sdk_type
-        - SDK Types
-        - Sdktype_id
   /sdktypes:
     GET:
-      summary: GetSdkTypes
+      summary: Get Sdk Types
       description: <p>Gets SDK types</p>
       tags:
-        - Get
+        - SDK Types
         - SDKs
         - Types
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
-        - SDKs
-        - Sdk_type
-        - SDK Types
-        - Sdktype_id
   /tags/{resource_arn}:
     DELETE:
-      summary: UntagResource
+      summary: Untag Resource
       description: <p>Removes a tag from a given resource.</p>
       tags:
-        - Untag
+        - ARN
         - Resources
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
-        - SDKs
-        - Sdk_type
-        - SDK Types
-        - Sdktype_id
         - Tags
-        - Resource_arn
+        - Untag
   /usageplans/{usageplanId}/usage:
     GET:
-      summary: GetUsage
+      summary: Get Usage
       description: <p>Gets the usage data of a usage plan in a specified time interval.</p>
       tags:
-        - Get
-        - Usage
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
         - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
-        - SDKs
-        - Sdk_type
-        - SDK Types
-        - Sdktype_id
-        - Tags
-        - Resource_arn
         - Usage
   /apikeys?mode=import:
     POST:
-      summary: ImportApiKeys
+      summary: Import Api Keys
       description: >-
         <p>Import API keys from an external source, such as a CSV-formatted
         file.</p>
       tags:
-        - Import
         - APIs
+        - Import
         - Keys
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
-        - SDKs
-        - Sdk_type
-        - SDK Types
-        - Sdktype_id
-        - Tags
-        - Resource_arn
-        - Usage
-        - Apikeys?mode=import
   /restapis?mode=import:
     POST:
-      summary: ImportRestApi
+      summary: Import Rest Api
       description: >-
         <p>A feature of the API Gateway control service for creating a new API
         from an external API definition file.</p>
       tags:
-        - Import
-        - Rest
         - APIs
-        - API Keys
+        - Import
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
-        - SDKs
-        - Sdk_type
-        - SDK Types
-        - Sdktype_id
-        - Tags
-        - Resource_arn
-        - Usage
-        - Apikeys?mode=import
-        - REST APIs
+        - REST
   /usageplans/{usageplanId}/keys/{keyId}/usage:
     PATCH:
-      summary: UpdateUsage
+      summary: Update Usage
       description: >-
         <p>Grants a temporary extension to the remaining quota of a usage plan
         associated with a specified AP
       tags:
-        - Update
-        - Usage
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
         - Identifiers
         - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
-        - Vpclink_id
-        - Cache
-        - Data
-        - Account
-        - Exports
-        - Export_type
-        - Default_template
-        - SDKs
-        - Sdk_type
-        - SDK Types
-        - Sdktype_id
-        - Tags
-        - Resource_arn
         - Usage
-        - Apikeys?mode=import
-        - REST APIs
