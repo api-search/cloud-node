@@ -5993,26 +5993,6 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/mediastore-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediastore
-  - name: AWS Elemental MediaStore Data
-    description: >-
-      <p>An AWS Elemental MediaStore asset is an object, similar to an object in
-      the Amazon S3 service. Objects are the fundamental entities that are
-      stored in AWS Elemental MediaStore.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/mediastore-data-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/mediastore-data-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/mediastore-data-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:mediastore-data
   - name: AWS Marketplace Commerce Analytics
     description: Provides AWS Marketplace business intelligence data on-demand.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
