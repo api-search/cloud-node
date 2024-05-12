@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateCertificateAuthority
+      summary: Update Certificate Authority
       description: >-
         <p>Updates the status or configuration of a private certificate
         authority (CA). Your private CA must be in the <code>ACTIVE</code> or
@@ -18,6 +18,5 @@ paths:
         href="https://docs.aws.amazon.com/privateca/latest/userguide/crl-planning.html#s3-policies">Access
         policies for CRLs in Amazon S3</a>.</
       tags:
-        - Update
-        - Certificates
         - Authorization
+        - Certificates
