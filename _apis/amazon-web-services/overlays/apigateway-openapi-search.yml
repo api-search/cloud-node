@@ -78,861 +78,237 @@ paths:
         - REST
   /restapis/{restapi_id}/stages:
     GET:
-      summary: GetStages
+      summary: Get Stages
       description: <p>Gets information about one or more Stage resources.</p>
       tags:
-        - Get
-        - Stages
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
         - Stages
   /usageplans:
     GET:
-      summary: GetUsagePlans
+      summary: Get Usage Plans
       description: <p>Gets all the usage plans of the caller's account.</p>
       tags:
-        - Get
-        - Usage
         - Plans
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
+        - Usage
         - Usage Plans
   /usageplans/{usageplanId}/keys:
     GET:
-      summary: GetUsagePlanKeys
+      summary: Get Usage Plan Keys
       description: >-
         <p>Gets all the usage plan keys representing the API keys added to a
         specified usage plan.</p>
       tags:
-        - Get
+        - Keys
+        - Plans
         - Usage
-        - Plan
-        - Keys
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
   /vpclinks:
     GET:
-      summary: GetVpcLinks
+      summary: Get Vpc Links
       description: >-
         <p>Gets the VpcLinks collection under the caller's account in a selected
         region.</p>
       tags:
-        - Get
-        - VPC
         - Links
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
+        - VPC
         - VPC Links
   /apikeys/{api_Key}:
     PATCH:
-      summary: UpdateApiKey
+      summary: Update Api Key
       description: <p>Changes information about an ApiKey resource.</p>
       tags:
-        - Update
         - APIs
-        - Keys
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
         - Keys
   /restapis/{restapi_id}/authorizers/{authorizer_id}:
     PATCH:
-      summary: UpdateAuthorizer
+      summary: Update Authorizer
       description: <p>Updates an existing Authorizer resource.</p>
       tags:
-        - Update
-        - Authorizer
-        - API Keys
-        - REST APIs
-        - Restapi_id
         - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
+        - REST APIs
   /domainnames/{domain_name}/basepathmappings/{base_path}:
     PATCH:
-      summary: UpdateBasePathMapping
+      summary: Update Base Path Mapping
       description: <p>Changes information about the BasePathMapping resource.</p>
       tags:
-        - Update
-        - Base
-        - Paths
-        - Mapping
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
+        - Base Paths
         - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
+        - Mappings
+        - Paths
   /clientcertificates/{clientcertificate_id}:
     PATCH:
-      summary: UpdateClientCertificate
+      summary: Update Client Certificate
       description: <p>Changes information about an ClientCertificate resource.</p>
       tags:
-        - Update
-        - Client
         - Certificates
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
+        - Clients
         - Client Certificates
-        - Clientcertificate_id
   /restapis/{restapi_id}/deployments/{deployment_id}:
     PATCH:
-      summary: UpdateDeployment
+      summary: Update Deployment
       description: <p>Changes information about a Deployment resource.</p>
       tags:
-        - Update
         - Deployments
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
   /restapis/{restapi_id}/documentation/parts/{part_id}:
     PATCH:
-      summary: UpdateDocumentationPart
+      summary: Update Documentation Part
       description: <p>Updates a documentation part.</p>
       tags:
-        - Update
-        - Documentation
-        - null
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
         - Documentation
         - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
+        - REST APIs
   /restapis/{restapi_id}/documentation/versions/{doc_version}:
     PATCH:
-      summary: UpdateDocumentationVersion
+      summary: Update Documentation Version
       description: <p>Updates a documentation version.</p>
       tags:
-        - Update
         - Documentation
-        - Versions
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
         - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
   /domainnames/{domain_name}:
     PATCH:
-      summary: UpdateDomainName
+      summary: Update Domain Name
       description: <p>Changes information about the DomainName resource.</p>
       tags:
-        - Update
+        - Domain Names
         - Domains
         - Names
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
   /restapis/{restapi_id}/gatewayresponses/{response_type}:
     PATCH:
-      summary: UpdateGatewayResponse
+      summary: Update Gateway Response
       description: >-
         <p>Updates a GatewayResponse of a specified response type on the given
         RestApi.</p>
       tags:
-        - Update
-        - Gateway
-        - Responses
-        - API Keys
+        - Gateways
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
+        - Response Types
+        - Responses
   /restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration:
     PATCH:
-      summary: UpdateIntegration
+      summary: Update Integration
       description: <p>Represents an update integration.</p>
       tags:
-        - Update
+        - HTTP Methods
         - Integrations
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
         - Methods
-        - Http_method
-        - Integrations
+        - REST APIs
+        - Resources
   /restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration/responses/{status_code}:
     PATCH:
-      summary: UpdateIntegrationResponse
+      summary: Update Integration Response
       description: <p>Represents an update integration response.</p>
       tags:
-        - Update
+        - HTTP Methods
         - Integrations
-        - Responses
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
         - Methods
-        - Http_method
-        - Integrations
+        - REST APIs
+        - Resources
         - Responses
-        - Status_code
+        - Status Codes
   /restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}:
     PATCH:
-      summary: UpdateMethod
+      summary: Update Method
       description: <p>Updates an existing Method resource.</p>
       tags:
-        - Update
+        - HTTP Methods
         - Methods
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
         - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
   /restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/responses/{status_code}:
     PATCH:
-      summary: UpdateMethodResponse
+      summary: Update Method Response
       description: <p>Updates an existing MethodResponse resource.</p>
       tags:
-        - Update
+        - HTTP Methods
         - Methods
-        - Responses
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
         - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
         - Responses
-        - Status_code
+        - Status code
   /restapis/{restapi_id}/models/{model_name}:
     PATCH:
-      summary: UpdateModel
+      summary: Update Model
       description: <p>Changes information about a model.</p>
       tags:
-        - Update
+        - Model Name
         - Models
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
   /restapis/{restapi_id}/requestvalidators/{requestvalidator_id}:
     PATCH:
-      summary: UpdateRequestValidator
+      summary: Update Request Validator
       description: <p>Updates a RequestValidator of a given RestApi.</p>
       tags:
-        - Update
-        - Request
-        - Validators
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
+        - Requests
         - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
+        - Validators
   /restapis/{restapi_id}/resources/{resource_id}:
     PATCH:
-      summary: UpdateResource
+      summary: Update Resource
       description: <p>Changes information about a Resource resource.</p>
       tags:
-        - Update
-        - Resources
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
         - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
   /restapis/{restapi_id}:
     PATCH:
-      summary: UpdateRestApi
+      summary: Update Rest Api
       description: <p>Changes information about the specified API.</p>
       tags:
-        - Update
-        - Rest
         - APIs
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
   /restapis/{restapi_id}/stages/{stage_name}:
     PATCH:
-      summary: UpdateStage
+      summary: Update Stage
       description: <p>Changes information about a Stage resource.</p>
       tags:
-        - Update
-        - Stage
-        - API Keys
         - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
+        - Stage
+        - Stage name
         - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
-        - Authorizer_id
-        - Base_path
-        - Client Certificates
-        - Clientcertificate_id
-        - Deployment_id
-        - Part_id
-        - Doc_version
-        - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
-        - Http_method
-        - Integrations
-        - Responses
-        - Status_code
-        - Model_name
-        - Requestvalidator_id
-        - Stage_name
   /usageplans/{usageplanId}:
     PATCH:
-      summary: UpdateUsagePlan
+      summary: Update Usage Plan
       description: <p>Updates a usage plan of a given plan Id.</p>
       tags:
-        - Update
-        - Usage
-        - Plan
-        - API Keys
-        - REST APIs
-        - Restapi_id
-        - Authorizers
-        - Domain Names
-        - Domain_name
-        - Basepath Mappings
-        - Deployments
-        - Documentation
-        - Parts
-        - Versions
-        - Models
-        - Request Validators
-        - Resources
-        - Parent_id
-        - Stages
-        - Usage Plans
-        - Identifiers
-        - Keys
-        - VPC Links
-        - Keys
         - Authorizer_id
+        - Authorizers
         - Base_path
+        - Basepath Mappings
         - Client Certificates
         - Clientcertificate_id
         - Deployment_id
-        - Part_id
+        - Deployments
         - Doc_version
+        - Documentation
+        - Domain Names
+        - Domain_name
         - Gatewayresponses
-        - Response_type
-        - Resource_id
-        - Methods
         - Http_method
         - Integrations
-        - Responses
-        - Status_code
+        - Keys
+        - Methods
         - Model_name
+        - Models
+        - Parent_id
+        - Part_id
+        - Parts
+        - Plan
+        - REST APIs
+        - Request Validators
         - Requestvalidator_id
+        - Resource_id
+        - Resources
+        - Response_type
+        - Responses
+        - Restapi_id
         - Stage_name
+        - Stages
+        - Status_code
+        - Usage
+        - Usage Plans
+        - VPC Links
+        - Versions
   /usageplans/{usageplanId}/keys/{keyId}:
     GET:
       summary: GetUsagePlanKey
