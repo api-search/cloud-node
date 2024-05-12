@@ -293,7 +293,7 @@ apis:
     aid: amazon-web-services:appfabric
   - name: Amazon AppFlow
     description: >-
-      Our API, Amazon AppFlow, allows for seamless automation of data flows
+      This API, Amazon AppFlow, allows for seamless automation of data flows
       between SaaS applications and AWS services with just a few clicks. You can
       run these data flows at your preferred frequency, whether on a schedule,
       in response to a business event, or on demand. Simplify data preparation
@@ -740,7 +740,7 @@ apis:
     aid: amazon-web-services:autoscaling-plans
   - name: AWS Backup
     description: >-
-      Our API, Backup Backup, offers a comprehensive backup solution
+      This API, Backup Backup, offers a comprehensive backup solution
       specifically tailored for Amazon Web Services (AWS) and its related data.
       With features such as simplified backup creation, migration, restoration,
       and deletion, as well as robust reporting and auditing capabilities,
@@ -2938,7 +2938,7 @@ apis:
       technology choices in processors, storage, networking, operating systems,
       and purchase models to suit your workload requirements. We are the leading
       cloud provider to support Intel, AMD, and Arm processors, offer on-demand
-      EC2 Mac instances, and feature 400 Gbps Ethernet networking. Our API
+      EC2 Mac instances, and feature 400 Gbps Ethernet networking. This API
       delivers exceptional price performance for machine learning training and
       the most cost-effective inference instances in the cloud. AWS has the
       largest number of SAP, high performance computing (HPC), ML, and Windows
@@ -4092,7 +4092,7 @@ apis:
     aid: amazon-web-services:guardduty
   - name: AWS IoT Greengrass
     description: >-
-      My API, AWS IoT Greengrass, extends the capabilities of AWS to physical
+      This API, AWS IoT Greengrass, extends the capabilities of AWS to physical
       devices, enabling them to process data locally while still utilizing the
       cloud for management, analytics, and storage. This allows devices to
       respond quickly to local events even with intermittent connectivity,
@@ -4551,7 +4551,7 @@ apis:
     aid: amazon-web-services:iotdeviceadvisor
   - name: ' AWS IoT 1-Click Projects'
     description: >-
-      Our API allows AWS IoT 1-Click devices to easily and securely connect to
+      This API allows AWS IoT 1-Click devices to easily and securely connect to
       AWS IoT Core upon deployment, eliminating the need for manual certificate
       management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -4642,7 +4642,7 @@ apis:
     aid: amazon-web-services:iotfleethub
   - name: AWS IoT Data
     description: >-
-      My API, IoT data, facilitates secure communication between
+      This API, IoT data, facilitates secure communication between
       Internet-connected devices and the Amazon Web Services cloud. It acts as a
       broker for devices to publish messages via HTTP and manage shadows,
       persistent representations of the device state in the AWS cloud. To find
@@ -4691,7 +4691,7 @@ apis:
     aid: amazon-web-services:iot1click-devices
   - name: AWS oT Secure Tunneling
     description: >-
-      My API, IoT Secure Tunneling, allows users to establish secure remote
+      This API, IoT Secure Tunneling, allows users to establish secure remote
       connections to devices deployed in the field. This is particularly useful
       for devices situated behind restricted firewalls at remote sites. With IoT
       Secure Tunneling, users can troubleshoot, perform configuration updates,
@@ -5356,7 +5356,7 @@ apis:
     aid: amazon-web-services:lakeformation
   - name: Amazon CloudWatch Logs
     description: >-
-      My API allows you to monitor, store, and access log files from EC2
+      This API allows you to monitor, store, and access log files from EC2
       instances, CloudTrail, and other sources using Amazon CloudWatch Logs. You
       can retrieve log data through the CloudWatch console, AWS CLI, API, or
       SDK. With CloudWatch Logs, you can monitor real-time logs from EC2
@@ -6072,7 +6072,7 @@ apis:
     aid: amazon-web-services:mediatailor
   - name: Amazon Mechanical Turk
     description: >-
-      My API, Amazon Mechanical Turk (MTurk), offers a platform for individuals
+      This API, Amazon Mechanical Turk (MTurk), offers a platform for individuals
       and businesses to easily outsource tasks to a distributed workforce. These
       tasks can range from data validation and research to more subjective tasks
       like survey participation and content moderation. MTurk allows companies
@@ -8147,7 +8147,7 @@ apis:
     aid: amazon-web-services:scheduler
   - name: Amazon SimpleDB
     description: >-
-      My API, Amazon SimpleDB, is a cloud-based web service that offers
+      This API, Amazon SimpleDB, is a cloud-based web service that offers
       essential database functionalities such as data indexing and querying. By
       handling the complex tasks of managing a web-scale database, SimpleDB
       empowers developers to concentrate on developing applications without
@@ -8450,7 +8450,7 @@ apis:
     aid: amazon-web-services:sms
   - name: AWS Snow Family
     description: >-
-      Our API offers purpose-built devices designed to efficiently transfer
+      This API offers purpose-built devices designed to efficiently transfer
       petabytes of data offline. You can lease a Snow device to seamlessly move
       your data to the cloud. These devices have been field-tested for extreme
       conditions and offer high levels of security and ruggedization, making
@@ -8674,7 +8674,7 @@ apis:
     aid: amazon-web-services:signer
   - name: AWS Systems Manager Incident Manager
     description: >-
-      My API, Systems Manager Incident Manager, is a comprehensive incident
+      This API, Systems Manager Incident Manager, is a comprehensive incident
       management tool specifically designed to assist users in dealing with
       unforeseen interruptions or service disruptions in their Amazon Web
       Services-hosted applications. The platform aims to enhance incident
@@ -8763,7 +8763,7 @@ apis:
     aid: amazon-web-services:ssm-sap
   - name: AWS Step Functions
     description: >-
-      My API, AWS Step Functions, is a tool that allows developers to easily
+      This API, AWS Step Functions, is a tool that allows developers to easily
       create visual workflows for utilizing AWS services, building distributed
       applications, automating processes, orchestrating microservices, and
       setting up data and machine learning pipelines.
