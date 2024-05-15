@@ -113,6 +113,7 @@ apis:
     tags:
       - Attributes
       - Resources
+      - Migrations
     properties:
       - type: Documentation
         url: https://aws.amazon.com/migration-hub/
@@ -176,8 +177,8 @@ apis:
       - Alert  Management
       - Ali
       - Alias
-      - Rule  Groups  Namespaces
-      - Scraper  Configurations
+      - Rule Groups
+      - Scraper Configurations
       - Update
     properties:
       - type: Documentation
@@ -215,7 +216,130 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/api-gateway/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Keys
+      - Authorizers
+      - Base  Paths  Mappings
+      - Domain  Names
+      - Paths
+      - Deployments
+      - Documentation
+      - Import
+      - Parts
+      - Versions
+      - Domain
+      - Names
+      - Models
+      - Validators
+      - Resources
+      - Is
+      - REST
+      - T  Is
+      - Stages
+      - Plans
+      - Usage
+      - Usage  Plans
+      - Links
+      - VPC
+      - C  Links
+      - Is
+      - T  Is
+      - Base  Paths
+      - Domain  Names
+      - Mappings
+      - Certificates
+      - Clients
+      - Client  Certificates
+      - T  Is
+      - T  Is
+      - T  Is
+      - Domain  Names
+      - Domains
+      - Gateways
+      - T  Is
+      - Response  Types
+      - Responses
+      - P  Methods
+      - Integrations
+      - Methods
+      - T  Is
+      - P  Methods
+      - T  Is
+      - Status  Codes
+      - P  Methods
+      - T  Is
+      - P  Methods
+      - T  Is
+      - Status code
+      - Model  Name
+      - T  Is
+      - T  Is
+      - Requests
+      - Request  Validators
+      - T  Is
+      - Is
+      - T  Is
+      - T  Is
+      - Stage
+      - Stage name
+      - Authorizer_id
+      - Base_path
+      - Basepath  Mappings
+      - Client  Certificates
+      - Clientcertificate_id
+      - Deployment_id
+      - Doc_version
+      - Domain  Names
+      - Domain_name
+      - Gatewayresponses
+      - Http_method
+      - Model_name
+      - Parent_id
+      - Part_id
+      - Plan
+      - T  Is
+      - Request  Validators
+      - Requestvalidator_id
+      - Resource_id
+      - Response_type
+      - Restapi_id
+      - Stage_name
+      - Status_code
+      - Usage  Plans
+      - C  Links
+      - Identifiers
+      - Vpclinks
+      - Vpclink
+      - Update
+      - Vpc
+      - Link
+      - Cache
+      - Flush
+      - T  Is
+      - Data
+      - T  Is
+      - Client  Certificates
+      - Account
+      - Exports
+      - T  Is
+      - Types
+      - T  Is
+      - Default
+      - T  Is
+      - Templates
+      - T  Is
+      - T  Is
+      - Ks
+      - K  Types
+      - Ks
+      - K  Types
+      - Ks
+      - ARN
+      - Tags
+      - Untag
+      - Is
+      - Is
+      - T  Is
     properties:
       - type: Documentation
         url: https://aws.amazon.com/api-gateway/
@@ -257,7 +381,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/private-ca/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Authorization
+      - Certificates
     properties:
       - type: Documentation
         url: https://aws.amazon.com/private-ca/
@@ -279,7 +405,32 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/appfabric/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Batches
+      - Tasks
+      - User  Access
+      - Users
+      - Applications
+      - Application  Authorizations
+      - Authorization
+      - Bundles
+      - Connect
+      - Identifiers
+      - Application  Authorizations
+      - Application  Bundles
+      - Lists
+      - Ingestions
+      - Destinations
+      - Ingestion  Destinations
+      - Application  Authorizations
+      - Ingestion
+      - Ingestion  Destinations
+      - ARN
+      - Resources
+      - Untag
+      - User  Access
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/appfabric/
@@ -304,7 +455,30 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/appflow/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Cancel
+      - Executions
+      - Flow
+      - Connectors
+      - Create
+      - Profiles
+      - Delete
+      - Describe
+      - Entities
+      - Execution
+      - Records
+      - Lists
+      - Flows
+      - ARN
+      - Resources
+      - Untag
+      - Register
+      - Cache
+      - Metadata
+      - Reset
+      - Stop
+      - Unregister
+      - Registrations
     properties:
       - type: Documentation
         url: https://aws.amazon.com/appflow/
@@ -328,7 +502,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/autoscaling/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/autoscaling/
@@ -358,7 +535,13 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/aws-cost-management/aws-application-cost-profiler/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Definitions
+      - Identifiers
+      - Reports
+      - Applications
+      - Import
+      - Usage
     properties:
       - type: Documentation
         url: >-
@@ -389,7 +572,27 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/app-mesh/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Gateways
+      - Lists
+      - Names
+      - Routes
+      - Virtual
+      - Meshes
+      - Router
+      - Nodes
+      - Name
+      - Routers
+      - List
+      - Services
+      - Gateway
+      - null
+      - Update
+      - Mesh
+      - Tags
+      - For
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/app-mesh/
@@ -6072,12 +6275,13 @@ apis:
     aid: amazon-web-services:mediatailor
   - name: Amazon Mechanical Turk
     description: >-
-      This API, Amazon Mechanical Turk (MTurk), offers a platform for individuals
-      and businesses to easily outsource tasks to a distributed workforce. These
-      tasks can range from data validation and research to more subjective tasks
-      like survey participation and content moderation. MTurk allows companies
-      to leverage a global workforce to streamline processes, improve data
-      collection and analysis, and enhance machine learning projects.
+      This API, Amazon Mechanical Turk (MTurk), offers a platform for
+      individuals and businesses to easily outsource tasks to a distributed
+      workforce. These tasks can range from data validation and research to more
+      subjective tasks like survey participation and content moderation. MTurk
+      allows companies to leverage a global workforce to streamline processes,
+      improve data collection and analysis, and enhance machine learning
+      projects.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://www.mturk.com/
     baseURL: https://example.com
