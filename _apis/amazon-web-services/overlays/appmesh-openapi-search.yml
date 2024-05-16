@@ -4,169 +4,288 @@ info:
 paths:
   /v20190125/meshes/{meshName}/virtualGateway/{virtualGatewayName}/gatewayRoutes:
     GET:
-      summary: List Gateway Routes
+      summary: ListGatewayRoutes
       description: >-
         <p>Returns a list of existing gateway routes that are associated to a
         virtual gateway.</p>
       tags:
-        - Gateways
         - Lists
-        - Mesh
-        - Meshes
-        - Names
+        - Gateway
         - Routes
+        - Names
         - Virtual
+        - Gateway
+        - Routes
   /v20190125/meshes:
     GET:
-      summary: List Meshes
+      summary: ListMeshes
       description: <p>Returns a list of existing service meshes.</p>
       tags:
         - Lists
         - Meshes
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
   /v20190125/meshes/{meshName}/virtualRouter/{virtualRouterName}/routes:
     GET:
-      summary: List Routes
+      summary: ListRoutes
       description: <p>Returns a list of existing routes in a service mesh.</p>
       tags:
         - Lists
-        - Mesh
-        - Meshes
-        - Names
-        - Router
         - Routes
+        - Names
         - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
   /v20190125/meshes/{meshName}/virtualGateways:
     GET:
-      summary: List Virtual Gateways
+      summary: ListVirtualGateways
       description: <p>Returns a list of existing virtual gateways in a service mesh.</p>
       tags:
-        - Gateways
         - Lists
-        - Mesh
-        - Meshes
+        - Virtual
+        - Gateways
         - Names
         - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
   /v20190125/meshes/{meshName}/virtualNodes:
     GET:
-      summary: List Virtual Nodes
+      summary: ListVirtualNodes
       description: <p>Returns a list of existing virtual nodes.</p>
       tags:
         - Lists
-        - Mesh
-        - Meshes
-        - Names
-        - Nodes
         - Virtual
+        - Nodes
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
   /v20190125/meshes/{meshName}/virtualRouters:
     GET:
-      summary: 'List Virtual Routers '
+      summary: ListVirtualRouters
       description: <p>Returns a list of existing virtual routers in a service mesh.</p>
       tags:
         - Lists
-        - Mesh
-        - Meshes
-        - Names
-        - Routers
         - Virtual
+        - Routers
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
   /v20190125/meshes/{meshName}/virtualServices:
     GET:
-      summary: 'List Virtual Services '
+      summary: ListVirtualServices
       description: <p>Returns a list of existing virtual services in a service mesh.</p>
       tags:
         - Lists
-        - Mesh
-        - Meshes
-        - Names
-        - Services
         - Virtual
+        - Services
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
   /v20190125/meshes/{meshName}/virtualGateway/{virtualGatewayName}/gatewayRoutes/{gatewayRouteName}:
     PUT:
-      summary: 'Update Gateway Route '
+      summary: UpdateGatewayRoute
       description: >-
         <p>Updates an existing gateway route that is associated to a specified
         virtual gateway in a service mesh.</p>
       tags:
-        - Gateways
-        - Mesh
-        - Meshes
-        - Names
+        - Update
+        - Gateway
         - Routes
+        - Names
         - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
   /v20190125/meshes/{meshName}:
     PUT:
-      summary: 'Update Mesh '
+      summary: UpdateMesh
       description: <p>Updates an existing service mesh.</p>
       tags:
+        - Update
         - Mesh
-        - Meshes
         - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
   /v20190125/meshes/{meshName}/virtualRouter/{virtualRouterName}/routes/{routeName}:
     PUT:
-      summary: 'Update Route '
+      summary: UpdateRoute
       description: >-
         <p>Updates an existing route for a specified service mesh and virtual
         router.</p>
       tags:
-        - Mesh
-        - Meshes
+        - Update
+        - Routes
         - Names
-        - Routes
-        - Router
-        - Routes
         - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
   /v20190125/meshes/{meshName}/virtualGateways/{virtualGatewayName}:
     PUT:
-      summary: 'Update Virtual Gateway '
+      summary: UpdateVirtualGateway
       description: <p>Updates an existing virtual gateway in a specified service mesh.</p>
       tags:
-        - Gateways
-        - Gateways
-        - Mesh
-        - Meshes
+        - Update
+        - Virtual
+        - Gateway
         - Names
         - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
   /v20190125/meshes/{meshName}/virtualNodes/{virtualNodeName}:
     PUT:
-      summary: 'Update Virtual Node '
+      summary: UpdateVirtualNode
       description: <p>Updates an existing virtual node in a specified service mesh.</p>
       tags:
-        - Mesh
-        - Meshes
-        - Names
-        - Nodes
+        - Update
         - Virtual
+        - Nodes
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
+        - Nodes
   /v20190125/meshes/{meshName}/virtualRouters/{virtualRouterName}:
     PUT:
-      summary: 'Update Virtual Router '
+      summary: UpdateVirtualRouter
       description: <p>Updates an existing virtual router in a specified service mesh.</p>
       tags:
-        - Mesh
-        - Meshes
-        - Names
-        - Router
-        - Routers
+        - Update
         - Virtual
+        - Router
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
+        - Nodes
   /v20190125/meshes/{meshName}/virtualServices/{virtualServiceName}:
     PUT:
-      summary: 'Update Virtual Service '
+      summary: UpdateVirtualService
       description: <p>Updates an existing virtual service in a specified service mesh.</p>
       tags:
-        - Mesh
-        - Meshes
-        - Names
-        - Services
+        - Update
         - Virtual
+        - Services
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
+        - Nodes
+        - Services
   /v20190125/tags:
     GET:
-      summary: 'List Tags For Resource '
+      summary: ListTagsForResource
       description: <p>List the tags for an App Mesh resource.</p>
       tags:
         - Lists
+        - Tags
+        - For
         - Resources
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
+        - Nodes
+        - Services
         - Tags
   /v20190125/tag:
     PUT:
-      summary: 'Tag Resource '
+      summary: TagResource
       description: >-
         <p>Associates the specified tags to a resource with the specified
         <code>resourceArn</code>. If existing tags on a resource aren't
@@ -174,12 +293,45 @@ paths:
         resource is deleted, the tags associated with that resource are also
         deleted.</p>
       tags:
+        - Tags
         - Resources
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
+        - Nodes
+        - Services
+        - Tags
         - Tags
   /v20190125/untag:
     PUT:
-      summary: 'Untag Resource '
+      summary: UntagResource
       description: <p>Deletes specified tags from a res
       tags:
-        - Resources
         - Untag
+        - Resources
+        - Names
+        - Virtual
+        - Gateway
+        - Routes
+        - null
+        - Meshes
+        - Router
+        - Gateways
+        - Nodes
+        - Routers
+        - Services
+        - Routes
+        - Nodes
+        - Services
+        - Tags
+        - Tags
+        - null

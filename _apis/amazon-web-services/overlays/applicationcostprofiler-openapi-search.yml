@@ -4,15 +4,18 @@ info:
 paths:
   /reportDefinition/{reportId}:
     PUT:
-      summary: Update Report Definition
+      summary: UpdateReportDefinition
       description: <p>Updates existing report in AWS Application Cost Profiler.</p>
       tags:
-        - Definitions
-        - Identifiers
+        - Update
         - Reports
+        - Definitions
+        - Definitions
+        - Reports
+        - Identifiers
   /importApplicationUsage:
     POST:
-      summary: Import Application Usage
+      summary: ImportApplicationUsage
       description: >-
         <p>Ingests application usage data from Amazon Simple Storage Service
         (Amazon S3).</p> <p>The data must already exist in the S3 location. As
@@ -20,13 +23,24 @@ paths:
         your S3 bucket to an S3 bucket owned by Amazon for processing
         asynchronously.</p>
       tags:
-        - Applications
         - Import
+        - Applications
+        - Usage
+        - Definitions
+        - Reports
+        - Identifiers
+        - Applications
         - Usage
   /reportDefinition:
     POST:
-      summary: Put Report Definition
+      summary: PutReportDefinition
       description: <p>Creates the report definition for a report in Application Cost Pro
       tags:
+        - Put
+        - Reports
+        - Definitions
         - Definitions
         - Reports
+        - Identifiers
+        - Applications
+        - USA
