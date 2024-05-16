@@ -4,15 +4,11 @@ info:
 paths:
   /reportDefinition/{reportId}:
     PUT:
-      summary: UpdateReportDefinition
+      summary: 'Update Report Definition '
       description: <p>Updates existing report in AWS Application Cost Profiler.</p>
       tags:
-        - Update
-        - Reports
-        - Definitions
         - Definitions
         - Reports
-        - Identifiers
   /importApplicationUsage:
     POST:
       summary: ImportApplicationUsage
@@ -24,12 +20,10 @@ paths:
         asynchronously.</p>
       tags:
         - Import
-        - Applications
+        - Application
         - Usage
-        - Definitions
-        - Reports
-        - Identifiers
-        - Applications
+        - Import
+        - Application
         - Usage
   /reportDefinition:
     POST:
