@@ -876,7 +876,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/appstream2/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - 'Stack '
     properties:
       - type: Documentation
         url: https://aws.amazon.com/appstream2/
@@ -919,7 +920,101 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/amplify/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - 'Applications '
+      - 'Lists '
+      - 'Applications '
+      - 'Backend Environments '
+      - 'Backends '
+      - 'Environments '
+      - 'Identifiers '
+      - 'Lists '
+      - 'Applications '
+      - 'Branches '
+      - 'Identifiers '
+      - 'Lists '
+      - 'Applications '
+      - 'Branch '
+      - 'Branches '
+      - 'Create '
+      - 'Deployments '
+      - 'Identifiers '
+      - 'Names '
+      - 'Applications '
+      - 'Associations '
+      - 'Domains '
+      - 'Identifiers '
+      - 'Lists '
+      - 'Applications '
+      - 'Identifiers '
+      - 'Lists '
+      - 'Webhooks '
+      - 'Applications '
+      - 'Identifiers '
+      - 'Applications '
+      - 'Backend Environments '
+      - 'Backends '
+      - 'Environments '
+      - 'Identifiers '
+      - 'Names '
+      - 'Applications '
+      - 'Branch '
+      - 'Branches '
+      - 'Identifiers '
+      - 'Names '
+      - 'Applications '
+      - 'Association '
+      - 'Domains '
+      - 'Identifiers '
+      - 'Names '
+      - 'Applications '
+      - 'Branch '
+      - 'Branches '
+      - 'Identifiers '
+      - 'Jobs '
+      - 'Names '
+      - 'Identifiers '
+      - 'Webhooks '
+      - 'Access '
+      - 'Access Logs '
+      - 'Applications '
+      - 'Generate '
+      - 'Identifiers '
+      - 'Logs '
+      - 'Artifacts '
+      - 'Identifiers '
+      - 'URL '
+      - 'Applications '
+      - 'Artifacts '
+      - 'Branch '
+      - 'Branches '
+      - 'Identifiers '
+      - 'Jobs '
+      - 'Lists '
+      - 'Names '
+      - 'Applications '
+      - 'Branch '
+      - 'Branches '
+      - 'Identifiers '
+      - 'Jobs '
+      - 'Names '
+      - 'ARN '
+      - 'Resources '
+      - 'Tags '
+      - 'Untag '
+      - 'Applications '
+      - 'Branch '
+      - 'Branches '
+      - 'Deployments '
+      - 'Identifiers '
+      - 'Names '
+      - 'Applications '
+      - 'Branch '
+      - 'Branches '
+      - 'Identifiers '
+      - 'Jobs '
+      - 'Names '
+      - 'Stop '
     properties:
       - type: Documentation
         url: https://aws.amazon.com/amplify/
@@ -947,7 +1042,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/apprunner/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - 'Connections '
+      - 'Ingress '
+      - 'VPC '
     properties:
       - type: Documentation
         url: https://aws.amazon.com/apprunner/
@@ -988,7 +1086,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/athena/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - 'Work '
     properties:
       - type: Documentation
         url: https://aws.amazon.com/athena/
@@ -1023,7 +1122,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ec2/autoscaling/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Autoscaling
+      - Scaling
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ec2/autoscaling/
@@ -1064,7 +1165,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/b2b-data-interchange/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Transformers
+      - Data
+      - Interchange
     properties:
       - type: Documentation
         url: https://aws.amazon.com/b2b-data-interchange/
@@ -1094,7 +1198,183 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/audit-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - 'Assessments '
+      - 'Associate '
+      - 'Evidence '
+      - 'Folder '
+      - 'Reports '
+      - 'Assessments '
+      - 'Associate '
+      - 'Batches '
+      - 'Evidence '
+      - 'Identifiers '
+      - 'Reports '
+      - 'To '
+      - 'Assessments '
+      - 'Batches '
+      - 'Delegation '
+      - 'Delegations '
+      - 'Identifiers '
+      - 'Assessments '
+      - 'Batches '
+      - 'Disassociate '
+      - 'Evidence '
+      - 'From '
+      - 'Identifiers '
+      - 'Reports '
+      - 'Assessments '
+      - 'Batches '
+      - 'Control '
+      - 'Controls '
+      - 'Evidence '
+      - 'Import '
+      - 'Sets '
+      - 'Assessments '
+      - 'Assessments '
+      - 'Frameworks '
+      - 'Lists '
+      - 'Assessments '
+      - 'Create '
+      - 'Reports '
+      - 'Controls '
+      - 'Assessments '
+      - 'Identifiers '
+      - 'Assessments '
+      - 'Frameworks '
+      - 'Identifiers '
+      - 'Assessments '
+      - 'Frameworks '
+      - 'Request '
+      - 'Share '
+      - 'Assessments '
+      - 'Identifiers '
+      - 'Reports '
+      - 'Controls '
+      - 'Accounts '
+      - 'Deregister '
+      - 'Accounts '
+      - 'Administrative '
+      - 'Deregister '
+      - 'Organizations '
+      - 'Assessments '
+      - 'Disassociate '
+      - 'Evidence '
+      - 'Folder '
+      - 'From '
+      - 'Identifiers '
+      - 'Reports '
+      - 'Accounts '
+      - 'Status '
+      - 'Assessments '
+      - 'Identifiers '
+      - 'Reports '
+      - 'URL '
+      - 'Assessments '
+      - 'Change '
+      - 'Change Logs '
+      - 'Identifiers '
+      - 'Logs '
+      - 'Delegations '
+      - 'Assessments '
+      - 'Control '
+      - 'Evidence '
+      - 'Folder '
+      - 'Folders '
+      - 'Identifiers '
+      - 'Sets '
+      - 'Assessments '
+      - 'Control '
+      - 'Evidence '
+      - 'Folder '
+      - 'Folders '
+      - 'Sets '
+      - 'Evidence '
+      - 'File '
+      - 'URL '
+      - 'Uploads '
+      - 'Assessments '
+      - 'Control '
+      - 'Evidence '
+      - 'Folder '
+      - 'Folders '
+      - 'Sets '
+      - 'Assessments '
+      - 'Evidence '
+      - 'Folders '
+      - 'Identifiers '
+      - 'Assessments '
+      - 'Control '
+      - 'Evidence '
+      - 'Folders '
+      - 'Identifiers '
+      - 'Sets '
+      - 'Insights '
+      - 'Assessments '
+      - 'Identifiers '
+      - 'Insights '
+      - 'Accounts '
+      - 'Administrative '
+      - 'Organizations '
+      - 'Scopes '
+      - 'Services '
+      - 'Attributes '
+      - 'Settings '
+      - 'Assessments '
+      - 'Control '
+      - 'Controls '
+      - 'Domains '
+      - 'Insights '
+      - 'Lists '
+      - 'Assessments '
+      - 'Frameworks '
+      - 'Share '
+      - 'Assessments '
+      - 'Reports '
+      - 'Control '
+      - 'Domains '
+      - 'Insights '
+      - 'Assessments '
+      - 'Control '
+      - 'Domains '
+      - 'Insights '
+      - 'Control '
+      - 'Controls '
+      - 'Domains '
+      - 'Insights '
+      - 'Data '
+      - 'Keywords '
+      - 'Source '
+      - 'Notifications '
+      - 'Tags '
+      - 'Resources '
+      - 'ARN '
+      - 'Untag '
+      - 'Resources '
+      - 'Accounts '
+      - 'Register '
+      - 'Accounts '
+      - 'Administrative '
+      - 'Organizations '
+      - 'Register '
+      - 'Assessments '
+      - 'Frameworks '
+      - 'Share '
+      - 'Assessments '
+      - 'Control '
+      - 'Controls '
+      - 'Sets '
+      - 'Assessments '
+      - 'Control '
+      - 'Sets '
+      - 'Status '
+      - 'Assessments '
+      - 'Status '
+      - 'Settings '
+      - 'Assessments '
+      - 'Integrity '
+      - 'Reports '
+      - 'Validate '
     properties:
       - type: Documentation
         url: https://aws.amazon.com/audit-manager/
