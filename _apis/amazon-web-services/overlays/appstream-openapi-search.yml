@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateStack
+      summary: 'Update Stack '
       description: <p>Updates the specified fields for the specified
       tags:
-        - Update
-        - null
+        - Stack
