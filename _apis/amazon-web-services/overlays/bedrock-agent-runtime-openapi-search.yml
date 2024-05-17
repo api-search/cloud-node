@@ -4,51 +4,33 @@ info:
 paths:
   /agents/{agentId}/agentAliases/{agentAliasId}/sessions/{sessionId}/text:
     POST:
-      summary: InvokeAgent
+      summary: 'Invoke Agent '
       description: >-
         <p>Invokes the specified Bedrock model to run inference using the input
         provided in the request body.</p>
       tags:
-        - Invoke
         - Agent
-        - Identifiers
-        - Agent
-        - Aliases
+        - Agents
         - Alias
-        - Sessions
+        - Aliases
+        - Identifiers
+        - Invoke
         - Sessions
         - Text
   /knowledgebases/{knowledgeBaseId}/retrieve:
     POST:
-      summary: Retrieve
+      summary: 'Retrieve '
       description: <p>Retrieve from knowledge base.</p>
       tags:
-        - Retrieve
-        - Identifiers
-        - Agent
-        - Aliases
-        - Alias
-        - Sessions
-        - Sessions
-        - Text
         - Base
+        - Identifiers
+        - Knowledge
+        - Knowledgebases
         - Retrieve
   /retrieveAndGenerate:
     POST:
-      summary: RetrieveAndGenerate
+      summary: 'Retrieve And Generate '
       description: <p>RetrieveAndGenera
       tags:
-        - Retrieve
-        - And
         - Generate
-        - Identifiers
-        - Agent
-        - Aliases
-        - Alias
-        - Sessions
-        - Sessions
-        - Text
-        - Base
         - Retrieve
-        - And
-        - General
