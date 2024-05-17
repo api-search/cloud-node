@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateSubscriber
+      summary: 'Update Subscriber '
       description: <p>Updates a subsc
       tags:
-        - Update
-        - null
+        - Subscribers
