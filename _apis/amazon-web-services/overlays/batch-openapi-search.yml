@@ -4,7 +4,7 @@ info:
 paths:
   /v1/canceljob:
     POST:
-      summary: CancelJob
+      summary: 'Cancel Job '
       description: >-
         <p>Cancels a job in an Batch job queue. Jobs that are in the
         <code>SUBMITTED</code> or <code>PENDING</code> are canceled. A job
@@ -22,12 +22,11 @@ paths:
         <a>TerminateJob</a> operation.</p>
       tags:
         - Cancel
-        - Jobs
-        - null
         - Cancel Jobs
+        - Jobs
   /v1/createcomputeenvironment:
     POST:
-      summary: CreateComputeEnvironment
+      summary: 'Create Compute Environment '
       description: >-
         <p>Creates an Batch compute environment. You can create
         <code>MANAGED</code> or <code>UNMANAGED</code> compute environments.
@@ -114,15 +113,13 @@ paths:
         infrastructure update, even if the <code>launchTemplate</code> wasn't
         updated.</p> </note>
       tags:
-        - Create
         - Compute
-        - Environments
-        - null
-        - Cancel Jobs
         - Computer Environments
+        - Create
+        - Environments
   /v1/createjobqueue:
     POST:
-      summary: CreateJobQueue
+      summary: 'Create Job Queue '
       description: >-
         <p>Creates an Batch job queue. When you create a job queue, you
         associate one or more compute environments to the queue and assign an
@@ -134,28 +131,21 @@ paths:
         scheduling jobs to that compute environment.</p>
       tags:
         - Create
+        - Job Queues
         - Jobs
         - Queues
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
   /v1/createschedulingpolicy:
     POST:
-      summary: CreateSchedulingPolicy
+      summary: 'Create Scheduling Policy '
       description: <p>Creates an Batch scheduling policy.</p>
       tags:
         - Create
-        - Scheduling
         - Policies
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
+        - Scheduling
         - Scheduling Policy
   /v1/deletecomputeenvironment:
     POST:
-      summary: DeleteComputeEnvironment
+      summary: 'Delete Compute Environment '
       description: >-
         <p>Deletes an Batch compute environment.</p> <p>Before you can delete a
         compute environment, you must set its state to <code>DISABLED</code>
@@ -166,18 +156,11 @@ paths:
         environment. If this isn't done, the compute environment enters an
         invalid state.</p>
       tags:
-        - Delete
         - Compute
         - Environments
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
   /v1/deletejobqueue:
     POST:
-      summary: DeleteJobQueue
+      summary: 'Delete Job Queue '
       description: >-
         <p>Deletes the specified job queue. You must first disable submissions
         for a queue with the <a>UpdateJobQueue</a> operation. All jobs in the
@@ -186,56 +169,33 @@ paths:
         necessary to disassociate compute environments from a queue before
         submitting a <code>DeleteJobQueue</code> request.</p>
       tags:
-        - Delete
+        - Job Queues
         - Jobs
         - Queues
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
   /v1/deleteschedulingpolicy:
     POST:
-      summary: DeleteSchedulingPolicy
+      summary: 'Delete Scheduling Policy '
       description: >-
         <p>Deletes the specified scheduling policy.</p> <p>You can't delete a
         scheduling policy that's used in any job queues.</p>
       tags:
-        - Delete
-        - Scheduling
         - Policies
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
+        - Scheduling
         - Scheduling Policies
   /v1/deregisterjobdefinition:
     POST:
-      summary: DeregisterJobDefinition
+      summary: 'Deregister Job Definition '
       description: >-
         <p>Deregisters an Batch job definition. Job definitions are permanently
         deleted after 180 days.</p>
       tags:
-        - Deregister
-        - Jobs
         - Definitions
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
+        - Deregister
         - Deregister Job Definitions
+        - Jobs
   /v1/describecomputeenvironments:
     POST:
-      summary: DescribeComputeEnvironments
+      summary: 'Describe Compute Environments '
       description: >-
         <p>Describes one or more of your compute environments.</p> <p>If you're
         using an unmanaged compute environment, you can use the
@@ -243,106 +203,50 @@ paths:
         <code>ecsClusterArn</code> that you launch your Amazon ECS container
         instances into.</p>
       tags:
-        - Describe
         - Compute
+        - Computer Environments
+        - Describe
         - Environments
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
   /v1/describejobdefinitions:
     POST:
-      summary: DescribeJobDefinitions
+      summary: 'Describe Job Definitions '
       description: >-
         <p>Describes a list of job definitions. You can specify a
         <code>status</code> (such as <code>ACTIVE</code>) to only return job
         definitions that match that status.</p>
       tags:
-        - Describe
-        - Jobs
         - Definitions
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
+        - Describe
         - Job Definitions
+        - Jobs
   /v1/describejobqueues:
     POST:
-      summary: DescribeJobQueues
+      summary: 'Describe Job Queues '
       description: <p>Describes one or more of your job queues.</p>
       tags:
         - Describe
+        - Job Queues
         - Jobs
         - Queues
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
   /v1/describejobs:
     POST:
-      summary: DescribeJobs
+      summary: 'Describe Jobs '
       description: <p>Describes a list of Batch jobs.</p>
       tags:
         - Describe
         - Jobs
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
   /v1/describeschedulingpolicies:
     POST:
-      summary: DescribeSchedulingPolicies
+      summary: 'Describe Scheduling Policies '
       description: <p>Describes one or more of your scheduling policies.</p>
       tags:
         - Describe
-        - Scheduling
         - Policies
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
+        - Scheduling
         - Scheduling Policies
   /v1/listjobs:
     POST:
-      summary: ListJobs
+      summary: 'List Jobs '
       description: >-
         <p>Returns a list of Batch jobs.</p> <p>You must specify only one of the
         following items:</p> <ul> <li> <p>A job queue ID to return a list of
@@ -353,100 +257,38 @@ paths:
         parameter. If you don't specify a status, only <code>RUNNING</code> jobs
         are returned.</p>
       tags:
+        - Jobs
         - Lists
-        - Jobs
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
   /v1/listschedulingpolicies:
     POST:
-      summary: ListSchedulingPolicies
+      summary: 'List Scheduling Policies '
       description: <p>Returns a list of Batch scheduling policies.</p>
       tags:
         - Lists
-        - Scheduling
         - Policies
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
+        - Scheduling
         - Scheduling Policies
   /v1/tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Deletes specified tags from an Batch resource.</p>
       tags:
-        - Untag
-        - Resources
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
-        - Scheduling Policies
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /v1/registerjobdefinition:
     POST:
-      summary: RegisterJobDefinition
+      summary: 'Register Job Definition '
       description: <p>Registers an Batch job definition.</p>
       tags:
-        - Register
-        - Jobs
         - Definitions
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
         - Jobs
-        - Scheduling Policies
-        - Jobs
-        - Scheduling Policies
-        - ARN
+        - Register
         - Register Job Definitions
   /v1/submitjob:
     POST:
-      summary: SubmitJob
+      summary: 'Submit Job '
       description: >-
         <p>Submits an Batch job from a job definition. Parameters that are
         specified during <a>SubmitJob</a> override parameters defined in the job
@@ -463,145 +305,42 @@ paths:
         14 days, Fargate resources might become unavailable and job might be
         terminated.</p> </important>
       tags:
+        - Jobs
         - Submit
-        - Jobs
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
-        - Scheduling Policies
-        - ARN
-        - Register Job Definitions
         - Submit Jobs
   /v1/terminatejob:
     POST:
-      summary: TerminateJob
+      summary: 'Terminate Job '
       description: >-
         <p>Terminates a job in a job queue. Jobs that are in the
         <code>STARTING</code> or <code>RUNNING</code> state are terminated,
         which causes them to transition to <code>FAILED</code>. Jobs that have
         not progressed to the <code>STARTING</code> state are cancelled.</p>
       tags:
+        - Jobs
         - Terminate
-        - Jobs
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
-        - Scheduling Policies
-        - ARN
-        - Register Job Definitions
-        - Submit Jobs
         - Terminate Jobs
   /v1/updatecomputeenvironment:
     POST:
-      summary: UpdateComputeEnvironment
+      summary: 'Update Compute Environment '
       description: <p>Updates an Batch compute environment.</p>
       tags:
-        - Update
         - Compute
+        - Computer Environments
         - Environments
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
-        - Scheduling Policies
-        - ARN
-        - Register Job Definitions
-        - Submit Jobs
-        - Terminate Jobs
-        - Computer Environments
   /v1/updatejobqueue:
     POST:
-      summary: UpdateJobQueue
+      summary: 'Update Job Queue '
       description: <p>Updates a job queue.</p>
       tags:
-        - Update
+        - Job Queues
         - Jobs
         - Queues
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
-        - Scheduling Policies
-        - ARN
-        - Register Job Definitions
-        - Submit Jobs
-        - Terminate Jobs
-        - Computer Environments
-        - Job Queues
   /v1/updateschedulingpolicy:
     POST:
-      summary: UpdateSchedulingPolicy
+      summary: 'Update Scheduling Policy '
       description: <p>Updates a scheduling p
       tags:
-        - Update
-        - Scheduling
         - Policies
-        - null
-        - Cancel Jobs
-        - Computer Environments
-        - Job Queues
-        - Scheduling Policy
-        - null
-        - Job Queues
-        - Scheduling Policies
-        - Deregister Job Definitions
-        - Computer Environments
-        - Job Definitions
-        - Job Queues
-        - Jobs
-        - Scheduling Policies
-        - Jobs
-        - Scheduling Policies
-        - ARN
-        - Register Job Definitions
-        - Submit Jobs
-        - Terminate Jobs
-        - Computer Environments
-        - Job Queues
-        - null
+        - Scheduling
+        - Updateschedulingpolicy
