@@ -4,7 +4,7 @@ info:
 paths:
   /associate-accounts:
     POST:
-      summary: AssociateAccounts
+      summary: 'Associate Accounts '
       description: >-
         <p>Connects an array of account IDs in a consolidated billing family to
         a predefined billing group. The account IDs must be a part of the
@@ -12,13 +12,11 @@ paths:
         associated with another billing group. The maximum number of accounts
         that can be associated in one call is 30. </p>
       tags:
-        - Associate
         - Accounts
         - Associate
-        - Accounts
   /associate-pricing-rules:
     PUT:
-      summary: AssociatePricingRules
+      summary: 'Associate Pricing Rules '
       description: >-
         <p>Connects an array of <code>PricingRuleArns</code> to a defined
         <code>PricingPlan</code>. The maximum number <code>PricingRuleArn</code>
@@ -27,89 +25,47 @@ paths:
         - Associate
         - Pricing
         - Rules
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
   /batch-associate-resources-to-custom-line-item:
     PUT:
-      summary: BatchAssociateResourcesToCustomLineItem
+      summary: 'Batch Associate Resources To Custom Line Item '
       description: >-
         <p> Associates a batch of resources to a percentage custom line item.
         </p>
       tags:
-        - Batches
         - Associate
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
         - Batches
-        - Resources
-        - To
         - Custom
-        - Line
         - Items
+        - Line
+        - Resources
   /batch-disassociate-resources-from-custom-line-item:
     PUT:
-      summary: BatchDisassociateResourcesFromCustomLineItem
+      summary: 'Batch Disassociate Resources From Custom Line Item '
       description: >-
         <p> Disassociates a batch of resources from a percentage custom line
         item. </p>
       tags:
         - Batches
-        - Disassociate
-        - Resources
-        - From
         - Custom
-        - Line
-        - Items
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
         - Disassociate
         - From
+        - Items
+        - Line
+        - Resources
   /create-billing-group:
     POST:
-      summary: CreateBillingGroup
+      summary: 'Create Billing Group '
       description: >-
         <p> Creates a billing group that resembles a consolidated billing family
         that Amazon Web Services charges, based off of the predefined pricing
         plan computation. </p>
       tags:
-        - Create
         - Billing
-        - Group
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
         - Create
-        - Billing
         - Group
   /create-custom-line-item:
     POST:
-      summary: CreateCustomLineItem
+      summary: 'Create Custom Line Item '
       description: >-
         <p>Creates a custom line item that can be used to create a one-time
         fixed charge that can be applied to a single billing group for the
@@ -118,52 +74,21 @@ paths:
       tags:
         - Create
         - Custom
-        - Line
         - Items
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
         - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
   /create-pricing-plan:
     POST:
-      summary: CreatePricingPlan
+      summary: 'Create Pricing Plan '
       description: >-
         <p>Creates a pricing plan that is used for computing Amazon Web Services
         charges for billing groups. </p>
       tags:
         - Create
-        - Pricing
         - Plan
-        - Associate
-        - Accounts
         - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
   /create-pricing-rule:
     POST:
-      summary: CreatePricingRule
+      summary: 'Create Pricing Rule '
       description: >-
         <p> Creates a pricing rule can be associated to a pricing plan, or a set
         of pricing plans. </p>
@@ -171,224 +96,73 @@ paths:
         - Create
         - Pricing
         - Rules
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
   /delete-billing-group:
     POST:
-      summary: DeleteBillingGroup
+      summary: 'Delete Billing Group '
       description: <p> Deletes a billing group. </p>
       tags:
-        - Delete
         - Billing
         - Group
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
   /delete-custom-line-item:
     POST:
-      summary: DeleteCustomLineItem
+      summary: 'Delete Custom Line Item '
       description: >-
         <p> Deletes the custom line item identified by the given ARN in the
         current, or previous billing period. </p>
       tags:
-        - Delete
         - Custom
-        - Line
         - Items
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
         - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
   /delete-pricing-plan:
     POST:
-      summary: DeletePricingPlan
+      summary: 'Delete Pricing Plan '
       description: >-
         <p>Deletes a pricing plan. The pricing plan must not be associated with
         any billing groups to delete successfully.</p>
       tags:
-        - Delete
-        - Pricing
         - Plan
-        - Associate
-        - Accounts
         - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
   /delete-pricing-rule:
     POST:
-      summary: DeletePricingRule
+      summary: 'Delete Pricing Rule '
       description: >-
         <p> Deletes the pricing rule that's identified by the input Amazon
         Resource Name (ARN). </p>
       tags:
-        - Delete
         - Pricing
         - Rules
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
   /disassociate-accounts:
     POST:
-      summary: DisassociateAccounts
+      summary: 'Disassociate Accounts '
       description: >-
         <p>Removes the specified list of account IDs from the given billing
         group. </p>
       tags:
-        - Disassociate
         - Accounts
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
         - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
   /disassociate-pricing-rules:
     PUT:
-      summary: DisassociatePricingRules
+      summary: 'Disassociate Pricing Rules '
       description: <p> Disassociates a list of pricing rules from a pricing plan. </p>
       tags:
         - Disassociate
         - Pricing
         - Rules
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
   /get-billing-group-cost-report:
     POST:
-      summary: GetBillingGroupCostReport
+      summary: 'Get Billing Group Cost Report '
       description: >-
         <p>Retrieves the margin summary report, which includes the Amazon Web
         Services cost and charged amount (pro forma cost) by Amazon Web Service
         for a specific billing group.</p>
       tags:
-        - Get
         - Billing
-        - Group
         - Cost
-        - Reports
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
         - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
         - Reports
   /list-account-associations:
     POST:
-      summary: ListAccountAssociations
+      summary: 'List Account Associations '
       description: >-
         <p> This is a paginated call to list linked accounts that are linked to
         the payer account for the specified time period. If no information is
@@ -396,272 +170,81 @@ paths:
         optionally include the billing group that's associated with the linked
         account.</p>
       tags:
-        - Lists
-        - Account
-        - Associations
-        - Associate
         - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
         - Associations
+        - Lists
   /list-billing-group-cost-reports:
     POST:
-      summary: ListBillingGroupCostReports
+      summary: 'List Billing Group Cost Reports '
       description: >-
         <p>A paginated call to retrieve a summary report of actual Amazon Web
         Services charges and the calculated Amazon Web Services charges based on
         the associated pricing plan of a billing group.</p>
       tags:
-        - Lists
         - Billing
-        - Group
         - Cost
-        - Reports
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
         - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
         - Lists
-        - Account
-        - Associations
         - Reports
   /list-billing-groups:
     POST:
-      summary: ListBillingGroups
+      summary: 'List Billing Groups '
       description: >-
         <p>A paginated call to retrieve a list of billing groups for the given
         billing period. If you don't provide a billing group, the current
         billing period is used.</p>
       tags:
-        - Lists
         - Billing
         - Groups
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
         - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
   /list-custom-line-item-versions:
     POST:
-      summary: ListCustomLineItemVersions
+      summary: 'List Custom Line Item Versions '
       description: <p>A paginated call to get a list of all custom line item versions.</p>
       tags:
-        - Lists
         - Custom
-        - Line
         - Items
-        - Versions
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
         - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
         - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
         - Versions
   /list-custom-line-items:
     POST:
-      summary: ListCustomLineItems
+      summary: 'List Custom Line Items '
       description: >-
         <p> A paginated call to get a list of all custom line items (FFLIs) for
         the given billing period. If you don't provide a billing period, the
         current billing period is used. </p>
       tags:
-        - Lists
         - Custom
-        - Line
         - Items
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
         - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
         - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
   /list-pricing-plans:
     POST:
-      summary: ListPricingPlans
+      summary: 'List Pricing Plans '
       description: >-
         <p>A paginated call to get pricing plans for the given billing period.
         If you don't provide a billing period, the current billing period is
         used. </p>
       tags:
         - Lists
-        - Pricing
         - Plans
-        - Associate
-        - Accounts
         - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
   /list-pricing-plans-associated-with-pricing-rule:
     POST:
-      summary: ListPricingPlansAssociatedWithPricingRule
+      summary: 'List Pricing Plans Associated With Pricing Rule '
       description: >-
         <p> A list of the pricing plans that are associated with a pricing rule.
         </p>
       tags:
-        - Lists
-        - Pricing
-        - Plans
         - Associated
-        - null
-        - Rules
-        - Associate
-        - Accounts
+        - Lists
+        - Plans
         - Pricing
         - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
   /list-pricing-rules:
     POST:
-      summary: ListPricingRules
+      summary: 'List Pricing Rules '
       description: >-
         <p> Describes a pricing rule that can be associated to a pricing plan,
         or set of pricing plans. </p>
@@ -669,332 +252,66 @@ paths:
         - Lists
         - Pricing
         - Rules
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
   /list-pricing-rules-associated-to-pricing-plan:
     POST:
-      summary: ListPricingRulesAssociatedToPricingPlan
+      summary: 'List Pricing Rules Associated To Pricing Plan '
       description: >-
         <p> Lists the pricing rules that are associated with a pricing plan.
         </p>
       tags:
+        - Associated
         - Lists
+        - Plan
         - Pricing
         - Rules
-        - Associated
-        - To
-        - Plan
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
   /list-resources-associated-to-custom-line-item:
     POST:
-      summary: ListResourcesAssociatedToCustomLineItem
+      summary: 'List Resources Associated To Custom Line Item '
       description: <p> List the resources that are associated to a custom line item. </p>
       tags:
+        - Associated
+        - Custom
+        - Items
+        - Line
         - Lists
         - Resources
-        - Associated
-        - To
-        - Custom
-        - Line
-        - Items
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p> Deletes specified tags from a resource. </p>
       tags:
-        - Untag
-        - Resources
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /update-billing-group:
     POST:
-      summary: UpdateBillingGroup
+      summary: 'Update Billing Group '
       description: <p>This updates an existing billing group. </p>
       tags:
-        - Update
         - Billing
         - Group
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
-        - Resources
-        - ARN
-        - Update
   /update-custom-line-item:
     POST:
-      summary: UpdateCustomLineItem
+      summary: 'Update Custom Line Item '
       description: >-
         <p> Update an existing custom line item in the current or previous
         billing period. </p>
       tags:
-        - Update
         - Custom
+        - Items
         - Line
-        - Items
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
-        - Resources
-        - ARN
-        - Update
   /update-pricing-plan:
     PUT:
-      summary: UpdatePricingPlan
+      summary: 'Update Pricing Plan '
       description: <p>This updates an existing pricing plan. </p>
       tags:
-        - Update
-        - Pricing
         - Plan
-        - Associate
-        - Accounts
         - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
-        - Resources
-        - ARN
-        - Update
   /update-pricing-rule:
     PUT:
-      summary: UpdatePricingRule
+      summary: 'Update Pricing Rule '
       description: <p> Updates an existing pricing
       tags:
-        - Update
         - Pricing
         - Rules
-        - Associate
-        - Accounts
-        - Pricing
-        - Rules
-        - Batches
-        - Resources
-        - To
-        - Custom
-        - Line
-        - Items
-        - Disassociate
-        - From
-        - Create
-        - Billing
-        - Group
-        - Plan
-        - Rules
-        - Delete
-        - Get
-        - Cost
-        - Reports
-        - Lists
-        - Account
-        - Associations
-        - Reports
-        - Groups
-        - Versions
-        - Items
-        - Plans
-        - Associated
-        - null
-        - Resources
-        - ARN
-        - Upda
