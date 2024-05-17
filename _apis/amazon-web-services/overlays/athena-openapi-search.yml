@@ -4,11 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateWorkGroup
+      summary: 'Update Work Group '
       description: >-
         <p>Updates the workgroup with the specified name. The workgroup's name
         cannot be changed. Only <code>ConfigurationUpdates</code> can be spec
       tags:
-        - Update
+        - Group
         - Work
-        - null
