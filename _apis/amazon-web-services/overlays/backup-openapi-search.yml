@@ -4,109 +4,75 @@ info:
 paths:
   /legal-holds/{legalHoldId}:
     DELETE:
-      summary: CancelLegalHold
+      summary: 'Cancel Legal Hold '
       description: >-
         <p>This action removes the specified legal hold on a recovery point.
         This action can only be performed by a user with sufficient
         permissions.</p>
       tags:
         - Cancel
-        - Legal
         - Hold
-        - Hold
+        - Holds
         - Identifiers
+        - Legal
   /backup/plans/:
     GET:
-      summary: ListBackupPlans
+      summary: 'List Backup Plans '
       description: >-
         <p>Returns a list of all active backup plans for an authenticated
         account. The list contains information such as Amazon Resource Names
         (ARNs), plan IDs, creation and deletion dates, version IDs, plan names,
         and creator request IDs.</p>
       tags:
+        - Backup
         - Lists
-        - Backup
-        - Plans
-        - Hold
-        - Identifiers
-        - Backup
         - Plans
   /backup/plans/{backupPlanId}/selections/:
     GET:
-      summary: ListBackupSelections
+      summary: 'List Backup Selections '
       description: >-
         <p>Returns an array containing metadata of the resources associated with
         the target backup plan.</p>
       tags:
-        - Lists
         - Backup
-        - Selections
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
+        - Lists
         - Plan
+        - Plans
         - Selections
   /backup-vaults/{backupVaultName}:
     GET:
-      summary: DescribeBackupVault
+      summary: 'Describe Backup Vault '
       description: <p>Returns metadata about a backup vault specified by its name.</p>
       tags:
+        - Backup
         - Describe
-        - Backup
-        - Vault
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
         - Names
+        - Vault
+        - Vaults
   /audit/frameworks:
     GET:
-      summary: ListFrameworks
+      summary: 'List Frameworks '
       description: >-
         <p>Returns a list of all frameworks for an Amazon Web Services account
         and Amazon Web Services Region.</p>
       tags:
-        - Lists
-        - Frameworks
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
         - Frameworks
+        - Lists
   /legal-holds/:
     GET:
-      summary: ListLegalHolds
+      summary: 'List Legal Holds '
       description: >-
         <p>This action returns metadata about active and previous legal
         holds.</p>
       tags:
+        - Holds
+        - Legal
         - Lists
-        - Legal
-        - Holds
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
   /logically-air-gapped-backup-vaults/{backupVaultName}:
     PUT:
-      summary: CreateLogicallyAirGappedBackupVault
+      summary: 'Create Logically Air Gapped Backup Vault '
       description: >-
         <p>This request creates a logical container to where backups may be
         copied.</p> <p>This request includes a name, the Region, the maximum
@@ -115,184 +81,90 @@ paths:
         not include sensitive data, such as passport numbers, in the name of a
         backup vault.</p> </note>
       tags:
-        - Create
-        - Logically
         - Air
+        - Backup
+        - Create
         - Gapped
-        - Backup
-        - Vault
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
+        - Logically
         - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
+        - Vault
+        - Vaults
   /audit/report-plans:
     GET:
-      summary: ListReportPlans
+      summary: 'List Report Plans '
       description: >-
         <p>Returns a list of your report plans. For detailed information about a
         single report plan, use <code>DescribeReportPlan</code>.</p>
       tags:
-        - Lists
-        - Reports
-        - Plans
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
-        - Frameworks
-        - Legal
-        - Holds
+        - Lists
+        - Plans
         - Reports
   /restore-testing/plans:
     GET:
-      summary: ListRestoreTestingPlans
+      summary: 'List Restore Testing Plans '
       description: <p>Returns a list of restore testing plans.</p>
       tags:
         - Lists
-        - Restore
-        - Testing
         - Plans
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
         - Restore
         - Testing
   /restore-testing/plans/{RestoreTestingPlanName}/selections:
     GET:
-      summary: ListRestoreTestingSelections
+      summary: 'List Restore Testing Selections '
       description: >-
         <p>Returns a list of restore testing selections. Can be filtered by
         <code>MaxResults</code> and <code>RestoreTestingPlanName</code>.</p>
       tags:
         - Lists
-        - Restore
-        - Testing
-        - Selections
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
         - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
+        - Plan
+        - Plans
         - Restore
+        - Selections
         - Testing
   /backup/plans/{backupPlanId}:
     POST:
-      summary: UpdateBackupPlan
+      summary: 'Update Backup Plan '
       description: >-
         <p>Updates an existing backup plan identified by its
         <code>backupPlanId</code> with the input document in JSON format. The
         new version is uniquely identified by a <code>VersionId</code>.</p>
       tags:
-        - Update
         - Backup
-        - Plan
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
         - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
+        - Plans
   /backup/plans/{backupPlanId}/selections/{selectionId}:
     GET:
-      summary: GetBackupSelection
+      summary: 'Get Backup Selection '
       description: >-
         <p>Returns selection metadata and a document in JSON format that
         specifies a list of resources that are associated with a backup
         plan.</p>
       tags:
-        - Get
         - Backup
-        - Selections
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
         - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
+        - Plans
         - Selections
   /backup-vaults/{backupVaultName}/access-policy:
     PUT:
-      summary: PutBackupVaultAccessPolicy
+      summary: 'Put Backup Vault Access Policy '
       description: >-
         <p>Sets a resource-based policy that is used to manage access
         permissions on the target backup vault. Requires a backup vault name and
         an access policy document in JSON format.</p>
       tags:
-        - Put
-        - Backup
-        - Vault
         - Access
-        - Policies
-        - Hold
-        - Identifiers
         - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
         - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
         - Policies
+        - Vault
+        - Vaults
   /backup-vaults/{backupVaultName}/vault-lock:
     PUT:
-      summary: PutBackupVaultLockConfiguration
+      summary: 'Put Backup Vault Lock Configuration '
       description: >-
         <p>Applies Backup Vault Lock to a backup vault, preventing attempts to
         delete any recovery point stored in or created in a backup vault. Vault
@@ -306,95 +178,38 @@ paths:
         these regulations, see the <a href="samples/cohassetreport.zip">Cohasset
         Associates Compliance Assessment.</a> </p> </note>
       tags:
-        - Put
         - Backup
-        - Vault
-        - Locks
         - Configurations
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
         - Locks
+        - Names
+        - Vault
+        - Vaults
   /backup-vaults/{backupVaultName}/notification-configuration:
     PUT:
-      summary: PutBackupVaultNotifications
+      summary: 'Put Backup Vault Notifications '
       description: >-
         <p>Turns on notifications on a backup vault for the specified topic and
         events.</p>
       tags:
-        - Put
         - Backup
-        - Vault
-        - Notifications
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
         - Configurations
+        - Names
+        - Notifications
+        - Vault
+        - Vaults
   /audit/frameworks/{frameworkName}:
     PUT:
-      summary: UpdateFramework
+      summary: 'Update Framework '
       description: >-
         <p>Updates an existing framework identified by its
         <code>FrameworkName</code> with the input document in JSON format.</p>
       tags:
-        - Update
-        - Frameworks
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
         - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
+        - Names
   /backup-vaults/{backupVaultName}/recovery-points/{recoveryPointArn}:
     POST:
-      summary: UpdateRecoveryPointLifecycle
+      summary: 'Update Recovery Point Lifecycle '
       description: >-
         <p>Sets the transition lifecycle of a recovery point.</p> <p>The
         lifecycle defines when a protected resource is transitioned to cold
@@ -412,73 +227,29 @@ paths:
         expression for other resource types.</p> <p>This operation does not
         support continuous backups.</p>
       tags:
-        - Update
-        - Recovery
-        - Points
-        - Lifecycle
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
+        - Backup
+        - Lifecycle
+        - Names
+        - Points
+        - Recovery
+        - Vault
+        - Vaults
   /audit/report-plans/{reportPlanName}:
     PUT:
-      summary: UpdateReportPlan
+      summary: 'Update Report Plan '
       description: >-
         <p>Updates an existing report plan identified by its
         <code>ReportPlanName</code> with the input document in JSON format.</p>
       tags:
-        - Update
-        - Reports
-        - Plan
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
-        - Frameworks
-        - Legal
-        - Holds
+        - Names
+        - Plan
+        - Plans
         - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
   /restore-testing/plans/{RestoreTestingPlanName}:
     PUT:
-      summary: UpdateRestoreTestingPlan
+      summary: 'Update Restore Testing Plan '
       description: >-
         <p>This request will send changes to your specified restore testing
         plan. <code>RestoreTestingPlanName</code> cannot be updated after it is
@@ -489,38 +260,14 @@ paths:
         <code>RecoveryPointTypes</code> </p> </li> <li> <p>
         <code>SelectionWindowDays</code> </p> </li> </ul>
       tags:
-        - Update
-        - Restore
-        - Testing
-        - Plan
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
         - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
+        - Plan
+        - Plans
         - Restore
         - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
   /restore-testing/plans/{RestoreTestingPlanName}/selections/{RestoreTestingSelectionName}:
     PUT:
-      summary: UpdateRestoreTestingSelection
+      summary: 'Update Restore Testing Selection '
       description: >-
         <p>Most elements except the <code>RestoreTestingSelectionName</code> can
         be updated with this request.</p> <p>
@@ -530,38 +277,15 @@ paths:
         parameter <code>ProtectedResourceConditions</code> will be
         unsuccessful.</p>
       tags:
-        - Update
-        - Restore
-        - Testing
-        - Selections
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
         - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
+        - Plan
+        - Plans
         - Restore
-        - Testing
         - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
+        - Testing
   /backup-jobs/{backupJobId}:
     POST:
-      summary: StopBackupJob
+      summary: 'Stop Backup Job '
       description: >-
         <p>Attempts to cancel a job to create a one-time backup of a
         resource.</p> <p>This action is not supported for the following
@@ -569,72 +293,22 @@ paths:
         for ONTAP , Amazon FSx for OpenZFS, Amazon DocumentDB (with MongoDB
         compatibility), Amazon RDS, Amazon Aurora, and Amazon Neptune.</p>
       tags:
-        - Stop
         - Backup
-        - Jobs
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
         - Jobs
+        - Stop
   /copy-jobs/{copyJobId}:
     GET:
-      summary: DescribeCopyJob
+      summary: 'Describe Copy Job '
       description: <p>Returns metadata associated with creating a copy of a resource.</p>
       tags:
-        - Describe
         - Copy
-        - Jobs
-        - Hold
+        - Describe
         - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
         - Jobs
   /global-settings:
     PUT:
-      summary: UpdateGlobalSettings
+      summary: 'Update Global Settings '
       description: >-
         <p>Updates whether the Amazon Web Services account is opted in to
         cross-account backup. Returns an error if the account is not an
@@ -642,197 +316,57 @@ paths:
         <code>DescribeGlobalSettings</code> API to determine the current
         settings.</p>
       tags:
-        - Update
-        - Global
-        - Settings
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
         - Global
         - Settings
   /resources/{resourceArn}:
     GET:
-      summary: DescribeProtectedResource
+      summary: 'Describe Protected Resource '
       description: >-
         <p>Returns information about a saved resource, including the last time
         it was backed up, its Amazon Resource Name (ARN), and the Amazon Web
         Services service type of the saved resource.</p>
       tags:
+        - ARN
         - Describe
         - Protected
         - Resources
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
   /account-settings:
     PUT:
-      summary: UpdateRegionSettings
+      summary: 'Update Region Settings '
       description: >-
         <p>Updates the current service opt-in settings for the Region.</p>
         <p>Use the <code>DescribeRegionSettings</code> API to determine the
         resource types that are supported.</p>
       tags:
-        - Update
+        - Accounts
         - Regions
         - Settings
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
   /audit/report-jobs/{reportJobId}:
     GET:
-      summary: DescribeReportJob
+      summary: 'Describe Report Job '
       description: >-
         <p>Returns the details associated with creating a report as specified by
         its <code>ReportJobId</code>.</p>
       tags:
-        - Describe
-        - Reports
-        - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
+        - Describe
+        - Identifiers
         - Jobs
-        - Global
-        - Settings
-        - Account
+        - Reports
   /restore-jobs/{restoreJobId}:
     GET:
-      summary: DescribeRestoreJob
+      summary: 'Describe Restore Job '
       description: >-
         <p>Returns metadata associated with a restore job that is specified by a
         job ID.</p>
       tags:
         - Describe
-        - Restore
-        - Jobs
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
         - Jobs
-        - Global
-        - Settings
-        - Account
+        - Restore
   /backup-vaults/{backupVaultName}/recovery-points/{recoveryPointArn}/disassociate:
     POST:
-      summary: DisassociateRecoveryPoint
+      summary: 'Disassociate Recovery Point '
       description: >-
         <p>Deletes the specified continuous backup recovery point from Backup
         and releases control of that continuous backup to the source service,
@@ -841,404 +375,148 @@ paths:
         original backup plan.</p> <p>Does not support snapshot backup recovery
         points.</p>
       tags:
-        - Disassociate
-        - Recovery
-        - Points
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
+        - Backup
         - Disassociate
+        - Names
+        - Points
+        - Recovery
+        - Vault
+        - Vaults
   /backup-vaults/{backupVaultName}/recovery-points/{recoveryPointArn}/parentAssociation:
     DELETE:
-      summary: DisassociateRecoveryPointFromParent
+      summary: 'Disassociate Recovery Point From Parent '
       description: >-
         <p>This action to a specific child (nested) recovery point removes the
         relationship between the specified recovery point and its parent
         (composite) recovery point.</p>
       tags:
-        - Disassociate
-        - Recovery
-        - Points
-        - From
-        - Parents
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
+        - Associations
+        - Backup
         - Disassociate
+        - From
+        - Names
         - Parents
-        - Association
+        - Points
+        - Recovery
+        - Vault
+        - Vaults
   /backup/plans/{backupPlanId}/toTemplate/:
     GET:
-      summary: ExportBackupPlanTemplate
+      summary: 'Export Backup Plan Template '
       description: >-
         <p>Returns the backup plan that is specified by the plan ID as a backup
         template.</p>
       tags:
-        - Export
-        - Backup
-        - Plan
-        - Templates
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
+        - ARN
+        - Access
+        - Accounts
+        - Associations
         - Audit
+        - Backup
+        - Configurations
+        - Disassociate
+        - Exports
         - Frameworks
-        - Legal
+        - Global
+        - Hold
         - Holds
+        - Jobs
+        - Legal
+        - Locks
+        - Names
+        - Notifications
+        - Parents
+        - Plan
+        - Plans
+        - Points
+        - Policies
+        - Recovery
         - Reports
         - Restore
-        - Testing
         - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
         - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
         - Templates
+        - Testing
+        - Vault
   /backup/plans/{backupPlanId}/:
     GET:
-      summary: GetBackupPlan
+      summary: 'Get Backup Plan '
       description: >-
         <p>Returns <code>BackupPlan</code> details for the specified
         <code>BackupPlanId</code>. The details are the body of a backup plan in
         JSON format, in addition to plan metadata.</p>
       tags:
-        - Get
         - Backup
-        - Plan
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
         - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
+        - Plans
   /backup/template/json/toPlan:
     POST:
-      summary: GetBackupPlanFromJSON
+      summary: 'Get Backup Plan From JSON '
       description: >-
         <p>Returns a valid JSON document specifying a backup plan or an
         error.</p>
       tags:
-        - Get
         - Backup
-        - Plan
         - From
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
+        - JSON
         - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
         - Templates
   /backup/template/plans/{templateId}/toPlan:
     GET:
-      summary: GetBackupPlanFromTemplate
+      summary: 'Get Backup Plan From Template '
       description: >-
         <p>Returns the template specified by its <code>templateId</code> as a
         backup plan.</p>
       tags:
-        - Get
         - Backup
-        - Plan
         - From
-        - Templates
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
         - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
+        - Plans
         - Templates
   /legal-holds/{legalHoldId}/:
     GET:
-      summary: GetLegalHold
+      summary: 'Get Legal Hold '
       description: >-
         <p>This action returns details for a specified legal hold. The details
         are the body of a legal hold in JSON format, in addition to
         metadata.</p>
       tags:
-        - Get
-        - Legal
         - Hold
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
         - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
+        - Identifiers
+        - Legal
   /backup-vaults/{backupVaultName}/recovery-points/{recoveryPointArn}/restore-metadata:
     GET:
-      summary: GetRecoveryPointRestoreMetadata
+      summary: 'Get Recovery Point Restore Metadata '
       description: >-
         <p>Returns a set of metadata key-value pairs that were used to create
         the backup.</p>
       tags:
-        - Get
-        - Recovery
-        - Points
-        - Restore
-        - Metadata
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
+        - Backup
         - Metadata
+        - Names
+        - Points
+        - Recovery
+        - Restore
+        - Vault
+        - Vaults
   /restore-jobs/{restoreJobId}/metadata:
     GET:
-      summary: GetRestoreJobMetadata
+      summary: 'Get Restore Job Metadata '
       description: <p>This request returns the metadata for the specified restore job.</p>
       tags:
-        - Get
-        - Restore
-        - Jobs
-        - Metadata
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
         - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
         - Metadata
+        - Restore
   /restore-testing/inferred-metadata:
     GET:
-      summary: GetRestoreTestingInferredMetadata
+      summary: 'Get Restore Testing Inferred Metadata '
       description: >-
         <p>This request returns the minimal required set of metadata needed to
         start a restore job with secure default settings.
@@ -1246,100 +524,23 @@ paths:
         required parameters. <code>BackupVaultAccountId</code> is an optional
         parameter.</p>
       tags:
-        - Get
-        - Restore
-        - Testing
         - Inferred
         - Metadata
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
         - Restore
         - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
   /supported-resource-types:
     GET:
-      summary: GetSupportedResourceTypes
+      summary: 'Get Supported Resource Types '
       description: >-
         <p>Returns the Amazon Web Services resource types supported by
         Backup.</p>
       tags:
-        - Get
-        - Supported
         - Resources
-        - Types
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
         - Supported
-        - Resources
         - Types
   /audit/backup-job-summaries:
     GET:
-      summary: ListBackupJobSummaries
+      summary: 'List Backup Job Summaries '
       description: >-
         <p>This is a request for a summary of backup jobs created or running
         within the most recent 30 days. You can include parameters AccountID,
@@ -1348,53 +549,14 @@ paths:
         contains Region, Account, State, ResourceType, MessageCategory,
         StartTime, EndTime, and Count of included jobs.</p>
       tags:
-        - Lists
-        - Backup
-        - Jobs
-        - Summaries
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
+        - Backup
         - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
+        - Lists
         - Summaries
   /backup-jobs/:
     GET:
-      summary: ListBackupJobs
+      summary: 'List Backup Jobs '
       description: >-
         <p>Returns a list of existing backup jobs for an authenticated account
         for the last 30 days. For a longer period of time, consider using these
@@ -1402,212 +564,48 @@ paths:
         href="https://docs.aws.amazon.com/aws-backup/latest/devguide/monitoring.html">monitoring
         tools</a>.</p>
       tags:
+        - Backup
+        - Jobs
         - Lists
-        - Backup
-        - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
   /backup/template/plans:
     GET:
-      summary: ListBackupPlanTemplates
+      summary: 'List Backup Plan Templates '
       description: >-
         <p>Returns metadata of your saved backup plan templates, including the
         template ID, name, and the creation and deletion dates.</p>
       tags:
+        - Backup
         - Lists
-        - Backup
         - Plan
-        - Templates
-        - Hold
-        - Identifiers
-        - Backup
         - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
         - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
   /backup/plans/{backupPlanId}/versions/:
     GET:
-      summary: ListBackupPlanVersions
+      summary: 'List Backup Plan Versions '
       description: >-
         <p>Returns version metadata of your backup plans, including Amazon
         Resource Names (ARNs), backup plan IDs, creation and deletion dates,
         plan names, and version IDs.</p>
       tags:
-        - Lists
         - Backup
-        - Plan
-        - Versions
-        - Hold
         - Identifiers
-        - Backup
-        - Plans
+        - Lists
         - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
+        - Plans
         - Versions
   /backup-vaults/:
     GET:
-      summary: ListBackupVaults
+      summary: 'List Backup Vaults '
       description: >-
         <p>Returns a list of recovery point storage containers along with
         information about them.</p>
       tags:
+        - Backup
         - Lists
-        - Backup
-        - Vaults
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
         - Vaults
   /audit/copy-job-summaries:
     GET:
-      summary: ListCopyJobSummaries
+      summary: 'List Copy Job Summaries '
       description: >-
         <p>This request obtains a list of copy jobs created or running within
         the the most recent 30 days. You can include parameters AccountID,
@@ -1616,109 +614,22 @@ paths:
         contains Region, Account, State, RestourceType, MessageCategory,
         StartTime, EndTime, and Count of included jobs.</p>
       tags:
-        - Lists
-        - Copy
-        - Jobs
-        - Summaries
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
         - Copy
+        - Jobs
+        - Lists
+        - Summaries
   /copy-jobs/:
     GET:
-      summary: ListCopyJobs
+      summary: 'List Copy Jobs '
       description: <p>Returns metadata about your copy jobs.</p>
       tags:
+        - Copy
+        - Jobs
         - Lists
-        - Copy
-        - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
   /resources/:
     GET:
-      summary: ListProtectedResources
+      summary: 'List Protected Resources '
       description: >-
         <p>Returns an array of resources successfully backed up by Backup,
         including the time the resource was saved, an Amazon Resource Name (ARN)
@@ -1727,340 +638,74 @@ paths:
         - Lists
         - Protected
         - Resources
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
   /backup-vaults/{backupVaultName}/resources/:
     GET:
-      summary: ListProtectedResourcesByBackupVault
+      summary: 'List Protected Resources By Backup Vault '
       description: >-
         <p>This request lists the protected resources corresponding to each
         backup vault.</p>
       tags:
+        - Backup
         - Lists
+        - Names
         - Protected
         - Resources
-        - By
-        - Backup
         - Vault
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
         - Vaults
-        - Copy
-        - Resources
   /backup-vaults/{backupVaultName}/recovery-points/:
     GET:
-      summary: ListRecoveryPointsByBackupVault
+      summary: 'List Recovery Points By Backup Vault '
       description: >-
         <p>Returns detailed information about the recovery points stored in a
         backup vault.</p>
       tags:
+        - Backup
         - Lists
-        - Recovery
-        - Points
-        - By
-        - Backup
-        - Vault
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
         - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
+        - Points
         - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
+        - Vault
         - Vaults
-        - Copy
-        - Resources
   /legal-holds/{legalHoldId}/recovery-points:
     GET:
-      summary: ListRecoveryPointsByLegalHold
+      summary: 'List Recovery Points By Legal Hold '
       description: >-
         <p>This action returns recovery point ARNs (Amazon Resource Names) of
         the specified legal hold.</p>
       tags:
-        - Lists
-        - Recovery
-        - Points
-        - By
-        - Legal
         - Hold
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
         - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
+        - Identifiers
+        - Legal
+        - Lists
+        - Points
         - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
   /resources/{resourceArn}/recovery-points/:
     GET:
-      summary: ListRecoveryPointsByResource
+      summary: 'List Recovery Points By Resource '
       description: >-
         <p>Returns detailed information about all the recovery points of the
         type specified by a resource Amazon Resource Name (ARN).</p> <note>
         <p>For Amazon EFS and Amazon EC2, this action only lists recovery points
         created by Backup.</p> </note>
       tags:
-        - Lists
-        - Recovery
-        - Points
-        - By
-        - Resources
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
+        - Lists
+        - Points
+        - Recovery
         - Resources
   /audit/report-jobs:
     GET:
-      summary: ListReportJobs
+      summary: 'List Report Jobs '
       description: <p>Returns details about your report jobs.</p>
       tags:
+        - Audit
+        - Jobs
         - Lists
         - Reports
-        - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
   /audit/restore-job-summaries:
     GET:
-      summary: ListRestoreJobSummaries
+      summary: 'List Restore Job Summaries '
       description: >-
         <p>This request obtains a summary of restore jobs created or running
         within the the most recent 30 days. You can include parameters
@@ -2069,113 +714,24 @@ paths:
         contains Region, Account, State, RestourceType, MessageCategory,
         StartTime, EndTime, and Count of included jobs.</p>
       tags:
+        - Audit
+        - Jobs
         - Lists
         - Restore
-        - Jobs
         - Summaries
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
   /restore-jobs/:
     GET:
-      summary: ListRestoreJobs
+      summary: 'List Restore Jobs '
       description: >-
         <p>Returns a list of jobs that Backup initiated to restore a saved
         resource, including details about the recovery process.</p>
       tags:
+        - Jobs
         - Lists
         - Restore
-        - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
   /resources/{resourceArn}/restore-jobs/:
     GET:
-      summary: ListRestoreJobsByProtectedResource
+      summary: 'List Restore Jobs By Protected Resource '
       description: >-
         <p>This returns restore jobs that contain the specified protected
         resource.</p> <p>You must include <code>ResourceArn</code>. You can
@@ -2183,60 +739,15 @@ paths:
         <code>MaxResults</code>, <code>ByRecoveryPointCreationDateAfter</code> ,
         and <code>ByRecoveryPointCreationDateBefore</code>.</p>
       tags:
-        - Lists
-        - Restore
-        - Jobs
-        - By
-        - Protected
-        - Resources
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
         - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
+        - Lists
+        - Protected
         - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
+        - Restore
   /tags/{resourceArn}/:
     GET:
-      summary: ListTags
+      summary: 'List Tags '
       description: >-
         <p>Returns a list of key-value pairs assigned to a target recovery
         point, backup plan, or backup vault.</p> <p> <code>ListTags</code> only
@@ -2246,439 +757,78 @@ paths:
         href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html#features-by-resource">
         Feature availability by resource</a> table.</p>
       tags:
-        - Lists
-        - Tags
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
+        - Lists
         - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
+        - Tags
   /restore-jobs/{restoreJobId}/validations:
     PUT:
-      summary: PutRestoreValidationResult
+      summary: 'Put Restore Validation Result '
       description: >-
         <p>This request allows you to send your independent self-run restore
         test validation results. <code>RestoreJobId</code> and
         <code>ValidationStatus</code> are required. Optionally, you can input a
         <code>ValidationStatusMessage</code>.</p>
       tags:
-        - Put
-        - Restore
-        - Validations
-        - Results
-        - Hold
+        - Ations
         - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
+        - Jobs
         - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
+        - Results
+        - Val
         - Validations
   /backup-jobs:
     PUT:
-      summary: StartBackupJob
+      summary: 'Start Backup Job '
       description: <p>Starts an on-demand backup job for the specified resource.</p>
       tags:
-        - Start
         - Backup
         - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
-        - Validations
   /copy-jobs:
     PUT:
-      summary: StartCopyJob
+      summary: 'Start Copy Job '
       description: >-
         <p>Starts a job to create a one-time copy of the specified resource.</p>
         <p>Does not support continuous backups.</p>
       tags:
-        - Start
         - Copy
         - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
-        - Validations
   /audit/report-jobs/{reportPlanName}:
     POST:
-      summary: StartReportJob
+      summary: 'Start Report Job '
       description: <p>Starts an on-demand report job for the specified report plan.</p>
       tags:
-        - Start
-        - Reports
-        - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
         - Audit
-        - Frameworks
-        - Legal
-        - Holds
+        - Jobs
+        - Names
+        - Plan
         - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
-        - Validations
   /restore-jobs:
     PUT:
-      summary: StartRestoreJob
+      summary: 'Start Restore Job '
       description: >-
         <p>Recovers the saved resource identified by an Amazon Resource Name
         (ARN).</p>
       tags:
-        - Start
+        - Jobs
         - Restore
-        - Jobs
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
-        - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
-        - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
-        - Validations
   /tags/{resourceArn}:
     POST:
-      summary: TagResource
+      summary: 'Tag Resource '
       description: >-
         <p>Assigns a set of key-value pairs to a recovery point, backup plan, or
         backup vault identified by an Amazon Resource Name (ARN).</p>
       tags:
-        - Tags
-        - Resources
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
         - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
-        - Validations
+        - Tags
   /untag/{resourceArn}:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes a set of key-value pairs from a recovery point, backup plan,
         or backup vault identified by an Amazon Resource Name
       tags:
-        - Untag
-        - Resources
-        - Hold
-        - Identifiers
-        - Backup
-        - Plans
-        - Plan
-        - Selections
-        - Vault
-        - Names
-        - Audit
-        - Frameworks
-        - Legal
-        - Holds
-        - Reports
-        - Restore
-        - Testing
-        - Selections
-        - Access
-        - Policies
-        - Locks
-        - Notifications
-        - Configurations
-        - Recovery
-        - Points
-        - Points
         - ARN
-        - Jobs
-        - Global
-        - Settings
-        - Account
-        - Disassociate
-        - Parents
-        - Association
-        - To
-        - Templates
-        - Metadata
-        - Inferred
-        - Supported
         - Resources
-        - Types
-        - Summaries
-        - Jobs
-        - Versions
-        - Vaults
-        - Copy
-        - Resources
-        - Validations
+        - Untag
