@@ -4,82 +4,59 @@ info:
 paths:
   /assessments/{assessmentId}/associateToAssessmentReport:
     PUT:
-      summary: AssociateAssessmentReportEvidenceFolder
+      summary: 'Associate Assessment Report Evidence Folder '
       description: >-
         <p> Associates an evidence folder to an assessment report in an Audit
         Manager assessment. </p>
       tags:
-        - Associate
         - Assessments
-        - Reports
+        - Associate
         - Evidence
-        - Folder
+        - Folders
         - Identifiers
-        - Associate
-        - To
-        - Assessments
         - Reports
   /assessments/{assessmentId}/batchAssociateToAssessmentReport:
     PUT:
-      summary: BatchAssociateAssessmentReportEvidence
+      summary: 'Batch Associate Assessment Report Evidence '
       description: >-
         <p> Associates a list of evidence to an assessment report in an Audit
         Manager assessment. </p>
       tags:
-        - Batches
-        - Associate
         - Assessments
-        - Reports
+        - Associate
+        - Batches
         - Evidence
         - Identifiers
-        - Associate
-        - To
-        - Assessments
         - Reports
-        - Batches
   /assessments/{assessmentId}/delegations:
     PUT:
-      summary: BatchDeleteDelegationByAssessment
+      summary: 'Batch Delete Delegation By Assessment '
       description: >-
         <p> Deletes a batch of delegations for an assessment in Audit Manager.
         </p>
       tags:
+        - Assessments
         - Batches
-        - Delete
         - Delegation
-        - By
-        - Assessments
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
         - Delegations
+        - Identifiers
   /assessments/{assessmentId}/batchDisassociateFromAssessmentReport:
     PUT:
-      summary: BatchDisassociateAssessmentReportEvidence
+      summary: 'Batch Disassociate Assessment Report Evidence '
       description: >-
         <p> Disassociates a list of evidence from an assessment report in Audit
         Manager. </p>
       tags:
+        - Assessments
         - Batches
         - Disassociate
-        - Assessments
-        - Reports
         - Evidence
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
         - From
+        - Identifiers
+        - Reports
   /assessments/{assessmentId}/controlSets/{controlSetId}/controls/{controlId}/evidence:
     POST:
-      summary: BatchImportEvidenceToAssessmentControl
+      summary: 'Batch Import Evidence To Assessment Control '
       description: >-
         <p>Adds one or more pieces of evidence to a control in an Audit Manager
         assessment. </p> <p>You can import manual evidence from any S3 bucket by
@@ -99,210 +76,77 @@ paths:
         href="https://docs.aws.amazon.com/audit-manager/latest/userguide/service-quotas.html">Quotas
         and restrictions for Audit Manager</a>.</p>
       tags:
-        - Batches
-        - Import
-        - Evidence
-        - To
         - Assessments
-        - Control
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
         - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
         - Evidence
+        - Identifiers
+        - Import
+        - Sets
   /assessments:
     GET:
-      summary: ListAssessments
+      summary: 'List Assessments '
       description: >-
         <p> Returns a list of current and past assessments from Audit Manager.
         </p>
       tags:
+        - Assessments
         - Lists
-        - Assessments
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
   /assessmentFrameworks:
     GET:
-      summary: ListAssessmentFrameworks
+      summary: 'List Assessment Frameworks '
       description: >-
         <p> Returns a list of the frameworks that are available in the Audit
         Manager framework library. </p>
       tags:
+        - Assessments
+        - Frameworks
         - Lists
-        - Assessments
-        - Frameworks
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
   /assessments/{assessmentId}/reports:
     POST:
       summary: CreateAssessmentReport
       description: <p> Creates an assessment report for the specified assessment. </p>
       tags:
+        - Assessments
         - Create
-        - Assessments
-        - Reports
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
         - Reports
   /controls:
     GET:
-      summary: ListControls
+      summary: 'List Controls '
       description: <p> Returns a list of controls from Audit Manager. </p>
       tags:
+        - Controls
         - Lists
-        - Controls
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
   /assessments/{assessmentId}:
     PUT:
-      summary: UpdateAssessment
+      summary: 'Update Assessment '
       description: <p> Edits an Audit Manager assessment. </p>
       tags:
-        - Update
         - Assessments
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
   /assessmentFrameworks/{frameworkId}:
     PUT:
-      summary: UpdateAssessmentFramework
+      summary: 'Update Assessment Framework '
       description: <p> Updates a custom framework in Audit Manager. </p>
       tags:
-        - Update
         - Assessments
         - Frameworks
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
   /assessmentFrameworkShareRequests/{requestId}:
     PUT:
-      summary: UpdateAssessmentFrameworkShare
+      summary: 'Update Assessment Framework Share '
       description: >-
         <p> Updates a share request for a custom framework in Audit Manager.
         </p>
       tags:
-        - Update
         - Assessments
         - Frameworks
-        - Share
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
         - Share
-        - null
-        - Request
   /assessments/{assessmentId}/reports/{assessmentReportId}:
     DELETE:
-      summary: DeleteAssessmentReport
+      summary: 'Delete Assessment Report '
       description: >-
         <p>Deletes an assessment report in Audit Manager. </p> <p>When you run
         the <code>DeleteAssessmentReport</code> operation, Audit Manager
@@ -328,61 +172,19 @@ paths:
         of Error Codes</a> in the <i>Amazon Simple Storage Service API
         Reference</i>. </p>
       tags:
-        - Delete
         - Assessments
-        - Reports
         - Identifiers
-        - Associate
-        - To
-        - Assessments
         - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
   /controls/{controlId}:
     PUT:
-      summary: UpdateControl
+      summary: 'Update Control '
       description: <p> Updates a custom control in Audit Manager. </p>
       tags:
-        - Update
-        - Control
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
+        - Identifiers
   /account/deregisterAccount:
     POST:
-      summary: DeregisterAccount
+      summary: 'Deregister Account '
       description: >-
         <p> Deregisters an account in Audit Manager. </p> <note> <p>Before you
         deregister, you can use the <a
@@ -395,33 +197,11 @@ paths:
         href="https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.html">Data
         Protection</a> in the <i>Audit Manager User Guide</i>. </p> </note>
       tags:
+        - Accounts
         - Deregister
-        - Account
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
   /account/deregisterOrganizationAdminAccount:
     POST:
-      summary: DeregisterOrganizationAdminAccount
+      summary: 'Deregister Organization Admin Account '
       description: >-
         <p>Removes the specified Amazon Web Services account as a delegated
         administrator for Audit Manager. </p> <p>When you remove a delegated
@@ -483,286 +263,83 @@ paths:
         the current delegated administrator account at the time of
         deregistration.</p>
       tags:
+        - Accounts
+        - Administrative
         - Deregister
         - Organizations
-        - Administrative
-        - Account
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
   /assessments/{assessmentId}/disassociateFromAssessmentReport:
     PUT:
-      summary: DisassociateAssessmentReportEvidenceFolder
+      summary: 'Disassociate Assessment Report Evidence Folder '
       description: >-
         <p> Disassociates an evidence folder from the specified assessment
         report in Audit Manager. </p>
       tags:
-        - Disassociate
         - Assessments
-        - Reports
+        - Disassociate
         - Evidence
-        - Folder
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
+        - Folders
         - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
+        - Identifiers
         - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
   /account/status:
     GET:
-      summary: GetAccountStatus
+      summary: 'Get Account Status '
       description: <p> Gets the registration status of an account in Audit Manager. </p>
       tags:
-        - Get
-        - Account
-        - Status
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
+        - Accounts
         - Status
   /assessments/{assessmentId}/reports/{assessmentReportId}/url:
     GET:
-      summary: GetAssessmentReportUrl
+      summary: 'Get Assessment Report Url '
       description: <p> Gets the URL of an assessment report in Audit Manager. </p>
       tags:
-        - Get
         - Assessments
-        - Reports
-        - URL
         - Identifiers
-        - Associate
-        - To
-        - Assessments
         - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
         - URL
   /assessments/{assessmentId}/changelogs:
     GET:
-      summary: GetChangeLogs
+      summary: 'Get Change Logs '
       description: <p> Gets a list of changelogs from Audit Manager. </p>
       tags:
-        - Get
+        - Assessments
         - Change
-        - Logs
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
         - Change Logs
+        - Identifiers
+        - Logs
   /delegations:
     GET:
-      summary: GetDelegations
+      summary: 'Get Delegations '
       description: <p> Gets a list of delegations from an audit owner to a delegate. </p>
       tags:
-        - Get
         - Delegations
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
   /assessments/{assessmentId}/controlSets/{controlSetId}/evidenceFolders/{evidenceFolderId}/evidence/{evidenceId}:
     GET:
-      summary: GetEvidence
+      summary: 'Get Evidence '
       description: <p> Gets information about a specified evidence item.</p>
       tags:
-        - Get
-        - Evidence
-        - Identifiers
-        - Associate
-        - To
         - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
         - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
         - Folders
-        - Folder
+        - Identifiers
+        - Sets
   /assessments/{assessmentId}/controlSets/{controlSetId}/evidenceFolders/{evidenceFolderId}/evidence:
     GET:
-      summary: GetEvidenceByEvidenceFolder
+      summary: 'Get Evidence By Evidence Folder '
       description: >-
         <p> Gets all evidence from a specified evidence folder in Audit Manager.
         </p>
       tags:
-        - Get
-        - Evidence
-        - By
-        - Folder
-        - Identifiers
-        - Associate
-        - To
         - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
         - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
         - Folders
-        - Folder
+        - Identifiers
+        - Sets
   /evidenceFileUploadUrl:
     GET:
-      summary: GetEvidenceFileUploadUrl
+      summary: 'Get Evidence File Upload Url '
       description: >-
         <p>Creates a presigned Amazon S3 URL that can be used to upload a file
         as manual evidence. For instructions on how to use this operation, see
@@ -780,302 +357,76 @@ paths:
         href="https://docs.aws.amazon.com/audit-manager/latest/userguide/service-quotas.html">Quotas
         and restrictions for Audit Manager</a>.</p>
       tags:
-        - Get
         - Evidence
         - File
-        - Uploads
         - URL
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
         - Uploads
   /assessments/{assessmentId}/controlSets/{controlSetId}/evidenceFolders/{evidenceFolderId}:
     GET:
-      summary: GetEvidenceFolder
+      summary: 'Get Evidence Folder '
       description: >-
         <p> Gets an evidence folder from a specified assessment in Audit
         Manager. </p>
       tags:
-        - Get
-        - Evidence
-        - Folder
-        - Identifiers
-        - Associate
-        - To
         - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
         - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
         - Folders
-        - Folder
-        - File
-        - Uploads
+        - Identifiers
+        - Sets
   /assessments/{assessmentId}/evidenceFolders:
     GET:
-      summary: GetEvidenceFoldersByAssessment
+      summary: 'Get Evidence Folders By Assessment '
       description: >-
         <p> Gets the evidence folders from a specified assessment in Audit
         Manager. </p>
       tags:
-        - Get
+        - Assessments
         - Evidence
         - Folders
-        - By
-        - Assessments
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
   /assessments/{assessmentId}/evidenceFolders-by-assessment-control/{controlSetId}/{controlId}:
     GET:
-      summary: GetEvidenceFoldersByAssessmentControl
+      summary: 'Get Evidence Folders By Assessment Control '
       description: >-
         <p> Gets a list of evidence folders that are associated with a specified
         control in an Audit Manager assessment. </p>
       tags:
-        - Get
-        - Evidence
-        - Folders
-        - By
         - Assessments
-        - Control
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
         - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
         - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
+        - Identifiers
+        - Sets
   /insights:
     GET:
-      summary: GetInsights
+      summary: 'Get Insights '
       description: >-
         <p>Gets the latest analytics data for all your current active
         assessments. </p>
       tags:
-        - Get
-        - Insights
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
         - Insights
   /insights/assessments/{assessmentId}:
     GET:
-      summary: GetInsightsByAssessment
+      summary: 'Get Insights By Assessment '
       description: <p>Gets the latest analytics data for a specific active assessment. </p>
       tags:
-        - Get
-        - Insights
-        - By
         - Assessments
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
         - Insights
   /account/organizationAdminAccount:
     GET:
-      summary: GetOrganizationAdminAccount
+      summary: 'Get Organization Admin Account '
       description: >-
         <p> Gets the name of the delegated Amazon Web Services administrator
         account for a specified organization. </p>
       tags:
-        - Get
-        - Organizations
+        - Accounts
         - Administrative
-        - Account
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
         - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
   /services:
     GET:
-      summary: GetServicesInScope
+      summary: 'Get Services In Scope '
       description: >-
         <p>Gets a list of all of the Amazon Web Services that you can choose to
         include in your assessment. When you <a
@@ -1084,90 +435,18 @@ paths:
         to narrow the assessment's <a
         href="https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Scope.html">scope</a>.</p>
       tags:
-        - Get
-        - Services
-        - In
         - Scopes
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
         - Services
   /settings/{attribute}:
     GET:
-      summary: GetSettings
+      summary: 'Get Settings '
       description: <p> Gets the settings for a specified Amazon Web Services account. </p>
       tags:
-        - Get
-        - Settings
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
         - Attributes
+        - Settings
   /insights/controls-by-assessment:
     GET:
-      summary: ListAssessmentControlInsightsByControlDomain
+      summary: 'List Assessment Control Insights By Control Domain '
       description: >-
         <p>Lists the latest analytics data for controls within a specific
         control domain and a specific active assessment.</p> <note> <p>Control
@@ -1177,143 +456,33 @@ paths:
         <code>controlInsightsByAssessment</code>. If neither of these conditions
         are met, no data is listed for that control. </p> </note>
       tags:
-        - Lists
         - Assessments
-        - Control
-        - Insights
-        - By
-        - Domains
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
+        - Domains
         - Insights
-        - Services
-        - Settings
-        - Attributes
+        - Lists
   /assessmentFrameworkShareRequests:
     GET:
-      summary: ListAssessmentFrameworkShareRequests
+      summary: 'List Assessment Framework Share Requests '
       description: >-
         <p> Returns a list of sent or received share requests for custom
         frameworks in Audit Manager. </p>
       tags:
+        - Assessments
+        - Frameworks
         - Lists
-        - Assessments
-        - Frameworks
         - Share
-        - null
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
   /assessmentReports:
     GET:
-      summary: ListAssessmentReports
+      summary: 'List Assessment Reports '
       description: <p> Returns a list of assessment reports created in Audit Manager. </p>
       tags:
+        - Assessments
         - Lists
-        - Assessments
         - Reports
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
   /insights/control-domains:
     GET:
-      summary: ListControlDomainInsights
+      summary: 'List Control Domain Insights '
       description: >-
         <p>Lists the latest analytics data for control domains across all of
         your active assessments. </p> <note> <p>A control domain is listed only
@@ -1322,50 +491,13 @@ paths:
         If this condition isn’t met, no data is listed for that control
         domain.</p> </note>
       tags:
-        - Lists
-        - Control
-        - Domains
-        - Insights
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
         - Domains
+        - Insights
+        - Lists
   /insights/control-domains-by-assessment:
     GET:
-      summary: ListControlDomainInsightsByAssessment
+      summary: 'List Control Domain Insights By Assessment '
       description: >-
         <p>Lists analytics data for control domains within a specified active
         assessment.</p> <note> <p>A control domain is listed only if at least
@@ -1373,52 +505,14 @@ paths:
         <code>lastUpdated</code> date of <code>controlDomainInsights</code>. If
         this condition isn’t met, no data is listed for that domain.</p> </note>
       tags:
-        - Lists
-        - Control
-        - Domains
-        - Insights
-        - By
         - Assessments
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
         - Domains
+        - Insights
+        - Lists
   /insights/controls:
     GET:
-      summary: ListControlInsightsByControlDomain
+      summary: 'List Control Insights By Control Domain '
       description: >-
         <p>Lists the latest analytics data for controls within a specific
         control domain across all active assessments.</p> <note> <p>Control
@@ -1428,299 +522,58 @@ paths:
         If neither of these conditions are met, no data is listed for that
         control. </p> </note>
       tags:
-        - Lists
-        - Control
-        - Insights
-        - By
-        - Domains
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
         - Domains
+        - Insights
+        - Lists
   /dataSourceKeywords:
     GET:
-      summary: ListKeywordsForDataSource
-      description: >-
-        <p> Returns a list of keywords that are pre-mapped to the specified
-        control data source. </p>
+      summary: 'List Keywords For Data Source '
+      description: ''
       tags:
-        - Lists
-        - Keywords
-        - For
         - Data
-        - Source
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
         - Keywords
+        - Lists
+        - Source
   /notifications:
     GET:
-      summary: ListNotifications
+      summary: 'List Notifications '
       description: <p> Returns a list of all Audit Manager notifications. </p>
       tags:
         - Lists
         - Notifications
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p> Removes a tag from a resource in Audit Manager. </p>
       tags:
-        - Untag
-        - Resources
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /account/registerAccount:
     POST:
-      summary: RegisterAccount
+      summary: 'Register Account '
       description: >-
         <p> Enables Audit Manager for the specified Amazon Web Services account.
         </p>
       tags:
+        - Accounts
         - Register
-        - Account
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
   /account/registerOrganizationAdminAccount:
     POST:
-      summary: RegisterOrganizationAdminAccount
+      summary: 'Register Organization Admin Account '
       description: >-
         <p> Enables an Amazon Web Services account within the organization as
         the delegated administrator for Audit Manager. </p>
       tags:
+        - Accounts
+        - Administrative
+        - Organizations
         - Register
-        - Organizations
-        - Administrative
-        - Account
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
   /assessmentFrameworks/{frameworkId}/shareRequests:
     POST:
-      summary: StartAssessmentFrameworkShare
+      summary: 'Start Assessment Framework Share '
       description: >-
         <p> Creates a share request for a custom framework in Audit Manager.
         </p> <p>The share request specifies a recipient and notifies them that a
@@ -1754,298 +607,51 @@ paths:
         sharing eligibility</a> in the <i>Audit Manager User Guide</i>.</p>
         </important>
       tags:
-        - Start
         - Assessments
         - Frameworks
-        - Share
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
         - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
   /assessments/{assessmentId}/controlSets/{controlSetId}/controls/{controlId}:
     PUT:
       summary: UpdateAssessmentControl
       description: <p> Updates a control within an assessment in Audit Manager. </p>
       tags:
-        - Update
         - Assessments
-        - Control
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
+        - Identifiers
+        - Sets
   /assessments/{assessmentId}/controlSets/{controlSetId}/status:
     PUT:
-      summary: UpdateAssessmentControlSetStatus
+      summary: 'Update Assessment Control Set Status '
       description: >-
         <p> Updates the status of a control set in an Audit Manager assessment.
         </p>
       tags:
-        - Update
         - Assessments
-        - Control
-        - Sets
-        - Status
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
         - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
+        - Identifiers
+        - Sets
         - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
   /assessments/{assessmentId}/status:
     PUT:
-      summary: UpdateAssessmentStatus
+      summary: 'Update Assessment Status '
       description: <p> Updates the status of an assessment in Audit Manager. </p>
       tags:
-        - Update
         - Assessments
-        - Status
         - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
         - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
   /settings:
     PUT:
-      summary: UpdateSettings
+      summary: 'Update Settings '
       description: <p> Updates Audit Manager settings for the current account. </p>
       tags:
-        - Update
         - Settings
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
-        - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
   /assessmentReports/integrity:
     POST:
-      summary: ValidateAssessmentReportIntegrity
+      summary: 'Validate Assessment Report Integrity '
       description: <p> Validates the integrity of an assessment report in Audit Ma
       tags:
-        - Validate
         - Assessments
-        - Reports
         - Integrity
-        - Identifiers
-        - Associate
-        - To
-        - Assessments
         - Reports
-        - Batches
-        - Delegations
-        - Disassociate
-        - From
-        - Control
-        - Sets
-        - Sets
-        - Controls
-        - Evidence
-        - Assessments
-        - Frameworks
-        - Reports
-        - Frameworks
-        - Share
-        - null
-        - Request
-        - Account
-        - Organizations
-        - Administrative
-        - Status
-        - URL
-        - Change Logs
-        - Folders
-        - Folder
-        - File
-        - Uploads
-        - By
-        - Insights
-        - Services
-        - Settings
-        - Attributes
-        - Domains
-        - Source
-        - Keywords
-        - Notifications
-        - ARN
-        - null
+        - Validate
