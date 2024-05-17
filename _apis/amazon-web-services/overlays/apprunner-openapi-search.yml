@@ -4,14 +4,13 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateVpcIngressConnection
+      summary: 'Update Vpc Ingress Connection '
       description: >-
         <p>Update an existing App Runner VPC Ingress Connection resource. The
         VPC Ingress Connection must be in one of the following states to be
         updated:</p> <ul> <li> <p> AVAILABLE </p> </li> <li> <p> FAILED_CREATION
         </p> </li> <li> <p> FAILED_UPDATE </p> <
       tags:
-        - Update
-        - VPC
-        - Ingress
         - Connections
+        - Ingress
+        - VPC
