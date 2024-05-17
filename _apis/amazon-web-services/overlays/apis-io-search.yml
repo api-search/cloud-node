@@ -26,7 +26,6 @@ apis:
     tags:
       - Certificates
       - Options
-      - Update
     properties:
       - type: Documentation
         url: https://aws.amazon.com/certificate-manager/
@@ -62,29 +61,24 @@ apis:
     humanURL: https://aws.amazon.com/iam/access-analyzer/
     baseURL: https://example.com
     tags:
-      - Archive
-      - Rules
-      - Generated
-      - Identifiers
-      - Policies
+      - ARN
       - Access
-      - Checks
-      - Grants
-      - Lists
-      - Preview
-      - Previews
+      - Analyzed
       - Analyzer
       - Analyzers
-      - Names
-      - Update
+      - Archive
+      - Checks
       - Findings
-      - Analyzed
-      - Resources
+      - Generated
       - Generation
-      - Start
-      - ARN
-      - Untag
+      - Grants
+      - Names
+      - Policies
+      - Previews
+      - Resources
+      - Rules
       - Scans
+      - Untag
       - Validate
       - Validations
     properties:
@@ -112,8 +106,8 @@ apis:
     baseURL: https://example.com
     tags:
       - Attributes
-      - Resources
       - Migrations
+      - Resources
     properties:
       - type: Documentation
         url: https://aws.amazon.com/migration-hub/
@@ -152,34 +146,29 @@ apis:
     humanURL: https://aws.amazon.com/prometheus/
     baseURL: https://example.com
     tags:
-      - Alerts
-      - Alert  Management
-      - Definitions
-      - Identifiers
-      - Managers
-      - Configurations
-      - Logging
-      - Groups
-      - Lists
-      - Namespaces
-      - Rule  Groups  Namespaces
-      - Rules
-      - Scrapers
-      - Workspaces
-      - Names
-      - Rule  Groups  Namespaces
-      - Describe
-      - Default
-      - Scraper  Configurations
       - ARN
-      - Resources
-      - Untag
       - Alert  Management
+      - Alerts
       - Ali
       - Alias
+      - Configurations
+      - Default
+      - Definitions
+      - Describe
+      - Groups
+      - Logging
+      - Managers
+      - Names
+      - Namespaces
+      - Resources
+      - Rule  Groups  Namespaces
       - Rule Groups
+      - Rules
+      - Scraper  Configurations
       - Scraper Configurations
-      - Update
+      - Scrapers
+      - Untag
+      - Workspaces
     properties:
       - type: Documentation
         url: https://aws.amazon.com/prometheus/
@@ -217,129 +206,85 @@ apis:
     humanURL: https://aws.amazon.com/api-gateway/
     baseURL: https://example.com
     tags:
-      - Keys
+      - ARN
+      - Accounts
       - Authorizers
-      - Base  Paths  Mappings
-      - Domain  Names
-      - Paths
-      - Deployments
-      - Documentation
-      - Import
-      - Parts
-      - Versions
-      - Domain
-      - Names
-      - Models
-      - Validators
-      - Resources
-      - Is
-      - REST
-      - T  Is
-      - Stages
-      - Plans
-      - Usage
-      - Usage  Plans
-      - Links
-      - VPC
-      - C  Links
-      - Is
-      - T  Is
+      - Authorizers
       - Base  Paths
-      - Domain  Names
-      - Mappings
-      - Certificates
-      - Clients
-      - Client  Certificates
-      - T  Is
-      - T  Is
-      - T  Is
-      - Domain  Names
-      - Domains
-      - Gateways
-      - T  Is
-      - Response  Types
-      - Responses
-      - P  Methods
-      - Integrations
-      - Methods
-      - T  Is
-      - P  Methods
-      - T  Is
-      - Status  Codes
-      - P  Methods
-      - T  Is
-      - P  Methods
-      - T  Is
-      - Status code
-      - Model  Name
-      - T  Is
-      - T  Is
-      - Requests
-      - Request  Validators
-      - T  Is
-      - Is
-      - T  Is
-      - T  Is
-      - Stage
-      - Stage name
-      - Authorizer_id
+      - Base  Paths  Mappings
       - Base_path
       - Basepath  Mappings
+      - C  Links
+      - Cache
+      - Certificates
       - Client  Certificates
       - Clientcertificate_id
+      - Clients
+      - Data
+      - Default
       - Deployment_id
+      - Deployments
       - Doc_version
+      - Documentation
+      - Domains
       - Domain  Names
       - Domain_name
+      - Domains
+      - Exports
+      - Flush
       - Gatewayresponses
+      - Gateways
       - Http_method
+      - Import
+      - Integrations
+      - Is
+      - K  Types
+      - Keys
+      - Ks
+      - Link
+      - Links
+      - Mapping
+      - Methods
+      - Model  Name
       - Model_name
+      - Models
+      - Names
+      - P  Methods
       - Parent_id
       - Part_id
+      - Parts
+      - Paths
       - Plan
-      - T  Is
+      - Plans
+      - REST
       - Request  Validators
       - Requestvalidator_id
       - Resource_id
+      - Resources
+      - Response  Types
       - Response_type
+      - Responses
       - Restapi_id
+      - Stages
+      - Stage name
       - Stage_name
+      - Stages
+      - Status  Codes
+      - Status code
       - Status_code
-      - Usage  Plans
-      - C  Links
-      - Identifiers
-      - Vpclinks
-      - Vpclink
-      - Update
-      - Vpc
-      - Link
-      - Cache
-      - Flush
       - T  Is
-      - Data
-      - T  Is
-      - Client  Certificates
-      - Account
-      - Exports
-      - T  Is
-      - Types
-      - T  Is
-      - Default
-      - T  Is
-      - Templates
-      - T  Is
-      - T  Is
-      - Ks
-      - K  Types
-      - Ks
-      - K  Types
-      - Ks
-      - ARN
       - Tags
+      - Templates
+      - Types
       - Untag
-      - Is
-      - Is
-      - T  Is
+      - Usage
+      - Usage  Plans
+      - VPC
+      - Validators
+      - Versions
+      - VPC
+      - Vpclink
+      - VPC Links
     properties:
       - type: Documentation
         url: https://aws.amazon.com/api-gateway/
@@ -406,31 +351,25 @@ apis:
     humanURL: https://aws.amazon.com/appfabric/
     baseURL: https://example.com
     tags:
+      - ARN
       - Access
-      - Batches
-      - Tasks
-      - User  Access
-      - Users
-      - Applications
-      - Application  Authorizations
-      - Authorization
-      - Bundles
-      - Connect
-      - Identifiers
       - Application  Authorizations
       - Application  Bundles
-      - Lists
-      - Ingestions
+      - Applications
+      - Authorization
+      - Batches
+      - Bundles
+      - Connect
       - Destinations
+      - Ingestions
       - Ingestion  Destinations
-      - Application  Authorizations
-      - Ingestion
-      - Ingestion  Destinations
-      - ARN
+      - Ingestions
       - Resources
+      - Stop
+      - Tasks
       - Untag
       - User  Access
-      - Stop
+      - Users
     properties:
       - type: Documentation
         url: https://aws.amazon.com/appfabric/
@@ -456,29 +395,27 @@ apis:
     humanURL: https://aws.amazon.com/appflow/
     baseURL: https://example.com
     tags:
+      - ARN
+      - Cache
       - Cancel
-      - Executions
-      - Flow
       - Connectors
       - Create
-      - Profiles
-      - Delete
       - Describe
       - Entities
       - Execution
-      - Records
-      - Lists
+      - Executions
       - Flows
-      - ARN
-      - Resources
-      - Untag
-      - Register
-      - Cache
+      - Flows
       - Metadata
+      - Profiles
+      - Records
+      - Register
+      - Registrations
       - Reset
+      - Resources
       - Stop
       - Unregister
-      - Registrations
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/appflow/
@@ -536,11 +473,10 @@ apis:
     humanURL: https://aws.amazon.com/aws-cost-management/aws-application-cost-profiler/
     baseURL: https://example.com
     tags:
-      - Definitions
-      - Identifiers
-      - Reports
       - Applications
+      - Definitions
       - Import
+      - Reports
       - Usage
     properties:
       - type: Documentation
@@ -573,91 +509,19 @@ apis:
     humanURL: https://aws.amazon.com/app-mesh/
     baseURL: https://example.com
     tags:
-      - 'Gateways '
-      - 'Lists '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Routes '
-      - 'Virtual '
-      - 'Lists '
-      - 'Meshes '
-      - 'Lists '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Router '
-      - 'Routes '
-      - 'Virtual '
-      - 'Gateways '
-      - 'Lists '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Virtual '
-      - 'Lists '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Nodes '
-      - 'Virtual '
-      - 'Lists '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Routers '
-      - 'Virtual '
-      - 'Lists '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Services '
-      - 'Virtual '
-      - 'Gateways '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Routes '
-      - 'Virtual '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Routes '
-      - 'Router '
-      - 'Routes '
-      - 'Virtual '
-      - 'Gateways '
-      - 'Gateways '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Virtual '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Nodes '
-      - 'Virtual '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Router '
-      - 'Routers '
-      - 'Virtual '
-      - 'Mesh '
-      - 'Meshes '
-      - 'Names '
-      - 'Services '
-      - 'Virtual '
-      - 'Lists '
-      - 'Resources '
-      - 'Tags '
-      - 'Resources '
-      - 'Tags '
-      - 'Resources '
-      - 'Untag '
+      - Gateways
+      - Mesh
+      - Meshes
+      - Names
+      - Nodes
+      - Resources
+      - Router
+      - Routers
+      - Routes
+      - Services
+      - Tags
+      - Untag
+      - Virtual
     properties:
       - type: Documentation
         url: https://aws.amazon.com/app-mesh/
@@ -688,156 +552,45 @@ apis:
     humanURL: https://aws.amazon.com/appsync/
     baseURL: https://example.com
     tags:
-      - 'APIs '
-      - 'Association '
-      - 'Domain Names '
-      - 'Domains '
-      - 'Names '
-      - 'Associate '
-      - 'Associations '
-      - 'Graph QL '
-      - 'Merged '
-      - 'Source '
-      - 'APIs '
-      - 'Associate '
-      - 'Associations '
-      - 'Graph QL '
-      - 'Identifiers '
-      - 'Merged '
-      - 'Source '
-      - 'APIs '
-      - 'Cache '
-      - 'Caches '
-      - 'Identifiers '
-      - 'Keys '
-      - 'Data '
-      - 'Data Source '
-      - 'Sources '
-      - 'Domain Names '
-      - 'Domains '
-      - 'Names '
-      - 'APIs '
-      - 'Functions '
-      - 'Identifiers '
-      - 'Lists '
-      - 'APIs '
-      - 'Graph QL '
-      - 'Lists '
-      - 'Names '
-      - 'Resolvers '
-      - 'Types '
-      - 'Types '
-      - 'API Keys '
-      - 'APIs '
-      - 'Identifiers '
-      - 'Keys '
-      - 'APIs '
-      - 'Data '
-      - 'Data Source '
-      - 'Identifiers '
-      - 'Names '
-      - 'Source '
-      - 'Domains '
-      - 'Domain Names '
-      - 'Names '
-      - 'APIs '
-      - 'Functions '
-      - 'Identifiers '
-      - 'APIs '
-      - 'Graph QL '
-      - 'Identifiers '
-      - 'APIs '
-      - 'Fields '
-      - 'Identifiers '
-      - 'Names '
-      - 'Resolvers '
-      - 'Types '
-      - 'APIs '
-      - 'Identifiers '
-      - 'Names '
-      - 'Types '
-      - 'APIs '
-      - 'Association '
-      - 'Associations '
-      - 'Disassociate '
-      - 'Graph QL '
-      - 'Identifiers '
-      - 'Merged '
-      - 'Source '
-      - 'APIs '
-      - 'Association '
-      - 'Associations '
-      - 'Identifiers '
-      - 'Merged '
-      - 'Source '
-      - 'Code '
-      - 'Data Planes '
-      - 'Evaluate '
-      - 'Evaluate Code '
-      - 'Data Planes '
-      - 'Evaluate '
-      - 'Evaluate Template '
-      - 'Mapping '
-      - 'Templates '
-      - 'APIs '
-      - 'Cache '
-      - 'Flush '
-      - 'Identifiers '
-      - 'Data '
-      - 'Data Source '
-      - 'Identifiers '
-      - 'Introspections '
-      - 'Source '
-      - 'APIs '
-      - 'Environments '
-      - 'Graph QL '
-      - 'Identifiers '
-      - 'Variables '
-      - 'APIs '
-      - 'Identifiers '
-      - 'Introspections '
-      - 'Schemas '
-      - 'APIs '
-      - 'Creation '
-      - 'Identifiers '
-      - 'Schemas '
-      - 'APIs '
-      - 'Functions '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Resolvers '
-      - 'APIs '
-      - 'Associations '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Source '
-      - 'ARN '
-      - 'Resources '
-      - 'Tags '
-      - 'Untag '
-      - 'APIs '
-      - 'Associations '
-      - 'By '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Merged '
-      - 'Source '
-      - 'Types '
-      - 'Data '
-      - 'Data Source '
-      - 'Introspections '
-      - 'Source '
-      - 'APIs '
-      - 'Associations '
-      - 'Identifiers '
-      - 'Merge '
-      - 'Merged '
-      - 'Schemas '
-      - 'Source '
-      - 'APIs '
-      - 'Cache '
-      - 'Caches '
-      - 'Identifiers '
+      - Keys
+      - ARN
+      - Associate
+      - Associations
+      - Associations
+      - Cache
+      - Caches
+      - Code
+      - Creation
+      - Data
+      - Data Planes
+      - Data Source
+      - Disassociate
+      - Domain Names
+      - Domains
+      - Environments
+      - Evaluate
+      - Evaluate Code
+      - Evaluate Template
+      - Fields
+      - Flush
+      - Functions
+      - Graph QL
+      - Introspections
+      - Keys
+      - Mapping
+      - Merge
+      - Merged
+      - Names
+      - Resolvers
+      - Resources
+      - Schemas
+      - Source
+      - Sources
+      - Tags
+      - Templates
+      - Types
+      - Untag
+      - Variables
     properties:
       - type: Documentation
         url: https://aws.amazon.com/appsync/
@@ -921,100 +674,31 @@ apis:
     humanURL: https://aws.amazon.com/amplify/
     baseURL: https://example.com
     tags:
-      - 'Applications '
-      - 'Lists '
-      - 'Applications '
-      - 'Backend Environments '
-      - 'Backends '
-      - 'Environments '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Applications '
-      - 'Branches '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Applications '
-      - 'Branch '
-      - 'Branches '
-      - 'Create '
-      - 'Deployments '
-      - 'Identifiers '
-      - 'Names '
-      - 'Applications '
-      - 'Associations '
-      - 'Domains '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Applications '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Webhooks '
-      - 'Applications '
-      - 'Identifiers '
-      - 'Applications '
-      - 'Backend Environments '
-      - 'Backends '
-      - 'Environments '
-      - 'Identifiers '
-      - 'Names '
-      - 'Applications '
-      - 'Branch '
-      - 'Branches '
-      - 'Identifiers '
-      - 'Names '
-      - 'Applications '
-      - 'Association '
-      - 'Domains '
-      - 'Identifiers '
-      - 'Names '
-      - 'Applications '
-      - 'Branch '
-      - 'Branches '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Names '
-      - 'Identifiers '
-      - 'Webhooks '
-      - 'Access '
-      - 'Access Logs '
-      - 'Applications '
-      - 'Generate '
-      - 'Identifiers '
-      - 'Logs '
-      - 'Artifacts '
-      - 'Identifiers '
-      - 'URL '
-      - 'Applications '
-      - 'Artifacts '
-      - 'Branch '
-      - 'Branches '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Lists '
-      - 'Names '
-      - 'Applications '
-      - 'Branch '
-      - 'Branches '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Names '
-      - 'ARN '
-      - 'Resources '
-      - 'Tags '
-      - 'Untag '
-      - 'Applications '
-      - 'Branch '
-      - 'Branches '
-      - 'Deployments '
-      - 'Identifiers '
-      - 'Names '
-      - 'Applications '
-      - 'Branch '
-      - 'Branches '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Names '
-      - 'Stop '
+      - ARN
+      - Access
+      - Access Logs
+      - Applications
+      - Artifacts
+      - Associations
+      - Associations
+      - Backend Environments
+      - Backends
+      - Branch
+      - Branches
+      - Create
+      - Deployments
+      - Domains
+      - Environments
+      - Generate
+      - Jobs
+      - Logs
+      - Names
+      - Resources
+      - Stop
+      - Tags
+      - URL
+      - Untag
+      - Webhooks
     properties:
       - type: Documentation
         url: https://aws.amazon.com/amplify/
@@ -1043,9 +727,9 @@ apis:
     humanURL: https://aws.amazon.com/apprunner/
     baseURL: https://example.com
     tags:
-      - 'Connections '
-      - 'Ingress '
-      - 'VPC '
+      - Connections
+      - Ingress
+      - VPC
     properties:
       - type: Documentation
         url: https://aws.amazon.com/apprunner/
@@ -1087,8 +771,8 @@ apis:
     humanURL: https://aws.amazon.com/athena/
     baseURL: https://example.com
     tags:
-      - 'Group '
-      - 'Work '
+      - Group
+      - Work
     properties:
       - type: Documentation
         url: https://aws.amazon.com/athena/
@@ -1124,9 +808,9 @@ apis:
     humanURL: https://aws.amazon.com/ec2/autoscaling/
     baseURL: https://example.com
     tags:
-      - 'Auto '
-      - 'Group '
-      - 'Scaling '
+      - Auto
+      - Group
+      - Scaling
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ec2/autoscaling/
@@ -1168,7 +852,7 @@ apis:
     humanURL: https://aws.amazon.com/b2b-data-interchange/
     baseURL: https://example.com
     tags:
-      - 'Transformer '
+      - Transformer
     properties:
       - type: Documentation
         url: https://aws.amazon.com/b2b-data-interchange/
@@ -1199,182 +883,52 @@ apis:
     humanURL: https://aws.amazon.com/audit-manager/
     baseURL: https://example.com
     tags:
-      - 'Assessments '
-      - 'Associate '
-      - 'Evidence '
-      - 'Folder '
-      - 'Reports '
-      - 'Assessments '
-      - 'Associate '
-      - 'Batches '
-      - 'Evidence '
-      - 'Identifiers '
-      - 'Reports '
-      - 'To '
-      - 'Assessments '
-      - 'Batches '
-      - 'Delegation '
-      - 'Delegations '
-      - 'Identifiers '
-      - 'Assessments '
-      - 'Batches '
-      - 'Disassociate '
-      - 'Evidence '
-      - 'From '
-      - 'Identifiers '
-      - 'Reports '
-      - 'Assessments '
-      - 'Batches '
-      - 'Control '
-      - 'Controls '
-      - 'Evidence '
-      - 'Import '
-      - 'Sets '
-      - 'Assessments '
-      - 'Assessments '
-      - 'Frameworks '
-      - 'Lists '
-      - 'Assessments '
-      - 'Create '
-      - 'Reports '
-      - 'Controls '
-      - 'Assessments '
-      - 'Identifiers '
-      - 'Assessments '
-      - 'Frameworks '
-      - 'Identifiers '
-      - 'Assessments '
-      - 'Frameworks '
-      - 'Request '
-      - 'Share '
-      - 'Assessments '
-      - 'Identifiers '
-      - 'Reports '
-      - 'Controls '
-      - 'Accounts '
-      - 'Deregister '
-      - 'Accounts '
-      - 'Administrative '
-      - 'Deregister '
-      - 'Organizations '
-      - 'Assessments '
-      - 'Disassociate '
-      - 'Evidence '
-      - 'Folder '
-      - 'From '
-      - 'Identifiers '
-      - 'Reports '
-      - 'Accounts '
-      - 'Status '
-      - 'Assessments '
-      - 'Identifiers '
-      - 'Reports '
-      - 'URL '
-      - 'Assessments '
-      - 'Change '
-      - 'Change Logs '
-      - 'Identifiers '
-      - 'Logs '
-      - 'Delegations '
-      - 'Assessments '
-      - 'Control '
-      - 'Evidence '
-      - 'Folder '
-      - 'Folders '
-      - 'Identifiers '
-      - 'Sets '
-      - 'Assessments '
-      - 'Control '
-      - 'Evidence '
-      - 'Folder '
-      - 'Folders '
-      - 'Sets '
-      - 'Evidence '
-      - 'File '
-      - 'URL '
-      - 'Uploads '
-      - 'Assessments '
-      - 'Control '
-      - 'Evidence '
-      - 'Folder '
-      - 'Folders '
-      - 'Sets '
-      - 'Assessments '
-      - 'Evidence '
-      - 'Folders '
-      - 'Identifiers '
-      - 'Assessments '
-      - 'Control '
-      - 'Evidence '
-      - 'Folders '
-      - 'Identifiers '
-      - 'Sets '
-      - 'Insights '
-      - 'Assessments '
-      - 'Identifiers '
-      - 'Insights '
-      - 'Accounts '
-      - 'Administrative '
-      - 'Organizations '
-      - 'Scopes '
-      - 'Services '
-      - 'Attributes '
-      - 'Settings '
-      - 'Assessments '
-      - 'Control '
-      - 'Controls '
-      - 'Domains '
-      - 'Insights '
-      - 'Lists '
-      - 'Assessments '
-      - 'Frameworks '
-      - 'Share '
-      - 'Assessments '
-      - 'Reports '
-      - 'Control '
-      - 'Domains '
-      - 'Insights '
-      - 'Assessments '
-      - 'Control '
-      - 'Domains '
-      - 'Insights '
-      - 'Control '
-      - 'Controls '
-      - 'Domains '
-      - 'Insights '
-      - 'Data '
-      - 'Keywords '
-      - 'Source '
-      - 'Notifications '
-      - 'Tags '
-      - 'Resources '
-      - 'ARN '
-      - 'Untag '
-      - 'Resources '
-      - 'Accounts '
-      - 'Register '
-      - 'Accounts '
-      - 'Administrative '
-      - 'Organizations '
-      - 'Register '
-      - 'Assessments '
-      - 'Frameworks '
-      - 'Share '
-      - 'Assessments '
-      - 'Control '
-      - 'Controls '
-      - 'Sets '
-      - 'Assessments '
-      - 'Control '
-      - 'Sets '
-      - 'Status '
-      - 'Assessments '
-      - 'Status '
-      - 'Settings '
-      - 'Assessments '
-      - 'Integrity '
-      - 'Reports '
-      - 'Validate '
+      - ARN
+      - Accounts
+      - Administrative
+      - Assessments
+      - Associate
+      - Attributes
+      - Batches
+      - Change
+      - Change Logs
+      - Controls
+      - Controls
+      - Create
+      - Data
+      - Delegation
+      - Delegations
+      - Deregister
+      - Disassociate
+      - Domains
+      - Evidence
+      - File
+      - Folders
+      - Folders
+      - Frameworks
+      - From
+      - Import
+      - Insights
+      - Integrity
+      - Keywords
+      - Logs
+      - Notifications
+      - Organizations
+      - Register
+      - Reports
+      - Resources
+      - Scopes
+      - Services
+      - Sets
+      - Settings
+      - Share
+      - Source
+      - Status
+      - Tags
+      - URL
+      - Untag
+      - Uploads
+      - Validate
     properties:
       - type: Documentation
         url: https://aws.amazon.com/audit-manager/
@@ -1417,8 +971,8 @@ apis:
     humanURL: https://aws.amazon.com/autoscaling/
     baseURL: https://example.com
     tags:
-      - 'Plan '
-      - 'Scaling '
+      - Plan
+      - Scaling
     properties:
       - type: Documentation
         url: https://aws.amazon.com/autoscaling/
@@ -1449,328 +1003,63 @@ apis:
     humanURL: https://aws.amazon.com/backup/
     baseURL: https://example.com
     tags:
-      - 'Cancel '
-      - 'Hold '
-      - 'Holds '
-      - 'Identifiers '
-      - 'Legal '
-      - 'Backup '
-      - 'Lists '
-      - 'Plans '
-      - 'Backup '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Plan '
-      - 'Plans '
-      - 'Selections '
-      - 'Backup '
-      - 'Describe '
-      - 'Names '
-      - 'Vault '
-      - 'Vaults '
-      - 'Audit '
-      - 'Frameworks '
-      - 'Lists '
-      - 'Holds '
-      - 'Legal '
-      - 'Lists '
-      - 'Air '
-      - 'Backup '
-      - 'Create '
-      - 'Gapped '
-      - 'Logically '
-      - 'Names '
-      - 'Vault '
-      - 'Vaults '
-      - 'Audit '
-      - 'Lists '
-      - 'Plans '
-      - 'Reports '
-      - 'Lists '
-      - 'Plans '
-      - 'Restore '
-      - 'Testing '
-      - 'Lists '
-      - 'Names '
-      - 'Plan '
-      - 'Plans '
-      - 'Restore '
-      - 'Selections '
-      - 'Testing '
-      - 'Backup '
-      - 'Identifiers '
-      - 'Plan '
-      - 'Plans '
-      - 'Backup '
-      - 'Identifiers '
-      - 'Plan '
-      - 'Plans '
-      - 'Selections '
-      - 'Access '
-      - 'Backup '
-      - 'Names '
-      - 'Policies '
-      - 'Vault '
-      - 'Vaults '
-      - 'Backup '
-      - 'Configurations '
-      - 'Locks '
-      - 'Names '
-      - 'Vault '
-      - 'Vaults '
-      - 'Backup '
-      - 'Configurations '
-      - 'Names '
-      - 'Notifications '
-      - 'Vault '
-      - 'Vaults '
-      - 'Audit '
-      - 'Frameworks '
-      - 'Names '
-      - 'ARN '
-      - 'Backup '
-      - 'Lifecycle '
-      - 'Names '
-      - 'Points '
-      - 'Recovery '
-      - 'Vault '
-      - 'Vaults '
-      - 'Audit '
-      - 'Names '
-      - 'Plan '
-      - 'Plans '
-      - 'Reports '
-      - 'Names '
-      - 'Plan '
-      - 'Plans '
-      - 'Restore '
-      - 'Testing '
-      - 'Names '
-      - 'Plan '
-      - 'Plans '
-      - 'Restore '
-      - 'Selections '
-      - 'Testing '
-      - 'Backup '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Stop '
-      - 'Copy '
-      - 'Describe '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Global '
-      - 'Settings '
-      - 'ARN '
-      - 'Describe '
-      - 'Protected '
-      - 'Resources '
-      - 'Accounts '
-      - 'Regions '
-      - 'Settings '
-      - 'Audit '
-      - 'Describe '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Reports '
-      - 'Describe '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Restore '
-      - 'ARN '
-      - 'Backup '
-      - 'Disassociate '
-      - 'Names '
-      - 'Points '
-      - 'Recovery '
-      - 'Vault '
-      - 'Vaults '
-      - 'ARN '
-      - 'Associations '
-      - 'Backup '
-      - 'Disassociate '
-      - 'From '
-      - 'Names '
-      - 'Parents '
-      - 'Points '
-      - 'Recovery '
-      - 'Vault '
-      - 'Vaults '
-      - 'ARN '
-      - 'Access '
-      - 'Accounts '
-      - 'Associations '
-      - 'Audit '
-      - 'Backup '
-      - 'Configurations '
-      - 'Disassociate '
-      - 'Exports '
-      - 'Frameworks '
-      - 'Global '
-      - 'Hold '
-      - 'Holds '
-      - 'Jobs '
-      - 'Legal '
-      - 'Locks '
-      - 'Names '
-      - 'Notifications '
-      - 'Parents '
-      - 'Plan '
-      - 'Plans '
-      - 'Points '
-      - 'Policies '
-      - 'Recovery '
-      - 'Reports '
-      - 'Restore '
-      - 'Selections '
-      - 'Settings '
-      - 'Templates '
-      - 'Testing '
-      - 'Vault '
-      - 'Backup '
-      - 'Identifiers '
-      - 'Plan '
-      - 'Plans '
-      - 'Backup '
-      - 'From '
-      - 'JSON '
-      - 'Plan '
-      - 'Templates '
-      - 'Backup '
-      - 'From '
-      - 'Identifiers '
-      - 'Plan '
-      - 'Plans '
-      - 'Templates '
-      - 'Hold '
-      - 'Holds '
-      - 'Identifiers '
-      - 'Legal '
-      - 'ARN '
-      - 'Backup '
-      - 'Metadata '
-      - 'Names '
-      - 'Points '
-      - 'Recovery '
-      - 'Restore '
-      - 'Vault '
-      - 'Vaults '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Metadata '
-      - 'Restore '
-      - 'Inferred '
-      - 'Metadata '
-      - 'Restore '
-      - 'Testing '
-      - 'Resources '
-      - 'Supported '
-      - 'Types '
-      - 'Audit '
-      - 'Backup '
-      - 'Jobs '
-      - 'Lists '
-      - 'Summaries '
-      - 'Backup '
-      - 'Jobs '
-      - 'Lists '
-      - 'Backup '
-      - 'Lists '
-      - 'Plan '
-      - 'Plans '
-      - 'Templates '
-      - 'Backup '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Plan '
-      - 'Plans '
-      - 'Versions '
-      - 'Backup '
-      - 'Lists '
-      - 'Vaults '
-      - 'Audit '
-      - 'Copy '
-      - 'Jobs '
-      - 'Lists '
-      - 'Summaries '
-      - 'Copy '
-      - 'Jobs '
-      - 'Lists '
-      - 'Lists '
-      - 'Protected '
-      - 'Resources '
-      - 'Backup '
-      - 'Lists '
-      - 'Names '
-      - 'Protected '
-      - 'Resources '
-      - 'Vault '
-      - 'Vaults '
-      - 'Backup '
-      - 'Lists '
-      - 'Names '
-      - 'Points '
-      - 'Recovery '
-      - 'Vault '
-      - 'Vaults '
-      - 'Hold '
-      - 'Holds '
-      - 'Identifiers '
-      - 'Legal '
-      - 'Lists '
-      - 'Points '
-      - 'Recovery '
-      - 'ARN '
-      - 'Lists '
-      - 'Points '
-      - 'Recovery '
-      - 'Resources '
-      - 'Audit '
-      - 'Jobs '
-      - 'Lists '
-      - 'Reports '
-      - 'Audit '
-      - 'Jobs '
-      - 'Lists '
-      - 'Restore '
-      - 'Summaries '
-      - 'Jobs '
-      - 'Lists '
-      - 'Restore '
-      - 'ARN '
-      - 'Jobs '
-      - 'Lists '
-      - 'Protected '
-      - 'Resources '
-      - 'Restore '
-      - 'ARN '
-      - 'Lists '
-      - 'Resources '
-      - 'Tags '
-      - 'Ations '
-      - 'Identifiers '
-      - 'Jobs '
-      - 'Restore '
-      - 'Results '
-      - 'Val '
-      - 'Validations '
-      - 'Backup '
-      - 'Jobs '
-      - 'Copy '
-      - 'Jobs '
-      - 'Audit '
-      - 'Jobs '
-      - 'Names '
-      - 'Plan '
-      - 'Reports '
-      - 'Jobs '
-      - 'Restore '
-      - 'ARN '
-      - 'Resources '
-      - 'Tags '
-      - 'ARN '
-      - 'Resources '
-      - 'Untag '
+      - ARN
+      - Access
+      - Accounts
+      - Air
+      - Associations
+      - Audit
+      - Backup
+      - Cancel
+      - Configurations
+      - Copy
+      - Create
+      - Describe
+      - Disassociate
+      - Exports
+      - Frameworks
+      - From
+      - Gapped
+      - Global
+      - Hold
+      - Holds
+      - Inferred
+      - JSON
+      - Jobs
+      - Legal
+      - Lifecycle
+      - Locks
+      - Logically
+      - Metadata
+      - Names
+      - Notifications
+      - Parents
+      - Plan
+      - Plans
+      - Points
+      - Policies
+      - Protected
+      - Recovery
+      - Regions
+      - Reports
+      - Resources
+      - Restore
+      - Results
+      - Selections
+      - Settings
+      - Stop
+      - Summaries
+      - Supported
+      - Tags
+      - Templates
+      - Testing
+      - Types
+      - Untag
+      - Val
+      - Validations
+      - Vault
+      - Vaults
+      - Versions
     properties:
       - type: Documentation
         url: https://aws.amazon.com/backup/
@@ -1815,80 +1104,35 @@ apis:
     humanURL: https://aws.amazon.com/batch/
     baseURL: https://example.com
     tags:
-      - 'Cancel '
-      - 'Cancel Jobs '
-      - 'Jobs '
-      - 'Compute '
-      - 'Computer Environments '
-      - 'Create '
-      - 'Environments '
-      - 'Create '
-      - 'Job Queues '
-      - 'Jobs '
-      - 'Queues '
-      - 'Create '
-      - 'Policies '
-      - 'Scheduling '
-      - 'Scheduling Policy '
-      - 'Compute '
-      - 'Environments '
-      - 'Job Queues '
-      - 'Jobs '
-      - 'Queues '
-      - 'Policies '
-      - 'Scheduling '
-      - 'Scheduling Policies '
-      - 'Definitions '
-      - 'Deregister '
-      - 'Deregister Job Definitions '
-      - 'Jobs '
-      - 'Compute '
-      - 'Computer Environments '
-      - 'Describe '
-      - 'Environments '
-      - 'Definitions '
-      - 'Describe '
-      - 'Job Definitions '
-      - 'Jobs '
-      - 'Describe '
-      - 'Job Queues '
-      - 'Jobs '
-      - 'Queues '
-      - 'Describe '
-      - 'Jobs '
-      - 'Describe '
-      - 'Policies '
-      - 'Scheduling '
-      - 'Scheduling Policies '
-      - 'Jobs '
-      - 'Lists '
-      - 'Lists '
-      - 'Policies '
-      - 'Scheduling '
-      - 'Scheduling Policies '
-      - 'ARN '
-      - 'Resources '
-      - 'Tags '
-      - 'Untag '
-      - 'Definitions '
-      - 'Jobs '
-      - 'Register '
-      - 'Register Job Definitions '
-      - 'Jobs '
-      - 'Submit '
-      - 'Submit Jobs '
-      - 'Jobs '
-      - 'Terminate '
-      - 'Terminate Jobs '
-      - 'Compute '
-      - 'Computer Environments '
-      - 'Environments '
-      - 'Job Queues '
-      - 'Jobs '
-      - 'Queues '
-      - 'Policies '
-      - 'Scheduling '
-      - 'Updateschedulingpolicy '
+      - ARN
+      - Cancel
+      - Cancel Jobs
+      - Compute
+      - Computer Environments
+      - Create
+      - Definitions
+      - Deregister
+      - Deregister Job Definitions
+      - Describe
+      - Environments
+      - Job Definitions
+      - Job Queues
+      - Jobs
+      - Policies
+      - Queues
+      - Register
+      - Register Job Definitions
+      - Resources
+      - Scheduling
+      - Scheduling Policies
+      - Scheduling Policy
+      - Submit
+      - Submit Jobs
+      - Tags
+      - Terminate
+      - Terminate Jobs
+      - Untag
+      - Updateschedulingpolicy
     properties:
       - type: Documentation
         url: https://aws.amazon.com/batch/
@@ -1917,21 +1161,18 @@ apis:
     humanURL: https://aws.amazon.com/bedrock/agents/
     baseURL: https://example.com
     tags:
-      - 'Agent '
-      - 'Agents '
-      - 'Alias '
-      - 'Aliases '
-      - 'Identifiers '
-      - 'Invoke '
-      - 'Sessions '
-      - 'Text '
-      - 'Base '
-      - 'Identifiers '
-      - 'Knowledge '
-      - 'Knowledgebases '
-      - 'Retrieve '
-      - 'Generate '
-      - 'Retrieve '
+      - Agent
+      - Agents
+      - Alias
+      - Aliases
+      - Base
+      - Generate
+      - Invoke
+      - Knowledge
+      - Knowledgebases
+      - Retrieve
+      - Sessions
+      - Text
     properties:
       - type: Documentation
         url: https://aws.amazon.com/bedrock/agents/
@@ -1972,110 +1213,31 @@ apis:
     humanURL: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/
     baseURL: https://example.com
     tags:
-      - 'Accounts '
-      - 'Associate '
-      - 'Associate '
-      - 'Pricing '
-      - 'Rules '
-      - 'Associate '
-      - 'Batches '
-      - 'Custom '
-      - 'Items '
-      - 'Line '
-      - 'Resources '
-      - 'Batches '
-      - 'Custom '
-      - 'Disassociate '
-      - 'From '
-      - 'Items '
-      - 'Line '
-      - 'Resources '
-      - 'Billing '
-      - 'Create '
-      - 'Group '
-      - 'Create '
-      - 'Custom '
-      - 'Items '
-      - 'Line '
-      - 'Create '
-      - 'Plan '
-      - 'Pricing '
-      - 'Create '
-      - 'Pricing '
-      - 'Rules '
-      - 'Billing '
-      - 'Group '
-      - 'Custom '
-      - 'Items '
-      - 'Line '
-      - 'Plan '
-      - 'Pricing '
-      - 'Pricing '
-      - 'Rules '
-      - 'Accounts '
-      - 'Disassociate '
-      - 'Disassociate '
-      - 'Pricing '
-      - 'Rules '
-      - 'Billing '
-      - 'Cost '
-      - 'Group '
-      - 'Reports '
-      - 'Accounts '
-      - 'Associations '
-      - 'Lists '
-      - 'Billing '
-      - 'Cost '
-      - 'Group '
-      - 'Lists '
-      - 'Reports '
-      - 'Billing '
-      - 'Groups '
-      - 'Lists '
-      - 'Custom '
-      - 'Items '
-      - 'Line '
-      - 'Lists '
-      - 'Versions '
-      - 'Custom '
-      - 'Items '
-      - 'Line '
-      - 'Lists '
-      - 'Lists '
-      - 'Plans '
-      - 'Pricing '
-      - 'Associated '
-      - 'Lists '
-      - 'Plans '
-      - 'Pricing '
-      - 'Rules '
-      - 'Lists '
-      - 'Pricing '
-      - 'Rules '
-      - 'Associated '
-      - 'Lists '
-      - 'Plan '
-      - 'Pricing '
-      - 'Rules '
-      - 'Associated '
-      - 'Custom '
-      - 'Items '
-      - 'Line '
-      - 'Lists '
-      - 'Resources '
-      - 'ARN '
-      - 'Resources '
-      - 'Tags '
-      - 'Untag '
-      - 'Billing '
-      - 'Group '
-      - 'Custom '
-      - 'Items '
-      - 'Line '
-      - 'Plan '
-      - 'Pricing '
-      - 'Pricing '
-      - 'Rules '
+      - ARN
+      - Accounts
+      - Associate
+      - Associated
+      - Associations
+      - Batches
+      - Billing
+      - Cost
+      - Create
+      - Custom
+      - Disassociate
+      - From
+      - Group
+      - Groups
+      - Items
+      - Line
+      - Plan
+      - Plans
+      - Pricing
+      - Reports
+      - Resources
+      - Rules
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
         url: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/
@@ -2108,7 +1270,7 @@ apis:
     humanURL: https://aws.amazon.com/aws-cost-management/aws-budgets/
     baseURL: https://example.com
     tags:
-      - 'Subscribers '
+      - Subscribers
     properties:
       - type: Documentation
         url: https://aws.amazon.com/aws-cost-management/aws-budgets/
@@ -2139,9 +1301,9 @@ apis:
     humanURL: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
     baseURL: https://ce.us-east-1.amazonaws.com
     tags:
-      - 'Categories '
-      - 'Cost '
-      - 'Definitions '
+      - Categories
+      - Cost
+      - Definitions
     properties:
       - type: Documentation
         url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
@@ -2179,479 +1341,98 @@ apis:
     humanURL: https://aws.amazon.com/chime/
     baseURL: https://example.com
     tags:
-      - 'Accounts '
-      - 'Associate '
-      - 'Numbers '
-      - 'Phone '
-      - 'Users '
-      - 'Associate '
-      - 'Connectors '
-      - 'Numbers '
-      - 'Phone '
-      - 'Associate '
-      - 'Connectors '
-      - 'Group '
-      - 'Groups '
-      - 'Numbers '
-      - 'Phone '
-      - 'Accounts '
-      - 'Associate '
-      - 'Delegate '
-      - 'Groups '
-      - 'Sign In '
-      - 'Attendees '
-      - 'Batches '
-      - 'Create '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'ARN '
-      - 'Batches '
-      - 'Channels '
-      - 'Create '
-      - 'Membership '
-      - 'Memberships '
-      - 'Accounts '
-      - 'Batches '
-      - 'Create '
-      - 'Identifiers '
-      - 'Membership '
-      - 'Memberships '
-      - 'Rooms '
-      - 'Batches '
-      - 'Numbers '
-      - 'Phone '
-      - 'Accounts '
-      - 'Batches '
-      - 'Identifiers '
-      - 'Suspend '
-      - 'Users '
-      - 'Accounts '
-      - 'Batches '
-      - 'Identifiers '
-      - 'Unsuspend '
-      - 'Users '
-      - 'Batches '
-      - 'Numbers '
-      - 'Phone '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Users '
-      - 'Accounts '
-      - 'Lists '
-      - 'Applications '
-      - 'Instances '
-      - 'Lists '
-      - 'ARN '
-      - 'Administrator '
-      - 'Applications '
-      - 'Instances '
-      - 'Lists '
-      - 'Applications '
-      - 'Instances '
-      - 'Lists '
-      - 'Users '
-      - 'Attendees '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Meetings '
-      - 'Accounts '
-      - 'Bots '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Channels '
-      - 'Lists '
-      - 'ARN '
-      - 'Channels '
-      - 'Lists '
-      - 'ARN '
-      - 'Channels '
-      - 'Lists '
-      - 'Memberships '
-      - 'ARN '
-      - 'Channels '
-      - 'Lists '
-      - 'Moderators '
-      - 'Capture '
-      - 'Lists '
-      - 'Media '
-      - 'Pipelines '
-      - 'Lists '
-      - 'Meetings '
-      - 'Create '
-      - 'Dial '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Out '
-      - 'Attendees '
-      - 'Create '
-      - 'Meetings '
-      - 'Lists '
-      - 'Numbers '
-      - 'Orders '
-      - 'Phone '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Proxy '
-      - 'Sessions '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Rooms '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Memberships '
-      - 'Rooms '
-      - 'Applications '
-      - 'Lists '
-      - 'Media '
-      - 'SIP '
-      - 'Applications '
-      - 'Call '
-      - 'Calls '
-      - 'Create '
-      - 'Identifiers '
-      - 'Media '
-      - 'SIP '
-      - 'Lists '
-      - 'Rules '
-      - 'SIP '
-      - 'Accounts '
-      - 'Create '
-      - 'Identifiers '
-      - 'Users '
-      - 'Connectors '
-      - 'Lists '
-      - 'Connectors '
-      - 'Groups '
-      - 'Lists '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'ARN '
-      - 'Applications '
-      - 'Instances '
-      - 'ARN '
-      - 'Administrative '
-      - 'Administrator '
-      - 'Applications '
-      - 'Describe '
-      - 'Instances '
-      - 'ARN '
-      - 'Applications '
-      - 'Configurations '
-      - 'Instances '
-      - 'Streaming '
-      - 'ARN '
-      - 'Applications '
-      - 'Instances '
-      - 'Users '
-      - 'Attendees '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'ARN '
-      - 'Channels '
-      - 'ARN '
-      - 'Channels '
-      - 'Describe '
-      - 'Members '
-      - 'ARN '
-      - 'Channels '
-      - 'Describe '
-      - 'Members '
-      - 'Membership '
-      - 'Memberships '
-      - 'ARN '
-      - 'Channels '
-      - 'Identifiers '
-      - 'Messages '
-      - 'ARN '
-      - 'Channels '
-      - 'Describe '
-      - 'Moderators '
-      - 'Accounts '
-      - 'Bot '
-      - 'Bots '
-      - 'Configurations '
-      - 'Events '
-      - 'Identifiers '
-      - 'Capture '
-      - 'Identifiers '
-      - 'Media '
-      - 'Pipelines '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Identifiers '
-      - 'Numbers '
-      - 'Phone '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Proxy '
-      - 'Sessions '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Rooms '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Members '
-      - 'Membership '
-      - 'Memberships '
-      - 'Rooms '
-      - 'Applications '
-      - 'Identifiers '
-      - 'Media '
-      - 'SIP '
-      - 'Identifiers '
-      - 'Rules '
-      - 'SIP '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Calling '
-      - 'Configurations '
-      - 'Connectors '
-      - 'Emergency '
-      - 'Identifiers '
-      - 'Connectors '
-      - 'Group '
-      - 'Groups '
-      - 'Identifiers '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Origination '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Numbers '
-      - 'Programmable '
-      - 'Proxy '
-      - 'Configurations '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Streaming '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Termination '
-      - 'Connectors '
-      - 'Credentials '
-      - 'Identifiers '
-      - 'Termination '
-      - 'Applications '
-      - 'Arn?scope=app '
-      - 'Channels '
-      - 'Describe '
-      - 'Instances '
-      - 'Membership '
-      - 'Users '
-      - 'Applications '
-      - 'Arn?scope=app '
-      - 'Channels '
-      - 'Describe '
-      - 'Instances '
-      - 'Moderated '
-      - 'Users '
-      - 'Accounts '
-      - 'Disassociate '
-      - 'From '
-      - 'Id?operation=disassociate '
-      - 'Identifiers '
-      - 'Numbers '
-      - 'Phone '
-      - 'Users '
-      - 'Connectors '
-      - 'Disassociate '
-      - 'From '
-      - 'Numbers '
-      - 'Phone '
-      - 'Connectors '
-      - 'Disassociate '
-      - 'From '
-      - 'Group '
-      - 'Groups '
-      - 'Numbers '
-      - 'Phone '
-      - 'Accounts '
-      - 'Delegate '
-      - 'Disassociate '
-      - 'From '
-      - 'Groups '
-      - 'Sign In '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Settings '
-      - 'ARN '
-      - 'Applications '
-      - 'Instances '
-      - 'Retention '
-      - 'Settings '
-      - 'Accounts '
-      - 'Bot '
-      - 'Bots '
-      - 'Identifiers '
-      - 'Global '
-      - 'Settings '
-      - 'Endpoints '
-      - 'Messaging '
-      - 'Sessions '
-      - 'Identifiers '
-      - 'Numbers '
-      - 'Orders '
-      - 'Phone '
-      - 'Numbers '
-      - 'Phone '
-      - 'Settings '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Retention '
-      - 'Settings '
-      - 'Applications '
-      - 'Configurations '
-      - 'Identifiers '
-      - 'Logging '
-      - 'Media '
-      - 'SIP '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Users '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Settings '
-      - 'Users '
-      - 'Configurations '
-      - 'Connectors '
-      - 'Identifiers '
-      - 'Logging '
-      - 'Connectors '
-      - 'Health '
-      - 'Identifiers '
-      - 'Termination '
-      - 'Accounts '
-      - 'Identifiers '
-      - 'Invite '
-      - 'Users '
-      - 'Attendees '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Meetings '
-      - 'Tags '
-      - 'Applications '
-      - 'Channels '
-      - 'Instances '
-      - 'Lists '
-      - 'Memberships '
-      - 'Users '
-      - 'ARN '
-      - 'Channels '
-      - 'Messages '
-      - 'Send '
-      - 'Applications '
-      - 'Channels '
-      - 'Instances '
-      - 'Lists '
-      - 'Moderated '
-      - 'Users '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Meetings '
-      - 'Tags '
-      - 'Lists '
-      - 'Numbers '
-      - 'Phone '
-      - 'Countries '
-      - 'Lists '
-      - 'Numbers '
-      - 'Phone '
-      - 'Supported '
-      - 'Lists '
-      - 'Resources '
-      - 'Tags '
-      - 'Connectors '
-      - 'Credentials '
-      - 'Identifiers '
-      - 'Lists '
-      - 'Termination '
-      - 'Accounts '
-      - 'Id?operation=logout '
-      - 'Identifiers '
-      - 'Logout '
-      - 'Users '
-      - 'Connectors '
-      - 'Credentials '
-      - 'Identifiers '
-      - 'Termination '
-      - 'ARN '
-      - 'Channels '
-      - 'Messages '
-      - 'Redact '
-      - 'Accounts '
-      - 'Conversations '
-      - 'Messages '
-      - 'Redact '
-      - 'Accounts '
-      - 'Messages '
-      - 'Redact '
-      - 'Rooms '
-      - 'Accounts '
-      - 'Bot '
-      - 'Bots '
-      - 'Regenerate '
-      - 'Security '
-      - 'Tokens '
-      - 'Accounts '
-      - 'PIN '
-      - 'Personal '
-      - 'Pin '
-      - 'Reset '
-      - 'Users '
-      - 'Numbers '
-      - 'Phone '
-      - 'Restore '
-      - 'Available '
-      - 'Numbers '
-      - 'Phone '
-      - 'Search '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Transcriptions '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Stop '
-      - 'Transcriptions '
-      - 'Attendees '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Tags '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Tags '
-      - 'Resources '
-      - 'Tags '
-      - 'Attendees '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Tags '
-      - 'Untag '
-      - 'Identifiers '
-      - 'Meetings '
-      - 'Tags '
-      - 'Untag '
-      - 'Resources '
-      - 'Tags '
-      - 'Untag '
-      - 'ARN '
-      - 'Channels '
-      - 'Marker '
-      - 'Read '
-      - 'Applications '
-      - 'Call '
-      - 'Calls '
-      - 'Identifiers '
-      - 'Media '
-      - 'SIP '
-      - 'Transactions '
-      - 'Addresses '
-      - 'Calling '
-      - 'Emergency '
-      - 'Validate '
+      - ARN
+      - Accounts
+      - Addresses
+      - Administrative
+      - Administrator
+      - Applications
+      - Arn?scope=app
+      - Associate
+      - Attendees
+      - Available
+      - Batches
+      - Bot
+      - Bots
+      - Call
+      - Calling
+      - Calls
+      - Capture
+      - Channels
+      - Configurations
+      - Connectors
+      - Conversations
+      - Countries
+      - Create
+      - Credentials
+      - Delegate
+      - Describe
+      - Dial
+      - Disassociate
+      - Emergency
+      - Endpoints
+      - Events
+      - From
+      - Global
+      - Group
+      - Groups
+      - Health
+      - Id?operation=disassociate
+      - Id?operation=logout
+      - Instances
+      - Invite
+      - Logging
+      - Logout
+      - Marker
+      - Media
+      - Meetings
+      - Members
+      - Membership
+      - Memberships
+      - Messages
+      - Messaging
+      - Moderated
+      - Moderators
+      - Numbers
+      - Orders
+      - Origination
+      - Out
+      - PIN
+      - Personal
+      - Phone
+      - Pin
+      - Pipelines
+      - Programmable
+      - Proxy
+      - Read
+      - Redact
+      - Regenerate
+      - Reset
+      - Resources
+      - Restore
+      - Retention
+      - Rooms
+      - Rules
+      - SIP
+      - Search
+      - Security
+      - Send
+      - Sessions
+      - Settings
+      - Sign In
+      - Stop
+      - Streaming
+      - Supported
+      - Suspend
+      - Tags
+      - Termination
+      - Tokens
+      - Transactions
+      - Transcriptions
+      - Unsuspend
+      - Untag
+      - Users
+      - Validate
     properties:
       - type: Documentation
         url: https://aws.amazon.com/chime/
