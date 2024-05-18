@@ -4,19 +4,16 @@ info:
 paths:
   /v1/repository/external-connection:
     DELETE:
-      summary: DisassociateExternalConnection
+      summary: 'Disassociate External Connection '
       description: <p> Removes an existing external connection from a repository. </p>
       tags:
+        - Connections
         - Disassociate
         - External
-        - Connections
-        - null
         - Repositories
-        - External
-        - Connections
   /v1/package/versions/copy:
     POST:
-      summary: CopyPackageVersions
+      summary: 'Copy Package Versions '
       description: >-
         <p> Copies package versions from one repository to another repository in
         the same domain. </p> <note> <p> You must specify <code>versions</code>
@@ -25,16 +22,9 @@ paths:
         - Copy
         - Packages
         - Versions
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
   /v1/domain:
     GET:
-      summary: DescribeDomain
+      summary: 'Describe Domain '
       description: >-
         <p> Returns a <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DomainDescription.html">DomainDescription</a>
@@ -42,32 +32,15 @@ paths:
       tags:
         - Describe
         - Domains
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
   /v1/repository:
     PUT:
-      summary: UpdateRepository
+      summary: 'Update Repository '
       description: <p> Update the properties of a repository. </p>
       tags:
-        - Update
         - Repositories
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
   /v1/domain/permissions/policy:
     PUT:
-      summary: PutDomainPermissionsPolicy
+      summary: 'Put Domain Permissions Policy '
       description: >-
         <p> Sets a resource policy on a domain that specifies permissions to
         access it. </p> <p> When you call
@@ -76,23 +49,12 @@ paths:
         owner of a domain cannot lock themselves out of the domain, which would
         prevent them from being able to update the resource policy. </p>
       tags:
-        - Put
-        - Domains
-        - Permissions
-        - Policies
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
         - Domains
         - Permissions
         - Policies
   /v1/package:
     POST:
-      summary: PutPackageOriginConfiguration
+      summary: 'Put Package Origin Configuration '
       description: >-
         <p>Sets the package origin configuration for a package.</p> <p>The
         package origin configuration determines how new versions of a package
@@ -111,23 +73,12 @@ paths:
         publishing any versions of the package into the repository before
         connecting any package managers or publishers to the repository.</p>
       tags:
-        - Put
-        - Packages
-        - Origin
         - Configurations
-        - null
-        - Repositories
-        - External
-        - Connections
+        - Origin
         - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
   /v1/package/versions/delete:
     POST:
-      summary: DeletePackageVersions
+      summary: 'Delete Package Versions '
       description: >-
         <p> Deletes one or more versions of a package. A deleted package version
         cannot be restored in your repository. If you want to remove a package
@@ -140,23 +91,11 @@ paths:
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_UpdatePackageVersionsStatus.html">UpdatePackageVersionsStatus</a>.
         </p>
       tags:
-        - Delete
         - Packages
         - Versions
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
   /v1/repository/permissions/policies:
     DELETE:
-      summary: DeleteRepositoryPermissionsPolicy
+      summary: 'Delete Repository Permissions Policy '
       description: >-
         <p> Deletes the resource policy that is set on a repository. After a
         resource policy is deleted, the permissions allowed and denied by the
@@ -167,25 +106,12 @@ paths:
         permissions to perform the repository actions granted by the deleted
         policy. </p> </important>
       tags:
-        - Delete
-        - Repositories
         - Permissions
         - Policies
-        - null
         - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
   /v1/package/version:
     GET:
-      summary: DescribePackageVersion
+      summary: 'Describe Package Version '
       description: >-
         <p> Returns a <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html">PackageVersionDescription</a>
@@ -195,22 +121,9 @@ paths:
         - Describe
         - Packages
         - Versions
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
   /v1/package/versions/dispose:
     POST:
-      summary: DisposePackageVersions
+      summary: 'Dispose Package Versions '
       description: >-
         <p> Deletes the assets in package versions and sets the package
         versions' status to <code>Disposed</code>. A disposed package version
@@ -227,23 +140,9 @@ paths:
         - Dispose
         - Packages
         - Versions
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
   /v1/authorization-token:
     POST:
-      summary: GetAuthorizationToken
+      summary: 'Get Authorization Token '
       description: >-
         <p> Generates a temporary authorization token for accessing repositories
         in the domain. This API requires the
@@ -270,88 +169,34 @@ paths:
         IAM Roles</a> for more information on controlling session duration. </p>
         </note>
       tags:
-        - Get
-        - Authorization
-        - Tokens
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
         - Authorization
         - Tokens
   /v1/package/version/asset:
     GET:
-      summary: GetPackageVersionAsset
+      summary: 'Get Package Version Asset '
       description: >-
         <p> Returns an asset (or file) that is in a package. For example, for a
         Maven package version, use <code>GetPackageVersionAsset</code> to
         download a <code>JAR</code> file, a <code>POM</code> file, or any other
         assets in the package version. </p>
       tags:
-        - Get
+        - Assets
         - Packages
         - Versions
-        - Assets
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
   /v1/package/version/readme:
     GET:
-      summary: GetPackageVersionReadme
+      summary: 'Get Package Version Readme '
       description: >-
         <p> Gets the readme file or descriptive text for a package version. </p>
         <p> The returned text might contain formatting. For example, it might
         contain formatting for Markdown or reStructuredText. </p>
       tags:
-        - Get
         - Packages
-        - Versions
         - Readme
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
         - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
   /v1/repository/endpoint:
     GET:
-      summary: GetRepositoryEndpoint
+      summary: 'Get Repository Endpoint '
       description: >-
         <p> Returns the endpoint of a repository for a specific package format.
         A repository has one endpoint for each package format: </p> <ul> <li>
@@ -359,31 +204,11 @@ paths:
         <li> <p> <code>nuget</code> </p> </li> <li> <p> <code>pypi</code> </p>
         </li> </ul>
       tags:
-        - Get
-        - Repositories
         - Endpoints
-        - null
         - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
   /v1/repository/permissions/policy:
     PUT:
-      summary: PutRepositoryPermissionsPolicy
+      summary: 'Put Repository Permissions Policy '
       description: >-
         <p> Sets the resource policy on a repository that specifies permissions
         to access it. </p> <p> When you call
@@ -393,32 +218,12 @@ paths:
         which would prevent them from being able to update the resource policy.
         </p>
       tags:
-        - Put
-        - Repositories
         - Permissions
         - Policies
-        - null
         - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
   /v1/domains:
     POST:
-      summary: ListDomains
+      summary: 'List Domains '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html">DomainSummary</a>
@@ -426,64 +231,22 @@ paths:
         makes this call. Each returned <code>DomainSummary</code> object
         contains information about a domain. </p>
       tags:
-        - Lists
-        - Domains
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
         - Domains
   /v1/package/version/assets:
     POST:
-      summary: ListPackageVersionAssets
+      summary: 'List Package Version Assets '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_AssetSummary.html">AssetSummary</a>
         objects for assets in a package version. </p>
       tags:
+        - Assets
         - Lists
         - Packages
         - Versions
-        - Assets
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
   /v1/package/version/dependencies:
     POST:
-      summary: ListPackageVersionDependencies
+      summary: 'List Package Version Dependencies '
       description: >-
         <p> Returns the direct dependencies for a package version. The
         dependencies are returned as <a
@@ -494,35 +257,12 @@ paths:
         <code>pom.xml</code> file for Maven). Any package version dependencies
         that are not listed in the configuration file are not returned. </p>
       tags:
-        - Lists
+        - Dependencies
         - Packages
         - Versions
-        - Dependencies
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
   /v1/package/versions:
     POST:
-      summary: ListPackageVersions
+      summary: 'List Package Versions '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionSummary.html">PackageVersionSummary</a>
@@ -531,68 +271,21 @@ paths:
         when calling <code>list-package-versions</code> with no
         <code>--status</code> parameter. </p>
       tags:
-        - Lists
         - Packages
         - Versions
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
   /v1/packages:
     POST:
-      summary: ListPackages
+      summary: 'List Packages '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageSummary.html">PackageSummary</a>
         objects for packages in a repository that match the request parameters.
         </p>
       tags:
-        - Lists
-        - Packages
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
         - Packages
   /v1/repositories:
     POST:
-      summary: ListRepositories
+      summary: 'List Repositories '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html">RepositorySummary</a>
@@ -600,35 +293,10 @@ paths:
         a repository in the specified Amazon Web Services account and that
         matches the input parameters. </p>
       tags:
-        - Lists
-        - Repositories
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
-        - Packages
         - Repositories
   /v1/domain/repositories:
     POST:
-      summary: ListRepositoriesInDomain
+      summary: 'List Repositories In Domain '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html">RepositorySummary</a>
@@ -636,73 +304,20 @@ paths:
         a repository in the specified domain and that matches the input
         parameters. </p>
       tags:
-        - Lists
-        - Repositories
-        - In
         - Domains
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
-        - Packages
         - Repositories
   /v1/tags:
     POST:
-      summary: ListTagsForResource
+      summary: 'List Tags For Resource '
       description: >-
         <p>Gets information about Amazon Web Services tags for a specified
         Amazon Resource Name (ARN) in CodeArtifact.</p>
       tags:
-        - Lists
-        - Tags
-        - For
         - Resources
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
-        - Packages
-        - Repositories
         - Tags
   /v1/package/version/publish:
     POST:
-      summary: PublishPackageVersion
+      summary: 'Publish Package Version '
       description: >-
         <p>Creates a new package version containing one or more assets (or
         files).</p> <p>The <code>unfinished</code> flag can be used to keep the
@@ -721,107 +336,26 @@ paths:
         href="https://docs.aws.amazon.com/codeartifact/latest/ug/using-generic.html">Using
         generic packages</a> in the <i>CodeArtifact User Guide</i>.</p> </note>
       tags:
+        - Packages
         - Publish
-        - Packages
         - Versions
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
-        - Packages
-        - Repositories
-        - Tags
-        - Publish
   /v1/tag:
     POST:
-      summary: TagResource
+      summary: 'Tag Resource '
       description: <p>Adds or updates tags for a resource in CodeArtifact.</p>
       tags:
-        - Tags
         - Resources
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
-        - Packages
-        - Repositories
-        - Tags
-        - Publish
         - Tags
   /v1/untag:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from a resource in CodeArtifact.</p>
       tags:
-        - Untag
         - Resources
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
-        - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
-        - Packages
-        - Repositories
-        - Tags
-        - Publish
-        - Tags
         - Untag
   /v1/package/versions/update_status:
     POST:
-      summary: UpdatePackageVersionsStatus
+      summary: 'Update Package Versions Status '
       description: >-
         <p> Updates the status of one or more versions of a package. Using
         <code>UpdatePackageVersionsStatus</code>, you can update the status of
@@ -830,36 +364,6 @@ paths:
         <code>Disposed</code>, use <a
         href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DisposePackageVersions.html">DisposePackageVersion
       tags:
-        - Update
         - Packages
-        - Versions
         - Status
-        - null
-        - Repositories
-        - External
-        - Connections
-        - Packages
         - Versions
-        - Copy
-        - Domains
-        - Permissions
-        - Policies
-        - Delete
-        - Policies
-        - Versions
-        - Dispose
-        - Authorization
-        - Tokens
-        - Assets
-        - Readme
-        - Endpoints
-        - Domains
-        - Assets
-        - Dependencies
-        - Packages
-        - Repositories
-        - Tags
-        - Publish
-        - Tags
-        - Untag
-        - Update_stat
