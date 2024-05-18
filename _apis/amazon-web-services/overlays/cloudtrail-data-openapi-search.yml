@@ -4,7 +4,7 @@ info:
 paths:
   /PutAuditEvents:
     POST:
-      summary: PutAuditEvents
+      summary: 'Put Audit Events '
       description: >-
         <p>Ingests your application events into CloudTrail Lake. A required
         parameter, <code>auditEvents</code>, accepts the JSON records (also
@@ -12,9 +12,5 @@ paths:
         can add up to 100 of these events (or up to 1 MB) per
         <code>PutAuditEvents</code> re
       tags:
-        - Put
         - Audit
         - Events
-        - Put
-        - Audit
-        - null
