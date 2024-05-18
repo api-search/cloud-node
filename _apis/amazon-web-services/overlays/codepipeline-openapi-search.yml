@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdatePipeline
+      summary: 'Update Pipeline '
       description: >-
         <p>Updates a specified pipeline with edits or changes to its structure.
         Use a JSON file with the pipeline structure and
@@ -12,5 +12,4 @@ paths:
         pipeline. Updating the pipeline increases the version number of the
         pipeline
       tags:
-        - Update
         - Pipelines
