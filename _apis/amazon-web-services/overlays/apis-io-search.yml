@@ -1541,7 +1541,19 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/braket/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Cancel
+      - Create
+      - Device
+      - Devices
+      - Jobs
+      - Quantum
+      - Resources
+      - Search
+      - Tags
+      - Tasks
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/braket/
@@ -1574,7 +1586,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/cloudcontrolapi/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
     properties:
       - type: Documentation
         url: https://aws.amazon.com/cloudcontrolapi/
