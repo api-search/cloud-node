@@ -4,42 +4,25 @@ info:
 paths:
   /amazonclouddirectory/2017-01-11/object/facets:
     PUT:
-      summary: AddFacetToObject
+      summary: 'Add Facet To Object '
       description: >-
         <p>Adds a new <a>Facet</a> to an object. An object can have more than
         one facet applied on it.</p>
       tags:
-        - Add
         - Facets
-        - To
         - Objects
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
   /amazonclouddirectory/2017-01-11/schema/apply:
     PUT:
-      summary: ApplySchema
+      summary: 'Apply Schema '
       description: >-
         <p>Copies the input published schema, at the specified version, into the
         <a>Directory</a> with the same name and version as that of the published
         schema.</p>
       tags:
-        - Apply
         - Schemas
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
   /amazonclouddirectory/2017-01-11/object/attach:
     PUT:
-      summary: AttachObject
+      summary: 'Attach Object '
       description: >-
         <p>Attaches an existing object to another object. An object can be
         accessed in two ways:</p> <ol> <li> <p>Using the path</p> </li> <li>
@@ -47,56 +30,25 @@ paths:
       tags:
         - Attach
         - Objects
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
   /amazonclouddirectory/2017-01-11/policy/attach:
     PUT:
-      summary: AttachPolicy
+      summary: 'Attach Policy '
       description: >-
         <p>Attaches a policy object to a regular object. An object can have a
         limited number of attached policies.</p>
       tags:
         - Attach
         - Policies
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
   /amazonclouddirectory/2017-01-11/index/attach:
     PUT:
-      summary: AttachToIndex
+      summary: 'Attach To Index '
       description: <p>Attaches the specified object to the specified index.</p>
       tags:
         - Attach
-        - To
-        - Index
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
         - Index
   /amazonclouddirectory/2017-01-11/typedlink/attach:
     PUT:
-      summary: AttachTypedLink
+      summary: 'Attach Typed Link '
       description: >-
         <p>Attaches a typed link to a specified source and target object. For
         more information, see <a
@@ -104,66 +56,28 @@ paths:
         Links</a>.</p>
       tags:
         - Attach
-        - Typed
         - Link
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
+        - Typed
         - Typed Links
   /amazonclouddirectory/2017-01-11/batchread:
     POST:
-      summary: BatchRead
+      summary: 'Batch Read '
       description: <p>Performs all the read operations in a batch. </p>
       tags:
         - Batches
         - Read
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
   /amazonclouddirectory/2017-01-11/batchwrite:
     PUT:
-      summary: BatchWrite
+      summary: 'Batch Write '
       description: >-
         <p>Performs all the write operations in a batch. Either all the
         operations succeed or none.</p>
       tags:
         - Batches
         - Write
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
   /amazonclouddirectory/2017-01-11/directory/create:
     PUT:
-      summary: CreateDirectory
+      summary: 'Create Directory '
       description: >-
         <p>Creates a <a>Directory</a> by copying the published schema into the
         directory. A directory cannot be created without a schema.</p> <p>You
@@ -172,80 +86,27 @@ paths:
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/schemas_managed.html">Managed
         Schema</a> in the <i>Amazon Cloud Directory Developer Guide</i>.</p>
       tags:
-        - Create
         - Directory
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
   /amazonclouddirectory/2017-01-11/facet/create:
     PUT:
-      summary: CreateFacet
+      summary: 'Create Facet '
       description: >-
         <p>Creates a new <a>Facet</a> in a schema. Facet creation is allowed
         only in development or applied schemas.</p>
       tags:
-        - Create
-        - Facets
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
         - Facets
   /amazonclouddirectory/2017-01-11/index:
     PUT:
-      summary: CreateIndex
+      summary: 'Create Index '
       description: >-
         <p>Creates an index object. See <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/indexing_search.html">Indexing
         and search</a> for more information.</p>
       tags:
-        - Create
         - Index
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
   /amazonclouddirectory/2017-01-11/object:
     PUT:
-      summary: CreateObject
+      summary: 'Create Object '
       description: >-
         <p>Creates an object in a <a>Directory</a>. Additionally attaches the
         object to a parent, if a parent reference and <code>LinkName</code> is
@@ -253,28 +114,10 @@ paths:
         You can also use this API call to create a policy object, if the facet
         from which you create the object is a policy facet. </p>
       tags:
-        - Create
         - Objects
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
   /amazonclouddirectory/2017-01-11/schema/create:
     PUT:
-      summary: CreateSchema
+      summary: 'Create Schema '
       description: >-
         <p>Creates a new schema in a development state. A schema can exist in
         three phases:</p> <ul> <li> <p> <i>Development:</i> This is a mutable
@@ -286,112 +129,40 @@ paths:
         also add new, nonrequired attributes to existing schema facets. You can
         apply only published schemas to directories. </p> </li> </ul>
       tags:
-        - Create
         - Schemas
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
   /amazonclouddirectory/2017-01-11/typedlink/facet/create:
     PUT:
-      summary: CreateTypedLinkFacet
+      summary: 'Create Typed Link Facet '
       description: >-
         <p>Creates a <a>TypedLinkFacet</a>. For more information, see <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
         Links</a>.</p>
       tags:
-        - Create
-        - Typed
+        - Facets
         - Link
-        - Facets
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
+        - Typed
         - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
   /amazonclouddirectory/2017-01-11/directory:
     PUT:
-      summary: DeleteDirectory
+      summary: 'Delete Directory '
       description: >-
         <p>Deletes a directory. Only disabled directories can be deleted. A
         deleted directory cannot be undone. Exercise extreme caution when
         deleting directories.</p>
       tags:
-        - Delete
         - Directory
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
   /amazonclouddirectory/2017-01-11/facet/delete:
     PUT:
-      summary: DeleteFacet
+      summary: 'Delete Facet '
       description: >-
         <p>Deletes a given <a>Facet</a>. All attributes and <a>Rule</a>s that
         are associated with the facet will be deleted. Only development schema
         facets are allowed deletion.</p>
       tags:
-        - Delete
         - Facets
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
   /amazonclouddirectory/2017-01-11/object/delete:
     PUT:
-      summary: DeleteObject
+      summary: 'Delete Object '
       description: >-
         <p>Deletes an object and its associated attributes. Only objects with no
         children and no parents can be deleted. The maximum number of attributes
@@ -400,56 +171,18 @@ paths:
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/limits.html">Amazon
         Cloud Directory Limits</a>.</p>
       tags:
-        - Delete
         - Objects
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
   /amazonclouddirectory/2017-01-11/schema:
     PUT:
-      summary: DeleteSchema
+      summary: 'Delete Schema '
       description: >-
         <p>Deletes a given schema. Schemas in a development and published state
         can only be deleted. </p>
       tags:
-        - Delete
         - Schemas
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
   /amazonclouddirectory/2017-01-11/typedlink/facet/delete:
     PUT:
-      summary: DeleteTypedLinkFacet
+      summary: 'Delete Typed Link Facet '
       description: >-
         <p>Deletes a <a>TypedLinkFacet</a>. For more information, see <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
