@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateResource
+      summary: 'Update Resource '
       description: >-
         <p>Updates the specified property values in the resource.</p> <p>You
         specify your resource property updates as a list of patch operations
@@ -25,5 +25,4 @@ paths:
         href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">Resource
         and property types reference</a> in the <i>CloudFormation Users Guid
       tags:
-        - Update
-        - null
+        - Resources
