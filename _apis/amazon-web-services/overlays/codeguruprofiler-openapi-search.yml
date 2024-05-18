@@ -4,150 +4,96 @@ info:
 paths:
   /profilingGroups/{profilingGroupName}/notificationConfiguration:
     GET:
-      summary: GetNotificationConfiguration
+      summary: 'Get Notification Configuration '
       description: >-
         <p>Get the current configuration for anomaly notifications for a
         profiling group.</p>
       tags:
-        - Get
-        - Notifications
         - Configurations
-        - Groups
-        - Profiling
         - Group
+        - Groups
         - Names
         - Notifications
-        - Configurations
+        - Profiling
   /profilingGroups/{profilingGroupName}/frames/-/metrics:
     POST:
-      summary: BatchGetFrameMetricData
+      summary: 'Batch Get Frame Metric Data '
       description: >-
         <p> Returns the time series of values for a requested list of frame
         metrics from a time period.</p>
       tags:
         - Batches
-        - Get
-        - Frames
-        - Metrics
         - Data
-        - Groups
-        - Profiling
-        - Group
-        - Names
-        - Notifications
-        - Configurations
         - Frames
+        - Group
+        - Groups
         - Metrics
+        - Names
+        - Profiling
   /profilingGroups/{profilingGroupName}/configureAgent:
     POST:
-      summary: ConfigureAgent
+      summary: 'Configure Agent '
       description: >-
         <p> Used by profiler agents to report their current state and to receive
         remote configuration updates. For example, <code>ConfigureAgent</code>
         can be used to tell an agent whether to profile or not and for how long
         to return profiling data. </p>
       tags:
-        - Configure
         - Agent
-        - Groups
-        - Profiling
+        - Configure
         - Group
+        - Groups
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
+        - Profiling
   /profilingGroups:
     GET:
-      summary: ListProfilingGroups
+      summary: 'List Profiling Groups '
       description: >-
         <p> Returns a list of profiling groups. The profiling groups are
         returned as <a
         href="https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ProfilingGroupDescription.html">
         <code>ProfilingGroupDescription</code> </a> objects. </p>
       tags:
-        - Lists
-        - Profiling
-        - Groups
         - Groups
         - Profiling
-        - Group
-        - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
   /profilingGroups/{profilingGroupName}:
     PUT:
-      summary: UpdateProfilingGroup
+      summary: 'Update Profiling Group '
       description: <p>Updates a profiling group.</p>
       tags:
-        - Update
-        - Profiling
         - Group
         - Groups
-        - Profiling
-        - Group
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
+        - Profiling
   /internal/findingsReports:
     GET:
-      summary: GetFindingsReportAccountSummary
+      summary: 'Get Findings Report Account Summary '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html">
         <code>FindingsReportSummary</code> </a> objects that contain analysis
         results for all profiling groups in your AWS account. </p>
       tags:
-        - Get
+        - Accounts
         - Findings
+        - Internal
         - Reports
-        - Account
         - Summaries
-        - Groups
-        - Profiling
-        - Group
-        - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
   /profilingGroups/{profilingGroupName}/policy:
     GET:
-      summary: GetPolicy
+      summary: 'Get Policy '
       description: >-
         <p> Returns the JSON-formatted resource-based policy on a profiling
         group. </p>
       tags:
-        - Get
-        - Policies
-        - Groups
-        - Profiling
         - Group
+        - Groups
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
         - Policies
+        - Profiling
   /profilingGroups/{profilingGroupName}/profile:
     GET:
-      summary: GetProfile
+      summary: 'Get Profile '
       description: >-
         <p> Gets the aggregated profile of a profiling group for a specified
         time range. Amazon CodeGuru Profiler collects posted agent profiles for
@@ -193,24 +139,14 @@ paths:
         then the aggregated profiles from 00:15 to 00:20 are returned.
         &lt;/p&gt; &lt;/li&gt; &lt;/ol&gt; </code></pre>
       tags:
-        - Get
-        - Profiles
-        - Groups
-        - Profiling
         - Group
+        - Groups
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
         - Profiles
+        - Profiling
   /internal/profilingGroups/{profilingGroupName}/recommendations:
     GET:
-      summary: GetRecommendations
+      summary: 'Get Recommendations '
       description: >-
         <p> Returns a list of <a
         href="https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Recommendation.html">
@@ -221,101 +157,53 @@ paths:
         detected in the profiling group for the same time period is also
         returned. </p>
       tags:
-        - Get
-        - Recommendations
-        - Groups
-        - Profiling
         - Group
+        - Groups
+        - Internal
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
-        - Profiles
+        - Profiling
         - Recommendations
   /internal/profilingGroups/{profilingGroupName}/findingsReports:
     GET:
-      summary: ListFindingsReports
+      summary: 'List Findings Reports '
       description: >-
         <p>List the available reports for a given profiling group and time
         range.</p>
       tags:
-        - Lists
         - Findings
-        - Reports
-        - Groups
-        - Profiling
         - Group
+        - Groups
+        - Internal
+        - Lists
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
+        - Profiling
         - Reports
-        - Policies
-        - Profiles
-        - Recommendations
-        - Findings
   /profilingGroups/{profilingGroupName}/profileTimes:
     GET:
-      summary: ListProfileTimes
+      summary: 'List Profile Times '
       description: >-
         <p>Lists the start times of the available aggregated profiles of a
         profiling group for an aggregation period within the specified time
         range.</p>
       tags:
-        - Lists
-        - Profiles
-        - Times
-        - Groups
-        - Profiling
         - Group
+        - Groups
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
         - Profiles
-        - Recommendations
-        - Findings
+        - Profiling
         - Times
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p> Use to remove one or more tags from a resource. </p>
       tags:
-        - Untag
-        - Resources
-        - Groups
-        - Profiling
-        - Group
-        - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
-        - Profiles
-        - Recommendations
-        - Findings
-        - Times
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /profilingGroups/{profilingGroupName}/agentProfile:
     POST:
-      summary: PostAgentProfile
+      summary: 'Post Agent Profile '
       description: >-
         <p> Submits profiling data to an aggregated profile of a profiling
         group. To get an aggregated profile that is created with this profiling
@@ -323,29 +211,16 @@ paths:
         href="https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProfile.html">
         <code>GetProfile</code> </a>. </p>
       tags:
-        - Posts
         - Agent
-        - Profiles
-        - Groups
-        - Profiling
         - Group
+        - Groups
         - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
+        - Posts
         - Profiles
-        - Recommendations
-        - Findings
-        - Times
-        - ARN
+        - Profiling
   /profilingGroups/{profilingGroupName}/policy/{actionGroup}:
     DELETE:
-      summary: RemovePermission
+      summary: 'Remove Permission '
       description: >-
         <p> Removes permissions from a profiling group's resource-based policy
         that are provided using an action group. The one supported action group
@@ -360,84 +235,41 @@ paths:
         href="https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PostAgentProfile.html">
         <code>PostAgentProfile</code> </a>. </p>
       tags:
-        - Removes
-        - Permission
-        - Groups
-        - Profiling
-        - Group
-        - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
-        - Profiles
-        - Recommendations
-        - Findings
-        - Times
-        - ARN
         - Actions
+        - Group
+        - Groups
+        - Names
+        - Permission
+        - Policies
+        - Profiling
+        - Removes
   /profilingGroups/{profilingGroupName}/notificationConfiguration/{channelId}:
     DELETE:
-      summary: RemoveNotificationChannel
+      summary: 'Remove Notification Channel '
       description: <p>Remove one anomaly notifications channel for a profiling group.</p>
       tags:
-        - Removes
-        - Notifications
         - Channels
-        - Groups
-        - Profiling
+        - Configurations
         - Group
+        - Groups
         - Names
         - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
-        - Profiles
-        - Recommendations
-        - Findings
-        - Times
-        - ARN
-        - Actions
-        - Channels
-        - Identifiers
+        - Profiling
+        - Removes
   /internal/profilingGroups/{profilingGroupName}/anomalies/{anomalyInstanceId}/feedback:
     POST:
-      summary: SubmitFeedback
+      summary: 'Submit Feedback '
       description: >-
         <p>Sends feedback to CodeGuru Profiler about whether the anomaly
         detected by the analysis is useful o
       tags:
-        - Submit
-        - Feedback
-        - Groups
-        - Profiling
-        - Group
-        - Names
-        - Notifications
-        - Configurations
-        - Frames
-        - Metrics
-        - Configure
-        - Agent
-        - Reports
-        - Policies
-        - Profiles
-        - Recommendations
-        - Findings
-        - Times
-        - ARN
-        - Actions
-        - Channels
-        - Identifiers
         - Anomalies
         - Anomaly
-        - Instances
         - Feedback
+        - Group
+        - Groups
+        - Instances
+        - Internal
+        - Names
+        - Profiling
+        - Submit
