@@ -2011,7 +2011,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/codebuild/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Webhooks
     properties:
       - type: Documentation
         url: https://aws.amazon.com/codebuild/
@@ -2053,7 +2054,20 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/index.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Associations
+      - Code
+      - Code Reviews
+      - Describe
+      - Disassociate
+      - Feedback
+      - Recommendations
+      - Repositories
+      - Resources
+      - Reviews
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/index.html
@@ -2081,7 +2095,32 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/codeartifact/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Assets
+      - Authorization
+      - Configurations
+      - Connections
+      - Copy
+      - Dependencies
+      - Describe
+      - Disassociate
+      - Dispose
+      - Domains
+      - Endpoints
+      - External
+      - Origin
+      - Packages
+      - Permissions
+      - Policies
+      - Publish
+      - Readme
+      - Repositories
+      - Resources
+      - Status
+      - Tags
+      - Tokens
+      - Untag
+      - Versions
     properties:
       - type: Documentation
         url: https://aws.amazon.com/codeartifact/
@@ -2143,7 +2182,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/codedeploy/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Deployments
+      - Group
     properties:
       - type: Documentation
         url: https://aws.amazon.com/codedeploy/
@@ -2180,7 +2221,21 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/codeguru/latest/security-api/index.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Batches
+      - Configurations
+      - Findings
+      - Metrics
+      - Names
+      - Resources
+      - Scans
+      - Summaries
+      - Tags
+      - URL
+      - Untag
+      - Uploads
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/codeguru/latest/security-api/index.html
@@ -2205,7 +2260,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/codecommit/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Names
+      - Repositories
     properties:
       - type: Documentation
         url: https://aws.amazon.com/codecommit/
@@ -2242,7 +2299,42 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/codeguru/latest/profiler-api/index.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Actions
+      - Agent
+      - Anomalies
+      - Anomaly
+      - Batches
+      - Channels
+      - Configurations
+      - Configure
+      - Data
+      - Feedback
+      - Findings
+      - Frames
+      - Group
+      - Groups
+      - Instances
+      - Internal
+      - Metrics
+      - Names
+      - Notifications
+      - Permission
+      - Policies
+      - Posts
+      - Profiles
+      - Profiling
+      - Recommendations
+      - Removes
+      - Reports
+      - Resources
+      - Submit
+      - Summaries
+      - Tags
+      - Times
+      - Untag
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/index.html
@@ -2268,7 +2360,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/codepipeline/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Pipelines
     properties:
       - type: Documentation
         url: https://aws.amazon.com/codepipeline/
@@ -2299,7 +2392,20 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/codestar-notifications/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Notifications
+      - Rules
+      - Target
+      - Describe
+      - Events
+      - Types
+      - Resources
+      - Tags
+      - Targets
+      - Subscribe
+      - Unsubscribe
+      - ARN
+      - Untag
     properties:
       - type: Documentation
         url: >-
