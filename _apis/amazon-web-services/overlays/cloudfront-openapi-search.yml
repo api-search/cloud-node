@@ -4,7 +4,7 @@ info:
 paths:
   /2020-05-31/distribution/{TargetDistributionId}/associate-alias:
     PUT:
-      summary: AssociateAlias
+      summary: 'Associate Alias '
       description: >-
         <p>Associates an alias (also known as a CNAME or an alternate domain
         name) with a CloudFront distribution.</p> <p>With this operation you can
@@ -20,16 +20,14 @@ paths:
         an alternate domain name to a different distribution</a> in the
         <i>Amazon CloudFront Developer Guide</i>.</p>
       tags:
-        - Associate
         - Alias
-        - Target
+        - Associate
         - Distributions
         - Identifiers
-        - Associate
-        - Alias
+        - Target
   /2020-05-31/distribution/{PrimaryDistributionId}/copy:
     POST:
-      summary: CopyDistribution
+      summary: 'Copy Distribution '
       description: >-
         <p>Creates a staging distribution using the configuration of the
         provided primary distribution. A staging distribution is a copy of an
@@ -49,16 +47,11 @@ paths:
       tags:
         - Copy
         - Distributions
-        - Target
-        - Distributions
         - Identifiers
-        - Associate
-        - Alias
         - Primary
-        - Copy
   /2020-05-31/cache-policy:
     GET:
-      summary: ListCachePolicies
+      summary: 'List Cache Policies '
       description: >-
         <p>Gets a list of cache policies.</p> <p>You can optionally apply a
         filter to return only the managed policies created by Amazon Web
@@ -71,51 +64,25 @@ paths:
         current response as the <code>Marker</code> value in the subsequent
         request.</p>
       tags:
+        - Cache
         - Lists
-        - Cache
-        - Policies
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
         - Policies
   /2020-05-31/origin-access-identity/cloudfront:
     GET:
-      summary: ListCloudFrontOriginAccessIdentities
+      summary: 'List Cloud Front Origin Access Identities '
       description: <p>Lists origin access identities.</p>
       tags:
-        - Lists
+        - Access
         - Cloud
-        - Front
-        - Origin
-        - Access
-        - Identities
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
         - Cloudfront
+        - Entities
+        - Front
+        - Identities
+        - Lists
+        - Origin
   /2020-05-31/continuous-deployment-policy:
     GET:
-      summary: ListContinuousDeploymentPolicies
+      summary: 'List Continuous Deployment Policies '
       description: >-
         <p>Gets a list of the continuous deployment policies in your Amazon Web
         Services account.</p> <p>You can optionally specify the maximum number
@@ -126,56 +93,20 @@ paths:
         current response as the <code>Marker</code> value in the subsequent
         request.</p>
       tags:
+        - Continuous
+        - Deployments
         - Lists
-        - Continuous
-        - Deployments
         - Policies
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
   /2020-05-31/distribution:
     GET:
-      summary: ListDistributions
+      summary: 'List Distributions '
       description: <p>List CloudFront distributions.</p>
       tags:
+        - Distributions
         - Lists
-        - Distributions
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
   /2020-05-31/distribution?WithTags:
     POST:
-      summary: CreateDistributionWithTags
+      summary: 'Create Distribution With Tags '
       description: >-
         <p>Create a new distribution with tags. This API operation requires the
         following IAM permissions:</p> <ul> <li> <p> <a
@@ -184,104 +115,33 @@ paths:
         href="https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TagResource.html">TagResource</a>
         </p> </li> </ul>
       tags:
-        - Create
         - Distributions
-        - null
-        - Tags
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
         - Tags
   /2020-05-31/field-level-encryption:
     GET:
-      summary: ListFieldLevelEncryptionConfigs
+      summary: 'List Field Level Encryption Configs '
       description: >-
         <p>List all field-level encryption configurations that have been created
         in CloudFront for this account.</p>
       tags:
-        - Lists
-        - Fields
-        - Levels
-        - Encryption
         - Configurations
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
+        - Encryption
         - Fields
         - Levels
-        - Encryption
   /2020-05-31/field-level-encryption-profile:
     GET:
-      summary: ListFieldLevelEncryptionProfiles
+      summary: 'List Field Level Encryption Profiles '
       description: >-
         <p>Request a list of field-level encryption profiles that have been
         created in CloudFront for this account.</p>
       tags:
-        - Lists
+        - Encryption
         - Fields
         - Levels
-        - Encryption
-        - Profiles
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
         - Profiles
   /2020-05-31/function:
     GET:
-      summary: ListFunctions
+      summary: 'List Functions '
       description: >-
         <p>Gets a list of all CloudFront functions in your Amazon Web Services
         account.</p> <p>You can optionally apply a filter to return only the
@@ -294,69 +154,17 @@ paths:
         <code>NextMarker</code> value from the current response as the
         <code>Marker</code> value in the subsequent request.</p>
       tags:
-        - Lists
-        - Functions
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
         - Functions
   /2020-05-31/distribution/{DistributionId}/invalidation:
     GET:
-      summary: ListInvalidations
+      summary: 'List Invalidations '
       description: <p>Lists invalidation batches.</p>
       tags:
-        - Lists
-        - Invalidations
-        - Target
         - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
         - Invalidations
   /2020-05-31/key-group:
     GET:
-      summary: ListKeyGroups
+      summary: 'List Key Groups '
       description: >-
         <p>Gets a list of key groups.</p> <p>You can optionally specify the
         maximum number of items to receive in the response. If the total number
@@ -366,125 +174,34 @@ paths:
         <code>NextMarker</code> value from the current response as the
         <code>Marker</code> value in the subsequent request.</p>
       tags:
-        - Lists
-        - Keys
-        - Groups
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
         - Group
+        - Groups
+        - Keys
   /2020-05-31/key-value-store/:
     POST:
-      summary: CreateKeyValueStore
+      summary: 'Create Key Value Store '
       description: >-
         <p>Specifies the Key Value Store resource to add to your account. In
         your account, the Key Value Store names must be unique. You can also
         import Key Value Store data in JSON format from an S3 bucket by
         providing a valid <code>ImportSource</code> that you own.</p>
       tags:
-        - Create
         - Keys
-        - Value
         - Store
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
         - Value
-        - Store
   /2020-05-31/distributions/{DistributionId}/monitoring-subscription/:
     GET:
-      summary: GetMonitoringSubscription
+      summary: 'Get Monitoring Subscription '
       description: >-
         <p>Gets information about whether additional CloudWatch metrics are
         enabled for the specified CloudFront distribution.</p>
       tags:
-        - Get
-        - Monitoring
-        - Subscriptions
-        - Target
         - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
         - Monitoring
         - Subscriptions
   /2020-05-31/origin-access-control:
     GET:
-      summary: ListOriginAccessControls
+      summary: 'List Origin Access Controls '
       description: >-
         <p>Gets the list of CloudFront origin access controls in this Amazon Web
         Services account.</p> <p>You can optionally specify the maximum number
@@ -495,46 +212,12 @@ paths:
         current response as the <code>Marker</code> value in the next
         request.</p>
       tags:
-        - Lists
-        - Origin
         - Access
         - Controls
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
         - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
   /2020-05-31/origin-request-policy:
     GET:
-      summary: ListOriginRequestPolicies
+      summary: 'List Origin Request Policies '
       description: >-
         <p>Gets a list of origin request policies.</p> <p>You can optionally
         apply a filter to return only the managed policies created by Amazon Web
@@ -547,92 +230,20 @@ paths:
         current response as the <code>Marker</code> value in the subsequent
         request.</p>
       tags:
-        - Lists
         - Origin
-        - Request
         - Policies
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
   /2020-05-31/public-key:
     GET:
-      summary: ListPublicKeys
+      summary: 'List Public Keys '
       description: >-
         <p>List all public keys that have been added to CloudFront for this
         account.</p>
       tags:
-        - Lists
-        - Public
         - Keys
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
         - Public
   /2020-05-31/realtime-log-config:
     GET:
-      summary: ListRealtimeLogConfigs
+      summary: 'List Realtime Log Configs '
       description: >-
         <p>Gets a list of real-time log configurations.</p> <p>You can
         optionally specify the maximum number of items to receive in the
@@ -642,51 +253,12 @@ paths:
         <code>NextMarker</code> value from the current response as the
         <code>Marker</code> value in the subsequent request.</p>
       tags:
-        - Lists
-        - Real Time
-        - Logs
         - Configurations
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
         - Logs
-        - Configurations
+        - Real Time
   /2020-05-31/response-headers-policy:
     GET:
-      summary: ListResponseHeadersPolicies
+      summary: 'List Response Headers Policies '
       description: >-
         <p>Gets a list of response headers policies.</p> <p>You can optionally
         apply a filter to get only the managed policies created by Amazon Web
@@ -699,102 +271,19 @@ paths:
         current response as the <code>Marker</code> value in the subsequent
         request.</p>
       tags:
-        - Lists
-        - Responses
         - Headers
         - Policies
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
         - Responses
-        - Headers
   /2020-05-31/streaming-distribution:
     GET:
-      summary: ListStreamingDistributions
+      summary: 'List Streaming Distributions '
       description: <p>List streaming distributions.</p>
       tags:
-        - Lists
-        - Streaming
         - Distributions
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
         - Streaming
   /2020-05-31/streaming-distribution?WithTags:
     POST:
-      summary: CreateStreamingDistributionWithTags
+      summary: 'Create Streaming Distribution With Tags '
       description: >-
         <p>This API is deprecated. Amazon CloudFront is deprecating real-time
         messaging protocol (RTMP) distributions on December 31, 2020. For more
@@ -802,55 +291,12 @@ paths:
         href="http://forums.aws.amazon.com/ann.jspa?annID=7356">read the
         announcement</a> on the Amazon CloudFront discussion forum.</p>
       tags:
-        - Create
-        - Streaming
         - Distributions
-        - null
-        - Tags
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
         - Streaming
+        - Tags
   /2020-05-31/cache-policy/{Id}:
     PUT:
-      summary: UpdateCachePolicy
+      summary: 'Update Cache Policy '
       description: >-
         <p>Updates a cache policy configuration.</p> <p>When you update a cache
         policy configuration, all the fields are updated with the values
@@ -863,105 +309,23 @@ paths:
         configuration, including the fields that you modified and those that you
         didn't.</p> </li> </ol>
       tags:
-        - Update
         - Cache
         - Policies
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
-        - Streaming
   /2020-05-31/origin-access-identity/cloudfront/{Id}:
     GET:
-      summary: GetCloudFrontOriginAccessIdentity
+      summary: 'Get Cloud Front Origin Access Identity '
       description: <p>Get the information about an origin access identity.</p>
       tags:
-        - Get
+        - Access
         - Cloud
-        - Front
-        - Origin
-        - Access
-        - Identity
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
         - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
-        - Streaming
+        - Entities
+        - Front
+        - Identity
+        - Origin
   /2020-05-31/continuous-deployment-policy/{Id}:
     PUT:
-      summary: UpdateContinuousDeploymentPolicy
+      summary: 'Update Continuous Deployment Policy '
       description: >-
         <p>Updates a continuous deployment policy. You can update a continuous
         deployment policy to enable or disable it, to change the percentage of
@@ -979,200 +343,33 @@ paths:
         including the fields that you modified and those that you didn't.</p>
         </li> </ol>
       tags:
-        - Update
         - Continuous
         - Deployments
         - Policies
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
-        - Streaming
   /2020-05-31/distribution/{Id}:
     GET:
-      summary: GetDistribution
+      summary: 'Get Distribution '
       description: <p>Get the information about a distribution.</p>
       tags:
-        - Get
         - Distributions
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
-        - Streaming
   /2020-05-31/field-level-encryption/{Id}:
     GET:
-      summary: GetFieldLevelEncryption
+      summary: 'Get Field Level Encryption '
       description: <p>Get the field-level encryption configuration information.</p>
       tags:
-        - Get
+        - Encryption
         - Fields
         - Levels
-        - Encryption
-        - Target
-        - Distributions
-        - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
-        - Levels
-        - Encryption
-        - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
-        - Streaming
   /2020-05-31/field-level-encryption-profile/{Id}:
     GET:
-      summary: GetFieldLevelEncryptionProfile
+      summary: 'Get Field Level Encryption Profile '
       description: <p>Get the field-level encryption profile information.</p>
       tags:
-        - Get
-        - Fields
-        - Levels
         - Encryption
-        - Profiles
-        - Target
-        - Distributions
+        - Fields
         - Identifiers
-        - Associate
-        - Alias
-        - Primary
-        - Copy
-        - null
-        - null
-        - null
-        - Cache
-        - Policies
-        - Origin
-        - Access
-        - Identity
-        - Cloudfront
-        - Continuous
-        - Deployments
-        - null
-        - Tags
-        - Fields
         - Levels
-        - Encryption
         - Profiles
-        - Functions
-        - Invalidations
-        - Keys
-        - Group
-        - Value
-        - Store
-        - Monitoring
-        - Subscriptions
-        - Control
-        - Request
-        - Public
-        - Real Time
-        - Logs
-        - Configurations
-        - Responses
-        - Headers
-        - Streaming
   /2020-05-31/function/{Name}:
     PUT:
       summary: UpdateFunction
