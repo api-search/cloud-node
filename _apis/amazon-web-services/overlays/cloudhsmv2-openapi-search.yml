@@ -4,8 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes the specified tag or tags from the specified AWS CloudHSM cl
       tags:
+        - Resources
         - Untag
-        - null
