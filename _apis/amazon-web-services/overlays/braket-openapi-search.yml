@@ -4,51 +4,39 @@ info:
 paths:
   /job/{jobArn}/cancel:
     PUT:
-      summary: CancelJob
+      summary: 'Cancel Job '
       description: <p>Cancels an Amazon Braket job.</p>
       tags:
-        - Cancel
-        - Jobs
         - ARN
         - Cancel
+        - Jobs
   /quantum-task/{quantumTaskArn}/cancel:
     PUT:
-      summary: CancelQuantumTask
+      summary: 'Cancel Quantum Task '
       description: <p>Cancels the specified task.</p>
       tags:
+        - ARN
         - Cancel
         - Quantum
         - Tasks
-        - ARN
-        - Cancel
-        - Tasks
   /job:
     POST:
-      summary: CreateJob
+      summary: 'Create Job '
       description: <p>Creates an Amazon Braket job.</p>
       tags:
         - Create
         - Jobs
-        - ARN
-        - Cancel
-        - Tasks
-        - Jobs
   /quantum-task:
     POST:
-      summary: CreateQuantumTask
+      summary: 'Create Quantum Task '
       description: <p>Creates a quantum task.</p>
       tags:
         - Create
         - Quantum
         - Tasks
-        - ARN
-        - Cancel
-        - Tasks
-        - Jobs
-        - Quantum
   /device/{deviceArn}:
     GET:
-      summary: GetDevice
+      summary: 'Get Device '
       description: >-
         <p>Retrieves the devices available in Amazon Braket.</p> <note> <p>For
         backwards compatibility with older versions of BraketSchemas, OpenQASM
@@ -61,92 +49,53 @@ paths:
         do this for the AWS CLI, Boto3, and the Go, Java, and
         JavaScript/TypeScript SDKs.</p> </note>
       tags:
-        - Get
-        - Device
         - ARN
-        - Cancel
-        - Tasks
-        - Jobs
-        - Quantum
+        - Device
   /job/{jobArn}:
     GET:
-      summary: GetJob
+      summary: 'Get Job '
       description: <p>Retrieves the specified Amazon Braket job.</p>
       tags:
-        - Get
-        - Jobs
         - ARN
-        - Cancel
-        - Tasks
         - Jobs
-        - Quantum
   /quantum-task/{quantumTaskArn}:
     GET:
-      summary: GetQuantumTask
+      summary: 'Get Quantum Task '
       description: <p>Retrieves the specified quantum task.</p>
       tags:
-        - Get
-        - Quantum
-        - Tasks
         - ARN
-        - Cancel
-        - Tasks
-        - Jobs
         - Quantum
+        - Tasks
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Remove tags from a resource.</p>
       tags:
-        - Untag
-        - Resources
         - ARN
-        - Cancel
-        - Tasks
-        - Jobs
-        - Quantum
+        - Resources
+        - Tags
+        - Untag
   /devices:
     POST:
-      summary: SearchDevices
+      summary: 'Search Devices '
       description: <p>Searches for devices using the specified filters.</p>
       tags:
+        - Devices
         - Search
-        - Devices
-        - ARN
-        - Cancel
-        - Tasks
-        - Jobs
-        - Quantum
-        - Devices
   /jobs:
     POST:
-      summary: SearchJobs
+      summary: 'Search Jobs '
       description: >-
         <p>Searches for Amazon Braket jobs that match the specified filter
         values.</p>
       tags:
+        - Jobs
         - Search
-        - Jobs
-        - ARN
-        - Cancel
-        - Tasks
-        - Jobs
-        - Quantum
-        - Devices
-        - Jobs
   /quantum-tasks:
     POST:
-      summary: SearchQuantumTasks
+      summary: 'Search Quantum Tasks '
       description: <p>Searches for tasks that match the specified filter v
       tags:
+        - Quantum
         - Search
-        - Quantum
         - Tasks
-        - ARN
-        - Cancel
-        - Tasks
-        - Jobs
-        - Quantum
-        - Devices
-        - Jobs
-        - null
