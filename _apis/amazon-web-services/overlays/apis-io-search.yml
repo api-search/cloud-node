@@ -1722,7 +1722,62 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/cloudfront/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Alias
+      - Aliases
+      - Associate
+      - Cache
+      - Cloud
+      - Cloudfront
+      - Configurations
+      - Conflicting
+      - Continuous
+      - Controls
+      - Controls
+      - Copy
+      - Deployments
+      - Describe
+      - Distributions
+      - Encryption
+      - Entities
+      - Fields
+      - Front
+      - Functions
+      - Group
+      - Groups
+      - Headers
+      - Identities
+      - Identity
+      - Invalidations
+      - Keys
+      - Levels
+      - Logs
+      - Monitoring
+      - Names
+      - Operations
+      - Origin
+      - Policies
+      - Primary
+      - Profiles
+      - Promote
+      - Public
+      - Publish
+      - Real Time
+      - Resources
+      - Responses
+      - Staging
+      - Store
+      - Stores
+      - Streaming
+      - Subscriptions
+      - Tagging
+      - Tags
+      - Target
+      - Tests
+      - Untag
+      - Value
+      - Web
     properties:
       - type: Documentation
         url: https://aws.amazon.com/cloudfront/
@@ -1761,7 +1816,20 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/clean-rooms/ml/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Audience
+      - Configured
+      - Datasets
+      - Exports
+      - Generation
+      - Jobs
+      - Models
+      - Policies
+      - Resources
+      - Tags
+      - Training
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/clean-rooms/ml/
@@ -1795,7 +1863,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/cloudhsm/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/cloudhsm/
@@ -1832,7 +1902,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/cloudsearch/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Policies
+      - Services
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/cloudsearch/
