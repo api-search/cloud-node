@@ -4,184 +4,100 @@ info:
 paths:
   /audience-model:
     GET:
-      summary: ListAudienceModels
+      summary: 'List Audience Models '
       description: <p>Returns a list of audience models.</p>
       tags:
+        - Audience
         - Lists
-        - Audience
-        - Models
-        - Audience
         - Models
   /configured-audience-model:
     GET:
-      summary: ListConfiguredAudienceModels
+      summary: 'List Configured Audience Models '
       description: <p>Returns a list of the configured audience models.</p>
       tags:
-        - Lists
-        - Configured
         - Audience
-        - Models
-        - Audience
-        - Models
         - Configured
+        - Models
   /training-dataset:
     GET:
-      summary: ListTrainingDatasets
+      summary: 'List Training Datasets '
       description: <p>Returns a list of training datasets.</p>
       tags:
-        - Lists
-        - Training
         - Datasets
-        - Audience
-        - Models
-        - Configured
         - Training
-        - Datasets
   /audience-generation-job/{audienceGenerationJobArn}:
     GET:
-      summary: GetAudienceGenerationJob
+      summary: 'Get Audience Generation Job '
       description: <p>Returns information about an audience generation job.</p>
       tags:
-        - Get
-        - Audience
-        - Generation
-        - Jobs
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
         - ARN
+        - Audience
+        - Generation
+        - Jobs
   /audience-model/{audienceModelArn}:
     GET:
-      summary: GetAudienceModel
+      summary: 'Get Audience Model '
       description: <p>Returns information about an audience model</p>
       tags:
-        - Get
-        - Audience
-        - Models
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
         - ARN
+        - Audience
+        - Models
   /configured-audience-model/{configuredAudienceModelArn}:
     PATCH:
-      summary: UpdateConfiguredAudienceModel
+      summary: 'Update Configured Audience Model '
       description: >-
         <p>Provides the information necessary to update a configured audience
         model. Updates that impact audience generation jobs take effect when a
         new job starts, but do not impact currently running jobs.</p>
       tags:
-        - Update
-        - Configured
-        - Audience
-        - Models
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
         - ARN
+        - Audience
+        - Configured
+        - Models
   /configured-audience-model/{configuredAudienceModelArn}/policy:
     PUT:
-      summary: PutConfiguredAudienceModelPolicy
+      summary: 'Put Configured Audience Model Policy '
       description: >-
         <p>Create or update the resource policy for a configured audience
         model.</p>
       tags:
-        - Put
-        - Configured
-        - Audience
-        - Models
-        - Policies
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
         - ARN
+        - Audience
+        - Configured
+        - Models
         - Policies
   /training-dataset/{trainingDatasetArn}:
     GET:
-      summary: GetTrainingDataset
+      summary: 'Get Training Dataset '
       description: <p>Returns information about a training dataset.</p>
       tags:
-        - Get
-        - Training
-        - Datasets
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
         - ARN
-        - Policies
+        - Datasets
+        - Training
   /audience-export-job:
     POST:
-      summary: StartAudienceExportJob
+      summary: 'Start Audience Export Job '
       description: >-
         <p>Export an audience of a specified size after you have generated an
         audience.</p>
       tags:
-        - Start
         - Audience
-        - Export
+        - Exports
         - Jobs
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
-        - ARN
-        - Policies
-        - Export
   /audience-generation-job:
     POST:
-      summary: StartAudienceGenerationJob
+      summary: 'Start Audience Generation Job '
       description: <p>Information necessary to start the audience generation job.</p>
       tags:
-        - Start
         - Audience
         - Generation
         - Jobs
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
-        - ARN
-        - Policies
-        - Export
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes metadata tags from a specified res
       tags:
-        - Untag
-        - Resources
-        - Audience
-        - Models
-        - Configured
-        - Training
-        - Datasets
-        - Generation
-        - Jobs
         - ARN
-        - Policies
-        - Expo
+        - Resources
+        - Tags
+        - Untag
