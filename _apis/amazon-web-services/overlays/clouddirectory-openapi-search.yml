@@ -212,88 +212,31 @@ paths:
         - Delete
   /amazonclouddirectory/2017-01-11/index/detach:
     PUT:
-      summary: DetachFromIndex
+      summary: 'Detach From Index '
       description: <p>Detaches the specified object from the specified index.</p>
       tags:
         - Detach
         - From
         - Index
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
   /amazonclouddirectory/2017-01-11/object/detach:
     PUT:
-      summary: DetachObject
+      summary: 'Detach Object '
       description: >-
         <p>Detaches a given object from the parent object. The object that is to
         be detached from the parent is specified by the link name.</p>
       tags:
         - Detach
         - Objects
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
   /amazonclouddirectory/2017-01-11/policy/detach:
     PUT:
-      summary: DetachPolicy
+      summary: 'Detach Policy '
       description: <p>Detaches a policy from an object.</p>
       tags:
         - Detach
         - Policies
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
   /amazonclouddirectory/2017-01-11/typedlink/detach:
     PUT:
-      summary: DetachTypedLink
+      summary: 'Detach Typed Link '
       description: >-
         <p>Detaches a typed link from a specified source and target object. For
         more information, see <a
@@ -301,154 +244,48 @@ paths:
         Links</a>.</p>
       tags:
         - Detach
-        - Typed
         - Link
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
+        - Typed
         - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
   /amazonclouddirectory/2017-01-11/directory/disable:
     PUT:
-      summary: DisableDirectory
+      summary: 'Disable Directory '
       description: >-
         <p>Disables the specified directory. Disabled directories cannot be read
         or written to. Only enabled directories can be disabled. Disabled
         directories may be reenabled.</p>
       tags:
-        - Disable
         - Directory
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
         - Disable
   /amazonclouddirectory/2017-01-11/directory/enable:
     PUT:
-      summary: EnableDirectory
+      summary: 'Enable Directory '
       description: >-
         <p>Enables the specified directory. Only disabled directories can be
         enabled. Once enabled, the directory can then be read and written
         to.</p>
       tags:
-        - Enable
         - Directory
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
         - Enable
   /amazonclouddirectory/2017-01-11/schema/getappliedschema:
     POST:
-      summary: GetAppliedSchemaVersion
+      summary: 'Get Applied Schema Version '
       description: >-
         <p>Returns current applied schema version ARN, including the minor
         version in use.</p>
       tags:
-        - Get
-        - Applied
+        - Applied Schema
         - Schemas
         - Versions
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
   /amazonclouddirectory/2017-01-11/directory/get:
     POST:
-      summary: GetDirectory
+      summary: 'Get Directory '
       description: <p>Retrieves metadata about a directory.</p>
       tags:
-        - Get
         - Directory
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
   /amazonclouddirectory/2017-01-11/facet:
     PUT:
-      summary: UpdateFacet
+      summary: 'Update Facet '
       description: >-
         <p>Does the following:</p> <ol> <li> <p>Adds new
         <code>Attributes</code>, <code>Rules</code>, or
@@ -458,439 +295,113 @@ paths:
         <code>Attributes</code>, <code>Rules</code>, or
         <code>ObjectTypes</code>.</p> </li> </ol>
       tags:
-        - Update
         - Facets
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
   /amazonclouddirectory/2017-01-11/typedlink/attributes/get:
     POST:
-      summary: GetLinkAttributes
+      summary: 'Get Link Attributes '
       description: <p>Retrieves attributes that are associated with a typed link.</p>
       tags:
-        - Get
+        - Attributes
         - Link
-        - Attributes
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
         - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
   /amazonclouddirectory/2017-01-11/object/attributes/get:
     POST:
-      summary: GetObjectAttributes
+      summary: 'Get Object Attributes '
       description: >-
         <p>Retrieves attributes within a facet that are associated with an
         object.</p>
       tags:
-        - Get
-        - Objects
         - Attributes
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
         - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
   /amazonclouddirectory/2017-01-11/object/information:
     POST:
-      summary: GetObjectInformation
+      summary: 'Get Object Information '
       description: <p>Retrieves metadata about an object.</p>
       tags:
-        - Get
-        - Objects
         - Information
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
         - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
   /amazonclouddirectory/2017-01-11/schema/json:
     PUT:
-      summary: PutSchemaFromJson
+      summary: 'Put Schema From Json '
       description: >-
         <p>Allows a schema to be updated using JSON upload. Only available for
         development schemas. See <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/schemas_jsonformat.html#schemas_json">JSON
         Schema Format</a> for more information.</p>
       tags:
-        - Put
-        - Schemas
-        - From
         - JSON
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
         - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
   /amazonclouddirectory/2017-01-11/typedlink/facet/get:
     POST:
-      summary: GetTypedLinkFacetInformation
+      summary: 'Get Typed Link Facet Information '
       description: >-
         <p>Returns the identity attribute order for a specific
         <a>TypedLinkFacet</a>. For more information, see <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
         Links</a>.</p>
       tags:
-        - Get
-        - Typed
+        - Facets
+        - Information
         - Link
-        - Facets
-        - Information
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
+        - Typed
         - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
   /amazonclouddirectory/2017-01-11/schema/applied:
     POST:
-      summary: ListAppliedSchemaArns
+      summary: 'List Applied Schema Arns '
       description: >-
         <p>Lists schema major versions applied to a directory. If
         <code>SchemaArn</code> is provided, lists the minor version.</p>
       tags:
-        - Lists
-        - Applied
-        - Schemas
         - ARN
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
+        - Lists
         - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
   /amazonclouddirectory/2017-01-11/object/indices:
     POST:
-      summary: ListAttachedIndices
+      summary: 'List Attached Indices '
       description: <p>Lists indices attached to the specified object.</p>
       tags:
-        - Lists
         - Attached
         - Indices
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
+        - Lists
         - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
   /amazonclouddirectory/2017-01-11/schema/development:
     POST:
-      summary: ListDevelopmentSchemaArns
+      summary: 'List Development Schema Arns '
       description: >-
         <p>Retrieves each Amazon Resource Name (ARN) of schemas in the
         development state.</p>
       tags:
-        - Lists
-        - Development
-        - Schemas
         - ARN
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
         - Development
+        - Lists
+        - Schemas
   /amazonclouddirectory/2017-01-11/directory/list:
     POST:
-      summary: ListDirectories
+      summary: 'List Directories '
       description: <p>Lists directories created within an account.</p>
       tags:
-        - Lists
         - Directories
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
         - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
         - Lists
   /amazonclouddirectory/2017-01-11/facet/attributes:
     POST:
-      summary: ListFacetAttributes
+      summary: 'List Facet Attributes '
       description: <p>Retrieves attributes attached to the facet.</p>
       tags:
-        - Lists
-        - Facets
         - Attributes
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
         - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
         - Lists
   /amazonclouddirectory/2017-01-11/facet/list:
     POST:
-      summary: ListFacetNames
+      summary: 'List Facet Names '
       description: <p>Retrieves the names of facets that exist in a schema.</p>
       tags:
-        - Lists
         - Facets
+        - Lists
         - Names
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
-        - Lists
   /amazonclouddirectory/2017-01-11/typedlink/incoming:
     POST:
-      summary: ListIncomingTypedLinks
+      summary: 'List Incoming Typed Links '
       description: >-
         <p>Returns a paginated list of all the incoming
         <a>TypedLinkSpecifier</a> information for an object. It also supports
@@ -899,213 +410,52 @@ paths:
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
         Links</a>.</p>
       tags:
-        - Lists
         - Incoming
-        - Typed
         - Links
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
         - Lists
-        - Incoming
+        - Typed
+        - Typed Links
   /amazonclouddirectory/2017-01-11/index/targets:
     POST:
-      summary: ListIndex
+      summary: 'List Index '
       description: <p>Lists objects attached to the specified index.</p>
       tags:
-        - Lists
         - Index
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
         - Lists
-        - Incoming
         - Targets
   /amazonclouddirectory/2017-01-11/schema/managed:
     POST:
-      summary: ListManagedSchemaArns
+      summary: 'List Managed Schema Arns '
       description: >-
         <p>Lists the major version families of each managed schema. If a major
         version ARN is provided as SchemaArn, the minor version revisions in
         that family are listed instead.</p>
       tags:
-        - Lists
-        - Managed
-        - Schemas
         - ARN
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
         - Lists
-        - Incoming
-        - Targets
         - Managed
+        - Schemas
   /amazonclouddirectory/2017-01-11/object/attributes:
     POST:
-      summary: ListObjectAttributes
+      summary: 'List Object Attributes '
       description: <p>Lists all attributes that are associated with an object. </p>
       tags:
+        - Attributes
         - Lists
         - Objects
-        - Attributes
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
-        - Lists
-        - Incoming
-        - Targets
-        - Managed
   /amazonclouddirectory/2017-01-11/object/children:
     POST:
-      summary: ListObjectChildren
+      summary: 'List Object Children '
       description: >-
         <p>Returns a paginated list of child objects that are associated with a
         given object.</p>
       tags:
+        - Children
         - Lists
         - Objects
-        - Children
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
-        - Lists
-        - Incoming
-        - Targets
-        - Managed
-        - Children
   /amazonclouddirectory/2017-01-11/object/parentpaths:
     POST:
-      summary: ListObjectParentPaths
+      summary: 'List Object Parent Paths '
       description: >-
         <p>Retrieves all available parent paths for any object type such as
         node, leaf node, policy node, and index node objects. For more
@@ -1122,46 +472,12 @@ paths:
       tags:
         - Lists
         - Objects
+        - Parent Paths
         - Parents
         - Paths
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
-        - Lists
-        - Incoming
-        - Targets
-        - Managed
-        - Children
-        - Parent Paths
   /amazonclouddirectory/2017-01-11/object/parent:
     POST:
-      summary: ListObjectParents
+      summary: 'List Object Parents '
       description: >-
         <p>Lists parent objects that are associated with a given object in
         pagination fashion.</p>
@@ -1169,89 +485,17 @@ paths:
         - Lists
         - Objects
         - Parents
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
-        - Lists
-        - Incoming
-        - Targets
-        - Managed
-        - Children
-        - Parent Paths
-        - Parents
   /amazonclouddirectory/2017-01-11/object/policy:
     POST:
-      summary: ListObjectPolicies
+      summary: 'List Object Policies '
       description: <p>Returns policies attached to an object in pagination fashion.</p>
       tags:
         - Lists
         - Objects
         - Policies
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
-        - Lists
-        - Incoming
-        - Targets
-        - Managed
-        - Children
-        - Parent Paths
-        - Parents
   /amazonclouddirectory/2017-01-11/typedlink/outgoing:
     POST:
-      summary: ListOutgoingTypedLinks
+      summary: 'List Outgoing Typed Links '
       description: >-
         <p>Returns a paginated list of all the outgoing
         <a>TypedLinkSpecifier</a> information for an object. It also supports
@@ -1260,95 +504,21 @@ paths:
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
         Links</a>.</p>
       tags:
+        - Links
         - Lists
         - Outgoing
         - Typed
-        - Links
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
         - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
-        - Lists
-        - Incoming
-        - Targets
-        - Managed
-        - Children
-        - Parent Paths
-        - Parents
-        - Outgoing
   /amazonclouddirectory/2017-01-11/policy/attachment:
     POST:
-      summary: ListPolicyAttachments
+      summary: 'List Policy Attachments '
       description: >-
         <p>Returns all of the <code>ObjectIdentifiers</code> to which a given
         policy is attached.</p>
       tags:
-        - Lists
-        - Policies
         - Attachments
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
-        - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
-        - Detach
-        - Disable
-        - Enable
-        - Applied Schema
-        - Get
-        - Attributes
-        - Information
-        - JSON
-        - Applied
-        - Indices
-        - Development
         - Lists
-        - Incoming
-        - Targets
-        - Managed
-        - Children
-        - Parent Paths
-        - Parents
-        - Outgoing
-        - Attachment
+        - Policies
   /amazonclouddirectory/2017-01-11/schema/published:
     POST:
       summary: ListPublishedSchemaArns
