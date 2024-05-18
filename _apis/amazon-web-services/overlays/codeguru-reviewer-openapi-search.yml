@@ -4,7 +4,7 @@ info:
 paths:
   /associations:
     GET:
-      summary: ListRepositoryAssociations
+      summary: 'List Repository Associations '
       description: >-
         <p>Returns a list of <a
         href="https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociationSummary.html">RepositoryAssociationSummary</a>
@@ -18,138 +18,96 @@ paths:
         and <a
         href="https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RepositoryAssociationSummary.html#reviewer-Type-RepositoryAssociationSummary-Owner">Owner</a>.</p>
       tags:
-        - Lists
+        - Associations
         - Repositories
-        - Associations
-        - Associations
   /codereviews:
     GET:
-      summary: ListCodeReviews
+      summary: 'List Code Reviews '
       description: >-
         <p>Lists all the code reviews that the customer has created in the past
         90 days.</p>
       tags:
-        - Lists
         - Code
-        - Reviews
-        - Associations
         - Code Reviews
+        - Reviews
   /codereviews/{CodeReviewArn}:
     GET:
-      summary: DescribeCodeReview
+      summary: 'Describe Code Review '
       description: >-
-        <p>Returns the metadata associated with the code review along with its
-        status.</p>
+        The API provides information on the code review, including its metadata
+        and current status.
       tags:
-        - Describe
-        - Code
-        - Reviews
-        - Associations
-        - Code Reviews
-        - Code
-        - Reviews
         - ARN
+        - Code
+        - Code Reviews
+        - Describe
+        - Reviews
   /feedback/{CodeReviewArn}:
     GET:
-      summary: DescribeRecommendationFeedback
+      summary: 'Describe Recommendation Feedback '
       description: >-
         <p>Describes the customer feedback for a CodeGuru Reviewer
         recommendation.</p>
       tags:
-        - Describe
-        - Recommendations
-        - Feedback
-        - Associations
-        - Code Reviews
-        - Code
-        - Reviews
         - ARN
+        - Code
+        - Describe
+        - Feedback
+        - Recommendations
+        - Reviews
   /associations/{AssociationArn}:
     DELETE:
-      summary: DisassociateRepository
+      summary: 'Disassociate Repository '
       description: >-
         <p>Removes the association between Amazon CodeGuru Reviewer and a
         repository.</p>
       tags:
+        - ARN
+        - Associations
         - Disassociate
         - Repositories
-        - Associations
-        - Code Reviews
-        - Code
-        - Reviews
-        - ARN
-        - Association
   /feedback/{CodeReviewArn}/RecommendationFeedback:
     GET:
-      summary: ListRecommendationFeedback
+      summary: 'List Recommendation Feedback '
       description: >-
         <p>Returns a list of <a
         href="https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RecommendationFeedbackSummary.html">RecommendationFeedbackSummary</a>
         objects that contain customer recommendation feedback for all CodeGuru
         Reviewer users.</p>
       tags:
-        - Lists
-        - Recommendations
-        - Feedback
-        - Associations
-        - Code Reviews
-        - Code
-        - Reviews
         - ARN
-        - Association
-        - Recommendations
+        - Code
         - Feedback
+        - Recommendations
+        - Reviews
   /codereviews/{CodeReviewArn}/Recommendations:
     GET:
-      summary: ListRecommendations
+      summary: 'List Recommendations '
       description: >-
         <p>Returns the list of all recommendations for a completed code
         review.</p>
       tags:
-        - Lists
-        - Recommendations
-        - Associations
-        - Code Reviews
-        - Code
-        - Reviews
         - ARN
-        - Association
+        - Code
+        - Code Reviews
         - Recommendations
-        - Feedback
-        - Recommendations
+        - Reviews
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
-      description: <p>Removes a tag from an associated repository.</p>
+      summary: 'Untag Resource '
+      description: Untags a resource using its ARN.
       tags:
-        - Untag
-        - Resources
-        - Associations
-        - Code Reviews
-        - Code
-        - Reviews
         - ARN
-        - Association
-        - Recommendations
-        - Feedback
-        - Recommendations
+        - Resources
+        - Tags
+        - Untag
   /feedback:
     PUT:
-      summary: PutRecommendationFeedback
+      summary: 'Put Recommendation Feedback '
       description: >-
         <p>Stores customer feedback for a CodeGuru Reviewer recommendation. When
         this API is called again with different reactions the previous feedback
         is overwr
       tags:
-        - Put
-        - Recommendations
-        - Feedback
-        - Associations
-        - Code Reviews
-        - Code
-        - Reviews
-        - ARN
-        - Association
-        - Recommendations
         - Feedback
         - Recommendations
