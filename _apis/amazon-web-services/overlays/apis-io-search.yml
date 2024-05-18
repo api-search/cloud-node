@@ -1472,7 +1472,40 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/clean-rooms/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Analysis
+      - Analysis Templates
+      - Associations
+      - Audience
+      - Batches
+      - Budgets
+      - Collaboration
+      - Collaborations
+      - Configuration Audience Model Associations
+      - Configured
+      - Create
+      - Impact
+      - Members
+      - Membership
+      - Memberships
+      - Models
+      - Names
+      - Previews
+      - Privacy
+      - Privacy Budget Templates
+      - Privacy Budgets
+      - Protected
+      - Queries
+      - Resources
+      - Rules
+      - Schemas
+      - Tables
+      - Tags
+      - Templates
+      - Types
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/clean-rooms/
