@@ -4,11 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateWebhook
+      summary: 'Update Webhook '
       description: >-
-        <p> Updates the webhook associated with an CodeBuild build project. </p>
-        <note> <p> If you use Bitbucket for your repository,
-        <code>rotateSecret</code> is ignored. </
+        This API allows you to update the webhook linked to a CodeBuild build
+        project. If your repository is hosted on Bitbucket, the rotateSecret
+        parameter will be disregarded.
       tags:
-        - Update
         - Webhooks
