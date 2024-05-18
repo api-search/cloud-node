@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateRepositoryName
+      summary: 'Update Repository Name '
       description: >-
         <p>Renames a repository. The repository name must be unique across the
         calling Amazon Web Services account. Repository names are limited to 100
@@ -14,6 +14,5 @@ paths:
         href="https://docs.aws.amazon.com/codecommit/latest/userguide/limits.html">Quotas</a>
         in the CodeCommit User 
       tags:
-        - Update
-        - Repositories
         - Names
+        - Repositories
