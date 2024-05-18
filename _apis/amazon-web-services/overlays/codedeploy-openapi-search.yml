@@ -4,9 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateDeploymentGroup
+      summary: 'Update Deployment Group '
       description: <p>Changes information about a deployment
       tags:
-        - Update
         - Deployments
-        - null
+        - Group
