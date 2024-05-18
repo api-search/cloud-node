@@ -1931,7 +1931,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/cloudtrail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Audit
+      - Events
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/cloudtrail/
@@ -1962,7 +1964,30 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/codecatalyst/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Branch
+      - Branches
+      - Clone
+      - Details
+      - Environments
+      - Events
+      - Logs
+      - Names
+      - Projects
+      - Repositories
+      - Runs
+      - Sessions
+      - Source
+      - Space
+      - Spaces
+      - Stop
+      - Subscriptions
+      - Tokens
+      - URL
+      - Users
+      - Verify
+      - Workflows
     properties:
       - type: Documentation
         url: https://aws.amazon.com/codecatalyst/
