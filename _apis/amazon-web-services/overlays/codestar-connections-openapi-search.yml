@@ -4,11 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateSyncConfiguration
+      summary: 'Update Sync Configuration '
       description: >-
         <p>Updates the sync configuration for your connection and a specified
         external Git repos
       tags:
-        - Update
-        - Sync
         - Configurations
+        - Sync
