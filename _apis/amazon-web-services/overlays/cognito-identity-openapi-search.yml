@@ -4,11 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateIdentityPool
+      summary: 'Update Identity Pool '
       description: >-
         <p>Updates an identity pool.</p> <p>You must use AWS Developer
         credentials to call thi
       tags:
-        - Update
         - Identity
-        - null
+        - Pools
