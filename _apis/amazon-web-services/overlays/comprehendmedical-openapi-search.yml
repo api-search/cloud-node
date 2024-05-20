@@ -4,9 +4,9 @@ info:
 paths:
   /:
     POST:
-      summary: StopSNOMEDCTInferenceJob
+      summary: 'Stop SNOMEDCTInference Job '
       description: <p> Stops an InferSNOMEDCT inference job in pro
       tags:
-        - Stop
         - Inference
-        - Items
+        - Jobs
+        - Stop
