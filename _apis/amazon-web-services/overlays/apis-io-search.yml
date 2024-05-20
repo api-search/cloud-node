@@ -2437,7 +2437,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - Sync
     properties:
       - type: Documentation
         url: >-
@@ -2466,7 +2468,10 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Attributes
+      - Users
+      - Verify
     properties:
       - type: Documentation
         url: >-
@@ -2498,7 +2503,29 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Bulk
+      - Bulk Publish
+      - Cognito
+      - Configurations
+      - Datasets
+      - Describe
+      - Details
+      - Device
+      - Entities
+      - Entity Pools
+      - Events
+      - From
+      - Identity
+      - Names
+      - Pools
+      - Publish
+      - Records
+      - Register
+      - Sets
+      - Subscriptions
+      - Unsubscribe
+      - Usage
     properties:
       - type: Documentation
         url: >-
@@ -2521,7 +2548,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/comprehend/medical/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Inference
+      - Jobs
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/comprehend/medical/
@@ -2562,7 +2592,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Identity
+      - Pools
     properties:
       - type: Documentation
         url: >-
@@ -2589,7 +2621,132 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/connect/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Activate
+      - Agent
+      - Analysis
+      - Analytics
+      - Applications
+      - Approved
+      - Associate
+      - Associations
+      - Attributes
+      - Availability
+      - Available
+      - Batches
+      - Bot
+      - Bots
+      - Caller
+      - Case
+      - Cases
+      - Chat
+      - Claim
+      - Code
+      - Concurrency
+      - Configurations
+      - Connect
+      - Connects
+      - Contacts
+      - Content
+      - Current
+      - Data
+      - Deactivate
+      - Default
+      - Describe
+      - Disassociate
+      - Dismiss
+      - Distributions
+      - Entities
+      - Evaluations
+      - Events
+      - Federate
+      - Federation
+      - File
+      - Flows
+      - Forms
+      - Functions
+      - Group
+      - Groups
+      - Hierarchy
+      - Historical
+      - Hours
+      - Identity
+      - Import
+      - Info
+      - Initial
+      - Instances
+      - Integrations
+      - Keys
+      - Lambda
+      - Languages
+      - Maximum
+      - Metadata
+      - Metrics
+      - Modules
+      - Monitors
+      - Names
+      - Numbers
+      - Of
+      - Operation
+      - Operations
+      - Origin
+      - Origins
+      - Outbound
+      - Participants
+      - Pause
+      - Permissions
+      - Persistent
+      - Phone
+      - Predefined
+      - Proficiencies
+      - Profiles
+      - Prompts
+      - Queues
+      - RTC
+      - Real Time
+      - Recording
+      - References
+      - Removes
+      - Replicate
+      - Resources
+      - Resume
+      - Roles
+      - Routing
+      - Rules
+      - Schedules
+      - Search
+      - Security
+      - Segments
+      - Send
+      - Sets
+      - Status
+      - Statuses
+      - Stop
+      - Storage
+      - Streaming
+      - Structures
+      - Submit
+      - Summaries
+      - Suspend
+      - Tags
+      - Tasks
+      - Templates
+      - Time
+      - Timer
+      - Tokens
+      - Traffic
+      - Transfers
+      - Types
+      - Untag
+      - Userdata
+      - Users
+      - Versions
+      - View
+      - Views
+      - Vocabularies
+      - Web
+      - Web RTC
     properties:
       - type: Documentation
         url: https://aws.amazon.com/connect/
@@ -2627,7 +2784,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/config/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/config/
