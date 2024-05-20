@@ -4,7 +4,7 @@ info:
 paths:
   /identitypools/{IdentityPoolId}/bulkpublish:
     POST:
-      summary: BulkPublish
+      summary: 'Bulk Publish '
       description: >-
         <p>Initiates a bulk publish of all existing datasets for an Identity
         Pool to the configured stream. Customers are limited to one successful
@@ -15,14 +15,14 @@ paths:
         credentials provided by Cognito Identity.</p>
       tags:
         - Bulk
-        - Publish
+        - Bulk Publish
+        - Entity Pools
         - Identity
         - Pools
-        - Identifiers
-        - Bulk Publish
+        - Publish
   /identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}:
     POST:
-      summary: UpdateRecords
+      summary: 'Update Records '
       description: >-
         <p>Posts updates to records and adds and deletes records for a dataset
         and user.</p> <p>The sync count in the record patch is your last known
@@ -39,19 +39,16 @@ paths:
         with temporary user credentials provided by Cognito Identity or with
         developer credentials.</p>
       tags:
-        - Update
-        - Records
+        - Datasets
+        - Entities
+        - Entity Pools
         - Identity
-        - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
         - Names
+        - Pools
+        - Records
   /identitypools/{IdentityPoolId}:
     GET:
-      summary: DescribeIdentityPoolUsage
+      summary: 'Describe Identity Pool Usage '
       description: >-
         <p>Gets usage details (for example, data storage) about a particular
         identity pool.</p> <p>This API can only be called with developer
@@ -59,20 +56,14 @@ paths:
         credentials provided by Cognito Identity.</p>
       tags:
         - Describe
+        - Entity Pools
+        - Identifiers
         - Identity
         - Pools
         - Usage
-        - Identity
-        - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
   /identitypools/{IdentityPoolId}/identities/{IdentityId}:
     GET:
-      summary: DescribeIdentityUsage
+      summary: 'Describe Identity Usage '
       description: >-
         <p>Gets usage information for an identity, including number of datasets
         and data usage.</p> <p>This API can be called with temporary user
@@ -80,44 +71,30 @@ paths:
         credentials.</p>
       tags:
         - Describe
-        - Identity
-        - Usage
+        - Entities
+        - Entity Pools
+        - Identifiers
         - Identity
         - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
+        - Usage
   /identitypools/{IdentityPoolId}/getBulkPublishDetails:
     POST:
-      summary: GetBulkPublishDetails
+      summary: 'Get Bulk Publish Details '
       description: >-
         <p>Get the status of the last BulkPublish operation for an identity
         pool.</p><p>This API can only be called with developer credentials. You
         cannot call this API with the temporary user credentials provided by
         Cognito Identity.</p>
       tags:
-        - Get
         - Bulk
-        - Publish
         - Details
+        - Entity Pools
         - Identity
         - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
-        - Get
-        - Bulk
         - Publish
-        - Details
   /identitypools/{IdentityPoolId}/events:
     POST:
-      summary: SetCognitoEvents
+      summary: 'Set Cognito Events '
       description: >-
         <p>Sets the AWS Lambda function for a given event type for an identity
         pool. This request only updates the key/value pair specified. Other
@@ -126,51 +103,28 @@ paths:
         with developer credentials. You cannot call this API with the temporary
         user credentials provided by Cognito Identity.</p>
       tags:
-        - Sets
         - Cognito
+        - Entity Pools
         - Events
         - Identity
         - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
-        - Get
-        - Bulk
-        - Publish
-        - Details
-        - Events
+        - Sets
   /identitypools/{IdentityPoolId}/configuration:
     POST:
-      summary: SetIdentityPoolConfiguration
+      summary: 'Set Identity Pool Configuration '
       description: >-
         <p>Sets the necessary configuration for push sync.</p><p>This API can
         only be called with developer credentials. You cannot call this API with
         the temporary user credentials provided by Cognito Identity.</p>
       tags:
+        - Configurations
+        - Entity Pools
+        - Identity
+        - Pools
         - Sets
-        - Identity
-        - Pools
-        - Configurations
-        - Identity
-        - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
-        - Get
-        - Bulk
-        - Publish
-        - Details
-        - Events
-        - Configurations
   /identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets:
     GET:
-      summary: ListDatasets
+      summary: 'List Datasets '
       description: >-
         <p>Lists datasets for an identity. With Amazon Cognito Sync, each
         identity has access only to its own data. Thus, the credentials used to
@@ -179,53 +133,28 @@ paths:
         by Cognito Identity or with developer credentials. You should use the
         Cognito Identity credentials to make this API call.</p>
       tags:
-        - Lists
         - Datasets
+        - Entities
+        - Entity Pools
         - Identity
         - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
-        - Get
-        - Bulk
-        - Publish
-        - Details
-        - Events
-        - Configurations
   /identitypools:
     GET:
-      summary: ListIdentityPoolUsage
+      summary: 'List Identity Pool Usage '
       description: >-
         <p>Gets a list of identity pools registered with Cognito.</p>
         <p>ListIdentityPoolUsage can only be called with developer credentials.
         You cannot make this API call with the temporary user credentials
         provided by Cognito Identity.</p>
       tags:
-        - Lists
+        - Entity Pools
         - Identity
+        - Lists
         - Pools
         - Usage
-        - Identity
-        - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
-        - Get
-        - Bulk
-        - Publish
-        - Details
-        - Events
-        - Configurations
-        - Identity Pools
   /identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/records:
     GET:
-      summary: ListRecords
+      summary: 'List Records '
       description: >-
         <p>Gets paginated records, optionally changed after a particular sync
         count for a dataset and identity. With Amazon Cognito Sync, each
@@ -235,78 +164,43 @@ paths:
         Cognito Identity or with developer credentials. You should use Cognito
         Identity credentials to make this API call.</p>
       tags:
-        - Lists
-        - Records
+        - Datasets
+        - Entities
+        - Entity Pools
         - Identity
-        - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
         - Names
-        - Get
-        - Bulk
-        - Publish
-        - Details
-        - Events
-        - Configurations
-        - Identity Pools
+        - Pools
         - Records
   /identitypools/{IdentityPoolId}/identity/{IdentityId}/device:
     POST:
-      summary: RegisterDevice
+      summary: 'Register Device '
       description: >-
         <p>Registers a device to receive push sync notifications.</p><p>This API
         can only be called with temporary credentials provided by Cognito
         Identity. You cannot call this API with developer credentials.</p>
       tags:
-        - Register
         - Device
+        - Entities
+        - Entity Pools
         - Identity
         - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
-        - Get
-        - Bulk
-        - Publish
-        - Details
-        - Events
-        - Configurations
-        - Identity Pools
-        - Records
-        - Device
+        - Register
   /identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/subscriptions/{DeviceId}:
     DELETE:
-      summary: UnsubscribeFromDataset
+      summary: 'Unsubscribe From Dataset '
       description: >-
         <p>Unsubscribes from receiving notifications when a dataset is modified
         by another device.</p><p>This API can only be called with temporary
         credentials provided by Cognito Identity. You cannot call this API with
         developer creden
       tags:
-        - Unsubscribe
-        - From
         - Datasets
-        - Identity
-        - Pools
-        - Identifiers
-        - Bulk Publish
-        - Identities
-        - Datasets
-        - Datasets
-        - Names
-        - Get
-        - Bulk
-        - Publish
-        - Details
-        - Events
-        - Configurations
-        - Identity Pools
-        - Records
         - Device
+        - Entities
+        - Entity Pools
+        - From
+        - Identity
+        - Names
+        - Pools
         - Subscriptions
+        - Unsubscribe
