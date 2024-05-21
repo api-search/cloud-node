@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateTaskExecution
+      summary: 'Update Task Execution '
       description: >-
         <p>Updates the configuration of a running DataSync task execution.</p>
         <note> <p>Currently, the only <code>Option</code> that you can modify
@@ -13,6 +13,5 @@ paths:
         </code>, which throttles bandwidth for a running or queued task
         execution.</
       tags:
-        - Update
+        - Execution
         - Tasks
-        - Executi
