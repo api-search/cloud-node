@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateFlywheel
+      summary: 'Update Flywheel '
       description: <p>Update the configuration information for an existing fly
       tags:
-        - Update
         - Flywheel
