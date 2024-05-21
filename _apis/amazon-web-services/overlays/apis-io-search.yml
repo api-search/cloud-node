@@ -2823,7 +2823,11 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/connect/contact-lens/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Analysis
+      - Contacts
+      - Real Time
+      - Segments
     properties:
       - type: Documentation
         url: https://aws.amazon.com/connect/contact-lens/
@@ -2864,7 +2868,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/compute-optimizer/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Enrollment
+      - Status
     properties:
       - type: Documentation
         url: https://aws.amazon.com/compute-optimizer/
@@ -2892,7 +2898,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/comprehend/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Flywheel
     properties:
       - type: Documentation
         url: https://aws.amazon.com/comprehend/
@@ -2929,7 +2936,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/aws-cost-management/cost-optimization-hub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Preferences
     properties:
       - type: Documentation
         url: https://aws.amazon.com/aws-cost-management/cost-optimization-hub/
@@ -3006,7 +3014,21 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/controltower/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Baselines
+      - Controls
+      - Disable
+      - Enable
+      - Enabled
+      - Landing
+      - Landing Zones
+      - Operation
+      - Reset
+      - Resources
+      - Tags
+      - Untag
+      - Zones
     properties:
       - type: Documentation
         url: https://aws.amazon.com/controltower/
@@ -3040,7 +3062,28 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/glue/features/databrew/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Actions
+      - Batches
+      - Datasets
+      - Describe
+      - Jobs
+      - Names
+      - Profiles
+      - Projects
+      - Publish
+      - Recipes
+      - Resources
+      - Rulesets
+      - Runs
+      - Schedules
+      - Send
+      - Sessions
+      - Stop
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
         url: https://aws.amazon.com/glue/features/databrew/
@@ -3066,7 +3109,42 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/connect/customer-profiles/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Attributes
+      - Auto
+      - Based
+      - Calculated
+      - Definitions
+      - Detect
+      - Domains
+      - Entities
+      - Events
+      - Identity
+      - Integrations
+      - Jobs
+      - Keys
+      - Matches
+      - Merge
+      - Merging
+      - Names
+      - Objects
+      - Previews
+      - Profiles
+      - Resolutions
+      - Resources
+      - Rules
+      - Search
+      - Similar
+      - Steps
+      - Stream
+      - Streams
+      - Tags
+      - Templates
+      - Types
+      - Untag
+      - Workflows
     properties:
       - type: Documentation
         url: https://aws.amazon.com/connect/customer-profiles/
