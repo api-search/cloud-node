@@ -4,8 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Disassociates a set of tags from a report defin
       tags:
+        - Resources
         - Untag
-        - null
