@@ -4,43 +4,34 @@ info:
 paths:
   /domains/{DomainName}/profiles/keys:
     POST:
-      summary: AddProfileKey
+      summary: 'Add Profile Key '
       description: >-
         <p>Associates a new key value with a specific profile, such as a Contact
         Record ContactId.</p> <p>A profile object can have a single unique key
         and any number of additional keys that can be used to identify the
         profile that it belongs to.</p>
       tags:
-        - Add
-        - Profiles
-        - Keys
         - Domains
+        - Keys
         - Names
         - Profiles
-        - Keys
   /domains/{DomainName}/calculated-attributes/{CalculatedAttributeName}:
     PUT:
-      summary: UpdateCalculatedAttributeDefinition
+      summary: 'Update Calculated Attribute Definition '
       description: >-
         <p>Updates an existing calculated attribute definition. When updating
         the Conditions, note that increasing the date range of a calculated
         attribute will not trigger inclusion of historical data greater than the
         current date range.</p>
       tags:
-        - Update
-        - Calculated
         - Attributes
+        - Calculated
         - Definitions
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
   /domains/{DomainName}:
     PUT:
-      summary: UpdateDomain
+      summary: 'Update Domain '
       description: >-
         <p>Updates the properties of a domain, including creating or selecting a
         dead letter queue or an encryption key.</p> <p>After a domain is
@@ -56,62 +47,36 @@ paths:
         href="https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_TagResource.html">TagResource</a>/<a
         href="https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UntagResource.html">UntagResource</a>.</p>
       tags:
-        - Update
-        - Domains
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
   /domains/{DomainName}/event-streams/{EventStreamName}:
     GET:
-      summary: GetEventStream
+      summary: 'Get Event Stream '
       description: >-
         <p>Returns information about the specified event stream in a specific
         domain.</p>
       tags:
-        - Get
-        - Events
-        - Stream
         - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
         - Events
-        - Streams
+        - Names
         - Stream
+        - Streams
   /domains/{DomainName}/workflows/integrations:
     POST:
-      summary: CreateIntegrationWorkflow
+      summary: 'Create Integration Workflow '
       description: >-
         <p> Creates an integration workflow. An integration workflow is an async
         process which ingests historic data and sets up an integration for
         ongoing updates. The supported Amazon AppFlow sources are Salesforce,
         ServiceNow, and Marketo. </p>
       tags:
-        - Create
-        - Integrations
-        - Workflows
         - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
         - Integrations
+        - Names
+        - Workflows
   /domains/{DomainName}/profiles:
     PUT:
-      summary: UpdateProfile
+      summary: 'Update Profile '
       description: >-
         <p>Updates the properties of a profile. The ProfileId is required for
         updating a customer profile.</p> <p>When calling the UpdateProfile API,
@@ -119,110 +84,50 @@ paths:
         removed. Not specifying a string value means that any value already
         there will be kept.</p>
       tags:
-        - Update
-        - Profiles
         - Domains
         - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
   /domains/{DomainName}/integrations/delete:
     POST:
-      summary: DeleteIntegration
+      summary: 'Delete Integration '
       description: <p>Removes an integration from a specific domain.</p>
       tags:
-        - Delete
-        - Integrations
         - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
         - Integrations
-        - Delete
+        - Names
   /domains/{DomainName}/profiles/delete:
     POST:
-      summary: DeleteProfile
+      summary: 'Delete Profile '
       description: >-
         <p>Deletes the standard customer profile and all data pertaining to the
         profile.</p>
       tags:
-        - Delete
-        - Profiles
         - Domains
         - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
   /domains/{DomainName}/profiles/keys/delete:
     POST:
-      summary: DeleteProfileKey
+      summary: 'Delete Profile Key '
       description: <p>Removes a searchable key from a customer profile.</p>
       tags:
-        - Delete
-        - Profiles
-        - Keys
         - Domains
+        - Keys
         - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
   /domains/{DomainName}/profiles/objects/delete:
     POST:
-      summary: DeleteProfileObject
+      summary: 'Delete Profile Object '
       description: >-
         <p>Removes an object associated with a profile of a given
         ProfileObjectType.</p>
       tags:
-        - Delete
-        - Profiles
-        - Objects
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
         - Objects
+        - Profiles
   /domains/{DomainName}/object-types/{ObjectTypeName}:
     PUT:
-      summary: PutProfileObjectType
+      summary: 'Put Profile Object Type '
       description: >-
         <p>Defines a ProfileObjectType.</p> <p>To add or remove tags on an
         existing ObjectType, see <a
@@ -230,87 +135,35 @@ paths:
         TagResource</a>/<a
         href="https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UntagResource.html">UntagResource</a>.</p>
       tags:
-        - Put
-        - Profiles
-        - Objects
-        - Types
         - Domains
         - Names
+        - Objects
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
         - Types
   /domains/{DomainName}/workflows/{WorkflowId}:
     GET:
-      summary: GetWorkflow
+      summary: 'Get Workflow '
       description: <p>Get details of specified workflow.</p>
       tags:
-        - Get
-        - Workflows
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
         - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
   /domains/{DomainName}/detect/object-types:
     POST:
-      summary: DetectProfileObjectType
+      summary: 'Detect Profile Object Type '
       description: >-
         <p>The process of detecting profile object type mapping by using given
         objects.</p>
       tags:
         - Detect
-        - Profiles
-        - Objects
-        - Types
         - Domains
         - Names
+        - Objects
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
         - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
   /domains/{DomainName}/identity-resolution-jobs/auto-merging-preview:
     POST:
-      summary: GetAutoMergingPreview
+      summary: 'Get Auto Merging Preview '
       description: >-
         <p>Tests the auto-merging settings of your Identity Resolution Job
         without merging your data. It randomly selects a sample of matching
@@ -327,76 +180,27 @@ paths:
         there may be a large number of matches. This increases the chances of
         erroneous merges.</p> </important>
       tags:
-        - Get
         - Auto
-        - Merging
-        - Preview
         - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
+        - Entities
         - Jobs
-        - Auto
         - Merging
-        - Preview
+        - Names
+        - Previews
+        - Resolutions
   /domains/{DomainName}/profile/{ProfileId}/calculated-attributes/{CalculatedAttributeName}:
     GET:
-      summary: GetCalculatedAttributeForProfile
+      summary: 'Get Calculated Attribute For Profile '
       description: <p>Retrieve a calculated attribute for a customer profile.</p>
       tags:
-        - Get
-        - Calculated
         - Attributes
-        - For
-        - Profiles
+        - Calculated
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
         - Profiles
   /domains/{DomainName}/identity-resolution-jobs/{JobId}:
     GET:
-      summary: GetIdentityResolutionJob
+      summary: 'Get Identity Resolution Job '
       description: >-
         <p>Returns information about an Identity Resolution Job in a specific
         domain. </p> <p>Identity Resolution Jobs are set up using the Amazon
@@ -404,41 +208,15 @@ paths:
         href="https://docs.aws.amazon.com/connect/latest/adminguide/use-identity-resolution.html">Use
         Identity Resolution to consolidate similar profiles</a>.</p>
       tags:
-        - Get
-        - Identity
-        - Resolutions
-        - Jobs
         - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
+        - Entities
         - Identity
+        - Jobs
+        - Names
         - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
   /domains/{DomainName}/integrations:
     PUT:
-      summary: PutIntegration
+      summary: 'Put Integration '
       description: >-
         <p>Adds an integration between the service and a third-party service,
         which includes Amazon AppFlow and Amazon Connect.</p> <p>An integration
@@ -449,39 +227,12 @@ paths:
         href="https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UntagResource.html">
         UntagResource</a>.</p>
       tags:
-        - Put
-        - Integrations
         - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
         - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
+        - Names
   /domains/{DomainName}/matches:
     POST:
-      summary: GetSimilarProfiles
+      summary: 'Get Similar Profiles '
       description: >-
         <p>Returns a set of profiles that belong to the same matching group
         using the <code>matchId</code> or <code>profileId</code>. You can also
@@ -489,41 +240,14 @@ paths:
         using either <code>RULE_BASED_MATCHING</code> or
         <code>ML_BASED_MATCHING</code>.</p>
       tags:
-        - Get
-        - Similar
-        - Profiles
         - Domains
+        - Matches
         - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
+        - Similar
   /templates/{TemplateId}:
     GET:
-      summary: GetProfileObjectTypeTemplate
+      summary: 'Get Profile Object Type Template '
       description: >-
         <p>Returns the template information for a specific object type.</p> <p>A
         template is a predefined ProfileObjectType, such as “Salesforce-Account”
@@ -531,414 +255,100 @@ paths:
         PutProfileObject API, with an ObjectTypeName that matches one of the
         TemplateIds, it uses the mappings from the template.</p>
       tags:
-        - Get
-        - Profiles
         - Objects
-        - Types
+        - Profiles
         - Templates
-        - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
         - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
   /domains/{DomainName}/workflows/{WorkflowId}/steps:
     GET:
-      summary: GetWorkflowSteps
+      summary: 'Get Workflow Steps '
       description: <p>Get granular list of steps in workflow.</p>
       tags:
-        - Get
-        - Workflows
-        - Steps
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
         - Steps
+        - Workflows
   /integrations:
     POST:
-      summary: ListAccountIntegrations
+      summary: 'List Account Integrations '
       description: >-
         <p>Lists all of the integrations associated to a specific URI in the AWS
         account.</p>
       tags:
-        - Lists
-        - Account
+        - Accounts
         - Integrations
-        - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
   /domains/{DomainName}/calculated-attributes:
     GET:
-      summary: ListCalculatedAttributeDefinitions
+      summary: 'List Calculated Attribute Definitions '
       description: <p>Lists calculated attribute definitions for Customer Profiles</p>
       tags:
-        - Lists
-        - Calculated
         - Attributes
+        - Calculated
         - Definitions
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
   /domains/{DomainName}/profile/{ProfileId}/calculated-attributes:
     GET:
-      summary: ListCalculatedAttributesForProfile
+      summary: 'List Calculated Attributes For Profile '
       description: <p>Retrieve a list of calculated attributes for a customer profile.</p>
       tags:
-        - Lists
-        - Calculated
         - Attributes
-        - For
-        - Profiles
+        - Calculated
         - Domains
         - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
   /domains:
     GET:
-      summary: ListDomains
+      summary: 'List Domains '
       description: >-
         <p>Returns a list of all the domains for an AWS account that have been
         created.</p>
       tags:
-        - Lists
-        - Domains
-        - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
         - Domains
   /domains/{DomainName}/event-streams:
     GET:
-      summary: ListEventStreams
+      summary: 'List Event Streams '
       description: <p>Returns a list of all the event streams in a specific domain.</p>
       tags:
-        - Lists
-        - Events
-        - Streams
         - Domains
+        - Events
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
         - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
   /domains/{DomainName}/identity-resolution-jobs:
     GET:
-      summary: ListIdentityResolutionJobs
+      summary: 'List Identity Resolution Jobs '
       description: >-
         <p>Lists all of the Identity Resolution Jobs in your domain. The
         response sorts the list by <code>JobStartTime</code>.</p>
       tags:
-        - Lists
-        - Identity
-        - Resolutions
-        - Jobs
         - Domains
+        - Entities
+        - Identity
+        - Jobs
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
         - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
   /templates:
     GET:
-      summary: ListProfileObjectTypeTemplates
+      summary: 'List Profile Object Type Templates '
       description: <p>Lists all of the template information for object types.</p>
       tags:
-        - Lists
-        - Profiles
         - Objects
-        - Types
-        - Templates
-        - Domains
-        - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
         - Templates
-        - Steps
-        - Domains
-        - Templates
+        - Types
   /domains/{DomainName}/object-types:
     GET:
-      summary: ListProfileObjectTypes
+      summary: 'List Profile Object Types '
       description: <p>Lists all of the templates available within the service.</p>
       tags:
-        - Lists
-        - Profiles
-        - Objects
-        - Types
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
         - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
         - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
-        - Templates
+        - Types
   /domains/{DomainName}/profiles/objects:
     PUT:
-      summary: PutProfileObject
+      summary: 'Put Profile Object '
       description: >-
         <p>Adds additional objects to customer profiles of a given
         ObjectType.</p> <p>When adding a specific profile object, like a Contact
@@ -952,180 +362,46 @@ paths:
         definition.</p> <p>PutProfileObject needs an ObjectType, which can be
         created using PutProfileObjectType.</p>
       tags:
-        - Put
-        - Profiles
-        - Objects
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
         - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
         - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
-        - Templates
   /domains/{DomainName}/profiles/ruleBasedMatches:
     GET:
-      summary: ListRuleBasedMatches
+      summary: 'List Rule Based Matches '
       description: >-
         <p>Returns a set of <code>MatchIds</code> that belong to the given
         domain.</p>
       tags:
-        - Lists
-        - Rules
         - Based
-        - Matches
         - Domains
+        - Matches
         - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
-        - Templates
         - Rules
-        - Based
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes one or more tags from the specified Amazon Connect Customer
         Profiles resource. In Connect Customer Profiles, domains, profile object
         types, and integrations can be tagged.</p>
       tags:
-        - Untag
-        - Resources
-        - Domains
-        - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
-        - Templates
-        - Rules
-        - Based
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /domains/{DomainName}/workflows:
     POST:
-      summary: ListWorkflows
+      summary: 'List Workflows '
       description: <p>Query to list all workflows.</p>
       tags:
-        - Lists
-        - Workflows
         - Domains
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
         - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
-        - Templates
-        - Rules
-        - Based
-        - ARN
   /domains/{DomainName}/profiles/objects/merge:
     POST:
-      summary: MergeProfiles
+      summary: 'Merge Profiles '
       description: >-
         <p>Runs an AWS Lambda job that does the following:</p> <ol> <li> <p>All
         the profileKeys in the <code>ProfileToBeMerged</code> will be moved to
@@ -1147,48 +423,14 @@ paths:
         of another matching system. After profiles have been merged, they cannot
         be separated (unmerged).</p>
       tags:
-        - Merge
-        - Profiles
         - Domains
+        - Merge
         - Names
-        - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
         - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
         - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
-        - Templates
-        - Rules
-        - Based
-        - ARN
-        - Merge
   /domains/{DomainName}/profiles/search:
     POST:
-      summary: SearchProfiles
+      summary: 'Search Profiles '
       description: >-
         <p>Searches for profiles within a specific domain using one or more
         predefined search keys (e.g., _fullName, _phone, _email, _account, etc.)
@@ -1198,43 +440,7 @@ paths:
         key-value(s) pair and up to 5 key-value(s) pairs using either
         <code>AND</code> or <code>OR</code> 
       tags:
-        - Search
-        - Profiles
         - Domains
         - Names
         - Profiles
-        - Keys
-        - Calculated
-        - Attributes
-        - Attributes
-        - Events
-        - Streams
-        - Stream
-        - Workflows
-        - Integrations
-        - Delete
-        - Objects
-        - Objects
-        - Types
-        - Types
-        - Workflows
-        - Identifiers
-        - Detect
-        - Identity
-        - Resolutions
-        - Jobs
-        - Auto
-        - Merging
-        - Preview
-        - Profiles
-        - Jobs
-        - Matches
-        - Templates
-        - Steps
-        - Domains
-        - Templates
-        - Rules
-        - Based
-        - ARN
-        - Merge
         - Search
