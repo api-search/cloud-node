@@ -3171,7 +3171,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -3203,7 +3205,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/datasync/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Execution
+      - Tasks
     properties:
       - type: Documentation
         url: https://aws.amazon.com/datasync/
@@ -3238,7 +3242,56 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/datazone/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accept
+      - Activities
+      - Assets
+      - Blueprints
+      - Cancel
+      - Change
+      - Configurations
+      - Data
+      - Domains
+      - Entifier
+      - Environments
+      - Forms
+      - Glossaries
+      - Glossary
+      - Grant
+      - Grants
+      - Group
+      - Groups
+      - IAM
+      - Listing
+      - Listings
+      - Login
+      - Memberships
+      - Notifications
+      - Portals
+      - Predictions
+      - Profiles
+      - Projects
+      - Reject
+      - Resources
+      - Revisions
+      - Revoke
+      - Runs
+      - Search
+      - Sets
+      - Source
+      - Sources
+      - Status
+      - Subscriptions
+      - Tags
+      - Target
+      - Targets
+      - Term
+      - Terms
+      - Types
+      - URL
+      - Untag
+      - Users
     properties:
       - type: Documentation
         url: https://aws.amazon.com/datazone/
