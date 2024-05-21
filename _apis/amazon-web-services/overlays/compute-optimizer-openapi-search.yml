@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateEnrollmentStatus
+      summary: 'Update Enrollment Status '
       description: >-
         <p>Updates the enrollment (opt in and opt out) status of an account to
         the Compute Optimizer service.</p> <p>If the account is a management
@@ -21,6 +21,5 @@ paths:
         Service-Linked Roles for Compute Optimizer</a> in the <i>Compute
         Optimizer User Guid
       tags:
-        - Update
         - Enrollment
-        - null
+        - Status
