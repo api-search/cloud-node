@@ -5,7 +5,7 @@ layout: none
 {% if providers.name == 'Amazon Web Services' %}
 {
 "name": "{{ providers.name }}",
-"description": "{{ providers.description | strip_newlines | strip_html }}",
+"description": "{{ providers.description | strip_newlines | strip_html | replace: '"','' }}",
 "image": "{{ providers.image }}",
 "url": "{{ providers.url }}",
 "created": "{{ providers.created }}",
@@ -17,7 +17,7 @@ layout: none
 {
 "name": "{{ api.name | strip_newlines }}",
 "slug": "{{ providers.name | slugify }}",
-"description": "{{ api.description | strip_newlines | strip_html }}",
+"description": "{{ api.description | strip_newlines | strip_html | replace: '"','' }}",
 "image": "{{ api.image }}",
 "humanURL": "{{ api.humanURL }}",
 "baseURL": "{{ api.baseURL }}",
