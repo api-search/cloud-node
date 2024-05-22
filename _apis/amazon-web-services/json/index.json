@@ -32,3 +32,4 @@ layout: none
 "aid": "{{ api.aid }}"
 {% endif %}
 {% endfor %}
+}
