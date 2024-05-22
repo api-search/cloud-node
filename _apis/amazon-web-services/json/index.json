@@ -1,0 +1,4 @@
+---
+layout: none
+---           
+{{ site.apis.amazon-web-services.index | jsonify }}
