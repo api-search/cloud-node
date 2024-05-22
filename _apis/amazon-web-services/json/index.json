@@ -1,4 +1,4 @@
 ---
 layout: none
 ---           
-{{ site.apis.amazon-web-services.index | jsonify }}
+{{ site.apis.amazon-web-services.apis | jsonify }}
