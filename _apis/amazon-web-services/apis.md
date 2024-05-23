@@ -6,12 +6,12 @@ description: >-
   on a metered, pay-as-you-go basis. Clients will often use this in combination
   with autoscaling.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: >-
-  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/amazon-web-services.yml
+url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/amazon-web-services/apis.md
 created: 2023-11-06
 modified: 2024-05-22
 specificationVersion: '0.18'
-tags: []
+tags:
+  - Cloud
 apis:
   - name: Amazon Certificate Manager
     description: >-
