@@ -8487,7 +8487,7 @@ apis:
         url: overlays/sagemaker-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker
   - name: Amazon S3
-    description: <p/>
+    description: Amazon S3 is an object storage service offering industry-leading scalability, data availability, security, and performance. Millions of customers of all sizes and industries store, manage, analyze, and protect any amount of data for virtually any use case, such as data lakes, cloud-native applications, and mobile apps. With cost-effective storage classes and easy-to-use management features, you can optimize costs, organize and analyze data, and configure fine-tuned access controls to meet specific business and compliance requirements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
