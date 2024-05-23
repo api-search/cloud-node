@@ -8,9 +8,9 @@ description: >-
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: >-
   https://raw.githubusercontent.com/apis-json/artisanal/main/apis/amazon-web-services.yml
-created: 2023/11/6
-modified: 2023/11/6
-specificationVersion: '0.16'
+created: 2023-11-06
+modified: 2024-05-22
+specificationVersion: '0.18'
 tags: []
 apis:
   - name: Amazon Certificate Manager
