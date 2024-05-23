@@ -7,7 +7,7 @@ layout: none
 "name": "{{ providers.name }}",
 "description": "{{ providers.description | strip_newlines | strip_html | replace: '"','' | remove: '&quot;' | remove: '"' }}",
 "image": "{{ providers.image }}",
-"url": "{{ providers.url }}",
+"url": "{{ site.url }}{{ providers.url }}",
 "created": "{{ providers.created }}",
 "modified": "{{ providers.modified }}",
 "specificationVersion": "{{ providers.specificationVersion }}",
