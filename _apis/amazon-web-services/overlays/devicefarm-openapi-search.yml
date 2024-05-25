@@ -4,9 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: 'Update VPCEConfiguration '
+      summary: 'Update VPCE Configuration   '
       description: >-
         <p>Updates information about an Amazon Virtual Private Cloud (VPC)
         endpoint configur
       tags:
         - Configurations
+        - VPCE
