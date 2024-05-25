@@ -4,9 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateSubnetGroup
+      summary: 'Update Subnet Group '
       description: <p>Modifies an existing subnet
       tags:
-        - Update
         - Subnets
-        - null
