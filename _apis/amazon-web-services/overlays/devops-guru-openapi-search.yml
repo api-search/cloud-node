@@ -4,7 +4,7 @@ info:
 paths:
   /channels:
     POST:
-      summary: ListNotificationChannels
+      summary: 'List Notification Channels '
       description: >-
         <p> Returns a list of notification channels configured for DevOps Guru.
         Each notification channel is used to notify you when DevOps Guru
@@ -12,121 +12,78 @@ paths:
         operations. The one supported notification channel is Amazon Simple
         Notification Service (Amazon SNS). </p>
       tags:
-        - Lists
+        - Channels
         - Notifications
-        - Channels
-        - Channels
   /insights/{Id}:
     GET:
-      summary: DescribeInsight
+      summary: 'Describe Insight '
       description: <p> Returns details about an insight that you specify using its ID. </p>
       tags:
         - Describe
         - Insight
-        - Channels
-        - Identifiers
+        - Insights
   /accounts/health:
     GET:
-      summary: DescribeAccountHealth
+      summary: 'Describe Account Health '
       description: >-
         <p> Returns the number of open reactive insights, the number of open
         proactive insights, and the number of metrics analyzed in your Amazon
         Web Services account. Use these numbers to gauge the health of
         operations in your Amazon Web Services account. </p>
       tags:
-        - Describe
-        - Account
-        - Health
-        - Channels
-        - Identifiers
         - Accounts
+        - Describe
         - Health
   /accounts/overview:
     POST:
-      summary: DescribeAccountOverview
+      summary: Create Accounts Overview
       description: >-
         <p> For the time range passed in, returns the number of open reactive
         insight that were created, the number of open proactive insights that
         were created, and the Mean Time to Recover (MTTR) for all closed
         reactive insights. </p>
       tags:
-        - Describe
-        - Account
-        - Overview
-        - Channels
-        - Identifiers
         - Accounts
-        - Health
         - Overview
   /anomalies/{Id}:
     GET:
-      summary: DescribeAnomaly
+      summary: 'Describe Anomaly '
       description: <p> Returns details about an anomaly that you specify using its ID. </p>
       tags:
-        - Describe
+        - Anomalies
         - Anomaly
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
+        - Describe
   /event-sources:
     PUT:
-      summary: UpdateEventSourcesConfig
+      summary: 'Update Event Sources Config '
       description: >-
         <p>Enables or disables integration with a service that can be integrated
         with DevOps Guru. The one service that can be integrated with DevOps
         Guru is Amazon CodeGuru Profiler, which can produce proactive
         recommendations which can be stored and viewed in DevOps Guru.</p>
       tags:
-        - Update
-        - Events
-        - Sources
         - Configurations
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
         - Events
         - Sources
   /feedback:
     PUT:
-      summary: PutFeedback
+      summary: 'Put Feedback '
       description: <p> Collects customer feedback about the specified insight. </p>
       tags:
-        - Put
-        - Feedback
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
         - Feedback
   /organization/health:
     POST:
-      summary: DescribeOrganizationHealth
+      summary: 'Describe Organization Health '
       description: >-
         <p>Returns active insights, predictive insights, and resource hours
         analyzed in last hour.</p>
       tags:
         - Describe
-        - Organizations
         - Health
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
         - Organizations
   /organization/overview:
     POST:
-      summary: DescribeOrganizationOverview
+      summary: 'Describe Organization Overview '
       description: >-
         <p>Returns an overview of your organization's history based on the
         specified time range. The overview includes the total reactive and
@@ -135,42 +92,22 @@ paths:
         - Describe
         - Organizations
         - Overview
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
   /organization/health/resource-collection:
     POST:
-      summary: DescribeOrganizationResourceCollectionHealth
+      summary: 'Describe Organization Resource Collection Health '
       description: >-
         <p>Provides an overview of your system's health. If additional member
         accounts are part of your organization, you can filter those accounts
         using the <code>AccountIds</code> field.</p>
       tags:
+        - Collections
         - Describe
+        - Health
         - Organizations
         - Resources
-        - Collections
-        - Health
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
   /accounts/health/resource-collection/{ResourceCollectionType}:
     GET:
-      summary: DescribeResourceCollectionHealth
+      summary: 'Describe Resource Collection Health '
       description: >-
         <p> Returns the number of open proactive insights, open reactive
         insights, and the Mean Time to Recover (MTTR) for all closed insights in
@@ -183,77 +120,35 @@ paths:
         using the same tag <i>key</i>. You can specify up to 500 Amazon Web
         Services CloudFormation stacks. </p>
       tags:
-        - Describe
-        - Resources
-        - Collections
-        - Health
-        - Channels
-        - Identifiers
         - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
         - Collections
+        - Describe
+        - Health
+        - Resources
         - Types
   /service-integrations:
     PUT:
-      summary: UpdateServiceIntegration
+      summary: 'Update Service Integration '
       description: >-
         <p> Enables or disables integration with a service that can be
         integrated with DevOps Guru. The one service that can be integrated with
         DevOps Guru is Amazon Web Services Systems Manager, which can be used to
         create an OpsItem for each generated insight. </p>
       tags:
-        - Update
-        - Services
         - Integrations
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
         - Services
-        - Integrations
   /cost-estimation:
     PUT:
-      summary: StartCostEstimation
+      summary: 'Start Cost Estimation '
       description: >-
         <p>Starts the creation of an estimate of the monthly cost to analyze
         your Amazon Web Services resources.</p>
       tags:
-        - Start
-        - Cost
-        - Estimation
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
         - Cost
         - Estimation
   /resource-collections/{ResourceCollectionType}:
     GET:
-      summary: GetResourceCollection
+      summary: 'Get Resource Collection '
       description: >-
         <p> Returns lists Amazon Web Services resources that are of the
         specified resource collection type. The two types of Amazon Web Services
@@ -264,281 +159,84 @@ paths:
         using the same tag <i>key</i>. You can specify up to 500 Amazon Web
         Services CloudFormation stacks. </p>
       tags:
-        - Get
-        - Resources
         - Collections
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
         - Resources
-        - Collections
         - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
   /anomalies/insight/{InsightId}:
     POST:
-      summary: ListAnomaliesForInsight
+      summary: 'List Anomalies For Insight '
       description: >-
         <p> Returns a list of the anomalies that belong to an insight that you
         specify using its ID. </p>
       tags:
-        - Lists
         - Anomalies
-        - For
-        - Insight
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
+        - Insights
   /list-log-anomalies:
     POST:
-      summary: ListAnomalousLogGroups
+      summary: 'List Anomalous Log Groups '
       description: <p> Returns the list of log groups that contain log anomalies. </p>
       tags:
-        - Lists
-        - Anomalous
-        - Logs
-        - Groups
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
         - Anomalies
+        - Anomalous
+        - Groups
+        - Logs
   /events:
     POST:
-      summary: ListEvents
+      summary: 'List Events '
       description: >-
         <p> Returns a list of the events emitted by the resources that are
         evaluated by DevOps Guru. You can use filters to specify which events
         are returned. </p>
       tags:
-        - Lists
-        - Events
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
         - Events
   /insights:
     POST:
-      summary: ListInsights
+      summary: 'List Insights '
       description: >-
         <p> Returns a list of insights in your Amazon Web Services account. You
         can specify which insights are returned by their start time and status
         (<code>ONGOING</code>, <code>CLOSED</code>, or <code>ANY</code>). </p>
       tags:
-        - Lists
-        - Insights
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
         - Insights
   /monitoredResources:
     POST:
-      summary: ListMonitoredResources
+      summary: 'List Monitored Resources '
       description: >-
         <p> Returns the list of all log groups that are being monitored and
         tagged by DevOps Guru. </p>
       tags:
-        - Lists
         - Monitored
-        - Resources
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
-        - Insights
         - Resources
   /organization/insights:
     POST:
-      summary: ListOrganizationInsights
+      summary: 'List Organization Insights '
       description: <p>Returns a list of insights associated with the account or OU Id.</p>
       tags:
-        - Lists
-        - Organizations
         - Insights
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
         - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
-        - Insights
-        - Resources
   /recommendations:
     POST:
-      summary: ListRecommendations
+      summary: 'List Recommendations '
       description: >-
         <p> Returns a list of a specified insight's recommendations. Each
         recommendation includes a list of related metrics and a list of related
         events. </p>
       tags:
-        - Lists
-        - Recommendations
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
-        - Insights
-        - Resources
         - Recommendations
   /channels/{Id}:
     DELETE:
-      summary: RemoveNotificationChannel
+      summary: 'Remove Notification Channel '
       description: >-
         <p> Removes a notification channel from DevOps Guru. A notification
         channel is used to notify you when DevOps Guru generates an insight that
         contains information about how to improve your operations. </p>
       tags:
-        - Removes
+        - Channels
         - Notifications
-        - Channels
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
-        - Insights
-        - Resources
-        - Recommendations
+        - Removes
   /insights/search:
     POST:
-      summary: SearchInsights
+      summary: 'Search Insights '
       description: >-
         <p> Returns a list of insights in your Amazon Web Services account. You
         can specify which insights are returned by their start time, one or more
@@ -550,36 +248,11 @@ paths:
         <code>Type</code> parameter to specify <code>REACTIVE</code> or
         <code>PROACTIVE</code> in your search. </p>
       tags:
-        - Search
         - Insights
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
-        - Insights
-        - Resources
-        - Recommendations
         - Search
   /organization/insights/search:
     POST:
-      summary: SearchOrganizationInsights
+      summary: 'Search Organization Insights '
       description: >-
         <p> Returns a list of insights in your organization. You can specify
         which insights are returned by their start time, one or more statuses
@@ -591,37 +264,12 @@ paths:
         <code>Type</code> parameter to specify <code>REACTIVE</code> or
         <code>PROACTIVE</code> in your search. </p>
       tags:
-        - Search
-        - Organizations
         - Insights
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
         - Organizations
-        - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
-        - Insights
-        - Resources
-        - Recommendations
         - Search
   /resource-collections:
     PUT:
-      summary: UpdateResourceCollection
+      summary: 'Update Resource Collection '
       description: >-
         <p> Updates the collection of resources that DevOps Guru analyzes. The
         two types of Amazon Web Services resource collections supported are
@@ -632,32 +280,5 @@ paths:
         You can specify up to 500 Amazon Web Services CloudFormation stacks.
         This method also creates the IAM role required for you to use DevOps 
       tags:
-        - Update
-        - Resources
         - Collections
-        - Channels
-        - Identifiers
-        - Accounts
-        - Health
-        - Overview
-        - Events
-        - Sources
-        - Feedback
-        - Organizations
         - Resources
-        - Collections
-        - Types
-        - Services
-        - Integrations
-        - Cost
-        - Estimation
-        - Insight
-        - Lists
-        - Logs
-        - Anomalies
-        - Events
-        - Insights
-        - Resources
-        - Recommendations
-        - Search
-        - Collections
