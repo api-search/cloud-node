@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateTimeToLive
+      summary: 'Update Time To Live '
       description: >-
         <p>The <code>UpdateTimeToLive</code> method enables or disables Time to
         Live (TTL) for the specified table. A successful
@@ -31,7 +31,5 @@ paths:
         href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html">Time
         To Live</a> in the Amazon DynamoDB Developer G
       tags:
-        - Update
+        - Live
         - Time
-        - To
-        - null
