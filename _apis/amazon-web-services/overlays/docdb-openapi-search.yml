@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: StopDBCluster
+      summary: 'Stop DBCluster  '
       description: >-
         <p>Stops the running cluster that is specified by
         <code>DBClusterIdentifier</code>. The cluster must be in the
@@ -13,4 +13,4 @@ paths:
         and Starting an Amazon DocumentDB Cluste
       tags:
         - Stop
-        - null
+        - Database Cluster
