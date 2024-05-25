@@ -3405,7 +3405,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/device-farm/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
     properties:
       - type: Documentation
         url: https://aws.amazon.com/device-farm/
@@ -3440,7 +3441,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/directconnect/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Attributes
+      - Interfaces
+      - Virtual
     properties:
       - type: Documentation
         url: https://aws.amazon.com/directconnect/
@@ -3472,7 +3476,36 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/detective/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accept
+      - Accounts
+      - Accounts List
+      - Administrative
+      - Batches
+      - Configurations
+      - Data Source
+      - Describe
+      - Disable
+      - Disassociate
+      - Enable
+      - Graphs
+      - Indicators
+      - Investigations
+      - Invitation
+      - Invitations
+      - Members
+      - Memberships
+      - Monitoring
+      - Monitoring State
+      - Organizations
+      - Packages
+      - Reject
+      - Removal
+      - Resources
+      - States
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/detective/
