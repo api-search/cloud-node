@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: 'Update Virtual Interface Attributes '
+      summary: 'Update Virtual Interface Attributes  '
       description: >-
         <p>Updates the specified attributes of the specified virtual private
         interface.</p> <p>Setting the MTU of a virtual interface to 9001 (jumbo
