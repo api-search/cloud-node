@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateSubscriptionsToEventBridge
+      summary: 'Update Subscriptions To Event Bridge '
       description: >-
         <p>Migrates 10 active and enabled Amazon SNS subscriptions at a time and
         converts them to corresponding Amazon EventBridge rules. By default,
@@ -22,8 +22,6 @@ paths:
         event subscriptions to Amazon EventBridge</a> in the <i>Amazon Web
         Services Database Migration Service User Guid
       tags:
-        - Update
         - Subscriptions
-        - To
         - Events
-        - null
+        - ''
