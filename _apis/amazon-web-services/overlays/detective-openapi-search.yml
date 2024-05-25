@@ -4,7 +4,7 @@ info:
 paths:
   /invitation:
     PUT:
-      summary: AcceptInvitation
+      summary: 'Accept Invitation '
       description: >-
         <p>Accepts an invitation for the member account to contribute data to a
         behavior graph. This operation can only be called by an invited member
@@ -14,40 +14,28 @@ paths:
       tags:
         - Accept
         - Invitation
-        - Invitation
   /graph/datasources/get:
     POST:
-      summary: BatchGetGraphMemberDatasources
+      summary: 'Batch Get Graph Member Datasources '
       description: <p>Gets data source package information for the behavior graph.</p>
       tags:
         - Batches
-        - Get
+        - Data Source
         - Graphs
         - Members
-        - Data Source
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
   /membership/datasources/get:
     POST:
-      summary: BatchGetMembershipDatasources
+      summary: 'Batch Get Membership Datasources '
       description: >-
         <p>Gets information on the data source package history for an
         account.</p>
       tags:
         - Batches
-        - Get
-        - Membership
         - Data Source
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
+        - Memberships
   /graph:
     POST:
-      summary: CreateGraph
+      summary: 'Create Graph '
       description: >-
         <p>Creates a new behavior graph for the calling account, and sets that
         account as the administrator account. This operation is called by the
@@ -67,16 +55,10 @@ paths:
         account, it always returns the same behavior graph ARN. It does not
         create a new behavior graph.</p>
       tags:
-        - Create
         - Graphs
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
   /graph/members:
     POST:
-      summary: CreateMembers
+      summary: 'Create Members '
       description: >-
         <p> <code>CreateMembers</code> is used to send invitations to accounts.
         For the organization behavior graph, the Detective administrator account
@@ -104,35 +86,22 @@ paths:
         accounts that were already invited to be member accounts in the behavior
         graph.</p> </li> </ul>
       tags:
-        - Create
-        - Members
-        - Invitation
         - Graphs
-        - Data Source
-        - Get
-        - Membership
         - Members
   /graph/removal:
     POST:
-      summary: DeleteGraph
+      summary: 'Delete Graph '
       description: >-
         <p>Disables the specified behavior graph and queues it to be deleted.
         This operation removes the behavior graph from each member account's
         list of behavior graphs.</p> <p> <code>DeleteGraph</code> can only be
         called by the administrator account for a behavior graph.</p>
       tags:
-        - Delete
         - Graphs
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
         - Removal
   /graph/members/removal:
     POST:
-      summary: DeleteMembers
+      summary: 'Delete Members '
       description: >-
         <p>Removes the specified member accounts from the behavior graph. The
         removed accounts no longer contribute data to the behavior graph. This
@@ -149,39 +118,24 @@ paths:
         behavior graph. To disable a behavior graph, the administrator account
         uses the <code>DeleteGraph</code> API method.</p>
       tags:
-        - Delete
-        - Members
-        - Invitation
         - Graphs
-        - Data Source
-        - Get
-        - Membership
         - Members
         - Removal
   /orgs/describeOrganizationConfiguration:
     POST:
-      summary: DescribeOrganizationConfiguration
+      summary: 'Describe Organization Configuration '
       description: >-
         <p>Returns information about the configuration for the organization
         behavior graph. Currently indicates whether to automatically enable new
         organization accounts as member accounts.</p> <p>Can only be called by
         the Detective administrator account for the organization. </p>
       tags:
+        - Configurations
         - Describe
         - Organizations
-        - Configurations
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
   /orgs/disableAdminAccount:
     POST:
-      summary: DisableOrganizationAdminAccount
+      summary: 'Disable Organization Admin Account '
       description: >-
         <p>Removes the Detective administrator account in the current Region.
         Deletes the organization behavior graph.</p> <p>Can only be called by
@@ -194,24 +148,13 @@ paths:
         Detective administrator account is the organization management
         account.</p>
       tags:
+        - Accounts
+        - Administrative
         - Disable
         - Organizations
-        - Administrative
-        - Account
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
   /membership/removal:
     POST:
-      summary: DisassociateMembership
+      summary: 'Disassociate Membership '
       description: >-
         <p>Removes the member account from the specified behavior graph. This
         operation can only be called by an invited member account that has the
@@ -222,21 +165,11 @@ paths:
         member accounts.</p>
       tags:
         - Disassociate
-        - Membership
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
+        - Memberships
         - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
   /orgs/enableAdminAccount:
     POST:
-      summary: EnableOrganizationAdminAccount
+      summary: 'Enable Organization Admin Account '
       description: >-
         <p>Designates the Detective administrator account for the organization
         in the current Region.</p> <p>If the account does not have Detective
@@ -253,87 +186,38 @@ paths:
         organization management account cannot be the delegated administrator
         account.</p>
       tags:
+        - Accounts
+        - Administrative
         - Enable
         - Organizations
-        - Administrative
-        - Account
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
   /investigations/getInvestigation:
     POST:
-      summary: GetInvestigation
+      summary: 'Get Investigation '
       description: >-
         <p>Returns the investigation results of an investigation for a behavior
         graph. </p>
       tags:
-        - Get
-        - Investigations
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
         - Investigations
   /graph/members/get:
     POST:
-      summary: GetMembers
+      summary: 'Get Members '
       description: >-
         <p>Returns the membership details for specified member accounts for a
         behavior graph.</p>
       tags:
-        - Get
-        - Members
-        - Invitation
         - Graphs
-        - Data Source
-        - Get
-        - Membership
         - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
   /graph/datasources/list:
     POST:
-      summary: ListDatasourcePackages
+      summary: 'List Datasource Packages '
       description: <p>Lists data source packages in the behavior graph.</p>
       tags:
-        - Lists
         - Data Source
-        - Packages
-        - Invitation
         - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
+        - Packages
   /graphs/list:
     POST:
-      summary: ListGraphs
+      summary: 'List Graphs '
       description: >-
         <p>Returns the list of behavior graphs that the calling account is an
         administrator account of. This operation can only be called by an
@@ -341,70 +225,23 @@ paths:
         the administrator of one behavior graph within a Region, the results
         always contain a single behavior graph.</p>
       tags:
-        - Lists
-        - Graphs
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
         - Graphs
   /investigations/listIndicators:
     POST:
-      summary: ListIndicators
+      summary: 'List Indicators '
       description: <p>Get the indicators from an investigation</p>
       tags:
-        - Lists
         - Indicators
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
         - Investigations
-        - Lists
-        - Graphs
-        - Indicators
   /investigations/listInvestigations:
     POST:
-      summary: ListInvestigations
+      summary: 'List Investigations '
       description: <p>List all Investigations.</p>
       tags:
-        - Lists
-        - Investigations
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
         - Investigations
   /invitations/list:
     POST:
-      summary: ListInvitations
+      summary: 'List Invitations '
       description: >-
         <p>Retrieves the list of open and accepted behavior graph invitations
         for the member account. This operation can only be called by an invited
@@ -414,28 +251,11 @@ paths:
         also do not include behavior graphs that the member account resigned
         from or was removed from.</p>
       tags:
-        - Lists
         - Invitations
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
         - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
   /graph/members/list:
     POST:
-      summary: ListMembers
+      summary: 'List Members '
       description: >-
         <p>Retrieves the list of member accounts for a behavior graph.</p>
         <p>For invited accounts, the results do not include member accounts that
@@ -444,85 +264,32 @@ paths:
         the Detective administrator account has not enabled as member
         accounts.</p>
       tags:
-        - Lists
-        - Members
-        - Invitation
         - Graphs
-        - Data Source
-        - Get
-        - Membership
         - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
   /orgs/adminAccountslist:
     POST:
-      summary: ListOrganizationAdminAccounts
+      summary: 'List Organization Admin Accounts '
       description: >-
         <p>Returns information about the Detective administrator account for an
         organization. Can only be called by the organization management
         account.</p>
       tags:
-        - Lists
-        - Organizations
-        - Administrative
         - Accounts
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
         - Accounts List
+        - Administrative
+        - Organizations
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from a behavior graph.</p>
       tags:
-        - Untag
-        - Resources
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
-        - Accounts List
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /invitation/removal:
     POST:
-      summary: RejectInvitation
+      summary: 'Reject Invitation '
       description: >-
         <p>Rejects an invitation to contribute the account data to a behavior
         graph. This operation must be called by an invited member account that
@@ -531,58 +298,18 @@ paths:
         account in the organization behavior graph. In the organization behavior
         graph, organization accounts do not receive an invitation.</p>
       tags:
+        - Invitation
         - Reject
-        - Invitation
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
         - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
-        - Accounts List
-        - Resources
-        - ARN
   /investigations/startInvestigation:
     POST:
-      summary: StartInvestigation
+      summary: 'Start Investigation '
       description: <p>initiate an investigation on an entity in a graph</p>
       tags:
-        - Start
         - Investigations
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
-        - Accounts List
-        - Resources
-        - ARN
   /graph/member/monitoringstate:
     POST:
-      summary: StartMonitoringMember
+      summary: 'Start Monitoring Member '
       description: >-
         <p>Sends a request to enable data ingest for a member account that has a
         status of <code>ACCEPTED_BUT_DISABLED</code>.</p> <p>For valid member
@@ -592,126 +319,32 @@ paths:
         member account, the status remains <code>ACCEPTED_BUT_DISABLED</code>.
         </p> </li> </ul>
       tags:
-        - Start
+        - Graphs
+        - Members
         - Monitoring
-        - Members
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
-        - Accounts List
-        - Resources
-        - ARN
-        - Members
         - Monitoring State
   /graph/datasources/update:
     POST:
-      summary: UpdateDatasourcePackages
+      summary: 'Update Datasource Packages '
       description: <p>Starts a data source packages for the behavior graph.</p>
       tags:
-        - Update
         - Data Source
+        - Graphs
         - Packages
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
-        - Accounts List
-        - Resources
-        - ARN
-        - Members
-        - Monitoring State
-        - Update
   /investigations/updateInvestigationState:
     POST:
-      summary: UpdateInvestigationState
+      summary: 'Update Investigation State '
       description: <p>Update the state of an investigation.</p>
       tags:
-        - Update
         - Investigations
-        - States
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
-        - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
-        - Accounts List
-        - Resources
-        - ARN
-        - Members
-        - Monitoring State
-        - Update
         - States
   /orgs/updateOrganizationConfiguration:
     POST:
-      summary: UpdateOrganizationConfiguration
+      summary: 'Update Organization Configuration '
       description: >-
         <p>Updates the configuration for the Organizations integration in the
         current Region. Can only be called by the Detective administrator
         account for the organiz
       tags:
-        - Update
-        - Organizations
         - Configurations
-        - Invitation
-        - Graphs
-        - Data Source
-        - Get
-        - Membership
-        - Members
-        - Removal
         - Organizations
-        - Configurations
-        - Administrative
-        - Account
-        - Investigations
-        - Lists
-        - Graphs
-        - Indicators
-        - Investigations
-        - Invitations
-        - Accounts List
-        - Resources
-        - ARN
-        - Members
-        - Monitoring State
-        - Update
-        - null
