@@ -4,7 +4,7 @@ info:
 paths:
   /snapshots/completion/{snapshotId}:
     POST:
-      summary: CompleteSnapshot
+      summary: 'Complete Snapshot '
       description: >-
         <p>Seals and completes the snapshot after all of the required blocks of
         data have been written to it. Completing the snapshot changes the status
@@ -19,11 +19,11 @@ paths:
         </note>
       tags:
         - Complete
+        - Completions
         - Snapshots
-        - Identifiers
   /snapshots/{snapshotId}/blocks/{blockIndex}:
     PUT:
-      summary: PutSnapshotBlock
+      summary: 'Put Snapshot Block '
       description: >-
         <p>Writes a block of data to a snapshot. If the specified block contains
         data, the existing data is overwritten. The target snapshot must be in
@@ -37,16 +37,12 @@ paths:
         retries</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.</p>
         </note>
       tags:
-        - Put
-        - Snapshots
-        - Blocks
-        - Identifiers
-        - Blocks
         - Blocks
         - Index
+        - Snapshots
   /snapshots/{secondSnapshotId}/changedblocks:
     GET:
-      summary: ListChangedBlocks
+      summary: 'List Changed Blocks '
       description: >-
         <p>Returns information about the blocks that are different between two
         Amazon Elastic Block Store snapshots of the same volume/snapshot
@@ -59,18 +55,14 @@ paths:
         retries</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.</p>
         </note>
       tags:
-        - Lists
+        - Blocks
         - Changed
-        - Blocks
-        - Identifiers
-        - Blocks
-        - Blocks
-        - Index
-        - Snapshots
         - Changed Blocks
+        - Second
+        - Snapshots
   /snapshots/{snapshotId}/blocks:
     GET:
-      summary: ListSnapshotBlocks
+      summary: 'List Snapshot Blocks '
       description: >-
         <p>Returns information about the blocks in an Amazon Elastic Block Store
         snapshot.</p> <note> <p>You should always retry requests that receive
@@ -82,18 +74,11 @@ paths:
         retries</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.</p>
         </note>
       tags:
-        - Lists
+        - Blocks
         - Snapshots
-        - Blocks
-        - Identifiers
-        - Blocks
-        - Blocks
-        - Index
-        - Snapshots
-        - Changed Blocks
   /snapshots:
     POST:
-      summary: StartSnapshot
+      summary: 'Start Snapshot '
       description: >-
         <p>Creates a new Amazon EBS snapshot. The new snapshot enters the
         <code>pending</code> state after the request completes. </p> <p>After
@@ -107,12 +92,5 @@ paths:
         href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/error-retries.html">Error
         retries</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.</
       tags:
-        - Start
         - Snapshots
-        - Identifiers
-        - Blocks
-        - Blocks
-        - Index
-        - Snapshots
-        - Changed Blocks
         - Snapshots
