@@ -3927,7 +3927,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/documentdb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Stop
+      - Database Cluster
     properties:
       - type: Documentation
         url: https://aws.amazon.com/documentdb/
@@ -3961,7 +3963,15 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-using-elastic-clusters.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Cluster
+      - Clusters
+      - Resources
+      - Restore
+      - Snapshots
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -3983,7 +3993,12 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Console
+      - Keys
+      - SSHPublic
+      - Send
+      - Serial
     properties:
       - type: Documentation
         url: >-
@@ -4011,7 +4026,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/dynamodb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Live
+      - Time
     properties:
       - type: Documentation
         url: https://aws.amazon.com/dynamodb/
@@ -4056,7 +4073,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ec2/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Withdraw
+      - CIDR
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ec2/
@@ -4101,7 +4120,50 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/eks/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Addon
+      - Addons
+      - Anywhere
+      - Associate
+      - Associated
+      - Associations
+      - Cluster
+      - Clusters
+      - Configurations
+      - Deregister
+      - Describe
+      - Disassociate
+      - EKS
+      - Encryption
+      - Entities
+      - Entries
+      - Entry
+      - Er
+      - Fargate
+      - Groups
+      - Identity
+      - Insight
+      - Insights
+      - Names
+      - Node Groups
+      - Nodes
+      - Pods
+      - Policies
+      - Principals
+      - Profiles
+      - Prov
+      - Providers
+      - Register
+      - Registrations
+      - Resources
+      - Schemas
+      - Subscriptions
+      - Supported
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
         url: https://aws.amazon.com/eks/
@@ -4138,7 +4200,11 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ecr/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Cache
+      - Pull
+      - Rules
+      - Validate
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ecr/
@@ -4180,7 +4246,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ecs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Tasks
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ecs/
@@ -4222,7 +4289,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/elasticache/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Tests
+      - Migrations
     properties:
       - type: Documentation
         url: https://aws.amazon.com/elasticache/
@@ -4259,7 +4328,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/AmazonECR/latest/public/what-is-ecr.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Layers
+      - Uploads
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/AmazonECR/latest/public/what-is-ecr.html
@@ -4284,7 +4355,30 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/efs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Describe
+      - Points
+      - File
+      - Systems
+      - Mount
+      - Targets
+      - Configurations
+      - Replication
+      - Sources
+      - Tags
+      - Policies
+      - Accounts
+      - Preferences
+      - Backup
+      - Lifecycle
+      - Groups
+      - Modify
+      - Security
+      - Target
+      - Resources
+      - Untag
+      - Protection
     properties:
       - type: Documentation
         url: https://aws.amazon.com/efs/
