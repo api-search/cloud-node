@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UploadLayerPart
+      summary: 'Upload Layer Part '
       description: >-
         <p>Uploads an image layer part to Amazon ECR.</p> <p>When an image is
         pushed, each new image layer is uploaded in parts. The maximum size of
@@ -15,6 +15,5 @@ paths:
         cases, you should use the <code>docker</code> CLI to pull, tag, and push
         images.</
       tags:
-        - Uploads
         - Layers
-        - null
+        - Uploads
