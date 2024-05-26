@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: TestMigration
+      summary: 'Test Migration '
       description: <p> Async API to test connection between source and target replication g
       tags:
         - Tests
