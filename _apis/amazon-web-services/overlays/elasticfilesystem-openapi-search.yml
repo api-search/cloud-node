@@ -4,7 +4,7 @@ info:
 paths:
   /2015-02-01/access-points:
     GET:
-      summary: DescribeAccessPoints
+      summary: 'Describe Access Points '
       description: >-
         <p>Returns the description of a specific Amazon EFS access point if the
         <code>AccessPointId</code> is provided. If you provide an EFS
@@ -14,17 +14,12 @@ paths:
         request, but not both. </p> <p>This operation requires permissions for
         the <code>elasticfilesystem:DescribeAccessPoints</code> action.</p>
       tags:
+        - Access
         - Describe
-        - Access
-        - Points
-        - null
-        - null
-        - null
-        - Access
         - Points
   /2015-02-01/file-systems:
     GET:
-      summary: DescribeFileSystems
+      summary: 'Describe File Systems '
       description: >-
         <p>Returns the description of a specific Amazon EFS file system if
         either the file system <code>CreationToken</code> or the
@@ -53,16 +48,9 @@ paths:
         - Describe
         - File
         - Systems
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
   /2015-02-01/mount-targets:
     GET:
-      summary: DescribeMountTargets
+      summary: 'Describe Mount Targets '
       description: >-
         <p>Returns the descriptions of all the current mount targets, or a
         specific mount target, for a file system. When requesting all of the
@@ -76,18 +64,9 @@ paths:
         - Describe
         - Mount
         - Targets
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
-        - Mount
-        - Targets
   /2015-02-01/file-systems/{SourceFileSystemId}/replication-configuration:
     DELETE:
-      summary: DeleteReplicationConfiguration
+      summary: 'Delete Replication Configuration '
       description: >-
         <p>Deletes a replication configuration. Deleting a replication
         configuration ends the replication process. After a replication
@@ -100,26 +79,14 @@ paths:
         <code>elasticfilesystem:DeleteReplicationConfiguration</code> action.
         </p>
       tags:
-        - Delete
-        - Replication
         - Configurations
-        - null
-        - null
-        - null
-        - Access
-        - Points
         - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
         - Replication
-        - Configurations
+        - Sources
+        - Systems
   /2015-02-01/create-tags/{FileSystemId}:
     POST:
-      summary: CreateTags
+      summary: 'Create Tags '
       description: >-
         <note> <p>DEPRECATED - <code>CreateTags</code> is deprecated and not
         maintained. To create tags for EFS resources, use the API action.</p>
@@ -131,25 +98,12 @@ paths:
         <a>DescribeFileSystems</a> operation. </p> <p>This operation requires
         permission for the <code>elasticfilesystem:CreateTags</code> action.</p>
       tags:
-        - Create
-        - Tags
-        - null
-        - null
-        - null
-        - Access
-        - Points
         - File
         - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
+        - Tags
   /2015-02-01/access-points/{AccessPointId}:
     DELETE:
-      summary: DeleteAccessPoint
+      summary: 'Delete Access Point '
       description: >-
         <p>Deletes the specified access point. After deletion is complete, new
         clients can no longer connect to the access points. Clients connected to
@@ -158,52 +112,20 @@ paths:
         permissions for the <code>elasticfilesystem:DeleteAccessPoint</code>
         action.</p>
       tags:
-        - Delete
         - Access
-        - Points
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
         - Points
   /2015-02-01/file-systems/{FileSystemId}:
     PUT:
-      summary: UpdateFileSystem
+      summary: 'Update File System '
       description: >-
         <p>Updates the throughput mode or the amount of provisioned throughput
         of an existing file system.</p>
       tags:
-        - Update
         - File
         - Systems
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
   /2015-02-01/file-systems/{FileSystemId}/policy:
     PUT:
-      summary: PutFileSystemPolicy
+      summary: 'Put File System Policy '
       description: >-
         <p>Applies an Amazon EFS <code>FileSystemPolicy</code> to an Amazon EFS
         file system. A file system policy is an IAM resource-based policy and
@@ -219,29 +141,12 @@ paths:
         permissions for the <code>elasticfilesystem:PutFileSystemPolicy</code>
         action.</p>
       tags:
-        - Put
         - File
-        - Systems
         - Policies
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
         - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
   /2015-02-01/mount-targets/{MountTargetId}:
     DELETE:
-      summary: DeleteMountTarget
+      summary: 'Delete Mount Target '
       description: >-
         <p>Deletes the specified mount target.</p> <p>This operation forcibly
         breaks any mounts of the file system by using the mount target that is
@@ -263,29 +168,11 @@ paths:
         following Amazon EC2 action on the mount target's network interface:</p>
         <ul> <li> <p> <code>ec2:DeleteNetworkInterface</code> </p> </li> </ul>
       tags:
-        - Delete
-        - Mount
-        - Target
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
         - Mount
         - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
   /2015-02-01/delete-tags/{FileSystemId}:
     POST:
-      summary: DeleteTags
+      summary: 'Delete Tags '
       description: >-
         <note> <p>DEPRECATED - <code>DeleteTags</code> is deprecated and not
         maintained. To remove tags from EFS resources, use the API action.</p>
@@ -298,28 +185,13 @@ paths:
         Guide</i>.</p> <p>This operation requires permissions for the
         <code>elasticfilesystem:DeleteTags</code> action.</p>
       tags:
-        - Delete
         - Tags
-        - null
-        - null
-        - null
-        - Access
-        - Points
         - File
         - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
+        - Tags
   /2015-02-01/account-preferences:
     PUT:
-      summary: PutAccountPreferences
+      summary: 'Put Account Preferences '
       description: >-
         <p>Use this operation to set the account preference in the current
         Amazon Web Services Region to use long 17 character (63 bit) or short 8
@@ -334,61 +206,22 @@ paths:
         Services support if you receive an error and must use short IDs for file
         system and mount target resources.</p> </note>
       tags:
-        - Put
-        - Account
-        - Preferences
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
-        - Account
+        - Accounts
         - Preferences
   /2015-02-01/file-systems/{FileSystemId}/backup-policy:
     PUT:
-      summary: PutBackupPolicy
+      summary: 'Put Backup Policy '
       description: >-
         <p>Updates the file system's backup policy. Use this action to start or
         stop automatic backups of the file system. </p>
       tags:
-        - Put
         - Backup
-        - Policies
-        - null
-        - null
-        - null
-        - Access
-        - Points
         - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
         - Policies
-        - Target
-        - Account
-        - Preferences
-        - Backup
+        - Systems
   /2015-02-01/file-systems/{FileSystemId}/lifecycle-configuration:
     PUT:
-      summary: PutLifecycleConfiguration
+      summary: 'Put Lifecycle Configuration '
       description: >-
         <p>Use this action to manage storage for your file system. A
         <code>LifecycleConfiguration</code> consists of one or more
@@ -433,33 +266,13 @@ paths:
         file system, you need the same Key Management Service permissions as
         when you created the encrypted file system.</p>
       tags:
-        - Put
-        - Lifecycle
         - Configurations
-        - null
-        - null
-        - null
-        - Access
-        - Points
         - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
-        - Account
-        - Preferences
-        - Backup
         - Lifecycle
+        - Systems
   /2015-02-01/mount-targets/{MountTargetId}/security-groups:
     PUT:
-      summary: ModifyMountTargetSecurityGroups
+      summary: 'Modify Mount Target Security Groups '
       description: >-
         <p>Modifies the set of security groups in effect for a mount target.</p>
         <p>When you create a mount target, Amazon EFS also creates a new network
@@ -476,73 +289,29 @@ paths:
         <code>ec2:ModifyNetworkInterfaceAttribute</code> action on the mount
         target's network interface. </p> </li> </ul>
       tags:
+        - Groups
         - Modify
         - Mount
-        - Target
         - Security
-        - Groups
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
-        - Mount
+        - Target
         - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
-        - Account
-        - Preferences
-        - Backup
-        - Lifecycle
-        - Security
-        - Groups
   /2015-02-01/file-systems/replication-configurations:
     GET:
-      summary: DescribeReplicationConfigurations
+      summary: 'Describe Replication Configurations '
       description: >-
         <p>Retrieves the replication configuration for a specific file system.
         If a file system is not specified, all of the replication configurations
         for the Amazon Web Services account in an Amazon Web Services Region are
         retrieved.</p>
       tags:
+        - Configurations
         - Describe
-        - Replication
-        - Configurations
-        - null
-        - null
-        - null
-        - Access
-        - Points
         - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
         - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
-        - Account
-        - Preferences
-        - Backup
-        - Lifecycle
-        - Security
-        - Groups
-        - Configurations
+        - Systems
   /2015-02-01/tags/{FileSystemId}/:
     GET:
-      summary: DescribeTags
+      summary: 'Describe Tags '
       description: >-
         <note> <p>DEPRECATED - The <code>DescribeTags</code> action is
         deprecated and not maintained. To view tags associated with EFS
@@ -555,102 +324,29 @@ paths:
         <code>elasticfilesystem:DescribeTags</code> action. </p>
       tags:
         - Describe
-        - Tags
-        - null
-        - null
-        - null
-        - Access
-        - Points
         - File
         - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
-        - Account
-        - Preferences
-        - Backup
-        - Lifecycle
-        - Security
-        - Groups
-        - Configurations
+        - Tags
   /2015-02-01/resource-tags/{ResourceId}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes tags from an EFS resource. You can remove tags from EFS file
         systems and access points using this API operation.</p> <p>This
         operation requires permissions for the
         <code>elasticfilesystem:UntagResource</code> action.</p>
       tags:
+        - Resources
+        - Tags
         - Untag
-        - Resources
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
-        - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
-        - Account
-        - Preferences
-        - Backup
-        - Lifecycle
-        - Security
-        - Groups
-        - Configurations
-        - Resources
   /2015-02-01/file-systems/{FileSystemId}/protection:
     PUT:
-      summary: UpdateFileSystemProtection
+      summary: 'Update File System Protection '
       description: >-
         <p>Updates protection on the file system.</p> <p>This operation requires
         permissions for the
         <code>elasticfilesystem:UpdateFileSystemProtection</code> ac
       tags:
-        - Update
         - File
-        - Systems
         - Protection
-        - null
-        - null
-        - null
-        - Access
-        - Points
-        - File
         - Systems
-        - Mount
-        - Targets
-        - Source
-        - Systems
-        - Identifiers
-        - Replication
-        - Configurations
-        - Points
-        - Policies
-        - Target
-        - Account
-        - Preferences
-        - Backup
-        - Lifecycle
-        - Security
-        - Groups
-        - Configurations
-        - Resources
-        - Protection
