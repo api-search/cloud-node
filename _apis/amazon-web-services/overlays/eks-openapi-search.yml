@@ -4,19 +4,20 @@ info:
 paths:
   /clusters/{name}/access-entries/{principalArn}/access-policies:
     GET:
-      summary: ListAssociatedAccessPolicies
+      summary: 'List Associated Access Policies '
       description: <p>Lists the access policies associated with an access entry.</p>
       tags:
-        - Lists
-        - Associated
-        - Access
-        - Policies
         - ARN
         - Access
+        - Associated
+        - Clusters
+        - Entries
+        - Names
         - Policies
+        - Principals
   /clusters/{name}/encryption-config/associate:
     POST:
-      summary: AssociateEncryptionConfig
+      summary: 'Associate Encryption Config '
       description: >-
         <p>Associates an encryption configuration to an existing cluster.</p>
         <p>Use this API to enable encryption on existing clusters that don't
@@ -25,19 +26,13 @@ paths:
         Amazon EKS clusters.</p>
       tags:
         - Associate
-        - Encryption
-        - Configurations
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
         - Configurations
-        - Associate
+        - Encryption
+        - Names
   /clusters/{name}/identity-provider-configs/associate:
     POST:
-      summary: AssociateIdentityProviderConfig
+      summary: 'Associate Identity Provider Config '
       description: >-
         <p>Associates an identity provider configuration to a cluster.</p> <p>If
         you want to authenticate identities using an identity provider, you can
@@ -51,262 +46,112 @@ paths:
         RBAC Authorization</a> in the Kubernetes documentation.</p>
       tags:
         - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
         - Configurations
-        - Associate
+        - Entities
+        - Er
         - Identity
+        - Names
+        - Prov
         - Providers
-        - Configurations
   /clusters/{name}/access-entries:
     GET:
-      summary: ListAccessEntries
+      summary: 'List Access Entries '
       description: <p>Lists the access entries for your cluster.</p>
       tags:
-        - Lists
         - Access
-        - Entries
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
         - Entries
+        - Names
   /clusters/{name}/addons:
     GET:
-      summary: ListAddons
+      summary: 'List Addons '
       description: <p>Lists the installed add-ons.</p>
       tags:
-        - Lists
         - Addons
-        - ARN
-        - Access
-        - Policies
         - Clusters
         - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
   /clusters:
     GET:
-      summary: ListClusters
+      summary: 'List Clusters '
       description: >-
         <p>Lists the Amazon EKS clusters in your Amazon Web Services account in
         the specified Amazon Web Services Region.</p>
       tags:
-        - Lists
         - Clusters
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
   /eks-anywhere-subscriptions:
     GET:
-      summary: ListEksAnywhereSubscriptions
+      summary: 'List Eks Anywhere Subscriptions '
       description: <p>Displays the full description of the subscription.</p>
       tags:
-        - Lists
-        - EKS
         - Anywhere
-        - Subscriptions
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
         - EKS
-        - Anywhere
         - Subscriptions
   /clusters/{name}/fargate-profiles:
     GET:
-      summary: ListFargateProfiles
+      summary: 'List Fargate Profiles '
       description: >-
         <p>Lists the Fargate profiles associated with the specified cluster in
         your Amazon Web Services account in the specified Amazon Web Services
         Region.</p>
       tags:
-        - Lists
-        - Fargate
-        - Profiles
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
         - Fargate
+        - Names
         - Profiles
   /clusters/{name}/node-groups:
     GET:
-      summary: ListNodegroups
+      summary: 'List Nodegroups '
       description: >-
         <p>Lists the managed node groups associated with the specified cluster
         in your Amazon Web Services account in the specified Amazon Web Services
         Region. Self-managed node groups aren't listed.</p>
       tags:
-        - Lists
-        - Node Groups
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
         - Groups
+        - Names
+        - Node Groups
+        - Nodes
   /clusters/{name}/pod-identity-associations:
     GET:
-      summary: ListPodIdentityAssociations
+      summary: 'List Pod Identity Associations '
       description: >-
         <p>List the EKS Pod Identity associations in a cluster. You can filter
         the list by the namespace that the association is in or the service
         account that the association uses.</p>
       tags:
-        - Lists
-        - Pods
-        - Identity
         - Associations
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
+        - Entities
         - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
+        - Lists
+        - Names
         - Pods
-        - Associations
   /clusters/{name}/access-entries/{principalArn}:
     POST:
-      summary: UpdateAccessEntry
+      summary: 'Update Access Entry '
       description: <p>Updates an access entry.</p>
       tags:
-        - Update
-        - Access
-        - Entry
         - ARN
         - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
         - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
+        - Entry
+        - Names
+        - Principals
   /clusters/{name}/addons/{addonName}:
     GET:
-      summary: DescribeAddon
+      summary: 'Describe Addon '
       description: <p>Describes an Amazon EKS add-on.</p>
       tags:
-        - Describe
         - Addon
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
         - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
+        - Clusters
+        - Describe
+        - Names
   /clusters/{name}:
     GET:
-      summary: DescribeCluster
+      summary: 'Describe Cluster '
       description: >-
         <p>Describes an Amazon EKS cluster.</p> <p>The API server endpoint and
         certificate authority data returned by this operation are required for
@@ -318,130 +163,44 @@ paths:
         authority data aren't available until the cluster reaches the
         <code>ACTIVE</code> state.</p> </note>
       tags:
-        - Describe
         - Cluster
-        - ARN
-        - Access
-        - Policies
         - Clusters
+        - Describe
         - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
   /eks-anywhere-subscriptions/{id}:
     POST:
-      summary: UpdateEksAnywhereSubscription
+      summary: 'Update Eks Anywhere Subscription '
       description: >-
         <p>Update an EKS Anywhere Subscription. Only auto renewal and tags can
         be updated after subscription creation.</p>
       tags:
-        - Update
-        - EKS
         - Anywhere
-        - Subscriptions
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
         - EKS
-        - Anywhere
         - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
   /clusters/{name}/fargate-profiles/{fargateProfileName}:
     GET:
-      summary: DescribeFargateProfile
+      summary: 'Describe Fargate Profile '
       description: <p>Describes an Fargate profile.</p>
       tags:
+        - Clusters
         - Describe
         - Fargate
-        - Profiles
-        - ARN
-        - Access
-        - Policies
-        - Clusters
         - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
         - Profiles
   /clusters/{name}/node-groups/{nodegroupName}:
     GET:
-      summary: DescribeNodegroup
+      summary: 'Describe Nodegroup '
       description: <p>Describes a managed node group.</p>
       tags:
-        - Describe
-        - Node Groups
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
+        - Describe
         - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
+        - Names
+        - Node Groups
+        - Nodes
   /clusters/{name}/pod-identity-associations/{associationId}:
     POST:
-      summary: UpdatePodIdentityAssociation
+      summary: 'Update Pod Identity Association '
       description: >-
         <p>Updates a EKS Pod Identity association. Only the IAM role can be
         changed; an association can't be moved between clusters, namespaces, or
@@ -449,37 +208,15 @@ paths:
         you need to delete the association and then create a new association
         with your desired settings.</p>
       tags:
-        - Update
-        - Pods
-        - Identity
-        - Association
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
         - Associations
-        - Identifiers
-        - Profiles
+        - Clusters
+        - Entities
+        - Identity
+        - Names
+        - Pods
   /cluster-registrations/{name}:
     DELETE:
-      summary: DeregisterCluster
+      summary: 'Deregister Cluster '
       description: >-
         <p>Deregisters a connected cluster to remove it from the Amazon EKS
         control plane.</p> <p>A connected cluster is a Kubernetes cluster that
@@ -487,495 +224,141 @@ paths:
         href="https://docs.aws.amazon.com/eks/latest/userguide/eks-connector.html">Amazon
         EKS Connector</a>.</p>
       tags:
+        - Cluster
         - Deregister
-        - Cluster
-        - ARN
-        - Access
-        - Policies
-        - Clusters
         - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
         - Registrations
   /addons/configuration-schemas:
     GET:
-      summary: DescribeAddonConfiguration
+      summary: 'Describe Addon Configuration '
       description: <p>Returns configuration options.</p>
       tags:
-        - Describe
         - Addon
-        - Configurations
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
         - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
         - Configurations
+        - Describe
         - Schemas
   /addons/supported-versions:
     GET:
-      summary: DescribeAddonVersions
+      summary: 'Describe Addon Versions '
       description: >-
         <p>Describes the versions for an add-on.</p> <p>Information such as the
         Kubernetes versions that you can use the add-on with, the
         <code>owner</code>, <code>publisher</code>, and the <code>type</code> of
         the add-on are returned.</p>
       tags:
-        - Describe
         - Addon
-        - Versions
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
         - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
+        - Describe
         - Supported
         - Versions
   /clusters/{name}/identity-provider-configs/describe:
     POST:
-      summary: DescribeIdentityProviderConfig
+      summary: 'Describe Identity Provider Config '
       description: <p>Describes an identity provider configuration.</p>
       tags:
-        - Describe
-        - Identity
-        - Providers
-        - Configurations
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
         - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
         - Describe
+        - Entities
+        - Identity
+        - Names
+        - Prov
+        - Providers
   /clusters/{name}/insights/{id}:
     GET:
-      summary: DescribeInsight
+      summary: 'Describe Insight '
       description: <p>Returns details about an insight that you specify using its ID.</p>
       tags:
+        - Clusters
         - Describe
         - Insight
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
         - Insights
+        - Names
   /clusters/{name}/updates/{updateId}:
     GET:
-      summary: DescribeUpdate
+      summary: 'Describe Update '
       description: >-
         <p>Describes an update to an Amazon EKS resource.</p> <p>When the status
         of the update is <code>Succeeded</code>, the update is complete. If an
         update fails, the status is <code>Failed</code>, and an error detail
         explains the reason for the failure.</p>
       tags:
-        - Describe
-        - Update
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
         - Describe
-        - Insights
+        - Names
   /clusters/{name}/access-entries/{principalArn}/access-policies/{policyArn}:
     DELETE:
-      summary: DisassociateAccessPolicy
+      summary: 'Disassociate Access Policy '
       description: <p>Disassociates an access policy from an access entry.</p>
       tags:
-        - Disassociate
-        - Access
-        - Policies
         - ARN
         - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
+        - Disassociate
         - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
+        - Names
         - Policies
+        - Principals
   /clusters/{name}/identity-provider-configs/disassociate:
     POST:
-      summary: DisassociateIdentityProviderConfig
+      summary: 'Disassociate Identity Provider Config '
       description: >-
         <p>Disassociates an identity provider configuration from a cluster.</p>
         <p>If you disassociate an identity provider from your cluster, users
         included in the provider can no longer access the cluster. However, you
         can still access the cluster with IAM principals.</p>
       tags:
-        - Disassociate
-        - Identity
-        - Providers
-        - Configurations
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
         - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
         - Disassociate
+        - Entities
+        - Er
+        - Identity
+        - Names
+        - Prov
+        - Providers
   /access-policies:
     GET:
-      summary: ListAccessPolicies
+      summary: 'List Access Policies '
       description: <p>Lists the available access policies. </p>
       tags:
-        - Lists
         - Access
         - Policies
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
   /clusters/{name}/identity-provider-configs:
     GET:
-      summary: ListIdentityProviderConfigs
+      summary: 'List Identity Provider Configs '
       description: <p>Lists the identity provider configurations for your cluster.</p>
       tags:
-        - Lists
-        - Identity
-        - Providers
-        - Configurations
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
         - Configurations
-        - Associate
+        - Entities
         - Identity
+        - Names
         - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
   /clusters/{name}/insights:
     POST:
-      summary: ListInsights
+      summary: 'List Insights '
       description: >-
         <p>Returns a list of all insights checked for against the specified
         cluster. You can filter which insights are returned by category,
         associated Kubernetes version, and status.</p>
       tags:
-        - Lists
-        - Insights
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
         - Insights
-        - Policies
-        - Disassociate
+        - Names
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Deletes specified tags from an Amazon EKS resource.</p>
       tags:
-        - Untag
-        - Resources
         - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
+        - Resources
+        - Tags
+        - Untag
   /clusters/{name}/updates:
     POST:
-      summary: UpdateClusterVersion
+      summary: 'Update Cluster Version '
       description: >-
         <p>Updates an Amazon EKS cluster to the specified Kubernetes version.
         Your cluster continues to function during the update. The response
@@ -991,47 +374,13 @@ paths:
         the cluster’s Kubernetes version in order to update the cluster to a new
         Kubernetes version.</p>
       tags:
-        - Update
         - Cluster
-        - Versions
-        - ARN
-        - Access
-        - Policies
         - Clusters
         - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
         - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
-        - Updates
   /cluster-registrations:
     POST:
-      summary: RegisterCluster
+      summary: 'Register Cluster '
       description: >-
         <p>Connects a Kubernetes cluster to the Amazon EKS control plane. </p>
         <p>Any Kubernetes cluster can be connected to the Amazon EKS control
@@ -1048,89 +397,21 @@ paths:
         longer be visible and must be deregistered using
         <code>DeregisterCluster</code>.</p>
       tags:
+        - Cluster
         - Register
-        - Cluster
-        - ARN
-        - Access
-        - Policies
-        - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
         - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
-        - Updates
   /clusters/{name}/addons/{addonName}/update:
     POST:
-      summary: UpdateAddon
+      summary: 'Update Addon '
       description: <p>Updates an Amazon EKS add-on.</p>
       tags:
-        - Update
         - Addon
-        - ARN
-        - Access
-        - Policies
+        - Addons
         - Clusters
         - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
-        - Updates
-        - Update
   /clusters/{name}/update-config:
     POST:
-      summary: UpdateClusterConfig
+      summary: 'Update Cluster Config '
       description: >-
         <p>Updates an Amazon EKS cluster configuration. Your cluster continues
         to function during the update. The response output includes an update ID
@@ -1165,48 +446,12 @@ paths:
         (either <code>Failed</code> or <code>Successful</code>), the cluster
         status moves to <code>Active</code>.</p>
       tags:
-        - Update
-        - Cluster
-        - Configurations
-        - ARN
-        - Access
-        - Policies
         - Clusters
+        - Configurations
         - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
-        - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
-        - Updates
-        - Update
   /clusters/{name}/node-groups/{nodegroupName}/update-config:
     POST:
-      summary: UpdateNodegroupConfig
+      summary: 'Update Nodegroup Config '
       description: >-
         <p>Updates an Amazon EKS managed node group configuration. Your node
         group continues to function during the update. The response output
@@ -1215,48 +460,15 @@ paths:
         can update the Kubernetes labels for a node group or the scaling
         configuration.</p>
       tags:
-        - Update
-        - Node Groups
-        - Configurations
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
         - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
         - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
-        - Updates
-        - Update
+        - Names
+        - Node Groups
+        - Nodes
   /clusters/{name}/node-groups/{nodegroupName}/update-version:
     POST:
-      summary: UpdateNodegroupVersion
+      summary: 'Update Nodegroup Version '
       description: >-
         <p>Updates the Kubernetes version or AMI version of an Amazon EKS
         managed node group.</p> <p>You can update a node group using a launch
@@ -1284,43 +496,9 @@ paths:
         can <code>force</code> the update if Amazon EKS is unable to drain the
         nodes as a result of a <code>Pod</code> disruption budget 
       tags:
-        - Update
-        - Node Groups
-        - Versions
-        - ARN
-        - Access
-        - Policies
         - Clusters
-        - Names
-        - Encryption
-        - Configurations
-        - Associate
-        - Identity
-        - Providers
-        - Configurations
-        - Entries
-        - Addons
-        - EKS
-        - Anywhere
-        - Subscriptions
-        - Fargate
-        - Profiles
-        - Nodes
         - Groups
-        - Pods
-        - Associations
-        - Identifiers
-        - Profiles
-        - Cluster
-        - Registrations
-        - Configurations
-        - Schemas
-        - Supported
-        - Versions
-        - Describe
-        - Insights
-        - Policies
-        - Disassociate
-        - Updates
-        - Update
+        - Names
+        - Node Groups
+        - Nodes
         - Versions
