@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateWorkspaceImagePermission
+      summary: 'Update Workspace Image Permission '
       description: >-
         <p>Shares or unshares an image with one account in the same Amazon Web
         Services Region by specifying whether that account has permission to
@@ -25,7 +25,6 @@ paths:
         across accounts in Amazon Web Services GovCloud (US), contact Amazon Web
         Services Support.</p> </li> </u
       tags:
-        - Update
-        - Workspaces
         - Images
         - Permission
+        - Workspaces
