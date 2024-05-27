@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdatePolicy
+      summary: 'Update Policy '
       description: >-
         <p>Updates an existing policy with a new name, description, or content.
         If you don't supply any parameter, that value remains unchanged. You
@@ -12,5 +12,4 @@ paths:
         from the organization's management account or by a member account that
         is a delegated administrator for an Amazon Web Services se
       tags:
-        - Update
-        - null
+        - Policies
