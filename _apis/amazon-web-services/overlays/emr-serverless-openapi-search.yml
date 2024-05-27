@@ -4,45 +4,30 @@ info:
 paths:
   /applications/{applicationId}/jobruns/{jobRunId}:
     GET:
-      summary: GetJobRun
+      summary: 'Get Job Run '
       description: <p>Displays detailed information about a job run.</p>
       tags:
-        - Get
-        - Jobs
-        - Runs
-        - Identifiers
+        - Applications
         - Job RUns
         - Jobs
         - Runs
   /applications:
     GET:
-      summary: ListApplications
+      summary: 'List Applications '
       description: <p>Lists applications based on a set of parameters.</p>
       tags:
-        - Lists
-        - Applications
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
         - Applications
   /applications/{applicationId}:
     PATCH:
-      summary: UpdateApplication
+      summary: 'Update Application '
       description: >-
         <p>Updates a specified application. An application has to be in a
         stopped or created state in order to be updated.</p>
       tags:
-        - Update
-        - Applications
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
         - Applications
   /applications/{applicationId}/jobruns/{jobRunId}/dashboard:
     GET:
-      summary: GetDashboardForJobRun
+      summary: 'Get Dashboard For Job Run '
       description: >-
         <p>Creates and returns a URL that you can use to access the application
         UIs for a job run.</p> <p>For jobs in a running state, the application
@@ -53,78 +38,44 @@ paths:
         the application UI after that hour elapses, you must invoke the API
         again to generate a new URL.</p> </note>
       tags:
-        - Get
+        - Applications
         - Dashboard
-        - For
-        - Jobs
-        - Runs
-        - Identifiers
         - Job RUns
         - Jobs
         - Runs
-        - Applications
-        - Dashboard
   /applications/{applicationId}/jobruns:
     POST:
-      summary: StartJobRun
+      summary: 'Start Job Run  '
       description: <p>Starts a job run.</p>
       tags:
-        - Start
-        - Jobs
-        - Runs
-        - Identifiers
+        - Applications
         - Job RUns
         - Jobs
         - Runs
-        - Applications
-        - Dashboard
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from resources.</p>
       tags:
-        - Untag
-        - Resources
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Applications
-        - Dashboard
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /applications/{applicationId}/start:
     POST:
-      summary: StartApplication
+      summary: 'Start Application '
       description: >-
         <p>Starts a specified application and initializes initial capacity if
         configured.</p>
       tags:
-        - Start
         - Applications
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Applications
-        - Dashboard
-        - ARN
-        - Start
   /applications/{applicationId}/stop:
     POST:
-      summary: StopApplication
+      summary: 'Stop Application '
       description: >-
         <p>Stops a specified application and releases initial capacity if
         configured. All scheduled and running jobs must be completed or
         cancelled before stopping an applic
       tags:
+        - Applications
         - Stop
-        - Applications
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Applications
-        - Dashboard
-        - ARN
-        - Start
-        - null
