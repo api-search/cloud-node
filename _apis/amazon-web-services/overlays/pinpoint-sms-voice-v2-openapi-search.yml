@@ -4,12 +4,12 @@ info:
 paths:
   /:
     POST:
-      summary: VerifyDestinationNumber
+      summary: 'Verify Destination Number '
       description: >-
         <p>Use the verification code that was received by the verified
         destination phone number to opt-in the verified destination phone number
         to receive more mes
       tags:
-        - Verify
         - Destinations
-        - Numb
+        - Numbers
+        - Verify
