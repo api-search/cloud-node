@@ -4,97 +4,66 @@ info:
 paths:
   /attachments/{attachmentId}/accept:
     POST:
-      summary: AcceptAttachment
+      summary: 'Accept Attachment '
       description: >-
         <p>Accepts a core network attachment request. </p> <p>Once the
         attachment request is accepted by a core network owner, the attachment
         is created and connected to a core network.</p>
       tags:
         - Accept
-        - Attachment
-        - Identifiers
-        - Accept
+        - Attachments
   /global-networks/{globalNetworkId}/connect-peer-associations:
     GET:
-      summary: GetConnectPeerAssociations
+      summary: 'Get Connect Peer Associations '
       description: >-
         <p>Returns information about a core network Connect peer
         associations.</p>
       tags:
-        - Get
-        - Connect
-        - Peer
         - Associations
-        - Identifiers
-        - Accept
+        - Connect
+        - Global
         - Networks
-        - Connect
         - Peer
-        - Associations
   /global-networks/{globalNetworkId}/customer-gateway-associations:
     GET:
-      summary: GetCustomerGatewayAssociations
+      summary: 'Get Customer Gateway Associations '
       description: >-
         <p>Gets the association information for customer gateways that are
         associated with devices and links in your global network.</p>
       tags:
-        - Get
-        - Customers
-        - Gateway
         - Associations
-        - Identifiers
-        - Accept
+        - Customers
+        - Gateways
+        - Global
         - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
   /global-networks/{globalNetworkId}/link-associations:
     GET:
-      summary: GetLinkAssociations
+      summary: 'Get Link Associations '
       description: >-
         <p>Gets the link associations for a device or a link. Either the device
         ID or the link ID must be specified.</p>
       tags:
-        - Get
-        - Link
         - Associations
-        - Identifiers
-        - Accept
+        - Global
+        - Link
         - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
   /global-networks/{globalNetworkId}/transit-gateway-connect-peer-associations:
     GET:
-      summary: GetTransitGatewayConnectPeerAssociations
+      summary: 'Get Transit Gateway Connect Peer Associations '
       description: >-
         <p>Gets information about one or more of your transit gateway Connect
         peer associations in a global network.</p>
       tags:
-        - Get
-        - Transit
-        - Gateway
-        - Connect
-        - Peer
         - Associations
-        - Identifiers
-        - Accept
+        - Connect
+        - Gateways
+        - Global
         - Networks
-        - Connect
         - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
         - Transit
   /connect-attachments:
     POST:
-      summary: CreateConnectAttachment
+      summary: 'Create Connect Attachment '
       description: >-
         <p>Creates a core network Connect attachment from a specified core
         network attachment. </p> <p>A core network Connect attachment is a
@@ -103,113 +72,45 @@ paths:
         attachment uses an existing VPC attachment as the underlying transport
         mechanism.</p>
       tags:
-        - Create
-        - Connect
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
+        - Connect
   /connect-peers:
     GET:
-      summary: ListConnectPeers
+      summary: 'List Connect Peers '
       description: <p>Returns a list of core network Connect peers.</p>
       tags:
-        - Lists
         - Connect
-        - Peers
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
         - Peers
   /global-networks/{globalNetworkId}/connections:
     GET:
-      summary: GetConnections
+      summary: 'Get Connections '
       description: >-
         <p>Gets information about one or more of your connections in a global
         network.</p>
       tags:
-        - Get
         - Connections
-        - Identifiers
-        - Accept
+        - Global
         - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
   /core-networks:
     GET:
-      summary: ListCoreNetworks
+      summary: 'List Core Networks '
       description: <p>Returns a list of owned and shared core networks.</p>
       tags:
-        - Lists
-        - Core
-        - Networks
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
         - Core
         - Networks
   /global-networks/{globalNetworkId}/devices:
     GET:
-      summary: GetDevices
+      summary: 'Get Devices '
       description: >-
         <p>Gets information about one or more of your devices in a global
         network.</p>
       tags:
-        - Get
         - Devices
-        - Identifiers
-        - Accept
+        - Global
         - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
   /global-networks:
     GET:
-      summary: DescribeGlobalNetworks
+      summary: 'Describe Global Networks '
       description: >-
         <p>Describes one or more global networks. By default, all global
         networks are described. To describe the objects in your global network,
@@ -220,1466 +121,351 @@ paths:
         - Describe
         - Global
         - Networks
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
   /global-networks/{globalNetworkId}/links:
     GET:
-      summary: GetLinks
+      summary: 'Get Links '
       description: >-
         <p>Gets information about one or more links in a specified global
         network.</p> <p>If you specify the site ID, you cannot specify the type
         or provider in the same request. You can specify the type and provider
         in the same request.</p>
       tags:
-        - Get
-        - Links
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
         - Links
+        - Networks
   /global-networks/{globalNetworkId}/sites:
     GET:
-      summary: GetSites
+      summary: 'Get Sites '
       description: >-
         <p>Gets information about one or more of your sites in a global
         network.</p>
       tags:
-        - Get
-        - Sites
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
+        - Networks
         - Sites
   /site-to-site-vpn-attachments:
     POST:
-      summary: CreateSiteToSiteVpnAttachment
+      summary: 'Create Site To Site Vpn Attachment '
       description: >-
         <p>Creates an Amazon Web Services site-to-site VPN attachment on an edge
         location of a core network.</p>
       tags:
-        - Create
-        - Sites
-        - To
-        - VPN
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
         - Sites
-        - Sites
-        - To
         - VPN
   /transit-gateway-peerings:
     POST:
-      summary: CreateTransitGatewayPeering
+      summary: 'Create Transit Gateway Peering '
       description: <p>Creates a transit gateway peering connection.</p>
       tags:
-        - Create
-        - Transit
-        - Gateway
+        - Gateways
         - Peerings
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
         - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
   /transit-gateway-route-table-attachments:
     POST:
-      summary: CreateTransitGatewayRouteTableAttachment
+      summary: 'Create Transit Gateway Route Table Attachment '
       description: <p>Creates a transit gateway route table attachment.</p>
       tags:
-        - Create
-        - Transit
-        - Gateway
-        - Routes
-        - Tables
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
+        - Gateways
         - Routes
         - Tables
+        - Transit
   /vpc-attachments:
     POST:
-      summary: CreateVpcAttachment
+      summary: 'Create Vpc Attachment '
       description: <p>Creates a VPC attachment on an edge location of a core network.</p>
       tags:
-        - Create
-        - VPC
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
         - VPC
   /attachments/{attachmentId}:
     DELETE:
-      summary: DeleteAttachment
+      summary: 'Delete Attachment '
       description: <p>Deletes an attachment. Supports all attachment types.</p>
       tags:
-        - Delete
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
   /connect-peers/{connectPeerId}:
     GET:
-      summary: GetConnectPeer
+      summary: 'Get Connect Peer '
       description: <p>Returns information about a core network Connect peer.</p>
       tags:
-        - Get
         - Connect
         - Peer
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
         - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
   /global-networks/{globalNetworkId}/connections/{connectionId}:
     PATCH:
-      summary: UpdateConnection
+      summary: 'Update Connection '
       description: >-
         <p>Updates the information for an existing connection. To remove
         information for any of the parameters, specify an empty string.</p>
       tags:
-        - Update
         - Connections
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
+        - Networks
   /core-networks/{coreNetworkId}:
     PATCH:
-      summary: UpdateCoreNetwork
+      summary: 'Update Core Network '
       description: <p>Updates the description of a core network.</p>
       tags:
-        - Update
         - Core
         - Networks
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
   /core-networks/{coreNetworkId}/core-network-policy-versions/{policyVersionId}:
     DELETE:
-      summary: DeleteCoreNetworkPolicyVersion
+      summary: 'Delete Core Network Policy Version '
       description: >-
         <p>Deletes a policy version from a core network. You can't delete the
         current LIVE policy.</p>
       tags:
-        - Delete
         - Core
         - Networks
         - Policies
-        - Versions
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
         - Versions
   /global-networks/{globalNetworkId}/devices/{deviceId}:
     PATCH:
-      summary: UpdateDevice
+      summary: 'Update Device '
       description: >-
         <p>Updates the details for an existing device. To remove information for
         any of the parameters, specify an empty string.</p>
       tags:
-        - Update
         - Device
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
         - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
+        - Networks
   /global-networks/{globalNetworkId}:
     PATCH:
-      summary: UpdateGlobalNetwork
+      summary: 'Update Global Network '
       description: >-
         <p>Updates an existing global network. To remove information for any of
         the parameters, specify an empty string.</p>
       tags:
-        - Update
         - Global
         - Networks
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
   /global-networks/{globalNetworkId}/links/{linkId}:
     PATCH:
-      summary: UpdateLink
+      summary: 'Update Link '
       description: >-
         <p>Updates the details for an existing link. To remove information for
         any of the parameters, specify an empty string.</p>
       tags:
-        - Update
-        - Link
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
+        - Link
         - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
+        - Networks
   /peerings/{peeringId}:
     DELETE:
-      summary: DeletePeering
+      summary: 'Delete Peering '
       description: <p>Deletes an existing peering connection.</p>
       tags:
-        - Delete
         - Peerings
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
   /resource-policy/{resourceArn}:
     POST:
-      summary: PutResourcePolicy
+      summary: 'Put Resource Policy '
       description: <p>Creates or updates a resource policy.</p>
       tags:
-        - Put
-        - Resources
-        - Policies
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
         - ARN
+        - Policies
+        - Resources
   /global-networks/{globalNetworkId}/sites/{siteId}:
     PATCH:
-      summary: UpdateSite
+      summary: 'Update Site '
       description: >-
         <p>Updates the information for an existing site. To remove information
         for any of the parameters, specify an empty string.</p>
       tags:
-        - Update
-        - Sites
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
+        - Networks
         - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
   /global-networks/{globalNetworkId}/transit-gateway-registrations/{transitGatewayArn}:
     DELETE:
-      summary: DeregisterTransitGateway
+      summary: 'Deregister Transit Gateway '
       description: >-
         <p>Deregisters a transit gateway from your global network. This action
         does not delete your transit gateway, or modify any of its attachments.
         This action removes any customer gateway associations.</p>
       tags:
-        - Deregister
-        - Transit
-        - Gateway
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
         - ARN
+        - Deregister
+        - Gateways
+        - Global
+        - Networks
         - Registrations
+        - Transit
   /global-networks/{globalNetworkId}/connect-peer-associations/{connectPeerId}:
     DELETE:
-      summary: DisassociateConnectPeer
+      summary: 'Disassociate Connect Peer '
       description: >-
         <p>Disassociates a core network Connect peer from a device and a link.
         </p>
       tags:
-        - Disassociate
-        - Connect
-        - Peer
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
         - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
+        - Connect
+        - Disassociate
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
+        - Networks
+        - Peer
   /global-networks/{globalNetworkId}/customer-gateway-associations/{customerGatewayArn}:
     DELETE:
-      summary: DisassociateCustomerGateway
+      summary: 'Disassociate Customer Gateway '
       description: <p>Disassociates a customer gateway from a device and a link.</p>
       tags:
-        - Disassociate
-        - Customers
-        - Gateway
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
+        - ARN
         - Associations
         - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
+        - Disassociate
+        - Gateways
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
+        - Networks
   /global-networks/{globalNetworkId}/transit-gateway-connect-peer-associations/{transitGatewayConnectPeerArn}:
     DELETE:
-      summary: DisassociateTransitGatewayConnectPeer
+      summary: 'Disassociate Transit Gateway Connect Peer '
       description: >-
         <p>Disassociates a transit gateway Connect peer from a device and
         link.</p>
       tags:
-        - Disassociate
-        - Transit
-        - Gateway
-        - Connect
-        - Peer
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
         - ARN
-        - Registrations
+        - Associations
+        - Connect
+        - Disassociate
+        - Gateways
+        - Global
+        - Networks
+        - Peer
+        - Transit
   /core-networks/{coreNetworkId}/core-network-change-sets/{policyVersionId}/execute:
     POST:
-      summary: ExecuteCoreNetworkChangeSet
+      summary: 'Execute Core Network Change Set '
       description: >-
         <p>Executes a change set on your core network. Deploys changes globally
         based on the policy submitted..</p>
       tags:
-        - Execute
-        - Core
-        - Networks
         - Change
-        - Sets
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
         - Core
+        - Execute
         - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
         - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
         - Sets
-        - Execute
+        - Versions
   /connect-attachments/{attachmentId}:
     GET:
-      summary: GetConnectAttachment
+      summary: 'Get Connect Attachment '
       description: <p>Returns information about a core network Connect attachment.</p>
       tags:
-        - Get
-        - Connect
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
+        - Connect
   /core-networks/{coreNetworkId}/core-network-change-events/{policyVersionId}:
     GET:
-      summary: GetCoreNetworkChangeEvents
+      summary: 'Get Core Network Change Events '
       description: <p>Returns information about a core network change event.</p>
       tags:
-        - Get
-        - Core
-        - Networks
         - Change
-        - Events
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
         - Core
+        - Events
         - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
         - Policies
         - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
   /core-networks/{coreNetworkId}/core-network-change-sets/{policyVersionId}:
     GET:
-      summary: GetCoreNetworkChangeSet
+      summary: 'Get Core Network Change Set '
       description: >-
         <p>Returns a change set between the LIVE core network policy and a
         submitted policy.</p>
       tags:
-        - Get
-        - Core
-        - Networks
         - Change
-        - Sets
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
         - Core
         - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
         - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
         - Sets
-        - Execute
-        - Events
+        - Versions
   /core-networks/{coreNetworkId}/core-network-policy:
     POST:
-      summary: PutCoreNetworkPolicy
+      summary: 'Put Core Network Policy '
       description: >-
         <p>Creates a new, immutable version of a core network policy. A
         subsequent change set is created showing the differences between the
         LIVE policy and the submitted policy.</p>
       tags:
-        - Put
         - Core
         - Networks
         - Policies
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
   /global-networks/{globalNetworkId}/network-resource-count:
     GET:
-      summary: GetNetworkResourceCounts
+      summary: 'Get Network Resource Counts '
       description: >-
         <p>Gets the count of network resources, by resource type, for the
         specified global network.</p>
       tags:
-        - Get
-        - Networks
-        - Resources
-        - Counts
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
         - Count
+        - Counts
+        - Global
+        - Networks
+        - Resources
   /global-networks/{globalNetworkId}/network-resource-relationships:
     GET:
-      summary: GetNetworkResourceRelationships
+      summary: 'Get Network Resource Relationships '
       description: >-
         <p>Gets the network resource relationships for the specified global
         network.</p>
       tags:
-        - Get
-        - Networks
-        - Resources
-        - Relationships
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
+        - Networks
         - Relationships
+        - Resources
   /global-networks/{globalNetworkId}/network-resources:
     GET:
-      summary: GetNetworkResources
+      summary: 'Get Network Resources '
       description: >-
         <p>Describes the network resources for the specified global network.</p>
         <p>The results include information from the corresponding Describe call
         for the resource, minus any sensitive information such as pre-shared
         keys.</p>
       tags:
-        - Get
-        - Networks
-        - Resources
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
+        - Networks
         - Resources
   /global-networks/{globalNetworkId}/network-routes:
     POST:
-      summary: GetNetworkRoutes
+      summary: 'Get Network Routes '
       description: <p>Gets the network routes of the specified global network.</p>
       tags:
-        - Get
-        - Networks
-        - Routes
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
+        - Networks
         - Routes
   /global-networks/{globalNetworkId}/network-telemetry:
     GET:
-      summary: GetNetworkTelemetry
+      summary: 'Get Network Telemetry '
       description: <p>Gets the network telemetry of the specified global network.</p>
       tags:
-        - Get
-        - Networks
-        - Telemetry
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
+        - Networks
         - Telemetry
   /global-networks/{globalNetworkId}/route-analyses/{routeAnalysisId}:
     GET:
-      summary: GetRouteAnalysis
+      summary: 'Get Route Analysis '
       description: <p>Gets information about the specified route analysis.</p>
       tags:
-        - Get
-        - Routes
         - Analysis
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
+        - Networks
         - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
   /site-to-site-vpn-attachments/{attachmentId}:
     GET:
-      summary: GetSiteToSiteVpnAttachment
+      summary: 'Get Site To Site Vpn Attachment '
       description: <p>Returns information about a site-to-site VPN attachment.</p>
       tags:
-        - Get
-        - Sites
-        - To
-        - VPN
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
         - Sites
-        - Sites
-        - To
         - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
   /transit-gateway-peerings/{peeringId}:
     GET:
-      summary: GetTransitGatewayPeering
+      summary: 'Get Transit Gateway Peering '
       description: <p>Returns information about a transit gateway peer.</p>
       tags:
-        - Get
-        - Transit
-        - Gateway
+        - Gateways
         - Peerings
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
         - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
   /global-networks/{globalNetworkId}/transit-gateway-registrations:
     POST:
-      summary: RegisterTransitGateway
+      summary: 'Register Transit Gateway '
       description: >-
         <p>Registers a transit gateway in your global network. Not all Regions
         support transit gateways for global networks. For a list of the
@@ -1691,681 +477,112 @@ paths:
         Amazon Web Services account that owns the global network. You cannot
         register a transit gateway in more than one global network.</p>
       tags:
-        - Register
-        - Transit
-        - Gateway
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
+        - Gateways
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
+        - Networks
+        - Register
         - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
+        - Transit
   /transit-gateway-route-table-attachments/{attachmentId}:
     GET:
-      summary: GetTransitGatewayRouteTableAttachment
+      summary: 'Get Transit Gateway Route Table Attachment '
       description: >-
         <p>Returns information about a transit gateway route table
         attachment.</p>
       tags:
-        - Get
-        - Transit
-        - Gateway
-        - Routes
-        - Tables
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
+        - Gateways
         - Routes
         - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
+        - Transit
   /vpc-attachments/{attachmentId}:
     PATCH:
-      summary: UpdateVpcAttachment
+      summary: 'Update Vpc Attachment '
       description: <p>Updates a VPC attachment.</p>
       tags:
-        - Update
-        - VPC
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
         - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
   /attachments:
     GET:
-      summary: ListAttachments
+      summary: 'List Attachments '
       description: <p>Returns a list of core network attachments.</p>
       tags:
-        - Lists
         - Attachments
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
   /core-networks/{coreNetworkId}/core-network-policy-versions:
     GET:
-      summary: ListCoreNetworkPolicyVersions
+      summary: 'List Core Network Policy Versions '
       description: <p>Returns a list of core network policy versions.</p>
       tags:
-        - Lists
         - Core
         - Networks
         - Policies
         - Versions
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
   /organizations/service-access:
     POST:
-      summary: StartOrganizationServiceAccessUpdate
+      summary: 'Start Organization Service Access Update '
       description: >-
         <p>Enables the Network Manager service for an Amazon Web Services
         Organization. This can only be called by a management account within the
         organization. </p>
       tags:
-        - Start
+        - Access
         - Organizations
         - Services
-        - Access
-        - Update
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
-        - Organizations
-        - Services
-        - Access
   /peerings:
     GET:
-      summary: ListPeerings
+      summary: 'List Peerings '
       description: <p>Lists the peerings for a core network.</p>
       tags:
-        - Lists
         - Peerings
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
-        - Organizations
-        - Services
-        - Access
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from a specified resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
         - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
         - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
-        - Organizations
-        - Services
-        - Access
+        - Tags
+        - Untag
   /attachments/{attachmentId}/reject:
     POST:
-      summary: RejectAttachment
+      summary: 'Reject Attachment '
       description: <p>Rejects a core network attachment request.</p>
       tags:
-        - Reject
-        - Attachment
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
         - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
-        - Organizations
-        - Services
-        - Access
         - Reject
   /core-networks/{coreNetworkId}/core-network-policy-versions/{policyVersionId}/restore:
     POST:
-      summary: RestoreCoreNetworkPolicyVersion
+      summary: 'Restore Core Network Policy Version '
       description: >-
         <p>Restores a previous policy version as a new, immutable version of a
         core network policy. A subsequent change set is created showing the
         differences between the LIVE policy and restored policy.</p>
       tags:
-        - Restore
         - Core
         - Networks
         - Policies
-        - Versions
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
-        - Organizations
-        - Services
-        - Access
-        - Reject
         - Restore
+        - Versions
   /global-networks/{globalNetworkId}/route-analyses:
     POST:
-      summary: StartRouteAnalysis
+      summary: 'Start Route Analysis '
       description: >-
         <p>Starts analyzing the routing path between the specified source and
         destination. For more information, see <a
         href="https://docs.aws.amazon.com/vpc/latest/tgw/route-analyzer.html">Route
         Analyzer</a>.</p>
       tags:
-        - Start
-        - Routes
         - Analysis
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
         - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
+        - Networks
         - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
-        - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
-        - Organizations
-        - Services
-        - Access
-        - Reject
-        - Restore
   /global-networks/{globalNetworkId}/network-resources/{resourceArn}/metadata:
     PATCH:
-      summary: UpdateNetworkResourceMetadata
+      summary: 'Update Network Resource Metadata '
       description: <p>Updates the resource metadata for the specified global ne
       tags:
-        - Update
-        - Networks
-        - Resources
-        - Metadata
-        - Identifiers
-        - Accept
-        - Networks
-        - Connect
-        - Peer
-        - Associations
-        - Customers
-        - Gateway
-        - Link
-        - Transit
-        - Attachments
-        - Peers
-        - Connections
-        - Core
-        - Networks
-        - Devices
-        - Global
-        - Links
-        - Sites
-        - Sites
-        - To
-        - VPN
-        - Peerings
-        - Routes
-        - Tables
-        - VPC
-        - Connections
-        - Policies
-        - Versions
-        - Versions
-        - Device
         - ARN
-        - Registrations
-        - Change
-        - Sets
-        - Execute
-        - Events
-        - Resources
-        - Count
-        - Relationships
-        - Resources
-        - Routes
-        - Telemetry
-        - Analysis
-        - Analysis
-        - Organizations
-        - Services
-        - Access
-        - Reject
-        - Restore
+        - Global
         - Metadata
+        - Networks
+        - Resources
