@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateDatasetGroup
+      summary: 'Update Dataset Group '
       description: >-
         <p>Replaces the datasets in a dataset group with the specified
         datasets.</p> <note> <p>The <code>Status</code> of the dataset group
@@ -13,6 +13,5 @@ paths:
         href="https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeDatasetGroup.html">DescribeDatasetGroup</a>
         operation to get the status.</
       tags:
-        - Update
         - Datasets
-        - null
+        - Groups
