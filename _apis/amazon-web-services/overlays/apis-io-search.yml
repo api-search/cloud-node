@@ -9012,7 +9012,14 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Monitors
+      - Names
+      - Probes
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -9037,7 +9044,46 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/healthomics/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Abort
+      - Multipart
+      - Read
+      - Sequence
+      - Sequence Stores
+      - Sets
+      - Store
+      - Uploads
+      - Share
+      - Batches
+      - Readsets
+      - Annotations
+      - Import
+      - Jobs
+      - Cancel
+      - Runs
+      - Variants
+      - Complete
+      - Names
+      - Versions
+      - Reference Store
+      - References
+      - Groups
+      - Workflows
+      - Activation
+      - Activation Jobs
+      - Export Jobs
+      - Exports
+      - Import Jobs
+      - Metadata
+      - Tasks
+      - Stores
+      - Import JObs
+      - Parts
+      - Shares
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/healthomics/
@@ -9072,7 +9118,17 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/OAM/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Link
+      - Sink
+      - Policies
+      - Attached
+      - Links
+      - Sinks
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://example.com
@@ -9092,7 +9148,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.comhttps://aws.amazon.com/network-firewall/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - TLSInspection
     properties:
       - type: Documentation
         url: https://aws.amazon.com/network-firewall/
@@ -9127,7 +9185,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/opensearch-service/features/serverless/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Endpoints
+      - VPC
     properties:
       - type: Documentation
         url: https://aws.amazon.com/opensearch-service/features/serverless/
@@ -9165,7 +9225,61 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/opensearch-service/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Cc
+      - Connections
+      - Inbound
+      - Open Search
+      - Data
+      - Domains
+      - Names
+      - Sources
+      - Tags
+      - Associate
+      - Packages
+      - Access
+      - Authorize
+      - Endpoints
+      - VPC
+      - Cancel
+      - Change
+      - Configurations
+      - Services
+      - Software
+      - Outbound
+      - Describe
+      - Auto
+      - Tunes
+      - Progress
+      - Health
+      - Nodes
+      - Info
+      - Dry
+      - Runs
+      - Search
+      - Engines
+      - Instances
+      - Limits
+      - Types
+      - Versions
+      - Offerings
+      - Reserved
+      - Dissociate
+      - Compatible
+      - Maintenance
+      - History
+      - Upgrade
+      - Status
+      - Maintenances
+      - Details
+      - Actions
+      - Scheduled
+      - Purchase
+      - Reject
+      - Removal
+      - Removes
+      - Revoke
     properties:
       - type: Documentation
         url: https://aws.amazon.com/opensearch-service/
@@ -9202,7 +9316,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/organizations/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Policies
     properties:
       - type: Documentation
         url: https://aws.amazon.com/organizations/
@@ -9237,7 +9352,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/opsworks/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Attributes
+      - Engines
+      - Servers
     properties:
       - type: Documentation
         url: https://aws.amazon.com/opsworks/
@@ -9261,7 +9379,21 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - '2022'
+      - Osis
+      - Pipelines
+      - Names
+      - Blueprints
+      - Change
+      - Progress
+      - Resources
+      - Tags
+      - Stop
+      - Untag
+      - Ate
+      - Val
+      - Validate
     properties:
       - type: Documentation
         url: >-
@@ -9282,7 +9414,30 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/panorama/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Instances
+      - Devices
+      - Jobs
+      - Nodes
+      - Packages
+      - Templates
+      - Import
+      - Device
+      - Metadata
+      - Patch
+      - Register
+      - Versions
+      - Removes
+      - Describe
+      - Details
+      - Dependencies
+      - Provision
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Signals
     properties:
       - type: Documentation
         url: https://aws.amazon.com/panorama/
@@ -9321,7 +9476,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/payment-cryptography/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alias
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/payment-cryptography/
@@ -9345,7 +9501,24 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Connectors
+      - Directory
+      - Registrations
+      - ARN
+      - Names
+      - Principals
+      - Services
+      - Templates
+      - Access
+      - Controls
+      - Entries
+      - Groups
+      - Entry
+      - Security
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -9369,7 +9542,12 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/personalize/latest/dg/API_Types_Amazon_Personalize_Events.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Actions
+      - Interactions
+      - Events
+      - Items
+      - Users
     properties:
       - type: Documentation
         url: >-
@@ -9391,7 +9569,56 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Attachments
+      - Associations
+      - Connect
+      - Global
+      - Networks
+      - Peer
+      - Customers
+      - Gateways
+      - Link
+      - Transit
+      - Peers
+      - Connections
+      - Core
+      - Devices
+      - Describe
+      - Links
+      - Sites
+      - VPN
+      - Peerings
+      - Routes
+      - Tables
+      - VPC
+      - Policies
+      - Versions
+      - Device
+      - ARN
+      - Resources
+      - Deregister
+      - Registrations
+      - Disassociate
+      - Change
+      - Execute
+      - Sets
+      - Events
+      - Count
+      - Counts
+      - Relationships
+      - Telemetry
+      - Analysis
+      - Register
+      - Access
+      - Organizations
+      - Services
+      - Tags
+      - Untag
+      - Reject
+      - Restore
+      - Metadata
     properties:
       - type: Documentation
         url: >-
@@ -9416,7 +9643,25 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/outposts/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Cancel
+      - Orders
+      - Outposts
+      - Sites
+      - Catalog
+      - Items
+      - Connections
+      - Instances
+      - Types
+      - Addresses
+      - Assets
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Physical
+      - Properties
+      - Rack
     properties:
       - type: Documentation
         url: https://aws.amazon.com/outposts/
@@ -9437,7 +9682,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/personalize/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Recommenders
     properties:
       - type: Documentation
         url: https://aws.amazon.com/personalize/
@@ -9472,7 +9718,45 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - Emails
+      - Sets
+      - Destinations
+      - Events
+      - Names
+      - Dedicated
+      - IP
+      - Pools
+      - Dashboard
+      - Deliverability
+      - Reports
+      - Tests
+      - Entities
+      - Identities
+      - Identity
+      - Accounts
+      - Blacklist
+      - IP Addresses
+      - Options
+      - Campaigns
+      - Domains
+      - Statistics
+      - Subscribed
+      - Resources
+      - Tags
+      - Untag
+      - Attributes
+      - Warmup
+      - Sending
+      - Deliveries
+      - Reputation
+      - Tracking
+      - DKIM
+      - Feedback
+      - Mail
+      - Outbound
+      - Send
     properties:
       - type: Documentation
         url: >-
@@ -9495,7 +9779,10 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Destinations
+      - Numbers
+      - Verify
     properties:
       - type: Documentation
         url: >-
@@ -9520,7 +9807,15 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Names
+      - Pipe
+      - Pipes
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html
@@ -9541,7 +9836,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/proton/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - Sync
+      - Templates
     properties:
       - type: Documentation
         url: https://aws.amazon.com/proton/
@@ -9575,7 +9873,25 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/private5g/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Acknowledge
+      - Orders
+      - Receipts
+      - Activate
+      - Device
+      - Entifiers
+      - Networks
+      - Sites
+      - Access
+      - Configure
+      - Points
+      - Resources
+      - Deactivate
+      - ARN
+      - Tags
+      - Untag
+      - Ping
+      - Plan
     properties:
       - type: Documentation
         url: https://aws.amazon.com/private5g/
@@ -9605,7 +9921,15 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/polly/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Lexicons
+      - Names
+      - Describe
+      - Voices
+      - Speech
+      - Synthesis
+      - Tasks
+      - Synthesize
     properties:
       - type: Documentation
         url: https://aws.amazon.com/polly/
@@ -9638,7 +9962,32 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/connect/q/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Assistants
+      - Associations
+      - Base
+      - Bases
+      - Contents
+      - Knowledge
+      - Responses
+      - Sessions
+      - Content
+      - Import
+      - Jobs
+      - Summaries
+      - Recommendations
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Notify
+      - Received
+      - Feedback
+      - Queries
+      - Templates
+      - URI
+      - Search
+      - Uploads
     properties:
       - type: Documentation
         url: https://aws.amazon.com/connect/q/
@@ -9686,7 +10035,39 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/q/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Batches
+      - Documents
+      - Index
+      - Indices
+      - Chat
+      - Conversations
+      - Sync
+      - Data
+      - Data Source
+      - Sources
+      - Plugins
+      - Users
+      - Experiences
+      - Web
+      - Chat Controls
+      - Configurations
+      - Controls
+      - Messages
+      - Groups
+      - Names
+      - Experience
+      - Jobs
+      - Sync Jobs
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Feedback
+      - Start Sync
+      - Stop
+      - Stopsync
     properties:
       - type: Documentation
         url: https://aws.amazon.com/q/
@@ -9715,7 +10096,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/rds/performance-insights/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/rds/performance-insights/
@@ -9743,7 +10126,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/pricing/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Prices
     properties:
       - type: Documentation
         url: https://aws.amazon.com/pricing/
@@ -9767,7 +10151,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/qldb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Command
+      - Send
     properties:
       - type: Documentation
         url: https://aws.amazon.com/qldb/
@@ -9802,7 +10188,59 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ram/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Accept Resource Share Invitation
+      - Invitation
+      - Resources
+      - Share
+      - Associate
+      - Associate Resource Share
+      - Associate Resource Share Permission
+      - Permission
+      - Permissions
+      - Permission Versions
+      - Versions
+      - Resource Share
+      - Permission Version
+      - Disassociate
+      - Disassociate Resource Share
+      - Disassociate Resource Share Permissions
+      - Enable
+      - Enable Sharing
+      - Organizations
+      - Sharing
+      - Policies
+      - Resource Policies
+      - Associations
+      - Resource Share Associations
+      - Invitations
+      - Resource Share Invitations
+      - Resource Shares
+      - Shares
+      - Pending
+      - Pending Invitation Resources
+      - Permission Associations
+      - Permission Verions
+      - Principals
+      - Replace
+      - Work
+      - Resource Share Permissions
+      - Resource Types
+      - Types
+      - Promote
+      - Promote Permission From Policy
+      - Promote Resource Share From Policy
+      - Reject
+      - Reject Resource Share Invitations
+      - Replace Permission Associations
+      - Default
+      - Set Default Permission Versions
+      - Sets
+      - Tag Resources
+      - Tags
+      - Untag
+      - Updateresourceshare
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ram/
@@ -9827,7 +10265,15 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/rds/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Execute
+      - Statements
+      - Begins
+      - Transactions
+      - Commit
+      - SQL
+      - Rollback
     properties:
       - type: Documentation
         url: https://aws.amazon.com/rds/
@@ -9863,7 +10309,88 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/quicksight/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accounts
+      - Data
+      - Describe
+      - Ingestions
+      - Sets
+      - Customizations
+      - Subscriptions
+      - Analysis
+      - Dashboard
+      - Dashboards
+      - Sources
+      - Folders
+      - Members
+      - Memberships
+      - Types
+      - Groups
+      - Namespaces
+      - Names
+      - Assignment
+      - Assignments
+      - IAM
+      - IAMPolicy
+      - Policies
+      - Refresh
+      - Schedules
+      - Roles
+      - Templates
+      - Alias
+      - Aliases
+      - Theme
+      - Themes
+      - Topics
+      - Connections
+      - VPC
+      - VPCConnections
+      - Properties
+      - Configurations
+      - Entities
+      - Identity
+      - Propagation
+      - Services
+      - Custom
+      - Permission
+      - Datasets
+      - Users
+      - Principals
+      - VPCConnection
+      - Vpcconnection
+      - Settings
+      - Definitions
+      - Permissions
+      - Assets
+      - Bundles
+      - Exports
+      - Jobs
+      - Import
+      - Snapshots
+      - Results
+      - Resolved
+      - IP
+      - Restrictions
+      - Anonymous
+      - Embed
+      - Generate
+      - URL
+      - Registered
+      - Sessions
+      - Versions
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Register
+      - Restore
+      - Search
+      - Linked
+      - Links
+      - Numbers
+      - Published
+      - Public
+      - Sharing
     properties:
       - type: Documentation
         url: https://aws.amazon.com/quicksight/
@@ -9910,7 +10437,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/redshift/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Partners
+      - Status
     properties:
       - type: Documentation
         url: https://aws.amazon.com/redshift/
@@ -9956,7 +10485,14 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/recyclebin/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Rules
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Locks
+      - Unlock
     properties:
       - type: Documentation
         url: >-
@@ -9982,7 +10518,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/redshift/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Tables
     properties:
       - type: Documentation
         url: https://aws.amazon.com/redshift/
@@ -10015,7 +10552,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/rekognition/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Processor
+      - Stream
     properties:
       - type: Documentation
         url: https://aws.amazon.com/rekognition/
@@ -10046,7 +10585,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/redshift/redshift-serverless/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Workgroup
     properties:
       - type: Documentation
         url: https://aws.amazon.com/redshift/redshift-serverless/
@@ -10085,7 +10625,27 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/resourceexplorer/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Associate
+      - Default
+      - View
+      - Batches
+      - Index
+      - Disassociate
+      - Accounts
+      - Configurations
+      - Levels
+      - Services
+      - Indexes
+      - Members
+      - Resources
+      - Supported
+      - Types
+      - ARN
+      - Tags
+      - Untag
+      - Views
+      - Search
     properties:
       - type: Documentation
         url: https://aws.amazon.com/resourceexplorer/
@@ -10118,7 +10678,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -10139,7 +10701,30 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/robomaker/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Worlds
+      - Describe
+      - Jobs
+      - Simulations
+      - Cancel
+      - Deployments
+      - Exports
+      - Generation
+      - Fleets
+      - Robots
+      - Applications
+      - Versions
+      - Templates
+      - Deregister
+      - Body
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Register
+      - Restart
+      - Sync
     properties:
       - type: Documentation
         url: https://aws.amazon.com/robomaker/
@@ -10177,7 +10762,19 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/repost-private/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Spaces
+      - Space
+      - Administrative
+      - Administrator
+      - Register
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Invite
+      - Invites
+      - Send
     properties:
       - type: Documentation
         url: https://aws.amazon.com/repost-private/
@@ -10208,7 +10805,22 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iam/roles-anywhere/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Profiles
+      - Anchors
+      - Trust
+      - Trust Anchors
+      - Anchor
+      - Trustanchor
+      - Disable
+      - Enable
+      - Subjects
+      - Resources
+      - Tags
+      - Notifications
+      - Settings
+      - Reset
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iam/roles-anywhere/
@@ -10240,7 +10852,18 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Groups
+      - Accounts
+      - Settings
+      - Configurations
+      - Queries
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Search
+      - Ungroup
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html
@@ -10263,7 +10886,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Controls
+      - Routing
+      - States
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html
@@ -10284,7 +10910,82 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/route53/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Activate
+      - Hosted
+      - Key Signing
+      - Keys
+      - Names
+      - Signing
+      - Zones
+      - Associate
+      - Associate VPC
+      - Hosted Zones
+      - VPCWith
+      - CIDR
+      - Collections
+      - Locations
+      - Rcollection
+      - Change
+      - Record
+      - Resources
+      - Sets
+      - Tags
+      - Types
+      - Checks
+      - Health
+      - Health Check
+      - Configurations
+      - Logging
+      - Queries
+      - Query Logging Configurations
+      - Delegation
+      - Delegation Sets
+      - Reusable
+      - Policies
+      - Traffic
+      - Traffic Policies
+      - Instances
+      - Traffic Policy Instances
+      - Versions
+      - Authorization
+      - Authorizers VPC Association
+      - VPCAssociation
+      - Deactivate
+      - Comments
+      - Deauthorize VPC Association
+      - DNS Security
+      - DNSSEC
+      - Disable
+      - Disassociate
+      - Disassociate VPC
+      - VPCFrom
+      - Enable
+      - Accountlimit
+      - Accounts
+      - Limits
+      - Checker
+      - Checker IP Ranges
+      - IP
+      - Ranges
+      - Geo
+      - Geolocation
+      - Count
+      - Failure
+      - Last
+      - Last Failure Reasons
+      - Reasons
+      - Status
+      - Hosted Zone Count
+      - Hostedzonelimit
+      - Reusabledelegationsetlimit
+      - Traffic Policy Instance Count
+      - Blocks
+      - Rblocks
+      - VPC
+      - DNSAnswer
+      - Testdnsanswer
+      - Tests
     properties:
       - type: Documentation
         url: https://aws.amazon.com/route53/
@@ -10313,7 +11014,32 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/amazonarc/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Cells
+      - Accounts
+      - Authorization
+      - Cross Account Authorizations
+      - Checks
+      - Readiness
+      - Readiness Checks
+      - Groups
+      - Recovery
+      - Recovery Groups
+      - Resource Sets
+      - Resources
+      - Sets
+      - Cell
+      - Names
+      - Architecture
+      - Recommendations
+      - Cellreadiness
+      - Summaries
+      - Status
+      - Recoverygroupreadiness
+      - Rules
+      - ARN
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/amazonarc/
@@ -10336,7 +11062,37 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/resilience-hub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Draft
+      - Mapping
+      - Resources
+      - Versions
+      - Batches
+      - Recommendations
+      - Status
+      - Components
+      - Templates
+      - Policies
+      - Resiliency
+      - Assessments
+      - Inputs
+      - Sources
+      - Describe
+      - Resolutions
+      - Import
+      - Alarm
+      - Compliance
+      - Drifts
+      - Suggested
+      - ARN
+      - Tags
+      - Untag
+      - Tests
+      - Unsupported
+      - Publish
+      - Removes
+      - Resolve
     properties:
       - type: Documentation
         url: https://aws.amazon.com/resilience-hub/
@@ -10360,7 +11116,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Billing
+      - View
     properties:
       - type: Documentation
         url: >-
@@ -10382,7 +11140,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/route53/resolver/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resolvers
+      - Rules
     properties:
       - type: Documentation
         url: https://aws.amazon.com/route53/resolver/
@@ -10416,7 +11176,15 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/lex/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alias
+      - Bot
+      - Names
+      - Sessions
+      - Users
+      - Content
+      - Posts
+      - Text
     properties:
       - type: Documentation
         url: https://aws.amazon.com/lex/
@@ -10456,7 +11224,22 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Definitions
+      - Metrics
+      - Monitors
+      - Names
+      - Rummetrics
+      - Destinations
+      - Metric Destination
+      - Data
+      - Application Monitors
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Events
     properties:
       - type: Documentation
         url: >-
@@ -10481,7 +11264,26 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/route53/application-recovery-controller/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Clusters
+      - Control Panels
+      - Controls
+      - Panels
+      - Routing
+      - Routing Controls
+      - Rules
+      - Safety
+      - Safety Rules
+      - ARN
+      - Describe
+      - Policies
+      - Resources
+      - Associated
+      - Checks
+      - Route53Health
+      - Route53health
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/route53/application-recovery-controller/
@@ -10502,7 +11304,59 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_AWS_S3_Control.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Access Grants Instances
+      - Center
+      - Dissociate
+      - Entitycenter
+      - Grants
+      - Identity
+      - Grants""
+      - Instances
+      - Locations
+      - Access Point
+      - Names
+      - Points
+      - Lambda
+      - Objects
+      - Bucket
+      - Jobs
+      - Async
+      - Multi
+      - Regions
+      - Groups
+      - Lens
+      - Storage
+      - Storage Lens Groups
+      - Policies
+      - Resource Policies
+      - Resources
+      - Configurations
+      - Lifecycle
+      - Lifecycle Configuration
+      - Replication
+      - Tagging
+      - Blocks
+      - Public
+      - Storage Lens
+      - Describe
+      - Operation
+      - Tokens
+      - Prefix
+      - Status
+      - Versioning
+      - Data
+      - Data Access
+      - Policy Status
+      - Routes
+      - Submit
+      - Buckets
+      - Regional
+      - ARN
+      - Tags
+      - Untag
+      - Priorities
     properties:
       - type: Documentation
         url: >-
@@ -10524,7 +11378,12 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/augmented-ai/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Describe
+      - Human
+      - Loops
+      - Names
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/augmented-ai/
@@ -10557,7 +11416,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/sagemaker/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Workteam
     properties:
       - type: Documentation
         url: https://aws.amazon.com/sagemaker/
@@ -10597,7 +11457,62 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/s3/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ACL
+      - Accelerate
+      - Access
+      - Analytics
+      - Attributes
+      - Blocks
+      - Bucket
+      - Buckets
+      - CORS
+      - Configurations
+      - Content
+      - Controls
+      - Copy
+      - Directory
+      - Encryption
+      - Hold
+      - Intelligent
+      - Inventory
+      - Key&select
+      - Key+?acl
+      - Key+?attributes
+      - Key+?legal
+      - Key+?restore
+      - Key+?retention
+      - Key+?tagging
+      - Key+?torrent
+      - Keys
+      - Legal
+      - Lifecycle
+      - Locations
+      - Locks
+      - Logging
+      - Metrics
+      - Multipart
+      - Notifications
+      - Objects
+      - Ownership
+      - Payments
+      - Policies
+      - Public
+      - Replication
+      - Responses
+      - Restore
+      - Retention
+      - Sessions
+      - Status
+      - Tagging
+      - Tiering
+      - Torrent
+      - Types
+      - Uploads
+      - Versioning
+      - Versions
+      - Websites
+      - Write
     properties:
       - type: Documentation
         url: https://aws.amazon.com/s3/
@@ -10638,7 +11553,12 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Deployments
+      - Device
+      - Registrations
+      - Heart Beats
+      - Send
     properties:
       - type: Documentation
         url: >-
@@ -10668,7 +11588,12 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/sagemaker/feature-store/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Record
+      - Feature
+      - Groups
+      - Names
     properties:
       - type: Documentation
         url: https://aws.amazon.com/sagemaker/feature-store/
@@ -10694,7 +11619,11 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/s3/outposts/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Endpoints
+      - S3outposts
+      - Outposts
+      - Shared
     properties:
       - type: Documentation
         url: https://aws.amazon.com/s3/outposts/
@@ -10724,7 +11653,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Metrics
     properties:
       - type: Documentation
         url: >-
@@ -10748,7 +11679,23 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/sagemaker/geospatial/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Earth
+      - Jobs
+      - Observation
+      - Enrichment
+      - Vectors
+      - Exports
+      - Collections
+      - Data
+      - Raster
+      - Tiles
+      - Resources
+      - Tags
+      - Untag
+      - Search
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/sagemaker/geospatial/
@@ -10780,7 +11727,17 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/savingsplans/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Plan
+      - Savings
+      - Queued
+      - Describe
+      - Rates
+      - Plans
+      - Offerings
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/savingsplans/
@@ -10811,7 +11768,26 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schema.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Discoverers
+      - Names
+      - Registries
+      - Schemas
+      - Policies
+      - Resources
+      - Versions
+      - Binding
+      - Code
+      - Languages
+      - Sources
+      - Discover
+      - Discovered
+      - ARN
+      - Tags
+      - Untag
+      - Search
+      - Stop
+      - Exports
     properties:
       - type: Documentation
         url: https://example.com
@@ -10833,7 +11809,14 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/eventbridge/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Names
+      - Schedules
+      - Groups
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/eventbridge/
@@ -10859,7 +11842,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/simpledb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Database
+      - SQL
+      - Selects
     properties:
       - type: Documentation
         url: https://aws.amazon.com/simpledb/
@@ -10887,7 +11873,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/secrets-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Policies
+      - Resources
+      - Validate
     properties:
       - type: Documentation
         url: https://aws.amazon.com/secrets-manager/
@@ -10931,7 +11920,19 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/serverless/serverlessrepo/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Semantic
+      - Versions
+      - Change
+      - Change Sets
+      - Cloud
+      - Formation
+      - Sets
+      - Templates
+      - Policies
+      - Dependencies
+      - Unshare
     properties:
       - type: Documentation
         url: https://aws.amazon.com/serverless/serverlessrepo/
@@ -10961,7 +11962,29 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/security-lake/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Data Lakes
+      - Log Sources
+      - Logs
+      - Sources
+      - Custom
+      - Data
+      - Lakes
+      - Exceptions
+      - Subscriptions
+      - Configurations
+      - Organizations
+      - Subscribers
+      - Notifications
+      - Names
+      - Administrator
+      - Delegate
+      - Delegated
+      - Register
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/security-lake/
@@ -10995,7 +12018,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html
@@ -11019,7 +12044,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/cloud-map/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Services
     properties:
       - type: Documentation
         url: https://aws.amazon.com/cloud-map/
@@ -11050,7 +12076,20 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/servicecatalog/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Attributes
+      - Disassociate
+      - Groups
+      - Associated
+      - Resources
+      - Types
+      - Configurations
+      - Details
+      - ARN
+      - Tags
+      - Untag
+      - Sync
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/servicecatalog/
@@ -11072,7 +12111,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/shield/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Subscriptions
     properties:
       - type: Documentation
         url: https://aws.amazon.com/shield/
@@ -11103,7 +12143,23 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/simspaceweaver/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Snapshots
+      - Applications
+      - Simulations
+      - Describe
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Start Application
+      - Clock
+      - Start Clock
+      - Start Simulation
+      - Stop
+      - Stop APplication
+      - Stop Clock
+      - Stopsimulation
     properties:
       - type: Documentation
         url: https://aws.amazon.com/simspaceweaver/
@@ -11130,7 +12186,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/application-migration-service/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Jobs
+      - Replication
     properties:
       - type: Documentation
         url: https://aws.amazon.com/application-migration-service/
@@ -11164,7 +12222,21 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/snow/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Cancel
+      - Tasks
+      - Describe
+      - Device
+      - Managed
+      - EC2
+      - Ec2Instances
+      - Resources
+      - Execution
+      - Devices
+      - Executions
+      - ARN
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/snow/
@@ -11192,7 +12264,54 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/security-hub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accounts
+      - Administrator
+      - Master
+      - Automation
+      - Automation Rules
+      - Batches
+      - Rules
+      - Deregister
+      - Disable
+      - Standards
+      - Enable
+      - Register
+      - Associations
+      - Configurations
+      - Policies
+      - Controls
+      - Security
+      - Findings
+      - Import
+      - Actions
+      - Target
+      - Targets
+      - Aggregator
+      - Insights
+      - Members
+      - Decline
+      - Invitations
+      - ARN
+      - Describe
+      - Hub
+      - Organizations
+      - Products
+      - Subscriptions
+      - Administrative
+      - Disassociate
+      - Enabled
+      - History
+      - Results
+      - Count
+      - Definitions
+      - Invite
+      - Aggregators
+      - Resources
+      - Tags
+      - Untag
+      - Associate
+      - Disassociation
     properties:
       - type: Documentation
         url: https://aws.amazon.com/security-hub/
@@ -11227,7 +12346,11 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/sns/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Numbers
+      - Phone
+      - SMSSandbox
+      - Verify
     properties:
       - type: Documentation
         url: https://aws.amazon.com/sns/
@@ -11256,7 +12379,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/sqs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Queues
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/sqs/
@@ -11288,7 +12413,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/servicecatalog/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Options
+      - Tags
     properties:
       - type: Documentation
         url: https://aws.amazon.com/servicecatalog/
@@ -11322,7 +12449,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/systems-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Services
+      - Settings
     properties:
       - type: Documentation
         url: https://aws.amazon.com/systems-manager/
@@ -11360,7 +12489,27 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/signer/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Names
+      - Permissions
+      - Profiles
+      - Signing
+      - Describe
+      - Jobs
+      - Revocations
+      - Status
+      - Platforms
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Permission
+      - Removes
+      - Statements
+      - Revoke
+      - Signatures
+      - Payload
+      - Sign
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/signer/
@@ -11388,7 +12537,28 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Findings
+      - Incident
+      - Replication
+      - Sets
+      - Plan
+      - Responses
+      - Events
+      - Timeline
+      - Record
+      - Policies
+      - Resources
+      - Records
+      - Items
+      - Related
+      - Plans
+      - ARN
+      - Tags
+      - Untag
+      - Deletion
+      - Protection
     properties:
       - type: Documentation
         url: >-
@@ -11419,7 +12589,13 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iam/identity-center/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Credentials
+      - Federation
+      - Roles
+      - Accounts
+      - Assignment
+      - Logout
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iam/identity-center/
@@ -11448,7 +12624,21 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Permission
+      - Resources
+      - Applications
+      - Deregister
+      - Components
+      - Databases
+      - Operation
+      - Operations
+      - ARN
+      - Tags
+      - Untag
+      - Register
+      - Refresh
+      - Settings
     properties:
       - type: Documentation
         url: >-
@@ -11470,7 +12660,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/step-functions/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alias
+      - Machines
+      - States
     properties:
       - type: Documentation
         url: https://aws.amazon.com/step-functions/
@@ -11510,7 +12703,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/storagegateway/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Types
+      - VTLDevice
     properties:
       - type: Documentation
         url: https://aws.amazon.com/storagegateway/
@@ -11547,7 +12742,13 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/aws-supply-chain/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Bill
+      - Configurations
+      - Import
+      - Instances
+      - Jobs
+      - Materials
     properties:
       - type: Documentation
         url: https://aws.amazon.com/aws-supply-chain/
@@ -11578,7 +12779,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Sessions
+      - Tokens
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html
@@ -11606,7 +12809,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/swf/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/swf/
@@ -11645,7 +12850,24 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/cloudwatch/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Associate
+      - Groups
+      - Resources
+      - Canary
+      - Names
+      - Canaries
+      - Describe
+      - Last
+      - Runs
+      - Runtime
+      - Versions
+      - Disassociate
+      - ARN
+      - Associated
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: https://example.com
@@ -11670,7 +12892,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/timestream/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Queries
+      - Scheduled
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/timestream/
@@ -11700,7 +12924,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/textract/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Adapter
     properties:
       - type: Documentation
         url: https://aws.amazon.com/textract/
@@ -11740,7 +12965,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/timestream/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Records
+      - Write
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/timestream/
@@ -11767,7 +12994,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/aws-transfer-family/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Users
     properties:
       - type: Documentation
         url: https://aws.amazon.com/aws-transfer-family/
@@ -11803,7 +13031,12 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/transcribe/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Analytics
+      - Call
+      - Stream
+      - Transcriptions
+      - Medical
     properties:
       - type: Documentation
         url: https://aws.amazon.com/transcribe/
@@ -11837,7 +13070,29 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/tnb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Cancel
+      - Networks
+      - Occs
+      - Operation
+      - Functions
+      - Packages
+      - Vnf
+      - Instances
+      - Descriptors
+      - Info
+      - Content
+      - Descriptions
+      - Instantiate
+      - Operations
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Terminate
+      - Ate
+      - Val
+      - Validate
     properties:
       - type: Documentation
         url: https://aws.amazon.com/tnb/
@@ -11863,7 +13118,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/translate/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Data
+      - Parallel
     properties:
       - type: Documentation
         url: https://aws.amazon.com/translate/
@@ -11900,7 +13157,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/verified-permissions/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Policies
+      - Templates
     properties:
       - type: Documentation
         url: https://aws.amazon.com/verified-permissions/
@@ -11938,7 +13197,13 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Organizations
+      - Recommendations
+      - Checks
+      - Accounts
+      - Resources
+      - Lifecycle
     properties:
       - type: Documentation
         url: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
@@ -11962,7 +13227,36 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/vpc/lattice/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Listeners
+      - Rules
+      - Services
+      - Access
+      - Access Log Subscriptions
+      - Logs
+      - Subscriptions
+      - Networks
+      - Service Networks
+      - Associations
+      - Service Network Service Associations
+      - Service Network VPC Associations
+      - VPC
+      - Groups
+      - Target
+      - Target Groups
+      - Authentication
+      - Authpolicy
+      - Policies
+      - Resources
+      - ARN
+      - Resource Policies
+      - Deregister
+      - Deregister Targets
+      - Targets
+      - Tags
+      - Untag
+      - Register
+      - Registertargets
     properties:
       - type: Documentation
         url: https://aws.amazon.com/vpc/lattice/
@@ -11996,7 +13290,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Match
+      - Sets
     properties:
       - type: Documentation
         url: >-
@@ -12026,7 +13322,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/connect/voice-id/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Watchlist
     properties:
       - type: Documentation
         url: https://aws.amazon.com/connect/voice-id/
@@ -12059,7 +13356,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_AWS_WAF_Regional.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Match
+      - Sets
     properties:
       - type: Documentation
         url: >-
@@ -12080,7 +13379,44 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/well-architected-tool/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Associate
+      - Lenses
+      - Workloads
+      - Profiles
+      - Alias
+      - Lens
+      - Shares
+      - Versions
+      - Milestones
+      - ARN
+      - Reviews
+      - Templates
+      - Share
+      - Disassociate
+      - Exports
+      - Answers
+      - Questions
+      - Ated
+      - Consol
+      - Consolidated
+      - Reports
+      - Difference
+      - Numbers
+      - Import
+      - Checks
+      - Details
+      - Summaries
+      - Improvements
+      - Notifications
+      - Invitations
+      - Resources
+      - Tags
+      - Untag
+      - Global
+      - Settings
+      - Invitation
+      - Upgrade
     properties:
       - type: Documentation
         url: https://aws.amazon.com/well-architected-tool/
@@ -12120,7 +13456,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/waf/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ACL
+      - Web
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/waf/
@@ -12146,7 +13484,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/workmail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Users
     properties:
       - type: Documentation
         url: https://aws.amazon.com/workmail/
@@ -12184,7 +13523,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/workspaces/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Images
+      - Permission
+      - Workspaces
     properties:
       - type: Documentation
         url: https://aws.amazon.com/workspaces/
@@ -12222,7 +13564,18 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/workspaces/thin-client/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Environments
+      - Device
+      - Devices
+      - Deregister
+      - Sets
+      - Software
+      - Software Sets
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/workspaces/thin-client/
@@ -12257,7 +13610,38 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/workdocs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Document
+      - Documents
+      - Versions
+      - Activation
+      - Deactivate
+      - Users
+      - Permissions
+      - Removes
+      - Resources
+      - Comments
+      - Custom
+      - Metadata
+      - Folders
+      - Labels
+      - Describe
+      - Notifications
+      - Organizations
+      - Subscriptions
+      - Contents
+      - Activities
+      - Groups
+      - Me
+      - Root
+      - Current
+      - Paths
+      - Initiate
+      - Uploads
+      - Permission
+      - Principals
+      - Restore
+      - Search
     properties:
       - type: Documentation
         url: https://aws.amazon.com/workdocs/
@@ -12284,7 +13668,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/workmail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Content
+      - Messages
+      - Raw
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/workmail/
@@ -12308,7 +13695,32 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/workspaces/web/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Browser
+      - Disassociate
+      - Portals
+      - Settings
+      - Access
+      - IP
+      - Networks
+      - Store
+      - Stores
+      - Trust
+      - Logging
+      - Users
+      - Entities
+      - Ers
+      - Identity
+      - Prov
+      - Providers
+      - Er
+      - Metadata
+      - Services
+      - Certificates
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/workspaces/web/
@@ -12337,7 +13749,31 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/xray/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Traces
+      - Groups
+      - Rules
+      - Sampling
+      - Policies
+      - Resources
+      - Configurations
+      - Encryption
+      - Insights
+      - Events
+      - Graphs
+      - Impact
+      - Summaries
+      - Statistics
+      - Targets
+      - Services
+      - Series
+      - Time
+      - Tags
+      - Records
+      - Telemetry
+      - Segments
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/xray/
