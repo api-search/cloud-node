@@ -4,9 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateServiceSettings
+      summary: 'Update Service Settings '
       description: <p>Updates License Manager settings for the current R
       tags:
-        - Update
         - Services
         - Settings
