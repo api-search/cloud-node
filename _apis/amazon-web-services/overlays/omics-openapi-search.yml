@@ -4,98 +4,61 @@ info:
 paths:
   /sequencestore/{sequenceStoreId}/upload/{uploadId}/abort:
     DELETE:
-      summary: AbortMultipartReadSetUpload
+      summary: 'Abort Multipart Read Set Upload '
       description: <p> Stops a multipart upload. </p>
       tags:
         - Abort
         - Multipart
         - Read
+        - Sequence
+        - Sequence Stores
         - Sets
-        - Uploads
         - Store
-        - Identifiers
         - Uploads
-        - Abort
   /share/{shareId}:
     GET:
-      summary: GetShare
+      summary: 'Get Share '
       description: <p> Retrieves the metadata for a share. </p>
       tags:
-        - Get
         - Share
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
   /sequencestore/{sequenceStoreId}/readset/batch/delete:
     POST:
-      summary: BatchDeleteReadSet
+      summary: 'Batch Delete Read Set '
       description: <p>Deletes one or more read sets.</p>
       tags:
         - Batches
-        - Delete
         - Read
+        - Readsets
+        - Sequence
+        - Sequence Stores
         - Sets
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
   /import/annotation/{jobId}:
     GET:
-      summary: GetAnnotationImportJob
+      summary: 'Get Annotation Import Job '
       description: <p>Gets information about an annotation import job.</p>
       tags:
-        - Get
         - Annotations
         - Import
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
   /run/{id}/cancel:
     POST:
-      summary: CancelRun
+      summary: 'Cancel Run '
       description: <p>Cancels a run.</p>
       tags:
         - Cancel
         - Runs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
   /import/variant/{jobId}:
     GET:
-      summary: GetVariantImportJob
+      summary: 'Get Variant Import Job '
       description: <p>Gets information about a variant import job.</p>
       tags:
-        - Get
-        - Variants
         - Import
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
+        - Variants
   /sequencestore/{sequenceStoreId}/upload/{uploadId}/complete:
     POST:
-      summary: CompleteMultipartReadSetUpload
+      summary: 'Complete Multipart Read Set Upload '
       description: >-
         <p> Concludes a multipart upload once you have uploaded all the
         components. </p>
@@ -103,1242 +66,390 @@ paths:
         - Complete
         - Multipart
         - Read
+        - Sequence
+        - Sequence Stores
         - Sets
-        - Uploads
         - Store
-        - Identifiers
         - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
   /annotationStore:
     POST:
-      summary: CreateAnnotationStore
+      summary: 'Create Annotation Store '
       description: <p>Creates an annotation store.</p>
       tags:
-        - Create
         - Annotations
         - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
   /annotationStore/{name}/version:
     POST:
-      summary: CreateAnnotationStoreVersion
+      summary: 'Create Annotation Store Version '
       description: <p> Creates a new version of an annotation store. </p>
       tags:
-        - Create
         - Annotations
-        - Store
-        - Versions
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
         - Names
+        - Store
         - Versions
   /sequencestore/{sequenceStoreId}/upload:
     POST:
-      summary: CreateMultipartReadSetUpload
+      summary: 'Create Multipart Read Set Upload '
       description: <p> Begins a multipart read set upload. </p>
       tags:
-        - Create
         - Multipart
         - Read
+        - Sequence
+        - Sequence Stores
         - Sets
-        - Uploads
         - Store
-        - Identifiers
         - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
   /referencestore:
     POST:
-      summary: CreateReferenceStore
+      summary: 'Create Reference Store '
       description: <p>Creates a reference store.</p>
       tags:
-        - Create
+        - Reference Store
         - References
         - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
   /runGroup:
     GET:
-      summary: ListRunGroups
+      summary: 'List Run Groups '
       description: <p>Retrieves a list of run groups.</p>
       tags:
-        - Lists
-        - Runs
         - Groups
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
         - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
   /sequencestore:
     POST:
-      summary: CreateSequenceStore
+      summary: 'Create Sequence Store '
       description: <p>Creates a sequence store.</p>
       tags:
-        - Create
         - Sequence
-        - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
         - Sequence Stores
+        - Store
   /share:
     POST:
-      summary: CreateShare
+      summary: 'Create Share '
       description: >-
         <p> Creates a share offer that can be accepted outside the account by a
         subscriber. The share is created by the owner and accepted by the
         principal subscriber. </p>
       tags:
-        - Create
-        - Share
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
         - Share
   /variantStore:
     POST:
-      summary: CreateVariantStore
+      summary: 'Create Variant Store '
       description: <p>Creates a variant store.</p>
       tags:
-        - Create
+        - Store
         - Variants
-        - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
   /workflow:
     GET:
-      summary: ListWorkflows
+      summary: 'List Workflows '
       description: <p>Retrieves a list of workflows.</p>
       tags:
-        - Lists
-        - Workflows
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
         - Workflows
   /annotationStore/{name}:
     POST:
-      summary: UpdateAnnotationStore
+      summary: 'Update Annotation Store '
       description: <p>Updates an annotation store.</p>
       tags:
-        - Update
         - Annotations
-        - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
         - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
+        - Store
   /annotationStore/{name}/versions/delete:
     POST:
-      summary: DeleteAnnotationStoreVersions
+      summary: 'Delete Annotation Store Versions '
       description: <p> Deletes one or multiple versions of an annotation store. </p>
       tags:
-        - Delete
         - Annotations
-        - Store
-        - Versions
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
         - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
+        - Store
         - Versions
   /referencestore/{referenceStoreId}/reference/{id}:
     GET:
-      summary: GetReference
+      summary: 'Get Reference '
       description: <p>Gets a reference file.</p>
       tags:
-        - Get
+        - Reference Store
         - References
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
   /referencestore/{id}:
     GET:
-      summary: GetReferenceStore
+      summary: 'Get Reference Store '
       description: <p>Gets information about a reference store.</p>
       tags:
-        - Get
-        - References
-        - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
         - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
         - References
+        - Store
   /run/{id}:
     GET:
-      summary: GetRun
+      summary: 'Get Run '
       description: <p>Gets information about a workflow run.</p>
       tags:
-        - Get
         - Runs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
   /runGroup/{id}:
     POST:
-      summary: UpdateRunGroup
+      summary: 'Update Run Group '
       description: <p>Updates a run group.</p>
       tags:
-        - Update
+        - Groups
         - Runs
-        - Group
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
   /sequencestore/{id}:
     GET:
-      summary: GetSequenceStore
+      summary: 'Get Sequence Store '
       description: <p>Gets information about a sequence store.</p>
       tags:
-        - Get
         - Sequence
-        - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
+        - Store
   /variantStore/{name}:
     POST:
-      summary: UpdateVariantStore
+      summary: 'Update Variant Store '
       description: <p>Updates a variant store.</p>
       tags:
-        - Update
-        - Variants
-        - Store
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
         - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
+        - Store
+        - Variants
   /workflow/{id}:
     POST:
-      summary: UpdateWorkflow
+      summary: 'Update Workflow '
       description: <p>Updates a workflow.</p>
       tags:
-        - Update
         - Workflows
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
   /annotationStore/{name}/version/{versionName}:
     POST:
-      summary: UpdateAnnotationStoreVersion
+      summary: 'Update Annotation Store Version '
       description: <p> Updates the description of an annotation store version. </p>
       tags:
-        - Update
         - Annotations
-        - Store
-        - Versions
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
         - Names
+        - Store
         - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
   /sequencestore/{sequenceStoreId}/readset/{id}:
     GET:
-      summary: GetReadSet
+      summary: 'Get Read Set '
       description: <p>Gets a file from a read set.</p>
       tags:
-        - Get
         - Read
+        - Readsets
+        - Sequence
+        - Sequence Stores
         - Sets
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
   /sequencestore/{sequenceStoreId}/activationjob/{id}:
     GET:
-      summary: GetReadSetActivationJob
+      summary: 'Get Read Set Activation Job '
       description: <p>Gets information about a read set activation job.</p>
       tags:
-        - Get
-        - Read
-        - Sets
         - Activation
-        - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
         - Activation Jobs
+        - Jobs
+        - Read
+        - Sequence
+        - Sequence Stores
+        - Sets
+        - Store
   /sequencestore/{sequenceStoreId}/exportjob/{id}:
     GET:
-      summary: GetReadSetExportJob
+      summary: 'Get Read Set Export Job '
       description: <p>Gets information about a read set export job.</p>
       tags:
-        - Get
-        - Read
-        - Sets
-        - Export
-        - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
         - Export Jobs
+        - Exports
+        - Jobs
+        - Read
+        - Sequence
+        - Sequence Stores
+        - Sets
+        - Store
   /sequencestore/{sequenceStoreId}/importjob/{id}:
     GET:
-      summary: GetReadSetImportJob
+      summary: 'Get Read Set Import Job '
       description: <p>Gets information about a read set import job.</p>
       tags:
-        - Get
-        - Read
-        - Sets
         - Import
+        - Import Jobs
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
+        - Read
+        - Sequence
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
+        - Sets
+        - Store
   /sequencestore/{sequenceStoreId}/readset/{id}/metadata:
     GET:
-      summary: GetReadSetMetadata
+      summary: 'Get Read Set Metadata '
       description: <p>Gets details about a read set.</p>
       tags:
-        - Get
+        - Metadata
         - Read
-        - Sets
-        - Metadata
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
         - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
+        - Sequence
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
+        - Sets
+        - Store
   /referencestore/{referenceStoreId}/importjob/{id}:
     GET:
-      summary: GetReferenceImportJob
+      summary: 'Get Reference Import Job '
       description: <p>Gets information about a reference import job.</p>
       tags:
-        - Get
-        - References
         - Import
+        - Import Jobs
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
         - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
         - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
+        - Store
   /referencestore/{referenceStoreId}/reference/{id}/metadata:
     GET:
-      summary: GetReferenceMetadata
+      summary: 'Get Reference Metadata '
       description: <p>Gets information about a genome reference's metadata.</p>
       tags:
-        - Get
-        - References
         - Metadata
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
         - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
         - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
+        - Store
   /run/{id}/task/{taskId}:
     GET:
-      summary: GetRunTask
+      summary: 'Get Run Task '
       description: <p>Gets information about a workflow run task.</p>
       tags:
-        - Get
         - Runs
         - Tasks
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
   /import/annotations:
     POST:
-      summary: ListAnnotationImportJobs
+      summary: 'List Annotation Import Jobs '
       description: <p>Retrieves a list of annotation import jobs.</p>
       tags:
-        - Lists
         - Annotations
         - Import
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
   /annotationStore/{name}/versions:
     POST:
-      summary: ListAnnotationStoreVersions
+      summary: 'List Annotation Store Versions '
       description: <p> Lists the versions of an annotation store. </p>
       tags:
-        - Lists
         - Annotations
-        - Store
-        - Versions
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
         - Names
+        - Store
         - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
   /annotationStores:
     POST:
-      summary: ListAnnotationStores
+      summary: 'List Annotation Stores '
       description: <p>Retrieves a list of annotation stores.</p>
       tags:
-        - Lists
-        - Annotations
-        - Stores
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
         - Annotations
         - Stores
   /sequencestore/{sequenceStoreId}/uploads:
     POST:
-      summary: ListMultipartReadSetUploads
+      summary: 'List Multipart Read Set Uploads '
       description: >-
         <p> Lists multipart read set uploads and for in progress uploads. Once
         the upload is completed, a read set is created and the upload will no
         longer be returned in the respone. </p>
       tags:
-        - Lists
         - Multipart
         - Read
-        - Sets
-        - Uploads
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
+        - Sequence
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
+        - Sets
+        - Store
         - Uploads
   /sequencestore/{sequenceStoreId}/activationjobs:
     POST:
-      summary: ListReadSetActivationJobs
+      summary: 'List Read Set Activation Jobs '
       description: <p>Retrieves a list of read set activation jobs.</p>
       tags:
-        - Lists
-        - Read
-        - Sets
         - Activation
+        - Activation Jobs
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
+        - Read
+        - Sequence
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
+        - Sets
+        - Store
   /sequencestore/{sequenceStoreId}/exportjobs:
     POST:
-      summary: ListReadSetExportJobs
+      summary: 'List Read Set Export Jobs '
       description: <p>Retrieves a list of read set export jobs.</p>
       tags:
-        - Lists
-        - Read
-        - Sets
-        - Export
+        - Export Jobs
+        - Exports
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
+        - Read
+        - Sequence
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
+        - Sets
+        - Store
   /sequencestore/{sequenceStoreId}/importjobs:
     POST:
-      summary: ListReadSetImportJobs
+      summary: 'List Read Set Import Jobs '
       description: <p>Retrieves a list of read set import jobs.</p>
       tags:
-        - Lists
-        - Read
-        - Sets
         - Import
+        - Import JObs
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
+        - Read
+        - Sequence
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
+        - Sets
+        - Store
   /sequencestore/{sequenceStoreId}/upload/{uploadId}/parts:
     POST:
-      summary: ListReadSetUploadParts
+      summary: 'List Read Set Upload Parts '
       description: >-
         <p> This operation will list all parts in a requested multipart upload
         for a sequence store. </p>
       tags:
-        - Lists
+        - Parts
         - Read
-        - Sets
-        - Uploads
-        - Parts
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
+        - Sequence
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
+        - Sets
+        - Store
         - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
   /sequencestore/{sequenceStoreId}/readsets:
     POST:
-      summary: ListReadSets
+      summary: 'List Read Sets '
       description: <p>Retrieves a list of read sets.</p>
       tags:
-        - Lists
         - Read
+        - Readsets
+        - Sequence
+        - Sequence Stores
         - Sets
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
   /referencestore/{referenceStoreId}/importjobs:
     POST:
-      summary: ListReferenceImportJobs
+      summary: 'List Reference Import Jobs '
       description: <p>Retrieves a list of reference import jobs.</p>
       tags:
-        - Lists
-        - References
         - Import
+        - Import JObs
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
         - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
         - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
+        - Store
   /referencestores:
     POST:
-      summary: ListReferenceStores
+      summary: 'List Reference Stores '
       description: <p>Retrieves a list of reference stores.</p>
       tags:
-        - Lists
+        - Reference Store
         - References
         - Stores
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
   /referencestore/{referenceStoreId}/references:
     POST:
-      summary: ListReferences
+      summary: 'List References '
       description: <p>Retrieves a list of references.</p>
       tags:
-        - Lists
+        - Reference Store
         - References
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
   /run/{id}/task:
     GET:
-      summary: ListRunTasks
+      summary: 'List Run Tasks '
       description: <p>Retrieves a list of tasks for a run.</p>
       tags:
-        - Lists
         - Runs
-        - Tasks
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
         - Tasks
   /run:
     POST:
-      summary: StartRun
+      summary: 'Start Run '
       description: >-
         <p>Starts a workflow run. To duplicate a run, specify the run's ID and a
         role ARN. The remaining parameters are copied from the previous run.</p>
@@ -1347,622 +458,124 @@ paths:
         retention mode to <code>REMOVE</code>. Runs with this setting are
         deleted automatically when the run quoata is exceeded.</p>
       tags:
-        - Start
         - Runs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
   /sequencestores:
     POST:
-      summary: ListSequenceStores
+      summary: 'List Sequence Stores '
       description: <p>Retrieves a list of sequence stores.</p>
       tags:
-        - Lists
         - Sequence
-        - Stores
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
         - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
         - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
   /shares:
     POST:
-      summary: ListShares
+      summary: 'List Shares '
       description: <p> Lists all shares associated with an account. </p>
       tags:
-        - Lists
-        - Shares
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
         - Shares
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from a resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /import/variants:
     POST:
-      summary: ListVariantImportJobs
+      summary: 'List Variant Import Jobs '
       description: <p>Retrieves a list of variant import jobs.</p>
       tags:
-        - Lists
-        - Variants
         - Import
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
         - Variants
   /variantStores:
     POST:
-      summary: ListVariantStores
+      summary: 'List Variant Stores '
       description: <p>Retrieves a list of variant stores.</p>
       tags:
-        - Lists
-        - Variants
         - Stores
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
         - Variants
   /import/annotation:
     POST:
-      summary: StartAnnotationImportJob
+      summary: 'Start Annotation Import Job '
       description: <p>Starts an annotation import job.</p>
       tags:
-        - Start
         - Annotations
         - Import
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
-        - Variants
-        - Annotations
   /sequencestore/{sequenceStoreId}/activationjob:
     POST:
-      summary: StartReadSetActivationJob
+      summary: 'Start Read Set Activation Job '
       description: >-
         <p>Activates an archived read set. To reduce storage charges, Amazon
         Omics archives unused read sets after 30 days.</p>
       tags:
-        - Start
-        - Read
-        - Sets
         - Activation
+        - Activation Jobs
         - Jobs
+        - Read
+        - Sequence
+        - Sequence Stores
+        - Sets
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
-        - Variants
-        - Annotations
   /sequencestore/{sequenceStoreId}/exportjob:
     POST:
-      summary: StartReadSetExportJob
+      summary: 'Start Read Set Export Job '
       description: <p>Exports a read set to Amazon S3.</p>
       tags:
-        - Start
-        - Read
-        - Sets
-        - Export
+        - Export Jobs
+        - Exports
         - Jobs
+        - Read
+        - Sequence
+        - Sequence Stores
+        - Sets
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
-        - Variants
-        - Annotations
   /sequencestore/{sequenceStoreId}/importjob:
     POST:
-      summary: StartReadSetImportJob
+      summary: 'Start Read Set Import Job '
       description: <p>Starts a read set import job.</p>
       tags:
-        - Start
-        - Read
-        - Sets
         - Import
+        - Import Jobs
         - Jobs
+        - Read
+        - Sequence
+        - Sequence Stores
+        - Sets
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
-        - Variants
-        - Annotations
   /referencestore/{referenceStoreId}/importjob:
     POST:
-      summary: StartReferenceImportJob
+      summary: 'Start Reference Import Job '
       description: <p>Starts a reference import job.</p>
       tags:
-        - Start
-        - References
         - Import
+        - Import Jobs
         - Jobs
+        - Reference Store
+        - References
         - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
-        - Variants
-        - Annotations
   /import/variant:
     POST:
-      summary: StartVariantImportJob
+      summary: 'Start Variant Import Job '
       description: <p>Starts a variant import job.</p>
       tags:
-        - Start
-        - Variants
         - Import
         - Jobs
-        - Store
-        - Identifiers
-        - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
-        - Variants
-        - Annotations
         - Variants
   /sequencestore/{sequenceStoreId}/upload/{uploadId}/part:
     PUT:
-      summary: UploadReadSetPart
+      summary: 'Upload Read Set Part '
       description: >-
         <p> This operation uploads a specific part of a read set. If you upload
         a new part using a previously used part number, the previously uploaded
         part will be overwri
       tags:
-        - Uploads
         - Read
+        - Sequence
+        - Sequence Stores
         - Sets
-        - null
         - Store
-        - Identifiers
         - Uploads
-        - Abort
-        - Readsets
-        - Batches
-        - Delete
-        - Runs
-        - Cancel
-        - Complete
-        - Names
-        - Versions
-        - Reference Store
-        - Group
-        - Sequence Stores
-        - Share
-        - Workflows
-        - Versions
-        - References
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Metadata
-        - Import
-        - Annotations
-        - Stores
-        - Uploads
-        - Activation Jobs
-        - Export Jobs
-        - Import JObs
-        - Parts
-        - Readsets
-        - Reference Store
-        - References
-        - Tasks
-        - Sequence Stores
-        - Shares
-        - ARN
-        - Variants
-        - Annotations
-        - Variants
-        - null
