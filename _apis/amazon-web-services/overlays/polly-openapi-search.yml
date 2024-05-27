@@ -4,7 +4,7 @@ info:
 paths:
   /v1/lexicons/{LexiconName}:
     PUT:
-      summary: PutLexicon
+      summary: 'Put Lexicon '
       description: >-
         <p>Stores a pronunciation lexicon in an Amazon Web Services Region. If a
         lexicon with the same name already exists in the region, it is
@@ -15,13 +15,11 @@ paths:
         href="https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html">Managing
         Lexicons</a>.</p>
       tags:
-        - Put
-        - Lexicons
         - Lexicons
         - Names
   /v1/voices:
     GET:
-      summary: DescribeVoices
+      summary: 'Describe Voices '
       description: >-
         <p>Returns the list of voices that are available for use when requesting
         speech synthesis. Each voice speaks a specified language, is either male
@@ -41,52 +39,31 @@ paths:
       tags:
         - Describe
         - Voices
-        - Lexicons
-        - Names
-        - null
-        - Voices
   /v1/synthesisTasks/{TaskId}:
     GET:
-      summary: GetSpeechSynthesisTask
+      summary: 'Get Speech Synthesis Task '
       description: >-
         <p>Retrieves a specific SpeechSynthesisTask object based on its TaskID.
         This object contains information about the given speech synthesis task,
         including the status of the task, and a link to the S3 bucket containing
         the output of the task.</p>
       tags:
-        - Get
         - Speech
         - Synthesis
         - Tasks
-        - Lexicons
-        - Names
-        - null
-        - Voices
-        - Tasks
-        - Tasks
-        - Identifiers
   /v1/lexicons:
     GET:
-      summary: ListLexicons
+      summary: 'List Lexicons '
       description: >-
         <p>Returns a list of pronunciation lexicons stored in an Amazon Web
         Services Region. For more information, see <a
         href="https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html">Managing
         Lexicons</a>.</p>
       tags:
-        - Lists
-        - Lexicons
-        - Lexicons
-        - Names
-        - null
-        - Voices
-        - Tasks
-        - Tasks
-        - Identifiers
         - Lexicons
   /v1/synthesisTasks:
     POST:
-      summary: StartSpeechSynthesisTask
+      summary: 'Start Speech Synthesis Task '
       description: >-
         <p>Allows the creation of an asynchronous synthesis task, by starting a
         new <code>SpeechSynthesisTask</code>. This operation requires all the
@@ -99,21 +76,12 @@ paths:
         The <code>SpeechSynthesisTask</code> object is available for 72 hours
         after starting the asynchronous synthesis task.</p>
       tags:
-        - Start
         - Speech
         - Synthesis
         - Tasks
-        - Lexicons
-        - Names
-        - null
-        - Voices
-        - Tasks
-        - Tasks
-        - Identifiers
-        - Lexicons
   /v1/speech:
     POST:
-      summary: SynthesizeSpeech
+      summary: 'Synthesize Speech '
       description: >-
         <p>Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes.
         SSML input must be valid, well-formed SSML. Some alphabets might not be
@@ -123,14 +91,5 @@ paths:
         href="https://docs.aws.amazon.com/polly/latest/dg/how-text-to-speech-works.html">How
         it Work
       tags:
-        - Synthesize
         - Speech
-        - Lexicons
-        - Names
-        - null
-        - Voices
-        - Tasks
-        - Tasks
-        - Identifiers
-        - Lexicons
-        - null
+        - Synthesize
