@@ -4,23 +4,21 @@ info:
 paths:
   /rummetrics/{AppMonitorName}/metrics:
     PATCH:
-      summary: UpdateRumMetricDefinition
+      summary: 'Update Rum Metric Definition '
       description: >-
         <p>Modifies one existing metric definition for CloudWatch RUM extended
         metrics. For more information about extended metrics, see <a
         href="https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_BatchCreateRumMetricsDefinitions.html">BatchCreateRumMetricsDefinitions</a>.</p>
       tags:
-        - Update
-        - Rum
-        - Metrics
-        - Definitions
         - Applications
+        - Definitions
+        - Metrics
         - Monitors
         - Names
-        - Metrics
+        - Rummetrics
   /appmonitor:
     POST:
-      summary: CreateAppMonitor
+      summary: 'Create App Monitor '
       description: >-
         <p>Creates a Amazon CloudWatch RUM app monitor, which collects telemetry
         data from your application and sends that data to RUM. The data includes
@@ -35,17 +33,11 @@ paths:
         href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-find-code-snippet.html">How
         do I find a code snippet that I've already generated?</a> </p>
       tags:
-        - Create
         - Applications
         - Monitors
-        - Applications
-        - Monitors
-        - Names
-        - Metrics
-        - Apply
   /appmonitor/{Name}:
     PATCH:
-      summary: UpdateAppMonitor
+      summary: 'Update App Monitor '
       description: >-
         <p>Updates the configuration of an existing app monitor. When you use
         this operation, only the parts of the app monitor configuration that you
@@ -62,17 +54,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-find-code-snippet.html">How
         do I find a code snippet that I've already generated?</a> </p>
       tags:
-        - Update
-        - Applications
-        - Monitors
         - Applications
         - Monitors
         - Names
-        - Metrics
-        - Apply
   /rummetrics/{AppMonitorName}/metricsdestination:
     POST:
-      summary: PutRumMetricsDestination
+      summary: 'Put Rum Metrics Destination '
       description: >-
         <p>Creates or updates a destination to receive extended metrics from
         CloudWatch RUM. You can send extended metrics to CloudWatch or to a
@@ -80,73 +67,47 @@ paths:
         extended metrics, see <a
         href="https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_BatchCreateRumMetricDefinitions.html">BatchCreateRumMetricDefinitions</a>.</p>
       tags:
-        - Put
-        - Rum
-        - Metrics
-        - Destinations
         - Applications
+        - Destinations
+        - Metric Destination
+        - Metrics
         - Monitors
         - Names
-        - Metrics
-        - Apply
-        - Metric Destination
+        - Rummetrics
   /appmonitor/{Name}/data:
     POST:
-      summary: GetAppMonitorData
+      summary: 'Get App Monitor Data '
       description: >-
         <p>Retrieves the raw performance events that RUM has collected from your
         web application, so that you can do your own processing or analysis of
         this data.</p>
       tags:
-        - Get
         - Applications
-        - Monitors
         - Data
-        - Applications
         - Monitors
         - Names
-        - Metrics
-        - Apply
-        - Metric Destination
-        - Data
   /appmonitors:
     POST:
-      summary: ListAppMonitors
+      summary: 'List App Monitors '
       description: >-
         <p>Returns a list of the Amazon CloudWatch RUM app monitors in the
         account.</p>
       tags:
-        - Lists
-        - Applications
-        - Monitors
-        - Applications
-        - Monitors
-        - Names
-        - Metrics
-        - Apply
-        - Metric Destination
-        - Data
         - Application Monitors
+        - Applications
+        - Monitors
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes one or more tags from the specified resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Applications
-        - Monitors
-        - Names
-        - Metrics
-        - Apply
-        - Metric Destination
-        - Data
-        - Application Monitors
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /appmonitors/{Id}/:
     POST:
-      summary: PutRumEvents
+      summary: 'Put Rum Events '
       description: >-
         <p>Sends telemetry events about your application performance and user
         behavior to CloudWatch RUM. The code snippet that RUM generates for you
@@ -154,17 +115,5 @@ paths:
         to send this data to RUM.</p> <p>Each <code>PutRumEvents</code>
         operation can send a batch of events from one user se
       tags:
-        - Put
-        - Rum
-        - Events
-        - Applications
-        - Monitors
-        - Names
-        - Metrics
-        - Apply
-        - Metric Destination
-        - Data
         - Application Monitors
-        - Resources
-        - ARN
-        - null
+        - Events
