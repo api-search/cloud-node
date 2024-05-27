@@ -4,19 +4,17 @@ info:
 paths:
   /rules:
     POST:
-      summary: CreateRule
+      summary: 'Create Rule '
       description: >-
         <p>Creates a Recycle Bin retention rule. For more information, see <a
         href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recycle-bin-working-with-rules.html#recycle-bin-create-rule">
         Create Recycle Bin retention rules</a> in the <i>Amazon Elastic Compute
         Cloud User Guide</i>.</p>
       tags:
-        - Create
-        - Rules
         - Rules
   /rules/{identifier}:
     PATCH:
-      summary: UpdateRule
+      summary: 'Update Rule '
       description: >-
         <p>Updates an existing Recycle Bin retention rule. You can update a
         retention rule's description, resource tags, and retention period at any
@@ -26,57 +24,37 @@ paths:
         Update Recycle Bin retention rules</a> in the <i>Amazon Elastic Compute
         Cloud User Guide</i>.</p>
       tags:
-        - Update
         - Rules
-        - Rules
-        - Identifiers
   /list-rules:
     POST:
-      summary: ListRules
+      summary: 'List Rules '
       description: <p>Lists the Recycle Bin retention rules in the Region.</p>
       tags:
-        - Lists
         - Rules
-        - Rules
-        - Identifiers
-        - Lists
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Unassigns a tag from a retention rule.</p>
       tags:
-        - Untag
-        - Resources
-        - Rules
-        - Identifiers
-        - Lists
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /rules/{identifier}/lock:
     PATCH:
-      summary: LockRule
+      summary: 'Lock Rule '
       description: >-
         <p>Locks a retention rule. A locked retention rule can't be modified or
         deleted.</p>
       tags:
         - Locks
         - Rules
-        - Rules
-        - Identifiers
-        - Lists
-        - ARN
-        - Locks
   /rules/{identifier}/unlock:
     PATCH:
-      summary: UnlockRule
+      summary: 'Unlock Rule '
       description: >-
         <p>Unlocks a retention rule. After a retention rule is unlocked, it can
         be modified or deleted only after the unlock delay period ex
       tags:
+        - Rules
         - Unlock
-        - Rules
-        - Rules
-        - Identifiers
-        - Lists
-        - ARN
-        - Locks
-        - Unlo
