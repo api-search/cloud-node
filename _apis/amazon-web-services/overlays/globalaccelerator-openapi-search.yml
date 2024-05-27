@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: WithdrawByoipCidr
+      summary: 'Withdraw Byoip Cidr '
       description: >-
         <p>Stops advertising an address range that is provisioned as an address
         pool. You can perform this operation at most once every 10 seconds, even
@@ -16,6 +16,5 @@ paths:
         your own IP addresses (BYOIP)</a> in the <i>Global Accelerator Developer
         Guid
       tags:
+        - CIDR
         - Withdraw
-        - null
-        - null
