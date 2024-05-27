@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdatePolicyTemplate
+      summary: 'Update Policy Template '
       description: >-
         <p>Updates the specified policy template. You can update only the
         description and the some elements of the <a
@@ -19,6 +19,5 @@ paths:
         element to be propagate through the service and be visible in the
         results of other Verified Permissions operations.</
       tags:
-        - Update
         - Policies
         - Templates
