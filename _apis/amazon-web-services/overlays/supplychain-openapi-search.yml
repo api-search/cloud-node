@@ -4,7 +4,7 @@ info:
 paths:
   /api/configuration/instances/{instanceId}/bill-of-materials-import-jobs:
     POST:
-      summary: CreateBillOfMaterialsImportJob
+      summary: 'Create Bill Of Materials Import Job '
       description: >-
         <p>CreateBillOfMaterialsImportJob creates an import job for the Product
         Bill Of Materials (BOM) entity. For information on the product_bom
@@ -13,33 +13,20 @@ paths:
         recommended to use the same Amazon S3 bucket created during your AWS
         Supply Chain instance creation.</p>
       tags:
-        - Create
         - Bill
-        - Of
-        - Materials
+        - Configurations
         - Import
+        - Instances
         - Jobs
-        - Identifiers
-        - Bill
-        - Of
         - Materials
-        - Import
-        - Jobs
   /api/configuration/instances/{instanceId}/bill-of-materials-import-jobs/{jobId}:
     GET:
-      summary: GetBillOfMaterialsImportJob
+      summary: 'Get Bill Of Materials Import Job '
       description: <p>Get status and details of a BillOfMaterialsImpo
       tags:
-        - Get
         - Bill
-        - Of
-        - Materials
+        - Configurations
         - Import
+        - Instances
         - Jobs
-        - Identifiers
-        - Bill
-        - Of
         - Materials
-        - Import
-        - Jobs
-        - Items
