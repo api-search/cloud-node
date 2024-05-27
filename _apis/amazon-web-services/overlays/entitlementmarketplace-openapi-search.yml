@@ -4,10 +4,9 @@ info:
 paths:
   /:
     POST:
-      summary: GetEntitlements
+      summary: 'Get Entitlements '
       description: >-
         <p>GetEntitlements retrieves entitlement values for a given product. The
         results can be filtered based on customer identifier or product dimen
       tags:
-        - Get
         - Entitlements
