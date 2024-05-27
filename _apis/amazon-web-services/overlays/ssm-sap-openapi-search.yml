@@ -4,244 +4,107 @@ info:
 paths:
   /delete-resource-permission:
     POST:
-      summary: DeleteResourcePermission
+      summary: 'Delete Resource Permission '
       description: <p>Removes permissions associated with the target database.</p>
       tags:
-        - Delete
-        - Resources
         - Permission
-        - Delete
         - Resources
-        - Permission
   /deregister-application:
     POST:
-      summary: DeregisterApplication
+      summary: 'Deregister Application '
       description: >-
         <p>Deregister an SAP application with AWS Systems Manager for SAP. This
         action does not aﬀect the existing setup of your SAP workloads on Amazon
         EC2.</p>
       tags:
-        - Deregister
         - Applications
-        - Delete
-        - Resources
-        - Permission
         - Deregister
-        - Applications
   /get-application:
     POST:
-      summary: GetApplication
+      summary: 'Get Application '
       description: >-
         <p>Gets an application registered with AWS Systems Manager for SAP. It
         also returns the components of the application.</p>
       tags:
-        - Get
         - Applications
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
   /get-component:
     POST:
-      summary: GetComponent
+      summary: 'Get Component '
       description: >-
         <p>Gets the component of an application registered with AWS Systems
         Manager for SAP.</p>
       tags:
-        - Get
-        - Components
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
         - Components
   /get-database:
     POST:
-      summary: GetDatabase
+      summary: 'Get Database '
       description: >-
         <p>Gets the SAP HANA database of an application registered with AWS
         Systems Manager for SAP.</p>
       tags:
-        - Get
-        - Databases
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
         - Databases
   /get-operation:
     POST:
-      summary: GetOperation
+      summary: 'Get Operation '
       description: <p>Gets the details of an operation by specifying the operation ID.</p>
       tags:
-        - Get
-        - Operation
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
         - Operation
   /get-resource-permission:
     POST:
-      summary: GetResourcePermission
+      summary: 'Get Resource Permission '
       description: <p>Gets permissions associated with the target database.</p>
       tags:
-        - Get
-        - Resources
         - Permission
-        - Delete
         - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
   /list-applications:
     POST:
-      summary: ListApplications
+      summary: 'List Applications '
       description: >-
         <p>Lists all the applications registered with AWS Systems Manager for
         SAP.</p>
       tags:
-        - Lists
-        - Applications
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
         - Applications
   /list-components:
     POST:
-      summary: ListComponents
+      summary: 'List Components '
       description: >-
         <p>Lists all the components registered with AWS Systems Manager for
         SAP.</p>
       tags:
-        - Lists
-        - Components
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
         - Components
   /list-databases:
     POST:
-      summary: ListDatabases
+      summary: 'List Databases '
       description: >-
         <p>Lists the SAP HANA databases of an application registered with AWS
         Systems Manager for SAP.</p>
       tags:
-        - Lists
-        - Databases
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
-        - Components
         - Databases
   /list-operations:
     POST:
-      summary: ListOperations
+      summary: 'List Operations '
       description: <p>Lists the operations performed by AWS Systems Manager for SAP.</p>
       tags:
-        - Lists
-        - Operations
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
-        - Components
-        - Databases
         - Operations
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Delete the tags for a resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
-        - Components
-        - Databases
-        - Operations
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /put-resource-permission:
     POST:
-      summary: PutResourcePermission
+      summary: 'Put Resource Permission '
       description: <p>Adds permissions to the target database.</p>
       tags:
-        - Put
-        - Resources
         - Permission
-        - Delete
         - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
-        - Components
-        - Databases
-        - Operations
-        - ARN
-        - Put
   /register-application:
     POST:
-      summary: RegisterApplication
+      summary: 'Register Application '
       description: >-
         <p>Register an SAP application with AWS Systems Manager for SAP. You
         must meet the following requirements before registering. </p> <p>The SAP
@@ -251,80 +114,21 @@ paths:
         <p>Amazon EC2 instance(s) must have access to the secrets created in AWS
         Secrets Manager to manage SAP applications and components.</p>
       tags:
-        - Register
         - Applications
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
-        - Components
-        - Databases
-        - Operations
-        - ARN
-        - Put
         - Register
   /start-application-refresh:
     POST:
-      summary: StartApplicationRefresh
+      summary: 'Start Application Refresh '
       description: <p>Refreshes a registered application.</p>
       tags:
-        - Start
         - Applications
-        - Refresh
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
-        - Components
-        - Databases
-        - Operations
-        - ARN
-        - Put
-        - Register
-        - Start
         - Refresh
   /update-application-settings:
     POST:
-      summary: UpdateApplicationSettings
+      summary: 'Update Application Settings '
       description: >-
         <p>Updates the settings of an application registered with AWS Systems
         Manager fo
       tags:
-        - Update
         - Applications
-        - Settings
-        - Delete
-        - Resources
-        - Permission
-        - Deregister
-        - Applications
-        - Get
-        - Components
-        - Databases
-        - Operation
-        - Lists
-        - Applications
-        - Components
-        - Databases
-        - Operations
-        - ARN
-        - Put
-        - Register
-        - Start
-        - Refresh
-        - Update
         - Settings
