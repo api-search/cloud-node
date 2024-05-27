@@ -4,10 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes tags from the specified container. You can specify one or
         more tags to re
       tags:
+        - Resources
         - Untag
-        - null
