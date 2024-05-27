@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: ValidateMatchmakingRuleSet
+      summary: 'Validate Matchmaking Rule Set '
       description: >-
         <p>Validates the syntax of a matchmaking rule or rule set. This
         operation checks that the rule set is using syntactically correct JSON
@@ -14,7 +14,7 @@ paths:
         href="https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-rulesets.html">Build
         a rule set</a> </p> <
       tags:
-        - Validate
         - Matchmaking
         - Rules
-        - null
+        - Sets
+        - Validate
