@@ -4,9 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateReplicationJob
+      summary: 'Update Replication Job '
       description: <p>Updates the specified settings for the specified replicati
       tags:
-        - Update
+        - Jobs
         - Replication
-        - Items
