@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateSubscription
+      summary: 'Update Subscription '
       description: >-
         <p>Updates the details of an existing subscription. Only enter values
         for parameters you want to change. Empty parameters are not updated.</p>
@@ -13,5 +13,4 @@ paths:
         organization's payer account, regardless of whether the payer account
         itself is subscribed. </
       tags:
-        - Update
         - Subscriptions
