@@ -4,9 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateScheduledQuery
+      summary: 'Update Scheduled Query '
       description: <p>Update a scheduled
       tags:
-        - Update
+        - Queries
         - Scheduled
-        - Que
