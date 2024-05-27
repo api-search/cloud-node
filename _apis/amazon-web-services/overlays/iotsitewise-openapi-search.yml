@@ -4,7 +4,7 @@ info:
 paths:
   /assets/{assetId}/associate:
     POST:
-      summary: AssociateAssets
+      summary: 'Associate Assets '
       description: >-
         <p>Associates a child asset with the given parent asset through a
         hierarchy defined in the parent asset's model. For more information, see
@@ -12,128 +12,85 @@ paths:
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/add-associated-assets.html">Associating
         assets</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Associate
         - Assets
-        - Identifiers
         - Associate
   /timeseries/associate/:
     POST:
-      summary: AssociateTimeSeriesToAssetProperty
+      summary: 'Associate Time Series To Asset Property '
       description: <p>Associates a time series (data stream) with an asset property.</p>
       tags:
-        - Associate
-        - Time
-        - Series
-        - To
         - Assets
-        - Properties
-        - Identifiers
         - Associate
+        - Properties
+        - Series
+        - Time
         - Time Series
   /projects/{projectId}/assets/associate:
     POST:
-      summary: BatchAssociateProjectAssets
+      summary: 'Batch Associate Project Assets '
       description: >-
         <p>Associates a group (batch) of assets with an IoT SiteWise Monitor
         project.</p>
       tags:
+        - Assets
+        - Associate
         - Batches
-        - Associate
         - Projects
-        - Assets
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
   /projects/{projectId}/assets/disassociate:
     POST:
-      summary: BatchDisassociateProjectAssets
+      summary: 'Batch Disassociate Project Assets '
       description: >-
         <p>Disassociates a group (batch) of assets from an IoT SiteWise Monitor
         project.</p>
       tags:
+        - Assets
         - Batches
         - Disassociate
         - Projects
-        - Assets
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
   /properties/batch/aggregates:
     POST:
-      summary: BatchGetAssetPropertyAggregates
+      summary: 'Batch Get Asset Property Aggregates '
       description: >-
         <p>Gets aggregated values (for example, average, minimum, and maximum)
         for one or more asset properties. For more information, see <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#aggregates">Querying
         aggregates</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Batches
-        - Get
-        - Assets
-        - Properties
         - Aggregates
-        - Identifiers
-        - Associate
-        - Time Series
         - Assets
-        - Disassociate
-        - Properties
         - Batches
-        - Aggregates
+        - Properties
   /properties/batch/latest:
     POST:
-      summary: BatchGetAssetPropertyValue
+      summary: 'Batch Get Asset Property Value '
       description: >-
         <p>Gets the current value for one or more asset properties. For more
         information, see <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#current-values">Querying
         current values</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Batches
-        - Get
         - Assets
+        - Batches
+        - Latest
         - Properties
         - Value
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
   /properties/batch/history:
     POST:
-      summary: BatchGetAssetPropertyValueHistory
+      summary: 'Batch Get Asset Property Value History '
       description: >-
         <p>Gets the historical values for one or more asset properties. For more
         information, see <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#historical-values">Querying
         historical values</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Batches
-        - Get
         - Assets
+        - Batches
+        - History
         - Properties
         - Value
-        - History
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
   /properties:
     POST:
-      summary: BatchPutAssetPropertyValue
+      summary: 'Batch Put Asset Property Value '
       description: >-
         <p>Sends a list of asset property values to IoT SiteWise. Each value is
         a timestamp-quality-value (TQV) data point. For more information, see <a
@@ -161,47 +118,23 @@ paths:
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-batchputassetpropertyvalue-action">BatchPutAssetPropertyValue
         authorization</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Batches
-        - Put
         - Assets
+        - Batches
         - Properties
         - Value
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
   /access-policies:
     GET:
-      summary: ListAccessPolicies
+      summary: 'List Access Policies '
       description: >-
         <p>Retrieves a paginated list of access policies for an identity (an IAM
         Identity Center user, an IAM Identity Center group, or an IAM user) or
         an IoT SiteWise Monitor resource (a portal or project).</p>
       tags:
-        - Lists
-        - Access
-        - Policies
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
         - Access
         - Policies
   /assets:
     GET:
-      summary: ListAssets
+      summary: 'List Assets '
       description: >-
         <p>Retrieves a paginated list of asset summaries.</p> <p>You can use
         this operation to do the following:</p> <ul> <li> <p>List assets based
@@ -212,282 +145,85 @@ paths:
         to get all of your asset model IDs. Then, use ListAssets to get all
         assets for each asset model.</p>
       tags:
-        - Lists
         - Assets
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
   /asset-models:
     GET:
-      summary: ListAssetModels
+      summary: 'List Asset Models '
       description: <p>Retrieves a paginated list of summaries of all asset models.</p>
       tags:
-        - Lists
-        - Assets
-        - Models
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
         - Assets
         - Models
   /asset-models/{assetModelId}/composite-models:
     GET:
-      summary: ListAssetModelCompositeModels
+      summary: 'List Asset Model Composite Models '
       description: >-
         <p>Retrieves a paginated list of composite models associated with the
         asset model</p>
       tags:
-        - Lists
         - Assets
-        - Models
         - Composite
         - Models
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
   /jobs:
     GET:
-      summary: ListBulkImportJobs
+      summary: 'List Bulk Import Jobs '
       description: >-
         <p>Retrieves a paginated list of bulk import job requests. For more
         information, see <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ListBulkImportJobs.html">List
         bulk import jobs (CLI)</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Lists
         - Bulk
         - Import
         - Jobs
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
   /dashboards:
     GET:
-      summary: ListDashboards
+      summary: 'List Dashboards '
       description: >-
         <p>Retrieves a paginated list of dashboards for an IoT SiteWise Monitor
         project.</p>
       tags:
-        - Lists
-        - Dashboards
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
         - Dashboards
   /20200301/gateways:
     GET:
-      summary: ListGateways
+      summary: 'List Gateways '
       description: <p>Retrieves a paginated list of gateways.</p>
       tags:
-        - Lists
-        - Gateways
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
         - Gateways
   /portals:
     GET:
-      summary: ListPortals
+      summary: 'List Portals '
       description: <p>Retrieves a paginated list of IoT SiteWise Monitor portals.</p>
       tags:
-        - Lists
-        - Portals
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
         - Portals
   /projects:
     GET:
-      summary: ListProjects
+      summary: 'List Projects '
       description: >-
         <p>Retrieves a paginated list of projects for an IoT SiteWise Monitor
         portal.</p>
       tags:
-        - Lists
-        - Projects
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
         - Projects
   /access-policies/{accessPolicyId}:
     PUT:
-      summary: UpdateAccessPolicy
+      summary: 'Update Access Policy '
       description: >-
         <p>Updates an existing access policy that specifies an identity's access
         to an IoT SiteWise Monitor portal or project resource.</p>
       tags:
-        - Update
         - Access
-        - Policies
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
         - Policies
   /assets/{assetId}:
     PUT:
-      summary: UpdateAsset
+      summary: 'Update Asset '
       description: >-
         <p>Updates an asset's name. For more information, see <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-assets-and-models.html">Updating
         assets and models</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Update
         - Assets
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
   /asset-models/{assetModelId}:
     PUT:
-      summary: UpdateAssetModel
+      summary: 'Update Asset Model '
       description: >-
         <p>Updates an asset model and all of the assets that were created from
         the model. Each asset created from the model inherits the updated asset
@@ -505,35 +241,11 @@ paths:
         associated with that hierarchy. You can't change the type or data type
         of an existing property.</p> </important>
       tags:
-        - Update
         - Assets
         - Models
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
   /asset-models/{assetModelId}/composite-models/{assetModelCompositeModelId}:
     PUT:
-      summary: UpdateAssetModelCompositeModel
+      summary: 'Update Asset Model Composite Model '
       description: >-
         <p>Updates a composite model and all of the assets that were created
         from the model. Each asset created from the model inherits the updated
@@ -553,156 +265,37 @@ paths:
         <code>name</code> as the previous one and IoT SiteWise will generate a
         new unique <code>id</code>.</p> </li> </ol> </important>
       tags:
-        - Update
         - Assets
-        - Models
         - Composite
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
         - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
   /dashboards/{dashboardId}:
     PUT:
-      summary: UpdateDashboard
+      summary: 'Update Dashboard '
       description: <p>Updates an IoT SiteWise Monitor dashboard.</p>
       tags:
-        - Update
         - Dashboard
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
         - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
   /20200301/gateways/{gatewayId}:
     PUT:
-      summary: UpdateGateway
+      summary: 'Update Gateway '
       description: <p>Updates a gateway's name.</p>
       tags:
-        - Update
-        - Gateway
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
         - Gateways
-        - Portals
-        - Projects
-        - Policies
   /portals/{portalId}:
     PUT:
-      summary: UpdatePortal
+      summary: 'Update Portal '
       description: <p>Updates an IoT SiteWise Monitor portal.</p>
       tags:
-        - Update
         - Portals
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
   /projects/{projectId}:
     PUT:
-      summary: UpdateProject
+      summary: 'Update Project '
       description: <p>Updates an IoT SiteWise Monitor project.</p>
       tags:
-        - Update
         - Projects
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
   /timeseries/delete/:
     POST:
-      summary: DeleteTimeSeries
+      summary: 'Delete Time Series '
       description: >-
         <p>Deletes a time series (data stream). If you delete a time series
         that's associated with an asset property, the asset property still
@@ -716,67 +309,19 @@ paths:
         <code>propertyId</code> that identifies the asset property.</p> </li>
         </ul> </li> </ul>
       tags:
-        - Delete
-        - Time
         - Series
-        - Identifiers
-        - Associate
+        - Time
         - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
   /actions/{actionId}:
     GET:
-      summary: DescribeAction
+      summary: 'Describe Action '
       description: <p>Retrieves information about an action.</p>
       tags:
-        - Describe
         - Actions
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
+        - Describe
   /assets/{assetId}/composite-models/{assetCompositeModelId}:
     GET:
-      summary: DescribeAssetCompositeModel
+      summary: 'Describe Asset Composite Model '
       description: >-
         <p>Retrieves information about an asset composite model (also known as
         an asset component). An <code>AssetCompositeModel</code> is an instance
@@ -784,37 +329,13 @@ paths:
         information about the model this is based on, call <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetModelCompositeModel.html">DescribeAssetModelCompositeModel</a>.</p>
       tags:
+        - Assets
+        - Composite
         - Describe
-        - Assets
-        - Composite
         - Models
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
   /assets/{assetId}/properties/{propertyId}:
     PUT:
-      summary: UpdateAssetProperty
+      summary: 'Update Asset Property '
       description: >-
         <p>Updates an asset property's alias and notification state.</p>
         <important> <p>This operation overwrites the property's existing alias
@@ -824,37 +345,11 @@ paths:
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetProperty.html">DescribeAssetProperty</a>.</p>
         </important>
       tags:
-        - Update
         - Assets
-        - Properties
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
         - Properties
   /jobs/{jobId}:
     GET:
-      summary: DescribeBulkImportJob
+      summary: 'Describe Bulk Import Job '
       description: >-
         <p>Retrieves information about a bulk import job request. For more
         information, see <a
@@ -862,79 +357,26 @@ paths:
         a bulk import job (CLI)</a> in the <i>Amazon Simple Storage Service User
         Guide</i>.</p>
       tags:
-        - Describe
         - Bulk
+        - Describe
         - Import
         - Jobs
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
   /configuration/account/encryption:
     POST:
-      summary: PutDefaultEncryptionConfiguration
+      summary: 'Put Default Encryption Configuration '
       description: >-
         <p>Sets the default encryption configuration for the Amazon Web Services
         account. For more information, see <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/key-management.html">Key
         management</a> in the <i>IoT SiteWise User Guide</i>.</p>
       tags:
-        - Put
+        - Accounts
+        - Configurations
         - Default
-        - Encryption
-        - Configurations
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
         - Encryption
   /20200301/gateways/{gatewayId}/capability/{capabilityNamespace}:
     GET:
-      summary: DescribeGatewayCapabilityConfiguration
+      summary: 'Describe Gateway Capability Configuration '
       description: >-
         <p>Retrieves information about a gateway capability configuration. Each
         gateway capability defines data sources for a gateway. A capability
@@ -944,122 +386,29 @@ paths:
         all capability configurations for a gateway, use <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeGateway.html">DescribeGateway</a>.</p>
       tags:
+        - Capabilities
+        - Configurations
         - Describe
-        - Gateway
-        - Capabilities
-        - Configurations
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
         - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
         - Namespaces
   /logging:
     PUT:
-      summary: PutLoggingOptions
+      summary: 'Put Logging Options '
       description: <p>Sets logging options for IoT SiteWise.</p>
       tags:
-        - Put
         - Logging
         - Options
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
   /configuration/account/storage:
     POST:
-      summary: PutStorageConfiguration
+      summary: 'Put Storage Configuration '
       description: <p>Configures storage settings for IoT SiteWise.</p>
       tags:
-        - Put
-        - Storage
+        - Accounts
         - Configurations
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
         - Storage
   /timeseries/describe/:
     GET:
-      summary: DescribeTimeSeries
+      summary: 'Describe Time Series '
       description: >-
         <p>Retrieves information about a time series (data stream).</p> <p>To
         identify a time series, do one of the following:</p> <ul> <li> <p>If the
@@ -1072,218 +421,50 @@ paths:
         </ul> </li> </ul>
       tags:
         - Describe
-        - Time
         - Series
-        - Identifiers
-        - Associate
+        - Time
         - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
   /assets/{assetId}/disassociate:
     POST:
-      summary: DisassociateAssets
+      summary: 'Disassociate Assets '
       description: >-
         <p>Disassociates a child asset from the given parent asset through a
         hierarchy defined in the parent asset's model.</p>
       tags:
-        - Disassociate
-        - Assets
-        - Identifiers
-        - Associate
-        - Time Series
         - Assets
         - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
   /timeseries/disassociate/:
     POST:
-      summary: DisassociateTimeSeriesFromAssetProperty
+      summary: 'Disassociate Time Series From Asset Property '
       description: <p>Disassociates a time series (data stream) from an asset property.</p>
       tags:
+        - Assets
         - Disassociate
-        - Time
+        - Properties
         - Series
-        - From
-        - Assets
-        - Properties
-        - Identifiers
-        - Associate
+        - Time
         - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
   /actions:
     GET:
-      summary: ListActions
+      summary: 'List Actions '
       description: >-
         <p>Retrieves a paginated list of actions for a specific target
         resource.</p>
       tags:
-        - Lists
-        - Actions
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
         - Actions
   /queries/execution:
     POST:
-      summary: ExecuteQuery
+      summary: 'Execute Query '
       description: >-
         <p>Run SQL queries to retrieve metadata and time-series data from asset
         models, assets, measurements, metrics, transforms, and aggregates.</p>
       tags:
         - Execute
-        - Queries
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
         - Execution
+        - Queries
   /properties/aggregates:
     GET:
-      summary: GetAssetPropertyAggregates
+      summary: 'Get Asset Property Aggregates '
       description: >-
         <p>Gets aggregated values for an asset property. For more information,
         see <a
@@ -1298,49 +479,12 @@ paths:
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetProperty.html">UpdateAssetProperty</a>.</p>
         </li> </ul>
       tags:
-        - Get
-        - Assets
-        - Properties
         - Aggregates
-        - Identifiers
-        - Associate
-        - Time Series
         - Assets
-        - Disassociate
         - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
   /properties/latest:
     GET:
-      summary: GetAssetPropertyValue
+      summary: 'Get Asset Property Value '
       description: >-
         <p>Gets an asset property's current value. For more information, see <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#current-values">Querying
@@ -1354,49 +498,13 @@ paths:
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetProperty.html">UpdateAssetProperty</a>.</p>
         </li> </ul>
       tags:
-        - Get
         - Assets
+        - Latest
         - Properties
         - Value
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
   /properties/history:
     GET:
-      summary: GetAssetPropertyValueHistory
+      summary: 'Get Asset Property Value History '
       description: >-
         <p>Gets the history of an asset property's values. For more information,
         see <a
@@ -1411,50 +519,13 @@ paths:
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetProperty.html">UpdateAssetProperty</a>.</p>
         </li> </ul>
       tags:
-        - Get
         - Assets
+        - History
         - Properties
         - Value
-        - History
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
   /properties/interpolated:
     GET:
-      summary: GetInterpolatedAssetPropertyValues
+      summary: 'Get Interpolated Asset Property Values '
       description: >-
         <p>Get interpolated values for an asset property for a specified time
         interval, during a period of time. If your time series is missing data
@@ -1471,445 +542,92 @@ paths:
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_UpdateAssetProperty.html">UpdateAssetProperty</a>.</p>
         </li> </ul>
       tags:
-        - Get
-        - Interpolated
         - Assets
+        - Interpolated
         - Properties
         - Values
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
   /asset-models/{assetModelId}/properties:
     GET:
-      summary: ListAssetModelProperties
+      summary: 'List Asset Model Properties '
       description: >-
         <p>Retrieves a paginated list of properties associated with an asset
         model. If you update properties associated with the model before you
         finish listing all the properties, you need to start all over again.</p>
       tags:
-        - Lists
         - Assets
         - Models
         - Properties
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
   /assets/{assetId}/properties:
     GET:
-      summary: ListAssetProperties
+      summary: 'List Asset Properties '
       description: >-
         <p>Retrieves a paginated list of properties associated with an asset. If
         you update properties associated with the model before you finish
         listing all the properties, you need to start all over again.</p>
       tags:
-        - Lists
         - Assets
         - Properties
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
   /assets/{assetId}/assetRelationships:
     GET:
-      summary: ListAssetRelationships
+      summary: 'List Asset Relationships '
       description: >-
         <p>Retrieves a paginated list of asset relationships for an asset. You
         can use this operation to identify an asset's root asset and all
         associated assets between that asset and its root.</p>
       tags:
-        - Lists
         - Assets
-        - Relationships
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
         - Relationships
   /assets/{assetId}/hierarchies:
     GET:
-      summary: ListAssociatedAssets
+      summary: 'List Associated Assets '
       description: >-
         <p>Retrieves a paginated list of associated assets.</p> <p>You can use
         this operation to do the following:</p> <ul> <li> <p>List child assets
         associated to a parent asset by a hierarchy that you specify.</p> </li>
         <li> <p>List an asset's parent asset.</p> </li> </ul>
       tags:
-        - Lists
+        - Assets
         - Associated
-        - Assets
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
-        - Relationships
         - Hierarchy
   /asset-models/{assetModelId}/composition-relationships:
     GET:
-      summary: ListCompositionRelationships
+      summary: 'List Composition Relationships '
       description: >-
         <p>Retrieves a paginated list of composition relationships for an asset
         model of type <code>COMPONENT_MODEL</code>.</p>
       tags:
-        - Lists
-        - Compositions
-        - Relationships
-        - Identifiers
-        - Associate
-        - Time Series
         - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
-        - Relationships
-        - Hierarchy
         - Compositions
+        - Models
+        - Relationships
   /projects/{projectId}/assets:
     GET:
-      summary: ListProjectAssets
+      summary: 'List Project Assets '
       description: >-
         <p>Retrieves a paginated list of assets associated with an IoT SiteWise
         Monitor project.</p>
       tags:
-        - Lists
+        - Assets
         - Projects
-        - Assets
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
-        - Relationships
-        - Hierarchy
-        - Compositions
   /tags:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes a tag from an IoT SiteWise resource.</p>
       tags:
-        - Untag
         - Resources
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
-        - Relationships
-        - Hierarchy
-        - Compositions
         - Tags
+        - Untag
   /timeseries/:
     GET:
-      summary: ListTimeSeries
+      summary: 'List Time Series '
       description: <p>Retrieves a paginated list of time series (data streams).</p>
       tags:
-        - Lists
-        - Time
         - Series
-        - Identifiers
-        - Associate
+        - Time
         - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
-        - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
-        - Relationships
-        - Hierarchy
-        - Compositions
-        - Tags
   /20200301/gateways/{gatewayId}/capability:
     POST:
-      summary: UpdateGatewayCapabilityConfiguration
+      summary: 'Update Gateway Capability Configuration '
       description: >-
         <p>Updates a gateway capability configuration or defines a new
         capability configuration. Each gateway capability defines data sources
@@ -1920,48 +638,6 @@ paths:
         gateway, use <a
         href="https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeGateway.html">DescribeGatewa
       tags:
-        - Update
-        - Gateway
         - Capabilities
         - Configurations
-        - Identifiers
-        - Associate
-        - Time Series
-        - Assets
-        - Disassociate
-        - Properties
-        - Batches
-        - Aggregates
-        - Latest
-        - History
-        - Access
-        - Policies
-        - Assets
-        - Models
-        - Models
-        - Composite
-        - Jobs
-        - Dashboards
-        - null
         - Gateways
-        - Portals
-        - Projects
-        - Policies
-        - Delete
-        - Properties
-        - Configurations
-        - Account
-        - Encryption
-        - Capabilities
-        - Namespaces
-        - Logging
-        - Storage
-        - Describe
-        - Actions
-        - Queries
-        - Execution
-        - Interpolated
-        - Relationships
-        - Hierarchy
-        - Compositions
-        - null
