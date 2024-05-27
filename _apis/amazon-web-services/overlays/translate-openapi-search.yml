@@ -4,11 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateParallelData
+      summary: 'Update Parallel Data '
       description: >-
         <p>Updates a previously created parallel data resource by importing a
         new input file from Amaz
       tags:
-        - Update
+        - Data
         - Parallel
-        - Da
