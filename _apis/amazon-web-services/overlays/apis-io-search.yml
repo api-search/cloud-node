@@ -13186,7 +13186,6 @@ apis:
         url: overlays/xray-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:xray
 common:
-common:
   - type: Portal
     url: https://aws.amazon.com/
   - type: Developer
@@ -13339,6 +13338,4 @@ maintainers:
     email: info@apievangelist.com
 overlays:
   - type: APIs.io Search
-    url: overlays/apis-io-search.yml
-  - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
