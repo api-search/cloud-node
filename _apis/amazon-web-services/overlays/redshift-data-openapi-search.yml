@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: ListTables
+      summary: 'List Tables '
       description: >-
         <p>List the tables in a database. If neither <code>SchemaPattern</code>
         nor <code>TablePattern</code> are specified, then all tables in the
@@ -42,5 +42,4 @@ paths:
         the Amazon Redshift Data API</a> in the <i>Amazon Redshift Management
         Guide
       tags:
-        - Lists
         - Tables
