@@ -4,412 +4,169 @@ info:
 paths:
   /greengrass/groups/{GroupId}/role:
     GET:
-      summary: GetAssociatedRole
+      summary: 'Get Associated Role '
       description: Retrieves the role associated with a particular group.
       tags:
-        - Get
         - Associated
-        - Roles
-        - Group
-        - Identifiers
+        - Green Grass
+        - Groups
         - Roles
   /greengrass/servicerole:
     GET:
-      summary: GetServiceRoleForAccount
+      summary: 'Get Service Role For Account '
       description: Retrieves the service role that is attached to your account.
       tags:
-        - Get
-        - Services
-        - Roles
-        - For
-        - Account
-        - Group
-        - Identifiers
-        - Roles
+        - Accounts
         - Green Grass
+        - Roles
         - Service Roles
+        - Services
   /greengrass/definition/connectors:
     GET:
-      summary: ListConnectorDefinitions
+      summary: 'List Connector Definitions '
       description: Retrieves a list of connector definitions.
       tags:
-        - Lists
         - Connectors
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
   /greengrass/definition/connectors/{ConnectorDefinitionId}/versions:
     GET:
-      summary: ListConnectorDefinitionVersions
+      summary: 'List Connector Definition Versions '
       description: >-
         Lists the versions of a connector definition, which are containers for
         connectors. Connectors run on the Greengrass core and contain built-in
         integration with local infrastructure, device protocols, AWS, and other
         cloud services.
       tags:
-        - Lists
         - Connectors
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
         - Versions
   /greengrass/definition/cores:
     GET:
-      summary: ListCoreDefinitions
+      summary: 'List Core Definitions '
       description: Retrieves a list of core definitions.
       tags:
-        - Lists
         - Core
-        - Definitions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
         - Cores
+        - Definitions
+        - Green Grass
   /greengrass/definition/cores/{CoreDefinitionId}/versions:
     GET:
-      summary: ListCoreDefinitionVersions
+      summary: 'List Core Definition Versions '
       description: Lists the versions of a core definition.
       tags:
-        - Lists
         - Core
-        - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
         - Cores
-        - Core
+        - Definitions
+        - Green Grass
+        - Versions
   /greengrass/groups/{GroupId}/deployments:
     GET:
-      summary: ListDeployments
+      summary: 'List Deployments '
       description: Returns a history of deployments for the group.
       tags:
-        - Lists
         - Deployments
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
+        - Groups
   /greengrass/definition/devices:
     GET:
-      summary: ListDeviceDefinitions
+      summary: 'List Device Definitions '
       description: Retrieves a list of device definitions.
       tags:
-        - Lists
+        - Definitions
         - Device
-        - Definitions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
         - Devices
+        - Green Grass
   /greengrass/definition/devices/{DeviceDefinitionId}/versions:
     GET:
-      summary: ListDeviceDefinitionVersions
+      summary: 'List Device Definition Versions '
       description: Lists the versions of a device definition.
       tags:
-        - Lists
+        - Definitions
         - Device
-        - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
         - Devices
-        - Device
+        - Green Grass
+        - Versions
   /greengrass/definition/functions:
     GET:
-      summary: ListFunctionDefinitions
+      summary: 'List Function Definitions '
       description: Retrieves a list of Lambda function definitions.
       tags:
-        - Lists
-        - Functions
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
+        - Functions
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
   /greengrass/definition/functions/{FunctionDefinitionId}/versions:
     GET:
-      summary: ListFunctionDefinitionVersions
+      summary: 'List Function Definition Versions '
       description: Lists the versions of a Lambda function definition.
       tags:
-        - Lists
-        - Functions
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
+        - Functions
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
         - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
   /greengrass/groups:
     GET:
-      summary: ListGroups
+      summary: 'List Groups '
       description: Retrieves a list of groups.
       tags:
-        - Lists
-        - Groups
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
         - Groups
   /greengrass/groups/{GroupId}/certificateauthorities:
     GET:
-      summary: ListGroupCertificateAuthorities
+      summary: 'List Group Certificate Authorities '
       description: Retrieves the current CAs for a group.
       tags:
-        - Lists
-        - Group
-        - Certificates
         - Authorities
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
         - Certificate Authorities
+        - Certificates
+        - Green Grass
+        - Groups
   /greengrass/groups/{GroupId}/versions:
     GET:
-      summary: ListGroupVersions
+      summary: 'List Group Versions '
       description: Lists the versions of a group.
       tags:
-        - Lists
-        - Group
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
         - Groups
-        - Certificate Authorities
+        - Versions
   /greengrass/definition/loggers:
     GET:
-      summary: ListLoggerDefinitions
+      summary: 'List Logger Definitions '
       description: Retrieves a list of logger definitions.
       tags:
-        - Lists
-        - Loggers
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
         - Loggers
   /greengrass/definition/loggers/{LoggerDefinitionId}/versions:
     GET:
-      summary: ListLoggerDefinitionVersions
+      summary: 'List Logger Definition Versions '
       description: Lists the versions of a logger definition.
       tags:
-        - Lists
-        - Loggers
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
+        - Loggers
         - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
   /greengrass/definition/resources:
     GET:
-      summary: ListResourceDefinitions
+      summary: 'List Resource Definitions '
       description: Retrieves a list of resource definitions.
       tags:
-        - Lists
-        - Resources
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
         - Resources
   /greengrass/definition/resources/{ResourceDefinitionId}/versions:
     GET:
-      summary: ListResourceDefinitionVersions
+      summary: 'List Resource Definition Versions '
       description: Lists the versions of a resource definition.
       tags:
-        - Lists
-        - Resources
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
+        - Resources
         - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
   /greengrass/updates:
     POST:
-      summary: CreateSoftwareUpdateJob
+      summary: 'Create Software Update Job '
       description: >-
         Creates a software update for a core or group of cores (specified as an
         IoT thing group.) Use this to update the OTA Agent as well as the
@@ -417,1037 +174,253 @@ paths:
         provides additional commands to manage a Greengrass core software update
         job.
       tags:
-        - Create
-        - Software
-        - Update
-        - Jobs
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
+        - Jobs
+        - Software
   /greengrass/definition/subscriptions:
     GET:
-      summary: ListSubscriptionDefinitions
+      summary: 'List Subscription Definitions '
       description: Retrieves a list of subscription definitions.
       tags:
-        - Lists
-        - Subscriptions
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
         - Subscriptions
   /greengrass/definition/subscriptions/{SubscriptionDefinitionId}/versions:
     GET:
-      summary: ListSubscriptionDefinitionVersions
+      summary: 'List Subscription Definition Versions '
       description: Lists the versions of a subscription definition.
       tags:
-        - Lists
-        - Subscriptions
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
+        - Subscriptions
         - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
   /greengrass/definition/connectors/{ConnectorDefinitionId}:
     PUT:
-      summary: UpdateConnectorDefinition
+      summary: 'Update Connector Definition '
       description: Updates a connector definition.
       tags:
-        - Update
         - Connectors
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
   /greengrass/definition/cores/{CoreDefinitionId}:
     PUT:
-      summary: UpdateCoreDefinition
+      summary: 'Update Core Definition '
       description: Updates a core definition.
       tags:
-        - Update
         - Core
-        - Definitions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
         - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
+        - Definitions
+        - Green Grass
   /greengrass/definition/devices/{DeviceDefinitionId}:
     PUT:
-      summary: UpdateDeviceDefinition
+      summary: 'Update Device Definition '
       description: Updates a device definition.
       tags:
-        - Update
+        - Definitions
         - Device
-        - Definitions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
         - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
+        - Green Grass
   /greengrass/definition/functions/{FunctionDefinitionId}:
     PUT:
-      summary: UpdateFunctionDefinition
+      summary: 'Update Function Definition '
       description: Updates a Lambda function definition.
       tags:
-        - Update
-        - Functions
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
+        - Functions
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
   /greengrass/groups/{GroupId}:
     PUT:
-      summary: UpdateGroup
+      summary: 'Update Group '
       description: Updates a group.
       tags:
-        - Update
-        - Group
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
         - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
   /greengrass/definition/loggers/{LoggerDefinitionId}:
     PUT:
-      summary: UpdateLoggerDefinition
+      summary: 'Update Logger Definition '
       description: Updates a logger definition.
       tags:
-        - Update
-        - Loggers
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
         - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
   /greengrass/definition/resources/{ResourceDefinitionId}:
     PUT:
-      summary: UpdateResourceDefinition
+      summary: 'Update Resource Definition '
       description: Updates a resource definition.
       tags:
-        - Update
-        - Resources
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
         - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
   /greengrass/definition/subscriptions/{SubscriptionDefinitionId}:
     PUT:
-      summary: UpdateSubscriptionDefinition
+      summary: 'Update Subscription Definition '
       description: Updates a subscription definition.
       tags:
-        - Update
-        - Subscriptions
         - Definitions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
         - Subscriptions
   /greengrass/bulk/deployments/{BulkDeploymentId}/status:
     GET:
-      summary: GetBulkDeploymentStatus
+      summary: 'Get Bulk Deployment Status '
       description: Returns the status of a bulk deployment.
       tags:
-        - Get
         - Bulk
         - Deployments
-        - Status
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
         - Status
   /greengrass/things/{ThingName}/connectivityInfo:
     PUT:
-      summary: UpdateConnectivityInfo
+      summary: 'Update Connectivity Info '
       description: >-
         Updates the connectivity information for the core. Any devices that
         belong to the group which has this core will receive this information in
         order to find the location of the core and connect to it.
       tags:
-        - Update
         - Connectivity
-        - Info
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
         - Info
+        - Names
+        - Things
   /greengrass/definition/connectors/{ConnectorDefinitionId}/versions/{ConnectorDefinitionVersionId}:
     GET:
-      summary: GetConnectorDefinitionVersion
+      summary: 'Get Connector Definition Version '
       description: >-
         Retrieves information about a connector definition version, including
         the connectors that the version contains. Connectors are prebuilt
         modules that interact with local infrastructure, device protocols, AWS,
         and other cloud services.
       tags:
-        - Get
         - Connectors
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
         - Versions
   /greengrass/definition/cores/{CoreDefinitionId}/versions/{CoreDefinitionVersionId}:
     GET:
-      summary: GetCoreDefinitionVersion
+      summary: 'Get Core Definition Version '
       description: Retrieves information about a core definition version.
       tags:
-        - Get
         - Core
-        - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
         - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
+        - Definitions
+        - Green Grass
         - Versions
   /greengrass/groups/{GroupId}/deployments/{DeploymentId}/status:
     GET:
-      summary: GetDeploymentStatus
+      summary: 'Get Deployment Status '
       description: Returns the status of a deployment.
       tags:
-        - Get
         - Deployments
-        - Status
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
         - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
         - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
   /greengrass/definition/devices/{DeviceDefinitionId}/versions/{DeviceDefinitionVersionId}:
     GET:
-      summary: GetDeviceDefinitionVersion
+      summary: 'Get Device Definition Version '
       description: Retrieves information about a device definition version.
       tags:
-        - Get
+        - Definitions
         - Device
-        - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
         - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
+        - Green Grass
         - Versions
   /greengrass/definition/functions/{FunctionDefinitionId}/versions/{FunctionDefinitionVersionId}:
     GET:
-      summary: GetFunctionDefinitionVersion
+      summary: 'Get Function Definition Version '
       description: >-
         Retrieves information about a Lambda function definition version,
         including which Lambda functions are included in the version and their
         configurations.
       tags:
-        - Get
-        - Functions
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
+        - Functions
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
         - Versions
   /greengrass/groups/{GroupId}/certificateauthorities/{CertificateAuthorityId}:
     GET:
-      summary: GetGroupCertificateAuthority
+      summary: 'Get Group Certificate Authority '
       description: >-
         Retreives the CA associated with a group. Returns the public key of the
         CA.
       tags:
-        - Get
-        - Group
-        - Certificates
         - Authority
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
         - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
         - Certificates
-        - Authority
+        - Green Grass
+        - Groups
   /greengrass/groups/{GroupId}/certificateauthorities/configuration/expiry:
     PUT:
-      summary: UpdateGroupCertificateConfiguration
+      summary: 'Update Group Certificate Configuration '
       description: Updates the Certificate expiry time for a group.
       tags:
-        - Update
-        - Group
-        - Certificates
-        - Configurations
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
         - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
         - Certificates
-        - Authority
         - Configurations
         - Expiry
+        - Green Grass
+        - Groups
   /greengrass/groups/{GroupId}/versions/{GroupVersionId}:
     GET:
-      summary: GetGroupVersion
+      summary: 'Get Group Version '
       description: Retrieves information about a group version.
       tags:
-        - Get
-        - Group
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
         - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
         - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
   /greengrass/definition/loggers/{LoggerDefinitionId}/versions/{LoggerDefinitionVersionId}:
     GET:
-      summary: GetLoggerDefinitionVersion
+      summary: 'Get Logger Definition Version '
       description: Retrieves information about a logger definition version.
       tags:
-        - Get
-        - Loggers
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
         - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
         - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
   /greengrass/definition/resources/{ResourceDefinitionId}/versions/{ResourceDefinitionVersionId}:
     GET:
-      summary: GetResourceDefinitionVersion
+      summary: 'Get Resource Definition Version '
       description: >-
         Retrieves information about a resource definition version, including
         which resources are included in the version.
       tags:
-        - Get
-        - Resources
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
         - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
         - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
   /greengrass/definition/subscriptions/{SubscriptionDefinitionId}/versions/{SubscriptionDefinitionVersionId}:
     GET:
-      summary: GetSubscriptionDefinitionVersion
+      summary: 'Get Subscription Definition Version '
       description: Retrieves information about a subscription definition version.
       tags:
-        - Get
-        - Subscriptions
         - Definitions
-        - Versions
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
         - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
         - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
   /greengrass/things/{ThingName}/runtimeconfig:
     PUT:
-      summary: UpdateThingRuntimeConfiguration
+      summary: 'Update Thing Runtime Configuration '
       description: Updates the runtime configuration of a thing.
       tags:
-        - Update
-        - Things
-        - Runtime
         - Configurations
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
         - Names
-        - Connectivity
-        - Info
-        - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
+        - Runtime
         - Runtime Configurations
+        - Things
   /greengrass/bulk/deployments/{BulkDeploymentId}/detailed-reports:
     GET:
-      summary: ListBulkDeploymentDetailedReports
+      summary: 'List Bulk Deployment Detailed Reports '
       description: >-
         Gets a paginated list of the deployments that have been started in a
         bulk deployment operation, and their current deployment status.
       tags:
-        - Lists
         - Bulk
         - Deployments
         - Detailed
-        - Reports
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
-        - Runtime Configurations
-        - Detailed
         - Reports
   /greengrass/bulk/deployments:
     POST:
-      summary: StartBulkDeployment
+      summary: 'Start Bulk Deployment '
       description: >-
         Deploys multiple groups in one operation. This action starts the bulk
         deployment of a specified set of group versions. Each group version
@@ -1456,151 +429,31 @@ paths:
         token in every ''StartBulkDeployment'' request. These requests are
         idempotent with respect to the token and the request parameters.
       tags:
-        - Start
         - Bulk
         - Deployments
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
-        - Runtime Configurations
-        - Detailed
-        - Reports
   /tags/{resource-arn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: Remove resource tags from a Greengrass Resource.
       tags:
-        - Untag
-        - Resources
-        - Group
-        - Identifiers
-        - Roles
-        - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
-        - Runtime Configurations
-        - Detailed
-        - Reports
-        - Tags
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /greengrass/groups/{GroupId}/deployments/$reset:
     POST:
-      summary: ResetDeployments
+      summary: 'Reset Deployments '
       description: Resets a group's deployments.
       tags:
-        - Reset
+        - $Reset
         - Deployments
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
         - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
-        - Runtime Configurations
-        - Detailed
-        - Reports
-        - Tags
-        - ARN
-        - $reset
+        - Reset
   /greengrass/bulk/deployments/{BulkDeploymentId}/$stop:
     PUT:
-      summary: StopBulkDeployment
+      summary: 'Stop Bulk Deployment '
       description: >-
         Stops the execution of a bulk deployment. This action returns a status
         of ''Stopping'' until the deployment is stopped. You cannot start a new
@@ -1608,50 +461,8 @@ paths:
         state. This action doesn't rollback completed deployments or cancel
         pending de
       tags:
-        - Stop
+        - $Stop
         - Bulk
         - Deployments
-        - Group
-        - Identifiers
-        - Roles
         - Green Grass
-        - Service Roles
-        - Definitions
-        - Connectors
-        - Connectors
-        - Versions
-        - Cores
-        - Core
-        - Deployments
-        - Devices
-        - Device
-        - Functions
-        - Functions
-        - Groups
-        - Certificate Authorities
-        - Loggers
-        - Loggers
-        - Resources
-        - Resources
-        - Updates
-        - Subscriptions
-        - Subscriptions
-        - Bulk
-        - Deployments
-        - Status
-        - Things
-        - Names
-        - Connectivity
-        - Info
-        - Versions
-        - Certificates
-        - Authority
-        - Configurations
-        - Expiry
-        - Runtime Configurations
-        - Detailed
-        - Reports
-        - Tags
-        - ARN
-        - $reset
-        - null
+        - Stop
