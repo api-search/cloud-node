@@ -4,7 +4,7 @@ info:
 paths:
   /{Bucket}/{Key+}:
     PUT:
-      summary: UploadPartCopy
+      summary: 'Upload Part Copy '
       description: >-
         <p>Uploads a part by copying data from an existing object as data
         source. To specify the data source, you add the request header
@@ -123,14 +123,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html">ListMultipartUploads</a>
         </p> </li> </ul>
       tags:
-        - Uploads
-        - Part
-        - Copy
         - Bucket
+        - Copy
         - Keys
+        - Uploads
   /{Bucket}:
     GET:
-      summary: ListObjects
+      summary: 'List Objects '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns some or all (up to 1,000) of the objects in a bucket.
@@ -155,13 +154,11 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html">ListBuckets</a>
         </p> </li> </ul>
       tags:
-        - Lists
-        - Objects
         - Bucket
-        - Keys
+        - Objects
   /{Bucket}/{Key+}?uploads:
     POST:
-      summary: CreateMultipartUpload
+      summary: 'Create Multipart Upload '
       description: >-
         <p>This action initiates a multipart upload and returns an upload ID.
         This upload ID is used to associate all of the parts in the specific
@@ -335,15 +332,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html">ListMultipartUploads</a>
         </p> </li> </ul>
       tags:
-        - Create
+        - Bucket
+        - Key+?uploads
         - Multipart
         - Uploads
-        - Bucket
-        - Keys
-        - '?uploads'
   /{Bucket}?session:
     GET:
-      summary: CreateSession
+      summary: 'Create Session '
       description: >-
         <p>Creates a session that establishes temporary security credentials to
         support fast authentication and authorization for the Zonal endpoint
@@ -423,15 +418,11 @@ paths:
         <i>Bucket_name</i>.s3express-<i>az_id</i>.<i>region</i>.amazonaws.com</code>.</p>
         </dd> </dl>
       tags:
-        - Create
+        - Bucket?session
         - Sessions
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
   /{Bucket}?analytics:
     PUT:
-      summary: PutBucketAnalyticsConfiguration
+      summary: 'Put Bucket Analytics Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets an analytics configuration for the bucket (specified by
@@ -482,18 +473,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketAnalyticsConfigurations.html">ListBucketAnalyticsConfigurations</a>
         </p> </li> </ul>
       tags:
-        - Put
-        - Bucket
         - Analytics
-        - Configurations
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
+        - Bucket?analytics
+        - Configurations
   /{Bucket}?cors:
     PUT:
-      summary: PutBucketCors
+      summary: 'Put Bucket Cors '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the <code>cors</code> configuration for your bucket. If
@@ -536,18 +522,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTOPTIONSobject.html">RESTOPTIONSobject</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?cors
         - CORS
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
   /{Bucket}?encryption:
     PUT:
-      summary: PutBucketEncryption
+      summary: 'Put Bucket Encryption '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>This action uses the <code>encryption</code> subresource to
@@ -584,19 +564,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketEncryption.html">DeleteBucketEncryption</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?encryption
         - Encryption
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
   /{Bucket}?intelligent-tiering:
     PUT:
-      summary: PutBucketIntelligentTieringConfiguration
+      summary: 'Put Bucket Intelligent Tiering Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Puts a S3 Intelligent-Tiering configuration to the specified
@@ -640,23 +613,14 @@ paths:
         not have the <code>s3:PutIntelligentTieringConfiguration</code> bucket
         permission to set the configuration on the bucket. </p> </dd> </dl>
       tags:
-        - Put
         - Bucket
-        - Intelligent
-        - Tiering
+        - Bucket?intelligent
         - Configurations
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
+        - Intelligent
         - Tiering
   /{Bucket}?inventory:
     PUT:
-      summary: PutBucketInventoryConfiguration
+      summary: 'Put Bucket Inventory Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>This implementation of the <code>PUT</code> action adds an
@@ -724,23 +688,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketInventoryConfigurations.html">ListBucketInventoryConfigurations</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Inventory
+        - Bucket?inventory
         - Configurations
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
+        - Inventory
   /{Bucket}?lifecycle:
     PUT:
-      summary: PutBucketLifecycleConfiguration
+      summary: 'Put Bucket Lifecycle Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Creates a new lifecycle configuration for the bucket or
@@ -803,24 +757,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html">DeleteBucketLifecycle</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Lifecycle
+        - Bucket?lifecycle
         - Configurations
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
+        - Lifecycle
   /{Bucket}?metrics:
     PUT:
-      summary: PutBucketMetricsConfiguration
+      summary: 'Put Bucket Metrics Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets a metrics configuration (specified by the metrics
@@ -854,25 +797,13 @@ paths:
         the 1,000-configuration limit.</p> </li> <li> <p>HTTP Status Code: HTTP
         400 Bad Request</p> </li> </ul> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Metrics
+        - Bucket?metrics
         - Configurations
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
+        - Metrics
   /{Bucket}?ownershipControls:
     PUT:
-      summary: PutBucketOwnershipControls
+      summary: 'Put Bucket Ownership Controls '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Creates or modifies <code>OwnershipControls</code> for an
@@ -888,27 +819,13 @@ paths:
         <a>GetBucketOwnershipControls</a> </p> </li> <li> <p>
         <a>DeleteBucketOwnershipControls</a> </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?ownership
+        - Controls
         - Ownership
-        - Controls
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
   /{Bucket}?policy:
     PUT:
-      summary: PutBucketPolicy
+      summary: 'Put Bucket Policy '
       description: >-
         <p>Applies an Amazon S3 bucket policy to an Amazon S3 bucket.</p> <note>
         <p> <b>Directory buckets </b> - For directory buckets, you must make
@@ -969,27 +886,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucket.html">DeleteBucket</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?policy
         - Policies
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
   /{Bucket}?replication:
     PUT:
-      summary: PutBucketReplication
+      summary: 'Put Bucket Replication '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p> Creates a replication configuration or replaces an existing
@@ -1054,28 +956,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketReplication.html">DeleteBucketReplication</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?replication
         - Replication
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
   /{Bucket}?tagging:
     PUT:
-      summary: PutBucketTagging
+      summary: 'Put Bucket Tagging '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the tags for a bucket.</p> <p>Use tags to organize your
@@ -1121,29 +1007,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketTagging.html">DeleteBucketTagging</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?tagging
         - Tagging
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
   /{Bucket}?website:
     PUT:
-      summary: PutBucketWebsite
+      summary: 'Put Bucket Website '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the configuration of the website that is specified in
@@ -1189,30 +1058,12 @@ paths:
         an Object Redirect</a> in the <i>Amazon S3 User Guide</i>.</p> <p>The
         maximum request length is limited to 128 KB.</p>
       tags:
-        - Put
         - Bucket
+        - Bucket?website
         - Websites
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
   /{Bucket}/{Key+}?tagging:
     PUT:
-      summary: PutObjectTagging
+      summary: 'Put Object Tagging '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the supplied tag-set to an object that already exists in
@@ -1253,30 +1104,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html">DeleteObjectTagging</a>
         </p> </li> </ul>
       tags:
-        - Put
+        - Bucket
+        - Key+?tagging
         - Objects
         - Tagging
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
   /{Bucket}?delete:
     POST:
-      summary: DeleteObjects
+      summary: 'Delete Objects '
       description: >-
         <p>This operation enables you to delete multiple objects from a bucket
         using a single HTTP request. If you know the object keys that you want
@@ -1366,30 +1200,11 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html">AbortMultipartUpload</a>
         </p> </li> </ul>
       tags:
-        - Delete
+        - Bucket?delete
         - Objects
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
   /{Bucket}?publicAccessBlock:
     PUT:
-      summary: PutPublicAccessBlock
+      summary: 'Put Public Access Block '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Creates or modifies the <code>PublicAccessBlock</code>
@@ -1418,35 +1233,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html">Using
         Amazon S3 Block Public Access</a> </p> </li> </ul>
       tags:
-        - Put
+        - Access
+        - Blocks
+        - Bucket?public
         - Public
-        - Access
-        - Blocks
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
   /{Bucket}?accelerate:
     PUT:
-      summary: PutBucketAccelerateConfiguration
+      summary: 'Put Bucket Accelerate Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the accelerate configuration of an existing bucket.
@@ -1479,36 +1272,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html">CreateBucket</a>
         </p> </li> </ul>
       tags:
-        - Put
-        - Bucket
         - Accelerate
-        - Configurations
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
+        - Bucket?accelerate
+        - Configurations
   /{Bucket}?acl:
     PUT:
-      summary: PutBucketAcl
+      summary: 'Put Bucket Acl '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the permissions on an existing bucket using access
@@ -1612,36 +1382,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAcl.html">GetObjectAcl</a>
         </p> </li> </ul>
       tags:
-        - Put
-        - Bucket
         - ACL
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
+        - Bucket?acl
   /{Bucket}?location:
     GET:
-      summary: GetBucketLocation
+      summary: 'Get Bucket Location '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns the Region the bucket resides in. You set the
@@ -1668,37 +1414,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html">CreateBucket</a>
         </p> </li> </ul>
       tags:
-        - Get
         - Bucket
+        - Bucket?location
         - Locations
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
   /{Bucket}?logging:
     PUT:
-      summary: PutBucketLogging
+      summary: 'Put Bucket Logging '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Set the logging parameters for a bucket and to specify
@@ -1755,38 +1476,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLogging.html">GetBucketLogging</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?logging
         - Logging
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
   /{Bucket}?notification:
     PUT:
-      summary: PutBucketNotificationConfiguration
+      summary: 'Put Bucket Notification Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Enables notifications of specified events for a bucket. For
@@ -1838,40 +1533,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html">GetBucketNotificationConfiguration</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Notifications
+        - Bucket?notification
         - Configurations
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
+        - Notifications
   /{Bucket}?policyStatus:
     GET:
-      summary: GetBucketPolicyStatus
+      summary: 'Get Bucket Policy Status '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Retrieves the policy status for an Amazon S3 bucket,
@@ -1893,41 +1561,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeletePublicAccessBlock.html">DeletePublicAccessBlock</a>
         </p> </li> </ul>
       tags:
-        - Get
         - Bucket
+        - Bucket?policy
         - Policies
-        - Status
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
         - Status
   /{Bucket}?requestPayment:
     PUT:
-      summary: PutBucketRequestPayment
+      summary: 'Put Bucket Request Payment '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the request payment configuration for a bucket. By
@@ -1943,43 +1583,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketRequestPayment.html">GetBucketRequestPayment</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Request
-        - Payments
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
+        - Bucket?request
         - Payments
   /{Bucket}?versioning:
     PUT:
-      summary: PutBucketVersioning
+      summary: 'Put Bucket Versioning '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Sets the versioning state of an existing bucket.</p> <p>You
@@ -2015,43 +1624,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html">GetBucketVersioning</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
+        - Bucket?versioning
         - Versioning
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
   /{Bucket}/{Key+}?acl:
     PUT:
-      summary: PutObjectAcl
+      summary: 'Put Object Acl '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Uses the <code>acl</code> subresource to set the access
@@ -2155,43 +1733,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html">GetObject</a>
         </p> </li> </ul>
       tags:
-        - Put
-        - Objects
         - ACL
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
+        - Key+?acl
+        - Objects
   /{Bucket}/{Key+}?attributes:
     GET:
-      summary: GetObjectAttributes
+      summary: 'Get Object Attributes '
       description: >-
         <p>Retrieves all the metadata from an object without returning the
         object itself. This operation is useful if you're interested only in an
@@ -2315,44 +1863,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListParts.html">ListParts</a>
         </p> </li> </ul>
       tags:
-        - Get
-        - Objects
         - Attributes
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
+        - Key+?attributes
+        - Objects
   /{Bucket}/{Key+}?legal-hold:
     PUT:
-      summary: PutObjectLegalHold
+      summary: 'Put Object Legal Hold '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Applies a legal hold configuration to the specified object.
@@ -2361,47 +1878,14 @@ paths:
         Objects</a>.</p> <p>This functionality is not supported for Amazon S3 on
         Outposts.</p>
       tags:
-        - Put
-        - Objects
-        - Legal
-        - Hold
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
         - Hold
+        - Key+?legal
+        - Legal
+        - Objects
   /{Bucket}?object-lock:
     PUT:
-      summary: PutObjectLockConfiguration
+      summary: 'Put Object Lock Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Places an Object Lock configuration on the specified bucket.
@@ -2419,49 +1903,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-configure.html">Configuring
         Object Lock</a>.</p> </li> </ul> </note>
       tags:
-        - Put
-        - Objects
-        - Locks
+        - Bucket?object
         - Configurations
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
         - Locks
+        - Objects
   /{Bucket}/{Key+}?retention:
     PUT:
-      summary: PutObjectRetention
+      summary: 'Put Object Retention '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Places an Object Retention configuration on an object. For
@@ -2474,49 +1922,13 @@ paths:
         <code>s3:BypassGovernanceRetention</code> permission. </p> <p>This
         functionality is not supported for Amazon S3 on Outposts.</p>
       tags:
-        - Put
+        - Bucket
+        - Key+?retention
         - Objects
         - Retention
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
   /{Bucket}/{Key+}?torrent:
     GET:
-      summary: GetObjectTorrent
+      summary: 'Get Object Torrent '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns torrent files from a bucket. BitTorrent can save you
@@ -2530,50 +1942,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html">GetObject</a>
         </p> </li> </ul>
       tags:
-        - Get
+        - Bucket
+        - Key+?torrent
         - Objects
         - Torrent
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
   /:
     GET:
-      summary: ListDirectoryBuckets
+      summary: 'List Directory Buckets '
       description: >-
         <p>Returns a list of all Amazon S3 directory buckets owned by the
         authenticated sender of the request. For more information about
@@ -2602,50 +1977,11 @@ paths:
         <code>s3express-control.<i>region</i>.amazonaws.com</code>.</p> </dd>
         </dl>
       tags:
-        - Lists
-        - Directory
         - Buckets
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
+        - Directory
   /{Bucket}?uploads:
     GET:
-      summary: ListMultipartUploads
+      summary: 'List Multipart Uploads '
       description: >-
         <p>This operation lists in-progress multipart uploads in a bucket. An
         in-progress multipart upload is a multipart upload that has been
@@ -2736,50 +2072,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html">AbortMultipartUpload</a>
         </p> </li> </ul>
       tags:
-        - Lists
+        - Bucket?uploads
         - Multipart
         - Uploads
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
   /{Bucket}?versions:
     GET:
-      summary: ListObjectVersions
+      summary: 'List Object Versions '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns metadata about all versions of the objects in a
@@ -2802,51 +2100,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html">DeleteObject</a>
         </p> </li> </ul>
       tags:
-        - Lists
+        - Bucket?versions
         - Objects
         - Versions
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
-        - '?versions'
   /{Bucket}?list-type=2:
     GET:
-      summary: ListObjectsV2
+      summary: 'List Objects V2 '
       description: >-
         <p>Returns some or all (up to 1,000) of the objects in a bucket with
         each request. You can use the request parameters as selection criteria
@@ -2915,53 +2174,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html">CreateBucket</a>
         </p> </li> </ul>
       tags:
-        - Lists
+        - Bucket?list
         - Objects
-        - V2
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
-        - '?versions'
-        - '?list'
         - Types
   /{Bucket}/{Key+}?restore:
     POST:
-      summary: RestoreObject
+      summary: 'Restore Object '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Restores an archived copy of an object back into Amazon
@@ -3121,104 +2339,23 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html">GetBucketNotificationConfiguration</a>
         </p> </li> </ul>
       tags:
-        - Restore
-        - Objects
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
-        - '?versions'
-        - '?list'
-        - Types
-        - '?restore'
+        - Key+?restore
+        - Objects
+        - Restore
   /{Bucket}/{Key+}?select&select-type=2:
     POST:
-      summary: SelectObjectContent
+      summary: 'Select Object Content '
       description: "<note> <p>This operation is not supported by directory buckets.</p> </note> <p>This action filters the contents of an Amazon S3 object based on a simple structured query language (SQL) statement. In the request, along with the SQL expression, you must also specify a data serialization format (JSON, CSV, or Apache Parquet) of the object. Amazon S3 uses this format to parse object data into records, and returns only records that match the specified SQL expression. You must also specify the data serialization format for the response.</p> <p>This functionality is not supported for Amazon S3 on Outposts.</p> <p>For more information about Amazon S3 Select, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/selecting-content-from-objects.html\">Selecting Content from Objects</a> and <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-glacier-select-sql-reference-select.html\">SELECT Command</a> in the <i>Amazon S3 User Guide</i>.</p> <p/> <dl> <dt>Permissions</dt> <dd> <p>You must have the <code>s3:GetObject</code> permission for this operation.\_Amazon S3 Select does not support anonymous access. For more information about permissions, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/using-with-s3-actions.html\">Specifying Permissions in a Policy</a> in the <i>Amazon S3 User Guide</i>.</p> </dd> <dt>Object Data Formats</dt> <dd> <p>You can use Amazon S3 Select to query objects that have the following format properties:</p> <ul> <li> <p> <i>CSV, JSON, and Parquet</i> - Objects must be in CSV, JSON, or Parquet format.</p> </li> <li> <p> <i>UTF-8</i> - UTF-8 is the only encoding type Amazon S3 Select supports.</p> </li> <li> <p> <i>GZIP or BZIP2</i> - CSV and JSON files can be compressed using GZIP or BZIP2. GZIP and BZIP2 are the only compression formats that Amazon S3 Select supports for CSV and JSON files. Amazon S3 Select supports columnar compression for Parquet using GZIP or Snappy. Amazon S3 Select does not support whole-object compression for Parquet objects.</p> </li> <li> <p> <i>Server-side encryption</i> - Amazon S3 Select supports querying objects that are protected with server-side encryption.</p> <p>For objects that are encrypted with customer-provided encryption keys (SSE-C), you must use HTTPS, and you must use the headers that are documented in the <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html\">GetObject</a>. For more information about SSE-C, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerSideEncryptionCustomerKeys.html\">Server-Side Encryption (Using Customer-Provided Encryption Keys)</a> in the <i>Amazon S3 User Guide</i>.</p> <p>For objects that are encrypted with Amazon S3 managed keys (SSE-S3) and Amazon Web Services KMS keys (SSE-KMS), server-side encryption is handled transparently, so you don't need to specify anything. For more information about server-side encryption, including SSE-S3 and SSE-KMS, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html\">Protecting Data Using Server-Side Encryption</a> in the <i>Amazon S3 User Guide</i>.</p> </li> </ul> </dd> <dt>Working with the Response Body</dt> <dd> <p>Given the response size is unknown, Amazon S3 Select streams the response as a series of messages and includes a <code>Transfer-Encoding</code> header with <code>chunked</code> as its value in the response. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/RESTSelectObjectAppendix.html\">Appendix: SelectObjectContent Response</a>.</p> </dd> <dt>GetObject Support</dt> <dd> <p>The <code>SelectObjectContent</code> action does not support the following <code>GetObject</code> functionality. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html\">GetObject</a>.</p> <ul> <li> <p> <code>Range</code>: Although you can specify a scan range for an Amazon S3 Select request (see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html#AmazonS3-SelectObjectContent-request-ScanRange\">SelectObjectContentRequest - ScanRange</a> in the request parameters), you cannot specify the range of bytes of an object to return. </p> </li> <li> <p>The <code>GLACIER</code>, <code>DEEP_ARCHIVE</code>, and <code>REDUCED_REDUNDANCY</code> storage classes, or the <code>ARCHIVE_ACCESS</code> and <code>DEEP_ARCHIVE_ACCESS</code> access tiers of the <code>INTELLIGENT_TIERING</code> storage class: You cannot query objects in the <code>GLACIER</code>, <code>DEEP_ARCHIVE</code>, or <code>REDUCED_REDUNDANCY</code> storage classes, nor objects in the <code>ARCHIVE_ACCESS</code> or <code>DEEP_ARCHIVE_ACCESS</code> access tiers of the <code>INTELLIGENT_TIERING</code> storage class. For more information about storage classes, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html\">Using Amazon S3 storage classes</a> in the <i>Amazon S3 User Guide</i>.</p> </li> </ul> </dd> <dt>Special Errors</dt> <dd> <p>For a list of special errors for this operation, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html#SelectObjectContentErrorCodeList\">List of SELECT Object Content Error Codes</a> </p> </dd> </dl> <p>The following operations are related to <code>SelectObjectContent</code>:</p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html\">GetObject</a> </p> </li> <li> <p> <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html\">GetBucketLifecycleConfiguration</a> </p> </li> <li> <p> <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html\">PutBucketLifecycleConfiguration</a> </p> </li> </ul>"
       tags:
-        - Select
-        - Objects
-        - Content
         - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
-        - '?versions'
-        - '?list'
+        - Content
+        - Key+?select&select
+        - Objects
         - Types
-        - '?restore'
-        - '?select&select'
   /WriteGetObjectResponse:
     POST:
-      summary: WriteGetObjectResponse
+      summary: 'Write Get Object Response '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Passes transformed objects to a <code>GetObject</code>
@@ -3268,54 +2405,6 @@ paths:
         Amazon Web Services built Lambda functions</a> in the <i>Amazon S3 User
         Guid
       tags:
-        - Write
-        - Get
         - Objects
         - Responses
-        - Bucket
-        - Keys
-        - '?uploads'
-        - '?session'
-        - '?analytics'
-        - '?cors'
-        - '?encryption'
-        - '?intelligent'
-        - Tiering
-        - '?inventory'
-        - '?lifecycle'
-        - '?metrics'
-        - '?ownership'
-        - Controls
-        - '?policy'
-        - '?replication'
-        - '?tagging'
-        - '?website'
-        - '?delete'
-        - '?public'
-        - Access
-        - Blocks
-        - '?accelerate'
-        - '?acl'
-        - '?location'
-        - '?logging'
-        - '?notification'
-        - Status
-        - '?request'
-        - Payments
-        - '?versioning'
-        - '?attributes'
-        - '?legal'
-        - Hold
-        - '?object'
-        - Locks
-        - '?retention'
-        - '?torrent'
-        - '?versions'
-        - '?list'
-        - Types
-        - '?restore'
-        - '?select&select'
         - Write
-        - Get
-        - Objects
-        - Respon
