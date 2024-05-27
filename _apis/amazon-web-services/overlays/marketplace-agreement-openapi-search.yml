@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: SearchAgreements
+      summary: 'Search Agreements '
       description: >-
         <p>Searches across all agreements that a proposer or an acceptor has in
         AWS Marketplace. The search returns a list of agreements with basic
@@ -46,5 +46,5 @@ paths:
         <code>AgreementType</code> + <code>AcceptorAccountId</code> +
         <code>ResourceType</code> </p> <
       tags:
-        - Search
         - Agreements
+        - Search
