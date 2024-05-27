@@ -4,20 +4,18 @@ info:
 paths:
   /administrator:
     GET:
-      summary: GetAdministratorAccount
+      summary: 'Get Administrator Account '
       description: >-
         <p>Provides the details for the Security Hub administrator account for
         the current member account.</p> <p>Can be used by both member accounts
         that are managed using Organizations and accounts that were invited
         manually.</p>
       tags:
-        - Get
-        - Administrator
-        - Account
+        - Accounts
         - Administrator
   /master:
     GET:
-      summary: GetMasterAccount
+      summary: 'Get Master Account '
       description: >-
         <p>This method is deprecated. Instead, use
         <code>GetAdministratorAccount</code>.</p> <p>The Security Hub console
@@ -32,27 +30,20 @@ paths:
         account.</p> <p>Can be used by both member accounts that are managed
         using Organizations and accounts that were invited manually.</p>
       tags:
-        - Get
-        - Master
-        - Account
-        - Administrator
+        - Accounts
         - Master
   /automationrules/delete:
     POST:
-      summary: BatchDeleteAutomationRules
+      summary: 'Batch Delete Automation Rules '
       description: <p> Deletes one or more automation rules. </p>
       tags:
-        - Batches
-        - Delete
         - Automation
-        - Rules
-        - Administrator
-        - Master
         - Automation Rules
-        - Delete
+        - Batches
+        - Rules
   /standards/deregister:
     POST:
-      summary: BatchDisableStandards
+      summary: 'Batch Disable Standards '
       description: >-
         <p>Disables the standards specified by the provided
         <code>StandardsSubscriptionArns</code>.</p> <p>For more information, see
@@ -61,17 +52,12 @@ paths:
         Standards</a> section of the <i>Security Hub User Guide</i>.</p>
       tags:
         - Batches
+        - Deregister
         - Disable
         - Standards
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
   /standards/register:
     POST:
-      summary: BatchEnableStandards
+      summary: 'Batch Enable Standards '
       description: >-
         <p>Enables the standards specified by the provided
         <code>StandardsArn</code>. To obtain the ARN for a standard, use the
@@ -82,36 +68,22 @@ paths:
       tags:
         - Batches
         - Enable
-        - Standards
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
         - Register
+        - Standards
   /automationrules/get:
     POST:
-      summary: BatchGetAutomationRules
+      summary: 'Batch Get Automation Rules '
       description: >-
         <p> Retrieves a list of details for automation rules based on rule
         Amazon Resource Names (ARNs). </p>
       tags:
-        - Batches
-        - Get
         - Automation
-        - Rules
-        - Administrator
-        - Master
         - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
+        - Batches
+        - Rules
   /configurationPolicyAssociation/batchget:
     POST:
-      summary: BatchGetConfigurationPolicyAssociations
+      summary: 'Batch Get Configuration Policy Associations '
       description: >-
         <p> Returns associations between an Security Hub configuration and a
         batch of target accounts, organizational units, or the root. Only the
@@ -119,74 +91,34 @@ paths:
         home Region. A configuration can refer to a configuration policy or to a
         self-managed configuration. </p>
       tags:
+        - Associations
         - Batches
-        - Get
         - Configurations
         - Policies
-        - Associations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
   /securityControls/batchGet:
     POST:
-      summary: BatchGetSecurityControls
+      summary: 'Batch Get Security Controls '
       description: >-
         <p> Provides details about a batch of security controls for the current
         Amazon Web Services account and Amazon Web Services Region. </p>
       tags:
         - Batches
-        - Get
+        - Controls
         - Security
-        - Controls
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
   /associations/batchGet:
     POST:
-      summary: BatchGetStandardsControlAssociations
+      summary: 'Batch Get Standards Control Associations '
       description: >-
         <p> For a batch of security controls and standards, identifies whether
         each control is currently enabled or disabled in a standard. </p>
       tags:
-        - Batches
-        - Get
-        - Standards
-        - Control
         - Associations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
         - Batches
         - Controls
-        - Batches
+        - Standards
   /findings/import:
     POST:
-      summary: BatchImportFindings
+      summary: 'Batch Import Findings '
       description: >-
         <p>Imports security findings generated by a finding provider into
         Security Hub. This action is requested by the finding provider to import
@@ -221,53 +153,22 @@ paths:
         values for these attributes.</p>
       tags:
         - Batches
-        - Import
-        - Findings
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
         - Findings
         - Import
   /automationrules/update:
     PATCH:
-      summary: BatchUpdateAutomationRules
+      summary: 'Batch Update Automation Rules '
       description: >-
         <p> Updates one or more automation rules based on rule Amazon Resource
         Names (ARNs) and input parameters. </p>
       tags:
-        - Batches
-        - Update
         - Automation
-        - Rules
-        - Administrator
-        - Master
         - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
         - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
+        - Rules
   /findings/batchupdate:
     PATCH:
-      summary: BatchUpdateFindings
+      summary: 'Batch Update Findings '
       description: >-
         <p>Used by Security Hub customers to update information about their
         investigation into a finding. Requested by administrator accounts or
@@ -291,146 +192,49 @@ paths:
         Guide</i>.</p>
       tags:
         - Batches
-        - Update
         - Findings
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
   /associations:
     GET:
-      summary: ListStandardsControlAssociations
+      summary: 'List Standards Control Associations '
       description: >-
         <p> Specifies whether a control is currently enabled or disabled in each
         enabled standard in the calling account. </p>
       tags:
-        - Lists
-        - Standards
-        - Control
         - Associations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
         - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
+        - Standards
   /actionTargets:
     POST:
-      summary: CreateActionTarget
+      summary: 'Create Action Target '
       description: >-
         <p>Creates a custom action target in Security Hub.</p> <p>You can use
         custom actions on findings and insights in Security Hub to trigger
         target actions in Amazon CloudWatch Events.</p>
       tags:
-        - Create
         - Actions
         - Target
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
         - Targets
   /automationrules/create:
     POST:
-      summary: CreateAutomationRule
+      summary: 'Create Automation Rule '
       description: <p> Creates an automation rule based on input parameters. </p>
       tags:
-        - Create
         - Automation
-        - Rules
-        - Administrator
-        - Master
         - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
+        - Rules
   /configurationPolicy/create:
     POST:
-      summary: CreateConfigurationPolicy
+      summary: 'Create Configuration Policy '
       description: >-
         <p> Creates a configuration policy with the defined configuration. Only
         the Security Hub delegated administrator can invoke this operation from
         the home Region. </p>
       tags:
-        - Create
         - Configurations
         - Policies
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
   /findingAggregator/create:
     POST:
-      summary: CreateFindingAggregator
+      summary: 'Create Finding Aggregator '
       description: >-
         <p>Used to enable finding aggregation. Must be called from the
         aggregation Region.</p> <p>For more details about cross-Region
@@ -438,100 +242,31 @@ paths:
         href="https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation.html">Configuring
         finding aggregation</a> in the <i>Security Hub User Guide</i>. </p>
       tags:
-        - Create
-        - Findings
         - Aggregator
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
         - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
   /insights:
     POST:
-      summary: CreateInsight
+      summary: 'Create Insight '
       description: >-
         <p>Creates a custom insight in Security Hub. An insight is a
         consolidation of findings that relate to a security issue that requires
         attention or remediation.</p> <p>To group the related findings in the
         insight, use the <code>GroupByAttribute</code>.</p>
       tags:
-        - Create
-        - Insight
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
         - Insights
   /members:
     GET:
-      summary: ListMembers
+      summary: 'List Members '
       description: >-
         <p>Lists details about all member accounts for the current Security Hub
         administrator account.</p> <p>The results include both member accounts
         that belong to an organization and member accounts that were invited
         manually.</p>
       tags:
-        - Lists
-        - Members
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
         - Members
   /invitations/decline:
     POST:
-      summary: DeclineInvitations
+      summary: 'Decline Invitations '
       description: >-
         <p>Declines invitations to become a member account.</p> <p>A prospective
         member account uses this operation to decline an invitation to become a
@@ -541,111 +276,29 @@ paths:
       tags:
         - Decline
         - Invitations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
   /actionTargets/{ActionTargetArn+}:
     PATCH:
-      summary: UpdateActionTarget
+      summary: 'Update Action Target '
       description: >-
         <p>Updates the name and description of a custom action target in
         Security Hub.</p>
       tags:
-        - Update
-        - Actions
-        - Target
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
         - ARN
+        - Actions
+        - Target
+        - Targets
   /configurationPolicy/{Identifier}:
     PATCH:
-      summary: UpdateConfigurationPolicy
+      summary: 'Update Configuration Policy '
       description: >-
         <p> Updates a configuration policy. Only the Security Hub delegated
         administrator can invoke this operation from the home Region. </p>
       tags:
-        - Update
         - Configurations
         - Policies
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
   /findingAggregator/delete/{FindingAggregatorArn+}:
     DELETE:
-      summary: DeleteFindingAggregator
+      summary: 'Delete Finding Aggregator '
       description: >-
         <p>Deletes a finding aggregator. When you delete the finding aggregator,
         you stop finding aggregation.</p> <p>When you stop finding aggregation,
@@ -653,82 +306,21 @@ paths:
         still visible from the aggregation Region. New findings and finding
         updates are not aggregated. </p>
       tags:
-        - Delete
-        - Findings
-        - Aggregator
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
         - ARN
-        - Identifiers
+        - Aggregator
         - Findings
   /insights/{InsightArn+}:
     PATCH:
-      summary: UpdateInsight
+      summary: 'Update Insight '
       description: >-
         <p>Updates the Security Hub insight identified by the specified insight
         ARN.</p>
       tags:
-        - Update
-        - Insight
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
         - ARN
-        - Identifiers
-        - Findings
-        - Insight
+        - Insights
   /invitations/delete:
     POST:
-      summary: DeleteInvitations
+      summary: 'Delete Invitations '
       description: >-
         <p>Deletes invitations received by the Amazon Web Services account to
         become a member account.</p> <p>A Security Hub administrator account can
@@ -737,210 +329,48 @@ paths:
         are sent to member accounts that aren't part of an organization.
         Organization accounts don't receive invitations.</p>
       tags:
-        - Delete
         - Invitations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
   /members/delete:
     POST:
-      summary: DeleteMembers
+      summary: 'Delete Members '
       description: >-
         <p>Deletes the specified member accounts from Security Hub.</p> <p>You
         can invoke this API only to delete accounts that became members through
         invitation. You can't invoke this API to delete accounts that belong to
         an Organizations organization.</p>
       tags:
-        - Delete
         - Members
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
   /actionTargets/get:
     POST:
-      summary: DescribeActionTargets
+      summary: 'Describe Action Targets '
       description: >-
         <p>Returns a list of the custom action targets in Security Hub in your
         account.</p>
       tags:
+        - Actions
         - Describe
-        - Actions
         - Targets
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
   /accounts:
     PATCH:
-      summary: UpdateSecurityHubConfiguration
+      summary: 'Update Security Hub Configuration '
       description: <p>Updates configuration options for Security Hub.</p>
       tags:
-        - Update
-        - Security
-        - Hub
-        - Configurations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
         - Accounts
+        - Configurations
+        - Hub
+        - Security
   /organization/configuration:
     POST:
-      summary: UpdateOrganizationConfiguration
+      summary: 'Update Organization Configuration '
       description: >-
         <p>Updates the configuration of your organization in Security Hub. Only
         the Security Hub administrator account can invoke this operation.</p>
       tags:
-        - Update
-        - Organizations
         - Configurations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
         - Organizations
-        - Configurations
   /products:
     GET:
-      summary: DescribeProducts
+      summary: 'Describe Products '
       description: >-
         <p>Returns information about product integrations in Security Hub.</p>
         <p>You can optionally provide an integration ARN. If you provide an
@@ -950,44 +380,9 @@ paths:
       tags:
         - Describe
         - Products
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
   /standards:
     GET:
-      summary: DescribeStandards
+      summary: 'Describe Standards '
       description: >-
         <p>Returns a list of the available standards in Security Hub.</p> <p>For
         each standard, the results include the standard ARN, the name, and a
@@ -995,193 +390,47 @@ paths:
       tags:
         - Describe
         - Standards
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
   /standards/controls/{StandardsSubscriptionArn+}:
     GET:
-      summary: DescribeStandardsControls
+      summary: 'Describe Standards Controls '
       description: >-
         <p>Returns a list of security standards controls.</p> <p>For each
         control, the results include information about whether it is currently
         enabled, the severity, and a link to remediation information.</p>
       tags:
+        - ARN
+        - Controls
         - Describe
         - Standards
-        - Controls
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
         - Subscriptions
   /productSubscriptions/{ProductSubscriptionArn+}:
     DELETE:
-      summary: DisableImportFindingsForProduct
+      summary: 'Disable Import Findings For Product '
       description: >-
         <p>Disables the integration of the specified product with Security Hub.
         After the integration is disabled, findings from that product are no
         longer sent to Security Hub.</p>
       tags:
-        - Disable
-        - Import
-        - Findings
-        - For
-        - Products
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
         - ARN
-        - Identifiers
+        - Disable
         - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
+        - Import
         - Products
         - Subscriptions
-        - Subscriptions
-        - Products
   /organization/admin/disable:
     POST:
-      summary: DisableOrganizationAdminAccount
+      summary: 'Disable Organization Admin Account '
       description: >-
         <p>Disables a Security Hub administrator account. Can only be called by
         the organization management account.</p>
       tags:
-        - Disable
-        - Organizations
-        - Administrative
-        - Account
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
         - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
         - Administrative
         - Disable
+        - Organizations
   /administrator/disassociate:
     POST:
-      summary: DisassociateFromAdministratorAccount
+      summary: 'Disassociate From Administrator Account '
       description: >-
         <p>Disassociates the current Security Hub member account from the
         associated administrator account.</p> <p>This operation is only used by
@@ -1189,54 +438,12 @@ paths:
         accounts, only the administrator account can disassociate a member
         account.</p>
       tags:
-        - Disassociate
-        - From
-        - Administrator
-        - Account
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
         - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
+        - Administrator
         - Disassociate
   /master/disassociate:
     POST:
-      summary: DisassociateFromMasterAccount
+      summary: 'Disassociate From Master Account '
       description: >-
         <p>This method is deprecated. Instead, use
         <code>DisassociateFromAdministratorAccount</code>.</p> <p>The Security
@@ -1254,54 +461,12 @@ paths:
         accounts, only the administrator account can disassociate a member
         account.</p>
       tags:
-        - Disassociate
-        - From
-        - Master
-        - Account
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
         - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
         - Disassociate
+        - Master
   /members/disassociate:
     POST:
-      summary: DisassociateMembers
+      summary: 'Disassociate Members '
       description: >-
         <p>Disassociates the specified member accounts from the associated
         administrator account.</p> <p>Can be used to disassociate both accounts
@@ -1310,210 +475,42 @@ paths:
       tags:
         - Disassociate
         - Members
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
   /productSubscriptions:
     GET:
-      summary: ListEnabledProductsForImport
+      summary: 'List Enabled Products For Import '
       description: >-
         <p>Lists all findings-generating solutions (products) that you are
         subscribed to receive findings from in Security Hub.</p>
       tags:
-        - Lists
         - Enabled
-        - Products
-        - For
         - Import
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
         - Products
         - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
   /organization/admin/enable:
     POST:
-      summary: EnableOrganizationAdminAccount
+      summary: 'Enable Organization Admin Account '
       description: >-
         <p>Designates the Security Hub administrator account for an
         organization. Can only be called by the organization management
         account.</p>
       tags:
-        - Enable
-        - Organizations
-        - Administrative
-        - Account
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
         - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
         - Administrative
-        - Disable
-        - Disassociate
         - Enable
+        - Organizations
   /configurationPolicy/get/{Identifier}:
     GET:
-      summary: GetConfigurationPolicy
+      summary: 'Get Configuration Policy '
       description: >-
         <p> Provides information about a configuration policy. Only the Security
         Hub delegated administrator can invoke this operation from the home
         Region. </p>
       tags:
-        - Get
         - Configurations
         - Policies
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
   /configurationPolicyAssociation/get:
     POST:
-      summary: GetConfigurationPolicyAssociation
+      summary: 'Get Configuration Policy Association '
       description: >-
         <p> Returns the association between a configuration and a target
         account, organizational unit, or the root. The configuration can be a
@@ -1521,209 +518,37 @@ paths:
         delegated administrator can invoke this operation from the home Region.
         </p>
       tags:
-        - Get
-        - Configurations
-        - Policies
-        - Association
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
         - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
         - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
+        - Policies
   /standards/get:
     POST:
-      summary: GetEnabledStandards
+      summary: 'Get Enabled Standards '
       description: <p>Returns a list of the standards that are currently enabled.</p>
       tags:
-        - Get
         - Enabled
         - Standards
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
   /findingAggregator/get/{FindingAggregatorArn+}:
     GET:
-      summary: GetFindingAggregator
+      summary: 'Get Finding Aggregator '
       description: <p>Returns the current finding aggregation configuration.</p>
       tags:
-        - Get
-        - Findings
-        - Aggregator
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
         - ARN
-        - Identifiers
+        - Aggregator
         - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
   /findingHistory/get:
     POST:
-      summary: GetFindingHistory
+      summary: 'Get Finding History '
       description: >-
         <p> Returns history for a Security Hub finding in the last 90 days. The
         history includes changes made to any fields in the Amazon Web Services
         Security Finding Format (ASFF). </p>
       tags:
-        - Get
         - Findings
-        - History
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
         - History
   /findings:
     PATCH:
-      summary: UpdateFindings
+      summary: 'Update Findings '
       description: >-
         <p> <code>UpdateFindings</code> is deprecated. Instead of
         <code>UpdateFindings</code>, use <code>BatchUpdateFindings</code>.</p>
@@ -1732,212 +557,36 @@ paths:
         member account that can view the finding also sees the update to the
         finding.</p>
       tags:
-        - Update
         - Findings
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
   /insights/results/{InsightArn+}:
     GET:
-      summary: GetInsightResults
+      summary: 'Get Insight Results '
       description: >-
         <p>Lists the results of the Security Hub insight specified by the
         insight ARN.</p>
       tags:
-        - Get
-        - Insight
-        - Results
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
         - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
+        - Insights
+        - Results
   /insights/get:
     POST:
-      summary: GetInsights
+      summary: 'Get Insights '
       description: <p>Lists and describes insights for the specified insight ARNs.</p>
       tags:
-        - Get
         - Insights
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
   /invitations/count:
     GET:
-      summary: GetInvitationsCount
+      summary: 'Get Invitations Count '
       description: >-
         <p>Returns the count of all Security Hub membership invitations that
         were sent to the current member account, not including the currently
         accepted invitation. </p>
       tags:
-        - Get
-        - Invitations
         - Count
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
         - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
   /members/get:
     POST:
-      summary: GetMembers
+      summary: 'Get Members '
       description: >-
         <p>Returns the details for the Security Hub member accounts for the
         specified account IDs.</p> <p>An administrator account can be either the
@@ -1946,113 +595,21 @@ paths:
         results include both member accounts that are managed using
         Organizations and accounts that were invited manually.</p>
       tags:
-        - Get
         - Members
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
   /securityControl/definition:
     GET:
-      summary: GetSecurityControlDefinition
+      summary: 'Get Security Control Definition '
       description: >-
         <p> Retrieves the definition of a security control. The definition
         includes the control title, description, Region availability, parameter
         definitions, and other details. </p>
       tags:
-        - Get
-        - Security
-        - Control
-        - Definitions
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
         - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
         - Definitions
+        - Security
   /members/invite:
     POST:
-      summary: InviteMembers
+      summary: 'Invite Members '
       description: >-
         <p>Invites other Amazon Web Services accounts to become member accounts
         for the Security Hub administrator account that the invitation is sent
@@ -2067,528 +624,90 @@ paths:
       tags:
         - Invite
         - Members
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
   /automationrules/list:
     GET:
-      summary: ListAutomationRules
+      summary: 'List Automation Rules '
       description: >-
         <p> A list of automation rules and their metadata for the calling
         account. </p>
       tags:
-        - Lists
         - Automation
-        - Rules
-        - Administrator
-        - Master
         - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
+        - Rules
   /configurationPolicy/list:
     GET:
-      summary: ListConfigurationPolicies
+      summary: 'List Configuration Policies '
       description: >-
         <p> Lists the configuration policies that the Security Hub delegated
         administrator has created for your organization. Only the delegated
         administrator can invoke this operation from the home Region. </p>
       tags:
-        - Lists
         - Configurations
         - Policies
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
   /configurationPolicyAssociation/list:
     POST:
-      summary: ListConfigurationPolicyAssociations
+      summary: 'List Configuration Policy Associations '
       description: >-
         <p> Provides information about the associations for your configuration
         policies and self-managed behavior. Only the Security Hub delegated
         administrator can invoke this operation from the home Region. </p>
       tags:
-        - Lists
+        - Associations
         - Configurations
         - Policies
-        - Associations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
   /findingAggregator/list:
     GET:
-      summary: ListFindingAggregators
+      summary: 'List Finding Aggregators '
       description: >-
         <p>If finding aggregation is enabled, then
         <code>ListFindingAggregators</code> returns the ARN of the finding
         aggregator. You can run this operation from any Region.</p>
       tags:
-        - Lists
-        - Findings
-        - Aggregators
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
         - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
+        - Aggregators
         - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
   /invitations:
     GET:
-      summary: ListInvitations
+      summary: 'List Invitations '
       description: >-
         <p>Lists all Security Hub membership invitations that were sent to the
         current Amazon Web Services account.</p> <p>This operation is only used
         by accounts that are managed by invitation. Accounts that are managed
         using the integration with Organizations do not receive invitations.</p>
       tags:
-        - Lists
         - Invitations
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
   /organization/admin:
     GET:
-      summary: ListOrganizationAdminAccounts
+      summary: 'List Organization Admin Accounts '
       description: >-
         <p>Lists the Security Hub administrator accounts. Can only be called by
         the organization management account.</p>
       tags:
-        - Lists
-        - Organizations
-        - Administrative
         - Accounts
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
         - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
+        - Organizations
   /securityControls/definitions:
     GET:
-      summary: ListSecurityControlDefinitions
+      summary: 'List Security Control Definitions '
       description: >-
         <p> Lists all of the security controls that apply to a specified
         standard. </p>
       tags:
-        - Lists
-        - Security
-        - Control
-        - Definitions
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
         - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
         - Definitions
-        - Invite
-        - Lists
-        - Definitions
+        - Security
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes one or more tags from a resource.</p>
       tags:
+        - ARN
+        - Resources
+        - Tags
         - Untag
-        - Resources
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
-        - Definitions
-        - Resources
-        - ARN
   /configurationPolicyAssociation/associate:
     POST:
-      summary: StartConfigurationPolicyAssociation
+      summary: 'Start Configuration Policy Association '
       description: >-
         <p> Associates a target account, organizational unit, or the root with a
         specified configuration. The target can be associated with a
@@ -2596,65 +715,13 @@ paths:
         delegated administrator can invoke this operation from the home Region.
         </p>
       tags:
-        - Start
-        - Configurations
-        - Policies
-        - Association
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
-        - Definitions
-        - Resources
-        - ARN
         - Associate
+        - Associations
+        - Configurations
+        - Policies
   /configurationPolicyAssociation/disassociate:
     POST:
-      summary: StartConfigurationPolicyDisassociation
+      summary: 'Start Configuration Policy Disassociation '
       description: >-
         <p> Disassociates a target account, organizational unit, or the root
         from a specified configuration. When you disassociate a configuration
@@ -2665,65 +732,14 @@ paths:
         the Security Hub delegated administrator can invoke this operation from
         the home Region. </p>
       tags:
-        - Start
-        - Configurations
-        - Policies
-        - Disassociation
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
         - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
         - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
         - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
-        - Definitions
-        - Resources
-        - ARN
-        - Associate
+        - Disassociation
+        - Policies
   /findingAggregator/update:
     PATCH:
-      summary: UpdateFindingAggregator
+      summary: 'Update Finding Aggregator '
       description: >-
         <p>Updates the finding aggregation configuration. Used to update the
         Region linking mode and the list of included or excluded Regions. You
@@ -2732,180 +748,22 @@ paths:
         <code>UpdateFindingAggregator</code> from the current aggregation
         Region. </p>
       tags:
-        - Update
-        - Findings
         - Aggregator
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
-        - Controls
-        - Batches
         - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
-        - Definitions
-        - Resources
-        - ARN
-        - Associate
   /securityControl/update:
     PATCH:
-      summary: UpdateSecurityControl
+      summary: 'Update Security Control '
       description: <p> Updates the properties of a security control. </p>
       tags:
-        - Update
-        - Security
-        - Control
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
         - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
-        - Definitions
-        - Resources
-        - ARN
-        - Associate
+        - Security
   /standards/control/{StandardsControlArn+}:
     PATCH:
-      summary: UpdateStandardsControl
+      summary: 'Update Standards Control '
       description: >-
         <p>Used to control whether an individual security standard control is
         enabled or dis
       tags:
-        - Update
-        - Standards
-        - Control
-        - Administrator
-        - Master
-        - Automation Rules
-        - Delete
-        - Standards
-        - Deregister
-        - Register
-        - Get
-        - Policies
-        - Association
-        - Batches
+        - ARN
         - Controls
-        - Batches
-        - Findings
-        - Import
-        - Update
-        - Batches
-        - Associations
-        - Targets
-        - Create
-        - Aggregator
-        - Insights
-        - Members
-        - Invitations
-        - Decline
-        - Actions
-        - Target
-        - ARN
-        - Identifiers
-        - Findings
-        - Insight
-        - Accounts
-        - Organizations
-        - Configurations
-        - Products
-        - Subscriptions
-        - Subscriptions
-        - Products
-        - Administrative
-        - Disable
-        - Disassociate
-        - Enable
-        - History
-        - Count
-        - Control
-        - Definitions
-        - Invite
-        - Lists
-        - Definitions
-        - Resources
-        - ARN
-        - Associa
+        - Standards
