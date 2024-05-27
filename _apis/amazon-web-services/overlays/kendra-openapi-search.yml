@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateThesaurus
+      summary: 'Update Thesaurus '
       description: <p>Updates a thesaurus for an
       tags:
-        - Update
-        - null
+        - Thesaurus
