@@ -4,23 +4,22 @@ info:
 paths:
   /2013-04-01/keysigningkey/{HostedZoneId}/{Name}/activate:
     POST:
-      summary: ActivateKeySigningKey
+      summary: 'Activate Key Signing Key '
       description: >-
         <p>Activates a key-signing key (KSK) so that it can be used for signing
         by DNSSEC. This operation changes the KSK status to
         <code>ACTIVE</code>.</p>
       tags:
         - Activate
-        - Keys
-        - Signing
         - Hosted
-        - Zones
-        - Identifiers
+        - Key Signing
+        - Keys
         - Names
-        - Activate
+        - Signing
+        - Zones
   /2013-04-01/hostedzone/{Id}/associatevpc:
     POST:
-      summary: AssociateVPCWithHostedZone
+      summary: 'Associate VPCWith Hosted Zone '
       description: >-
         <p>Associates an Amazon VPC with a private hosted zone. </p> <important>
         <p>To perform the association, the VPC and the private hosted zone must
@@ -45,36 +44,25 @@ paths:
         </note>
       tags:
         - Associate
-        - With
-        - Hosted
-        - Zones
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
         - Associate VPC
+        - Hosted
+        - Hosted Zones
+        - VPCWith
+        - Zones
   /2013-04-01/cidrcollection/{CidrCollectionId}:
     GET:
-      summary: ListCidrLocations
+      summary: 'List Cidr Locations '
       description: >-
         <p>Returns a paginated list of CIDR locations for the given collection
         (metadata only, does not include CIDR blocks).</p>
       tags:
-        - Lists
-        - CIDR
-        - Locations
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
         - CIDR
         - Collections
+        - Locations
+        - Rcollection
   /2013-04-01/hostedzone/{Id}/rrset/:
     POST:
-      summary: ChangeResourceRecordSets
+      summary: 'Change Resource Record Sets '
       description: >-
         <p>Creates, changes, or deletes a resource record set, which contains
         authoritative DNS information for a specified domain name or subdomain
@@ -146,21 +134,13 @@ paths:
         in the <i>Amazon Route 53 Developer Guide</i>.</p>
       tags:
         - Change
-        - Resources
+        - Hosted Zones
         - Record
+        - Resources
         - Sets
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
   /2013-04-01/tags/{ResourceType}/{ResourceId}:
     GET:
-      summary: ListTagsForResource
+      summary: 'List Tags For Resource '
       description: >-
         <p>Lists tags for one health check or hosted zone. </p> <p>For
         information about using tags for cost allocation, see <a
@@ -168,75 +148,32 @@ paths:
         Cost Allocation Tags</a> in the <i>Billing and Cost Management User
         Guide</i>.</p>
       tags:
-        - Lists
+        - Resources
         - Tags
-        - For
-        - Resources
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
         - Types
   /2013-04-01/cidrcollection:
     GET:
-      summary: ListCidrCollections
+      summary: 'List Cidr Collections '
       description: >-
         <p>Returns a paginated list of CIDR collections in the Amazon Web
         Services account (metadata only).</p>
       tags:
-        - Lists
         - CIDR
         - Collections
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
+        - Rcollection
   /2013-04-01/healthcheck:
     GET:
-      summary: ListHealthChecks
+      summary: 'List Health Checks '
       description: >-
         <p>Retrieve a list of the health checks that are associated with the
         current Amazon Web Services account. </p>
       tags:
-        - Lists
-        - Health
         - Checks
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
+        - Health
         - Health Check
   /2013-04-01/hostedzone:
     GET:
-      summary: ListHostedZones
+      summary: 'List Hosted Zones '
       description: >-
         <p>Retrieves a list of the public and private hosted zones that are
         associated with the current Amazon Web Services account. The response
@@ -245,57 +182,22 @@ paths:
         response. If you have a lot of hosted zones, you can use the
         <code>maxitems</code> parameter to list them in groups of up to 100.</p>
       tags:
-        - Lists
         - Hosted
-        - Zones
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
         - Hosted Zones
+        - Zones
   /2013-04-01/keysigningkey:
     POST:
-      summary: CreateKeySigningKey
+      summary: 'Create Key Signing Key '
       description: >-
         <p>Creates a new key-signing key (KSK) associated with a hosted zone.
         You can only have two KSKs per hosted zone.</p>
       tags:
-        - Create
+        - Key Signing
         - Keys
         - Signing
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
   /2013-04-01/queryloggingconfig:
     GET:
-      summary: ListQueryLoggingConfigs
+      summary: 'List Query Logging Configs '
       description: >-
         <p>Lists the configurations for DNS query logging that are associated
         with the current Amazon Web Services account or the configuration that
@@ -307,95 +209,35 @@ paths:
         href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/query-logs.html">Logging
         DNS Queries</a> in the <i>Amazon Route 53 Developer Guide</i>.</p>
       tags:
-        - Lists
-        - Queries
-        - Logging
         - Configurations
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
+        - Logging
+        - Queries
         - Query Logging Configurations
   /2013-04-01/delegationset:
     GET:
-      summary: ListReusableDelegationSets
+      summary: 'List Reusable Delegation Sets '
       description: >-
         <p>Retrieves a list of the reusable delegation sets that are associated
         with the current Amazon Web Services account.</p>
       tags:
-        - Lists
-        - Reusable
         - Delegation
-        - Sets
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
         - Delegation Sets
+        - Reusable
+        - Sets
   /2013-04-01/trafficpolicy:
     POST:
-      summary: CreateTrafficPolicy
+      summary: 'Create Traffic Policy '
       description: >-
         <p>Creates a traffic policy, which you use to create multiple DNS
         resource record sets for one domain name (such as example.com) or one
         subdomain name (such as www.example.com).</p>
       tags:
-        - Create
-        - Traffic
         - Policies
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
+        - Traffic
         - Traffic Policies
   /2013-04-01/trafficpolicyinstance:
     POST:
-      summary: CreateTrafficPolicyInstance
+      summary: 'Create Traffic Policy Instance '
       description: >-
         <p>Creates resource record sets in a specified hosted zone based on the
         settings in a specified traffic policy version. In addition,
@@ -413,35 +255,13 @@ paths:
         For more information, see the <code>State</code> response element.</p>
         </note>
       tags:
-        - Create
-        - Traffic
-        - Policies
         - Instances
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
+        - Policies
+        - Traffic
         - Traffic Policy Instances
   /2013-04-01/trafficpolicy/{Id}:
     POST:
-      summary: CreateTrafficPolicyVersion
+      summary: 'Create Traffic Policy Version '
       description: >-
         <p>Creates a new version of an existing traffic policy. When you create
         a new version of a traffic policy, you specify the ID of the traffic
@@ -452,35 +272,13 @@ paths:
         of 1000 versions of a traffic policy. If you reach the limit and need to
         create another version, you'll need to start a new traffic policy.</p>
       tags:
-        - Create
-        - Traffic
         - Policies
-        - Versions
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
+        - Traffic
         - Traffic Policies
-        - Traffic Policy Instances
+        - Versions
   /2013-04-01/hostedzone/{Id}/authorizevpcassociation:
     GET:
-      summary: ListVPCAssociationAuthorizations
+      summary: 'List VPCAssociation Authorizations '
       description: >-
         <p>Gets a list of the VPCs that were created by other accounts and that
         can be associated with a specified hosted zone because you've submitted
@@ -489,70 +287,28 @@ paths:
         <code>VPC</code> child element for each VPC that can be associated with
         the hosted zone.</p>
       tags:
-        - Lists
-        - Association
         - Authorization
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
         - Authorizers VPC Association
+        - Hosted Zones
+        - VPCAssociation
   /2013-04-01/keysigningkey/{HostedZoneId}/{Name}/deactivate:
     POST:
-      summary: DeactivateKeySigningKey
+      summary: 'Deactivate Key Signing Key '
       description: >-
         <p>Deactivates a key-signing key (KSK) so that it will not be used for
         signing by DNSSEC. This operation changes the KSK status to
         <code>INACTIVE</code>.</p>
       tags:
         - Deactivate
-        - Keys
-        - Signing
         - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
         - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
+        - Keys
+        - Names
+        - Signing
+        - Zones
   /2013-04-01/healthcheck/{HealthCheckId}:
     POST:
-      summary: UpdateHealthCheck
+      summary: 'Update Health Check '
       description: >-
         <p>Updates an existing health check. Note that some values can't be
         updated. </p> <p>For more information about updating health checks, see
@@ -561,73 +317,21 @@ paths:
         Updating, and Deleting Health Checks</a> in the <i>Amazon Route 53
         Developer Guide</i>.</p>
       tags:
-        - Update
-        - Health
         - Checks
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
+        - Health
         - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
   /2013-04-01/hostedzone/{Id}:
     POST:
-      summary: UpdateHostedZoneComment
+      summary: 'Update Hosted Zone Comment '
       description: <p>Updates the comment for a specified hosted zone.</p>
       tags:
-        - Update
-        - Hosted
-        - Zones
         - Comments
         - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
         - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
+        - Zones
   /2013-04-01/keysigningkey/{HostedZoneId}/{Name}:
     DELETE:
-      summary: DeleteKeySigningKey
+      summary: 'Delete Key Signing Key '
       description: >-
         <p>Deletes a key-signing key (KSK). Before you can delete a KSK, you
         must deactivate it. The KSK must be deactivated before you can delete it
@@ -638,38 +342,15 @@ paths:
         href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetDNSSEC.html">GetDNSSEC</a>
         to verify that the KSK is in an <code>INACTIVE</code> status.</p>
       tags:
-        - Delete
-        - Keys
-        - Signing
         - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
         - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
+        - Keys
+        - Names
+        - Signing
+        - Zones
   /2013-04-01/queryloggingconfig/{Id}:
     GET:
-      summary: GetQueryLoggingConfig
+      summary: 'Get Query Logging Config '
       description: >-
         <p>Gets information about a specified configuration for DNS query
         logging.</p> <p>For more information about DNS query logs, see <a
@@ -678,149 +359,44 @@ paths:
         href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/query-logs.html">Logging
         DNS Queries</a>.</p>
       tags:
-        - Get
-        - Queries
-        - Logging
         - Configurations
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
+        - Logging
+        - Queries
         - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
   /2013-04-01/delegationset/{Id}:
     GET:
-      summary: GetReusableDelegationSet
+      summary: 'Get Reusable Delegation Set '
       description: >-
         <p>Retrieves information about a specified reusable delegation set,
         including the four name servers that are assigned to the delegation
         set.</p>
       tags:
-        - Get
-        - Reusable
         - Delegation
-        - Sets
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
         - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
+        - Reusable
+        - Sets
   /2013-04-01/trafficpolicy/{Id}/{Version}:
     POST:
-      summary: UpdateTrafficPolicyComment
+      summary: 'Update Traffic Policy Comment '
       description: <p>Updates the comment for a specified traffic policy version.</p>
       tags:
-        - Update
-        - Traffic
-        - Policies
         - Comments
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
+        - Policies
+        - Traffic
         - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
         - Versions
   /2013-04-01/trafficpolicyinstance/{Id}:
     POST:
-      summary: UpdateTrafficPolicyInstance
+      summary: 'Update Traffic Policy Instance '
       description: "<note> <p>After you submit a <code>UpdateTrafficPolicyInstance</code> request, there's a brief delay while Route\_53 creates the resource record sets that are specified in the traffic policy definition. Use <code>GetTrafficPolicyInstance</code> with the <code>id</code> of updated traffic policy instance confirm that the <code>UpdateTrafficPolicyInstance</code> request completed successfully. For more information, see the <code>State</code> response element.</p> </note> <p>Updates the resource record sets in a specified hosted zone that were created based on the settings in a specified traffic policy version.</p> <p>When you update a traffic policy instance, Amazon Route 53 continues to respond to DNS queries for the root resource record set name (such as example.com) while it replaces one group of resource record sets with another. Route 53 performs the following operations:</p> <ol> <li> <p>Route 53 creates a new group of resource record sets based on the specified traffic policy. This is true regardless of how significant the differences are between the existing resource record sets and the new resource record sets. </p> </li> <li> <p>When all of the new resource record sets have been created, Route 53 starts to respond to DNS queries for the root resource record set name (such as example.com) by using the new resource record sets.</p> </li> <li> <p>Route 53 deletes the old group of resource record sets that are associated with the root resource record set name.</p> </li> </ol>"
       tags:
-        - Update
-        - Traffic
-        - Policies
         - Instances
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
+        - Policies
+        - Traffic
         - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
   /2013-04-01/hostedzone/{Id}/deauthorizevpcassociation:
     POST:
-      summary: DeleteVPCAssociationAuthorization
+      summary: 'Delete VPCAssociation Authorization '
       description: >-
         <p>Removes authorization to submit an
         <code>AssociateVPCWithHostedZone</code> request to associate a specified
@@ -835,81 +411,27 @@ paths:
         existing association, use
         <code>DisassociateVPCFromHostedZone</code>.</p> </important>
       tags:
-        - Delete
-        - Association
         - Authorization
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
         - Deauthorize VPC Association
+        - Hosted Zones
+        - VPCAssociation
   /2013-04-01/hostedzone/{Id}/disable-dnssec:
     POST:
-      summary: DisableHostedZoneDNSSEC
+      summary: 'Disable Hosted Zone DNSSEC '
       description: >-
         <p>Disables DNSSEC signing in a specific hosted zone. This action does
         not deactivate any key-signing keys (KSKs) that are active in the hosted
         zone.</p>
       tags:
-        - Disable
-        - Hosted
-        - Zones
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
         - DNS Security
+        - DNSSEC
+        - Disable
+        - Hosted
+        - Hosted Zones
+        - Zones
   /2013-04-01/hostedzone/{Id}/disassociatevpc:
     POST:
-      summary: DisassociateVPCFromHostedZone
+      summary: 'Disassociate VPCFrom Hosted Zone '
       description: >-
         <p>Disassociates an Amazon Virtual Private Cloud (Amazon VPC) from an
         Amazon Route 53 private hosted zone. Note the following:</p> <ul> <li>
@@ -942,83 +464,25 @@ paths:
         </note>
       tags:
         - Disassociate
-        - From
-        - Hosted
-        - Zones
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
         - Disassociate VPC
+        - Hosted
+        - Hosted Zones
+        - VPCFrom
+        - Zones
   /2013-04-01/hostedzone/{Id}/enable-dnssec:
     POST:
-      summary: EnableHostedZoneDNSSEC
+      summary: 'Enable Hosted Zone DNSSEC '
       description: <p>Enables DNSSEC signing in a specific hosted zone.</p>
       tags:
-        - Enable
-        - Hosted
-        - Zones
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
         - DNS Security
-        - Disassociate VPC
+        - DNSSEC
         - Enable
+        - Hosted
+        - Hosted Zones
+        - Zones
   /2013-04-01/accountlimit/{Type}:
     GET:
-      summary: GetAccountLimit
+      summary: 'Get Account Limit '
       description: >-
         <p>Gets the specified limit for the current account, for example, the
         maximum number of health checks that you can create using the
@@ -1033,44 +497,13 @@ paths:
         href="https://console.aws.amazon.com/trustedadvisor">https://console.aws.amazon.com/trustedadvisor/</a>.
         Then choose <b>Service limits</b> in the navigation pane.</p> </note>
       tags:
-        - Get
-        - Account
+        - Accountlimit
+        - Accounts
         - Limits
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
         - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
   /2013-04-01/change/{Id}:
     GET:
-      summary: GetChange
+      summary: 'Get Change '
       description: >-
         <p>Returns the current status of a change batch request. The status is
         one of the following values:</p> <ul> <li> <p> <code>PENDING</code>
@@ -1080,43 +513,10 @@ paths:
         <code>INSYNC</code> indicates that the changes have propagated to all
         Route 53 DNS servers managing the hosted zone. </p> </li> </ul>
       tags:
-        - Get
         - Change
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
   /2013-04-01/checkeripranges:
     GET:
-      summary: GetCheckerIpRanges
+      summary: 'Get Checker Ip Ranges '
       description: >-
         <p>Route 53 does not perform authorization for this API because it
         retrieves information that is already available to the public.</p>
@@ -1128,87 +528,23 @@ paths:
         Address Ranges of Amazon Route 53 Servers</a> in the <i>Amazon Route 53
         Developer Guide</i>.</p> </important>
       tags:
-        - Get
         - Checker
+        - Checker IP Ranges
         - IP
         - Ranges
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
   /2013-04-01/hostedzone/{Id}/dnssec:
     GET:
-      summary: GetDNSSEC
+      summary: 'Get DNSSEC '
       description: >-
         <p>Returns information about DNSSEC for a specific hosted zone,
         including the key-signing keys (KSKs) in the hosted zone.</p>
       tags:
-        - Get
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
         - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
+        - DNSSEC
+        - Hosted Zones
   /2013-04-01/geolocation:
     GET:
-      summary: GetGeoLocation
+      summary: 'Get Geo Location '
       description: >-
         <p>Gets information about whether a specified geographic location is
         supported for Amazon Route 53 geolocation resource record sets.</p>
@@ -1225,240 +561,61 @@ paths:
         /2013-04-01/geolocation?countrycode=<i>two-character country
         code</i>&amp;subdivisioncode=<i>subdivision code</i> </code> </p>
       tags:
-        - Get
         - Geo
-        - Locations
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
         - Geolocation
+        - Locations
   /2013-04-01/healthcheckcount:
     GET:
-      summary: GetHealthCheckCount
+      summary: 'Get Health Check Count '
       description: >-
         <p>Retrieves the number of health checks that are associated with the
         current Amazon Web Services account.</p>
       tags:
-        - Get
-        - Health
         - Checks
         - Count
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
         - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
         - Health Check
   /2013-04-01/healthcheck/{HealthCheckId}/lastfailurereason:
     GET:
-      summary: GetHealthCheckLastFailureReason
+      summary: 'Get Health Check Last Failure Reason '
       description: >-
         <p>Gets the reason that a specified health check failed most
         recently.</p>
       tags:
-        - Get
-        - Health
         - Checks
-        - Last
         - Failure
-        - Reasons
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
         - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
         - Health Check
+        - Last
         - Last Failure Reasons
+        - Reasons
   /2013-04-01/healthcheck/{HealthCheckId}/status:
     GET:
-      summary: GetHealthCheckStatus
+      summary: 'Get Health Check Status '
       description: >-
         <p>Gets status of a specified health check. </p> <important> <p>This API
         is intended for use during development to diagnose behavior. It doesn’t
         support production use-cases with high query rates that require
         immediate and actionable responses.</p> </important>
       tags:
-        - Get
-        - Health
         - Checks
-        - Status
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
         - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
         - Health Check
-        - Last Failure Reasons
         - Status
   /2013-04-01/hostedzonecount:
     GET:
-      summary: GetHostedZoneCount
+      summary: 'Get Hosted Zone Count '
       description: >-
         <p>Retrieves the number of hosted zones that are associated with the
         current Amazon Web Services account.</p>
       tags:
-        - Get
-        - Hosted
-        - Zones
         - Count
         - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
         - Hosted Zone Count
+        - Zones
   /2013-04-01/hostedzonelimit/{Id}/{Type}:
     GET:
-      summary: GetHostedZoneLimit
+      summary: 'Get Hosted Zone Limit '
       description: >-
         <p>Gets the specified limit for a specified hosted zone, for example,
         the maximum number of records that you can create in the hosted zone.
@@ -1469,51 +626,14 @@ paths:
         href="https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase&amp;limitType=service-code-route53">open
         a case</a>.</p>
       tags:
-        - Get
         - Hosted
-        - Zones
+        - Hostedzonelimit
         - Limits
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
         - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
+        - Zones
   /2013-04-01/reusabledelegationsetlimit/{Id}/{Type}:
     GET:
-      summary: GetReusableDelegationSetLimit
+      summary: 'Get Reusable Delegation Set Limit '
       description: >-
         <p>Gets the maximum number of hosted zones that you can associate with
         the specified reusable delegation set.</p> <p>For the default limit, see
@@ -1524,153 +644,39 @@ paths:
         href="https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase&amp;limitType=service-code-route53">open
         a case</a>.</p>
       tags:
-        - Get
-        - Reusable
         - Delegation
-        - Sets
         - Limits
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
+        - Reusable
+        - Reusabledelegationsetlimit
+        - Sets
         - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
   /2013-04-01/trafficpolicyinstancecount:
     GET:
-      summary: GetTrafficPolicyInstanceCount
+      summary: 'Get Traffic Policy Instance Count '
       description: >-
         <p>Gets the number of traffic policy instances that are associated with
         the current Amazon Web Services account.</p>
       tags:
-        - Get
-        - Traffic
-        - Policies
-        - Instances
         - Count
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
+        - Instances
+        - Policies
+        - Traffic
         - Traffic Policy Instance Count
   /2013-04-01/cidrcollection/{CidrCollectionId}/cidrblocks:
     GET:
-      summary: ListCidrBlocks
+      summary: 'List Cidr Blocks '
       description: >-
         <p>Returns a paginated list of location objects and their CIDR
         blocks.</p>
       tags:
-        - Lists
-        - CIDR
         - Blocks
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
         - CIDR
         - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
+        - Rblocks
+        - Rcollection
   /2013-04-01/geolocations:
     GET:
-      summary: ListGeoLocations
+      summary: 'List Geo Locations '
       description: >-
         <p>Retrieves a list of supported geographic locations.</p> <p>Countries
         are listed first, and continents are listed last. If Amazon Route 53
@@ -1683,53 +689,12 @@ paths:
         href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_GeoLocation.html">GeoLocation</a>
         data type.</p>
       tags:
-        - Lists
         - Geo
+        - Geolocation
         - Locations
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
   /2013-04-01/hostedzonesbyname:
     GET:
-      summary: ListHostedZonesByName
+      summary: 'List Hosted Zones By Name '
       description: >-
         <p>Retrieves a list of your hosted zones in lexicographic order. The
         response includes a <code>HostedZones</code> child element for each
@@ -1775,56 +740,13 @@ paths:
         <code>dnsname</code> and <code>hostedzoneid</code> parameters,
         respectively.</p> </li> </ul>
       tags:
-        - Lists
         - Hosted
-        - Zones
-        - By
-        - Names
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
         - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
+        - Names
+        - Zones
   /2013-04-01/hostedzonesbyvpc:
     GET:
-      summary: ListHostedZonesByVPC
+      summary: 'List Hosted Zones By VPC '
       description: >-
         <p>Lists all the private hosted zones that a specified VPC is associated
         with, regardless of which Amazon Web Services account or Amazon Web
@@ -1851,56 +773,13 @@ paths:
         Management</a> in the <i>Amazon Web Services General Reference</i>.</p>
         </note>
       tags:
-        - Lists
         - Hosted
+        - Hosted Zones
+        - VPC
         - Zones
-        - By
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
   /2013-04-01/hostedzone/{Id}/rrset:
     GET:
-      summary: ListResourceRecordSets
+      summary: 'List Resource Record Sets '
       description: >-
         <p>Lists the resource record sets in a specified hosted zone.</p> <p>
         <code>ListResourceRecordSets</code> returns up to 300 resource record
@@ -1948,56 +827,13 @@ paths:
         <code>StartRecordType</code>, and
         <code>StartRecordIdentifier</code>.</p>
       tags:
-        - Lists
-        - Resources
+        - Hosted Zones
         - Record
-        - Sets
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
         - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
+        - Sets
   /2013-04-01/tags/{ResourceType}:
     POST:
-      summary: ListTagsForResources
+      summary: 'List Tags For Resources '
       description: >-
         <p>Lists tags for up to 10 health checks or hosted zones.</p> <p>For
         information about using tags for cost allocation, see <a
@@ -2005,56 +841,12 @@ paths:
         Cost Allocation Tags</a> in the <i>Billing and Cost Management User
         Guide</i>.</p>
       tags:
-        - Lists
+        - Resources
         - Tags
-        - For
-        - Resources
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
         - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
   /2013-04-01/trafficpolicies:
     GET:
-      summary: ListTrafficPolicies
+      summary: 'List Traffic Policies '
       description: >-
         <p>Gets information about the latest version for every traffic policy
         that is associated with the current Amazon Web Services account.
@@ -2064,56 +856,12 @@ paths:
         href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTrafficPolicy.html">DeleteTrafficPolicy</a>.
         </p>
       tags:
-        - Lists
-        - Traffic
         - Policies
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
+        - Traffic
         - Traffic Policies
   /2013-04-01/trafficpolicyinstances:
     GET:
-      summary: ListTrafficPolicyInstances
+      summary: 'List Traffic Policy Instances '
       description: >-
         <p>Gets information about the traffic policy instances that you created
         by using the current Amazon Web Services account.</p> <note> <p>After
@@ -2125,58 +873,13 @@ paths:
         a lot of traffic policy instances, you can use the <code>MaxItems</code>
         parameter to list them in groups of up to 100.</p>
       tags:
-        - Lists
-        - Traffic
-        - Policies
         - Instances
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
-        - Traffic Policies
+        - Policies
+        - Traffic
         - Traffic Policy Instances
   /2013-04-01/trafficpolicyinstances/hostedzone:
     GET:
-      summary: ListTrafficPolicyInstancesByHostedZone
+      summary: 'List Traffic Policy Instances By Hosted Zone '
       description: >-
         <p>Gets information about the traffic policy instances that you created
         in a specified hosted zone.</p> <note> <p>After you submit a
@@ -2189,61 +892,16 @@ paths:
         policy instances, you can use the <code>MaxItems</code> parameter to
         list them in groups of up to 100.</p>
       tags:
-        - Lists
-        - Traffic
-        - Policies
+        - Hosted
+        - Hosted Zones
         - Instances
-        - By
-        - Hosted
-        - Zones
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
+        - Policies
+        - Traffic
         - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
-        - Traffic Policies
-        - Traffic Policy Instances
+        - Zones
   /2013-04-01/trafficpolicyinstances/trafficpolicy:
     GET:
-      summary: ListTrafficPolicyInstancesByPolicy
+      summary: 'List Traffic Policy Instances By Policy '
       description: >-
         <p>Gets information about the traffic policy instances that you created
         by using a specify traffic policy version.</p> <note> <p>After you
@@ -2256,117 +914,26 @@ paths:
         policy instances, you can use the <code>MaxItems</code> parameter to
         list them in groups of up to 100.</p>
       tags:
-        - Lists
-        - Traffic
-        - Policies
         - Instances
-        - By
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
+        - Policies
+        - Traffic
         - Traffic Policies
         - Traffic Policy Instances
   /2013-04-01/trafficpolicies/{Id}/versions:
     GET:
-      summary: ListTrafficPolicyVersions
+      summary: 'List Traffic Policy Versions '
       description: >-
         <p>Gets information about all of the versions for a specified traffic
         policy.</p> <p>Traffic policy versions are listed in numerical order by
         <code>VersionNumber</code>.</p>
       tags:
-        - Lists
-        - Traffic
         - Policies
-        - Versions
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
+        - Traffic
         - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
-        - Traffic Policies
-        - Traffic Policy Instances
         - Versions
   /2013-04-01/testdnsanswer:
     GET:
-      summary: TestDNSAnswer
+      summary: 'Test DNSAnswer '
       description: >-
         <p>Gets the value that Amazon Route 53 returns in response to a DNS
         request for a specified record name and type. You can optionally specify
@@ -2378,52 +945,6 @@ paths:
         of a subdomain that point to the parent name servers, those will not be
         returned.</
       tags:
+        - DNSAnswer
+        - Testdnsanswer
         - Tests
-        - Answers
-        - Hosted
-        - Zones
-        - Identifiers
-        - Names
-        - Activate
-        - Associate VPC
-        - CIDR
-        - Collections
-        - Rrset
-        - Resources
-        - Types
-        - '2013'
-        - '04'
-        - '01'
-        - CIDR Collection
-        - Health Check
-        - Hosted Zones
-        - Key Signing
-        - Query Logging Configurations
-        - Delegation Sets
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Authorizers VPC Association
-        - Deactivate
-        - Health
-        - Checks
-        - Versions
-        - Deauthorize VPC Association
-        - Disable
-        - DNS Security
-        - Disassociate VPC
-        - Enable
-        - Checker IP Ranges
-        - Geolocation
-        - Health Check
-        - Last Failure Reasons
-        - Status
-        - Hosted Zone Count
-        - Traffic Policy Instance Count
-        - CIDR Blocks
-        - Geolocation
-        - Hosted Zones
-        - Hosted Zones
-        - Traffic Policies
-        - Traffic Policy Instances
-        - Versions
-        - Testdnsansw
