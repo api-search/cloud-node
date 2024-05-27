@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateUser
+      summary: 'Update User '
       description: >-
         <p>Assigns new properties to a user. Parameters you pass modify any or
         all of the following: the home directory, role, and policy for the
@@ -12,5 +12,4 @@ paths:
         response returns the <code>ServerId</code> and the <code>UserName</code>
         for the updated
       tags:
-        - Update
-        - Us
+        - Users
