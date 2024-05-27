@@ -4,7 +4,7 @@ info:
 paths:
   /BatchExecute:
     POST:
-      summary: BatchExecuteStatement
+      summary: 'Batch Execute Statement '
       description: >-
         <p>Runs a batch SQL statement over an array of data.</p> <p>You can run
         bulk update and insert operations for multiple records using a DML
@@ -27,11 +27,9 @@ paths:
         - Batches
         - Execute
         - Statements
-        - Batches
-        - Execute
   /BeginTransaction:
     POST:
-      summary: BeginTransaction
+      summary: 'Begin Transaction '
       description: >-
         <p>Starts a SQL transaction.</p> <note> <p>A transaction can run for a
         maximum of 24 hours. A transaction is terminated and rolled back
@@ -45,27 +43,18 @@ paths:
       tags:
         - Begins
         - Transactions
-        - Batches
-        - Execute
-        - Begins
-        - Transactions
   /CommitTransaction:
     POST:
-      summary: CommitTransaction
+      summary: 'Commit Transaction '
       description: >-
         <p>Ends a SQL transaction started with the <code>BeginTransaction</code>
         operation and commits the changes.</p>
       tags:
         - Commit
         - Transactions
-        - Batches
-        - Execute
-        - Begins
-        - Transactions
-        - Commit
   /ExecuteSql:
     POST:
-      summary: ExecuteSql
+      summary: 'Execute Sql '
       description: >-
         <p>Runs one or more SQL statements.</p> <note> <p>This operation isn't
         supported for Aurora PostgreSQL Serverless v2 and provisioned DB
@@ -75,15 +64,9 @@ paths:
       tags:
         - Execute
         - SQL
-        - Batches
-        - Execute
-        - Begins
-        - Transactions
-        - Commit
-        - SQL
   /Execute:
     POST:
-      summary: ExecuteStatement
+      summary: 'Execute Statement '
       description: >-
         <p>Runs a SQL statement against a database.</p> <note> <p>If a call
         isn't part of a transaction because it doesn't include the
@@ -93,25 +76,12 @@ paths:
       tags:
         - Execute
         - Statements
-        - Batches
-        - Execute
-        - Begins
-        - Transactions
-        - Commit
-        - SQL
   /RollbackTransaction:
     POST:
-      summary: RollbackTransaction
+      summary: 'Rollback Transaction '
       description: >-
         <p>Performs a rollback of a transaction. Rolling back a transaction
         cancels its ch
       tags:
         - Rollback
         - Transactions
-        - Batches
-        - Execute
-        - Begins
-        - Transactions
-        - Commit
-        - SQL
-        - Rollback
