@@ -1867,7 +1867,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudsearch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudsearch
-  - name: AWS CloudTrail
+  - name: AWS CloudTrail Data
     description: >-
       With AWS CloudTrail, you can monitor your AWS deployments in the cloud by
       getting a history of AWS API calls for your account, including API calls
