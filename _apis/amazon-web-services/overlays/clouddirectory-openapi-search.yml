@@ -4,7 +4,7 @@ info:
 paths:
   /amazonclouddirectory/2017-01-11/object/facets:
     PUT:
-      summary: 'Add Facet To Object '
+      summary: 'Add Facet To Object  '
       description: >-
         <p>Adds a new <a>Facet</a> to an object. An object can have more than
         one facet applied on it.</p>
@@ -13,7 +13,7 @@ paths:
         - Objects
   /amazonclouddirectory/2017-01-11/schema/apply:
     PUT:
-      summary: 'Apply Schema '
+      summary: 'Apply Schema  '
       description: >-
         <p>Copies the input published schema, at the specified version, into the
         <a>Directory</a> with the same name and version as that of the published
@@ -22,7 +22,7 @@ paths:
         - Schemas
   /amazonclouddirectory/2017-01-11/object/attach:
     PUT:
-      summary: 'Attach Object '
+      summary: 'Attach Object  '
       description: >-
         <p>Attaches an existing object to another object. An object can be
         accessed in two ways:</p> <ol> <li> <p>Using the path</p> </li> <li>
@@ -32,7 +32,7 @@ paths:
         - Objects
   /amazonclouddirectory/2017-01-11/policy/attach:
     PUT:
-      summary: 'Attach Policy '
+      summary: 'Attach Policy  '
       description: >-
         <p>Attaches a policy object to a regular object. An object can have a
         limited number of attached policies.</p>
@@ -41,14 +41,14 @@ paths:
         - Policies
   /amazonclouddirectory/2017-01-11/index/attach:
     PUT:
-      summary: 'Attach To Index '
+      summary: 'Attach To Index  '
       description: <p>Attaches the specified object to the specified index.</p>
       tags:
         - Attach
         - Index
   /amazonclouddirectory/2017-01-11/typedlink/attach:
     PUT:
-      summary: 'Attach Typed Link '
+      summary: 'Attach Typed Link  '
       description: >-
         <p>Attaches a typed link to a specified source and target object. For
         more information, see <a
@@ -61,14 +61,14 @@ paths:
         - Typed Links
   /amazonclouddirectory/2017-01-11/batchread:
     POST:
-      summary: 'Batch Read '
+      summary: 'Batch Read  '
       description: <p>Performs all the read operations in a batch. </p>
       tags:
         - Batches
         - Read
   /amazonclouddirectory/2017-01-11/batchwrite:
     PUT:
-      summary: 'Batch Write '
+      summary: 'Batch Write  '
       description: >-
         <p>Performs all the write operations in a batch. Either all the
         operations succeed or none.</p>
@@ -77,7 +77,7 @@ paths:
         - Write
   /amazonclouddirectory/2017-01-11/directory/create:
     PUT:
-      summary: 'Create Directory '
+      summary: 'Create Directory  '
       description: >-
         <p>Creates a <a>Directory</a> by copying the published schema into the
         directory. A directory cannot be created without a schema.</p> <p>You
@@ -89,7 +89,7 @@ paths:
         - Directory
   /amazonclouddirectory/2017-01-11/facet/create:
     PUT:
-      summary: 'Create Facet '
+      summary: 'Create Facet  '
       description: >-
         <p>Creates a new <a>Facet</a> in a schema. Facet creation is allowed
         only in development or applied schemas.</p>
@@ -97,7 +97,7 @@ paths:
         - Facets
   /amazonclouddirectory/2017-01-11/index:
     PUT:
-      summary: 'Create Index '
+      summary: 'Create Index  '
       description: >-
         <p>Creates an index object. See <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/indexing_search.html">Indexing
@@ -106,7 +106,7 @@ paths:
         - Index
   /amazonclouddirectory/2017-01-11/object:
     PUT:
-      summary: 'Create Object '
+      summary: 'Create Object  '
       description: >-
         <p>Creates an object in a <a>Directory</a>. Additionally attaches the
         object to a parent, if a parent reference and <code>LinkName</code> is
@@ -117,7 +117,7 @@ paths:
         - Objects
   /amazonclouddirectory/2017-01-11/schema/create:
     PUT:
-      summary: 'Create Schema '
+      summary: 'Create Schema  '
       description: >-
         <p>Creates a new schema in a development state. A schema can exist in
         three phases:</p> <ul> <li> <p> <i>Development:</i> This is a mutable
@@ -132,7 +132,7 @@ paths:
         - Schemas
   /amazonclouddirectory/2017-01-11/typedlink/facet/create:
     PUT:
-      summary: 'Create Typed Link Facet '
+      summary: 'Create Typed Link Facet  '
       description: >-
         <p>Creates a <a>TypedLinkFacet</a>. For more information, see <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
@@ -144,7 +144,7 @@ paths:
         - Typed Links
   /amazonclouddirectory/2017-01-11/directory:
     PUT:
-      summary: 'Delete Directory '
+      summary: 'Delete Directory  '
       description: >-
         <p>Deletes a directory. Only disabled directories can be deleted. A
         deleted directory cannot be undone. Exercise extreme caution when
@@ -153,7 +153,7 @@ paths:
         - Directory
   /amazonclouddirectory/2017-01-11/facet/delete:
     PUT:
-      summary: 'Delete Facet '
+      summary: 'Delete Facet  '
       description: >-
         <p>Deletes a given <a>Facet</a>. All attributes and <a>Rule</a>s that
         are associated with the facet will be deleted. Only development schema
@@ -162,7 +162,7 @@ paths:
         - Facets
   /amazonclouddirectory/2017-01-11/object/delete:
     PUT:
-      summary: 'Delete Object '
+      summary: 'Delete Object  '
       description: >-
         <p>Deletes an object and its associated attributes. Only objects with no
         children and no parents can be deleted. The maximum number of attributes
@@ -174,7 +174,7 @@ paths:
         - Objects
   /amazonclouddirectory/2017-01-11/schema:
     PUT:
-      summary: 'Delete Schema '
+      summary: 'Delete Schema  '
       description: >-
         <p>Deletes a given schema. Schemas in a development and published state
         can only be deleted. </p>
@@ -182,45 +182,26 @@ paths:
         - Schemas
   /amazonclouddirectory/2017-01-11/typedlink/facet/delete:
     PUT:
-      summary: 'Delete Typed Link Facet '
+      summary: 'Delete Typed Link Facet  '
       description: >-
         <p>Deletes a <a>TypedLinkFacet</a>. For more information, see <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
         Links</a>.</p>
       tags:
-        - Delete
-        - Typed
+        - Facets
         - Link
-        - Facets
-        - Amazon Cloud Directory
-        - null
-        - null
-        - null
-        - Objects
-        - Facets
-        - Schemas
-        - Apply
-        - Attach
-        - Policies
-        - Index
+        - Typed
         - Typed Links
-        - Batches
-        - Batches
-        - Directory
-        - Create
-        - Facets
-        - Delete
   /amazonclouddirectory/2017-01-11/index/detach:
     PUT:
-      summary: 'Detach From Index '
+      summary: 'Detach From Index  '
       description: <p>Detaches the specified object from the specified index.</p>
       tags:
         - Detach
-        - From
         - Index
   /amazonclouddirectory/2017-01-11/object/detach:
     PUT:
-      summary: 'Detach Object '
+      summary: 'Detach Object  '
       description: >-
         <p>Detaches a given object from the parent object. The object that is to
         be detached from the parent is specified by the link name.</p>
@@ -229,14 +210,14 @@ paths:
         - Objects
   /amazonclouddirectory/2017-01-11/policy/detach:
     PUT:
-      summary: 'Detach Policy '
+      summary: 'Detach Policy  '
       description: <p>Detaches a policy from an object.</p>
       tags:
         - Detach
         - Policies
   /amazonclouddirectory/2017-01-11/typedlink/detach:
     PUT:
-      summary: 'Detach Typed Link '
+      summary: 'Detach Typed Link  '
       description: >-
         <p>Detaches a typed link from a specified source and target object. For
         more information, see <a
@@ -249,7 +230,7 @@ paths:
         - Typed Links
   /amazonclouddirectory/2017-01-11/directory/disable:
     PUT:
-      summary: 'Disable Directory '
+      summary: 'Disable Directory  '
       description: >-
         <p>Disables the specified directory. Disabled directories cannot be read
         or written to. Only enabled directories can be disabled. Disabled
@@ -259,7 +240,7 @@ paths:
         - Disable
   /amazonclouddirectory/2017-01-11/directory/enable:
     PUT:
-      summary: 'Enable Directory '
+      summary: 'Enable Directory  '
       description: >-
         <p>Enables the specified directory. Only disabled directories can be
         enabled. Once enabled, the directory can then be read and written
@@ -269,7 +250,7 @@ paths:
         - Enable
   /amazonclouddirectory/2017-01-11/schema/getappliedschema:
     POST:
-      summary: 'Get Applied Schema Version '
+      summary: 'Get Applied Schema Version  '
       description: >-
         <p>Returns current applied schema version ARN, including the minor
         version in use.</p>
@@ -279,13 +260,13 @@ paths:
         - Versions
   /amazonclouddirectory/2017-01-11/directory/get:
     POST:
-      summary: 'Get Directory '
+      summary: 'Get Directory  '
       description: <p>Retrieves metadata about a directory.</p>
       tags:
         - Directory
   /amazonclouddirectory/2017-01-11/facet:
     PUT:
-      summary: 'Update Facet '
+      summary: 'Update Facet  '
       description: >-
         <p>Does the following:</p> <ol> <li> <p>Adds new
         <code>Attributes</code>, <code>Rules</code>, or
@@ -298,7 +279,7 @@ paths:
         - Facets
   /amazonclouddirectory/2017-01-11/typedlink/attributes/get:
     POST:
-      summary: 'Get Link Attributes '
+      summary: 'Get Link Attributes  '
       description: <p>Retrieves attributes that are associated with a typed link.</p>
       tags:
         - Attributes
@@ -306,7 +287,7 @@ paths:
         - Typed Links
   /amazonclouddirectory/2017-01-11/object/attributes/get:
     POST:
-      summary: 'Get Object Attributes '
+      summary: 'Get Object Attributes  '
       description: >-
         <p>Retrieves attributes within a facet that are associated with an
         object.</p>
@@ -315,14 +296,14 @@ paths:
         - Objects
   /amazonclouddirectory/2017-01-11/object/information:
     POST:
-      summary: 'Get Object Information '
+      summary: 'Get Object Information  '
       description: <p>Retrieves metadata about an object.</p>
       tags:
         - Information
         - Objects
   /amazonclouddirectory/2017-01-11/schema/json:
     PUT:
-      summary: 'Put Schema From Json '
+      summary: 'Put Schema From Json  '
       description: >-
         <p>Allows a schema to be updated using JSON upload. Only available for
         development schemas. See <a
@@ -333,7 +314,7 @@ paths:
         - Schemas
   /amazonclouddirectory/2017-01-11/typedlink/facet/get:
     POST:
-      summary: 'Get Typed Link Facet Information '
+      summary: 'Get Typed Link Facet Information  '
       description: >-
         <p>Returns the identity attribute order for a specific
         <a>TypedLinkFacet</a>. For more information, see <a
@@ -347,61 +328,55 @@ paths:
         - Typed Links
   /amazonclouddirectory/2017-01-11/schema/applied:
     POST:
-      summary: 'List Applied Schema Arns '
+      summary: 'List Applied Schema Arns  '
       description: >-
         <p>Lists schema major versions applied to a directory. If
         <code>SchemaArn</code> is provided, lists the minor version.</p>
       tags:
         - ARN
-        - Lists
         - Schemas
   /amazonclouddirectory/2017-01-11/object/indices:
     POST:
-      summary: 'List Attached Indices '
+      summary: 'List Attached Indices  '
       description: <p>Lists indices attached to the specified object.</p>
       tags:
         - Attached
         - Indices
-        - Lists
         - Objects
   /amazonclouddirectory/2017-01-11/schema/development:
     POST:
-      summary: 'List Development Schema Arns '
+      summary: 'List Development Schema Arns  '
       description: >-
         <p>Retrieves each Amazon Resource Name (ARN) of schemas in the
         development state.</p>
       tags:
         - ARN
         - Development
-        - Lists
         - Schemas
   /amazonclouddirectory/2017-01-11/directory/list:
     POST:
-      summary: 'List Directories '
+      summary: 'List Directories  '
       description: <p>Lists directories created within an account.</p>
       tags:
         - Directories
         - Directory
-        - Lists
   /amazonclouddirectory/2017-01-11/facet/attributes:
     POST:
-      summary: 'List Facet Attributes '
+      summary: 'List Facet Attributes  '
       description: <p>Retrieves attributes attached to the facet.</p>
       tags:
         - Attributes
         - Facets
-        - Lists
   /amazonclouddirectory/2017-01-11/facet/list:
     POST:
-      summary: 'List Facet Names '
+      summary: 'List Facet Names  '
       description: <p>Retrieves the names of facets that exist in a schema.</p>
       tags:
         - Facets
-        - Lists
         - Names
   /amazonclouddirectory/2017-01-11/typedlink/incoming:
     POST:
-      summary: 'List Incoming Typed Links '
+      summary: 'List Incoming Typed Links  '
       description: >-
         <p>Returns a paginated list of all the incoming
         <a>TypedLinkSpecifier</a> information for an object. It also supports
@@ -412,50 +387,45 @@ paths:
       tags:
         - Incoming
         - Links
-        - Lists
         - Typed
         - Typed Links
   /amazonclouddirectory/2017-01-11/index/targets:
     POST:
-      summary: 'List Index '
+      summary: 'List Index  '
       description: <p>Lists objects attached to the specified index.</p>
       tags:
         - Index
-        - Lists
         - Targets
   /amazonclouddirectory/2017-01-11/schema/managed:
     POST:
-      summary: 'List Managed Schema Arns '
+      summary: 'List Managed Schema Arns  '
       description: >-
         <p>Lists the major version families of each managed schema. If a major
         version ARN is provided as SchemaArn, the minor version revisions in
         that family are listed instead.</p>
       tags:
         - ARN
-        - Lists
         - Managed
         - Schemas
   /amazonclouddirectory/2017-01-11/object/attributes:
     POST:
-      summary: 'List Object Attributes '
+      summary: 'List Object Attributes  '
       description: <p>Lists all attributes that are associated with an object. </p>
       tags:
         - Attributes
-        - Lists
         - Objects
   /amazonclouddirectory/2017-01-11/object/children:
     POST:
-      summary: 'List Object Children '
+      summary: 'List Object Children  '
       description: >-
         <p>Returns a paginated list of child objects that are associated with a
         given object.</p>
       tags:
         - Children
-        - Lists
         - Objects
   /amazonclouddirectory/2017-01-11/object/parentpaths:
     POST:
-      summary: 'List Object Parent Paths '
+      summary: 'List Object Parent Paths  '
       description: >-
         <p>Retrieves all available parent paths for any object type such as
         node, leaf node, policy node, and index node objects. For more
@@ -470,32 +440,29 @@ paths:
         not leading to the directory root are ignored from the target
         object.</p>
       tags:
-        - Lists
         - Objects
         - Parent Paths
         - Parents
         - Paths
   /amazonclouddirectory/2017-01-11/object/parent:
     POST:
-      summary: 'List Object Parents '
+      summary: 'List Object Parents  '
       description: >-
         <p>Lists parent objects that are associated with a given object in
         pagination fashion.</p>
       tags:
-        - Lists
         - Objects
         - Parents
   /amazonclouddirectory/2017-01-11/object/policy:
     POST:
-      summary: 'List Object Policies '
+      summary: 'List Object Policies  '
       description: <p>Returns policies attached to an object in pagination fashion.</p>
       tags:
-        - Lists
         - Objects
         - Policies
   /amazonclouddirectory/2017-01-11/typedlink/outgoing:
     POST:
-      summary: 'List Outgoing Typed Links '
+      summary: 'List Outgoing Typed Links  '
       description: >-
         <p>Returns a paginated list of all the outgoing
         <a>TypedLinkSpecifier</a> information for an object. It also supports
@@ -505,46 +472,42 @@ paths:
         Links</a>.</p>
       tags:
         - Links
-        - Lists
         - Outgoing
         - Typed
         - Typed Links
   /amazonclouddirectory/2017-01-11/policy/attachment:
     POST:
-      summary: 'List Policy Attachments '
+      summary: 'List Policy Attachments  '
       description: >-
         <p>Returns all of the <code>ObjectIdentifiers</code> to which a given
         policy is attached.</p>
       tags:
         - Attachments
-        - Lists
         - Policies
   /amazonclouddirectory/2017-01-11/schema/published:
     POST:
-      summary: 'List Published Schema Arns '
+      summary: 'List Published Schema Arns  '
       description: >-
         <p>Lists the major version families of each published schema. If a major
         version ARN is provided as <code>SchemaArn</code>, the minor version
         revisions in that family are listed instead.</p>
       tags:
         - ARN
-        - Lists
         - Published
         - Schemas
   /amazonclouddirectory/2017-01-11/tags:
     POST:
-      summary: 'List Tags For Resource '
+      summary: 'List Tags For Resource  '
       description: >-
         <p>Returns tags for a resource. Tagging is currently supported only for
         directories with a limit of 50 tags per directory. All 50 tags are
         returned for a given directory with this API call.</p>
       tags:
-        - Lists
         - Resources
         - Tags
   /amazonclouddirectory/2017-01-11/typedlink/facet/attributes:
     POST:
-      summary: 'List Typed Link Facet Attributes '
+      summary: 'List Typed Link Facet Attributes  '
       description: >-
         <p>Returns a paginated list of all attribute definitions for a
         particular <a>TypedLinkFacet</a>. For more information, see <a
@@ -554,12 +517,11 @@ paths:
         - Attributes
         - Facets
         - Link
-        - Lists
         - Typed
         - Typed Links
   /amazonclouddirectory/2017-01-11/typedlink/facet/list:
     POST:
-      summary: 'List Typed Link Facet Names '
+      summary: 'List Typed Link Facet Names  '
       description: >-
         <p>Returns a paginated list of <code>TypedLink</code> facet names for a
         particular schema. For more information, see <a
@@ -568,13 +530,12 @@ paths:
       tags:
         - Facets
         - Link
-        - Lists
         - Names
         - Typed
         - Typed Links
   /amazonclouddirectory/2017-01-11/policy/lookup:
     POST:
-      summary: 'Lookup Policy '
+      summary: 'Lookup Policy  '
       description: >-
         <p>Lists all policies from the root of the <a>Directory</a> to the
         object specified. If there are no policies present, an empty list is
@@ -590,7 +551,7 @@ paths:
         - Policies
   /amazonclouddirectory/2017-01-11/schema/publish:
     PUT:
-      summary: 'Publish Schema '
+      summary: 'Publish Schema  '
       description: >-
         <p>Publishes a development schema with a major version and a recommended
         minor version.</p>
@@ -599,23 +560,22 @@ paths:
         - Schemas
   /amazonclouddirectory/2017-01-11/object/facets/delete:
     PUT:
-      summary: 'Remove Facet From Object '
+      summary: 'Remove Facet From Object  '
       description: <p>Removes the specified facet from the specified object.</p>
       tags:
         - Facets
-        - From
         - Objects
         - Removes
   /amazonclouddirectory/2017-01-11/tags/add:
     PUT:
-      summary: 'Tag Resource '
+      summary: 'Tag Resource  '
       description: <p>An API operation for adding tags to a resource.</p>
       tags:
         - Resources
         - Tags
   /amazonclouddirectory/2017-01-11/tags/remove:
     PUT:
-      summary: 'Untag Resource '
+      summary: 'Untag Resource  '
       description: <p>An API operation for removing tags from a resource.</p>
       tags:
         - Removes
@@ -624,7 +584,7 @@ paths:
         - Untag
   /amazonclouddirectory/2017-01-11/typedlink/attributes/update:
     POST:
-      summary: 'Update Link Attributes '
+      summary: 'Update Link Attributes  '
       description: >-
         <p>Updates a given typed link’s attributes. Attributes to be updated
         must not contribute to the typed link’s identity, as defined by its
@@ -635,14 +595,14 @@ paths:
         - Typed Links
   /amazonclouddirectory/2017-01-11/object/update:
     PUT:
-      summary: 'Update Object Attributes '
+      summary: 'Update Object Attributes  '
       description: <p>Updates a given object's attributes.</p>
       tags:
         - Attributes
         - Objects
   /amazonclouddirectory/2017-01-11/schema/update:
     PUT:
-      summary: 'Update Schema '
+      summary: 'Update Schema  '
       description: >-
         <p>Updates the schema name with a new name. Only development schema
         names can be updated.</p>
@@ -650,7 +610,7 @@ paths:
         - Schemas
   /amazonclouddirectory/2017-01-11/typedlink/facet:
     PUT:
-      summary: 'Update Typed Link Facet '
+      summary: 'Update Typed Link Facet  '
       description: >-
         <p>Updates a <a>TypedLinkFacet</a>. For more information, see <a
         href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink">Typed
@@ -662,7 +622,7 @@ paths:
         - Typed Links
   /amazonclouddirectory/2017-01-11/schema/upgradeapplied:
     PUT:
-      summary: 'Upgrade Applied Schema '
+      summary: 'Upgrade Applied Schema  '
       description: >-
         <p>Upgrades a single directory in-place using the
         <code>PublishedSchemaArn</code> with schema updates found in
@@ -677,7 +637,7 @@ paths:
         - Upgrade Applied
   /amazonclouddirectory/2017-01-11/schema/upgradepublished:
     PUT:
-      summary: 'Upgrade Published Schema '
+      summary: 'Upgrade Published Schema  '
       description: >-
         <p>Upgrades a published schema under a new minor version revision using
         the current contents of <code>DevelopmentSchemaArn</
@@ -685,3 +645,4 @@ paths:
         - Published
         - Schemas
         - Upgrade
+        - Upgradepublished
