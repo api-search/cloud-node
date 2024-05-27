@@ -4,18 +4,17 @@ info:
 paths:
   /v20210603/Monitors:
     GET:
-      summary: ListMonitors
+      summary: 'List Monitors '
       description: >-
         <p>Lists all of your monitors for Amazon CloudWatch Internet Monitor and
         their statuses, along with the Amazon Resource Name (ARN) and name of
         each monitor.</p>
       tags:
-        - Lists
         - Monitors
-        - Monitors
+        - V20210603
   /v20210603/Monitors/{MonitorName}:
     PATCH:
-      summary: UpdateMonitor
+      summary: 'Update Monitor '
       description: >-
         <p>Updates a monitor. You can update a monitor to change the percentage
         of traffic to monitor or the maximum number of city-networks (locations
@@ -28,14 +27,12 @@ paths:
         a city-network maximum value</a> in the <i>Amazon CloudWatch User
         Guide</i>.</p>
       tags:
-        - Update
-        - Monitors
-        - Monitors
         - Monitors
         - Names
+        - V20210603
   /v20210603/Monitors/{MonitorName}/HealthEvents/{EventId}:
     GET:
-      summary: GetHealthEvent
+      summary: 'Get Health Event '
       description: >-
         <p>Gets information the Amazon CloudWatch Internet Monitor has created
         and stored about a health event for a specified monitor. This
@@ -46,19 +43,14 @@ paths:
         on.</p> <p>Information rolled up at the global traffic level is also
         returned, including the impact type and total traffic impact.</p>
       tags:
-        - Get
-        - Health
         - Events
-        - Monitors
+        - Health
         - Monitors
         - Names
-        - Health
-        - Events
-        - Events
-        - Identifiers
+        - V20210603
   /v20210603/Monitors/{MonitorName}/Queries/{QueryId}/Results:
     GET:
-      summary: GetQueryResults
+      summary: 'Get Query Results '
       description: >-
         <p>Return the data for a query with the Amazon CloudWatch Internet
         Monitor query interface. Specify the query that you want to return
@@ -69,22 +61,14 @@ paths:
         the Amazon CloudWatch Internet Monitor query interface</a> in the Amazon
         CloudWatch Internet Monitor User Guide.</p>
       tags:
-        - Get
-        - Queries
-        - Results
-        - Monitors
         - Monitors
         - Names
-        - Health
-        - Events
-        - Events
-        - Identifiers
-        - Queries
         - Queries
         - Results
+        - V20210603
   /v20210603/Monitors/{MonitorName}/Queries/{QueryId}/Status:
     GET:
-      summary: GetQueryStatus
+      summary: 'Get Query Status '
       description: >-
         <p>Returns the current status of a query for the Amazon CloudWatch
         Internet Monitor query interface, for a specified query ID and monitor.
@@ -97,23 +81,14 @@ paths:
         due to an error.</p> </li> <li> <p> <code>CANCELED</code>: The query was
         canceled.</p> </li> </ul>
       tags:
-        - Get
-        - Queries
-        - Status
-        - Monitors
         - Monitors
         - Names
-        - Health
-        - Events
-        - Events
-        - Identifiers
         - Queries
-        - Queries
-        - Results
         - Status
+        - V20210603
   /v20210603/Monitors/{MonitorName}/HealthEvents:
     GET:
-      summary: ListHealthEvents
+      summary: 'List Health Events '
       description: >-
         <p>Lists all health events for a monitor in Amazon CloudWatch Internet
         Monitor. Returns information for health events including the event start
@@ -121,43 +96,23 @@ paths:
         times during the time frame that is requested are not included in the
         list of health events.</p> </note>
       tags:
-        - Lists
-        - Health
         - Events
-        - Monitors
+        - Health
         - Monitors
         - Names
-        - Health
-        - Events
-        - Events
-        - Identifiers
-        - Queries
-        - Queries
-        - Results
-        - Status
+        - V20210603
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes a tag from a resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Monitors
-        - Monitors
-        - Names
-        - Health
-        - Events
-        - Events
-        - Identifiers
-        - Queries
-        - Queries
-        - Results
-        - Status
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /v20210603/Monitors/{MonitorName}/Queries:
     POST:
-      summary: StartQuery
+      summary: 'Start Query '
       description: >-
         <p>Start a query to return data for a specific query type for the Amazon
         CloudWatch Internet Monitor query interface. Specify a time period for
@@ -170,38 +125,17 @@ paths:
         the Amazon CloudWatch Internet Monitor query interface</a> in the Amazon
         CloudWatch Internet Monitor User Guide.</p>
       tags:
-        - Start
-        - Queries
-        - Monitors
         - Monitors
         - Names
-        - Health
-        - Events
-        - Events
-        - Identifiers
         - Queries
-        - Queries
-        - Results
-        - Status
-        - Resources
-        - ARN
+        - V20210603
   /v20210603/Monitors/{MonitorName}/Queries/{QueryId}:
     DELETE:
-      summary: StopQuery
+      summary: 'Stop Query '
       description: <p>Stop a query that is progress for a specific mo
       tags:
-        - Stop
-        - Queries
-        - Monitors
         - Monitors
         - Names
-        - Health
-        - Events
-        - Events
-        - Identifiers
         - Queries
-        - Queries
-        - Results
-        - Status
-        - Resources
-        - null
+        - Stop
+        - V20210603
