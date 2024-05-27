@@ -4,29 +4,23 @@ info:
 paths:
   /Traces:
     POST:
-      summary: BatchGetTraces
+      summary: 'Batch Get Traces '
       description: >-
         <p>Retrieves a list of traces specified by ID. Each trace is a
         collection of segment documents that originates from a single request.
         Use <code>GetTraceSummaries</code> to get a list of trace IDs.</p>
       tags:
         - Batches
-        - Get
-        - Traces
         - Traces
   /CreateGroup:
     POST:
-      summary: CreateGroup
+      summary: 'Create Group '
       description: <p>Creates a group resource with a name and a filter expression. </p>
       tags:
-        - Create
-        - Group
-        - Traces
-        - Create
-        - Group
+        - Groups
   /CreateSamplingRule:
     POST:
-      summary: CreateSamplingRule
+      summary: 'Create Sampling Rule '
       description: >-
         <p>Creates a rule to control sampling behavior for instrumented
         applications. Services retrieve rules with <a
@@ -40,311 +34,120 @@ paths:
         trace quota that the service can use instead of borrowing from the
         reservoir.</p>
       tags:
-        - Create
-        - Sampling
         - Rules
-        - Traces
-        - Create
-        - Group
         - Sampling
-        - Rules
   /DeleteGroup:
     POST:
-      summary: DeleteGroup
+      summary: 'Delete Group '
       description: <p>Deletes a group resource.</p>
       tags:
-        - Delete
-        - Group
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
+        - Groups
   /DeleteResourcePolicy:
     POST:
-      summary: DeleteResourcePolicy
+      summary: 'Delete Resource Policy '
       description: >-
         <p>Deletes a resource policy from the target Amazon Web Services
         account.</p>
       tags:
-        - Delete
-        - Resources
         - Policies
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
         - Resources
-        - Policies
   /DeleteSamplingRule:
     POST:
-      summary: DeleteSamplingRule
+      summary: 'Delete Sampling Rule '
       description: <p>Deletes a sampling rule.</p>
       tags:
-        - Delete
-        - Sampling
         - Rules
-        - Traces
-        - Create
-        - Group
         - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
   /EncryptionConfig:
     POST:
-      summary: GetEncryptionConfig
+      summary: 'Get Encryption Config '
       description: <p>Retrieves the current encryption configuration for X-Ray data.</p>
       tags:
-        - Get
-        - Encryption
         - Configurations
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
         - Encryption
-        - Configurations
   /GetGroup:
     POST:
-      summary: GetGroup
+      summary: 'Get Group '
       description: <p>Retrieves group resource details.</p>
       tags:
-        - Get
-        - Group
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
+        - Groups
   /Groups:
     POST:
-      summary: GetGroups
+      summary: 'Get Groups '
       description: <p>Retrieves all active group details.</p>
       tags:
-        - Get
-        - Groups
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
         - Groups
   /Insight:
     POST:
-      summary: GetInsight
+      summary: 'Get Insight '
       description: >-
         <p>Retrieves the summary information of an insight. This includes impact
         to clients and root cause services, the top anomalous services, the
         category, the state of the insight, and the start and end time of the
         insight.</p>
       tags:
-        - Get
-        - Insight
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
+        - Insights
   /InsightEvents:
     POST:
-      summary: GetInsightEvents
+      summary: 'Get Insight Events '
       description: >-
         <p>X-Ray reevaluates insights periodically until they're resolved, and
         records each intermediate state as an event. You can review an insight's
         events in the Impact Timeline on the Inspect page in the X-Ray
         console.</p>
       tags:
-        - Get
-        - Insight
         - Events
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
+        - Insights
   /InsightImpactGraph:
     POST:
-      summary: GetInsightImpactGraph
+      summary: 'Get Insight Impact Graph '
       description: >-
         <p>Retrieves a service graph structure filtered by the specified
         insight. The service graph is limited to only structural information.
         For a complete service graph, use this API with the GetServiceGraph
         API.</p>
       tags:
-        - Get
-        - Insight
-        - Impact
         - Graphs
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
         - Impact
-        - Graphs
+        - Insights
   /InsightSummaries:
     POST:
-      summary: GetInsightSummaries
+      summary: 'Get Insight Summaries '
       description: >-
         <p>Retrieves the summaries of all insights in the specified group
         matching the provided filter values.</p>
       tags:
-        - Get
-        - Insight
-        - Summaries
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
+        - Insights
         - Summaries
   /GetSamplingRules:
     POST:
-      summary: GetSamplingRules
+      summary: 'Get Sampling Rules '
       description: <p>Retrieves all sampling rules.</p>
       tags:
-        - Get
+        - Rules
         - Sampling
-        - Rules
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
   /SamplingStatisticSummaries:
     POST:
-      summary: GetSamplingStatisticSummaries
+      summary: 'Get Sampling Statistic Summaries '
       description: >-
         <p>Retrieves information about recent sampling results for all sampling
         rules.</p>
       tags:
-        - Get
         - Sampling
         - Statistics
         - Summaries
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
   /SamplingTargets:
     POST:
-      summary: GetSamplingTargets
+      summary: 'Get Sampling Targets '
       description: >-
         <p>Requests a sampling quota for rules that the service is using to
         sample requests. </p>
       tags:
-        - Get
         - Sampling
-        - Targets
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
         - Targets
   /ServiceGraph:
     POST:
-      summary: GetServiceGraph
+      summary: 'Get Service Graph '
       description: >-
         <p>Retrieves a document that describes services that process incoming
         requests, and downstream services that they call as a result. Root
@@ -354,102 +157,29 @@ paths:
         X-Ray SDK</a>. Downstream services can be other applications, Amazon Web
         Services resources, HTTP web APIs, or SQL databases.</p>
       tags:
-        - Get
-        - Services
         - Graphs
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
         - Services
   /TimeSeriesServiceStatistics:
     POST:
-      summary: GetTimeSeriesServiceStatistics
+      summary: 'Get Time Series Service Statistics '
       description: >-
         <p>Get an aggregation of service statistics defined by a specific time
         range.</p>
       tags:
-        - Get
-        - Time
         - Series
         - Services
         - Statistics
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
         - Time
-        - Series
-        - Statistics
   /TraceGraph:
     POST:
-      summary: GetTraceGraph
+      summary: 'Get Trace Graph '
       description: <p>Retrieves a service graph for one or more specific trace IDs.</p>
       tags:
-        - Get
-        - Traces
         - Graphs
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
         - Traces
   /TraceSummaries:
     POST:
-      summary: GetTraceSummaries
+      summary: 'Get Trace Summaries '
       description: >-
         <p>Retrieves IDs and annotations for traces available for a specified
         time frame using an optional filter. To get the full traces, pass the
@@ -467,152 +197,36 @@ paths:
         Filter Expressions</a> in the <i>Amazon Web Services X-Ray Developer
         Guide</i>.</p>
       tags:
-        - Get
-        - Traces
         - Summaries
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
         - Traces
   /ListResourcePolicies:
     POST:
-      summary: ListResourcePolicies
+      summary: 'List Resource Policies '
       description: >-
         <p>Returns the list of resource policies in the target Amazon Web
         Services account.</p>
       tags:
-        - Lists
+        - Policies
         - Resources
-        - Policies
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
   /ListTagsForResource:
     POST:
-      summary: ListTagsForResource
+      summary: 'List Tags For Resource '
       description: >-
         <p>Returns a list of tags that are applied to the specified Amazon Web
         Services X-Ray group or sampling rule.</p>
       tags:
-        - Lists
-        - Tags
-        - For
         - Resources
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
         - Tags
-        - For
   /PutEncryptionConfig:
     POST:
-      summary: PutEncryptionConfig
+      summary: 'Put Encryption Config '
       description: <p>Updates the encryption configuration for X-Ray data.</p>
       tags:
-        - Put
-        - Encryption
         - Configurations
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
         - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
   /PutResourcePolicy:
     POST:
-      summary: PutResourcePolicy
+      summary: 'Put Resource Policy '
       description: >-
         <p> Sets the resource policy to grant one or more Amazon Web Services
         services and accounts permissions to access X-Ray. Each resource policy
@@ -621,82 +235,18 @@ paths:
         and each policy name must be unique within that account. The maximum
         size of each resource policy is 5KB. </p>
       tags:
-        - Put
+        - Policies
         - Resources
-        - Policies
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
   /TelemetryRecords:
     POST:
-      summary: PutTelemetryRecords
+      summary: 'Put Telemetry Records '
       description: <p>Used by the Amazon Web Services X-Ray daemon to upload telemetry.</p>
       tags:
-        - Put
-        - Telemetry
         - Records
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
         - Telemetry
-        - Records
   /TraceSegments:
     POST:
-      summary: PutTraceSegments
+      summary: 'Put Trace Segments '
       description: >-
         <p>Uploads segment documents to Amazon Web Services X-Ray. The <a
         href="https://docs.aws.amazon.com/xray/index.html">X-Ray SDK</a>
@@ -737,214 +287,37 @@ paths:
         hexadecimal.</p> </li> <li> <p>A 96-bit identifier for the trace,
         globally unique, in 24 hexadecimal digits.</p> </li> </ul>
       tags:
-        - Put
-        - Traces
         - Segments
         - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
-        - Telemetry
-        - Records
-        - Segments
   /TagResource:
     POST:
-      summary: TagResource
+      summary: 'Tag Resource '
       description: >-
         <p>Applies tags to an existing Amazon Web Services X-Ray group or
         sampling rule.</p>
       tags:
-        - Tags
         - Resources
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
-        - Telemetry
-        - Records
-        - Segments
         - Tags
   /UntagResource:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes tags from an Amazon Web Services X-Ray group or sampling
         rule. You cannot edit or delete system tags (those with an
         <code>aws:</code> prefix).</p>
       tags:
-        - Untag
         - Resources
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
-        - Telemetry
-        - Records
-        - Segments
-        - Tags
         - Untag
   /UpdateGroup:
     POST:
-      summary: UpdateGroup
+      summary: 'Update Group '
       description: <p>Updates a group resource.</p>
       tags:
-        - Update
-        - Group
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
         - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
-        - Telemetry
-        - Records
-        - Segments
-        - Tags
-        - Untag
-        - Update
   /UpdateSamplingRule:
     POST:
-      summary: UpdateSamplingRule
+      summary: 'Update Sampling Rule '
       description: <p>Modifies a sampling rule's configur
       tags:
-        - Update
+        - Rules
         - Sampling
-        - Rules
-        - Traces
-        - Create
-        - Group
-        - Sampling
-        - Rules
-        - Delete
-        - Resources
-        - Policies
-        - Encryption
-        - Configurations
-        - Get
-        - Groups
-        - Insight
-        - Events
-        - Impact
-        - Graphs
-        - Summaries
-        - Rules
-        - Statistics
-        - Targets
-        - Services
-        - Time
-        - Series
-        - Statistics
-        - Traces
-        - Lists
-        - Policies
-        - Tags
-        - For
-        - Put
-        - Telemetry
-        - Records
-        - Segments
-        - Tags
-        - Untag
-        - Upda
