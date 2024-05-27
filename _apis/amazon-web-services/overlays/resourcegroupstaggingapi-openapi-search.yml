@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UntagResources
+      summary: 'Untag Resources '
       description: >-
         <p>Removes the specified tags from the specified resources. When you
         specify a tag key, the action removes both that key and its associated
@@ -25,5 +25,5 @@ paths:
         <code>tag:UntagResource</code> </p> </li> <li> <p>
         <code>ec2:DeleteTags</code> </p> <
       tags:
+        - Resources
         - Untag
-        - Resourc
