@@ -4,7 +4,7 @@ info:
 paths:
   /CreateChatToken:
     POST:
-      summary: CreateChatToken
+      summary: 'Create Chat Token '
       description: >-
         <p>Creates an encrypted token that is used by a chat participant to
         establish an individual WebSocket chat connection to a room. When the
@@ -20,58 +20,33 @@ paths:
         badges, and other display features.</p> <p>Encryption keys are owned by
         Amazon IVS Chat and never used directly by your application.</p>
       tags:
-        - Create
-        - Chat
-        - Tokens
-        - Create
         - Chat
         - Tokens
   /CreateLoggingConfiguration:
     POST:
-      summary: CreateLoggingConfiguration
+      summary: 'Create Logging Configuration '
       description: >-
         <p>Creates a logging configuration that allows clients to store and
         record sent messages.</p>
       tags:
-        - Create
-        - Logging
         - Configurations
-        - Create
-        - Chat
-        - Tokens
         - Logging
-        - Configurations
   /CreateRoom:
     POST:
-      summary: CreateRoom
+      summary: 'Create Room '
       description: <p>Creates a room that allows clients to connect and pass messages.</p>
       tags:
-        - Create
-        - Rooms
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
         - Rooms
   /DeleteLoggingConfiguration:
     POST:
-      summary: DeleteLoggingConfiguration
+      summary: 'Delete Logging Configuration '
       description: <p>Deletes the specified logging configuration.</p>
       tags:
-        - Delete
-        - Logging
         - Configurations
-        - Create
-        - Chat
-        - Tokens
         - Logging
-        - Configurations
-        - Rooms
-        - Delete
   /DeleteMessage:
     POST:
-      summary: DeleteMessage
+      summary: 'Delete Message '
       description: >-
         <p>Sends an event to a specific room which directs clients to delete a
         specific message; that is, unrender it from view and delete it from the
@@ -81,34 +56,16 @@ paths:
         DeleteMessage</a> WebSocket operation in the Amazon IVS Chat Messaging
         API.</p>
       tags:
-        - Delete
-        - Messages
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
         - Messages
   /DeleteRoom:
     POST:
-      summary: DeleteRoom
+      summary: 'Delete Room '
       description: <p>Deletes the specified room.</p>
       tags:
-        - Delete
         - Rooms
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
   /DisconnectUser:
     POST:
-      summary: DisconnectUser
+      summary: 'Disconnect User '
       description: >-
         <p>Disconnects all connections using a specified user ID from a room.
         This replicates the <a
@@ -118,197 +75,66 @@ paths:
       tags:
         - Disconnect
         - Users
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
   /GetLoggingConfiguration:
     POST:
-      summary: GetLoggingConfiguration
+      summary: 'Get Logging Configuration '
       description: <p>Gets the specified logging configuration.</p>
       tags:
-        - Get
-        - Logging
         - Configurations
-        - Create
-        - Chat
-        - Tokens
         - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
   /GetRoom:
     POST:
-      summary: GetRoom
+      summary: 'Get Room '
       description: <p>Gets the specified room.</p>
       tags:
-        - Get
         - Rooms
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
   /ListLoggingConfigurations:
     POST:
-      summary: ListLoggingConfigurations
+      summary: 'List Logging Configurations '
       description: >-
         <p>Gets summary information about all your logging configurations in the
         AWS region where the API request is processed.</p>
       tags:
-        - Lists
+        - Configurations
         - Logging
-        - Configurations
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
-        - Lists
-        - Configurations
   /ListRooms:
     POST:
-      summary: ListRooms
+      summary: 'List Rooms '
       description: >-
         <p>Gets summary information about all your rooms in the AWS region where
         the API request is processed. Results are sorted in descending order of
         <code>updateTime</code>.</p>
       tags:
-        - Lists
-        - Rooms
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
-        - Lists
-        - Configurations
         - Rooms
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from the resource with the specified ARN.</p>
       tags:
-        - Untag
-        - Resources
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
-        - Lists
-        - Configurations
-        - Rooms
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /SendEvent:
     POST:
-      summary: SendEvent
+      summary: 'Send Event '
       description: >-
         <p>Sends an event to a room. Use this within your application’s business
         logic to send events to clients of a room; e.g., to notify clients to
         change the way the chat UI is rendered.</p>
       tags:
-        - Send
         - Events
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
-        - Lists
-        - Configurations
-        - Rooms
-        - ARN
         - Send
-        - Events
   /UpdateLoggingConfiguration:
     POST:
-      summary: UpdateLoggingConfiguration
+      summary: 'Update Logging Configuration '
       description: <p>Updates a specified logging configuration.</p>
       tags:
-        - Update
+        - Configurations
         - Logging
-        - Configurations
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
-        - Lists
-        - Configurations
-        - Rooms
-        - ARN
-        - Send
-        - Events
-        - Update
   /UpdateRoom:
     POST:
-      summary: UpdateRoom
+      summary: 'Update Room '
       description: <p>Updates a room’s configur
       tags:
-        - Update
         - Rooms
-        - Create
-        - Chat
-        - Tokens
-        - Logging
-        - Configurations
-        - Rooms
-        - Delete
-        - Messages
-        - Disconnect
-        - Users
-        - Get
-        - Lists
-        - Configurations
-        - Rooms
-        - ARN
-        - Send
-        - Events
-        - Upda
