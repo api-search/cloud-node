@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: WriteRecords
+      summary: 'Write Records '
       description: >-
         <p>Enables you to write your time-series data into Timestream. You can
         specify a single data point or a batch of data points to be inserted
@@ -52,5 +52,5 @@ paths:
         greater than <code>3</code>, or the update requests would receive a
         <code>RejectedRecordsException</c
       tags:
+        - Records
         - Write
-        - Recor
