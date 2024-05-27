@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateWebACL
+      summary: 'Update Web ACL '
       description: >-
         <p>Updates the specified <a>WebACL</a>. While updating a web ACL, WAF
         provides continuous coverage to the resources that you have associated
@@ -42,5 +42,5 @@ paths:
         rule, the new address might be blocked in one area while still allowed
         in another.</p> <
       tags:
-        - Update
-        - W
+        - ACL
+        - Web
