@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UntagQueue
+      summary: 'Untag Queue '
       description: >-
         <p>Remove cost allocation tags from the specified Amazon SQS queue. For
         an overview, see <a
@@ -16,5 +16,5 @@ paths:
         cross-account permissions to a role and a username</a> in the <i>Amazon
         SQS Developer Guide</i>.</
       tags:
+        - Queues
         - Untag
-        - Que
