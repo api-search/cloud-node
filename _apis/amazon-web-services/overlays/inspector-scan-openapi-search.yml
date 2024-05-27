@@ -4,7 +4,7 @@ info:
 paths:
   /scan/sbom:
     POST:
-      summary: ScanSbom
+      summary: 'Scan Sbom '
       description: >-
         <p>Scans a provided CycloneDX 1.5 SBOM and reports on any
         vulnerabilities discovered in that SBOM. You can generate compatible
@@ -12,6 +12,3 @@ paths:
         generato
       tags:
         - Scans
-        - null
-        - Scans
-        - null
