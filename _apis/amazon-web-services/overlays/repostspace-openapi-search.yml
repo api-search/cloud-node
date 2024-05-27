@@ -4,60 +4,49 @@ info:
 paths:
   /spaces:
     GET:
-      summary: ListSpaces
+      summary: 'List Spaces '
       description: >-
         <p>Returns a list of AWS re:Post Private private re:Posts in the account
         with some information about each private re:Post.</p>
       tags:
-        - Lists
-        - Spaces
         - Spaces
   /spaces/{spaceId}:
     PUT:
-      summary: UpdateSpace
+      summary: 'Update Space '
       description: <p>Modifies an existing AWS re:Post Private private re:Post.</p>
       tags:
-        - Update
         - Space
         - Spaces
-        - Identifiers
   /spaces/{spaceId}/admins/{adminId}:
     POST:
-      summary: RegisterAdmin
+      summary: 'Register Admin '
       description: >-
         <p>Adds a user or group to the list of administrators of the private
         re:Post.</p>
       tags:
-        - Register
         - Administrative
-        - Spaces
-        - Identifiers
         - Administrator
-        - Administrative
+        - Register
+        - Space
+        - Spaces
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes the association of the tag with the AWS re:Post Private
         resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Spaces
-        - Identifiers
-        - Administrator
-        - Administrative
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /spaces/{spaceId}/invite:
     POST:
-      summary: SendInvites
+      summary: 'Send Invites '
       description: <p>Sends an invitation email to selected users and g
       tags:
-        - Send
+        - Invite
         - Invites
+        - Send
+        - Space
         - Spaces
-        - Identifiers
-        - Administrator
-        - Administrative
-        - ARN
-        - Invi
