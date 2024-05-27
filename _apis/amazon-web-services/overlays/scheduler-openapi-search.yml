@@ -4,7 +4,7 @@ info:
 paths:
   /schedules/{Name}:
     PUT:
-      summary: UpdateSchedule
+      summary: 'Update Schedule '
       description: >-
         <p> Updates the specified schedule. When you call
         <code>UpdateSchedule</code>, EventBridge Scheduler uses all values,
@@ -16,52 +16,37 @@ paths:
         operation and make a note of all optional parameters for your
         <code>UpdateSchedule</code> call. </p>
       tags:
-        - Update
-        - Schedules
         - Names
+        - Schedules
   /schedule-groups/{Name}:
     GET:
-      summary: GetScheduleGroup
+      summary: 'Get Schedule Group '
       description: <p>Retrieves the specified schedule group.</p>
       tags:
-        - Get
-        - Schedules
-        - Group
+        - Groups
         - Names
+        - Schedules
   /schedule-groups:
     GET:
-      summary: ListScheduleGroups
+      summary: 'List Schedule Groups '
       description: <p>Returns a paginated list of your schedule groups.</p>
       tags:
-        - Lists
-        - Schedules
         - Groups
-        - Names
         - Schedules
-        - Groups
   /schedules:
     GET:
-      summary: ListSchedules
+      summary: 'List Schedules '
       description: <p>Returns a paginated list of your EventBridge Scheduler schedules.</p>
       tags:
-        - Lists
-        - Schedules
-        - Names
-        - Schedules
-        - Groups
         - Schedules
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes one or more tags from the specified EventBridge Scheduler
         schedule 
       tags:
+        - ARN
+        - Resources
+        - Tags
         - Untag
-        - Resources
-        - Names
-        - Schedules
-        - Groups
-        - Schedules
-        - Resources
-        - A
