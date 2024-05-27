@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: StartSupportDataExport
+      summary: 'Start Support Data Export '
       description: >-
         <i>This target has been deprecated.</i> Given a data set type and a from
         date, asynchronously publishes the requested customer support data to
@@ -19,7 +19,6 @@ paths:
         following actions: s3:PutObject, s3:GetBucketLocation,
         sns:GetTopicAttributes, sns:Publish, iam:GetR
       tags:
-        - Start
-        - Support
         - Data
-        - Expo
+        - Exports
+        - Support
