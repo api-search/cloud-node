@@ -4,53 +4,36 @@ info:
 paths:
   /ArchiveApplication:
     POST:
-      summary: ArchiveApplication
+      summary: 'Archive Application '
       description: <p>Archive application.</p>
       tags:
-        - Archive
         - Applications
         - Archive
-        - Applications
   /ArchiveWave:
     POST:
-      summary: ArchiveWave
+      summary: 'Archive Wave '
       description: <p>Archive wave.</p>
       tags:
         - Archive
         - Waves
-        - Archive
-        - Applications
-        - Waves
   /AssociateApplications:
     POST:
-      summary: AssociateApplications
+      summary: 'Associate Applications '
       description: <p>Associate applications to wave.</p>
       tags:
+        - Applications
         - Associate
-        - Applications
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
   /AssociateSourceServers:
     POST:
-      summary: AssociateSourceServers
+      summary: 'Associate Source Servers '
       description: <p>Associate source servers to application.</p>
       tags:
         - Associate
-        - Source
         - Servers
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
+        - Sources
   /ChangeServerLifeCycleState:
     POST:
-      summary: ChangeServerLifeCycleState
+      summary: 'Change Server Life Cycle State '
       description: >-
         <p>Allows the user to set the SourceServer.LifeCycle.state property for
         specific Source Server IDs to one of the following: READY_FOR_TEST or
@@ -58,402 +41,109 @@ paths:
         already launchable (dataReplicationInfo.lagDuration is not null.)</p>
       tags:
         - Change
-        - Server
-        - Life
         - Cycle
-        - States
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
+        - Life
         - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
         - States
   /CreateApplication:
     POST:
-      summary: CreateApplication
+      summary: 'Create Application '
       description: <p>Create application.</p>
       tags:
-        - Create
         - Applications
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
   /CreateConnector:
     POST:
-      summary: CreateConnector
+      summary: 'Create Connector '
       description: <p>Create Connector.</p>
       tags:
-        - Create
-        - Connectors
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
         - Connectors
   /CreateLaunchConfigurationTemplate:
     POST:
-      summary: CreateLaunchConfigurationTemplate
+      summary: 'Create Launch Configuration Template '
       description: <p>Creates a new Launch Configuration Template.</p>
       tags:
-        - Create
-        - Launch
         - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
         - Launch
-        - Configurations
         - Templates
   /CreateReplicationConfigurationTemplate:
     POST:
-      summary: CreateReplicationConfigurationTemplate
+      summary: 'Create Replication Configuration Template '
       description: <p>Creates a new ReplicationConfigurationTemplate.</p>
       tags:
-        - Create
-        - Replication
         - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
         - Replication
+        - Templates
   /CreateWave:
     POST:
-      summary: CreateWave
+      summary: 'Create Wave '
       description: <p>Create wave.</p>
       tags:
-        - Create
         - Waves
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
   /DeleteApplication:
     POST:
-      summary: DeleteApplication
+      summary: 'Delete Application '
       description: <p>Delete application.</p>
       tags:
-        - Delete
         - Applications
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
   /DeleteConnector:
     POST:
-      summary: DeleteConnector
+      summary: 'Delete Connector '
       description: <p>Delete Connector.</p>
       tags:
-        - Delete
         - Connectors
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
   /DeleteJob:
     POST:
-      summary: DeleteJob
+      summary: 'Delete Job '
       description: <p>Deletes a single Job by ID.</p>
       tags:
-        - Delete
-        - Jobs
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
         - Jobs
   /DeleteLaunchConfigurationTemplate:
     POST:
-      summary: DeleteLaunchConfigurationTemplate
+      summary: 'Delete Launch Configuration Template '
       description: <p>Deletes a single Launch Configuration Template by ID.</p>
       tags:
-        - Delete
-        - Launch
         - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
         - Launch
-        - Configurations
         - Templates
-        - Replication
-        - Delete
-        - Jobs
   /DeleteReplicationConfigurationTemplate:
     POST:
-      summary: DeleteReplicationConfigurationTemplate
+      summary: 'Delete Replication Configuration Template '
       description: <p>Deletes a single Replication Configuration Template by ID</p>
       tags:
-        - Delete
-        - Replication
         - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
         - Replication
-        - Delete
-        - Jobs
+        - Templates
   /DeleteSourceServer:
     POST:
-      summary: DeleteSourceServer
+      summary: 'Delete Source Server '
       description: <p>Deletes a single source server by ID.</p>
       tags:
-        - Delete
-        - Source
-        - Server
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
         - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
+        - Sources
   /DeleteVcenterClient:
     POST:
-      summary: DeleteVcenterClient
+      summary: 'Delete Vcenter Client '
       description: <p>Deletes a given vCenter client by ID.</p>
       tags:
-        - Delete
-        - null
-        - Client
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
+        - Clients
   /DeleteWave:
     POST:
-      summary: DeleteWave
+      summary: 'Delete Wave '
       description: <p>Delete wave.</p>
       tags:
-        - Delete
         - Waves
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
   /DescribeJobLogItems:
     POST:
-      summary: DescribeJobLogItems
+      summary: 'Describe Job Log Items '
       description: <p>Retrieves detailed job log items with paging.</p>
       tags:
         - Describe
+        - Items
         - Jobs
         - Logs
-        - Items
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
   /DescribeJobs:
     POST:
-      summary: DescribeJobs
+      summary: 'Describe Jobs '
       description: >-
         <p>Returns a list of Jobs. Use the JobsID and fromDate and toData
         filters to limit which jobs are returned. The response is sorted by
@@ -465,255 +155,61 @@ paths:
       tags:
         - Describe
         - Jobs
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
   /DescribeLaunchConfigurationTemplates:
     POST:
-      summary: DescribeLaunchConfigurationTemplates
+      summary: 'Describe Launch Configuration Templates '
       description: >-
         <p>Lists all Launch Configuration Templates, filtered by Launch
         Configuration Template IDs</p>
       tags:
+        - Configurations
         - Describe
         - Launch
-        - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
         - Templates
   /DescribeReplicationConfigurationTemplates:
     POST:
-      summary: DescribeReplicationConfigurationTemplates
+      summary: 'Describe Replication Configuration Templates '
       description: >-
         <p>Lists all ReplicationConfigurationTemplates, filtered by Source
         Server IDs.</p>
       tags:
+        - Configurations
         - Describe
         - Replication
-        - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
         - Templates
   /DescribeSourceServers:
     POST:
-      summary: DescribeSourceServers
+      summary: 'Describe Source Servers '
       description: <p>Retrieves all SourceServers or multiple SourceServers by ID.</p>
       tags:
         - Describe
-        - Source
         - Servers
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
+        - Sources
   /DescribeVcenterClients:
     GET:
-      summary: DescribeVcenterClients
+      summary: 'Describe Vcenter Clients '
       description: <p>Returns a list of the installed vCenter clients.</p>
       tags:
-        - Describe
-        - null
         - Clients
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
         - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
   /DisassociateApplications:
     POST:
-      summary: DisassociateApplications
+      summary: 'Disassociate Applications '
       description: <p>Disassociate applications from wave.</p>
       tags:
-        - Disassociate
         - Applications
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
         - Disassociate
   /DisassociateSourceServers:
     POST:
-      summary: DisassociateSourceServers
+      summary: 'Disassociate Source Servers '
       description: <p>Disassociate source servers from application.</p>
       tags:
         - Disassociate
-        - Source
         - Servers
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
+        - Sources
   /DisconnectFromService:
     POST:
-      summary: DisconnectFromService
+      summary: 'Disconnect From Service '
       description: >-
         <p>Disconnects specific Source Servers from Application Migration
         Service. Data replication is stopped immediately. All AWS resources
@@ -731,43 +227,10 @@ paths:
         be nullified.</p>
       tags:
         - Disconnect
-        - From
-        - Services
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
         - Services
   /FinalizeCutover:
     POST:
-      summary: FinalizeCutover
+      summary: 'Finalize Cutover '
       description: >-
         <p>Finalizes the cutover immediately for specific Source Servers. All
         AWS resources created by Application Migration Service for enabling the
@@ -783,1173 +246,168 @@ paths:
         be nullified.</p>
       tags:
         - Finalize
-        - null
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
   /GetLaunchConfiguration:
     POST:
-      summary: GetLaunchConfiguration
+      summary: 'Get Launch Configuration '
       description: >-
         <p>Lists all LaunchConfigurations available, filtered by Source Server
         IDs.</p>
       tags:
-        - Get
-        - Launch
         - Configurations
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
         - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
   /GetReplicationConfiguration:
     POST:
-      summary: GetReplicationConfiguration
+      summary: 'Get Replication Configuration '
       description: >-
         <p>Lists all ReplicationConfigurations, filtered by Source Server
         ID.</p>
       tags:
-        - Get
-        - Replication
         - Configurations
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
         - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
   /InitializeService:
     POST:
-      summary: InitializeService
+      summary: 'Initialize Service '
       description: <p>Initialize Application Migration Service.</p>
       tags:
         - Initialize
         - Services
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
   /ListApplications:
     POST:
-      summary: ListApplications
+      summary: 'List Applications '
       description: <p>Retrieves all applications or multiple applications by ID.</p>
       tags:
-        - Lists
         - Applications
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
   /ListConnectors:
     POST:
-      summary: ListConnectors
+      summary: 'List Connectors '
       description: <p>List Connectors.</p>
       tags:
-        - Lists
-        - Connectors
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
         - Connectors
   /ListExportErrors:
     POST:
-      summary: ListExportErrors
+      summary: 'List Export Errors '
       description: <p>List export errors.</p>
       tags:
-        - Lists
-        - Export
         - Errors
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
+        - Exports
   /ListExports:
     POST:
-      summary: ListExports
+      summary: 'List Exports '
       description: <p>List exports.</p>
       tags:
-        - Lists
-        - Exports
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
         - Exports
   /ListImportErrors:
     POST:
-      summary: ListImportErrors
+      summary: 'List Import Errors '
       description: <p>List import errors.</p>
       tags:
-        - Lists
-        - Import
         - Errors
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
         - Import
   /ListImports:
     POST:
-      summary: ListImports
+      summary: 'List Imports '
       description: <p>List imports.</p>
       tags:
-        - Lists
-        - Imports
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
         - Imports
   /ListManagedAccounts:
     POST:
-      summary: ListManagedAccounts
+      summary: 'List Managed Accounts '
       description: <p>List Managed Accounts.</p>
       tags:
-        - Lists
-        - Managed
         - Accounts
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
         - Managed
-        - Accounts
   /ListSourceServerActions:
     POST:
-      summary: ListSourceServerActions
+      summary: 'List Source Server Actions '
       description: <p>List source server post migration custom actions.</p>
       tags:
-        - Lists
-        - Source
-        - Server
         - Actions
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
         - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
+        - Sources
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Deletes the specified set of tags from the specified set of
         Application Migration Service resources.</p>
       tags:
-        - Untag
-        - Resources
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /ListTemplateActions:
     POST:
-      summary: ListTemplateActions
+      summary: 'List Template Actions '
       description: <p>List template post migration custom actions.</p>
       tags:
-        - Lists
-        - Templates
         - Actions
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
         - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
   /ListWaves:
     POST:
-      summary: ListWaves
+      summary: 'List Waves '
       description: <p>Retrieves all waves or multiple waves by ID.</p>
       tags:
-        - Lists
-        - Waves
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
         - Waves
   /MarkAsArchived:
     POST:
-      summary: MarkAsArchived
+      summary: 'Mark As Archived '
       description: >-
         <p>Archives specific Source Servers by setting the
         SourceServer.isArchived property to true for specified SourceServers by
         ID. This command only works for SourceServers with a lifecycle. state
         which equals DISCONNECTED or CUTOVER.</p>
       tags:
-        - Mark
-        - null
         - Archived
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
         - Mark
-        - null
-        - Archived
   /PauseReplication:
     POST:
-      summary: PauseReplication
+      summary: 'Pause Replication '
       description: <p>Pause Replication.</p>
       tags:
         - Pause
         - Replication
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
   /PutSourceServerAction:
     POST:
-      summary: PutSourceServerAction
+      summary: 'Put Source Server Action '
       description: <p>Put source server post migration custom action.</p>
       tags:
-        - Put
-        - Source
-        - Server
         - Actions
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
         - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
+        - Sources
   /PutTemplateAction:
     POST:
-      summary: PutTemplateAction
+      summary: 'Put Template Action '
       description: <p>Put template post migration custom action.</p>
       tags:
-        - Put
-        - Templates
         - Actions
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
         - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
   /RemoveSourceServerAction:
     POST:
-      summary: RemoveSourceServerAction
+      summary: 'Remove Source Server Action '
       description: <p>Remove source server post migration custom action.</p>
       tags:
-        - Removes
-        - Source
-        - Server
         - Actions
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
+        - Removes
         - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
+        - Sources
   /RemoveTemplateAction:
     POST:
-      summary: RemoveTemplateAction
+      summary: 'Remove Template Action '
       description: <p>Remove template post migration custom action.</p>
       tags:
-        - Removes
-        - Templates
-        - Actions
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
         - Actions
         - Removes
+        - Templates
   /ResumeReplication:
     POST:
-      summary: ResumeReplication
+      summary: 'Resume Replication '
       description: <p>Resume Replication.</p>
       tags:
-        - Resume
         - Replication
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
         - Resume
   /RetryDataReplication:
     POST:
-      summary: RetryDataReplication
+      summary: 'Retry Data Replication '
       description: >-
         <p>Causes the data replication initiation sequence to begin immediately
         upon next Handshake for specified SourceServer IDs, regardless of when
@@ -1957,1361 +415,141 @@ paths:
         SourceServer is not stalled or is in a DISCONNECTED or STOPPED
         state.</p>
       tags:
-        - Retry
         - Data
         - Replication
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
         - Retry
-        - Data
   /StartCutover:
     POST:
-      summary: StartCutover
+      summary: 'Start Cutover '
       description: >-
         <p>Launches a Cutover Instance for specific Source Servers. This command
         starts a LAUNCH job whose initiatedBy property is StartCutover and
         changes the SourceServer.lifeCycle.state property to CUTTING_OVER.</p>
-      tags:
-        - Start
-        - null
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
+      tags: []
   /StartExport:
     POST:
-      summary: StartExport
+      summary: 'Start Export '
       description: <p>Start export.</p>
       tags:
-        - Start
-        - Export
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
         - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
   /StartImport:
     POST:
-      summary: StartImport
+      summary: 'Start Import '
       description: <p>Start import.</p>
       tags:
-        - Start
         - Import
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
   /StartReplication:
     POST:
-      summary: StartReplication
+      summary: 'Start Replication '
       description: <p>Starts replication for SNAPSHOT_SHIPPING agents.</p>
       tags:
-        - Start
         - Replication
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
   /StartTest:
     POST:
-      summary: StartTest
+      summary: 'Start Test '
       description: >-
         <p>Launches a Test Instance for specific Source Servers. This command
         starts a LAUNCH job whose initiatedBy property is StartTest and changes
         the SourceServer.lifeCycle.state property to TESTING.</p>
       tags:
-        - Start
-        - Tests
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
         - Tests
   /StopReplication:
     POST:
-      summary: StopReplication
+      summary: 'Stop Replication '
       description: <p>Stop Replication.</p>
       tags:
-        - Stop
         - Replication
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
         - Stop
   /TerminateTargetInstances:
     POST:
-      summary: TerminateTargetInstances
+      summary: 'Terminate Target Instances '
       description: >-
         <p>Starts a job that terminates specific launched EC2 Test and Cutover
         instances. This command will not work for any Source Server with a
         lifecycle.state of TESTING, CUTTING_OVER, or CUTOVER.</p>
       tags:
-        - Terminate
-        - Target
         - Instances
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
         - Target
-        - Instances
+        - Terminate
   /UnarchiveApplication:
     POST:
-      summary: UnarchiveApplication
+      summary: 'Unarchive Application '
       description: <p>Unarchive application.</p>
       tags:
-        - Unarchive
         - Applications
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
         - Unarchive
   /UnarchiveWave:
     POST:
-      summary: UnarchiveWave
+      summary: 'Unarchive Wave '
       description: <p>Unarchive wave.</p>
       tags:
         - Unarchive
         - Waves
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
   /UpdateApplication:
     POST:
-      summary: UpdateApplication
+      summary: 'Update Application '
       description: <p>Update application.</p>
       tags:
-        - Update
         - Applications
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
   /UpdateConnector:
     POST:
-      summary: UpdateConnector
+      summary: 'Update Connector '
       description: <p>Update Connector.</p>
       tags:
-        - Update
         - Connectors
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
   /UpdateLaunchConfiguration:
     POST:
-      summary: UpdateLaunchConfiguration
+      summary: 'Update Launch Configuration '
       description: <p>Updates multiple LaunchConfigurations by Source Server ID.</p>
       tags:
-        - Update
-        - Launch
         - Configurations
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
         - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
   /UpdateLaunchConfigurationTemplate:
     POST:
-      summary: UpdateLaunchConfigurationTemplate
+      summary: 'Update Launch Configuration Template '
       description: <p>Updates an existing Launch Configuration Template by ID.</p>
       tags:
-        - Update
-        - Launch
         - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
         - Launch
-        - Configurations
         - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
   /UpdateReplicationConfiguration:
     POST:
-      summary: UpdateReplicationConfiguration
+      summary: 'Update Replication Configuration '
       description: >-
         <p>Allows you to update multiple ReplicationConfigurations by Source
         Server ID.</p>
       tags:
-        - Update
-        - Replication
         - Configurations
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
         - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
   /UpdateReplicationConfigurationTemplate:
     POST:
-      summary: UpdateReplicationConfigurationTemplate
+      summary: 'Update Replication Configuration Template '
       description: <p>Updates multiple ReplicationConfigurationTemplates by ID.</p>
       tags:
-        - Update
-        - Replication
         - Configurations
-        - Templates
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
         - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
         - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
   /UpdateSourceServer:
     POST:
-      summary: UpdateSourceServer
+      summary: 'Update Source Server '
       description: <p>Update Source Server.</p>
       tags:
-        - Update
-        - Source
-        - Server
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
         - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
+        - Sources
   /UpdateSourceServerReplicationType:
     POST:
-      summary: UpdateSourceServerReplicationType
+      summary: 'Update Source Server Replication Type '
       description: >-
         <p>Allows you to change between the AGENT_BASED replication type and the
         SNAPSHOT_SHIPPING replication type.</p>
       tags:
-        - Update
-        - Source
-        - Server
         - Replication
-        - Types
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
         - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
+        - Sources
         - Types
   /UpdateWave:
     POST:
-      summary: UpdateWave
+      summary: 'Update Wave '
       description: <p>Update
       tags:
-        - Update
         - Waves
-        - Archive
-        - Applications
-        - Waves
-        - Associate
-        - Applications
-        - Source
-        - Servers
-        - Change
-        - Server
-        - Life
-        - Cycle
-        - States
-        - Create
-        - Connectors
-        - Launch
-        - Configurations
-        - Templates
-        - Replication
-        - Delete
-        - Jobs
-        - null
-        - Client
-        - Describe
-        - Logs
-        - Items
-        - Jobs
-        - Templates
-        - Clients
-        - Disassociate
-        - Disconnect
-        - From
-        - Services
-        - Finalize
-        - null
-        - Get
-        - Initialize
-        - Lists
-        - Connectors
-        - Export
-        - Errors
-        - Exports
-        - Import
-        - Imports
-        - Managed
-        - Accounts
-        - Actions
-        - ARN
-        - Waves
-        - Mark
-        - null
-        - Archived
-        - Pause
-        - Put
-        - Actions
-        - Removes
-        - Resume
-        - Retry
-        - Data
-        - Start
-        - Tests
-        - Stop
-        - Terminate
-        - Target
-        - Instances
-        - Unarchive
-        - Update
-        - Types
