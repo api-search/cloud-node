@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateWorkflow
+      summary: 'Update Workflow '
       description: <p>Updates an existing wor
       tags:
-        - Update
         - Workflows
