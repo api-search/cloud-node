@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: VerifyMac
+      summary: 'Verify Mac '
       description: >-
         <p>Verifies the hash-based message authentication code (HMAC) for a
         specified message, HMAC KMS key, and MAC algorithm. To verify the HMAC,
@@ -36,4 +36,3 @@ paths:
         eventual consistenc
       tags:
         - Verify
-        - null
