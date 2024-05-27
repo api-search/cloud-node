@@ -4,7 +4,7 @@ info:
 paths:
   /BatchDescribeEntities:
     POST:
-      summary: BatchDescribeEntities
+      summary: 'Batch Describe Entities '
       description: >-
         <p>Returns metadata and content for multiple entities. This is the Batch
         version of the <code>DescribeEntity</code> API and uses the same IAM
@@ -13,12 +13,9 @@ paths:
         - Batches
         - Describe
         - Entities
-        - Batches
-        - Describe
-        - Entities
   /CancelChangeSet:
     PATCH:
-      summary: CancelChangeSet
+      summary: 'Cancel Change Set '
       description: >-
         <p>Used to cancel an open change request. Must be sent before the status
         of the request changes to <code>APPLYING</code>, the final stage of
@@ -28,89 +25,42 @@ paths:
         - Cancel
         - Change
         - Sets
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
   /DeleteResourcePolicy:
     DELETE:
-      summary: DeleteResourcePolicy
+      summary: 'Delete Resource Policy '
       description: >-
         <p>Deletes a resource-based policy on an entity that is identified by
         its resource ARN.</p>
       tags:
-        - Delete
-        - Resources
         - Policies
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
         - Resources
-        - Policies
   /DescribeChangeSet:
     GET:
-      summary: DescribeChangeSet
+      summary: 'Describe Change Set '
       description: <p>Provides information about a given change set.</p>
       tags:
-        - Describe
         - Change
-        - Sets
-        - Batches
         - Describe
-        - Entities
-        - Cancel
-        - Change
         - Sets
-        - Delete
-        - Resources
-        - Policies
   /DescribeEntity:
     GET:
-      summary: DescribeEntity
+      summary: 'Describe Entity '
       description: <p>Returns the metadata and content of the entity.</p>
       tags:
         - Describe
         - Entities
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
-        - Resources
-        - Policies
-        - Entities
   /GetResourcePolicy:
     GET:
-      summary: GetResourcePolicy
+      summary: 'Get Resource Policy '
       description: >-
         <p>Gets a resource-based policy of an entity that is identified by its
         resource ARN.</p>
       tags:
-        - Get
-        - Resources
         - Policies
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
         - Resources
-        - Policies
-        - Entities
-        - Get
   /ListChangeSets:
     POST:
-      summary: ListChangeSets
+      summary: 'List Change Sets '
       description: >-
         <p>Returns the list of change sets owned by the account being used to
         make the call. You can filter this list by providing any combination of
@@ -119,45 +69,17 @@ paths:
         between the filters.</p> <p>You can describe a change during the 60-day
         request history retention period for API calls.</p>
       tags:
-        - Lists
         - Change
-        - Sets
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
-        - Resources
-        - Policies
-        - Entities
-        - Get
-        - Lists
         - Sets
   /ListEntities:
     POST:
-      summary: ListEntities
+      summary: 'List Entities '
       description: <p>Provides the list of entities of a given type.</p>
       tags:
-        - Lists
         - Entities
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
-        - Resources
-        - Policies
-        - Entities
-        - Get
-        - Lists
-        - Sets
   /ListTagsForResource:
     POST:
-      summary: ListTagsForResource
+      summary: 'List Tags For Resource '
       description: >-
         <p>Lists all tags that have been added to a resource (either an <a
         href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#catalog-api-entities">entity</a>
@@ -165,54 +87,20 @@ paths:
         href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">change
         set</a>).</p>
       tags:
-        - Lists
-        - Tags
-        - For
         - Resources
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
-        - Resources
-        - Policies
-        - Entities
-        - Get
-        - Lists
-        - Sets
         - Tags
-        - For
   /PutResourcePolicy:
     POST:
-      summary: PutResourcePolicy
+      summary: 'Put Resource Policy '
       description: >-
         <p>Attaches a resource-based policy to an entity. Examples of an entity
         include: <code>AmiProduct</code> and <code>ContainerProduct</code>.</p>
       tags:
-        - Put
-        - Resources
         - Policies
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
         - Resources
-        - Policies
-        - Entities
-        - Get
-        - Lists
-        - Sets
-        - Tags
-        - For
-        - Put
   /StartChangeSet:
     POST:
-      summary: StartChangeSet
+      summary: 'Start Change Set '
       description: >-
         <p>Allows you to request changes for your entities. Within a single
         <code>ChangeSet</code>, you can't start the same change type against the
@@ -237,29 +125,11 @@ paths:
         href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/container-products.html#working-with-container-products">Working
         with container products</a>.</p>
       tags:
-        - Start
         - Change
         - Sets
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
-        - Resources
-        - Policies
-        - Entities
-        - Get
-        - Lists
-        - Sets
-        - Tags
-        - For
-        - Put
-        - Start
   /TagResource:
     POST:
-      summary: TagResource
+      summary: 'Tag Resource '
       description: >-
         <p>Tags a resource (either an <a
         href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#catalog-api-entities">entity</a>
@@ -267,29 +137,11 @@ paths:
         href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">change
         set</a>).</p>
       tags:
-        - Tags
         - Resources
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
-        - Resources
-        - Policies
-        - Entities
-        - Get
-        - Lists
-        - Sets
-        - Tags
-        - For
-        - Put
-        - Start
         - Tags
   /UntagResource:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes a tag or list of tags from a resource (either an <a
         href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#catalog-api-entities">entity</a>
@@ -297,24 +149,5 @@ paths:
         href="https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html#working-with-change-sets">change
         set
       tags:
+        - Resources
         - Untag
-        - Resources
-        - Batches
-        - Describe
-        - Entities
-        - Cancel
-        - Change
-        - Sets
-        - Delete
-        - Resources
-        - Policies
-        - Entities
-        - Get
-        - Lists
-        - Sets
-        - Tags
-        - For
-        - Put
-        - Start
-        - Tags
-        - null
