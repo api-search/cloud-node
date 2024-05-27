@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: VerifySMSSandboxPhoneNumber
+      summary: 'Verify SMS Sandbox Phone Number '
       description: >-
         <p>Verifies a destination phone number with a one-time password (OTP)
         for the calling Amazon Web Services account.</p> <p>When you start using
@@ -19,7 +19,7 @@ paths:
         href="https://docs.aws.amazon.com/sns/latest/dg/sns-sms-sandbox.html">SMS
         sandbox</a> in the <i>Amazon SNS Developer Guid
       tags:
-        - Verify
-        - Sandbox
+        - Numbers
         - Phone
-        - Numb
+        - SMSSandbox
+        - Verify
