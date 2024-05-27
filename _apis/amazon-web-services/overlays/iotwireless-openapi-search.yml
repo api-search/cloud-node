@@ -4,1082 +4,310 @@ info:
 paths:
   /partner-accounts:
     GET:
-      summary: ListPartnerAccounts
+      summary: 'List Partner Accounts '
       description: <p>Lists the partner accounts associated with your AWS account.</p>
       tags:
-        - Lists
-        - Partners
         - Accounts
         - Partners
-        - Accounts
   /fuota-tasks/{Id}/multicast-group:
     PUT:
-      summary: AssociateMulticastGroupWithFuotaTask
+      summary: 'Associate Multicast Group With Fuota Task '
       description: <p>Associate a multicast group with a FUOTA task.</p>
       tags:
         - Associate
+        - Groups
         - Multicast
-        - Group
-        - null
-        - null
         - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
   /fuota-tasks/{Id}/wireless-device:
     PUT:
-      summary: AssociateWirelessDeviceWithFuotaTask
+      summary: 'Associate Wireless Device With Fuota Task '
       description: <p>Associate a wireless device with a FUOTA task.</p>
       tags:
         - Associate
-        - Wireless
         - Device
-        - null
-        - null
         - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
   /multicast-groups/{Id}/wireless-device:
     PUT:
-      summary: AssociateWirelessDeviceWithMulticastGroup
+      summary: 'Associate Wireless Device With Multicast Group '
       description: <p>Associates a wireless device with a multicast group.</p>
       tags:
         - Associate
-        - Wireless
         - Device
-        - null
+        - Groups
         - Multicast
-        - Group
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
   /wireless-devices/{Id}/thing:
     DELETE:
-      summary: DisassociateWirelessDeviceFromThing
+      summary: 'Disassociate Wireless Device From Thing '
       description: >-
         <p>Disassociates a wireless device from its currently associated
         thing.</p>
       tags:
+        - Device
+        - Devices
         - Disassociate
-        - Wireless
-        - Device
-        - From
         - Things
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
   /wireless-gateways/{Id}/certificate:
     GET:
-      summary: GetWirelessGatewayCertificate
+      summary: 'Get Wireless Gateway Certificate '
       description: >-
         <p>Gets the ID of the certificate that is currently associated with a
         wireless gateway.</p>
       tags:
-        - Get
-        - Wireless
-        - Gateway
         - Certificates
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
+        - Gateways
         - Wireless
-        - Device
-        - Things
-        - Certificates
   /wireless-gateways/{Id}/thing:
     DELETE:
-      summary: DisassociateWirelessGatewayFromThing
+      summary: 'Disassociate Wireless Gateway From Thing '
       description: >-
         <p>Disassociates a wireless gateway from its currently associated
         thing.</p>
       tags:
         - Disassociate
-        - Wireless
-        - Gateway
-        - From
+        - Gateways
         - Things
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
-        - Certificates
   /multicast-groups/{Id}/session:
     PUT:
-      summary: StartMulticastGroupSession
+      summary: 'Start Multicast Group Session '
       description: <p>Starts a multicast group session.</p>
       tags:
-        - Start
+        - Groups
         - Multicast
-        - Group
-        - Sessions
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
         - Sessions
   /destinations:
     GET:
-      summary: ListDestinations
+      summary: 'List Destinations '
       description: <p>Lists the destinations registered to your AWS account.</p>
       tags:
-        - Lists
-        - Destinations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
         - Destinations
   /device-profiles:
     GET:
-      summary: ListDeviceProfiles
+      summary: 'List Device Profiles '
       description: <p>Lists the device profiles registered to your AWS account.</p>
       tags:
-        - Lists
         - Device
-        - Profiles
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
         - Profiles
   /fuota-tasks:
     GET:
-      summary: ListFuotaTasks
+      summary: 'List Fuota Tasks '
       description: <p>Lists the FUOTA tasks registered to your AWS account.</p>
       tags:
-        - Lists
-        - null
-        - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
         - Tasks
   /multicast-groups:
     GET:
-      summary: ListMulticastGroups
+      summary: 'List Multicast Groups '
       description: <p>Lists the multicast groups registered to your AWS account.</p>
       tags:
-        - Lists
-        - Multicast
         - Groups
-        - Partners
-        - Accounts
-        - Identifiers
         - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
   /network-analyzer-configurations:
     GET:
-      summary: ListNetworkAnalyzerConfigurations
+      summary: 'List Network Analyzer Configurations '
       description: <p>Lists the network analyzer configurations.</p>
       tags:
-        - Lists
-        - Networks
         - Analyzer
         - Configurations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
         - Networks
-        - Analyzer
-        - Configurations
   /service-profiles:
     GET:
-      summary: ListServiceProfiles
+      summary: 'List Service Profiles '
       description: <p>Lists the service profiles registered to your AWS account.</p>
       tags:
-        - Lists
-        - Services
         - Profiles
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
         - Services
   /wireless-devices:
     GET:
-      summary: ListWirelessDevices
+      summary: 'List Wireless Devices '
       description: <p>Lists the wireless devices registered to your AWS account.</p>
       tags:
-        - Lists
-        - Wireless
         - Devices
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
   /wireless-gateways:
     GET:
-      summary: ListWirelessGateways
+      summary: 'List Wireless Gateways '
       description: <p>Lists the wireless gateways registered to your AWS account.</p>
       tags:
-        - Lists
-        - Wireless
         - Gateways
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
   /wireless-gateways/{Id}/tasks:
     GET:
-      summary: GetWirelessGatewayTask
+      summary: 'Get Wireless Gateway Task '
       description: <p>Gets information about a wireless gateway task.</p>
       tags:
-        - Get
-        - Wireless
-        - Gateway
-        - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
         - Gateways
+        - Tasks
+        - Wireless
   /wireless-gateway-task-definitions:
     GET:
-      summary: ListWirelessGatewayTaskDefinitions
+      summary: 'List Wireless Gateway Task Definitions '
       description: >-
         <p>List the wireless gateway tasks definitions registered to your AWS
         account.</p>
       tags:
-        - Lists
-        - Wireless
-        - Gateway
-        - Tasks
         - Definitions
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
         - Gateways
-        - Gateway
         - Tasks
-        - Definitions
+        - Wireless
   /destinations/{Name}:
     PATCH:
-      summary: UpdateDestination
+      summary: 'Update Destination '
       description: <p>Updates properties of a destination.</p>
       tags:
-        - Update
         - Destinations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
         - Names
   /device-profiles/{Id}:
     GET:
-      summary: GetDeviceProfile
+      summary: 'Get Device Profile '
       description: <p>Gets information about a device profile.</p>
       tags:
-        - Get
         - Device
         - Profiles
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
   /fuota-tasks/{Id}:
     PATCH:
-      summary: UpdateFuotaTask
+      summary: 'Update Fuota Task '
       description: <p>Updates properties of a FUOTA task.</p>
       tags:
-        - Update
-        - null
         - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
   /multicast-groups/{Id}:
     PATCH:
-      summary: UpdateMulticastGroup
+      summary: 'Update Multicast Group '
       description: <p>Updates properties of a multicast group session.</p>
       tags:
-        - Update
-        - Multicast
-        - Group
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
         - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
+        - Multicast
   /network-analyzer-configurations/{ConfigurationName}:
     PATCH:
-      summary: UpdateNetworkAnalyzerConfiguration
+      summary: 'Update Network Analyzer Configuration '
       description: <p>Update network analyzer configuration.</p>
       tags:
-        - Update
-        - Networks
         - Analyzer
         - Configurations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
         - Names
-        - Configurations
+        - Networks
   /wireless-devices/{Id}/data:
     POST:
-      summary: SendDataToWirelessDevice
+      summary: 'Send Data To Wireless Device '
       description: <p>Sends a decrypted application data frame to a device.</p>
       tags:
-        - Send
         - Data
-        - To
-        - Wireless
         - Device
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
         - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
+        - Send
+        - Wireless
   /service-profiles/{Id}:
     GET:
-      summary: GetServiceProfile
+      summary: 'Get Service Profile '
       description: <p>Gets information about a service profile.</p>
       tags:
-        - Get
-        - Services
         - Profiles
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
         - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
   /wireless-devices/{Id}:
     PATCH:
-      summary: UpdateWirelessDevice
+      summary: 'Update Wireless Device '
       description: <p>Updates properties of a wireless device.</p>
       tags:
-        - Update
-        - Wireless
         - Device
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
         - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
+        - Wireless
   /wireless_device_import_task/{Id}:
     PATCH:
-      summary: UpdateWirelessDeviceImportTask
+      summary: 'Update Wireless Device Import Task '
       description: <p>Update an import task to add more devices to the task.</p>
       tags:
-        - Update
-        - Wireless
         - Device
         - Import
         - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
   /wireless-gateways/{Id}:
     PATCH:
-      summary: UpdateWirelessGateway
+      summary: 'Update Wireless Gateway '
       description: <p>Updates properties of a wireless gateway.</p>
       tags:
-        - Update
-        - Wireless
-        - Gateway
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
         - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
+        - Wireless
   /wireless-gateway-task-definitions/{Id}:
     GET:
-      summary: GetWirelessGatewayTaskDefinition
+      summary: 'Get Wireless Gateway Task Definition '
       description: <p>Gets information about a wireless gateway task definition.</p>
       tags:
-        - Get
-        - Wireless
-        - Gateway
-        - Tasks
         - Definitions
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
         - Gateways
-        - Gateway
         - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
+        - Wireless
   /wireless-devices/{Identifier}/deregister:
     PATCH:
-      summary: DeregisterWirelessDevice
+      summary: 'Deregister Wireless Device '
       description: <p>Deregister a wireless device from AWS IoT Wireless.</p>
       tags:
         - Deregister
-        - Wireless
         - Device
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
         - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
+        - Wireless
   /partner-accounts/{PartnerAccountId}:
     PATCH:
-      summary: UpdatePartnerAccount
+      summary: 'Update Partner Account '
       description: <p>Updates properties of a partner account.</p>
       tags:
-        - Update
-        - Partners
-        - Account
-        - Partners
         - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
+        - Partners
   /fuota-tasks/{Id}/multicast-groups/{MulticastGroupId}:
     DELETE:
-      summary: DisassociateMulticastGroupFromFuotaTask
+      summary: 'Disassociate Multicast Group From Fuota Task '
       description: <p>Disassociates a multicast group from a fuota task.</p>
       tags:
         - Disassociate
-        - Multicast
-        - Group
-        - From
-        - null
-        - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
         - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
+        - Multicast
         - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
   /fuota-tasks/{Id}/wireless-devices/{WirelessDeviceId}:
     DELETE:
-      summary: DisassociateWirelessDeviceFromFuotaTask
+      summary: 'Disassociate Wireless Device From Fuota Task '
       description: <p>Disassociates a wireless device from a FUOTA task.</p>
       tags:
-        - Disassociate
-        - Wireless
         - Device
-        - From
-        - null
-        - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
         - Devices
-        - Gateways
-        - Gateway
+        - Disassociate
         - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
+        - Wireless
   /multicast-groups/{Id}/wireless-devices/{WirelessDeviceId}:
     DELETE:
-      summary: DisassociateWirelessDeviceFromMulticastGroup
+      summary: 'Disassociate Wireless Device From Multicast Group '
       description: <p>Disassociates a wireless device from a multicast group.</p>
       tags:
-        - Disassociate
-        - Wireless
         - Device
-        - From
-        - Multicast
-        - Group
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
         - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
+        - Disassociate
+        - Groups
+        - Multicast
+        - Wireless
   /event-configurations-resource-types:
     PATCH:
-      summary: UpdateEventConfigurationByResourceTypes
+      summary: 'Update Event Configuration By Resource Types '
       description: <p>Update the event configuration based on resource types.</p>
       tags:
-        - Update
-        - Events
         - Configurations
-        - By
-        - Resources
-        - Types
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
         - Events
         - Resources
         - Types
   /log-levels:
     POST:
-      summary: UpdateLogLevelsByResourceTypes
+      summary: 'Update Log Levels By Resource Types '
       description: >-
         <p>Set default log level, or log levels by resource types. This can be
         for wireless device log options or wireless gateways log options and is
         used to control the log messages that'll be displayed in CloudWatch.</p>
       tags:
-        - Update
-        - Logs
         - Levels
-        - By
+        - Logs
         - Resources
         - Types
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
   /positions/{ResourceIdentifier}:
     PATCH:
-      summary: UpdatePosition
+      summary: 'Update Position '
       description: >-
         <p>Update the position information of a resource.</p> <important>
         <p>This action is no longer supported. Calls to update the position
@@ -1087,46 +315,11 @@ paths:
         href="https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_UpdateResourcePosition.html">UpdateResourcePosition</a>
         API operation instead.</p> </important>
       tags:
-        - Update
         - Positions
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
         - Resources
-        - Types
-        - Logs
-        - Levels
   /position-configurations/{ResourceIdentifier}:
     PUT:
-      summary: PutPositionConfiguration
+      summary: 'Put Position Configuration '
       description: >-
         <p>Put position configuration for a given resource.</p> <important>
         <p>This action is no longer supported. Calls to update the position
@@ -1134,692 +327,135 @@ paths:
         href="https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_UpdateResourcePosition.html">UpdateResourcePosition</a>
         API operation instead.</p> </important>
       tags:
-        - Put
+        - Configurations
         - Positions
-        - Configurations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
         - Resources
-        - Types
-        - Logs
-        - Levels
   /position-estimate:
     POST:
-      summary: GetPositionEstimate
+      summary: 'Get Position Estimate '
       description: >-
         <p>Get estimated position information as a payload in GeoJSON format.
         The payload measurement data is resolved using solvers that are provided
         by third-party vendors.</p>
       tags:
-        - Get
-        - Positions
         - Estimates
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
         - Positions
-        - Estimates
   /event-configurations/{Identifier}:
     PATCH:
-      summary: UpdateResourceEventConfiguration
+      summary: 'Update Resource Event Configuration '
       description: >-
         <p>Update the event configuration for a particular resource
         identifier.</p>
       tags:
-        - Update
-        - Resources
-        - Events
         - Configurations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
         - Events
         - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
   /log-levels/{ResourceIdentifier}:
     DELETE:
-      summary: ResetResourceLogLevel
+      summary: 'Reset Resource Log Level '
       description: >-
         <p>Removes the log-level override, if any, for a specific resource-ID
         and resource-type. It can be used for a wireless device or a wireless
         gateway.</p>
       tags:
+        - Levels
+        - Logs
         - Reset
         - Resources
-        - Logs
-        - Levels
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
   /resource-positions/{ResourceIdentifier}:
     PATCH:
-      summary: UpdateResourcePosition
+      summary: 'Update Resource Position '
       description: >-
         <p>Update the position information of a given wireless device or a
         wireless gateway resource. The position coordinates are based on the <a
         href="https://gisgeography.com/wgs84-world-geodetic-system/"> World
         Geodetic System (WGS84)</a>.</p>
       tags:
-        - Update
-        - Resources
         - Positions
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
         - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
   /service-endpoint:
     GET:
-      summary: GetServiceEndpoint
+      summary: 'Get Service Endpoint '
       description: >-
         <p>Gets the account-specific endpoint for Configuration and Update
         Server (CUPS) protocol or LoRaWAN Network Server (LNS) connections.</p>
       tags:
-        - Get
-        - Services
         - Endpoints
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
         - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
   /wireless-devices/{Identifier}:
     GET:
-      summary: GetWirelessDevice
+      summary: 'Get Wireless Device '
       description: <p>Gets information about a wireless device.</p>
       tags:
-        - Get
-        - Wireless
         - Device
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
         - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
+        - Wireless
   /wireless-devices/{Id}/statistics:
     GET:
-      summary: GetWirelessDeviceStatistics
+      summary: 'Get Wireless Device Statistics '
       description: <p>Gets operating information about a wireless device.</p>
       tags:
-        - Get
-        - Wireless
         - Device
-        - Statistics
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
         - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
         - Statistics
+        - Wireless
   /wireless-gateways/{Identifier}:
     GET:
-      summary: GetWirelessGateway
+      summary: 'Get Wireless Gateway '
       description: <p>Gets information about a wireless gateway.</p>
       tags:
-        - Get
-        - Wireless
-        - Gateway
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
         - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
+        - Wireless
   /wireless-gateways/{Id}/firmware-information:
     GET:
-      summary: GetWirelessGatewayFirmwareInformation
+      summary: 'Get Wireless Gateway Firmware Information '
       description: >-
         <p>Gets the firmware version and other information about a wireless
         gateway.</p>
       tags:
-        - Get
-        - Wireless
-        - Gateway
         - Firmware
-        - Information
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
         - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
         - Information
+        - Wireless
   /wireless-gateways/{Id}/statistics:
     GET:
-      summary: GetWirelessGatewayStatistics
+      summary: 'Get Wireless Gateway Statistics '
       description: <p>Gets operating information about a wireless gateway.</p>
       tags:
-        - Get
-        - Wireless
-        - Gateway
-        - Statistics
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
         - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
         - Statistics
-        - Firmware
-        - Information
+        - Wireless
   /wireless_device_import_task:
     POST:
-      summary: StartWirelessDeviceImportTask
+      summary: 'Start Wireless Device Import Task '
       description: >-
         <p>Start import task for provisioning Sidewalk devices in bulk using an
         S3 CSV file.</p>
       tags:
-        - Start
-        - Wireless
         - Device
         - Import
         - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
   /event-configurations:
     GET:
-      summary: ListEventConfigurations
+      summary: 'List Event Configurations '
       description: >-
         <p>List event configurations where at least one event topic has been
         enabled.</p>
       tags:
-        - Lists
+        - Configurations
         - Events
-        - Configurations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
   /fuota-tasks/{Id}/multicast-groups:
     GET:
-      summary: ListMulticastGroupsByFuotaTask
+      summary: 'List Multicast Groups By Fuota Task '
       description: <p>List all multicast groups associated with a fuota task.</p>
       tags:
-        - Lists
-        - Multicast
         - Groups
-        - By
-        - null
-        - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
         - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
         - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
   /position-configurations:
     GET:
-      summary: ListPositionConfigurations
+      summary: 'List Position Configurations '
       description: >-
         <p>List position configurations for a given resource, such as
         positioning solvers.</p> <important> <p>This action is no longer
@@ -1827,380 +463,65 @@ paths:
         href="https://docs.aws.amazon.com/iot-wireless/2020-11-22/apireference/API_GetResourcePosition.html">GetResourcePosition</a>
         API operation instead.</p> </important>
       tags:
-        - Lists
+        - Configurations
         - Positions
-        - Configurations
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
   /tags:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes one or more tags from a resource.</p>
       tags:
-        - Untag
         - Resources
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
         - Tags
+        - Untag
   /wireless_device_import_tasks:
     GET:
-      summary: ListWirelessDeviceImportTasks
+      summary: 'List Wireless Device Import Tasks '
       description: <p>List wireless devices that have been added to an import task.</p>
       tags:
-        - Lists
-        - Wireless
         - Device
         - Import
         - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
-        - Tags
-        - Wireless_device_import_tasks
   /multicast-groups/{Id}/data:
     POST:
-      summary: SendDataToMulticastGroup
+      summary: 'Send Data To Multicast Group '
       description: <p>Sends the specified data to a multicast group.</p>
       tags:
-        - Send
         - Data
-        - To
-        - Multicast
-        - Group
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
         - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
-        - Tags
-        - Wireless_device_import_tasks
+        - Multicast
+        - Send
   /multicast-groups/{Id}/bulk:
     POST:
-      summary: StartBulkDisassociateWirelessDeviceFromMulticastGroup
+      summary: 'Start Bulk Disassociate Wireless Device From Multicast Group '
       description: >-
         <p>Starts a bulk disassociatin of all qualifying wireless devices from a
         multicast group.</p>
       tags:
-        - Start
         - Bulk
+        - Device
         - Disassociate
-        - Wireless
-        - Device
-        - From
-        - Multicast
-        - Group
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
         - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
-        - Tags
-        - Wireless_device_import_tasks
-        - Bulk
+        - Multicast
+        - Wireless
   /wireless_single_device_import_task:
     POST:
-      summary: StartSingleWirelessDeviceImportTask
+      summary: 'Start Single Wireless Device Import Task '
       description: <p>Start import task for a single wireless device.</p>
       tags:
-        - Start
-        - Single
-        - Wireless
         - Device
         - Import
+        - Single
         - Tasks
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
         - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
-        - Tags
-        - Wireless_device_import_tasks
-        - Bulk
-        - Wireless_single_device_import_task
   /wireless-devices/{Id}/test:
     POST:
-      summary: TestWirelessDevice
+      summary: 'Test Wireless Device '
       description: >-
         <p>Simulates a provisioned device by sending an uplink data payload of
         <code>Hello</
       tags:
+        - Device
+        - Devices
         - Tests
         - Wireless
-        - Device
-        - Partners
-        - Accounts
-        - Identifiers
-        - Multicast
-        - Group
-        - Wireless
-        - Device
-        - Things
-        - Certificates
-        - Sessions
-        - Destinations
-        - Profiles
-        - null
-        - Tasks
-        - Groups
-        - Networks
-        - Analyzer
-        - Configurations
-        - Services
-        - Devices
-        - Gateways
-        - Gateway
-        - Tasks
-        - Definitions
-        - Names
-        - Configurations
-        - Data
-        - Identifiers
-        - Deregister
-        - Account
-        - Events
-        - Resources
-        - Types
-        - Logs
-        - Levels
-        - Positions
-        - Estimates
-        - Endpoints
-        - Statistics
-        - Firmware
-        - Information
-        - Wireless_device_import_task
-        - Tags
-        - Wireless_device_import_tasks
-        - Bulk
-        - Wireless_single_device_import_task
-        - null
