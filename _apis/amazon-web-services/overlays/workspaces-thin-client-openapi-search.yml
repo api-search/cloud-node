@@ -4,96 +4,58 @@ info:
 paths:
   /environments:
     GET:
-      summary: ListEnvironments
+      summary: 'List Environments '
       description: <p>Returns a list of environments.</p>
       tags:
-        - Lists
-        - Environments
         - Environments
   /devices/{id}:
     PATCH:
-      summary: UpdateDevice
+      summary: 'Update Device '
       description: <p>Updates a thin client device.</p>
       tags:
-        - Update
         - Device
-        - Environments
         - Devices
-        - Identifiers
   /environments/{id}:
     PATCH:
-      summary: UpdateEnvironment
+      summary: 'Update Environment '
       description: <p>Updates an environment.</p>
       tags:
-        - Update
         - Environments
-        - Environments
-        - Devices
-        - Identifiers
   /deregister-device/{id}:
     POST:
-      summary: DeregisterDevice
+      summary: 'Deregister Device '
       description: <p>Deregisters a thin client device.</p>
       tags:
         - Deregister
         - Device
-        - Environments
-        - Devices
-        - Identifiers
-        - Deregister
-        - Device
   /softwaresets/{id}:
     PATCH:
-      summary: UpdateSoftwareSet
+      summary: 'Update Software Set '
       description: <p>Updates a software set.</p>
       tags:
-        - Update
-        - Software
         - Sets
-        - Environments
-        - Devices
-        - Identifiers
-        - Deregister
-        - Device
+        - Software
         - Software Sets
   /devices:
     GET:
-      summary: ListDevices
+      summary: 'List Devices '
       description: <p>Returns a list of thin client devices.</p>
       tags:
-        - Lists
         - Devices
-        - Environments
-        - Devices
-        - Identifiers
-        - Deregister
-        - Device
-        - Software Sets
   /softwaresets:
     GET:
-      summary: ListSoftwareSets
+      summary: 'List Software Sets '
       description: <p>Returns a list of software sets.</p>
       tags:
-        - Lists
-        - Software
         - Sets
-        - Environments
-        - Devices
-        - Identifiers
-        - Deregister
-        - Device
+        - Software
         - Software Sets
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes a tag or tags from a res
       tags:
-        - Untag
+        - ARN
         - Resources
-        - Environments
-        - Devices
-        - Identifiers
-        - Deregister
-        - Device
-        - Software Sets
-        - A
+        - Tags
+        - Untag
