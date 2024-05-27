@@ -4,10 +4,9 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateUser
+      summary: 'Update User '
       description: >-
         <p>For the specified user in the specified identity store, updates the
         user metadata and attri
       tags:
-        - Update
-        - null
+        - Users
