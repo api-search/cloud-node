@@ -4,8 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p> Removes tags from a data
       tags:
+        - Resources
         - Untag
-        - null
