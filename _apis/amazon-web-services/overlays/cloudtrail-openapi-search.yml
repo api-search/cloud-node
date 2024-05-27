@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateTrail
+      summary: 'Update Trail '
       description: >-
         <p>Updates trail settings that control what events you are logging, and
         how to handle log files. Changes to a trail do not require stopping the
@@ -15,5 +15,4 @@ paths:
         trail was created; otherwise, an <code>InvalidHomeRegionException</code>
         is t
       tags:
-        - Update
-        - null
+        - Trail
