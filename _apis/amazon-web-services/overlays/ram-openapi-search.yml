@@ -4,7 +4,7 @@ info:
 paths:
   /acceptresourceshareinvitation:
     POST:
-      summary: AcceptResourceShareInvitation
+      summary: 'Accept Resource Share Invitation '
       description: >-
         <p>Accepts an invitation to a resource share from another Amazon Web
         Services account. After you accept the invitation, the resources
@@ -12,13 +12,13 @@ paths:
         relevant Amazon Web Services Management Consoles and tools.</p>
       tags:
         - Accept
+        - Accept Resource Share Invitation
+        - Invitation
         - Resources
         - Share
-        - Invitation
-        - Accept Resource Share Invitation
   /associateresourceshare:
     POST:
-      summary: AssociateResourceShare
+      summary: 'Associate Resource Share '
       description: >-
         <p>Adds the specified list of principals and list of resources to a
         resource share. Principals that already have access to this resource
@@ -27,13 +27,12 @@ paths:
         resource share. </p>
       tags:
         - Associate
+        - Associate Resource Share
         - Resources
         - Share
-        - Accept Resource Share Invitation
-        - Associate Resource Share
   /associateresourcesharepermission:
     POST:
-      summary: AssociateResourceSharePermission
+      summary: 'Associate Resource Share Permission '
       description: >-
         <p>Adds or replaces the RAM permission for a resource type included in a
         resource share. You can have exactly one permission associated with each
@@ -42,29 +41,23 @@ paths:
         in the resource share.</p>
       tags:
         - Associate
+        - Associate Resource Share Permission
+        - Permission
         - Resources
         - Share
-        - Permission
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
   /createpermission:
     POST:
-      summary: CreatePermission
+      summary: 'Create Permission '
       description: >-
         <p>Creates a customer managed permission for a specified resource type
         that you can attach to resource shares. It is created in the Amazon Web
         Services Region in which you call the operation.</p>
       tags:
-        - Create
         - Permission
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
         - Permissions
   /createpermissionversion:
     POST:
-      summary: CreatePermissionVersion
+      summary: 'Create Permission Version '
       description: >-
         <p>Creates a new version of the specified customer managed permission.
         The new version is automatically set as the default version of the
@@ -76,17 +69,12 @@ paths:
         versions, then you must delete one of the existing versions before you
         can create a new one.</p>
       tags:
-        - Create
         - Permission
-        - Versions
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
         - Permission Versions
+        - Versions
   /createresourceshare:
     POST:
-      summary: CreateResourceShare
+      summary: 'Create Resource Share '
       description: >-
         <p>Creates a resource share. You can provide a list of the <a
         href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon
@@ -98,18 +86,12 @@ paths:
         permissions or quotas that apply to the resource in the account that
         created it.</p> </note>
       tags:
-        - Create
+        - Resource Share
         - Resources
         - Share
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
   /deletepermission:
     DELETE:
-      summary: DeletePermission
+      summary: 'Delete Permission '
       description: >-
         <p>Deletes the specified customer managed permission in the Amazon Web
         Services Region in which you call this operation. You can delete a
@@ -117,18 +99,11 @@ paths:
         share. The operation deletes all versions associated with the customer
         managed permission.</p>
       tags:
-        - Delete
         - Permission
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
         - Permissions
   /deletepermissionversion:
     DELETE:
-      summary: DeletePermissionVersion
+      summary: 'Delete Permission Version '
       description: >-
         <p>Deletes one version of a customer managed permission. The version you
         specify must not be attached to any resource share and must not be the
@@ -136,61 +111,35 @@ paths:
         permission has the maximum of 5 versions, then you must delete at least
         one version before you can create another.</p>
       tags:
-        - Delete
         - Permission
-        - Versions
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
         - Permission Version
+        - Versions
   /deleteresourceshare:
     DELETE:
-      summary: DeleteResourceShare
+      summary: 'Delete Resource Share '
       description: >-
         <p>Deletes the specified resource share.</p> <important> <p>This doesn't
         delete any of the resources that were associated with the resource
         share; it only stops the sharing of those resources through this
         resource share.</p> </important>
       tags:
-        - Delete
+        - Resource Share
         - Resources
         - Share
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
   /disassociateresourceshare:
     POST:
-      summary: DisassociateResourceShare
+      summary: 'Disassociate Resource Share '
       description: >-
         <p>Removes the specified principals or resources from participating in
         the specified resource share.</p>
       tags:
         - Disassociate
+        - Disassociate Resource Share
         - Resources
         - Share
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
   /disassociateresourcesharepermission:
     POST:
-      summary: DisassociateResourceSharePermission
+      summary: 'Disassociate Resource Share Permission '
       description: >-
         <p>Removes a managed permission from a resource share. Permission
         changes take effect immediately. You can remove a managed permission
@@ -198,23 +147,13 @@ paths:
         relevant resource type currently attached to the resource share.</p>
       tags:
         - Disassociate
+        - Disassociate Resource Share Permissions
+        - Permission
         - Resources
         - Share
-        - Permission
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
   /enablesharingwithawsorganization:
     POST:
-      summary: EnableSharingWithAwsOrganization
+      summary: 'Enable Sharing With Aws Organization '
       description: >-
         <p>Enables resource sharing within your organization in Organizations.
         This operation creates a service-linked role called
@@ -230,439 +169,150 @@ paths:
         IAM role or user in the organization's management account.</p> <p/>
       tags:
         - Enable
-        - Sharing
-        - null
-        - null
-        - Organizations
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
         - Enable Sharing
+        - Organizations
+        - Sharing
   /getpermission:
     POST:
-      summary: GetPermission
+      summary: 'Get Permission '
       description: <p>Retrieves the contents of a managed permission in JSON format.</p>
       tags:
-        - Get
         - Permission
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
         - Permissions
   /getresourcepolicies:
     POST:
-      summary: GetResourcePolicies
+      summary: 'Get Resource Policies '
       description: >-
         <p>Retrieves the resource policies for the specified resources that you
         own and have shared.</p>
       tags:
-        - Get
-        - Resources
         - Policies
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
         - Resource Policies
+        - Resources
   /getresourceshareassociations:
     POST:
-      summary: GetResourceShareAssociations
+      summary: 'Get Resource Share Associations '
       description: >-
         <p>Retrieves the lists of resources and principals that associated for
         resource shares that you own.</p>
       tags:
-        - Get
+        - Associations
+        - Resource Share Associations
         - Resources
         - Share
-        - Associations
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
   /getresourceshareinvitations:
     POST:
-      summary: GetResourceShareInvitations
+      summary: 'Get Resource Share Invitations '
       description: >-
         <p>Retrieves details about invitations that you have received for
         resource shares.</p>
       tags:
-        - Get
+        - Invitations
+        - Resource Share Invitations
         - Resources
         - Share
-        - Invitations
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
   /getresourceshares:
     POST:
-      summary: GetResourceShares
+      summary: 'Get Resource Shares '
       description: >-
         <p>Retrieves details about the resource shares that you own or that are
         shared with you.</p>
       tags:
-        - Get
+        - Resource Shares
         - Resources
         - Shares
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
   /listpendinginvitationresources:
     POST:
-      summary: ListPendingInvitationResources
+      summary: 'List Pending Invitation Resources '
       description: >-
         <p>Lists the resources in a resource share that is shared with you but
         for which the invitation is still <code>PENDING</code>. That means that
         you haven't accepted or rejected the invitation and the invitation
         hasn't expired.</p>
       tags:
-        - Lists
-        - Pending
         - Invitation
-        - Resources
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
+        - Pending
         - Pending Invitation Resources
+        - Resources
   /listpermissionassociations:
     POST:
-      summary: ListPermissionAssociations
+      summary: 'List Permission Associations '
       description: >-
         <p>Lists information about the managed permission and its associations
         to any resource shares that use this managed permission. This lets you
         see which resource shares use which versions of the specified managed
         permission.</p>
       tags:
-        - Lists
-        - Permission
         - Associations
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
+        - Permission
         - Permission Associations
   /listpermissionversions:
     POST:
-      summary: ListPermissionVersions
+      summary: 'List Permission Versions '
       description: <p>Lists the available versions of the specified RAM permission.</p>
       tags:
-        - Lists
         - Permission
-        - Versions
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
         - Permission Verions
+        - Versions
   /listpermissions:
     POST:
-      summary: ListPermissions
+      summary: 'List Permissions '
       description: >-
         <p>Retrieves a list of available RAM permissions that you can use for
         the supported resource types. </p>
       tags:
-        - Lists
-        - Permissions
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
         - Permissions
   /listprincipals:
     POST:
-      summary: ListPrincipals
+      summary: 'List Principals '
       description: >-
         <p>Lists the principals that you are sharing resources with or that are
         sharing resources with you.</p>
       tags:
-        - Lists
-        - Principals
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
         - Principals
   /listreplacepermissionassociationswork:
     POST:
-      summary: ListReplacePermissionAssociationsWork
+      summary: 'List Replace Permission Associations Work '
       description: >-
         <p>Retrieves the current status of the asynchronous tasks performed by
         RAM when you perform the <a>ReplacePermissionAssociationsWork</a>
         operation.</p>
       tags:
-        - Lists
-        - Replace
-        - Permission
         - Associations
+        - Permission
+        - Permission Associations
+        - Replace
         - Work
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
   /listresourcesharepermissions:
     POST:
-      summary: ListResourceSharePermissions
+      summary: 'List Resource Share Permissions '
       description: >-
         <p>Lists the RAM permissions that are associated with a resource
         share.</p>
       tags:
-        - Lists
+        - Permissions
+        - Resource Share Permissions
         - Resources
         - Share
-        - Permissions
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
   /listresourcetypes:
     POST:
-      summary: ListResourceTypes
+      summary: 'List Resource Types '
       description: <p>Lists the resource types that can be shared by RAM.</p>
       tags:
-        - Lists
+        - Resource Types
         - Resources
         - Types
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
   /listresources:
     POST:
-      summary: ListResources
+      summary: 'List Resources '
       description: >-
         <p>Lists the resources that you added to a resource share or the
         resources that are shared with you.</p>
       tags:
-        - Lists
-        - Resources
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
         - Resources
   /promotepermissioncreatedfrompolicy:
     POST:
-      summary: PromotePermissionCreatedFromPolicy
+      summary: 'Promote Permission Created From Policy '
       description: >-
         <p>When you attach a resource-based policy to a resource, RAM
         automatically creates a resource share of
@@ -691,41 +341,13 @@ paths:
         other associations to A resource share, then RAM automatically deletes
         it.</p> </li> </ul> </note>
       tags:
-        - Promote
         - Permission
-        - null
-        - From
         - Policies
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
+        - Promote
         - Promote Permission from Policy
   /promoteresourcesharecreatedfrompolicy:
     POST:
-      summary: PromoteResourceShareCreatedFromPolicy
+      summary: 'Promote Resource Share Created From Policy '
       description: >-
         <p>When you attach a resource-based policy to a resource, RAM
         automatically creates a resource share of
@@ -746,83 +368,26 @@ paths:
         <code>CREATED_FROM_POLICY</code> permission, then this operation
         fails.</p> </important>
       tags:
+        - Policies
         - Promote
+        - Promote Resource Share from Policy
         - Resources
         - Share
-        - null
-        - From
-        - Policies
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
-        - Promote Permission from Policy
-        - Promote Resource Share from Policy
   /rejectresourceshareinvitation:
     POST:
-      summary: RejectResourceShareInvitation
+      summary: 'Reject Resource Share Invitation '
       description: >-
         <p>Rejects an invitation to a resource share from another Amazon Web
         Services account.</p>
       tags:
+        - Invitation
         - Reject
+        - Reject Resource Share Invitations
         - Resources
         - Share
-        - Invitation
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
-        - Promote Permission from Policy
-        - Promote Resource Share from Policy
-        - Reject Resource Share Invitations
   /replacepermissionassociations:
     POST:
-      summary: ReplacePermissionAssociations
+      summary: 'Replace Permission Associations '
       description: >-
         <p>Updates all resource shares that use a managed permission to a
         different managed permission. This operation always applies the default
@@ -840,42 +405,13 @@ paths:
         operation, you must have permission to update the resource-based policy
         on all affected resource types.</p> </important>
       tags:
-        - Replace
-        - Permission
         - Associations
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
-        - Promote Permission from Policy
-        - Promote Resource Share from Policy
-        - Reject Resource Share Invitations
+        - Permission
+        - Replace
         - Replace Permission Associations
   /setdefaultpermissionversion:
     POST:
-      summary: SetDefaultPermissionVersion
+      summary: 'Set Default Permission Version '
       description: >-
         <p>Designates the specified version number as the default version for
         the specified customer managed permission. New resource shares
@@ -883,44 +419,14 @@ paths:
         continue to use their original permission version, but you can use
         <a>ReplacePermissionAssociations</a> to update them.</p>
       tags:
-        - Sets
         - Default
         - Permission
-        - Versions
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
-        - Promote Permission from Policy
-        - Promote Resource Share from Policy
-        - Reject Resource Share Invitations
-        - Replace Permission Associations
         - Set Default Permission Versions
+        - Sets
+        - Versions
   /tagresource:
     POST:
-      summary: TagResource
+      summary: 'Tag Resource '
       description: >-
         <p>Adds the specified tag keys and values to a resource share or managed
         permission. If you choose a resource share, the tags are attached to
@@ -928,121 +434,23 @@ paths:
         share.</p> <p>The tags on a managed permission are the same for all
         versions of the managed permission.</p>
       tags:
-        - Tags
         - Resources
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
-        - Promote Permission from Policy
-        - Promote Resource Share from Policy
-        - Reject Resource Share Invitations
-        - Replace Permission Associations
-        - Set Default Permission Versions
         - Tag Resources
+        - Tags
   /untagresource:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes the specified tag key and value pairs from the specified
         resource share or managed permission.</p>
       tags:
+        - Resources
         - Untag
-        - Resources
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
-        - Promote Permission from Policy
-        - Promote Resource Share from Policy
-        - Reject Resource Share Invitations
-        - Replace Permission Associations
-        - Set Default Permission Versions
-        - Tag Resources
-        - null
   /updateresourceshare:
     POST:
-      summary: UpdateResourceShare
+      summary: 'Update Resource Share '
       description: <p>Modifies some of the properties of the specified resource
       tags:
-        - Update
         - Resources
         - Share
-        - Accept Resource Share Invitation
-        - Associate Resource Share
-        - Associate Resource Share Permission
-        - Permissions
-        - Permission Versions
-        - Resource Share
-        - Permissions
-        - Permission Version
-        - Resource Share
-        - Disassociate Resource Share
-        - Disassociate Resource Share Permissions
-        - Enable Sharing
-        - Permissions
-        - Resource Policies
-        - Resource Share Associations
-        - Resource Share Invitations
-        - Resource Shares
-        - Pending Invitation Resources
-        - Permission Associations
-        - Permission Verions
-        - Permissions
-        - Principals
-        - Permission Associations
-        - Resource Share Permissions
-        - Resource Types
-        - Resources
-        - Promote Permission from Policy
-        - Promote Resource Share from Policy
-        - Reject Resource Share Invitations
-        - Replace Permission Associations
-        - Set Default Permission Versions
-        - Tag Resources
-        - null
-        - null
+        - Updateresourceshare
