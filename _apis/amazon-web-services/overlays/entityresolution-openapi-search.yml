@@ -4,44 +4,38 @@ info:
 paths:
   /idmappingworkflows:
     GET:
-      summary: ListIdMappingWorkflows
+      summary: 'List Id Mapping Workflows '
       description: >-
         <p>Returns a list of all the <code>IdMappingWorkflows</code> that have
         been created for an Amazon Web Services account.</p>
       tags:
-        - Lists
         - Identifiers
+        - Lists
         - Mapping
+        - Mappingworkflows
         - Workflows
-        - Identity Mapping Workflows
   /matchingworkflows:
     GET:
-      summary: ListMatchingWorkflows
+      summary: 'List Matching Workflows '
       description: >-
         <p>Returns a list of all the <code>MatchingWorkflows</code> that have
         been created for an Amazon Web Services account.</p>
       tags:
-        - Lists
         - Matching
-        - Workflows
-        - Identity Mapping Workflows
         - Matching Workflows
+        - Workflows
   /schemas:
     GET:
-      summary: ListSchemaMappings
+      summary: 'List Schema Mappings '
       description: >-
         <p>Returns a list of all the <code>SchemaMappings</code> that have been
         created for an Amazon Web Services account.</p>
       tags:
-        - Lists
-        - Schemas
         - Mapping
-        - Identity Mapping Workflows
-        - Matching Workflows
         - Schemas
   /idmappingworkflows/{workflowName}:
     PUT:
-      summary: UpdateIdMappingWorkflow
+      summary: 'Update Id Mapping Workflow '
       description: >-
         <p>Updates an existing <code>IdMappingWorkflow</code>. This method is
         identical to <code>CreateIdMappingWorkflow</code>, except it uses an
@@ -49,17 +43,13 @@ paths:
         and the <code>IdMappingWorkflow</code> must already exist for the method
         to succeed.</p>
       tags:
-        - Update
-        - Identifiers
         - Mapping
-        - Workflows
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
+        - Mappingworkflows
         - Names
+        - Workflows
   /matchingworkflows/{workflowName}:
     PUT:
-      summary: UpdateMatchingWorkflow
+      summary: 'Update Matching Workflow '
       description: >-
         <p>Updates an existing <code>MatchingWorkflow</code>. This method is
         identical to <code>CreateMatchingWorkflow</code>, except it uses an HTTP
@@ -67,183 +57,113 @@ paths:
         <code>MatchingWorkflow</code> must already exist for the method to
         succeed.</p>
       tags:
-        - Update
         - Matching
-        - Workflows
-        - Identity Mapping Workflows
         - Matching Workflows
-        - Schemas
         - Names
+        - Workflows
   /schemas/{schemaName}:
     PUT:
-      summary: UpdateSchemaMapping
+      summary: 'Update Schema Mapping '
       description: >-
         <p>Updates a schema mapping.</p> <note> <p>A schema is immutable if it
         is being used by a workflow. Therefore, you can't update a schema
         mapping if it's associated with a workflow. </p> </note>
       tags:
-        - Update
-        - Schemas
         - Mapping
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
         - Names
+        - Schemas
   /idmappingworkflows/{workflowName}/jobs/{jobId}:
     GET:
-      summary: GetIdMappingJob
+      summary: 'Get Id Mapping Job '
       description: >-
         <p>Gets the status, metrics, and errors (if there are any) that are
         associated with a job.</p>
       tags:
-        - Get
-        - Identifiers
+        - Jobs
         - Mapping
-        - Jobs
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
+        - Mappingworkflows
         - Names
-        - Jobs
-        - Jobs
-        - Identifiers
+        - Workflows
   /matchingworkflows/{workflowName}/matches:
     POST:
-      summary: GetMatchId
+      summary: 'Get Match Id '
       description: >-
         <p>Returns the corresponding Match ID of a customer record if the record
         has been processed.</p>
       tags:
-        - Get
         - Match
-        - Identifiers
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
-        - Names
-        - Jobs
-        - Jobs
-        - Identifiers
         - Matches
+        - Matching Workflows
+        - Names
+        - Workflows
   /matchingworkflows/{workflowName}/jobs/{jobId}:
     GET:
-      summary: GetMatchingJob
+      summary: 'Get Matching Job '
       description: >-
         <p>Gets the status, metrics, and errors (if there are any) that are
         associated with a job.</p>
       tags:
-        - Get
+        - Jobs
         - Matching
-        - Jobs
-        - Identity Mapping Workflows
         - Matching Workflows
-        - Schemas
         - Names
-        - Jobs
-        - Jobs
-        - Identifiers
-        - Matches
+        - Workflows
   /providerservices/{providerName}/{providerServiceName}:
     GET:
-      summary: GetProviderService
+      summary: 'Get Provider Service '
       description: <p>Returns the <code>ProviderService</code> of a given name.</p>
       tags:
-        - Get
-        - Providers
-        - Services
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
+        - Er
+        - Erservices
         - Names
-        - Jobs
-        - Jobs
-        - Identifiers
-        - Matches
+        - Prov
         - Providers
         - Services
   /idmappingworkflows/{workflowName}/jobs:
     POST:
-      summary: StartIdMappingJob
+      summary: 'Start Id Mapping Job '
       description: >-
         <p>Starts the <code>IdMappingJob</code> of a workflow. The workflow must
         have previously been created using the
         <code>CreateIdMappingWorkflow</code> endpoint.</p>
       tags:
-        - Start
-        - Identifiers
+        - Jobs
         - Mapping
-        - Jobs
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
         - Names
-        - Jobs
-        - Jobs
-        - Identifiers
-        - Matches
-        - Providers
-        - Services
+        - Workflows
   /matchingworkflows/{workflowName}/jobs:
     POST:
-      summary: StartMatchingJob
+      summary: 'Start Matching Job '
       description: >-
         <p>Starts the <code>MatchingJob</code> of a workflow. The workflow must
         have previously been created using the
         <code>CreateMatchingWorkflow</code> endpoint.</p>
       tags:
-        - Start
+        - Jobs
         - Matching
-        - Jobs
-        - Identity Mapping Workflows
         - Matching Workflows
-        - Schemas
         - Names
-        - Jobs
-        - Jobs
-        - Identifiers
-        - Matches
-        - Providers
-        - Services
+        - Workflows
   /providerservices:
     GET:
-      summary: ListProviderServices
+      summary: 'List Provider Services '
       description: >-
         <p>Returns a list of all the <code>ProviderServices</code> that are
         available in this Amazon Web Services Region.</p>
       tags:
-        - Lists
+        - Erservices
+        - Prov
         - Providers
         - Services
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
-        - Names
-        - Jobs
-        - Jobs
-        - Identifiers
-        - Matches
-        - Providers
-        - Services
-        - Provider Services
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes one or more tags from the specified Entity Resolution
         resource. In Entity Resolution, <code>SchemaMapping</code>, and
         <code>MatchingWorkflow</code> can be t
       tags:
-        - Untag
+        - ARN
         - Resources
-        - Identity Mapping Workflows
-        - Matching Workflows
-        - Schemas
-        - Names
-        - Jobs
-        - Jobs
-        - Identifiers
-        - Matches
-        - Providers
-        - Services
-        - Provider Services
-        - null
+        - Tags
+        - Untag
