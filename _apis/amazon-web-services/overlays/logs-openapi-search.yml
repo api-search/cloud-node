@@ -4,10 +4,9 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateLogAnomalyDetector
+      summary: 'Update Log Anomaly Detector '
       description: <p>Updates an existing log anomaly det
       tags:
-        - Update
-        - Logs
         - Anomaly
-        - Detect
+        - Detectors
+        - Logs
