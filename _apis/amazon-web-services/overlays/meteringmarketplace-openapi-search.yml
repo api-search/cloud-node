@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: ResolveCustomer
+      summary: 'Resolve Customer '
       description: >-
         <p> <code>ResolveCustomer</code> is called by a SaaS application during
         the registration process. When a buyer visits your website during the
@@ -19,5 +19,5 @@ paths:
         ResolveCustomer code example</a> in the <i>AWS Marketplace Seller
         Guide</i>.</
       tags:
+        - Customers
         - Resolve
-        - Custom
