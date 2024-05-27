@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateServiceSetting
+      summary: 'Update Service Setting '
       description: >-
         <p> <code>ServiceSetting</code> is an account-level setting for an
         Amazon Web Services service. This setting defines how a user interacts
@@ -23,6 +23,5 @@ paths:
         value back to the original value defined by the Amazon Web Services
         service team.</p> <p>Update the service setting for the acc
       tags:
-        - Update
         - Services
         - Settings
