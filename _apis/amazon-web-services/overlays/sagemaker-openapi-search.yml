@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateWorkteam
+      summary: 'Update Workteam '
       description: <p>Updates an existing work team with new member definitions or descri
       tags:
-        - Update
-        - Workte
+        - Workteam
