@@ -4,10 +4,9 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateWatchlist
+      summary: 'Update Watchlist '
       description: >-
         <p>Updates the specified watchlist. Every domain has a default watchlist
         which cannot be upd
       tags:
-        - Update
-        - Watchli
+        - Watchlist
