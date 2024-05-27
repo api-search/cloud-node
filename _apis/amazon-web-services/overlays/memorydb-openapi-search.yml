@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateUser
+      summary: 'Update User '
       description: <p>Changes user password(s) and/or access s
       tags:
-        - Update
-        - null
+        - Users
