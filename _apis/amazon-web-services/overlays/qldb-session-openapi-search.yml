@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: SendCommand
+      summary: 'Send Command '
       description: >-
         <p>Sends a command to an Amazon QLDB ledger.</p> <note> <p>Instead of
         interacting directly with this API, we recommend using the QLDB driver
@@ -23,5 +23,5 @@ paths:
         href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
         Amazon QLDB using the QLDB shell</a>.</p> </li> </u
       tags:
+        - Command
         - Send
-        - Comma
