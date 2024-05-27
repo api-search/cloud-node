@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateStateMachineAlias
+      summary: 'Update State Machine Alias '
       description: >-
         <p>Updates the configuration of an existing state machine <a
         href="https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-alias.html">alias</a>
@@ -26,7 +26,6 @@ paths:
         <a>ListStateMachineAliases</a> </p> </li> <li> <p>
         <a>DeleteStateMachineAlias</a> </p> <
       tags:
-        - Update
-        - States
+        - Alias
         - Machines
-        - Ali
+        - States
