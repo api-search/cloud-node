@@ -4,7 +4,7 @@ info:
 paths:
   /things/{thingName}/shadow:
     POST:
-      summary: UpdateThingShadow
+      summary: 'Update Thing Shadow '
       description: >-
         <p>Updates the shadow for the specified thing.</p> <p>Requires
         permission to access the <a
@@ -13,14 +13,12 @@ paths:
         href="http://docs.aws.amazon.com/iot/latest/developerguide/API_UpdateThingShadow.html">UpdateThingShadow</a>
         in the IoT Developer Guide.</p>
       tags:
-        - Update
-        - Things
-        - Shadow
         - Names
         - Shadow
+        - Things
   /retainedMessage/{topic}:
     GET:
-      summary: GetRetainedMessage
+      summary: 'Get Retained Message '
       description: >-
         <p>Gets the details of a single retained message for the specified
         topic.</p> <p>This action returns the message payload of the retained
@@ -33,39 +31,26 @@ paths:
         href="http://aws.amazon.com/iot-core/pricing/#Messaging">Amazon Web
         Services IoT Core pricing - Messaging</a>.</p>
       tags:
-        - Get
+        - Messages
         - Retained
-        - Messages
-        - Names
-        - Shadow
-        - Messages
         - Topics
   /api/things/shadow/ListNamedShadowsForThing/{thingName}:
     GET:
-      summary: ListNamedShadowsForThing
+      summary: 'List Named Shadows For Thing '
       description: >-
         <p>Lists the shadows for the specified thing.</p> <p>Requires permission
         to access the <a
         href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions">ListNamedShadowsForThing</a>
         action.</p>
       tags:
-        - Lists
         - Named
-        - Shadows
-        - For
-        - Things
         - Names
         - Shadow
-        - Messages
-        - Topics
-        - Lists
-        - Named
         - Shadows
-        - For
         - Things
   /retainedMessage:
     GET:
-      summary: ListRetainedMessages
+      summary: 'List Retained Messages '
       description: >-
         <p>Lists summary information about the retained messages stored for the
         account.</p> <p>This action returns only the topic names of the retained
@@ -80,21 +65,11 @@ paths:
         href="http://aws.amazon.com/iot-core/pricing/#Messaging">Amazon Web
         Services IoT Core pricing - Messaging</a>.</p>
       tags:
-        - Lists
+        - Messages
         - Retained
-        - Messages
-        - Names
-        - Shadow
-        - Messages
-        - Topics
-        - Lists
-        - Named
-        - Shadows
-        - For
-        - Things
   /topics/{topic}:
     POST:
-      summary: Publish
+      summary: 'Publish '
       description: >-
         <p>Publishes an MQTT message.</p> <p>Requires permission to access the
         <a
@@ -107,13 +82,4 @@ paths:
         Services IoT Core pricing - Messagin
       tags:
         - Publish
-        - Names
-        - Shadow
-        - Messages
         - Topics
-        - Lists
-        - Named
-        - Shadows
-        - For
-        - Things
-        - null
