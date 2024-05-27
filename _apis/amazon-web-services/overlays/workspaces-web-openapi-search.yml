@@ -4,565 +4,250 @@ info:
 paths:
   /portals/{portalArn+}/browserSettings:
     DELETE:
-      summary: DisassociateBrowserSettings
+      summary: 'Disassociate Browser Settings '
       description: <p>Disassociates browser settings from a web portal.</p>
       tags:
-        - Disassociate
-        - Browser
-        - Settings
         - ARN
         - Browser
+        - Disassociate
+        - Portals
         - Settings
   /portals/{portalArn+}/ipAccessSettings:
     DELETE:
-      summary: DisassociateIpAccessSettings
+      summary: 'Disassociate Ip Access Settings '
       description: <p>Disassociates IP access settings from a web portal.</p>
       tags:
+        - ARN
+        - Access
         - Disassociate
         - IP
-        - Access
+        - Portals
         - Settings
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
   /portals/{portalArn+}/networkSettings:
     DELETE:
-      summary: DisassociateNetworkSettings
+      summary: 'Disassociate Network Settings '
       description: <p>Disassociates network settings from a web portal.</p>
       tags:
+        - ARN
         - Disassociate
         - Networks
+        - Portals
         - Settings
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
   /portals/{portalArn+}/trustStores:
     DELETE:
-      summary: DisassociateTrustStore
+      summary: 'Disassociate Trust Store '
       description: <p>Disassociates a trust store from a web portal.</p>
       tags:
-        - Disassociate
-        - Trust
-        - Store
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
+        - Disassociate
+        - Portals
+        - Store
         - Stores
+        - Trust
   /portals/{portalArn+}/userAccessLoggingSettings:
     DELETE:
-      summary: DisassociateUserAccessLoggingSettings
+      summary: 'Disassociate User Access Logging Settings '
       description: <p>Disassociates user access logging settings from a web portal.</p>
       tags:
-        - Disassociate
-        - Users
-        - Access
-        - Logging
-        - Settings
         - ARN
-        - Browser
-        - Settings
-        - IP
         - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
+        - Disassociate
         - Logging
+        - Portals
+        - Settings
+        - Users
   /portals/{portalArn+}/userSettings:
     DELETE:
-      summary: DisassociateUserSettings
+      summary: 'Disassociate User Settings '
       description: <p>Disassociates user settings from a web portal.</p>
       tags:
-        - Disassociate
-        - Users
-        - Settings
         - ARN
-        - Browser
+        - Disassociate
+        - Portals
         - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
         - Users
-        - Logging
   /browserSettings:
     GET:
-      summary: ListBrowserSettings
+      summary: 'List Browser Settings '
       description: <p>Retrieves a list of browser settings.</p>
       tags:
-        - Lists
         - Browser
         - Settings
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
   /identityProviders:
     POST:
-      summary: CreateIdentityProvider
+      summary: 'Create Identity Provider '
       description: >-
         <p>Creates an identity provider resource that is then associated with a
         web portal.</p>
       tags:
-        - Create
+        - Entities
+        - Ers
         - Identity
-        - Providers
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
+        - Prov
         - Providers
   /ipAccessSettings:
     GET:
-      summary: ListIpAccessSettings
+      summary: 'List Ip Access Settings '
       description: <p>Retrieves a list of IP access settings.</p>
       tags:
-        - Lists
-        - IP
         - Access
-        - Settings
-        - ARN
-        - Browser
-        - Settings
         - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
+        - Settings
   /networkSettings:
     GET:
-      summary: ListNetworkSettings
+      summary: 'List Network Settings '
       description: <p>Retrieves a list of network settings.</p>
       tags:
-        - Lists
         - Networks
         - Settings
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
   /portals:
     GET:
-      summary: ListPortals
+      summary: 'List Portals '
       description: <p>Retrieves a list or web portals.</p>
       tags:
-        - Lists
-        - Portals
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
         - Portals
   /trustStores:
     GET:
-      summary: ListTrustStores
+      summary: 'List Trust Stores '
       description: <p>Retrieves a list of trust stores.</p>
       tags:
-        - Lists
-        - Trust
         - Stores
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
         - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
   /userAccessLoggingSettings:
     GET:
-      summary: ListUserAccessLoggingSettings
+      summary: 'List User Access Logging Settings '
       description: <p>Retrieves a list of user access logging settings.</p>
       tags:
-        - Lists
-        - Users
         - Access
         - Logging
         - Settings
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
         - Users
-        - Logging
-        - Providers
-        - Portals
   /userSettings:
     GET:
-      summary: ListUserSettings
+      summary: 'List User Settings '
       description: <p>Retrieves a list of user settings.</p>
       tags:
-        - Lists
-        - Users
         - Settings
-        - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
         - Users
-        - Logging
-        - Providers
-        - Portals
   /browserSettings/{browserSettingsArn+}:
     PATCH:
-      summary: UpdateBrowserSettings
+      summary: 'Update Browser Settings '
       description: <p>Updates browser settings.</p>
       tags:
-        - Update
-        - Browser
-        - Settings
         - ARN
         - Browser
         - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
   /identityProviders/{identityProviderArn+}:
     PATCH:
-      summary: UpdateIdentityProvider
+      summary: 'Update Identity Provider '
       description: <p>Updates the identity provider. </p>
       tags:
-        - Update
-        - Identity
-        - Providers
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
+        - Entities
+        - Er
+        - Ers
         - Identity
+        - Prov
         - Providers
   /ipAccessSettings/{ipAccessSettingsArn+}:
     PATCH:
-      summary: UpdateIpAccessSettings
+      summary: 'Update Ip Access Settings '
       description: <p>Updates IP access settings.</p>
       tags:
-        - Update
-        - IP
-        - Access
-        - Settings
         - ARN
-        - Browser
-        - Settings
-        - IP
         - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
+        - IP
+        - Settings
   /networkSettings/{networkSettingsArn+}:
     PATCH:
-      summary: UpdateNetworkSettings
+      summary: 'Update Network Settings '
       description: <p>Updates network settings.</p>
       tags:
-        - Update
-        - Networks
-        - Settings
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
         - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
+        - Settings
   /portals/{portalArn+}:
     PUT:
-      summary: UpdatePortal
+      summary: 'Update Portal '
       description: <p>Updates a web portal.</p>
       tags:
-        - Update
-        - Portals
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
         - Portals
-        - Identity
-        - Providers
   /trustStores/{trustStoreArn+}:
     PATCH:
-      summary: UpdateTrustStore
+      summary: 'Update Trust Store '
       description: <p>Updates the trust store.</p>
       tags:
-        - Update
-        - Trust
-        - Store
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
         - Store
+        - Stores
+        - Trust
   /userAccessLoggingSettings/{userAccessLoggingSettingsArn+}:
     PATCH:
-      summary: UpdateUserAccessLoggingSettings
+      summary: 'Update User Access Logging Settings '
       description: <p>Updates the user access logging settings.</p>
       tags:
-        - Update
-        - Users
-        - Access
-        - Logging
-        - Settings
         - ARN
-        - Browser
-        - Settings
-        - IP
         - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
         - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
-        - Store
+        - Settings
+        - Users
   /userSettings/{userSettingsArn+}:
     PATCH:
-      summary: UpdateUserSettings
+      summary: 'Update User Settings '
       description: <p>Updates the user settings.</p>
       tags:
-        - Update
-        - Users
-        - Settings
         - ARN
-        - Browser
         - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
         - Users
-        - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
-        - Store
   /portalIdp/{portalArn+}:
     GET:
-      summary: GetPortalServiceProviderMetadata
+      summary: 'Get Portal Service Provider Metadata '
       description: <p>Gets the service provider metadata.</p>
       tags:
-        - Get
-        - Portals
-        - Services
-        - Providers
-        - Metadata
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
+        - Metadata
         - Portals
-        - Identity
         - Providers
-        - Store
-        - Idp
-        - Portals
+        - Services
   /trustStores/{trustStoreArn+}/certificate:
     GET:
-      summary: GetTrustStoreCertificate
+      summary: 'Get Trust Store Certificate '
       description: <p>Gets the trust store certificate.</p>
       tags:
-        - Get
-        - Trust
-        - Store
-        - Certificates
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
-        - Store
-        - Idp
-        - Portals
         - Certificates
+        - Store
+        - Stores
+        - Trust
   /portals/{portalArn+}/identityProviders:
     GET:
-      summary: ListIdentityProviders
+      summary: 'List Identity Providers '
       description: <p>Retrieves a list of identity providers for a specific web portal.</p>
       tags:
-        - Lists
-        - Identity
-        - Providers
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
+        - Entities
+        - Ers
         - Identity
-        - Providers
-        - Store
-        - Idp
         - Portals
-        - Certificates
+        - Prov
+        - Providers
   /tags/{resourceArn+}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes one or more tags from the specified resource.</p>
       tags:
-        - Untag
-        - Resources
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
-        - Store
-        - Idp
-        - Portals
-        - Certificates
+        - Resources
+        - Tags
+        - Untag
   /trustStores/{trustStoreArn+}/certificates:
     GET:
-      summary: ListTrustStoreCertificates
+      summary: 'List Trust Store Certificates '
       description: <p>Retrieves a list of trust store certifi
       tags:
-        - Lists
-        - Trust
-        - Store
-        - Certificates
         - ARN
-        - Browser
-        - Settings
-        - IP
-        - Access
-        - Networks
-        - Trust
-        - Stores
-        - Users
-        - Logging
-        - Providers
-        - Portals
-        - Identity
-        - Providers
+        - Certificates
         - Store
-        - Idp
-        - Portals
-        - Certificates
-        - Certificates
+        - Stores
+        - Trust
