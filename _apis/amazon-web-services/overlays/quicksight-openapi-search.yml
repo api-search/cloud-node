@@ -4,22 +4,17 @@ info:
 paths:
   /accounts/{AwsAccountId}/data-sets/{DataSetId}/ingestions/{IngestionId}:
     GET:
-      summary: DescribeIngestion
+      summary: 'Describe Ingestion '
       description: <p>Describes a SPICE ingestion.</p>
       tags:
-        - Describe
-        - Ingestion
-        - Aws
-        - Account
-        - Identifiers
+        - Accounts
         - Data
-        - Sets
-        - Sets
+        - Describe
         - Ingestions
-        - Ingestion
+        - Sets
   /accounts/{AwsAccountId}/customizations:
     PUT:
-      summary: UpdateAccountCustomization
+      summary: 'Update Account Customization '
       description: >-
         <p>Updates Amazon QuickSight customizations for the current Amazon Web
         Services Region. Currently, the only customization that you can use is a
@@ -30,21 +25,11 @@ paths:
         which customizations apply, use the
         <code>DescribeAccountCustomization</code> API operation. </p>
       tags:
-        - Update
-        - Account
-        - Customizations
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
+        - Accounts
         - Customizations
   /account/{AwsAccountId}:
     GET:
-      summary: DescribeAccountSubscription
+      summary: 'Describe Account Subscription '
       description: >-
         <p>Use the DescribeAccountSubscription operation to receive a
         description of an Amazon QuickSight account's subscription. A successful
@@ -52,39 +37,19 @@ paths:
         account's name, subscription status, authentication type, edition, and
         notification email address.</p>
       tags:
+        - Accounts
         - Describe
-        - Account
         - Subscriptions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
   /accounts/{AwsAccountId}/analyses/{AnalysisId}:
     PUT:
-      summary: UpdateAnalysis
+      summary: 'Update Analysis '
       description: <p>Updates an analysis in Amazon QuickSight</p>
       tags:
-        - Update
-        - Analysis
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
+        - Accounts
         - Analysis
   /accounts/{AwsAccountId}/dashboards/{DashboardId}:
     PUT:
-      summary: UpdateDashboard
+      summary: 'Update Dashboard '
       description: >-
         <p>Updates a dashboard in an Amazon Web Services account.</p> <note>
         <p>Updating a Dashboard creates a new dashboard version but does not
@@ -93,190 +58,77 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPublishedVersion.html">UpdateDashboardPublishedVersion</a>
         </code> API operation.</p> </note>
       tags:
-        - Update
+        - Accounts
         - Dashboard
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
   /accounts/{AwsAccountId}/data-sets:
     GET:
-      summary: ListDataSets
+      summary: 'List Data Sets '
       description: >-
         <p>Lists all of the datasets belonging to the current Amazon Web
         Services account in an Amazon Web Services Region.</p> <p>The
         permissions resource is
         <code>arn:aws:quicksight:region:aws-account-id:dataset/*</code>.</p>
       tags:
-        - Lists
+        - Accounts
         - Data
         - Sets
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
   /accounts/{AwsAccountId}/data-sources:
     GET:
-      summary: ListDataSources
+      summary: 'List Data Sources '
       description: >-
         <p>Lists data sources in current Amazon Web Services Region that belong
         to this Amazon Web Services account.</p>
       tags:
-        - Lists
+        - Accounts
         - Data
-        - Sources
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
         - Sources
   /accounts/{AwsAccountId}/folders/{FolderId}:
     PUT:
-      summary: UpdateFolder
+      summary: 'Update Folder '
       description: <p>Updates the name of a folder.</p>
       tags:
-        - Update
-        - Folder
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
+        - Accounts
         - Folders
-        - Folder
   /accounts/{AwsAccountId}/folders/{FolderId}/members/{MemberType}/{MemberId}:
     DELETE:
-      summary: DeleteFolderMembership
+      summary: 'Delete Folder Membership '
       description: >-
         <p>Removes an asset, such as a dashboard, analysis, or dataset, from a
         folder.</p>
       tags:
-        - Delete
-        - Folder
-        - Membership
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
+        - Accounts
         - Folders
-        - Folder
         - Members
-        - Members
+        - Memberships
         - Types
   /accounts/{AwsAccountId}/namespaces/{Namespace}/groups:
     GET:
-      summary: ListGroups
+      summary: 'List Groups '
       description: <p>Lists all user groups in Amazon QuickSight. </p>
       tags:
-        - Lists
+        - Accounts
         - Groups
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
         - Namespaces
-        - Namespaces
-        - Groups
   /accounts/{AwsAccountId}/namespaces/{Namespace}/groups/{GroupName}/members/{MemberName}:
     GET:
-      summary: DescribeGroupMembership
+      summary: 'Describe Group Membership '
       description: >-
         <p>Use the <code>DescribeGroupMembership</code> operation to determine
         if a user is a member of the specified group. If the user exists and is
         a member of the specified group, an associated <code>GroupMember</code>
         object is returned.</p>
       tags:
+        - Accounts
         - Describe
-        - Group
-        - Membership
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
         - Groups
-        - Group
+        - Members
+        - Memberships
         - Names
+        - Namespaces
   /accounts/{AwsAccountId}/namespaces/{Namespace}/iam-policy-assignments/:
     POST:
-      summary: CreateIAMPolicyAssignment
+      summary: 'Create IAMPolicy Assignment '
       description: >-
         <p>Creates an assignment with one specified IAM policy, identified by
         its Amazon Resource Name (ARN). This policy assignment is attached to
@@ -284,39 +136,16 @@ paths:
         unique per Amazon Web Services account. To avoid overwriting rules in
         other namespaces, use assignment names that are unique.</p>
       tags:
-        - Create
-        - Policies
+        - Accounts
         - Assignment
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
         - Assignments
+        - IAM
+        - IAMPolicy
+        - Namespaces
+        - Policies
   /accounts/{AwsAccountId}:
     POST:
-      summary: CreateNamespace
+      summary: 'Create Namespace '
       description: >-
         <p>(Enterprise edition only) Creates a new namespace for you to use with
         Amazon QuickSight.</p> <p>A namespace allows you to isolate the Amazon
@@ -329,1301 +158,248 @@ paths:
         limit of 100 namespaces per Amazon Web Services account. To increase
         your limit, create a ticket with Amazon Web Services Support. </p>
       tags:
-        - Create
+        - Accounts
         - Namespaces
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
   /accounts/{AwsAccountId}/data-sets/{DataSetId}/refresh-schedules:
     PUT:
-      summary: UpdateRefreshSchedule
+      summary: 'Update Refresh Schedule '
       description: <p>Updates a refresh schedule for a dataset.</p>
       tags:
-        - Update
-        - Refresh
-        - Schedules
-        - Aws
-        - Account
-        - Identifiers
+        - Accounts
         - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
         - Refresh
         - Schedules
+        - Sets
   /accounts/{AwsAccountId}/namespaces/{Namespace}/roles/{Role}/members/{MemberName}:
     DELETE:
-      summary: DeleteRoleMembership
+      summary: 'Delete Role Membership '
       description: <p>Removes a group from a role.</p>
       tags:
-        - Delete
-        - Roles
-        - Membership
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
+        - Accounts
         - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
+        - Memberships
         - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
+        - Namespaces
         - Roles
   /accounts/{AwsAccountId}/templates/{TemplateId}:
     PUT:
-      summary: UpdateTemplate
+      summary: 'Update Template '
       description: >-
         <p>Updates a template from an existing Amazon QuickSight analysis or
         another template.</p>
       tags:
-        - Update
-        - Templates
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
+        - Accounts
         - Templates
   /accounts/{AwsAccountId}/templates/{TemplateId}/aliases/{AliasName}:
     PUT:
-      summary: UpdateTemplateAlias
+      summary: 'Update Template Alias '
       description: <p>Updates the template alias of a template.</p>
       tags:
-        - Update
-        - Templates
+        - Accounts
         - Alias
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
         - Aliases
-        - Alias
+        - Names
+        - Templates
   /accounts/{AwsAccountId}/themes/{ThemeId}:
     PUT:
-      summary: UpdateTheme
+      summary: 'Update Theme '
       description: <p>Updates a theme.</p>
       tags:
-        - Update
+        - Accounts
         - Theme
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
         - Themes
-        - Theme
   /accounts/{AwsAccountId}/themes/{ThemeId}/aliases/{AliasName}:
     PUT:
-      summary: UpdateThemeAlias
+      summary: 'Update Theme Alias '
       description: <p>Updates an alias of a theme.</p>
       tags:
-        - Update
-        - Theme
+        - Accounts
         - Alias
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
         - Aliases
-        - Alias
-        - Themes
+        - Names
         - Theme
+        - Themes
   /accounts/{AwsAccountId}/topics:
     GET:
-      summary: ListTopics
+      summary: 'List Topics '
       description: <p>Lists all of the topics within an account.</p>
       tags:
-        - Lists
-        - Topics
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
+        - Accounts
         - Topics
   /accounts/{AwsAccountId}/topics/{TopicId}/schedules:
     GET:
-      summary: ListTopicRefreshSchedules
+      summary: 'List Topic Refresh Schedules '
       description: <p>Lists all of the refresh schedules for a topic.</p>
       tags:
-        - Lists
-        - Topics
+        - Accounts
         - Refresh
         - Schedules
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
         - Topics
   /accounts/{AwsAccountId}/vpc-connections:
     GET:
-      summary: ListVPCConnections
+      summary: 'List VPCConnections '
       description: >-
         <p>Lists all of the VPC connections in the current set Amazon Web
         Services Region of an Amazon Web Services account.</p>
       tags:
-        - Lists
+        - Accounts
         - Connections
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
         - VPC
-        - Connections
+        - VPCConnections
   /accounts/{AwsAccountId}/data-sets/{DataSetId}:
     PUT:
-      summary: UpdateDataSet
+      summary: 'Update Data Set '
       description: >-
         <p>Updates a dataset. This operation doesn't support datasets that
         include uploaded files as a source. Partial updates are not supported by
         this operation.</p>
       tags:
-        - Update
+        - Accounts
         - Data
         - Sets
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
   /accounts/{AwsAccountId}/data-sets/{DataSetId}/refresh-properties:
     PUT:
-      summary: PutDataSetRefreshProperties
+      summary: 'Put Data Set Refresh Properties '
       description: >-
         <p>Creates or updates the dataset refresh properties for the
         dataset.</p>
       tags:
-        - Put
+        - Accounts
         - Data
-        - Sets
-        - Refresh
         - Properties
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
         - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
+        - Sets
   /accounts/{AwsAccountId}/data-sources/{DataSourceId}:
     PUT:
-      summary: UpdateDataSource
+      summary: 'Update Data Source '
       description: <p>Updates a data source.</p>
       tags:
-        - Update
+        - Accounts
         - Data
-        - Source
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
         - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
   /accounts/{AwsAccountId}/namespaces/{Namespace}/groups/{GroupName}:
     PUT:
-      summary: UpdateGroup
+      summary: 'Update Group '
       description: <p>Changes a group description. </p>
       tags:
-        - Update
-        - Group
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
+        - Accounts
         - Groups
-        - Group
         - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
+        - Namespaces
   /accounts/{AwsAccountId}/namespace/{Namespace}/iam-policy-assignments/{AssignmentName}:
     DELETE:
-      summary: DeleteIAMPolicyAssignment
+      summary: 'Delete IAMPolicy Assignment '
       description: <p>Deletes an existing IAM policy assignment.</p>
       tags:
-        - Delete
-        - Policies
+        - Accounts
         - Assignment
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
         - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
+        - IAM
+        - IAMPolicy
+        - Names
+        - Namespaces
+        - Policies
   /accounts/{AwsAccountId}/identity-propagation-config/{Service}:
     POST:
-      summary: UpdateIdentityPropagationConfig
+      summary: 'Update Identity Propagation Config '
       description: >-
         <p>Adds or updates services and authorized targets to configure what the
         Amazon QuickSight IAM Identity Center application can access.</p>
         <p>This operation is only supported for Amazon QuickSight accounts using
         IAM Identity Center</p>
       tags:
-        - Update
+        - Accounts
+        - Configurations
+        - Entities
         - Identity
         - Propagation
-        - Configurations
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
         - Services
   /accounts/{AwsAccountId}/namespaces/{Namespace}:
     GET:
-      summary: DescribeNamespace
+      summary: 'Describe Namespace '
       description: <p>Describes the current namespace.</p>
       tags:
+        - Accounts
         - Describe
         - Namespaces
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
   /accounts/{AwsAccountId}/data-sets/{DataSetId}/refresh-schedules/{ScheduleId}:
     GET:
-      summary: DescribeRefreshSchedule
+      summary: 'Describe Refresh Schedule '
       description: <p>Provides a summary of a refresh schedule.</p>
       tags:
+        - Accounts
+        - Data
         - Describe
         - Refresh
         - Schedules
-        - Aws
-        - Account
-        - Identifiers
-        - Data
         - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
   /accounts/{AwsAccountId}/namespaces/{Namespace}/roles/{Role}/custom-permission:
     PUT:
-      summary: UpdateRoleCustomPermission
+      summary: 'Update Role Custom Permission '
       description: <p>Updates the custom permissions that are associated with a role.</p>
       tags:
-        - Update
-        - Roles
+        - Accounts
         - Custom
-        - Permission
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
         - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
         - Permission
+        - Roles
   /accounts/{AwsAccountId}/topics/{TopicId}:
     PUT:
-      summary: UpdateTopic
+      summary: 'Update Topic '
       description: <p>Updates a topic.</p>
       tags:
-        - Update
+        - Accounts
         - Topics
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
   /accounts/{AwsAccountId}/topics/{TopicId}/schedules/{DatasetId}:
     PUT:
-      summary: UpdateTopicRefreshSchedule
+      summary: 'Update Topic Refresh Schedule '
       description: <p>Updates a topic refresh schedule.</p>
       tags:
-        - Update
-        - Topics
-        - Refresh
-        - Schedules
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
+        - Accounts
         - Datasets
+        - Refresh
+        - Schedules
+        - Topics
   /accounts/{AwsAccountId}/namespaces/{Namespace}/users/{UserName}:
     PUT:
-      summary: UpdateUser
+      summary: 'Update User '
       description: <p>Updates an Amazon QuickSight user.</p>
       tags:
-        - Update
-        - Users
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
+        - Accounts
         - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
+        - Namespaces
         - Users
   /accounts/{AwsAccountId}/namespaces/{Namespace}/user-principals/{PrincipalId}:
     DELETE:
-      summary: DeleteUserByPrincipalId
+      summary: 'Delete User By Principal Id '
       description: <p>Deletes a user identified by its principal ID. </p>
       tags:
-        - Delete
-        - Users
-        - By
-        - Principals
-        - Identifiers
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
+        - Accounts
         - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
         - Principals
-        - Principals
+        - Users
   /accounts/{AwsAccountId}/vpc-connections/{VPCConnectionId}:
     PUT:
-      summary: UpdateVPCConnection
+      summary: 'Update VPCConnection '
       description: <p>Updates a VPC connection.</p>
       tags:
-        - Update
+        - Accounts
         - Connections
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
         - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
+        - VPCConnection
+        - Vpcconnection
   /accounts/{AwsAccountId}/settings:
     PUT:
-      summary: UpdateAccountSettings
+      summary: 'Update Account Settings '
       description: >-
         <p>Updates the Amazon QuickSight settings in your Amazon Web Services
         account.</p>
       tags:
-        - Update
-        - Account
-        - Settings
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
+        - Accounts
         - Settings
   /accounts/{AwsAccountId}/analyses/{AnalysisId}/definition:
     GET:
-      summary: DescribeAnalysisDefinition
+      summary: 'Describe Analysis Definition '
       description: >-
         <p>Provides a detailed description of the definition of an analysis.</p>
         <note> <p>If you do not need to know details about the content of an
@@ -1632,139 +408,21 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAnalysis.html">
         <code>DescribeAnalysis</code> </a> instead. </p> </note>
       tags:
+        - Accounts
+        - Analysis
+        - Definitions
         - Describe
-        - Analysis
-        - Definitions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
   /accounts/{AwsAccountId}/analyses/{AnalysisId}/permissions:
     PUT:
-      summary: UpdateAnalysisPermissions
+      summary: 'Update Analysis Permissions '
       description: <p>Updates the read and write permissions for an analysis.</p>
       tags:
-        - Update
+        - Accounts
         - Analysis
-        - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
         - Permissions
   /accounts/{AwsAccountId}/asset-bundle-export-jobs/{AssetBundleExportJobId}:
     GET:
-      summary: DescribeAssetBundleExportJob
+      summary: 'Describe Asset Bundle Export Job '
       description: >-
         <p>Describes an existing export job.</p> <p>Poll job descriptions after
         a job starts to know the status of the job. When a job succeeds, a URL
@@ -1774,158 +432,29 @@ paths:
         needed.</p> <p>Job descriptions are available for 14 days after the job
         starts.</p>
       tags:
+        - Accounts
+        - Assets
+        - Bundles
         - Describe
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
+        - Exports
         - Jobs
   /accounts/{AwsAccountId}/asset-bundle-import-jobs/{AssetBundleImportJobId}:
     GET:
-      summary: DescribeAssetBundleImportJob
+      summary: 'Describe Asset Bundle Import Job '
       description: >-
         <p>Describes an existing import job.</p> <p>Poll job descriptions after
         starting a job to know when it has succeeded or failed. Job descriptions
         are available for 14 days after job starts.</p>
       tags:
+        - Accounts
+        - Assets
+        - Bundles
         - Describe
-        - Assets
-        - Bundles
         - Import
         - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/definition:
     GET:
-      summary: DescribeDashboardDefinition
+      summary: 'Describe Dashboard Definition '
       description: >-
         <p>Provides a detailed description of the definition of a dashboard.</p>
         <note> <p>If you do not need to know details about the content of a
@@ -1934,231 +463,37 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDashboard.html">
         <code>DescribeDashboard</code> </a> instead. </p> </note>
       tags:
-        - Describe
+        - Accounts
         - Dashboard
-        - Definitions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
         - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
+        - Describe
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/permissions:
     PUT:
-      summary: UpdateDashboardPermissions
+      summary: 'Update Dashboard Permissions '
       description: <p>Updates read and write permissions on a dashboard.</p>
       tags:
-        - Update
+        - Accounts
         - Dashboard
-        - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
         - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/snapshot-jobs/{SnapshotJobId}:
     GET:
-      summary: DescribeDashboardSnapshotJob
+      summary: 'Describe Dashboard Snapshot Job '
       description: >-
         <p>Describes an existing snapshot job.</p> <p>Poll job descriptions
         after a job starts to know the status of the job. For information on
         available status codes, see <code>JobStatus</code>.</p>
       tags:
-        - Describe
+        - Accounts
         - Dashboard
-        - Snapshots
-        - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
+        - Describe
         - Jobs
-        - Jobs
-        - Import
         - Snapshots
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/snapshot-jobs/{SnapshotJobId}/result:
     GET:
-      summary: DescribeDashboardSnapshotJobResult
+      summary: 'Describe Dashboard Snapshot Job Result '
       description: >-
         <p>Describes the result of an existing snapshot job that has finished
         running.</p> <p>A finished snapshot job will return a
@@ -2168,560 +503,87 @@ paths:
         says <code>Dashboard Snapshot Job with id &lt;SnapshotjobId&gt; has not
         reached a terminal state.</code>.</p>
       tags:
-        - Describe
+        - Accounts
         - Dashboard
-        - Snapshots
-        - Jobs
-        - Results
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
+        - Describe
         - Jobs
-        - Jobs
-        - Import
-        - Snapshots
         - Results
+        - Snapshots
   /accounts/{AwsAccountId}/data-sets/{DataSetId}/permissions:
     POST:
-      summary: UpdateDataSetPermissions
+      summary: 'Update Data Set Permissions '
       description: >-
         <p>Updates the permissions on a dataset.</p> <p>The permissions resource
         is
         <code>arn:aws:quicksight:region:aws-account-id:dataset/data-set-id</code>.</p>
       tags:
-        - Update
+        - Accounts
         - Data
-        - Sets
         - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
         - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
   /accounts/{AwsAccountId}/data-sources/{DataSourceId}/permissions:
     POST:
-      summary: UpdateDataSourcePermissions
+      summary: 'Update Data Source Permissions '
       description: <p>Updates the permissions to a data source.</p>
       tags:
-        - Update
+        - Accounts
         - Data
-        - Source
         - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
         - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
   /accounts/{AwsAccountId}/folders/{FolderId}/permissions:
     PUT:
-      summary: UpdateFolderPermissions
+      summary: 'Update Folder Permissions '
       description: <p>Updates permissions of a folder.</p>
       tags:
-        - Update
-        - Folder
-        - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
+        - Accounts
         - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
         - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
   /accounts/{AwsAccountId}/folders/{FolderId}/resolved-permissions:
     GET:
-      summary: DescribeFolderResolvedPermissions
+      summary: 'Describe Folder Resolved Permissions '
       description: >-
         <p>Describes the folder resolved permissions. Permissions consists of
         both folder direct permissions and the inherited permissions from the
         ancestor folders.</p>
       tags:
+        - Accounts
         - Describe
-        - Folder
-        - Resolved
-        - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
         - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
         - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
         - Resolved
   /accounts/{AwsAccountId}/namespaces/{Namespace}/iam-policy-assignments/{AssignmentName}:
     PUT:
-      summary: UpdateIAMPolicyAssignment
+      summary: 'Update IAMPolicy Assignment '
       description: >-
         <p>Updates an existing IAM policy assignment. This operation updates
         only the optional parameter or parameters that are specified in the
         request. This overwrites all of the users included in
         <code>Identities</code>. </p>
       tags:
-        - Update
-        - Policies
+        - Accounts
         - Assignment
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
         - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
+        - IAM
+        - IAMPolicy
+        - Names
+        - Namespaces
+        - Policies
   /accounts/{AwsAccountId}/ip-restriction:
     POST:
-      summary: UpdateIpRestriction
+      summary: 'Update Ip Restriction '
       description: >-
         <p>Updates the content and status of IP rules. To use this operation,
         you must provide the entire map of rules. You can use the
         <code>DescribeIpRestriction</code> operation to get the current rule
         map.</p>
       tags:
-        - Update
-        - IP
-        - Restrictions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
+        - Accounts
         - IP
         - Restrictions
   /accounts/{AwsAccountId}/templates/{TemplateId}/definition:
     GET:
-      summary: DescribeTemplateDefinition
+      summary: 'Describe Template Definition '
       description: >-
         <p>Provides a detailed description of the definition of a template.</p>
         <note> <p>If you do not need to know details about the content of a
@@ -2730,162 +592,21 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeTemplate.html">
         <code>DescribeTemplate</code> </a> instead. </p> </note>
       tags:
+        - Accounts
+        - Definitions
         - Describe
         - Templates
-        - Definitions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
   /accounts/{AwsAccountId}/templates/{TemplateId}/permissions:
     PUT:
-      summary: UpdateTemplatePermissions
+      summary: 'Update Template Permissions '
       description: <p>Updates the resource permissions for a template.</p>
       tags:
-        - Update
-        - Templates
+        - Accounts
         - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
         - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
   /accounts/{AwsAccountId}/themes/{ThemeId}/permissions:
     PUT:
-      summary: UpdateThemePermissions
+      summary: 'Update Theme Permissions '
       description: >-
         <p>Updates the resource permissions for a theme. Permissions apply to
         the action to grant or revoke permissions on, for example
@@ -2910,241 +631,30 @@ paths:
         </li> <li> <p>To specify no permissions, omit the permissions list.</p>
         </li> </ul>
       tags:
-        - Update
-        - Theme
+        - Accounts
         - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
+        - Theme
         - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
   /accounts/{AwsAccountId}/topics/{TopicId}/permissions:
     PUT:
-      summary: UpdateTopicPermissions
+      summary: 'Update Topic Permissions '
       description: <p>Updates the permissions of a topic.</p>
       tags:
-        - Update
-        - Topics
+        - Accounts
         - Permissions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
         - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
   /accounts/{AwsAccountId}/topics/{TopicId}/refresh/{RefreshId}:
     GET:
-      summary: DescribeTopicRefresh
+      summary: 'Describe Topic Refresh '
       description: <p>Describes the status of a topic refresh.</p>
       tags:
+        - Accounts
         - Describe
-        - Topics
         - Refresh
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
         - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
   /accounts/{AwsAccountId}/embed-url/anonymous-user:
     POST:
-      summary: GenerateEmbedUrlForAnonymousUser
+      summary: 'Generate Embed Url For Anonymous User '
       description: >-
         <p>Generates an embed URL that you can use to embed an Amazon QuickSight
         dashboard or visual in your website, without having to register any
@@ -3168,89 +678,15 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html">Amazon
         QuickSight Developer Portal</a>.</p>
       tags:
+        - Accounts
+        - Anonymous
+        - Embed
         - Generate
-        - Embed
         - URL
-        - For
-        - Anonymous
         - Users
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
   /accounts/{AwsAccountId}/embed-url/registered-user:
     POST:
-      summary: GenerateEmbedUrlForRegisteredUser
+      summary: 'Generate Embed Url For Registered User '
       description: >-
         <p>Generates an embed URL that you can use to embed an Amazon QuickSight
         experience in your website. This action can be used for any type of user
@@ -3275,90 +711,15 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html">Amazon
         QuickSight Developer Portal</a>.</p>
       tags:
+        - Accounts
+        - Embed
         - Generate
-        - Embed
-        - URL
-        - For
         - Registered
-        - Users
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
         - URL
-        - Anonymous
-        - Registered
+        - Users
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/embed-url:
     GET:
-      summary: GetDashboardEmbedUrl
+      summary: 'Get Dashboard Embed Url '
       description: >-
         <p>Generates a temporary session URL and authorization code(bearer
         token) that you can use to embed an Amazon QuickSight read-only
@@ -3382,88 +743,14 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html">Amazon
         QuickSight Developer Portal</a>.</p>
       tags:
-        - Get
+        - Accounts
         - Dashboard
-        - Embed
-        - URL
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
         - Embed
         - URL
-        - Anonymous
-        - Registered
   /accounts/{AwsAccountId}/session-embed-url:
     GET:
-      summary: GetSessionEmbedUrl
+      summary: 'Get Session Embed Url '
       description: >-
         <p>Generates a session URL and authorization code that you can use to
         embed the Amazon Amazon QuickSight console in your web server code. Use
@@ -3484,174 +771,22 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/user/customizing-permissions-to-the-quicksight-console.html">Customizing
         Access to the Amazon QuickSight Console</a> </p> </li> </ul>
       tags:
-        - Get
-        - Sessions
+        - Accounts
         - Embed
-        - URL
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
         - Sessions
+        - URL
   /accounts/{AwsAccountId}/analyses:
     GET:
-      summary: ListAnalyses
+      summary: 'List Analyses '
       description: >-
         <p>Lists Amazon QuickSight analyses that exist in the specified Amazon
         Web Services account.</p>
       tags:
-        - Lists
+        - Accounts
         - Analysis
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
   /accounts/{AwsAccountId}/asset-bundle-export-jobs:
     GET:
-      summary: ListAssetBundleExportJobs
+      summary: 'List Asset Bundle Export Jobs '
       description: >-
         <p>Lists all asset bundle export jobs that have been taken place in the
         last 14 days. Jobs created more than 14 days ago are deleted forever and
@@ -3659,90 +794,14 @@ paths:
         <code>ListAssetBundleExportJobs</code> only returns the most recent job
         that uses the repeated job ID.</p>
       tags:
-        - Lists
+        - Accounts
         - Assets
         - Bundles
-        - Export
+        - Exports
         - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
   /accounts/{AwsAccountId}/asset-bundle-import-jobs:
     GET:
-      summary: ListAssetBundleImportJobs
+      summary: 'List Asset Bundle Import Jobs '
       description: >-
         <p>Lists all asset bundle import jobs that have taken place in the last
         14 days. Jobs created more than 14 days ago are deleted forever and are
@@ -3750,1760 +809,204 @@ paths:
         <code>ListAssetBundleImportJobs</code> only returns the most recent job
         that uses the repeated job ID.</p>
       tags:
-        - Lists
+        - Accounts
         - Assets
         - Bundles
         - Import
         - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/versions:
     GET:
-      summary: ListDashboardVersions
+      summary: 'List Dashboard Versions '
       description: >-
         <p>Lists all the versions of the dashboards in the Amazon QuickSight
         subscription.</p>
       tags:
-        - Lists
+        - Accounts
         - Dashboard
-        - Versions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
         - Versions
   /accounts/{AwsAccountId}/dashboards:
     GET:
-      summary: ListDashboards
+      summary: 'List Dashboards '
       description: <p>Lists dashboards in an Amazon Web Services account.</p>
       tags:
-        - Lists
+        - Accounts
         - Dashboards
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
   /accounts/{AwsAccountId}/folders/{FolderId}/members:
     GET:
-      summary: ListFolderMembers
+      summary: 'List Folder Members '
       description: >-
         <p>List all assets (<code>DASHBOARD</code>, <code>ANALYSIS</code>, and
         <code>DATASET</code>) in a folder. </p>
       tags:
-        - Lists
-        - Folder
-        - Members
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
+        - Accounts
         - Folders
-        - Folder
         - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
   /accounts/{AwsAccountId}/folders:
     GET:
-      summary: ListFolders
+      summary: 'List Folders '
       description: <p>Lists all folders in an account.</p>
       tags:
-        - Lists
+        - Accounts
         - Folders
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
   /accounts/{AwsAccountId}/namespaces/{Namespace}/groups/{GroupName}/members:
     GET:
-      summary: ListGroupMemberships
+      summary: 'List Group Memberships '
       description: <p>Lists member users in a group.</p>
       tags:
-        - Lists
-        - Group
-        - Memberships
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
+        - Accounts
         - Groups
-        - Group
+        - Members
+        - Memberships
         - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
+        - Namespaces
   /accounts/{AwsAccountId}/namespaces/{Namespace}/v2/iam-policy-assignments:
     GET:
-      summary: ListIAMPolicyAssignments
+      summary: 'List IAMPolicy Assignments '
       description: >-
         <p>Lists the IAM policy assignments in the current Amazon QuickSight
         account.</p>
       tags:
-        - Lists
-        - Policies
+        - Accounts
         - Assignments
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
         - IAM
+        - IAMPolicy
+        - Namespaces
         - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
   /accounts/{AwsAccountId}/namespaces/{Namespace}/users/{UserName}/iam-policy-assignments:
     GET:
-      summary: ListIAMPolicyAssignmentsForUser
+      summary: 'List IAMPolicy Assignments For User '
       description: >-
         <p>Lists all of the IAM policy assignments, including the Amazon
         Resource Names (ARNs), for the IAM policies assigned to the specified
         user and group, or groups that the user belongs to.</p>
       tags:
-        - Lists
-        - Policies
+        - Accounts
         - Assignments
-        - For
-        - Users
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
         - IAM
+        - IAMPolicy
+        - Names
+        - Namespaces
         - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
         - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
   /accounts/{AwsAccountId}/identity-propagation-config:
     GET:
-      summary: ListIdentityPropagationConfigs
+      summary: 'List Identity Propagation Configs '
       description: >-
         <p>Lists all services and authorized targets that the Amazon QuickSight
         IAM Identity Center application can access.</p> <p>This operation is
         only supported for Amazon QuickSight accounts that use IAM Identity
         Center.</p>
       tags:
-        - Lists
+        - Accounts
+        - Configurations
+        - Entities
         - Identity
         - Propagation
-        - Configurations
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
   /accounts/{AwsAccountId}/data-sets/{DataSetId}/ingestions:
     GET:
-      summary: ListIngestions
+      summary: 'List Ingestions '
       description: <p>Lists the history of SPICE ingestions for a dataset.</p>
       tags:
-        - Lists
-        - Ingestions
-        - Aws
-        - Account
-        - Identifiers
+        - Accounts
         - Data
-        - Sets
-        - Sets
         - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
+        - Sets
   /accounts/{AwsAccountId}/namespaces:
     GET:
-      summary: ListNamespaces
+      summary: 'List Namespaces '
       description: >-
         <p>Lists the namespaces for the specified Amazon Web Services account.
         This operation doesn't list deleted namespaces.</p>
       tags:
-        - Lists
+        - Accounts
         - Namespaces
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
   /accounts/{AwsAccountId}/namespaces/{Namespace}/roles/{Role}/members:
     GET:
-      summary: ListRoleMemberships
+      summary: 'List Role Memberships '
       description: <p>Lists all groups that are associated with a role.</p>
       tags:
-        - Lists
-        - Roles
+        - Accounts
+        - Members
         - Memberships
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
         - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
         - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
   /resources/{ResourceArn}/tags:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes a tag or tags from a resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
         - ARN
+        - Resources
         - Tags
+        - Untag
   /accounts/{AwsAccountId}/templates/{TemplateId}/aliases:
     GET:
-      summary: ListTemplateAliases
+      summary: 'List Template Aliases '
       description: <p>Lists all the aliases of a template.</p>
       tags:
-        - Lists
-        - Templates
+        - Accounts
         - Aliases
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
         - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/templates/{TemplateId}/versions:
     GET:
-      summary: ListTemplateVersions
+      summary: 'List Template Versions '
       description: >-
         <p>Lists all the versions of the templates in the current Amazon
         QuickSight account.</p>
       tags:
-        - Lists
+        - Accounts
         - Templates
         - Versions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/templates:
     GET:
-      summary: ListTemplates
+      summary: 'List Templates '
       description: <p>Lists all the templates in the current Amazon QuickSight account.</p>
       tags:
-        - Lists
+        - Accounts
         - Templates
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/themes/{ThemeId}/aliases:
     GET:
-      summary: ListThemeAliases
+      summary: 'List Theme Aliases '
       description: <p>Lists all the aliases of a theme.</p>
       tags:
-        - Lists
+        - Accounts
+        - Aliases
         - Theme
-        - Aliases
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
         - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/themes/{ThemeId}/versions:
     GET:
-      summary: ListThemeVersions
+      summary: 'List Theme Versions '
       description: >-
         <p>Lists all the versions of the themes in the current Amazon Web
         Services account.</p>
       tags:
-        - Lists
+        - Accounts
         - Theme
-        - Versions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
         - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
         - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/themes:
     GET:
-      summary: ListThemes
+      summary: 'List Themes '
       description: <p>Lists all the themes in the current Amazon Web Services account.</p>
       tags:
-        - Lists
+        - Accounts
         - Themes
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/namespaces/{Namespace}/users/{UserName}/groups:
     GET:
-      summary: ListUserGroups
+      summary: 'List User Groups '
       description: >-
         <p>Lists the Amazon QuickSight groups that an Amazon QuickSight user is
         a member of.</p>
       tags:
-        - Lists
-        - Users
+        - Accounts
         - Groups
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
         - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
+        - Namespaces
         - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/namespaces/{Namespace}/users:
     POST:
-      summary: RegisterUser
+      summary: 'Register User '
       description: >-
         <p>Creates an Amazon QuickSight user whose identity is associated with
         the Identity and Access Management (IAM) identity or role specified in
@@ -5518,736 +1021,85 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/user/managing-users.html#inviting-users">
         Inviting users to access Amazon QuickSight</a>.</p>
       tags:
+        - Accounts
+        - Namespaces
         - Register
         - Users
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
   /accounts/{AwsAccountId}/restore/analyses/{AnalysisId}:
     POST:
-      summary: RestoreAnalysis
+      summary: 'Restore Analysis '
       description: <p>Restores an analysis.</p>
       tags:
-        - Restore
+        - Accounts
         - Analysis
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
         - Restore
   /accounts/{AwsAccountId}/search/analyses:
     POST:
-      summary: SearchAnalyses
+      summary: 'Search Analyses '
       description: >-
         <p>Searches for analyses that belong to the user specified in the
         filter.</p> <note> <p>This operation is eventually consistent. The
         results are best effort and may not reflect very recent updates and
         changes.</p> </note>
       tags:
-        - Search
+        - Accounts
         - Analysis
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
         - Search
   /accounts/{AwsAccountId}/search/dashboards:
     POST:
-      summary: SearchDashboards
+      summary: 'Search Dashboards '
       description: >-
         <p>Searches for dashboards that belong to a user. </p> <note> <p>This
         operation is eventually consistent. The results are best effort and may
         not reflect very recent updates and changes.</p> </note>
       tags:
-        - Search
+        - Accounts
         - Dashboards
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
         - Search
   /accounts/{AwsAccountId}/search/data-sets:
     POST:
-      summary: SearchDataSets
+      summary: 'Search Data Sets '
       description: >-
         <p>Use the <code>SearchDataSets</code> operation to search for datasets
         that belong to an account.</p>
       tags:
-        - Search
+        - Accounts
         - Data
-        - Sets
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
         - Search
+        - Sets
   /accounts/{AwsAccountId}/search/data-sources:
     POST:
-      summary: SearchDataSources
+      summary: 'Search Data Sources '
       description: >-
         <p>Use the <code>SearchDataSources</code> operation to search for data
         sources that belong to an account.</p>
       tags:
-        - Search
+        - Accounts
         - Data
-        - Sources
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
         - Search
+        - Sources
   /accounts/{AwsAccountId}/search/folders:
     POST:
-      summary: SearchFolders
+      summary: 'Search Folders '
       description: <p>Searches the subfolders in a folder.</p>
       tags:
-        - Search
+        - Accounts
         - Folders
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
         - Search
   /accounts/{AwsAccountId}/namespaces/{Namespace}/groups-search:
     POST:
-      summary: SearchGroups
+      summary: 'Search Groups '
       description: >-
         <p>Use the <code>SearchGroups</code> operation to search groups in a
         specified Amazon QuickSight namespace using the supplied filters.</p>
       tags:
-        - Search
+        - Accounts
         - Groups
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
         - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
         - Search
   /accounts/{AwsAccountId}/asset-bundle-export-jobs/export:
     POST:
-      summary: StartAssetBundleExportJob
+      summary: 'Start Asset Bundle Export Job '
       description: >-
         <p>Starts an Asset Bundle export job.</p> <p>An Asset Bundle export job
         exports specified Amazon QuickSight assets. You can also choose to
@@ -6261,97 +1113,14 @@ paths:
         API caller must have the necessary permissions in their IAM role to
         access each resource before the resources can be exported.</p>
       tags:
-        - Start
+        - Accounts
         - Assets
         - Bundles
-        - Export
+        - Exports
         - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
-        - Search
   /accounts/{AwsAccountId}/asset-bundle-import-jobs/import:
     POST:
-      summary: StartAssetBundleImportJob
+      summary: 'Start Asset Bundle Import Job '
       description: >-
         <p>Starts an Asset Bundle import job.</p> <p>An Asset Bundle import job
         imports specified Amazon QuickSight assets into an Amazon QuickSight
@@ -6365,97 +1134,14 @@ paths:
         resource type that is contained in the bundle file before the resources
         can be imported.</p>
       tags:
-        - Start
+        - Accounts
         - Assets
         - Bundles
         - Import
         - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
-        - Search
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/snapshot-jobs:
     POST:
-      summary: StartDashboardSnapshotJob
+      summary: 'Start Dashboard Snapshot Job '
       description: >-
         <p>Starts an asynchronous job that generates a dashboard snapshot. You
         can request one of the following format configurations per API call.</p>
@@ -6465,285 +1151,36 @@ paths:
         succeeds, use the <code>DescribeDashboardSnapshotJobResult</code> API to
         obtain the download URIs that the job generates.</p>
       tags:
-        - Start
+        - Accounts
         - Dashboard
-        - Snapshots
-        - Jobs
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
         - Jobs
-        - Jobs
-        - Import
         - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
-        - Search
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/linked-entities:
     PUT:
-      summary: UpdateDashboardLinks
+      summary: 'Update Dashboard Links '
       description: <p>Updates the linked analyses on a dashboard.</p>
       tags:
-        - Update
+        - Accounts
         - Dashboard
-        - Links
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
         - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
-        - Search
-        - Linked
         - Entities
+        - Linked
+        - Links
   /accounts/{AwsAccountId}/dashboards/{DashboardId}/versions/{VersionNumber}:
     PUT:
-      summary: UpdateDashboardPublishedVersion
+      summary: 'Update Dashboard Published Version '
       description: <p>Updates the published version of a dashboard.</p>
       tags:
-        - Update
+        - Accounts
         - Dashboard
+        - Dashboards
+        - Numbers
         - Published
         - Versions
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
-        - Search
-        - Linked
-        - Entities
-        - Versions
-        - Numbers
   /accounts/{AwsAccountId}/public-sharing-settings:
     PUT:
-      summary: UpdatePublicSharingSettings
+      summary: 'Update Public Sharing Settings '
       description: >-
         <p>Use the <code>UpdatePublicSharingSettings</code> operation to turn on
         or turn off the public sharing settings of an Amazon QuickSight
@@ -6756,96 +1193,7 @@ paths:
         href="https://docs.aws.amazon.com/quicksight/latest/user/security_iam_service-with-iam.html">Using
         Amazon QuickSight with IAM</a> in the <i>Amazon QuickSight User Guid
       tags:
-        - Update
+        - Accounts
         - Public
+        - Settings
         - Sharing
-        - Settings
-        - Aws
-        - Account
-        - Identifiers
-        - Data
-        - Sets
-        - Sets
-        - Ingestions
-        - Ingestion
-        - Customizations
-        - Analysis
-        - Analysis
-        - Dashboards
-        - Dashboard
-        - Sources
-        - Folders
-        - Folder
-        - Members
-        - Members
-        - Types
-        - Namespaces
-        - Namespaces
-        - Groups
-        - Group
-        - Names
-        - IAM
-        - Policies
-        - Assignments
-        - Refresh
-        - Schedules
-        - Roles
-        - Roles
-        - Templates
-        - Templates
-        - Aliases
-        - Alias
-        - Themes
-        - Theme
-        - Topics
-        - Topics
-        - VPC
-        - Connections
-        - Properties
-        - Source
-        - Assignment
-        - Identity
-        - Propagation
-        - Configurations
-        - Services
-        - Schedules
-        - Custom
-        - Permission
-        - Datasets
-        - Users
-        - Users
-        - Principals
-        - Principals
-        - Connections
-        - Settings
-        - Definitions
-        - Permissions
-        - Assets
-        - Bundles
-        - Export
-        - Jobs
-        - Jobs
-        - Import
-        - Snapshots
-        - Results
-        - Resolved
-        - IP
-        - Restrictions
-        - Embed
-        - URL
-        - Anonymous
-        - Registered
-        - Sessions
-        - Versions
-        - V2
-        - Resources
-        - ARN
-        - Tags
-        - Restore
-        - Search
-        - Linked
-        - Entities
-        - Versions
-        - Numbers
-        - Public
-        - Shari
