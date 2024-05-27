@@ -4,9 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateRetrainingScheduler
+      summary: 'Update Retraining Scheduler '
       description: <p>Updates a retraining sche
       tags:
-        - Update
         - Retraining
-        - Schedules
+        - Scheduler
