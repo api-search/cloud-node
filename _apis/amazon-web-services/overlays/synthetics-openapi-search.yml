@@ -4,7 +4,7 @@ info:
 paths:
   /group/{groupIdentifier}/associate:
     PATCH:
-      summary: AssociateResource
+      summary: 'Associate Resource '
       description: >-
         <p>Associates a canary with a group. Using groups can help you with
         managing and automating your canaries, and you can also view aggregated
@@ -12,12 +12,11 @@ paths:
         run this operation in the Region where the canary exists.</p>
       tags:
         - Associate
+        - Groups
         - Resources
-        - Identifiers
-        - Associate
   /canary:
     POST:
-      summary: CreateCanary
+      summary: 'Create Canary '
       description: >-
         <p>Creates a canary. Canaries are scripts that monitor your endpoints
         and APIs from the outside-in. Canaries help you check the availability
@@ -40,14 +39,10 @@ paths:
         href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servicelens_canaries_security.html">Security
         Considerations for Synthetics Canaries</a>.</p>
       tags:
-        - Create
-        - Canary
-        - Identifiers
-        - Associate
         - Canary
   /group:
     POST:
-      summary: CreateGroup
+      summary: 'Create Group '
       description: >-
         <p>Creates a group which you can use to associate canaries with each
         other, including cross-Region canaries. Using groups can help you with
@@ -67,45 +62,29 @@ paths:
         can have as many as 20 groups in your account. Any single canary can be
         a member of up to 10 groups.</p>
       tags:
-        - Create
-        - Group
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
+        - Groups
   /canary/{name}:
     PATCH:
-      summary: UpdateCanary
+      summary: 'Update Canary '
       description: >-
         <p>Updates the configuration of a canary that has already been
         created.</p> <p>You can't use this operation to update the tags of an
         existing canary. To change the tags of an existing canary, use <a
         href="https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API_TagResource.html">TagResource</a>.</p>
       tags:
-        - Update
         - Canary
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
         - Names
   /group/{groupIdentifier}:
     GET:
-      summary: GetGroup
+      summary: 'Get Group '
       description: >-
         <p>Returns information about one group. Groups are a global resource, so
         you can use this operation from any Region.</p>
       tags:
-        - Get
-        - Group
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
+        - Groups
   /canaries:
     POST:
-      summary: DescribeCanaries
+      summary: 'Describe Canaries '
       description: >-
         <p>This operation returns a list of the canaries in your account, along
         with full details about each canary.</p> <p>This operation supports
@@ -121,17 +100,11 @@ paths:
         href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Restricted.html">
         Limiting a user to viewing specific canaries</a>.</p>
       tags:
+        - Canaries
         - Describe
-        - Canaries
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
   /canaries/last-run:
     POST:
-      summary: DescribeCanariesLastRun
+      summary: 'Describe Canaries Last Run '
       description: >-
         <p>Use this operation to see information from the most recent run of
         each canary that you have created.</p> <p>This operation supports
@@ -147,21 +120,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Restricted.html">
         Limiting a user to viewing specific canaries</a>.</p>
       tags:
+        - Canaries
         - Describe
-        - Canaries
-        - Last
-        - Runs
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
         - Last
         - Runs
   /runtime-versions:
     POST:
-      summary: DescribeRuntimeVersions
+      summary: 'Describe Runtime Versions '
       description: >-
         <p>Returns a list of Synthetics canary runtime versions. For more
         information, see <a
@@ -171,181 +136,75 @@ paths:
         - Describe
         - Runtime
         - Versions
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
   /group/{groupIdentifier}/disassociate:
     PATCH:
-      summary: DisassociateResource
+      summary: 'Disassociate Resource '
       description: >-
         <p>Removes a canary from a group. You must run this operation in the
         Region where the canary exists.</p>
       tags:
         - Disassociate
+        - Groups
         - Resources
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
   /canary/{name}/runs:
     POST:
-      summary: GetCanaryRuns
+      summary: 'Get Canary Runs '
       description: <p>Retrieves a list of runs for a specified canary.</p>
       tags:
-        - Get
         - Canary
-        - Runs
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
         - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
         - Runs
   /resource/{resourceArn}/groups:
     POST:
-      summary: ListAssociatedGroups
+      summary: 'List Associated Groups '
       description: >-
         <p>Returns a list of the groups that the specified canary is associated
         with. The canary that you specify must be in the current Region.</p>
       tags:
-        - Lists
+        - ARN
         - Associated
         - Groups
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
-        - Runs
-        - ARN
-        - Groups
+        - Resources
   /group/{groupIdentifier}/resources:
     POST:
-      summary: ListGroupResources
+      summary: 'List Group Resources '
       description: >-
         <p>This operation returns a list of the ARNs of the canaries that are
         associated with the specified group.</p>
       tags:
-        - Lists
-        - Group
-        - Resources
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
-        - Runs
-        - ARN
         - Groups
         - Resources
   /groups:
     POST:
-      summary: ListGroups
+      summary: 'List Groups '
       description: >-
         <p>Returns a list of all groups in the account, displaying their names,
         unique IDs, and ARNs. The groups from all Regions are returned.</p>
       tags:
-        - Lists
         - Groups
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
-        - Runs
-        - ARN
-        - Groups
-        - Resources
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes one or more tags from the specified resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
-        - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
-        - Runs
         - ARN
-        - Groups
         - Resources
+        - Tags
+        - Untag
   /canary/{name}/start:
     POST:
-      summary: StartCanary
+      summary: 'Start Canary '
       description: >-
         <p>Use this operation to run a canary that has already been created. The
         frequency of the canary runs is determined by the value of the canary's
         <code>Schedule</code>. To see a canary's schedule, use <a
         href="https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API_GetCanary.html">GetCanary</a>.</p>
       tags:
-        - Start
         - Canary
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
         - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
-        - Runs
-        - ARN
-        - Groups
-        - Resources
-        - Start
   /canary/{name}/stop:
     POST:
-      summary: StopCanary
+      summary: 'Stop Canary '
       description: >-
         <p>Stops the canary to prevent all future runs. If the canary is
         currently running,the run that is in progress completes on its own,
@@ -354,22 +213,6 @@ paths:
         <code>StartCanary</code> to start it running again with the canary’s
         current schedule at any point in the fu
       tags:
-        - Stop
         - Canary
-        - Identifiers
-        - Associate
-        - Canary
-        - Group
         - Names
-        - Canaries
-        - Last
-        - Runs
-        - Runtime
-        - Versions
-        - Disassociate
-        - Runs
-        - ARN
-        - Groups
-        - Resources
-        - Start
-        - St
+        - Stop
