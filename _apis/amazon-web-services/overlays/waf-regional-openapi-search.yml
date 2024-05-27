@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateXssMatchSet
+      summary: 'Update Xss Match Set '
       description: >-
         <note> <p>This is <b>AWS WAF Classic</b> documentation. For more
         information, see <a
@@ -43,7 +43,5 @@ paths:
         the <a href="https://docs.aws.amazon.com/waf/latest/developerguide/">AWS
         WAF Developer Guid
       tags:
-        - Update
-        - Xss
         - Match
-        - S
+        - Sets
