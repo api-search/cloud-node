@@ -680,7 +680,6 @@ apis:
       - Applications
       - Artifacts
       - Associations
-      - Associations
       - Backend Environments
       - Backends
       - Branch
