@@ -4,529 +4,173 @@ info:
 paths:
   /get-applicationcomponent-details/{applicationComponentId}:
     GET:
-      summary: GetApplicationComponentDetails
+      summary: 'Get Application Component Details '
       description: <p> Retrieves details about an application component. </p>
       tags:
-        - Get
+        - Application Components
         - Applications
         - Components
         - Details
-        - Components
-        - Identifiers
   /get-applicationcomponent-strategies/{applicationComponentId}:
     GET:
-      summary: GetApplicationComponentStrategies
+      summary: 'Get Application Component Strategies '
       description: >-
         <p> Retrieves a list of all the recommended strategies and tools for an
         application component running on a server. </p>
       tags:
-        - Get
+        - Application Components
         - Applications
         - Components
         - Strategies
-        - Components
-        - Identifiers
   /get-assessment/{id}:
     GET:
-      summary: GetAssessment
+      summary: 'Get Assessment '
       description: <p> Retrieves the status of an on-going assessment. </p>
       tags:
-        - Get
-        - Assessments
-        - Components
-        - Identifiers
-        - Get
         - Assessments
   /get-import-file-task/{id}:
     GET:
-      summary: GetImportFileTask
+      summary: 'Get Import File Task '
       description: <p> Retrieves the details about a specific import task. </p>
       tags:
-        - Get
-        - Import
         - File
-        - Tasks
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
         - Import
-        - File
         - Tasks
   /get-latest-assessment-id:
     GET:
-      summary: GetLatestAssessmentId
+      summary: 'Get Latest Assessment Id '
       description: <p>Retrieve the latest ID of a specific assessment task.</p>
       tags:
-        - Get
-        - Latest
         - Assessments
-        - Identifiers
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
         - Latest
   /get-portfolio-preferences:
     GET:
-      summary: GetPortfolioPreferences
+      summary: 'Get Portfolio Preferences '
       description: <p> Retrieves your migration and modernization preferences. </p>
       tags:
-        - Get
-        - Portfolio
-        - Preferences
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
         - Portfolio
         - Preferences
   /get-portfolio-summary:
     GET:
-      summary: GetPortfolioSummary
+      summary: 'Get Portfolio Summary '
       description: >-
         <p> Retrieves overall summary including the number of servers to rehost
         and the overall number of anti-patterns. </p>
       tags:
-        - Get
         - Portfolio
-        - Summaries
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
         - Summaries
   /get-recommendation-report-details/{id}:
     GET:
-      summary: GetRecommendationReportDetails
+      summary: 'Get Recommendation Report Details '
       description: >-
         <p> Retrieves detailed information about the specified recommendation
         report. </p>
       tags:
-        - Get
+        - Details
         - Recommendations
         - Reports
-        - Details
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
   /get-server-details/{serverId}:
     GET:
-      summary: GetServerDetails
+      summary: 'Get Server Details '
       description: <p> Retrieves detailed information about a specified server. </p>
       tags:
-        - Get
-        - Server
         - Details
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
+        - Servers
   /get-server-strategies/{serverId}:
     GET:
-      summary: GetServerStrategies
+      summary: 'Get Server Strategies '
       description: >-
         <p> Retrieves recommended strategies and tools for the specified server.
         </p>
       tags:
-        - Get
-        - Server
+        - Servers
         - Strategies
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
   /list-analyzable-servers:
     POST:
-      summary: ListAnalyzableServers
+      summary: 'List Analyzable Servers '
       description: >-
         <p>Retrieves a list of all the servers fetched from customer vCenter
         using Strategy Recommendation Collector.</p>
       tags:
-        - Lists
-        - Analyzable
-        - Servers
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
         - Analyzable
         - Servers
   /list-applicationcomponents:
     POST:
-      summary: ListApplicationComponents
+      summary: 'List Application Components '
       description: <p> Retrieves a list of all the application components (processes). </p>
       tags:
-        - Lists
+        - Application Components
         - Applications
         - Components
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
   /list-collectors:
     GET:
-      summary: ListCollectors
+      summary: 'List Collectors '
       description: <p> Retrieves a list of all the installed collectors. </p>
       tags:
-        - Lists
-        - Collectors
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
         - Collectors
   /list-import-file-task:
     GET:
-      summary: ListImportFileTask
+      summary: 'List Import File Task '
       description: <p> Retrieves a list of all the imports performed. </p>
       tags:
-        - Lists
-        - Import
         - File
-        - Tasks
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
         - Import
-        - File
         - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
   /list-servers:
     POST:
-      summary: ListServers
+      summary: 'List Servers '
       description: <p> Returns a list of all the servers. </p>
       tags:
-        - Lists
         - Servers
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
   /put-portfolio-preferences:
     POST:
-      summary: PutPortfolioPreferences
+      summary: 'Put Portfolio Preferences '
       description: <p> Saves the specified migration and modernization preferences. </p>
       tags:
-        - Put
         - Portfolio
         - Preferences
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
-        - Put
   /start-assessment:
     POST:
-      summary: StartAssessment
+      summary: 'Start Assessment '
       description: <p> Starts the assessment of an on-premises environment. </p>
       tags:
-        - Start
         - Assessments
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
-        - Put
-        - Start
   /start-import-file-task:
     POST:
-      summary: StartImportFileTask
+      summary: 'Start Import File Task '
       description: <p> Starts a file import. </p>
       tags:
-        - Start
-        - Import
         - File
-        - Tasks
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
         - Import
-        - File
         - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
-        - Put
-        - Start
   /start-recommendation-report-generation:
     POST:
-      summary: StartRecommendationReportGeneration
+      summary: 'Start Recommendation Report Generation '
       description: <p> Starts generating a recommendation report. </p>
       tags:
-        - Start
+        - Generation
         - Recommendations
         - Reports
-        - Generation
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
-        - Put
-        - Start
-        - Generation
   /stop-assessment:
     POST:
-      summary: StopAssessment
+      summary: 'Stop Assessment '
       description: <p> Stops the assessment of an on-premises environment. </p>
       tags:
-        - Stop
         - Assessments
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
-        - Put
-        - Start
-        - Generation
         - Stop
   /update-applicationcomponent-config/:
     POST:
-      summary: UpdateApplicationComponentConfig
+      summary: 'Update Application Component Config '
       description: <p> Updates the configuration of an application component. </p>
       tags:
-        - Update
+        - Application Components
         - Applications
         - Components
         - Configurations
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
-        - Servers
-        - Application Components
-        - Collectors
-        - Put
-        - Start
-        - Generation
-        - Stop
-        - Update
-        - Application Components
-        - Configurations
   /update-server-config/:
     POST:
-      summary: UpdateServerConfig
+      summary: 'Update Server Config '
       description: <p> Updates the configuration of the specified s
       tags:
-        - Update
-        - Server
         - Configurations
-        - Components
-        - Identifiers
-        - Get
-        - Assessments
-        - Import
-        - File
-        - Tasks
-        - Latest
-        - Portfolio
-        - Preferences
-        - Summaries
-        - Recommendations
-        - Reports
-        - Details
-        - Lists
-        - Analyzable
         - Servers
-        - Application Components
-        - Collectors
-        - Put
-        - Start
-        - Generation
-        - Stop
-        - Update
-        - Application Components
-        - Configurations
-        - null
