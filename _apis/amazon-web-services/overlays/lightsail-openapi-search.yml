@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateRelationalDatabaseParameters
+      summary: 'Update Relational Database Parameters '
       description: >-
         <p>Allows the update of one or more parameters of a database in Amazon
         Lightsail.</p> <p>Parameter updates don't cause outages; therefore,
@@ -21,7 +21,6 @@ paths:
         href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-controlling-access-using-tags">Amazon
         Lightsail Developer Guid
       tags:
-        - Update
-        - Relational
         - Databases
         - Parameters
+        - Relational
