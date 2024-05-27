@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: EnableHealthServiceAccessForOrganization
+      summary: 'Enable Health Service Access For Organization '
       description: >-
         <p>Enables Health to work with Organizations. You can use the
         organizational view feature to aggregate events from all Amazon Web
@@ -28,9 +28,8 @@ paths:
         href="https://docs.aws.amazon.com/health/latest/ug/aggregate-events.html">Aggregating
         Health events</a> in the <i>Health User Guid
       tags:
+        - Access
         - Enable
         - Health
-        - Services
-        - Access
-        - For
         - Organizations
+        - Services
