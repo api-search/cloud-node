@@ -4,7 +4,7 @@ info:
 paths:
   /CreateLink:
     POST:
-      summary: CreateLink
+      summary: 'Create Link '
       description: >-
         <p>Creates a link between a source account and a sink that you have
         created in a monitoring account.</p> <p>Before you create a link, you
@@ -20,13 +20,10 @@ paths:
         accounts.</p> <p>Each source account can be linked to as many as five
         monitoring accounts.</p>
       tags:
-        - Create
-        - Link
-        - Create
         - Link
   /CreateSink:
     POST:
-      summary: CreateSink
+      summary: 'Create Sink '
       description: >-
         <p>Use this to create a <i>sink</i> in the current account, so that it
         can be used as a monitoring account in CloudWatch cross-account
@@ -39,88 +36,55 @@ paths:
         <p>Each account can contain one sink. If you delete a sink, you can then
         create a new one in that account.</p>
       tags:
-        - Create
-        - Sink
-        - Create
-        - Link
         - Sink
   /DeleteLink:
     POST:
-      summary: DeleteLink
+      summary: 'Delete Link '
       description: >-
         <p>Deletes a link between a monitoring account sink and a source
         account. You must run this operation in the source account.</p>
       tags:
-        - Delete
         - Link
-        - Create
-        - Link
-        - Sink
-        - Delete
   /DeleteSink:
     POST:
-      summary: DeleteSink
+      summary: 'Delete Sink '
       description: >-
         <p>Deletes a sink. You must delete all links to a sink before you can
         delete that sink.</p>
       tags:
-        - Delete
         - Sink
-        - Create
-        - Link
-        - Sink
-        - Delete
   /GetLink:
     POST:
-      summary: GetLink
+      summary: 'Get Link '
       description: >-
         <p>Returns complete information about one link.</p> <p>To use this
         operation, provide the link ARN. To retrieve a list of link ARNs, use <a
         href="https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListLinks.html">ListLinks</a>.</p>
       tags:
-        - Get
         - Link
-        - Create
-        - Link
-        - Sink
-        - Delete
-        - Get
   /GetSink:
     POST:
-      summary: GetSink
+      summary: 'Get Sink '
       description: >-
         <p>Returns complete information about one monitoring account sink.</p>
         <p>To use this operation, provide the sink ARN. To retrieve a list of
         sink ARNs, use <a
         href="https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListSinks.html">ListSinks</a>.</p>
       tags:
-        - Get
         - Sink
-        - Create
-        - Link
-        - Sink
-        - Delete
-        - Get
   /GetSinkPolicy:
     POST:
-      summary: GetSinkPolicy
+      summary: 'Get Sink Policy '
       description: >-
         <p>Returns the current sink policy attached to this sink. The sink
         policy specifies what accounts can attach to this sink as source
         accounts, and what types of data they can share.</p>
       tags:
-        - Get
-        - Sink
         - Policies
-        - Create
-        - Link
         - Sink
-        - Delete
-        - Get
-        - Policies
   /ListAttachedLinks:
     POST:
-      summary: ListAttachedLinks
+      summary: 'List Attached Links '
       description: >-
         <p>Returns a list of source account links that are linked to this
         monitoring account sink.</p> <p>To use this operation, provide the sink
@@ -129,21 +93,11 @@ paths:
         <p>To find a list of links for one source account, use <a
         href="https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListLinks.html">ListLinks</a>.</p>
       tags:
-        - Lists
-        - Attached
-        - Links
-        - Create
-        - Link
-        - Sink
-        - Delete
-        - Get
-        - Policies
-        - Lists
         - Attached
         - Links
   /ListLinks:
     POST:
-      summary: ListLinks
+      summary: 'List Links '
       description: >-
         <p>Use this operation in a source account to return a list of links to
         monitoring account sinks that this source account has.</p> <p>To find a
@@ -151,39 +105,18 @@ paths:
         href="https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListAttachedLinks.html">ListAttachedLinks</a>
         from within the monitoring account.</p>
       tags:
-        - Lists
-        - Links
-        - Create
-        - Link
-        - Sink
-        - Delete
-        - Get
-        - Policies
-        - Lists
-        - Attached
         - Links
   /ListSinks:
     POST:
-      summary: ListSinks
+      summary: 'List Sinks '
       description: >-
         <p>Use this operation in a monitoring account to return the list of
         sinks created in that account.</p>
       tags:
-        - Lists
-        - Sinks
-        - Create
-        - Link
-        - Sink
-        - Delete
-        - Get
-        - Policies
-        - Lists
-        - Attached
-        - Links
         - Sinks
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes one or more tags from the specified resource.</p> <important>
         <p>Unlike tagging permissions in other Amazon Web Services services, to
@@ -192,23 +125,13 @@ paths:
         <code>iam:TagResource</code> permission does not allow you to tag and
         untag links and sinks.</p> </important>
       tags:
-        - Untag
-        - Resources
-        - Create
-        - Link
-        - Sink
-        - Delete
-        - Get
-        - Policies
-        - Lists
-        - Attached
-        - Links
-        - Sinks
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /PutSinkPolicy:
     POST:
-      summary: PutSinkPolicy
+      summary: 'Put Sink Policy '
       description: >-
         <p>Creates or updates the resource policy that grants permissions to
         source accounts to link to the monitoring account sink. When you create
@@ -224,25 +147,11 @@ paths:
         <p>See the examples in this section to see how to specify permitted
         source accounts and data types.</p>
       tags:
-        - Put
-        - Sink
         - Policies
-        - Create
-        - Link
         - Sink
-        - Delete
-        - Get
-        - Policies
-        - Lists
-        - Attached
-        - Links
-        - Sinks
-        - Resources
-        - ARN
-        - Put
   /UpdateLink:
     POST:
-      summary: UpdateLink
+      summary: 'Update Link '
       description: >-
         <p>Use this operation to change what types of data are shared from a
         source account to its linked monitoring account sink. You can't change
@@ -250,19 +159,4 @@ paths:
         update the list of tags associated with the sink, use <a
         href="https://docs.aws.amazon.com/OAM/latest/APIReference/API_TagResource.html">TagResourc
       tags:
-        - Update
         - Link
-        - Create
-        - Link
-        - Sink
-        - Delete
-        - Get
-        - Policies
-        - Lists
-        - Attached
-        - Links
-        - Sinks
-        - Resources
-        - ARN
-        - Put
-        - Upda
