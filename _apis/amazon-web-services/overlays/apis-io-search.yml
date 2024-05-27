@@ -209,7 +209,6 @@ apis:
       - ARN
       - Accounts
       - Authorizers
-      - Authorizers
       - Base  Paths
       - Base  Paths  Mappings
       - Base_path
@@ -226,7 +225,6 @@ apis:
       - Deployments
       - Doc_version
       - Documentation
-      - Domains
       - Domain  Names
       - Domain_name
       - Domains
@@ -265,7 +263,6 @@ apis:
       - Response_type
       - Responses
       - Restapi_id
-      - Stages
       - Stage name
       - Stage_name
       - Stages
@@ -280,11 +277,10 @@ apis:
       - Usage
       - Usage  Plans
       - VPC
+      - VPC Links
       - Validators
       - Versions
-      - VPC
       - Vpclink
-      - VPC Links
     properties:
       - type: Documentation
         url: https://aws.amazon.com/api-gateway/
@@ -361,7 +357,6 @@ apis:
       - Bundles
       - Connect
       - Destinations
-      - Ingestions
       - Ingestion  Destinations
       - Ingestions
       - Resources
