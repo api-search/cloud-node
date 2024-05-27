@@ -1,4 +1,6 @@
 ---
+aid: amazon-web-services
+type: Index
 name: Amazon Web Services
 description: >-
   Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand
@@ -10341,5 +10343,4 @@ overlays:
     url: overlays/apis-io-search.yml
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
-aid: amazon-web-services
 ---
