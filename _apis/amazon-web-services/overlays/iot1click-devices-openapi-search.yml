@@ -4,20 +4,19 @@ info:
 paths:
   /claims/{claimCode}:
     PUT:
-      summary: ClaimDevicesByClaimCode
+      summary: 'Claim Devices By Claim Code '
       description: >-
         <p>Adds device(s) to your account (i.e., claim one or more devices) if
         and only if you
          received a claim code with the device(s).</p>
       tags:
         - Claim
+        - Claims
+        - Code
         - Devices
-        - By
-        - Code
-        - Code
   /devices/{deviceId}:
     GET:
-      summary: DescribeDevice
+      summary: 'Describe Device '
       description: >-
         <p>Given a device ID, returns a DescribeDeviceResponse object describing
         the
@@ -25,11 +24,10 @@ paths:
       tags:
         - Describe
         - Device
-        - Code
-        - Identifiers
+        - Devices
   /devices/{deviceId}/finalize-claim:
     PUT:
-      summary: FinalizeDeviceClaim
+      summary: 'Finalize Device Claim '
       description: >-
         <p>Given a device ID, finalizes the claim request for the associated
         device.</p><note>
@@ -38,32 +36,25 @@ paths:
          be published by simply clicking the device.</p>
          </note>
       tags:
-        - Finalize
+        - Claim
         - Device
-        - Claim
-        - Code
-        - Identifiers
+        - Devices
         - Finalize
-        - Claim
   /devices/{deviceId}/methods:
     POST:
-      summary: InvokeDeviceMethod
+      summary: 'Invoke Device Method '
       description: >-
         <p>Given a device ID, issues a request to invoke a named device method
         (with possible
          parameters). See the "Example POST" code snippet below.</p>
       tags:
-        - Invoke
         - Device
-        - Methods
-        - Code
-        - Identifiers
-        - Finalize
-        - Claim
+        - Devices
+        - Invoke
         - Methods
   /devices/{deviceId}/initiate-claim:
     PUT:
-      summary: InitiateDeviceClaim
+      summary: 'Initiate Device Claim '
       description: >-
         <p>Given a device ID, initiates a claim request for the associated
         device.</p><note>
@@ -72,110 +63,56 @@ paths:
          be published by simply clicking the device.</p>
          </note>
       tags:
-        - Initiate
+        - Claim
         - Device
-        - Claim
-        - Code
-        - Identifiers
-        - Finalize
-        - Claim
-        - Methods
+        - Devices
         - Initiate
   /devices/{deviceId}/events:
     GET:
-      summary: ListDeviceEvents
+      summary: 'List Device Events '
       description: >-
         <p>Using a device ID, returns a DeviceEventsResponse object containing
         an
          array of events for the device.</p>
       tags:
-        - Lists
         - Device
-        - Events
-        - Code
-        - Identifiers
-        - Finalize
-        - Claim
-        - Methods
-        - Initiate
+        - Devices
         - Events
   /devices:
     GET:
-      summary: ListDevices
+      summary: 'List Devices '
       description: >-
         <p>Lists the 1-Click compatible devices associated with your AWS
         account.</p>
       tags:
-        - Lists
-        - Devices
-        - Code
-        - Identifiers
-        - Finalize
-        - Claim
-        - Methods
-        - Initiate
-        - Events
         - Devices
   /tags/{resource-arn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Using tag keys, deletes the tags (key/value pairs) associated with
         the specified
          resource ARN.</p>
       tags:
-        - Untag
-        - Resources
-        - Code
-        - Identifiers
-        - Finalize
-        - Claim
-        - Methods
-        - Initiate
-        - Events
-        - Devices
-        - Tags
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /devices/{deviceId}/unclaim:
     PUT:
-      summary: UnclaimDevice
+      summary: 'Unclaim Device '
       description: <p>Disassociates a device from your AWS account using its device ID.</p>
       tags:
-        - Unclaim
         - Device
-        - Code
-        - Identifiers
-        - Finalize
-        - Claim
-        - Methods
-        - Initiate
-        - Events
         - Devices
-        - Tags
-        - Resources
-        - ARN
         - Unclaim
   /devices/{deviceId}/state:
     PUT:
-      summary: UpdateDeviceState
+      summary: 'Update Device State '
       description: |-
         <p>Using a Boolean value (true or false), this operation
          enables or disables the device given a devi
       tags:
-        - Update
         - Device
-        - States
-        - Code
-        - Identifiers
-        - Finalize
-        - Claim
-        - Methods
-        - Initiate
-        - Events
         - Devices
-        - Tags
-        - Resources
-        - ARN
-        - Unclaim
-        - null
+        - States
