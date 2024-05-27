@@ -5912,7 +5912,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/inspector/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Scans
     properties:
       - type: Documentation
         url: https://aws.amazon.com/inspector/
@@ -5972,7 +5973,12 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/health/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Enable
+      - Health
+      - Organizations
+      - Services
     properties:
       - type: Documentation
         url: https://aws.amazon.com/health/
@@ -6010,7 +6016,135 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Certificates
+      - Transfers
+      - Billing
+      - Groups
+      - Things
+      - Associate
+      - Jobs
+      - Targets
+      - Detach
+      - Names
+      - Policies
+      - Target
+      - Principals
+      - Profiles
+      - Security
+      - Actions
+      - Audit
+      - Cancel
+      - Mitigation
+      - Mitigation Actions
+      - Tasks
+      - Detect
+      - Execution
+      - Authorizers
+      - Default
+      - Sets
+      - Confirm
+      - Confirmation
+      - Confirmdestination
+      - Destinations
+      - Rules
+      - Tokens
+      - Topics
+      - Suppressions
+      - Er
+      - Ers
+      - Prov
+      - Providers
+      - Custom
+      - Metrics
+      - Dimensions
+      - Configurations
+      - Domains
+      - Dynamic
+      - Fleets
+      - Describe
+      - Templates
+      - Keys
+      - OTAUpdate
+      - Packages
+      - Versions
+      - Claim
+      - Provisioning
+      - Alias
+      - Aliases
+      - Roles
+      - Scheduled
+      - Scheduled Audits
+      - Stream
+      - Streams
+      - Types
+      - Replace
+      - Accounts
+      - CACertificate
+      - Numbers
+      - Code
+      - Registration Codes
+      - Registrations
+      - ARN
+      - Levels
+      - V2Logging
+      - V2logging
+      - Deprecate
+      - Findings
+      - Endpoints
+      - Events
+      - Index
+      - Indices
+      - Managed
+      - Disable
+      - Enable
+      - Behavior
+      - Models
+      - Summaries
+      - Training
+      - Aggregation
+      - Buckets
+      - Cardinality
+      - Effective
+      - Indexing
+      - Document
+      - Logging
+      - Options
+      - Percentiles
+      - Statistics
+      - Active
+      - Violations
+      - Attached
+      - Executions
+      - Demand
+      - 'On'
+      - CACertificates
+      - CA
+      - Values
+      - OTAUpdates
+      - Out
+      - Outgoing
+      - Related
+      - Resources
+      - Audits
+      - Tags
+      - Reports
+      - Register
+      - States
+      - Verification
+      - Reject
+      - Removes
+      - Search
+      - Stop
+      - Authorization
+      - Tests
+      - Invoke
+      - Untag
+      - Ate
+      - Behaviors
+      - Val
+      - Validate
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot/
@@ -6054,7 +6188,15 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Execution
+      - Jobs
+      - Names
+      - Things
+      - Executions
+      - Pending
+      - $Next
+      - Next
     properties:
       - type: Documentation
         url: https://example.com
@@ -6081,7 +6223,19 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Monitors
+      - Names
+      - Events
+      - Health
+      - Queries
+      - Results
+      - Status
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: >-
@@ -6113,7 +6267,28 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-analytics/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Messages
+      - Cancel
+      - Names
+      - Pipelines
+      - Reprocessing
+      - Channels
+      - Datasets
+      - Content
+      - Data Store
+      - Logging
+      - Options
+      - Contents
+      - Resources
+      - Tags
+      - Untag
+      - Activity
+      - Pipeline Activities
+      - Runs
+      - Data
+      - Samples
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-analytics/
@@ -6149,7 +6324,17 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-core/device-advisor/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Definitions
+      - Suites
+      - Endpoints
+      - Runs
+      - Reports
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-core/device-advisor/
@@ -6179,7 +6364,18 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-1-click/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Device
+      - Devices
+      - Disassociate
+      - Names
+      - Placements
+      - Projects
+      - Templates
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-1-click/
@@ -6212,7 +6408,23 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-events/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Acknowledge
+      - Alarm
+      - Alarms
+      - Batches
+      - Detectors
+      - Disable
+      - Enable
+      - Inputs
+      - Messages
+      - Reset
+      - Snooze
+      - Describe
+      - Keys
+      - Models
+      - Names
+      - Values
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-events/
@@ -6242,7 +6454,12 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-device-management/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-device-management/
@@ -6276,7 +6493,16 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Names
+      - Shadow
+      - Things
+      - Messages
+      - Retained
+      - Topics
+      - Named
+      - Shadows
+      - Publish
     properties:
       - type: Documentation
         url: >-
@@ -6299,7 +6525,24 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-1-click/devices/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Claim
+      - Claims
+      - Code
+      - Devices
+      - Describe
+      - Device
+      - Finalize
+      - Invoke
+      - Methods
+      - Initiate
+      - Events
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Unclaim
+      - States
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-1-click/devices/
@@ -6327,7 +6570,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneling.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -6350,7 +6595,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-fleetwise/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Vehicle
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-fleetwise/
@@ -6385,7 +6631,28 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ivs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Channels
+      - Keys
+      - Stream
+      - Revocations
+      - Sessions
+      - Viewers
+      - Playback
+      - Policies
+      - Restrictions
+      - Configurations
+      - Recording
+      - Pairs
+      - Import
+      - Streams
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Metadata
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ivs/
@@ -6417,7 +6684,22 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-events/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alarm
+      - Models
+      - Detectors
+      - Inputs
+      - Names
+      - Analysis
+      - Describe
+      - Logging
+      - Options
+      - Results
+      - Versions
+      - Routings
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-events/
@@ -6446,7 +6728,54 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-sitewise/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Assets
+      - Associate
+      - Properties
+      - Series
+      - Time
+      - Time Series
+      - Batches
+      - Projects
+      - Disassociate
+      - Aggregates
+      - Latest
+      - Value
+      - History
+      - Access
+      - Policies
+      - Models
+      - Composite
+      - Bulk
+      - Import
+      - Jobs
+      - Dashboards
+      - Gateways
+      - Portals
+      - Dashboard
+      - Actions
+      - Describe
+      - Accounts
+      - Configurations
+      - Default
+      - Encryption
+      - Capabilities
+      - Namespaces
+      - Logging
+      - Options
+      - Storage
+      - Execute
+      - Execution
+      - Queries
+      - Interpolated
+      - Values
+      - Relationships
+      - Associated
+      - Hierarchy
+      - Compositions
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-sitewise/
@@ -6480,7 +6809,32 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/iot-twinmaker/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Entities
+      - Properties
+      - Values
+      - Workspaces
+      - Cancel
+      - Jobs
+      - Metadata
+      - Transfers
+      - Components
+      - Types
+      - Scenes
+      - Sources
+      - Sync
+      - Execute
+      - Execution
+      - Queries
+      - Plan
+      - Pricing
+      - Pricing Plans
+      - Value
+      - History
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/iot-twinmaker/
@@ -6521,7 +6875,21 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ivs/features/chat/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Chat
+      - Tokens
+      - Configurations
+      - Logging
+      - Rooms
+      - Messages
+      - Disconnect
+      - Users
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Events
+      - Send
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ivs/features/chat/
@@ -6541,7 +6909,38 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/msk/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Clusters
+      - Secrets
+      - Replication
+      - Replicators
+      - Configurations
+      - Connections
+      - VPC
+      - Describe
+      - Policies
+      - Operation
+      - Operations
+      - Revisions
+      - Bootstrap
+      - Brokers
+      - Compatible
+      - Kafka
+      - Versions
+      - Clients
+      - Nodes
+      - Resources
+      - Tags
+      - Untag
+      - Reboot
+      - Count
+      - Types
+      - Storage
+      - Connectivity
+      - Monitoring
+      - Info
+      - Security
     properties:
       - type: Documentation
         url: https://aws.amazon.com/msk/
@@ -6575,7 +6974,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/kendra/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Thesaurus
     properties:
       - type: Documentation
         url: https://aws.amazon.com/kendra/
@@ -6626,7 +7026,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/keyspaces/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Tables
     properties:
       - type: Documentation
         url: https://aws.amazon.com/keyspaces/
@@ -6669,7 +7070,50 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/iot-wireless/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accounts
+      - Partners
+      - Associate
+      - Groups
+      - Multicast
+      - Tasks
+      - Device
+      - Wireless
+      - Devices
+      - Disassociate
+      - Things
+      - Certificates
+      - Gateways
+      - Sessions
+      - Destinations
+      - Profiles
+      - Analyzer
+      - Configurations
+      - Networks
+      - Services
+      - Definitions
+      - Names
+      - Data
+      - Send
+      - Import
+      - Deregister
+      - Events
+      - Resources
+      - Types
+      - Levels
+      - Logs
+      - Positions
+      - Estimates
+      - Reset
+      - Endpoints
+      - Statistics
+      - Firmware
+      - Information
+      - Tags
+      - Untag
+      - Bulk
+      - Single
+      - Tests
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/iot-wireless/
@@ -6689,7 +7133,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/kendra/latest/dg/intelligent-rerank.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Execution
+      - Plan
+      - Rescore
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/kendra/latest/dg/intelligent-rerank.html
@@ -6714,7 +7161,51 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/lambda/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Layers
+      - Names
+      - Numbers
+      - Policies
+      - Versions
+      - Functions
+      - Aliases
+      - Code
+      - Configurations
+      - Signing
+      - Events
+      - Mapping
+      - Sources
+      - URL
+      - Alias
+      - ARN
+      - '06'
+      - '30'
+      - Concurrency
+      - '2019'
+      - Invoke
+      - Provisioned
+      - Accounts
+      - Settings
+      - Layers?find=layer
+      - '07'
+      - Management
+      - Runtime
+      - Invocations
+      - '13'
+      - '2014'
+      - Async
+      - '15'
+      - Responses
+      - Stream
+      - Streaming
+      - Publish
+      - Concurrency?list=all
+      - Resources
+      - Tags
+      - Untag
+      - Permission
+      - Removes
+      - Statements
     properties:
       - type: Documentation
         url: https://aws.amazon.com/lambda/
@@ -6746,7 +7237,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/kinesis/data-streams/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Mode
+      - Stream
     properties:
       - type: Documentation
         url: https://aws.amazon.com/kinesis/data-streams/
@@ -6782,7 +7275,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Verify
     properties:
       - type: Documentation
         url: https://aws.amazon.com/kms/
@@ -6814,7 +7308,11 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/launchwizard/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Deployments
+      - Workloads
+      - Events
+      - Patterns
     properties:
       - type: Documentation
         url: https://aws.amazon.com/launchwizard/
@@ -6836,7 +7334,35 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/lex/latest/dg/API_Operations.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Bot
+      - Bots
+      - Names
+      - Versions
+      - Intent
+      - Intents
+      - Slot Types
+      - Slots
+      - Types
+      - Alias
+      - Aliases
+      - Associations
+      - Channels
+      - Users
+      - Utterances
+      - Built In
+      - Signatures
+      - Exports
+      - Import
+      - Imports
+      - Migrations
+      - Bot Name
+      - View
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - $Latest
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/lex/latest/dg/API_Operations.html
@@ -6856,7 +7382,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/license-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Services
+      - Settings
     properties:
       - type: Documentation
         url: https://aws.amazon.com/license-manager/
@@ -6891,7 +7419,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/lightsail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Databases
+      - Parameters
+      - Relational
     properties:
       - type: Documentation
         url: https://aws.amazon.com/lightsail/
@@ -6925,7 +7456,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/lookout-for-equipment/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Retraining
+      - Scheduler
     properties:
       - type: Documentation
         url: https://aws.amazon.com/lookout-for-equipment/
@@ -6956,7 +7489,58 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/lake-formation/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - LFTags
+      - Resources
+      - Assume
+      - Decorated
+      - Roles
+      - SAML
+      - Saml
+      - Batches
+      - Grants
+      - Permissions
+      - Revoke
+      - Cancel
+      - Transactions
+      - Commit
+      - Cells
+      - Data
+      - Filter
+      - LFTag
+      - Lftag
+      - Center
+      - Configurations
+      - Formation
+      - Identity
+      - Lakes
+      - Opt
+      - Objects
+      - 'On'
+      - Deregister
+      - Describe
+      - Extend
+      - Settings
+      - Effective
+      - Paths
+      - Queries
+      - States
+      - Statistics
+      - Tables
+      - Credentials
+      - Glue
+      - Partition
+      - Temporary
+      - Results
+      - Units
+      - Work
+      - Optimizers
+      - Storage
+      - Register
+      - Removes
+      - Databases
+      - Search
+      - Planning
     properties:
       - type: Documentation
         url: https://aws.amazon.com/lake-formation/
@@ -6992,7 +7576,10 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Anomaly
+      - Detectors
+      - Logs
     properties:
       - type: Documentation
         url: >-
@@ -7013,7 +7600,33 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/lookout-for-metrics/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Activate
+      - Anomaly
+      - Detectors
+      - Tests
+      - Alerts
+      - Metrics
+      - Sets
+      - Deactivate
+      - Describe
+      - Detections
+      - Executions
+      - Configurations
+      - Detect
+      - Groups
+      - Data
+      - Quality
+      - Feedback
+      - Samples
+      - Related
+      - Summaries
+      - Series
+      - Time
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/lookout-for-metrics/
@@ -7048,7 +7661,25 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/lookout-for-vision/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Datasets
+      - Names
+      - Projects
+      - Models
+      - Describe
+      - Types
+      - Versions
+      - Jobs
+      - Model Packaging Jobs
+      - Packaging
+      - Anomalies
+      - Detect
+      - Entries
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/lookout-for-vision/
@@ -7086,7 +7717,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ai/machine-learning/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Machine Learning
+      - ' Model'
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ai/machine-learning/
@@ -7122,7 +7755,62 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/macie/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Invitation
+      - Invitations
+      - Batches
+      - Custom
+      - Data
+      - Entifiers
+      - Allow
+      - Classifications
+      - Jobs
+      - Filters
+      - Findings
+      - Findings Filter
+      - Members
+      - Samples
+      - Decline
+      - Filter
+      - Buckets
+      - Data Source
+      - Describe
+      - Administrative
+      - Configurations
+      - Organizations
+      - Sessions
+      - Accounts
+      - Administrator
+      - Disassociate
+      - Master
+      - Automated
+      - Discovery
+      - Bucket
+      - Statistics
+      - Exports
+      - Scopes
+      - Publication
+      - Count
+      - Profiles
+      - Resources
+      - Reveal
+      - Occurrences
+      - Sensitive
+      - Availability
+      - Inspections
+      - Sensitivity
+      - Templates
+      - Usage
+      - Totals
+      - Managed
+      - Artifacts
+      - Detections
+      - ARN
+      - Tags
+      - Untag
+      - Search
+      - Tests
     properties:
       - type: Documentation
         url: https://aws.amazon.com/macie/
@@ -7155,7 +7843,33 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/mainframe-modernization/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Batches
+      - Cancel
+      - Execution
+      - Executions
+      - Jobs
+      - Data
+      - Datasets
+      - Import
+      - Sets
+      - Tasks
+      - Deployments
+      - Environments
+      - Versions
+      - Details
+      - Names
+      - Signed
+      - URL
+      - Definitions
+      - History
+      - Engines
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/mainframe-modernization/
@@ -7184,7 +7898,51 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/location/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Associate
+      - Consumer
+      - Consumers
+      - Names
+      - Trackers
+      - Tracking
+      - Batches
+      - Device
+      - History
+      - Positions
+      - Collections
+      - Geofences
+      - Geofencing
+      - Evaluate
+      - Calculate
+      - Calculators
+      - Routes
+      - Matrix
+      - Keys
+      - Metadata
+      - Maps
+      - Index
+      - Indexes
+      - Places
+      - ARN
+      - Disassociate
+      - Devices
+      - Latest
+      - Fonts
+      - Glyphs
+      - Ranges
+      - Stack
+      - Unicode
+      - File
+      - Sprites
+      - Descriptions
+      - Styles
+      - Tiles
+      - Resources
+      - Tags
+      - Untag
+      - Search
+      - Suggestions
+      - Text
     properties:
       - type: Documentation
         url: https://aws.amazon.com/location/
@@ -7221,7 +7979,17 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Describe
+      - Entities
+      - Cancel
+      - Change
+      - Sets
+      - Policies
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -7248,7 +8016,15 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/managed-blockchain/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Balance
+      - Batches
+      - Tokens
+      - Assets
+      - Contracts
+      - Transactions
+      - Balances
+      - Events
     properties:
       - type: Documentation
         url: https://aws.amazon.com/managed-blockchain/
@@ -7281,7 +8057,16 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Catalog
+      - Catalogs
+      - Deployments
+      - Parameters
+      - Products
     properties:
       - type: Documentation
         url: >-
@@ -7303,7 +8088,37 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/mediaconnect/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Br
+      - Bridges
+      - Ge
+      - Ges
+      - Outputs
+      - Sources
+      - Flows
+      - Media
+      - Streams
+      - Interfaces
+      - VPC
+      - Gateways
+      - Describe
+      - Instances
+      - Metadata
+      - Offerings
+      - Purchase
+      - Reservations
+      - Entitlements
+      - Grants""
+      - Resources
+      - Tags
+      - Untag
+      - Names
+      - Output
+      - Stream
+      - Removes
+      - Stop
+      - States
     properties:
       - type: Documentation
         url: https://aws.amazon.com/mediaconnect/
@@ -7333,7 +8148,22 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/mediaconvert/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Associate
+      - Certificates
+      - Jobs
+      - Templates
+      - Presets
+      - Queues
+      - Names
+      - Policies
+      - Describe
+      - Endpoints
+      - ARN
+      - Disassociate
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/mediaconvert/
@@ -7363,7 +8193,42 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/medialive/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Device
+      - Devices
+      - Inputs
+      - Transfers
+      - Batches
+      - Stop
+      - Channels
+      - Describe
+      - Schedules
+      - Cancel
+      - Claim
+      - Groups
+      - Security
+      - Multiplexes
+      - Multiplex
+      - Programs
+      - Partners
+      - ARN
+      - Resources
+      - Tags
+      - Names
+      - Program
+      - Reservations
+      - Accounts
+      - Configurations
+      - Data
+      - Thumbnails
+      - Offerings
+      - Purchase
+      - Reboot
+      - Reject
+      - Maintenance
+      - Window
+      - Classes
     properties:
       - type: Documentation
         url: https://aws.amazon.com/medialive/
@@ -7397,7 +8262,9 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/marketplace-agreements/latest/api-reference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Agreements
+      - Search
     properties:
       - type: Documentation
         url: >-
@@ -7419,7 +8286,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/mediastore/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/mediastore/
@@ -7451,7 +8320,10 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Data
+      - Exports
+      - Support
     properties:
       - type: Documentation
         url: >-
@@ -7473,7 +8345,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/marketplace/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Customers
+      - Resolve
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/marketplace/
@@ -7499,7 +8373,57 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/application-migration-service/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Archive
+      - Waves
+      - Associate
+      - Servers
+      - Sources
+      - Change
+      - Cycle
+      - Life
+      - States
+      - Connectors
+      - Configurations
+      - Launch
+      - Templates
+      - Replication
+      - Jobs
+      - Clients
+      - Describe
+      - Items
+      - Logs
+      - Disassociate
+      - Disconnect
+      - Services
+      - Finalize
+      - Initialize
+      - Errors
+      - Exports
+      - Import
+      - Imports
+      - Accounts
+      - Managed
+      - Actions
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Archived
+      - Mark
+      - Pause
+      - Removes
+      - Resume
+      - Data
+      - Retry
+      - Tests
+      - Stop
+      - Instances
+      - Target
+      - Terminate
+      - Unarchive
+      - Types
     properties:
       - type: Documentation
         url: https://aws.amazon.com/application-migration-service/
@@ -7528,7 +8452,23 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Copy
+      - Data Store
+      - Images
+      - Sets
+      - Sources
+      - DICOMImport
+      - Dicomimport
+      - Jobs
+      - Frames
+      - Metadata
+      - Versions
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Search
     properties:
       - type: Documentation
         url: https://example.com
@@ -7564,7 +8504,18 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/what-is-mhub-refactor-spaces.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Environments
+      - Routes
+      - Services
+      - Policies
+      - Resource Policies
+      - Resources
+      - VPC
+      - ARN
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -7588,7 +8539,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/memorydb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Users
     properties:
       - type: Documentation
         url: https://aws.amazon.com/memorydb/
@@ -7622,7 +8574,28 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://docs.aws.amazon.com/migrationhub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Application Components
+      - Applications
+      - Components
+      - Details
+      - Strategies
+      - Assessments
+      - File
+      - Import
+      - Tasks
+      - Latest
+      - Portfolio
+      - Preferences
+      - Summaries
+      - Recommendations
+      - Reports
+      - Servers
+      - Analyzable
+      - Collectors
+      - Generation
+      - Stop
+      - Configurations
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/migrationhub/
@@ -7645,7 +8618,28 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/what-is-migrationhub-orchestrator.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Migration Workflows
+      - Workflows
+      - Steps
+      - Workflow Step
+      - Groups
+      - Workflow Step Groups
+      - Workflow Step Group
+      - Migration Workflow Templates
+      - Templates
+      - Template Steps
+      - Step Groups
+      - Plugins
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Templatestepgroups
+      - Workflow Steps
+      - Retry
+      - Retry Workflow Steps
+      - Stop
     properties:
       - type: Documentation
         url: >-
@@ -7668,7 +8662,26 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/mediatailor/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Channels
+      - Configure
+      - Logs
+      - Configurations
+      - Playback
+      - Names
+      - Live
+      - Locations
+      - Sources
+      - Prefetch
+      - Schedules
+      - Program
+      - Policies
+      - Alerts
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/mediatailor/
@@ -7704,7 +8717,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://www.mturk.com/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Qualification
+      - Types
     properties:
       - type: Documentation
         url: https://www.mturk.com/
@@ -7740,7 +8755,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/cloudwatch/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/cloudwatch/
@@ -7772,7 +8789,21 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/managed-workflows-for-apache-airflow/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - CLI
+      - Clitoken
+      - Names
+      - Tokens
+      - Environments
+      - Login
+      - Web
+      - Webtoken
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Metrics
+      - Publish
     properties:
       - type: Documentation
         url: https://aws.amazon.com/managed-workflows-for-apache-airflow/
@@ -7806,7 +8837,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/neptune/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - DBCluster
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/neptune/
@@ -7876,7 +8909,22 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Import
+      - Import Tasks
+      - Tasks
+      - Queries
+      - Graphs
+      - Snapshots
+      - Endpoints
+      - Private
+      - VPC
+      - Summaries
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Restore
     properties:
       - type: Documentation
         url: >-
@@ -7900,7 +8948,36 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/nimble-studio/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Acceptances
+      - EULA
+      - Studios
+      - Launch
+      - Profiles
+      - Images
+      - Streaming
+      - Sessions
+      - Stream
+      - Streams
+      - Components
+      - Members
+      - Memberships
+      - Principals
+      - Eulas
+      - Details
+      - Initialization
+      - Initialize
+      - Backup
+      - Backups
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Configurations
+      - Repair
+      - SSO
+      - SSOConfiguration
+      - Stop
     properties:
       - type: Documentation
         url: https://aws.amazon.com/nimble-studio/
