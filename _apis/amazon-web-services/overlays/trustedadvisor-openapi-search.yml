@@ -4,155 +4,84 @@ info:
 paths:
   /v1/organization-recommendations/{organizationRecommendationIdentifier}:
     GET:
-      summary: GetOrganizationRecommendation
+      summary: 'Get Organization Recommendation '
       description: >-
         <p>Get a specific recommendation within an AWS Organizations
         organization. This API supports only prioritized recommendations. </p>
       tags:
-        - Get
         - Organizations
         - Recommendations
-        - Recommendations
-        - Identifiers
   /v1/recommendations/{recommendationIdentifier}:
     GET:
-      summary: GetRecommendation
+      summary: 'Get Recommendation '
       description: <p>Get a specific Recommendation</p>
       tags:
-        - Get
         - Recommendations
-        - Recommendations
-        - Identifiers
   /v1/checks:
     GET:
-      summary: ListChecks
+      summary: 'List Checks '
       description: <p>List a filterable set of Checks</p>
       tags:
-        - Lists
-        - Checks
-        - Recommendations
-        - Identifiers
-        - V1
         - Checks
   /v1/organization-recommendations/{organizationRecommendationIdentifier}/accounts:
     GET:
-      summary: ListOrganizationRecommendationAccounts
+      summary: 'List Organization Recommendation Accounts '
       description: >-
         <p>Lists the accounts that own the resources for an organization
         aggregate recommendation. This API only supports prioritized
         recommendations. </p>
       tags:
-        - Lists
+        - Accounts
         - Organizations
         - Recommendations
-        - Accounts
-        - Recommendations
-        - Identifiers
-        - V1
-        - Checks
-        - Accounts
   /v1/organization-recommendations/{organizationRecommendationIdentifier}/resources:
     GET:
-      summary: ListOrganizationRecommendationResources
+      summary: 'List Organization Recommendation Resources '
       description: >-
         <p>List Resources of a Recommendation within an Organization. This API
         only supports prioritized recommendations. </p>
       tags:
-        - Lists
         - Organizations
         - Recommendations
         - Resources
-        - Recommendations
-        - Identifiers
-        - V1
-        - Checks
-        - Accounts
-        - Resources
   /v1/organization-recommendations:
     GET:
-      summary: ListOrganizationRecommendations
+      summary: 'List Organization Recommendations '
       description: >-
         <p>List a filterable set of Recommendations within an Organization. This
         API only supports prioritized recommendations. </p>
       tags:
-        - Lists
-        - Organizations
-        - Recommendations
-        - Recommendations
-        - Identifiers
-        - V1
-        - Checks
-        - Accounts
-        - Resources
         - Organizations
         - Recommendations
   /v1/recommendations/{recommendationIdentifier}/resources:
     GET:
-      summary: ListRecommendationResources
+      summary: 'List Recommendation Resources '
       description: <p>List Resources of a Recommendation</p>
       tags:
-        - Lists
         - Recommendations
         - Resources
-        - Recommendations
-        - Identifiers
-        - V1
-        - Checks
-        - Accounts
-        - Resources
-        - Organizations
-        - Recommendations
   /v1/recommendations:
     GET:
-      summary: ListRecommendations
+      summary: 'List Recommendations '
       description: <p>List a filterable set of Recommendations</p>
       tags:
-        - Lists
-        - Recommendations
-        - Recommendations
-        - Identifiers
-        - V1
-        - Checks
-        - Accounts
-        - Resources
-        - Organizations
         - Recommendations
   /v1/organization-recommendations/{organizationRecommendationIdentifier}/lifecycle:
     PUT:
-      summary: UpdateOrganizationRecommendationLifecycle
+      summary: 'Update Organization Recommendation Lifecycle '
       description: >-
         <p>Update the lifecyle of a Recommendation within an Organization. This
         API only supports prioritized recommendations. </p>
       tags:
-        - Update
+        - Lifecycle
         - Organizations
         - Recommendations
-        - Lifecycle
-        - Recommendations
-        - Identifiers
-        - V1
-        - Checks
-        - Accounts
-        - Resources
-        - Organizations
-        - Recommendations
-        - Lifecycle
   /v1/recommendations/{recommendationIdentifier}/lifecycle:
     PUT:
-      summary: UpdateRecommendationLifecycle
+      summary: 'Update Recommendation Lifecycle '
       description: >-
         <p>Update the lifecyle of a Recommendation. This API only supports
         prioritized recommenda
       tags:
-        - Update
-        - Recommendations
         - Lifecycle
         - Recommendations
-        - Identifiers
-        - V1
-        - Checks
-        - Accounts
-        - Resources
-        - Organizations
-        - Recommendations
-        - Lifecycle
