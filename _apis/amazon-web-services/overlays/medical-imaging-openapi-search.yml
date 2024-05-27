@@ -4,207 +4,101 @@ info:
 paths:
   /datastore/{datastoreId}/imageSet/{sourceImageSetId}/copyImageSet:
     POST:
-      summary: CopyImageSet
+      summary: 'Copy Image Set '
       description: <p>Copy an image set.</p>
       tags:
         - Copy
+        - Data Store
         - Images
         - Sets
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
+        - Sources
   /datastore:
     GET:
-      summary: ListDatastores
+      summary: 'List Datastores '
       description: <p>List data stores.</p>
       tags:
-        - Lists
-        - Data Store
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
   /datastore/{datastoreId}:
     GET:
-      summary: GetDatastore
+      summary: 'Get Datastore '
       description: <p>Get data store properties.</p>
       tags:
-        - Get
-        - Data Store
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
   /datastore/{datastoreId}/imageSet/{imageSetId}/deleteImageSet:
     POST:
-      summary: DeleteImageSet
+      summary: 'Delete Image Set '
       description: <p>Delete an image set.</p>
       tags:
-        - Delete
-        - Images
-        - Sets
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
-        - Delete
+        - Images
+        - Sets
   /getDICOMImportJob/datastore/{datastoreId}/job/{jobId}:
     GET:
-      summary: GetDICOMImportJob
+      summary: 'Get DICOMImport Job '
       description: >-
         <p>Get the import job properties to learn more about the job or job
         progress.</p>
       tags:
-        - Get
-        - Import
-        - Jobs
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
+        - DICOMImport
         - Data Store
-        - Delete
-        - Import
+        - Dicomimport
         - Jobs
   /datastore/{datastoreId}/imageSet/{imageSetId}/getImageFrame:
     POST:
-      summary: GetImageFrame
+      summary: 'Get Image Frame '
       description: <p>Get an image frame (pixel data) for an image set.</p>
       tags:
-        - Get
-        - Images
+        - Data Store
         - Frames
-        - Identifiers
         - Images
         - Sets
-        - Source
-        - Copy
-        - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
   /datastore/{datastoreId}/imageSet/{imageSetId}/getImageSet:
     POST:
-      summary: GetImageSet
+      summary: 'Get Image Set '
       description: <p>Get image set properties.</p>
       tags:
-        - Get
-        - Images
-        - Sets
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
+        - Images
+        - Sets
   /datastore/{datastoreId}/imageSet/{imageSetId}/getImageSetMetadata:
     POST:
-      summary: GetImageSetMetadata
+      summary: 'Get Image Set Metadata '
       description: <p>Get metadata attributes for an image set.</p>
       tags:
-        - Get
-        - Images
-        - Sets
-        - Metadata
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
+        - Images
         - Metadata
+        - Sets
   /listDICOMImportJobs/datastore/{datastoreId}:
     GET:
-      summary: ListDICOMImportJobs
+      summary: 'List DICOMImport Jobs '
       description: <p>List import jobs created for a specific data store.</p>
       tags:
-        - Lists
-        - Import
-        - Jobs
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
+        - DICOMImport
         - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
-        - Metadata
+        - Dicomimport
         - Jobs
   /datastore/{datastoreId}/imageSet/{imageSetId}/listImageSetVersions:
     POST:
-      summary: ListImageSetVersions
+      summary: 'List Image Set Versions '
       description: <p>List image set versions.</p>
       tags:
-        - Lists
-        - Images
-        - Sets
-        - Versions
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
-        - Metadata
-        - Jobs
-        - Lists
+        - Images
+        - Sets
         - Versions
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from a medical imaging resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
-        - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
-        - Metadata
-        - Jobs
-        - Lists
-        - Versions
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /datastore/{datastoreId}/searchImageSets:
     POST:
-      summary: SearchImageSets
+      summary: 'Search Image Sets '
       description: >-
         <p>Search image sets based on defined input attributes.</p> <note> <p>
         <code>SearchImageSets</code> accepts a single search query parameter and
@@ -214,30 +108,13 @@ paths:
         <code>updatedAt</code> field for sorting in decreasing order from latest
         to oldest.</p> </note>
       tags:
-        - Search
-        - Images
-        - Sets
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
-        - Metadata
-        - Jobs
-        - Lists
-        - Versions
-        - ARN
+        - Images
         - Search
         - Sets
   /startDICOMImportJob/datastore/{datastoreId}:
     POST:
-      summary: StartDICOMImportJob
+      summary: 'Start DICOMImport Job '
       description: >-
         <p>Start importing bulk data into an <code>ACTIVE</code> data store. The
         import job imports DICOM P10 files found in the S3 prefix specified by
@@ -245,52 +122,16 @@ paths:
         results in the file specified by the <code>outputS3Uri</code>
         parameter.</p>
       tags:
-        - Start
-        - Import
-        - Jobs
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
+        - DICOMImport
         - Data Store
-        - Delete
-        - Import
+        - Dicomimport
         - Jobs
-        - Get
-        - Frames
-        - Metadata
-        - Jobs
-        - Lists
-        - Versions
-        - ARN
-        - Search
-        - Sets
   /datastore/{datastoreId}/imageSet/{imageSetId}/updateImageSetMetadata:
     POST:
-      summary: UpdateImageSetMetadata
+      summary: 'Update Image Set Metadata '
       description: <p>Update image set metadata attri
       tags:
-        - Update
-        - Images
-        - Sets
-        - Metadata
-        - Identifiers
-        - Images
-        - Sets
-        - Source
-        - Copy
         - Data Store
-        - Delete
-        - Import
-        - Jobs
-        - Get
-        - Frames
+        - Images
         - Metadata
-        - Jobs
-        - Lists
-        - Versions
-        - ARN
-        - Search
         - Sets
-        - Upda
