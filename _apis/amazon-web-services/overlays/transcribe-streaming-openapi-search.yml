@@ -4,7 +4,7 @@ info:
 paths:
   /call-analytics-stream-transcription:
     POST:
-      summary: StartCallAnalyticsStreamTranscription
+      summary: 'Start Call Analytics Stream Transcription '
       description: >-
         <p>Starts a bidirectional HTTP/2 or WebSocket stream where audio is
         streamed to Amazon Transcribe and the transcription results are streamed
@@ -18,18 +18,13 @@ paths:
         href="https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html">Transcribing
         streaming audio</a>.</p>
       tags:
-        - Start
-        - Call
         - Analytics
-        - Stream
-        - Transcriptions
         - Call
-        - Analytics
         - Stream
         - Transcriptions
   /medical-stream-transcription:
     POST:
-      summary: StartMedicalStreamTranscription
+      summary: 'Start Medical Stream Transcription '
       description: >-
         <p>Starts a bidirectional HTTP/2 or WebSocket stream where audio is
         streamed to Amazon Transcribe Medical and the transcription results are
@@ -41,18 +36,12 @@ paths:
         href="https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html">Transcribing
         streaming audio</a>.</p>
       tags:
-        - Start
         - Medical
         - Stream
         - Transcriptions
-        - Call
-        - Analytics
-        - Stream
-        - Transcriptions
-        - Medical
   /stream-transcription:
     POST:
-      summary: StartStreamTranscription
+      summary: 'Start Stream Transcription '
       description: >-
         <p>Starts a bidirectional HTTP/2 or WebSocket stream where audio is
         streamed to Amazon Transcribe and the transcription results are streamed
@@ -66,11 +55,5 @@ paths:
         href="https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html">Transcribing
         streaming audi
       tags:
-        - Start
         - Stream
         - Transcriptions
-        - Call
-        - Analytics
-        - Stream
-        - Transcriptions
-        - Medic
