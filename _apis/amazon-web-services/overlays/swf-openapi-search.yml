@@ -4,8 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Remove a tag from a Amazon SWF d
       tags:
+        - Resources
         - Untag
-        - Resour
