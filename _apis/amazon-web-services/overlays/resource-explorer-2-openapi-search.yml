@@ -4,7 +4,7 @@ info:
 paths:
   /AssociateDefaultView:
     POST:
-      summary: AssociateDefaultView
+      summary: 'Associate Default View '
       description: >-
         <p>Sets the specified view as the default for the Amazon Web Services
         Region in which you call this operation. When a user performs a
@@ -18,25 +18,16 @@ paths:
         - Associate
         - Default
         - View
-        - Associate
-        - Default
-        - View
   /BatchGetView:
     POST:
-      summary: BatchGetView
+      summary: 'Batch Get View '
       description: <p>Retrieves details about a list of views.</p>
       tags:
         - Batches
-        - Get
         - View
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
   /CreateIndex:
     POST:
-      summary: CreateIndex
+      summary: 'Create Index '
       description: >-
         <p>Turns on Amazon Web Services Resource Explorer in the Amazon Web
         Services Region in which you called this operation by creating an index.
@@ -83,18 +74,10 @@ paths:
         Explorer uses the same service-linked role for all additional indexes
         you create afterwards.</p> </li> </ul>
       tags:
-        - Create
-        - Index
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
         - Index
   /CreateView:
     POST:
-      summary: CreateView
+      summary: 'Create View '
       description: >-
         <p>Creates a view that users can query by using the <a>Search</a>
         operation. Results from queries that you make using this view include
@@ -109,18 +92,10 @@ paths:
         resource name (ARN)</a> of this view can <a>Search</a> using views you
         create with this operation.</p>
       tags:
-        - Create
         - View
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
   /DeleteIndex:
     POST:
-      summary: DeleteIndex
+      summary: 'Delete Index '
       description: >-
         <p>Deletes the specified index and turns off Amazon Web Services
         Resource Explorer in the specified Amazon Web Services Region. When you
@@ -135,19 +110,10 @@ paths:
         Users can't perform account-wide searches using Resource Explorer until
         another aggregator index is configured.</p> </note>
       tags:
-        - Delete
         - Index
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
   /DeleteView:
     POST:
-      summary: DeleteView
+      summary: 'Delete View '
       description: >-
         <p>Deletes the specified view.</p> <p>If the specified view is the
         default view for its Amazon Web Services Region, then all <a>Search</a>
@@ -155,19 +121,10 @@ paths:
         you configure a new default by calling the <a>AssociateDefaultView</a>
         operation.</p>
       tags:
-        - Delete
         - View
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
   /DisassociateDefaultView:
     POST:
-      summary: DisassociateDefaultView
+      summary: 'Disassociate Default View '
       description: >-
         <p>After you call this operation, the affected Amazon Web Services
         Region no longer has a default view. All <a>Search</a> operations in
@@ -177,141 +134,60 @@ paths:
         default view configured, then users must explicitly specify a view with
         every <code>Search</code> operation performed in that Region.</p>
       tags:
-        - Disassociate
         - Default
-        - View
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
         - Disassociate
+        - View
   /GetAccountLevelServiceConfiguration:
     POST:
-      summary: GetAccountLevelServiceConfiguration
+      summary: 'Get Account Level Service Configuration '
       description: >-
         <p>Retrieves the status of your account's Amazon Web Services service
         access, and validates the service linked role required to access the
         multi-account search feature. Only the management account or a delegated
         administrator with service access enabled can invoke this API call. </p>
       tags:
-        - Get
-        - Account
+        - Accounts
+        - Configurations
         - Levels
         - Services
-        - Configurations
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
   /GetDefaultView:
     POST:
-      summary: GetDefaultView
+      summary: 'Get Default View '
       description: >-
         <p>Retrieves the Amazon Resource Name (ARN) of the view that is the
         default for the Amazon Web Services Region in which you call this
         operation. You can then call <a>GetView</a> to retrieve the details of
         that view.</p>
       tags:
-        - Get
         - Default
         - View
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
   /GetIndex:
     POST:
-      summary: GetIndex
+      summary: 'Get Index '
       description: >-
         <p>Retrieves details about the Amazon Web Services Resource Explorer
         index in the Amazon Web Services Region in which you invoked the
         operation.</p>
       tags:
-        - Get
         - Index
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
   /GetView:
     POST:
-      summary: GetView
+      summary: 'Get View '
       description: <p>Retrieves details of the specified view.</p>
       tags:
-        - Get
         - View
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
   /ListIndexes:
     POST:
-      summary: ListIndexes
+      summary: 'List Indexes '
       description: >-
         <p>Retrieves a list of all of the indexes in Amazon Web Services Regions
         that are currently collecting resource information for Amazon Web
         Services Resource Explorer.</p>
       tags:
-        - Lists
-        - Indexes
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
         - Indexes
   /ListIndexesForMembers:
     POST:
-      summary: ListIndexesForMembers
+      summary: 'List Indexes For Members '
       description: >-
         <p>Retrieves a list of a member's indexes in all Amazon Web Services
         Regions that are currently collecting resource information for Amazon
@@ -319,91 +195,32 @@ paths:
         delegated administrator with service access enabled can invoke this API
         call. </p>
       tags:
-        - Lists
         - Indexes
-        - For
-        - Members
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
-        - Indexes
-        - For
         - Members
   /ListSupportedResourceTypes:
     POST:
-      summary: ListSupportedResourceTypes
+      summary: 'List Supported Resource Types '
       description: >-
         <p>Retrieves a list of all resource types currently supported by Amazon
         Web Services Resource Explorer.</p>
       tags:
-        - Lists
-        - Supported
         - Resources
-        - Types
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
-        - Indexes
-        - For
-        - Members
         - Supported
-        - Resources
         - Types
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes one or more tag key and value pairs from an Amazon Web
         Services Resource Explorer view or index.</p>
       tags:
-        - Untag
-        - Resources
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
-        - Indexes
-        - For
-        - Members
-        - Supported
-        - Resources
-        - Types
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /ListViews:
     POST:
-      summary: ListViews
+      summary: 'List Views '
       description: >-
         <p>Lists the <a
         href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon
@@ -416,33 +233,10 @@ paths:
         parameter value is <code>null</code> <i>only</i> when there are no more
         results to display.</p> </note>
       tags:
-        - Lists
-        - Views
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
-        - Indexes
-        - For
-        - Members
-        - Supported
-        - Resources
-        - Types
-        - ARN
         - Views
   /Search:
     POST:
-      summary: Search
+      summary: 'Search '
       description: >-
         <p>Searches for resources and displays details about all resources that
         match the specified criteria. You must specify a query string.</p>
@@ -462,32 +256,9 @@ paths:
         Resource Explorer search</a>.</p>
       tags:
         - Search
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
-        - Indexes
-        - For
-        - Members
-        - Supported
-        - Resources
-        - Types
-        - ARN
-        - Views
-        - Search
   /UpdateIndexType:
     POST:
-      summary: UpdateIndexType
+      summary: 'Update Index Type '
       description: >-
         <p>Changes the type of the index from one of the following types to the
         other. For more information about indexes and the role they perform in
@@ -538,66 +309,14 @@ paths:
         to be the new aggregator index for the account.</p> </important> </li>
         </ul>
       tags:
-        - Update
         - Index
-        - Types
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
-        - Indexes
-        - For
-        - Members
-        - Supported
-        - Resources
-        - Types
-        - ARN
-        - Views
-        - Search
-        - Update
         - Types
   /UpdateView:
     POST:
-      summary: UpdateView
+      summary: 'Update View '
       description: >-
         <p>Modifies some of the details of a view. You can change the filter
         string and the list of included properties. You can't change the name of
         the
       tags:
-        - Update
         - View
-        - Associate
-        - Default
-        - View
-        - Batches
-        - Get
-        - Create
-        - Index
-        - Delete
-        - Disassociate
-        - Account
-        - Levels
-        - Services
-        - Configurations
-        - Lists
-        - Indexes
-        - For
-        - Members
-        - Supported
-        - Resources
-        - Types
-        - ARN
-        - Views
-        - Search
-        - Update
-        - Types
