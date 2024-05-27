@@ -4,76 +4,67 @@ info:
 paths:
   /clitoken/{Name}:
     POST:
-      summary: CreateCliToken
+      summary: 'Create Cli Token '
       description: >-
         <p>Creates a CLI token for the Airflow CLI. To learn more, see <a
         href="https://docs.aws.amazon.com/mwaa/latest/userguide/call-mwaa-apis-cli.html">Creating
         an Apache Airflow CLI token</a>.</p>
       tags:
-        - Create
         - CLI
-        - Tokens
+        - Clitoken
         - Names
+        - Tokens
   /environments/{Name}:
     PATCH:
-      summary: UpdateEnvironment
+      summary: 'Update Environment '
       description: >-
         <p>Updates an Amazon Managed Workflows for Apache Airflow (MWAA)
         environment.</p>
       tags:
-        - Update
         - Environments
         - Names
   /webtoken/{Name}:
     POST:
-      summary: CreateWebLoginToken
+      summary: 'Create Web Login Token '
       description: >-
         <p>Creates a web login token for the Airflow Web UI. To learn more, see
         <a
         href="https://docs.aws.amazon.com/mwaa/latest/userguide/call-mwaa-apis-web.html">Creating
         an Apache Airflow web login token</a>.</p>
       tags:
-        - Create
-        - Web
         - Login
-        - Tokens
         - Names
+        - Tokens
+        - Web
+        - Webtoken
   /environments:
     GET:
-      summary: ListEnvironments
+      summary: 'List Environments '
       description: >-
         <p>Lists the Amazon Managed Workflows for Apache Airflow (MWAA)
         environments.</p>
       tags:
-        - Lists
-        - Environments
-        - Names
         - Environments
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes key-value tag pairs associated to your Amazon Managed
         Workflows for Apache Airflow (MWAA) environment. For example,
         <code>"Environment": "Staging"</code>.</p>
       tags:
-        - Untag
-        - Resources
-        - Names
-        - Environments
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /metrics/environments/{EnvironmentName}:
     POST:
-      summary: PublishMetrics
+      summary: 'Publish Metrics '
       description: >-
         <p> <b>Internal only</b>. Publishes environment health metrics to Amazon
         Cloud
       tags:
-        - Publish
+        - Environments
         - Metrics
         - Names
-        - Environments
-        - Resources
-        - ARN
-        - Environments
+        - Publish
