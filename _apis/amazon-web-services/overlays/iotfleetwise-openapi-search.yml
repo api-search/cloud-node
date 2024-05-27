@@ -4,8 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateVehicle
+      summary: 'Update Vehicle '
       description: <p> Updates a ve
       tags:
-        - Update
-        - null
+        - Vehicle
