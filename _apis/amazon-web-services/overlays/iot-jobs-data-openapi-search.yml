@@ -4,45 +4,36 @@ info:
 paths:
   /things/{thingName}/jobs/{jobId}:
     POST:
-      summary: UpdateJobExecution
+      summary: 'Update Job Execution '
       description: <p>Updates the status of a job execution.</p>
       tags:
-        - Update
-        - Jobs
         - Execution
+        - Jobs
         - Names
-        - Jobs
-        - Jobs
-        - Identifiers
+        - Things
   /things/{thingName}/jobs:
     GET:
-      summary: GetPendingJobExecutions
+      summary: 'Get Pending Job Executions '
       description: >-
         <p>Gets the list of all jobs for a thing that are not in a terminal
         status.</p>
       tags:
-        - Get
-        - Pending
-        - Jobs
         - Executions
+        - Jobs
         - Names
-        - Jobs
-        - Jobs
-        - Identifiers
+        - Pending
+        - Things
   /things/{thingName}/jobs/$next:
     PUT:
-      summary: StartNextPendingJobExecution
+      summary: 'Start Next Pending Job Execution '
       description: >-
         <p>Gets and starts the next pending (status IN_PROGRESS or QUEUED) job
         execution for a 
       tags:
-        - Start
+        - $Next
+        - Execution
+        - Jobs
+        - Names
         - Next
         - Pending
-        - Jobs
-        - Execution
-        - Names
-        - Jobs
-        - Jobs
-        - Identifiers
-        - null
+        - Things
