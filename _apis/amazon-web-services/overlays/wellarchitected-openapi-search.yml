@@ -4,7 +4,7 @@ info:
 paths:
   /workloads/{WorkloadId}/associateLenses:
     PATCH:
-      summary: AssociateLenses
+      summary: 'Associate Lenses '
       description: >-
         <p>Associate a lens to a workload.</p> <p>Up to 10 lenses can be
         associated with a workload in a single API operation. A maximum of 20
@@ -18,40 +18,26 @@ paths:
         - Associate
         - Lenses
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
   /workloads/{WorkloadId}/associateProfiles:
     PATCH:
-      summary: AssociateProfiles
+      summary: 'Associate Profiles '
       description: <p>Associate a profile with a workload.</p>
       tags:
         - Associate
         - Profiles
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
   /lenses/{LensAlias}/shares:
     GET:
-      summary: ListLensShares
+      summary: 'List Lens Shares '
       description: <p>List the lens shares associated with the lens.</p>
       tags:
-        - Lists
-        - Lens
-        - Shares
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
+        - Lens
+        - Lenses
         - Shares
   /lenses/{LensAlias}/versions:
     POST:
-      summary: CreateLensVersion
+      summary: 'Create Lens Version '
       description: >-
         <p>Create a new lens version.</p> <p>A lens can have up to 100
         versions.</p> <p>Use this operation to publish a new lens version after
@@ -60,118 +46,49 @@ paths:
         other Amazon Web Services accounts and users in the same Amazon Web
         Services Region. Only the owner of a lens can delete it. </p>
       tags:
-        - Create
-        - Lens
-        - Versions
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
+        - Lens
+        - Lenses
         - Versions
   /workloads/{WorkloadId}/milestones:
     POST:
-      summary: CreateMilestone
+      summary: 'Create Milestone '
       description: <p>Create a milestone for an existing workload.</p>
       tags:
-        - Create
         - Milestones
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
   /profiles:
     POST:
-      summary: CreateProfile
+      summary: 'Create Profile '
       description: <p>Create a profile.</p>
       tags:
-        - Create
         - Profiles
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
   /profiles/{ProfileArn}/shares:
     GET:
-      summary: ListProfileShares
+      summary: 'List Profile Shares '
       description: <p>List profile shares.</p>
       tags:
-        - Lists
-        - Profiles
-        - Shares
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
+        - Profiles
+        - Shares
   /reviewTemplates:
     GET:
-      summary: ListReviewTemplates
+      summary: 'List Review Templates '
       description: <p>List review templates.</p>
       tags:
-        - Lists
         - Reviews
-        - Templates
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
         - Templates
   /templates/shares/{TemplateArn}:
     GET:
-      summary: ListTemplateShares
+      summary: 'List Template Shares '
       description: <p>List review template shares.</p>
       tags:
-        - Lists
-        - Templates
-        - Shares
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
+        - Shares
         - Templates
   /workloads:
     POST:
-      summary: CreateWorkload
+      summary: 'Create Workload '
       description: >-
         <p>Create a new workload.</p> <p>The owner of a workload can share the
         workload with other Amazon Web Services accounts, users, an
@@ -192,71 +109,25 @@ paths:
         <p> <code>wellarchitected:GetReviewTemplateLensReview</code> </p> </li>
         </ul>
       tags:
-        - Create
-        - Workloads
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
         - Workloads
   /workloads/{WorkloadId}/shares:
     GET:
-      summary: ListWorkloadShares
+      summary: 'List Workload Shares '
       description: <p>List the workload shares associated with the workload.</p>
       tags:
-        - Lists
-        - Workloads
         - Shares
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
         - Workloads
   /lenses/{LensAlias}:
     GET:
-      summary: GetLens
+      summary: 'Get Lens '
       description: <p>Get an existing lens.</p>
       tags:
-        - Get
-        - Lens
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
+        - Lens
+        - Lenses
   /lenses/{LensAlias}/shares/{ShareId}:
     DELETE:
-      summary: DeleteLensShare
+      summary: 'Delete Lens Share '
       description: >-
         <p>Delete a lens share.</p> <p>After the lens share is deleted, Amazon
         Web Services accounts, users, organizations, and organizational units
@@ -269,174 +140,65 @@ paths:
         even if you delete the custom lenses from your own Amazon Web Services
         account or terminate your Amazon Web Services account.</p> </note>
       tags:
-        - Delete
-        - Lens
-        - Share
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
+        - Lens
+        - Lenses
         - Share
+        - Shares
   /profiles/{ProfileArn}:
     PATCH:
-      summary: UpdateProfile
+      summary: 'Update Profile '
       description: <p>Update a profile.</p>
       tags:
-        - Update
-        - Profiles
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
+        - Profiles
   /profiles/{ProfileArn}/shares/{ShareId}:
     DELETE:
-      summary: DeleteProfileShare
+      summary: 'Delete Profile Share '
       description: <p>Delete a profile share.</p>
       tags:
-        - Delete
-        - Profiles
-        - Share
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
+        - Profiles
         - Share
+        - Shares
   /reviewTemplates/{TemplateArn}:
     PATCH:
-      summary: UpdateReviewTemplate
+      summary: 'Update Review Template '
       description: <p>Update a review template.</p>
       tags:
-        - Update
+        - ARN
         - Reviews
         - Templates
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
   /templates/shares/{TemplateArn}/{ShareId}:
     DELETE:
-      summary: DeleteTemplateShare
+      summary: 'Delete Template Share '
       description: >-
         <p>Delete a review template share.</p> <p>After the review template
         share is deleted, Amazon Web Services accounts, users, organizations,
         and organizational units (OUs) that you shared the review template with
         will no longer be able to apply it to new workloads.</p>
       tags:
-        - Delete
-        - Templates
-        - Share
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
         - Share
+        - Shares
+        - Templates
   /workloads/{WorkloadId}:
     PATCH:
-      summary: UpdateWorkload
+      summary: 'Update Workload '
       description: <p>Update an existing workload.</p>
       tags:
-        - Update
         - Workloads
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
   /workloads/{WorkloadId}/shares/{ShareId}:
     PATCH:
-      summary: UpdateWorkloadShare
+      summary: 'Update Workload Share '
       description: <p>Update a workload share.</p>
       tags:
-        - Update
-        - Workloads
         - Share
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
         - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
         - Workloads
-        - Share
   /workloads/{WorkloadId}/disassociateLenses:
     PATCH:
-      summary: DisassociateLenses
+      summary: 'Disassociate Lenses '
       description: >-
         <p>Disassociate a lens from a workload.</p> <p>Up to 10 lenses can be
         disassociated from a workload in a single API operation.</p> <note>
@@ -447,49 +209,17 @@ paths:
         - Disassociate
         - Lenses
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
   /workloads/{WorkloadId}/disassociateProfiles:
     PATCH:
-      summary: DisassociateProfiles
+      summary: 'Disassociate Profiles '
       description: <p>Disassociate a profile from a workload.</p>
       tags:
         - Disassociate
         - Profiles
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
   /lenses/{LensAlias}/export:
     GET:
-      summary: ExportLens
+      summary: 'Export Lens '
       description: >-
         <p>Export an existing lens.</p> <p>Only the owner of a lens can export
         it. Lenses provided by Amazon Web Services (Amazon Web Services Official
@@ -506,321 +236,102 @@ paths:
         notices, and obtaining necessary consents for processing such data.</p>
         </note>
       tags:
-        - Export
-        - Lens
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
+        - Exports
+        - Lens
+        - Lenses
   /workloads/{WorkloadId}/lensReviews/{LensAlias}/answers/{QuestionId}:
     PATCH:
-      summary: UpdateAnswer
+      summary: 'Update Answer '
       description: <p>Update the answer to a specific question in a workload review.</p>
       tags:
-        - Update
-        - Answers
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
         - Answers
+        - Lens
         - Questions
+        - Reviews
+        - Workloads
   /consolidatedReport:
     GET:
-      summary: GetConsolidatedReport
+      summary: 'Get Consolidated Report '
       description: >-
         <p>Get a consolidated report of your workloads.</p> <p>You can
         optionally choose to include workloads that have been shared with
         you.</p>
       tags:
-        - Get
+        - Ated
+        - Consol
         - Consolidated
-        - Reports
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
         - Reports
   /workloads/{WorkloadId}/lensReviews/{LensAlias}:
     PATCH:
-      summary: UpdateLensReview
+      summary: 'Update Lens Review '
       description: <p>Update lens review for a particular workload.</p>
       tags:
-        - Update
-        - Lens
-        - Reviews
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
+        - Lens
         - Reviews
-        - Answers
-        - Questions
-        - Reports
+        - Workloads
   /workloads/{WorkloadId}/lensReviews/{LensAlias}/report:
     GET:
-      summary: GetLensReviewReport
+      summary: 'Get Lens Review Report '
       description: <p>Get lens review report.</p>
       tags:
-        - Get
-        - Lens
-        - Reviews
-        - Reports
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
+        - Lens
         - Reports
+        - Reviews
+        - Workloads
   /lenses/{LensAlias}/versionDifference:
     GET:
-      summary: GetLensVersionDifference
+      summary: 'Get Lens Version Difference '
       description: <p>Get lens version differences.</p>
       tags:
-        - Get
-        - Lens
-        - Versions
-        - Difference
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
         - Difference
+        - Lens
+        - Lenses
+        - Versions
   /workloads/{WorkloadId}/milestones/{MilestoneNumber}:
     GET:
-      summary: GetMilestone
+      summary: 'Get Milestone '
       description: <p>Get a milestone for an existing workload.</p>
       tags:
-        - Get
-        - Milestones
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
         - Milestones
         - Numbers
+        - Workloads
   /profileTemplate:
     GET:
-      summary: GetProfileTemplate
+      summary: 'Get Profile Template '
       description: <p>Get profile template.</p>
       tags:
-        - Get
         - Profiles
         - Templates
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
   /reviewTemplates/{TemplateArn}/lensReviews/{LensAlias}/answers/{QuestionId}:
     PATCH:
-      summary: UpdateReviewTemplateAnswer
+      summary: 'Update Review Template Answer '
       description: <p>Update a review template answer.</p>
       tags:
-        - Update
-        - Reviews
-        - Templates
-        - Answers
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
+        - Alias
         - Answers
+        - Lens
         - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
+        - Reviews
+        - Templates
   /reviewTemplates/{TemplateArn}/lensReviews/{LensAlias}:
     PATCH:
-      summary: UpdateReviewTemplateLensReview
+      summary: 'Update Review Template Lens Review '
       description: <p>Update a lens review associated with a review template.</p>
       tags:
-        - Update
-        - Reviews
-        - Templates
-        - Lens
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
+        - Alias
+        - Lens
         - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
+        - Templates
   /importLens:
     PUT:
-      summary: ImportLens
+      summary: 'Import Lens '
       description: >-
         <p>Import a new custom lens or update an existing custom lens.</p> <p>To
         update an existing custom lens, specify its ARN as the
@@ -843,494 +354,113 @@ paths:
       tags:
         - Import
         - Lens
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
   /workloads/{WorkloadId}/lensReviews/{LensAlias}/answers:
     GET:
-      summary: ListAnswers
+      summary: 'List Answers '
       description: <p>List of answers for a particular workload and lens.</p>
       tags:
-        - Lists
-        - Answers
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
         - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
+        - Lens
+        - Reviews
+        - Workloads
   /workloads/{WorkloadId}/checks:
     POST:
-      summary: ListCheckDetails
+      summary: 'List Check Details '
       description: >-
         <p>List of Trusted Advisor check details by account related to the
         workload.</p>
       tags:
-        - Lists
         - Checks
         - Details
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
   /workloads/{WorkloadId}/checkSummaries:
     POST:
-      summary: ListCheckSummaries
+      summary: 'List Check Summaries '
       description: >-
         <p>List of Trusted Advisor checks summarized for all accounts related to
         the workload.</p>
       tags:
-        - Lists
         - Checks
         - Summaries
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
   /workloads/{WorkloadId}/lensReviews/{LensAlias}/improvements:
     GET:
-      summary: ListLensReviewImprovements
+      summary: 'List Lens Review Improvements '
       description: <p>List lens review improvements.</p>
       tags:
-        - Lists
-        - Lens
-        - Reviews
-        - Improvements
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
         - Improvements
+        - Lens
+        - Reviews
+        - Workloads
   /workloads/{WorkloadId}/lensReviews:
     GET:
-      summary: ListLensReviews
+      summary: 'List Lens Reviews '
       description: <p>List lens reviews for a particular workload.</p>
       tags:
-        - Lists
         - Lens
         - Reviews
         - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
   /lenses:
     GET:
-      summary: ListLenses
+      summary: 'List Lenses '
       description: <p>List the available lenses.</p>
       tags:
-        - Lists
         - Lenses
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
   /workloads/{WorkloadId}/milestonesSummaries:
     POST:
-      summary: ListMilestones
+      summary: 'List Milestones '
       description: <p>List all milestones for an existing workload.</p>
       tags:
-        - Lists
         - Milestones
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
         - Summaries
-        - Improvements
+        - Workloads
   /notifications:
     POST:
-      summary: ListNotifications
+      summary: 'List Notifications '
       description: <p>List lens notifications.</p>
       tags:
-        - Lists
-        - Notifications
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
         - Notifications
   /profileNotifications/:
     GET:
-      summary: ListProfileNotifications
+      summary: 'List Profile Notifications '
       description: <p>List profile notifications.</p>
       tags:
-        - Lists
-        - Profiles
         - Notifications
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
         - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
   /profileSummaries:
     GET:
-      summary: ListProfiles
+      summary: 'List Profiles '
       description: <p>List profiles.</p>
       tags:
-        - Lists
         - Profiles
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
         - Summaries
-        - Improvements
-        - Notifications
   /reviewTemplates/{TemplateArn}/lensReviews/{LensAlias}/answers:
     GET:
-      summary: ListReviewTemplateAnswers
+      summary: 'List Review Template Answers '
       description: <p>List the answers of a review template.</p>
       tags:
-        - Lists
-        - Reviews
-        - Templates
-        - Answers
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
+        - Alias
         - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
+        - Lens
+        - Reviews
+        - Templates
   /shareInvitations:
     GET:
-      summary: ListShareInvitations
+      summary: 'List Share Invitations '
       description: >-
         <p>List the share invitations.</p> <p> <code>WorkloadNamePrefix</code>,
         <code>LensNamePrefix</code>, <code>ProfileNamePrefix</code>, and
         <code>TemplateNamePrefix</code> are mutually exclusive. Use the
         parameter that matches your <code>ShareResourceType</code>.</p>
       tags:
-        - Lists
-        - Share
         - Invitations
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
         - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
-        - Invitations
   /tags/{WorkloadArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Deletes specified tags from a resource.</p> <note> <p>The WorkloadArn
         parameter can be a workload ARN, a custom lens ARN, a profile ARN, or
@@ -1338,299 +468,66 @@ paths:
         separate <b>tagKeys</b> parameters, for example:</p> <p> <code>DELETE
         /tags/WorkloadArn?tagKeys=key1&amp;tagKeys=key2</code> </p>
       tags:
-        - Untag
-        - Resources
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
+        - Resources
+        - Tags
+        - Untag
         - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
-        - Invitations
   /workloadsSummaries:
     POST:
-      summary: ListWorkloads
+      summary: 'List Workloads '
       description: <p>Paginated list of workloads.</p>
       tags:
-        - Lists
-        - Workloads
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
         - Summaries
-        - Improvements
-        - Notifications
-        - Invitations
+        - Workloads
   /global-settings:
     PATCH:
-      summary: UpdateGlobalSettings
+      summary: 'Update Global Settings '
       description: >-
         <p>Updates whether the Amazon Web Services account is opted into
         organization sharing and discovery integration features.</p>
       tags:
-        - Update
-        - Global
-        - Settings
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
-        - Invitations
         - Global
         - Settings
   /shareInvitations/{ShareInvitationId}:
     PATCH:
-      summary: UpdateShareInvitation
+      summary: 'Update Share Invitation '
       description: >-
         <p>Update a workload or custom lens share invitation.</p> <note> <p>This
         API operation can be called independently of any resource. Previous
         documentation implied that a workload ARN must be specified.</p> </note>
       tags:
-        - Update
-        - Share
         - Invitation
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
         - Invitations
-        - Global
-        - Settings
-        - Invitation
+        - Share
   /workloads/{WorkloadId}/lensReviews/{LensAlias}/upgrade:
     PUT:
-      summary: UpgradeLensReview
+      summary: 'Upgrade Lens Review '
       description: <p>Upgrade lens review for a particular workload.</p>
       tags:
-        - Upgrade
-        - Lens
-        - Reviews
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
         - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
-        - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
+        - Lens
         - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
-        - Invitations
-        - Global
-        - Settings
-        - Invitation
         - Upgrade
+        - Workloads
   /workloads/{WorkloadId}/profiles/{ProfileArn}/upgrade:
     PUT:
-      summary: UpgradeProfileVersion
+      summary: 'Upgrade Profile Version '
       description: <p>Upgrade a profile.</p>
       tags:
-        - Upgrade
-        - Profiles
-        - Versions
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
-        - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
-        - Invitations
-        - Global
-        - Settings
-        - Invitation
+        - Profiles
         - Upgrade
+        - Versions
+        - Workloads
   /reviewTemplates/{TemplateArn}/lensReviews/{LensAlias}/upgrade:
     PUT:
-      summary: UpgradeReviewTemplateLensReview
+      summary: 'Upgrade Review Template Lens Review '
       description: <p>Upgrade the lens review of a review tem
       tags:
-        - Upgrade
-        - Reviews
-        - Templates
-        - Lens
-        - Workloads
-        - Identifiers
-        - Associate
-        - Lenses
-        - Profiles
-        - Lens
-        - Alias
-        - Shares
-        - Versions
-        - Milestones
-        - Profiles
         - ARN
-        - Templates
-        - Templates
-        - Workloads
-        - Share
-        - Disassociate
-        - Export
+        - Alias
+        - Lens
         - Reviews
-        - Answers
-        - Questions
-        - Reports
-        - Versions
-        - Difference
-        - Milestones
-        - Numbers
-        - Checks
-        - Checks
-        - Summaries
-        - Improvements
-        - Notifications
-        - Invitations
-        - Global
-        - Settings
-        - Invitation
-        - Upgra
+        - Templates
+        - Upgrade
