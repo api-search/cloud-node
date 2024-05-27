@@ -4,7 +4,7 @@ info:
 paths:
   /bot/{botName}/alias/{botAlias}/user/{userId}/session:
     POST:
-      summary: PutSession
+      summary: 'Put Session '
       description: >-
         <p>Creates a new session or modifies an existing session with an Amazon
         Lex bot. Use this operation to enable your application to set the state
@@ -12,32 +12,26 @@ paths:
         href="https://docs.aws.amazon.com/lex/latest/dg/how-session-api.html">Managing
         Sessions</a>.</p>
       tags:
-        - Put
-        - Sessions
-        - Names
         - Alias
         - Bot
-        - Users
-        - Identifiers
+        - Names
         - Sessions
+        - Users
   /bot/{botName}/alias/{botAlias}/user/{userId}/session/:
     GET:
-      summary: GetSession
+      summary: 'Get Session '
       description: >-
         <p>Returns session information for a specified bot, alias, and user
         ID.</p>
       tags:
-        - Get
-        - Sessions
-        - Names
         - Alias
         - Bot
-        - Users
-        - Identifiers
+        - Names
         - Sessions
+        - Users
   /bot/{botName}/alias/{botAlias}/user/{userId}/content:
     POST:
-      summary: PostContent
+      summary: 'Post Content '
       description: >-
         <p> Sends user input (text or speech) to Amazon Lex. Clients use this
         API to send text and audio requests to Amazon Lex at runtime. Amazon Lex
@@ -83,18 +77,15 @@ paths:
         href="https://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
         Conversation Context</a>. </p>
       tags:
-        - Posts
-        - Content
-        - Names
         - Alias
         - Bot
-        - Users
-        - Identifiers
-        - Sessions
         - Content
+        - Names
+        - Posts
+        - Users
   /bot/{botName}/alias/{botAlias}/user/{userId}/text:
     POST:
-      summary: PostText
+      summary: 'Post Text '
       description: >-
         <p>Sends user input to Amazon Lex. Client applications can use this API
         to send requests to Amazon Lex at runtime. Amazon Lex then interprets
@@ -138,13 +129,9 @@ paths:
         href="https://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html">Managing
         Conversation Context
       tags:
-        - Posts
-        - Text
-        - Names
         - Alias
         - Bot
+        - Names
+        - Posts
+        - Text
         - Users
-        - Identifiers
-        - Sessions
-        - Content
-        - Te
