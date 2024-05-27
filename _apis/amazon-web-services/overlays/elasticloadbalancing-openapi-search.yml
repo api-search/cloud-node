@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: SetLoadBalancerPoliciesOfListener
+      summary: 'Set Load Balancer Policies Of Listener '
       description: >-
         <p>Replaces the current set of policies for the specified load balancer
         port with the specified set of policies.</p> <p>To enable back-end
@@ -18,9 +18,8 @@ paths:
         href="https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-sticky-sessions.html#enable-sticky-sessions-application">Application-Controlled
         Session Stickiness</a> in the <i>Classic Load Balancers Guid
       tags:
-        - Sets
-        - Load
         - Balancer
+        - Listeners
+        - Load
         - Policies
-        - Of
-        - Listen
+        - Sets
