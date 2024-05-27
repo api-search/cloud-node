@@ -4,23 +4,22 @@ info:
 paths:
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes a tag or list of tags from a resource.</p>
       tags:
-        - Untag
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /catalogs/{catalog}/products/{productId}/deployment-parameters:
     POST:
-      summary: PutDeploymentParameter
+      summary: 'Put Deployment Parameter '
       description: >-
         <p>Creates or updates a deployment parameter and is targeted by
         <code>catalog</code> and <code>agreementId</
       tags:
-        - Put
+        - Catalog
+        - Catalogs
         - Deployments
         - Parameters
-        - ARN
-        - Identifiers
-        - Deployments
-        - Parameters
+        - Products
