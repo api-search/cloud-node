@@ -4,86 +4,55 @@ info:
 paths:
   /createDeployment:
     POST:
-      summary: CreateDeployment
+      summary: 'Create Deployment '
       description: >-
         <p>Creates a deployment for the given workload. Deployments created by
         this operation are not available in the Launch Wizard console to use the
         <code>Clone deployment</code> action on.</p>
       tags:
-        - Create
-        - Deployments
         - Deployments
   /deleteDeployment:
     POST:
-      summary: DeleteDeployment
+      summary: 'Delete Deployment '
       description: <p>Deletes a deployment.</p>
       tags:
-        - Delete
-        - Deployments
         - Deployments
   /getDeployment:
     POST:
-      summary: GetDeployment
+      summary: 'Get Deployment '
       description: <p>Returns information about the deployment.</p>
       tags:
-        - Get
-        - Deployments
         - Deployments
   /getWorkload:
     POST:
-      summary: GetWorkload
+      summary: 'Get Workload '
       description: <p>Returns information about a workload.</p>
       tags:
-        - Get
-        - Workloads
-        - Deployments
         - Workloads
   /listDeploymentEvents:
     POST:
-      summary: ListDeploymentEvents
+      summary: 'List Deployment Events '
       description: <p>Lists the events of a deployment.</p>
       tags:
-        - Lists
         - Deployments
-        - Events
-        - Deployments
-        - Workloads
         - Events
   /listDeployments:
     POST:
-      summary: ListDeployments
+      summary: 'List Deployments '
       description: <p>Lists the deployments that have been created.</p>
       tags:
-        - Lists
-        - Deployments
-        - Deployments
-        - Workloads
-        - Events
         - Deployments
   /listWorkloadDeploymentPatterns:
     POST:
-      summary: ListWorkloadDeploymentPatterns
+      summary: 'List Workload Deployment Patterns '
       description: <p>Lists the workload deployment patterns.</p>
       tags:
-        - Lists
-        - Workloads
         - Deployments
         - Patterns
-        - Deployments
         - Workloads
-        - Events
-        - Deployments
-        - Patterns
   /listWorkloads:
     POST:
-      summary: ListWorkloads
+      summary: 'List Workloads '
       description: <p>Lists the work
       tags:
-        - Lists
-        - Workloads
-        - Deployments
-        - Workloads
-        - Events
-        - Deployments
-        - Patterns
         - Workloads
