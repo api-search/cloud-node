@@ -4,12 +4,11 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateMLModel
+      summary: 'Update MLModel '
       description: >-
         <p>Updates the <code>MLModelName</code> and the
         <code>ScoreThreshold</code> of an <code>MLModel</code>.</p> <p>You can
         use the <code>GetMLModel</code> operation to view the contents of the
         updated data el
       tags:
-        - Update
-        - null
+        - MLModel
