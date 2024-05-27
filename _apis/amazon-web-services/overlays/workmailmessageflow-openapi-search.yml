@@ -4,7 +4,7 @@ info:
 paths:
   /messages/{messageId}:
     POST:
-      summary: PutRawMessageContent
+      summary: 'Put Raw Message Content '
       description: >-
         <p>Updates the raw content of an in-transit email message, in MIME
         format.</p> <p>This example describes how to update in-transit email
@@ -20,8 +20,6 @@ paths:
         href="https://docs.aws.amazon.com/workmail/latest/APIReference/API_messageflow_GetRawMessageContent.html">GetRawMessageContent</a>
         returns an updated message. </
       tags:
-        - Put
-        - Raw
-        - Messages
         - Content
-        - null
+        - Messages
+        - Raw
