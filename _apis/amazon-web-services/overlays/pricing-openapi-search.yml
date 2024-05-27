@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: ListPriceLists
+      summary: 'List Price Lists '
       description: >-
         <p> <i> <b>This feature is in preview release and is subject to change.
         Your use of Amazon Web Services Price List API is subject to the Beta
@@ -21,6 +21,4 @@ paths:
         preferred Price List files through the <a
         href="https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_GetPriceListFileUrl.html">GetPriceListFileUrl</
       tags:
-        - Lists
         - Prices
-        - Lists
