@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateQualificationType
+      summary: 'Update Qualification Type '
       description: >-
         <p> The <code>UpdateQualificationType</code> operation modifies the
         attributes of an existing Qualification type, which is represented by a
@@ -34,6 +34,5 @@ paths:
         </p> <p> You can also update the AutoGranted and AutoGrantedValue
         attributes of the Qualification
       tags:
-        - Update
         - Qualification
         - Types
