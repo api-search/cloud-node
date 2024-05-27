@@ -4,7 +4,7 @@ info:
 paths:
   /v20180820/accessgrantsinstance/identitycenter:
     DELETE:
-      summary: DissociateAccessGrantsIdentityCenter
+      summary: 'Dissociate Access Grants Identity Center '
       description: >-
         <p>Dissociates the Amazon Web Services IAM Identity Center instance from
         the S3 Access Grants instance. </p> <dl> <dt>Permissions</dt> <dd>
@@ -14,17 +14,16 @@ paths:
         must have the <code>sso:DeleteApplication</code> permission to use this
         operation. </p> </dd> </dl>
       tags:
-        - Dissociate
         - Access
+        - Access Grants Instances
+        - Center
+        - Dissociate
+        - Entitycenter
         - Grants
         - Identity
-        - Center
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
   /v20180820/accessgrantsinstance/grant:
     POST:
-      summary: CreateAccessGrant
+      summary: 'Create Access Grant '
       description: >-
         <p>Creates an access grant that gives a grantee access to your S3 data.
         The grantee can be an IAM user or role or a directory user, or group.
@@ -43,33 +42,25 @@ paths:
         <code>identitystore:DescribeUser</code> </p> <p>For directory groups -
         <code>identitystore:DescribeGroup</code> </p> </dd> </dl>
       tags:
-        - Create
         - Access
-        - Grant
-        - V20180820
         - Access Grants Instances
-        - Identity Center
-        - Grant
+        - Grants""
   /v20180820/accessgrantsinstance:
     GET:
-      summary: GetAccessGrantsInstance
+      summary: 'Get Access Grants Instance '
       description: >-
         <p>Retrieves the S3 Access Grants instance for a Region in your account.
         </p> <dl> <dt>Permissions</dt> <dd> <p>You must have the
         <code>s3:GetAccessGrantsInstance</code> permission to use this
         operation. </p> </dd> </dl>
       tags:
-        - Get
         - Access
+        - Access Grants Instances
         - Grants
         - Instances
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
   /v20180820/accessgrantsinstance/location:
     POST:
-      summary: CreateAccessGrantsLocation
+      summary: 'Create Access Grants Location '
       description: >-
         <p>The S3 data location that you would like to register in your S3
         Access Grants instance. Your S3 data must be in the same Region as your
@@ -90,18 +81,13 @@ paths:
         also have the following permission for the specified IAM role:
         <code>iam:PassRole</code> </p> </dd> </dl>
       tags:
-        - Create
         - Access
-        - Grants
-        - Locations
-        - V20180820
         - Access Grants Instances
-        - Identity Center
-        - Grant
+        - Grants
         - Locations
   /v20180820/accesspoint/{name}:
     GET:
-      summary: GetAccessPoint
+      summary: 'Get Access Point '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns configuration information about the specified access
@@ -123,19 +109,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessPoints.html">ListAccessPoints</a>
         </p> </li> </ul>
       tags:
-        - Get
         - Access
-        - Points
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
         - Access Point
         - Names
+        - Points
   /v20180820/accesspointforobjectlambda/{name}:
     GET:
-      summary: GetAccessPointForObjectLambda
+      summary: 'Get Access Point For Object Lambda '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns configuration information about the specified Object
@@ -148,23 +128,15 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAccessPointsForObjectLambda.html">ListAccessPointsForObjectLambda</a>
         </p> </li> </ul>
       tags:
-        - Get
         - Access
-        - Points
-        - For
-        - Objects
+        - Access Point
         - Lambda
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
+        - Objects
+        - Points
   /v20180820/bucket/{name}:
     GET:
-      summary: GetBucket
+      summary: 'Get Bucket '
       description: >-
         <note> <p>Gets an Amazon S3 on Outposts bucket. For more information,
         see <a
@@ -197,20 +169,11 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteBucket.html">DeleteBucket</a>
         </p> </li> </ul>
       tags:
-        - Get
         - Bucket
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
   /v20180820/jobs:
     GET:
-      summary: ListJobs
+      summary: 'List Jobs '
       description: >-
         <p>Lists current S3 Batch Operations jobs as well as the jobs that have
         ended within the last 30 days for the Amazon Web Services account making
@@ -230,21 +193,10 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UpdateJobStatus.html">UpdateJobStatus</a>
         </p> </li> </ul>
       tags:
-        - Lists
-        - Jobs
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
         - Jobs
   /v20180820/async-requests/mrap/create:
     POST:
-      summary: CreateMultiRegionAccessPoint
+      summary: 'Create Multi Region Access Point '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Creates a Multi-Region Access Point and associates it with
@@ -273,28 +225,14 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListMultiRegionAccessPoints.html">ListMultiRegionAccessPoints</a>
         </p> </li> </ul>
       tags:
-        - Create
-        - Multi
-        - Regions
         - Access
-        - Points
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
         - Async
-        - Requests
-        - Mrap
-        - Create
+        - Multi
+        - Points
+        - Regions
   /v20180820/storagelensgroup:
     GET:
-      summary: ListStorageLensGroups
+      summary: 'List Storage Lens Groups '
       description: >-
         <p> Lists all the Storage Lens groups in the specified home Region. </p>
         <p>To use this operation, you must have the permission to perform the
@@ -306,88 +244,41 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html#S3LensErrorCodeList">List
         of Amazon S3 Storage Lens error codes</a>.</p>
       tags:
-        - Lists
-        - Storage
-        - Lens
         - Groups
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
+        - Lens
+        - Storage
         - Storage Lens Groups
   /v20180820/accessgrantsinstance/grant/{id}:
     GET:
-      summary: GetAccessGrant
+      summary: 'Get Access Grant '
       description: >-
         <p>Get the details of an access grant from your S3 Access Grants
         instance.</p> <dl> <dt>Permissions</dt> <dd> <p>You must have the
         <code>s3:GetAccessGrant</code> permission to use this operation. </p>
         </dd> </dl>
       tags:
-        - Get
         - Access
-        - Grant
-        - V20180820
         - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
+        - Grants""
   /v20180820/accessgrantsinstance/resourcepolicy:
     PUT:
-      summary: PutAccessGrantsInstanceResourcePolicy
+      summary: 'Put Access Grants Instance Resource Policy '
       description: >-
         <p>Updates the resource policy of the S3 Access Grants instance. </p>
         <dl> <dt>Permissions</dt> <dd> <p>You must have the
         <code>s3:PutAccessGrantsInstanceResourcePolicy</code> permission to use
         this operation. </p> </dd> </dl>
       tags:
-        - Put
         - Access
+        - Access Grants Instances
         - Grants
         - Instances
-        - Resources
         - Policies
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
         - Resource Policies
+        - Resources
   /v20180820/accessgrantsinstance/location/{id}:
     PUT:
-      summary: UpdateAccessGrantsLocation
+      summary: 'Update Access Grants Location '
       description: >-
         <p>Updates the IAM role of a registered location in your S3 Access
         Grants instance.</p> <dl> <dt>Permissions</dt> <dd> <p>You must have the
@@ -396,30 +287,13 @@ paths:
         also have the following permission: <code>iam:PassRole</code> </p> </dd>
         </dl>
       tags:
-        - Update
         - Access
+        - Access Grants Instances
         - Grants
         - Locations
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
   /v20180820/accesspoint/{name}/policy:
     PUT:
-      summary: PutAccessPointPolicy
+      summary: 'Put Access Point Policy '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Associates an access policy with the specified access point.
@@ -441,31 +315,14 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPointPolicy.html">DeleteAccessPointPolicy</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Access
-        - Points
-        - Policies
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
         - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
+        - Points
         - Policies
   /v20180820/accesspointforobjectlambda/{name}/policy:
     PUT:
-      summary: PutAccessPointPolicyForObjectLambda
+      summary: 'Put Access Point Policy For Object Lambda '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Creates or replaces resource policy for an Object Lambda
@@ -479,34 +336,16 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPointPolicyForObjectLambda.html">GetAccessPointPolicyForObjectLambda</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Access
-        - Points
-        - Policies
-        - For
-        - Objects
+        - Access Point
         - Lambda
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
+        - Objects
+        - Points
         - Policies
   /v20180820/bucket/{name}/lifecycleconfiguration:
     PUT:
-      summary: PutBucketLifecycleConfiguration
+      summary: 'Put Bucket Lifecycle Configuration '
       description: >-
         <note> <p>This action puts a lifecycle configuration to an Amazon S3 on
         Outposts bucket. To put a lifecycle configuration to an S3 bucket, see
@@ -532,32 +371,14 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteBucketLifecycleConfiguration.html">DeleteBucketLifecycleConfiguration</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Lifecycle
         - Configurations
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
+        - Lifecycle
         - Lifecycle Configuration
+        - Names
   /v20180820/bucket/{name}/policy:
     PUT:
-      summary: PutBucketPolicy
+      summary: 'Put Bucket Policy '
       description: >-
         <note> <p>This action puts a bucket policy to an Amazon S3 on Outposts
         bucket. To put a policy on an S3 bucket, see <a
@@ -596,31 +417,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteBucketPolicy.html">DeleteBucketPolicy</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Policies
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
         - Policies
-        - Lifecycle Configuration
   /v20180820/bucket/{name}/replication:
     PUT:
-      summary: PutBucketReplication
+      summary: 'Put Bucket Replication '
       description: >-
         <note> <p>This action creates an Amazon S3 on Outposts bucket's
         replication configuration. To create an S3 bucket's replication
@@ -700,32 +502,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteBucketReplication.html">DeleteBucketReplication</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Replication
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
         - Replication
   /v20180820/bucket/{name}/tagging:
     PUT:
-      summary: PutBucketTagging
+      summary: 'Put Bucket Tagging '
       description: >-
         <note> <p>This action puts tags on an Amazon S3 on Outposts bucket. To
         put tags on an S3 bucket, see <a
@@ -789,33 +571,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteBucketTagging.html">DeleteBucketTagging</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Tagging
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
         - Tagging
   /v20180820/jobs/{id}/tagging:
     PUT:
-      summary: PutJobTagging
+      summary: 'Put Job Tagging '
       description: >-
         <p>Sets the supplied tag-set on an S3 Batch Operations job.</p> <p>A tag
         is a key-value pair. You can associate S3 Batch Operations tags with any
@@ -858,33 +619,11 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteJobTagging.html">DeleteJobTagging</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Jobs
-        - Tagging
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
         - Tagging
   /v20180820/async-requests/mrap/delete:
     POST:
-      summary: DeleteMultiRegionAccessPoint
+      summary: 'Delete Multi Region Access Point '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Deletes a Multi-Region Access Point. This action does not
@@ -910,36 +649,14 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListMultiRegionAccessPoints.html">ListMultiRegionAccessPoints</a>
         </p> </li> </ul>
       tags:
-        - Delete
-        - Multi
-        - Regions
         - Access
-        - Points
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
         - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
+        - Multi
+        - Points
+        - Regions
   /v20180820/configuration/publicAccessBlock:
     PUT:
-      summary: PutPublicAccessBlock
+      summary: 'Put Public Access Block '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Creates or modifies the <code>PublicAccessBlock</code>
@@ -954,37 +671,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeletePublicAccessBlock.html">DeletePublicAccessBlock</a>
         </p> </li> </ul>
       tags:
-        - Put
+        - Access
+        - Blocks
+        - Configurations
         - Public
-        - Access
-        - Blocks
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
   /v20180820/storagelens/{storagelensid}:
     PUT:
-      summary: PutStorageLensConfiguration
+      summary: 'Put Storage Lens Configuration '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Puts an Amazon S3 Storage Lens configuration. For more
@@ -1001,39 +694,13 @@ paths:
         permissions to use Amazon S3 Storage Lens</a> in the <i>Amazon S3 User
         Guide</i>.</p> </note>
       tags:
-        - Put
-        - Storage
-        - Lens
         - Configurations
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
+        - Lens
+        - Storage
         - Storage Lens
   /v20180820/storagelens/{storagelensid}/tagging:
     PUT:
-      summary: PutStorageLensConfigurationTagging
+      summary: 'Put Storage Lens Configuration Tagging '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Put or replace tags on an existing Amazon S3 Storage Lens
@@ -1048,40 +715,14 @@ paths:
         permissions to use Amazon S3 Storage Lens</a> in the <i>Amazon S3 User
         Guide</i>.</p> </note>
       tags:
-        - Put
-        - Storage
-        - Lens
         - Configurations
-        - Tagging
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
+        - Lens
+        - Storage
         - Storage Lens
-        - Storage Lens
+        - Tagging
   /v20180820/storagelensgroup/{name}:
     PUT:
-      summary: UpdateStorageLensGroup
+      summary: 'Update Storage Lens Group '
       description: >-
         <p> Updates the existing Storage Lens group.</p> <p>To use this
         operation, you must have the permission to perform the
@@ -1093,39 +734,14 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html#S3LensErrorCodeList">List
         of Amazon S3 Storage Lens error codes</a>.</p>
       tags:
-        - Update
-        - Storage
+        - Groups
         - Lens
-        - Group
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
+        - Storage
         - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
   /v20180820/jobs/{id}:
     GET:
-      summary: DescribeJob
+      summary: 'Describe Job '
       description: >-
         <p>Retrieves the configuration parameters and status for a Batch
         Operations job. For more information, see <a
@@ -1146,35 +762,9 @@ paths:
       tags:
         - Describe
         - Jobs
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
   /v20180820/async-requests/mrap/{request_token+}:
     GET:
-      summary: DescribeMultiRegionAccessPointOperation
+      summary: 'Describe Multi Region Access Point Operation '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Retrieves the status of an asynchronous request to manage a
@@ -1193,42 +783,17 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListMultiRegionAccessPoints.html">ListMultiRegionAccessPoints</a>
         </p> </li> </ul>
       tags:
+        - Access
+        - Async
         - Describe
         - Multi
-        - Regions
-        - Access
-        - Points
         - Operation
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
+        - Points
+        - Regions
+        - Tokens
   /v20180820/accessgrantsinstance/prefix:
     GET:
-      summary: GetAccessGrantsInstanceForPrefix
+      summary: 'Get Access Grants Instance For Prefix '
       description: >-
         <p>Retrieve the S3 Access Grants instance that contains a particular
         prefix. </p> <dl> <dt>Permissions</dt> <dd> <p>You must have the
@@ -1238,43 +803,14 @@ paths:
         following permissions to their S3 Access Grants instance:
         <code>s3:GetAccessGrantsInstanceForPrefix</code>. </p> </dd> </dl>
       tags:
-        - Get
         - Access
+        - Access Grants Instances
         - Grants
         - Instances
-        - For
-        - Prefix
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
         - Prefix
   /v20180820/accesspointforobjectlambda/{name}/configuration:
     PUT:
-      summary: PutAccessPointConfigurationForObjectLambda
+      summary: 'Put Access Point Configuration For Object Lambda '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Replaces configuration for an Object Lambda Access Point.</p>
@@ -1284,45 +820,16 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPointConfigurationForObjectLambda.html">GetAccessPointConfigurationForObjectLambda</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Access
-        - Points
+        - Access Point
         - Configurations
-        - For
-        - Objects
         - Lambda
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
+        - Objects
+        - Points
   /v20180820/accesspoint/{name}/policyStatus:
     GET:
-      summary: GetAccessPointPolicyStatus
+      summary: 'Get Access Point Policy Status '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Indicates whether the specified access point currently has a
@@ -1332,90 +839,31 @@ paths:
         Data Access with Amazon S3 access points</a> in the <i>Amazon S3 User
         Guide</i>.</p>
       tags:
-        - Get
         - Access
+        - Access Point
+        - Names
         - Points
         - Policies
         - Status
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
   /v20180820/accesspointforobjectlambda/{name}/policyStatus:
     GET:
-      summary: GetAccessPointPolicyStatusForObjectLambda
+      summary: 'Get Access Point Policy Status For Object Lambda '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns the status of the resource policy associated with an
         Object Lambda Access Point.</p>
       tags:
-        - Get
         - Access
+        - Access Point
+        - Lambda
+        - Names
+        - Objects
         - Points
         - Policies
         - Status
-        - For
-        - Objects
-        - Lambda
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
   /v20180820/bucket/{name}/versioning:
     PUT:
-      summary: PutBucketVersioning
+      summary: 'Put Bucket Versioning '
       description: >-
         <note> <p>This operation sets the versioning state for S3 on Outposts
         buckets only. To set the versioning state for an S3 bucket, see <a
@@ -1466,43 +914,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetBucketLifecycleConfiguration.html">GetBucketLifecycleConfiguration</a>
         </p> </li> </ul>
       tags:
-        - Put
         - Bucket
-        - Versioning
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
         - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
         - Versioning
   /v20180820/accessgrantsinstance/dataaccess:
     GET:
-      summary: GetDataAccess
+      summary: 'Get Data Access '
       description: >-
         <p>Returns a temporary access credential from S3 Access Grants to the
         grantee or client application. The <a
@@ -1517,44 +934,13 @@ paths:
         <code>sts:SetContext</code>, and for IAM users or roles
         <code>sts:SourceIdentity</code>. </p> </dd> </dl>
       tags:
-        - Get
-        - Data
         - Access
-        - V20180820
         - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
+        - Data
         - Data Access
   /v20180820/mrap/instances/{name+}:
     GET:
-      summary: GetMultiRegionAccessPoint
+      summary: 'Get Multi Region Access Point '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns configuration information about the specified
@@ -1574,48 +960,15 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListMultiRegionAccessPoints.html">ListMultiRegionAccessPoints</a>
         </p> </li> </ul>
       tags:
-        - Get
-        - Multi
-        - Regions
         - Access
-        - Points
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
         - Instances
+        - Multi
         - Names
+        - Points
+        - Regions
   /v20180820/mrap/instances/{name+}/policy:
     GET:
-      summary: GetMultiRegionAccessPointPolicy
+      summary: 'Get Multi Region Access Point Policy '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns the access control policy of the specified
@@ -1631,49 +984,16 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPointPolicy.html">PutMultiRegionAccessPointPolicy</a>
         </p> </li> </ul>
       tags:
-        - Get
-        - Multi
-        - Regions
         - Access
+        - Instances
+        - Multi
+        - Names
         - Points
         - Policies
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
+        - Regions
   /v20180820/mrap/instances/{name+}/policystatus:
     GET:
-      summary: GetMultiRegionAccessPointPolicyStatus
+      summary: 'Get Multi Region Access Point Policy Status '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Indicates whether the specified Multi-Region Access Point has
@@ -1690,51 +1010,18 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPointPolicy.html">PutMultiRegionAccessPointPolicy</a>
         </p> </li> </ul>
       tags:
-        - Get
-        - Multi
-        - Regions
         - Access
+        - Instances
+        - Multi
+        - Names
         - Points
         - Policies
-        - Status
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
         - Policy Status
+        - Regions
+        - Status
   /v20180820/mrap/instances/{mrap+}/routes:
     PATCH:
-      summary: SubmitMultiRegionAccessPointRoutes
+      summary: 'Submit Multi Region Access Point Routes '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Submits an updated route configuration for a Multi-Region
@@ -1760,102 +1047,28 @@ paths:
         </p> </li> </ul> <note> <p>Your Amazon S3 bucket does not need to be in
         these five Regions.</p> </note>
       tags:
-        - Submit
-        - Multi
-        - Regions
         - Access
-        - Points
-        - Routes
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
         - Instances
-        - Names
-        - Policy Status
-        - Mrap+
+        - Multi
+        - Points
+        - Regions
         - Routes
+        - Submit
   /v20180820/accessgrantsinstance/grants:
     GET:
-      summary: ListAccessGrants
+      summary: 'List Access Grants '
       description: >-
         <p>Returns the list of access grants in your S3 Access Grants
         instance.</p> <dl> <dt>Permissions</dt> <dd> <p>You must have the
         <code>s3:ListAccessGrants</code> permission to use this operation. </p>
         </dd> </dl>
       tags:
-        - Lists
         - Access
-        - Grants
-        - V20180820
         - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
         - Grants
   /v20180820/accessgrantsinstances:
     GET:
-      summary: ListAccessGrantsInstances
+      summary: 'List Access Grants Instances '
       description: >-
         <p>Returns a list of S3 Access Grants instances. An S3 Access Grants
         instance serves as a logical grouping for your individual access grants.
@@ -1864,105 +1077,26 @@ paths:
         <code>s3:ListAccessGrantsInstances</code> permission to use this
         operation. </p> </dd> </dl>
       tags:
-        - Lists
         - Access
+        - Access Grants Instances
         - Grants
         - Instances
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
   /v20180820/accessgrantsinstance/locations:
     GET:
-      summary: ListAccessGrantsLocations
+      summary: 'List Access Grants Locations '
       description: >-
         <p>Returns a list of the locations registered in your S3 Access Grants
         instance.</p> <dl> <dt>Permissions</dt> <dd> <p>You must have the
         <code>s3:ListAccessGrantsLocations</code> permission to use this
         operation. </p> </dd> </dl>
       tags:
-        - Lists
         - Access
-        - Grants
-        - Locations
-        - V20180820
         - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
         - Grants
-        - Access Grants Instances
         - Locations
   /v20180820/accesspoint:
     GET:
-      summary: ListAccessPoints
+      summary: 'List Access Points '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns a list of the access points that are owned by the
@@ -1989,52 +1123,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPoint.html">GetAccessPoint</a>
         </p> </li> </ul>
       tags:
-        - Lists
         - Access
+        - Access Point
         - Points
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
   /v20180820/accesspointforobjectlambda:
     GET:
-      summary: ListAccessPointsForObjectLambda
+      summary: 'List Access Points For Object Lambda '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns some or all (up to 1,000) access points associated
@@ -2050,55 +1144,14 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPointForObjectLambda.html">GetAccessPointForObjectLambda</a>
         </p> </li> </ul>
       tags:
-        - Lists
         - Access
-        - Points
-        - For
-        - Objects
+        - Access Point
         - Lambda
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
+        - Objects
+        - Points
   /v20180820/mrap/instances:
     GET:
-      summary: ListMultiRegionAccessPoints
+      summary: 'List Multi Region Access Points '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns a list of the Multi-Region Access Points currently
@@ -2121,54 +1174,14 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetMultiRegionAccessPoint.html">GetMultiRegionAccessPoint</a>
         </p> </li> </ul>
       tags:
-        - Lists
-        - Multi
-        - Regions
         - Access
-        - Points
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
         - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
+        - Multi
+        - Points
+        - Regions
   /v20180820/bucket:
     GET:
-      summary: ListRegionalBuckets
+      summary: 'List Regional Buckets '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Returns a list of all Outposts buckets in an Outpost that are
@@ -2182,52 +1195,12 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListRegionalBuckets.html#API_control_ListRegionalBuckets_Examples">Examples</a>
         section.</p>
       tags:
-        - Lists
-        - Regional
-        - Buckets
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
         - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
+        - Buckets
+        - Regional
   /v20180820/storagelens:
     GET:
-      summary: ListStorageLensConfigurations
+      summary: 'List Storage Lens Configurations '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Gets a list of Amazon S3 Storage Lens configurations. For
@@ -2242,53 +1215,13 @@ paths:
         permissions to use Amazon S3 Storage Lens</a> in the <i>Amazon S3 User
         Guide</i>.</p> </note>
       tags:
-        - Lists
-        - Storage
+        - Configurations
         - Lens
-        - Configurations
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
+        - Storage
         - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
   /v20180820/tags/{resourceArn+}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p> This operation removes the specified Amazon Web Services resource
         tags from an S3 resource. Each tag is a label consisting of a
@@ -2310,52 +1243,13 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html#S3TaggingErrorCodeList">List
         of Amazon S3 Tagging error codes</a>.</p>
       tags:
-        - Untag
-        - Resources
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /v20180820/async-requests/mrap/put-policy:
     POST:
-      summary: PutMultiRegionAccessPointPolicy
+      summary: 'Put Multi Region Access Point Policy '
       description: >-
         <note> <p>This operation is not supported by directory buckets.</p>
         </note> <p>Associates an access control policy with the specified
@@ -2374,57 +1268,15 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetMultiRegionAccessPointPolicyStatus.html">GetMultiRegionAccessPointPolicyStatus</a>
         </p> </li> </ul>
       tags:
-        - Put
-        - Multi
-        - Regions
         - Access
+        - Async
+        - Multi
         - Points
         - Policies
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
-        - ARN
-        - Put
+        - Regions
   /v20180820/jobs/{id}/priority:
     POST:
-      summary: UpdateJobPriority
+      summary: 'Update Job Priority '
       description: >-
         <p>Updates an existing S3 Batch Operations job's priority. For more
         information, see <a
@@ -2443,55 +1295,11 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UpdateJobStatus.html">UpdateJobStatus</a>
         </p> </li> </ul>
       tags:
-        - Update
         - Jobs
-        - Priorities
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
-        - ARN
-        - Put
         - Priorities
   /v20180820/jobs/{id}/status:
     POST:
-      summary: UpdateJobStatus
+      summary: 'Update Job Status '
       description: >-
         <p>Updates the status for the specified job. Use this operation to
         confirm that you want to run a job or to cancel an existing job. For
@@ -2511,49 +1319,5 @@ paths:
         href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UpdateJobStatus.html">UpdateJobStatus</a>
         </p> <
       tags:
-        - Update
         - Jobs
         - Status
-        - V20180820
-        - Access Grants Instances
-        - Identity Center
-        - Grant
-        - Locations
-        - Access Point
-        - Names
-        - Access Point
-        - Bucket
-        - Jobs
-        - Async
-        - Requests
-        - Mrap
-        - Create
-        - Storage Lens Groups
-        - Identifiers
-        - Resource Policies
-        - Policies
-        - Lifecycle Configuration
-        - Replication
-        - Tagging
-        - Delete
-        - Access
-        - Blocks
-        - Storage Lens
-        - Storage Lens
-        - Request_token+
-        - Prefix
-        - Configurations
-        - Status
-        - Versioning
-        - Data Access
-        - Instances
-        - Names
-        - Policy Status
-        - Mrap+
-        - Routes
-        - Grants
-        - Access Grants Instances
-        - Locations
-        - ARN
-        - Put
-        - Priorities
