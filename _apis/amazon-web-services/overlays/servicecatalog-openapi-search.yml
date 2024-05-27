@@ -4,9 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateTagOption
+      summary: 'Update Tag Option '
       description: <p>Updates the specified TagO
       tags:
-        - Update
+        - Options
         - Tags
-        - Opti
