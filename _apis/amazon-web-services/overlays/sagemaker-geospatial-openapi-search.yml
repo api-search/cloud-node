@@ -4,313 +4,144 @@ info:
 paths:
   /earth-observation-jobs/{Arn}:
     GET:
-      summary: GetEarthObservationJob
+      summary: 'Get Earth Observation Job '
       description: <p>Get the details for a previously initiated Earth Observation job.</p>
       tags:
-        - Get
-        - Earth
-        - Observation
-        - Jobs
         - ARN
+        - Earth
+        - Jobs
+        - Observation
   /vector-enrichment-jobs/{Arn}:
     GET:
-      summary: GetVectorEnrichmentJob
+      summary: 'Get Vector Enrichment Job '
       description: >-
         <p>Retrieves details of a Vector Enrichment Job for a given job Amazon
         Resource Name (ARN).</p>
       tags:
-        - Get
-        - Vectors
+        - ARN
         - Enrichment
         - Jobs
-        - ARN
+        - Vectors
   /export-earth-observation-job:
     POST:
-      summary: ExportEarthObservationJob
+      summary: 'Export Earth Observation Job '
       description: >-
         <p>Use this operation to export results of an Earth Observation job and
         optionally source images used as input to the EOJ to an Amazon S3
         location.</p>
       tags:
-        - Export
         - Earth
-        - Observation
+        - Exports
         - Jobs
-        - ARN
-        - Export
-        - Earth
         - Observation
-        - Jobs
   /export-vector-enrichment-jobs:
     POST:
-      summary: ExportVectorEnrichmentJob
+      summary: 'Export Vector Enrichment Job '
       description: >-
         <p>Use this operation to copy results of a Vector Enrichment job to an
         Amazon S3 location.</p>
       tags:
-        - Export
-        - Vectors
         - Enrichment
-        - Jobs
-        - ARN
-        - Export
-        - Earth
-        - Observation
+        - Exports
         - Jobs
         - Vectors
-        - Enrichment
-        - Jobs
   /raster-data-collection/{Arn}:
     GET:
-      summary: GetRasterDataCollection
+      summary: 'Get Raster Data Collection '
       description: >-
         <p>Use this operation to get details of a specific raster data
         collection.</p>
       tags:
-        - Get
-        - Raster
-        - Data
-        - Collections
         - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
+        - Collections
+        - Data
+        - Raster
   /tile/{z}/{x}/{y}:
     GET:
-      summary: GetTile
+      summary: 'Get Tile '
       description: <p>Gets a web mercator tile for the given Earth Observation job.</p>
       tags:
-        - Get
-        - Tiles
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
         - Tiles
   /list-earth-observation-jobs:
     POST:
-      summary: ListEarthObservationJobs
+      summary: 'List Earth Observation Jobs '
       description: >-
         <p>Use this operation to get a list of the Earth Observation jobs
         associated with the calling Amazon Web Services account.</p>
       tags:
-        - Lists
         - Earth
+        - Jobs
         - Observation
-        - Jobs
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
   /raster-data-collections:
     GET:
-      summary: ListRasterDataCollections
+      summary: 'List Raster Data Collections '
       description: <p>Use this operation to get raster data collections.</p>
       tags:
-        - Lists
-        - Raster
-        - Data
         - Collections
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
-        - Raster
         - Data
-        - Collections
+        - Raster
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>The resource you want to untag.</p>
       tags:
-        - Untag
-        - Resources
         - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
-        - Raster
-        - Data
-        - Collections
         - Resources
+        - Tags
+        - Untag
   /list-vector-enrichment-jobs:
     POST:
-      summary: ListVectorEnrichmentJobs
+      summary: 'List Vector Enrichment Jobs '
       description: <p>Retrieves a list of vector enrichment jobs.</p>
       tags:
-        - Lists
-        - Vectors
         - Enrichment
         - Jobs
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
         - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
-        - Raster
-        - Data
-        - Collections
-        - Resources
   /search-raster-data-collection:
     POST:
-      summary: SearchRasterDataCollection
+      summary: 'Search Raster Data Collection '
       description: >-
         <p>Allows you run image query on a specific raster data collection to
         get a list of the satellite imagery matching the selected filters.</p>
       tags:
-        - Search
-        - Raster
+        - Collections
         - Data
-        - Collections
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
         - Raster
-        - Data
-        - Collections
-        - Resources
         - Search
-        - Collections
   /earth-observation-jobs:
     POST:
-      summary: StartEarthObservationJob
+      summary: 'Start Earth Observation Job '
       description: <p>Use this operation to create an Earth observation job.</p>
       tags:
-        - Start
         - Earth
+        - Jobs
         - Observation
-        - Jobs
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
-        - Raster
-        - Data
-        - Collections
-        - Resources
-        - Search
-        - Collections
   /vector-enrichment-jobs:
     POST:
-      summary: StartVectorEnrichmentJob
+      summary: 'Start Vector Enrichment Job '
       description: >-
         <p>Creates a Vector Enrichment job for the supplied job type. Currently,
         there are two supported job types: reverse geocoding and map
         matching.</p>
       tags:
-        - Start
-        - Vectors
         - Enrichment
         - Jobs
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
         - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
-        - Raster
-        - Data
-        - Collections
-        - Resources
-        - Search
-        - Collections
   /earth-observation-jobs/stop:
     POST:
-      summary: StopEarthObservationJob
+      summary: 'Stop Earth Observation Job '
       description: <p>Use this operation to stop an existing earth observation job.</p>
       tags:
-        - Stop
         - Earth
+        - Jobs
         - Observation
-        - Jobs
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
-        - Raster
-        - Data
-        - Collections
-        - Resources
-        - Search
-        - Collections
         - Stop
   /vector-enrichment-jobs/stop:
     POST:
-      summary: StopVectorEnrichmentJob
+      summary: 'Stop Vector Enrichment Job '
       description: <p>Stops the Vector Enrichment job for a given j
       tags:
+        - Enrichment
+        - Jobs
         - Stop
         - Vectors
-        - Enrichment
-        - Jobs
-        - ARN
-        - Export
-        - Earth
-        - Observation
-        - Jobs
-        - Vectors
-        - Enrichment
-        - Jobs
-        - Tiles
-        - Lists
-        - Raster
-        - Data
-        - Collections
-        - Resources
-        - Search
-        - Collections
-        - St
