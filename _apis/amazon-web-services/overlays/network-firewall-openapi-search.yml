@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateTLSInspectionConfiguration
+      summary: 'Update TLSInspection Configuration '
       description: >-
         <p>Updates the TLS inspection configuration settings for the specified
         TLS inspection configuration. You use a TLS inspection configuration by
@@ -15,6 +15,5 @@ paths:
         retrieve the current <a>TLSInspectionConfiguration</a> object, update
         the object as needed, and then provide the updated object to this
       tags:
-        - Update
-        - Inspections
         - Configurations
+        - TLSInspection
