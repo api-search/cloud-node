@@ -4,178 +4,87 @@ info:
 paths:
   /messages/batch:
     POST:
-      summary: BatchPutMessage
+      summary: 'Batch Put Message '
       description: <p>Sends messages to a channel.</p>
       tags:
         - Batches
-        - Put
         - Messages
-        - Messages
-        - Batches
   /pipelines/{pipelineName}/reprocessing/{reprocessingId}:
     DELETE:
-      summary: CancelPipelineReprocessing
+      summary: 'Cancel Pipeline Reprocessing '
       description: <p>Cancels the reprocessing of data through the pipeline.</p>
       tags:
         - Cancel
+        - Names
         - Pipelines
         - Reprocessing
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
   /channels:
     GET:
-      summary: ListChannels
+      summary: 'List Channels '
       description: <p>Retrieves a list of channels.</p>
       tags:
-        - Lists
-        - Channels
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
         - Channels
   /datasets:
     GET:
-      summary: ListDatasets
+      summary: 'List Datasets '
       description: <p>Retrieves information about datasets.</p>
       tags:
-        - Lists
-        - Datasets
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
         - Datasets
   /datasets/{datasetName}/content:
     GET:
-      summary: GetDatasetContent
+      summary: 'Get Dataset Content '
       description: <p>Retrieves the contents of a dataset as presigned URIs.</p>
       tags:
-        - Get
-        - Datasets
         - Content
-        - Messages
-        - Batches
+        - Datasets
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
   /datastores:
     GET:
-      summary: ListDatastores
+      summary: 'List Datastores '
       description: <p>Retrieves a list of data stores.</p>
       tags:
-        - Lists
-        - Data Store
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
         - Data Store
   /pipelines:
     GET:
-      summary: ListPipelines
+      summary: 'List Pipelines '
       description: <p>Retrieves a list of pipelines.</p>
       tags:
-        - Lists
-        - Pipelines
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
         - Pipelines
   /channels/{channelName}:
     PUT:
-      summary: UpdateChannel
+      summary: 'Update Channel '
       description: <p>Used to update the settings of a channel.</p>
       tags:
-        - Update
         - Channels
-        - Messages
-        - Batches
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
   /datasets/{datasetName}:
     PUT:
-      summary: UpdateDataset
+      summary: 'Update Dataset '
       description: <p>Updates the settings of a dataset.</p>
       tags:
-        - Update
         - Datasets
-        - Messages
-        - Batches
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
   /datastores/{datastoreName}:
     PUT:
-      summary: UpdateDatastore
+      summary: 'Update Datastore '
       description: <p>Used to update the settings of a data store.</p>
       tags:
-        - Update
         - Data Store
-        - Messages
-        - Batches
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
   /pipelines/{pipelineName}:
     PUT:
-      summary: UpdatePipeline
+      summary: 'Update Pipeline '
       description: >-
         <p>Updates the settings of a pipeline. You must specify both a
         <code>channel</code> and a <code>datastore</code> activity and,
         optionally, as many as 23 additional activities in the
         <code>pipelineActivities</code> array.</p>
       tags:
-        - Update
-        - Pipelines
-        - Messages
-        - Batches
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
         - Pipelines
   /logging:
     PUT:
-      summary: PutLoggingOptions
+      summary: 'Put Logging Options '
       description: >-
         <p>Sets or updates the IoT Analytics logging options.</p> <p>If you
         update the value of any <code>loggingOptions</code> field, it takes up
@@ -184,132 +93,51 @@ paths:
         field (for example, to correct an invalid policy), it takes up to five
         minutes for that change to take effect. </p>
       tags:
-        - Put
         - Logging
         - Options
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
-        - Logging
   /datasets/{datasetName}/contents:
     GET:
-      summary: ListDatasetContents
+      summary: 'List Dataset Contents '
       description: <p>Lists information about dataset contents that have been created.</p>
       tags:
-        - Lists
-        - Datasets
         - Contents
-        - Messages
-        - Batches
+        - Datasets
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
-        - Logging
-        - Contents
   /tags:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes the given tags (metadata) from the resource.</p>
       tags:
-        - Untag
         - Resources
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
-        - Logging
-        - Contents
         - Tags
+        - Untag
   /pipelineactivities/run:
     POST:
-      summary: RunPipelineActivity
+      summary: 'Run Pipeline Activity '
       description: >-
         <p>Simulates the results of running a pipeline activity on a message
         payload.</p>
       tags:
-        - Runs
-        - Pipelines
         - Activity
-        - Messages
-        - Batches
-        - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
-        - Logging
-        - Contents
-        - Tags
         - Pipeline Activities
+        - Pipelines
         - Runs
   /channels/{channelName}/sample:
     GET:
-      summary: SampleChannelData
+      summary: 'Sample Channel Data '
       description: >-
         <p>Retrieves a sample of messages from the specified channel ingested
         during the specified timeframe. Up to 10 messages can be retrieved.</p>
       tags:
-        - Samples
         - Channels
         - Data
-        - Messages
-        - Batches
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
-        - Pipelines
-        - Logging
-        - Contents
-        - Tags
-        - Pipeline Activities
-        - Runs
         - Samples
   /pipelines/{pipelineName}/reprocessing:
     POST:
-      summary: StartPipelineReprocessing
+      summary: 'Start Pipeline Reprocessing '
       description: <p>Starts the reprocessing of raw message data through the pip
       tags:
-        - Start
-        - Pipelines
-        - Reprocessing
-        - Messages
-        - Batches
         - Names
-        - Reprocessing
-        - Identifiers
-        - Channels
-        - Datasets
-        - Content
-        - Data Store
         - Pipelines
-        - Logging
-        - Contents
-        - Tags
-        - Pipeline Activities
-        - Runs
-        - Samples
+        - Reprocessing
