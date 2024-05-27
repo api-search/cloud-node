@@ -4,9 +4,8 @@ info:
 paths:
   /:
     POST:
-      summary: UpdatePartnerStatus
+      summary: 'Update Partner Status '
       description: <p>Updates the status of a partner integr
       tags:
-        - Update
         - Partners
-        - Stat
+        - Status
