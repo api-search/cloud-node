@@ -4,20 +4,16 @@ info:
 paths:
   /BatchGetRecord:
     POST:
-      summary: BatchGetRecord
+      summary: 'Batch Get Record '
       description: >-
         <p>Retrieves a batch of <code>Records</code> from a
         <code>FeatureGroup</code>.</p>
       tags:
         - Batches
-        - Get
-        - Record
-        - Batches
-        - Get
         - Record
   /FeatureGroup/{FeatureGroupName}:
     PUT:
-      summary: PutRecord
+      summary: 'Put Record '
       description: >-
         <p>The <code>PutRecord</code> API is used to ingest a list of
         <code>Records</code> into your feature group. </p> <p>If a new record’s
@@ -38,11 +34,7 @@ paths:
         group level <code>TtlDuration</code>. A record level
         <code>TtlDuration</code> supersedes the group level <code>TtlDuration</
       tags:
-        - Put
-        - Record
-        - Batches
-        - Get
-        - Record
         - Feature
-        - Group
+        - Groups
         - Names
+        - Record
