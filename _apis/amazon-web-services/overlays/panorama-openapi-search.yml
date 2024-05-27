@@ -4,376 +4,157 @@ info:
 paths:
   /application-instances:
     GET:
-      summary: ListApplicationInstances
+      summary: 'List Application Instances '
       description: <p>Returns a list of application instances.</p>
       tags:
-        - Lists
-        - Applications
-        - Instances
         - Applications
         - Instances
   /jobs:
     GET:
-      summary: ListDevicesJobs
+      summary: 'List Devices Jobs '
       description: <p>Returns a list of jobs.</p>
       tags:
-        - Lists
         - Devices
-        - Jobs
-        - Applications
-        - Instances
         - Jobs
   /packages/template-job:
     GET:
-      summary: ListNodeFromTemplateJobs
+      summary: 'List Node From Template Jobs '
       description: <p>Returns a list of camera stream node jobs.</p>
       tags:
-        - Lists
+        - Jobs
         - Nodes
-        - From
-        - Templates
-        - Jobs
-        - Applications
-        - Instances
-        - Jobs
         - Packages
         - Templates
-        - Jobs
   /packages:
     GET:
-      summary: ListPackages
+      summary: 'List Packages '
       description: <p>Returns a list of packages.</p>
       tags:
-        - Lists
         - Packages
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
   /packages/import-jobs:
     GET:
-      summary: ListPackageImportJobs
+      summary: 'List Package Import Jobs '
       description: <p>Returns a list of package import jobs.</p>
       tags:
-        - Lists
-        - Packages
         - Import
         - Jobs
-        - Applications
-        - Instances
-        - Jobs
         - Packages
-        - Templates
-        - Jobs
-        - Import
   /devices/{DeviceId}:
     PUT:
-      summary: UpdateDeviceMetadata
+      summary: 'Update Device Metadata '
       description: <p>Updates a device's metadata.</p>
       tags:
-        - Update
         - Device
+        - Devices
         - Metadata
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
   /packages/{PackageId}:
     DELETE:
-      summary: DeletePackage
+      summary: 'Delete Package '
       description: >-
         <p>Deletes a package.</p> <note> <p>To delete a package, you need
         permission to call <code>s3:DeleteObject</code> in addition to
         permissions for the AWS Panorama API.</p> </note>
       tags:
-        - Delete
-        - Packages
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
         - Packages
   /packages/{PackageId}/versions/{PackageVersion}/patch/{PatchVersion}:
     PUT:
-      summary: RegisterPackageVersion
+      summary: 'Register Package Version '
       description: <p>Registers a package version.</p>
       tags:
-        - Register
         - Packages
-        - Versions
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
         - Patch
+        - Register
+        - Versions
   /application-instances/{ApplicationInstanceId}:
     DELETE:
-      summary: RemoveApplicationInstance
+      summary: 'Remove Application Instance '
       description: <p>Removes an application instance.</p>
       tags:
+        - Applications
+        - Instances
         - Removes
-        - Applications
-        - Instances
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
   /application-instances/{ApplicationInstanceId}/details:
     GET:
-      summary: DescribeApplicationInstanceDetails
+      summary: 'Describe Application Instance Details '
       description: >-
         <p>Returns information about an application instance's configuration
         manifest.</p>
       tags:
+        - Applications
         - Describe
-        - Applications
-        - Instances
         - Details
-        - Applications
         - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
   /jobs/{JobId}:
     GET:
-      summary: DescribeDeviceJob
+      summary: 'Describe Device Job '
       description: <p>Returns information about a device job.</p>
       tags:
         - Describe
         - Device
         - Jobs
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
   /nodes/{NodeId}:
     GET:
-      summary: DescribeNode
+      summary: 'Describe Node '
       description: <p>Returns information about a node.</p>
       tags:
         - Describe
         - Nodes
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
   /packages/template-job/{JobId}:
     GET:
-      summary: DescribeNodeFromTemplateJob
+      summary: 'Describe Node From Template Job '
       description: <p>Returns information about a job to create a camera stream node.</p>
       tags:
         - Describe
+        - Jobs
         - Nodes
-        - From
-        - Templates
-        - Jobs
-        - Applications
-        - Instances
-        - Jobs
         - Packages
         - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
   /packages/metadata/{PackageId}:
     GET:
-      summary: DescribePackage
+      summary: 'Describe Package '
       description: <p>Returns information about a package.</p>
       tags:
         - Describe
+        - Metadata
         - Packages
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
   /packages/import-jobs/{JobId}:
     GET:
-      summary: DescribePackageImportJob
+      summary: 'Describe Package Import Job '
       description: <p>Returns information about a package import job.</p>
       tags:
         - Describe
-        - Packages
         - Import
         - Jobs
-        - Applications
-        - Instances
-        - Jobs
         - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
   /packages/metadata/{PackageId}/versions/{PackageVersion}:
     GET:
-      summary: DescribePackageVersion
+      summary: 'Describe Package Version '
       description: <p>Returns information about a package version.</p>
       tags:
         - Describe
+        - Metadata
         - Packages
         - Versions
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
   /application-instances/{ApplicationInstanceId}/package-dependencies:
     GET:
-      summary: ListApplicationInstanceDependencies
+      summary: 'List Application Instance Dependencies '
       description: <p>Returns a list of application instance dependencies.</p>
       tags:
-        - Lists
         - Applications
-        - Instances
         - Dependencies
-        - Applications
         - Instances
-        - Jobs
         - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
-        - Dependencies
   /application-instances/{ApplicationInstanceId}/node-instances:
     GET:
-      summary: ListApplicationInstanceNodeInstances
+      summary: 'List Application Instance Node Instances '
       description: <p>Returns a list of application node instances.</p>
       tags:
-        - Lists
         - Applications
         - Instances
         - Nodes
-        - Instances
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
-        - Dependencies
   /devices:
     POST:
-      summary: ProvisionDevice
+      summary: 'Provision Device '
       description: >-
         <p>Creates a device and returns a configuration archive. The
         configuration archive is a ZIP file that contains a provisioning
@@ -382,109 +163,30 @@ paths:
         the device within 5 minutes. Use the included USB storage device and
         connect it to the USB 3.0 port next to the HDMI output.</p>
       tags:
-        - Provision
         - Device
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
-        - Dependencies
         - Devices
+        - Provision
   /nodes:
     GET:
-      summary: ListNodes
+      summary: 'List Nodes '
       description: <p>Returns a list of nodes.</p>
       tags:
-        - Lists
-        - Nodes
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
-        - Dependencies
-        - Devices
         - Nodes
   /tags/{ResourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from a resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
-        - Dependencies
-        - Devices
-        - Nodes
-        - Resources
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /application-instances/{ApplicationInstanceId}/node-signals:
     PUT:
-      summary: SignalApplicationInstanceNodeInstances
+      summary: 'Signal Application Instance Node Instances '
       description: <p>Signal camera nodes to stop or r
       tags:
+        - Applications
+        - Instances
+        - Nodes
         - Signals
-        - Applications
-        - Instances
-        - Nodes
-        - Instances
-        - Applications
-        - Instances
-        - Jobs
-        - Packages
-        - Templates
-        - Jobs
-        - Import
-        - Device
-        - Identifiers
-        - Packages
-        - Versions
-        - Versions
-        - Patch
-        - Instances
-        - Details
-        - Nodes
-        - Dependencies
-        - Devices
-        - Nodes
-        - Resources
-        - ARN
-        - null
