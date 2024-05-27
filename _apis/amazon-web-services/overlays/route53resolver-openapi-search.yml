@@ -4,12 +4,11 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateResolverRule
+      summary: 'Update Resolver Rule '
       description: >-
         <p>Updates settings for a specified Resolver rule.
         <code>ResolverRuleId</code> is required, and all other parameters are
         optional. If you don't specify a parameter, it retains its current 
       tags:
-        - Update
         - Resolvers
-        - Ru
+        - Rules
