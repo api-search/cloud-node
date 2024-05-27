@@ -4,11 +4,10 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateAdapter
+      summary: 'Update Adapter '
       description: >-
         <p>Update the configuration for an adapter. FeatureTypes configurations
         cannot be updated. At least one new parameter must be specified as an
         arg
       tags:
-        - Update
-        - Adapt
+        - Adapter
