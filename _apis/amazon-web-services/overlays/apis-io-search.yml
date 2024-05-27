@@ -4424,7 +4424,12 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/elasticloadbalancing/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Balancer
+      - Listeners
+      - Load
+      - Policies
+      - Sets
     properties:
       - type: Documentation
         url: https://aws.amazon.com/elasticloadbalancing/
@@ -4463,7 +4468,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/elasticbeanstalk/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - Settings
+      - Validate
     properties:
       - type: Documentation
         url: https://aws.amazon.com/elasticbeanstalk/
@@ -4496,7 +4504,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/emr/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Mapping
+      - Sessions
+      - Studios
     properties:
       - type: Documentation
         url: https://aws.amazon.com/emr/
@@ -4537,7 +4548,24 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Clusters
+      - Describe
+      - Job RUns
+      - Jobs
+      - Runs
+      - Virtual
+      - Virtual Clusters
+      - Job Templates
+      - Templates
+      - Endpoints
+      - Managed
+      - Credentials
+      - Sessions
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -4560,7 +4588,15 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/elastictranscoder/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Jobs
+      - Notifications
+      - Pipelines
+      - Presets
+      - Read
+      - Roles
+      - Status
+      - Tests
     properties:
       - type: Documentation
         url: https://aws.amazon.com/elastictranscoder/
@@ -4583,7 +4619,10 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ses/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Emails
+      - Identity
+      - Verify
     properties:
       - type: Documentation
         url: https://aws.amazon.com/ses/
@@ -4625,7 +4664,17 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html
     baseURL: https://emr-serverless.[region].amazonaws.com
-    tags: []
+    tags:
+      - Applications
+      - Job RUns
+      - Jobs
+      - Runs
+      - Dashboard
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Stop
     properties:
       - type: Documentation
         url: >-
@@ -4653,7 +4702,50 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html
     baseURL: https://es.[region].amazonaws.com
-    tags: []
+    tags:
+      - Accept
+      - Access
+      - Associate
+      - Authorize
+      - Auto
+      - Cancel
+      - Change
+      - Clusters
+      - Compatible
+      - Configurations
+      - Connections
+      - Describe
+      - Dissociate
+      - Domains
+      - Elasticsearch
+      - Endpoints
+      - History
+      - Inbound
+      - Info
+      - Instances
+      - Limits
+      - Names
+      - Offerings
+      - Outbound
+      - Packages
+      - Progress
+      - Purchase
+      - Reject
+      - Removal
+      - Removes
+      - Reserved
+      - Revoke
+      - Roles
+      - Search
+      - Services
+      - Software
+      - Status
+      - Tags
+      - Tunes
+      - Types
+      - Upgrade
+      - VPC
+      - Versions
     properties:
       - type: Documentation
         url: >-
@@ -4678,7 +4770,8 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/marketplace/latest/userguide/checking-entitlements.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Entitlements
     properties:
       - type: Documentation
         url: >-
