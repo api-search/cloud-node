@@ -4,60 +4,47 @@ info:
 paths:
   /profiles:
     GET:
-      summary: ListProfiles
+      summary: 'List Profiles '
       description: >-
         <p>Lists all profiles in the authenticated account and Amazon Web
         Services Region.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:ListProfiles</code>. </p>
       tags:
-        - Lists
-        - Profiles
         - Profiles
   /trustanchors:
     GET:
-      summary: ListTrustAnchors
+      summary: 'List Trust Anchors '
       description: >-
         <p>Lists the trust anchors in the authenticated account and Amazon Web
         Services Region.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:ListTrustAnchors</code>. </p>
       tags:
-        - Lists
-        - Trust
         - Anchors
-        - Profiles
+        - Trust
         - Trust Anchors
   /crl/{crlId}:
     PATCH:
-      summary: UpdateCrl
+      summary: 'Update Crl '
       description: >-
         <p>Updates the certificate revocation list (CRL). A CRL is a list of
         certificates that have been revoked by the issuing certificate authority
         (CA). IAM Roles Anywhere validates against the CRL before issuing
         credentials.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:UpdateCrl</code>. </p>
-      tags:
-        - Update
-        - Crl
-        - Profiles
-        - Trust Anchors
-        - Identifiers
+      tags: []
   /profile/{profileId}:
     PATCH:
-      summary: UpdateProfile
+      summary: 'Update Profile '
       description: >-
         <p>Updates a <i>profile</i>, a list of the roles that IAM Roles Anywhere
         service is trusted to assume. You use profiles to intersect permissions
         with IAM managed policies.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:UpdateProfile</code>. </p>
       tags:
-        - Update
         - Profiles
-        - Profiles
-        - Trust Anchors
-        - Identifiers
   /trustanchor/{trustAnchorId}:
     PATCH:
-      summary: UpdateTrustAnchor
+      summary: 'Update Trust Anchor '
       description: >-
         <p>Updates a trust anchor. You establish trust between IAM Roles
         Anywhere and your certificate authority (CA) by configuring a trust
@@ -68,30 +55,20 @@ paths:
         Amazon Web Services credentials.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:UpdateTrustAnchor</code>. </p>
       tags:
-        - Update
+        - Anchor
         - Trust
-        - Anchor
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
+        - Trustanchor
   /crl/{crlId}/disable:
     POST:
-      summary: DisableCrl
+      summary: 'Disable Crl '
       description: >-
         <p>Disables a certificate revocation list (CRL).</p> <p> <b>Required
         permissions: </b> <code>rolesanywhere:DisableCrl</code>. </p>
       tags:
         - Disable
-        - Crl
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
   /profile/{profileId}/disable:
     POST:
-      summary: DisableProfile
+      summary: 'Disable Profile '
       description: >-
         <p>Disables a profile. When disabled, temporary credential requests with
         this profile fail.</p> <p> <b>Required permissions: </b>
@@ -99,30 +76,21 @@ paths:
       tags:
         - Disable
         - Profiles
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
   /trustanchor/{trustAnchorId}/disable:
     POST:
-      summary: DisableTrustAnchor
+      summary: 'Disable Trust Anchor '
       description: >-
         <p>Disables a trust anchor. When disabled, temporary credential requests
         specifying this trust anchor are unauthorized.</p> <p> <b>Required
         permissions: </b> <code>rolesanywhere:DisableTrustAnchor</code>. </p>
       tags:
+        - Anchor
         - Disable
         - Trust
-        - Anchor
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
+        - Trustanchor
   /crl/{crlId}/enable:
     POST:
-      summary: EnableCrl
+      summary: 'Enable Crl '
       description: >-
         <p>Enables a certificate revocation list (CRL). When enabled,
         certificates stored in the CRL are unauthorized to receive session
@@ -130,16 +98,9 @@ paths:
         <code>rolesanywhere:EnableCrl</code>. </p>
       tags:
         - Enable
-        - Crl
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
   /profile/{profileId}/enable:
     POST:
-      summary: EnableProfile
+      summary: 'Enable Profile '
       description: >-
         <p>Enables temporary credential requests for a profile. </p> <p>
         <b>Required permissions: </b> <code>rolesanywhere:EnableProfile</code>.
@@ -147,32 +108,21 @@ paths:
       tags:
         - Enable
         - Profiles
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
   /trustanchor/{trustAnchorId}/enable:
     POST:
-      summary: EnableTrustAnchor
+      summary: 'Enable Trust Anchor '
       description: >-
         <p>Enables a trust anchor. When enabled, certificates in the trust
         anchor chain are authorized for trust validation. </p> <p> <b>Required
         permissions: </b> <code>rolesanywhere:EnableTrustAnchor</code>. </p>
       tags:
+        - Anchor
         - Enable
         - Trust
-        - Anchor
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
+        - Trustanchor
   /subject/{subjectId}:
     GET:
-      summary: GetSubject
+      summary: 'Get Subject '
       description: >-
         <p>Gets a <i>subject</i>, which associates a certificate identity with
         authentication attempts. The subject stores auditing information such as
@@ -181,75 +131,36 @@ paths:
         authentication. </p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:GetSubject</code>. </p>
       tags:
-        - Get
         - Subjects
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
   /crls:
     GET:
-      summary: ListCrls
+      summary: 'List Crls '
       description: >-
         <p>Lists all certificate revocation lists (CRL) in the authenticated
         account and Amazon Web Services Region.</p> <p> <b>Required permissions:
         </b> <code>rolesanywhere:ListCrls</code>. </p>
-      tags:
-        - Lists
-        - Crls
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
-        - Crls
+      tags: []
   /subjects:
     GET:
-      summary: ListSubjects
+      summary: 'List Subjects '
       description: >-
         <p>Lists the subjects in the authenticated account and Amazon Web
         Services Region.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:ListSubjects</code>. </p>
       tags:
-        - Lists
-        - Subjects
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
-        - Crls
         - Subjects
   /ListTagsForResource:
     GET:
-      summary: ListTagsForResource
+      summary: 'List Tags For Resource '
       description: >-
         <p>Lists the tags attached to the resource.</p> <p> <b>Required
         permissions: </b> <code>rolesanywhere:ListTagsForResource</code>. </p>
       tags:
-        - Lists
-        - Tags
-        - For
         - Resources
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
-        - Crls
-        - Subjects
-        - Lists
         - Tags
-        - For
-        - Resources
   /put-notifications-settings:
     PATCH:
-      summary: PutNotificationSettings
+      summary: 'Put Notification Settings '
       description: >-
         <p>Attaches a list of <i>notification settings</i> to a trust
         anchor.</p> <p>A notification setting includes information such as event
@@ -257,101 +168,34 @@ paths:
         notify.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:PutNotificationSettings</code>. </p>
       tags:
-        - Put
-        - Notifications
-        - Settings
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
-        - Crls
-        - Subjects
-        - Lists
-        - Tags
-        - For
-        - Resources
-        - Put
         - Notifications
         - Settings
   /reset-notifications-settings:
     PATCH:
-      summary: ResetNotificationSettings
+      summary: 'Reset Notification Settings '
       description: >-
         <p>Resets the <i>custom notification setting</i> to IAM Roles Anywhere
         default setting. </p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:ResetNotificationSettings</code>. </p>
       tags:
-        - Reset
         - Notifications
-        - Settings
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
-        - Crls
-        - Subjects
-        - Lists
-        - Tags
-        - For
-        - Resources
-        - Put
-        - Notifications
-        - Settings
         - Reset
+        - Settings
   /TagResource:
     POST:
-      summary: TagResource
+      summary: 'Tag Resource '
       description: >-
         <p>Attaches tags to a resource.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:TagResource</code>. </p>
       tags:
-        - Tags
         - Resources
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
-        - Crls
-        - Subjects
-        - Lists
-        - Tags
-        - For
-        - Resources
-        - Put
-        - Notifications
-        - Settings
-        - Reset
         - Tags
   /UntagResource:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: >-
         <p>Removes tags from the resource.</p> <p> <b>Required permissions: </b>
         <code>rolesanywhere:UntagResource</c
       tags:
+        - Resources
         - Untag
-        - Resources
-        - Profiles
-        - Trust Anchors
-        - Identifiers
-        - Anchor
-        - Disable
-        - Enable
-        - Crls
-        - Subjects
-        - Lists
-        - Tags
-        - For
-        - Resources
-        - Put
-        - Notifications
-        - Settings
-        - Reset
-        - Tags
-        - Unt
