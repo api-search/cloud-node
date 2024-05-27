@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateRecommender
+      summary: 'Update Recommender '
       description: >-
         <p>Updates the recommender to modify the recommender configuration. If
         you update the recommender to modify the columns used in training,
@@ -16,5 +16,4 @@ paths:
         href="https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeRecommender.html">DescribeRecommender</a>
         opera
       tags:
-        - Update
-        - Recommend
+        - Recommenders
