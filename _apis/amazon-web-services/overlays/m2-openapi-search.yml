@@ -4,120 +4,62 @@ info:
 paths:
   /applications/{applicationId}/batch-job-executions/{executionId}/cancel:
     POST:
-      summary: CancelBatchJobExecution
+      summary: 'Cancel Batch Job Execution '
       description: <p>Cancels the running of a specific batch job execution.</p>
       tags:
+        - Applications
+        - Batches
         - Cancel
-        - Batches
-        - Jobs
         - Execution
-        - Identifiers
-        - Batches
-        - Jobs
         - Executions
-        - Execution
-        - Cancel
+        - Jobs
   /applications:
     GET:
-      summary: ListApplications
+      summary: 'List Applications '
       description: >-
         <p>Lists the applications associated with a specific Amazon Web Services
         account. You can provide the unique identifier of a specific runtime
         environment in a query parameter to see all applications associated with
         that environment.</p>
       tags:
-        - Lists
-        - Applications
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
   /applications/{applicationId}/dataset-import-task:
     POST:
-      summary: CreateDataSetImportTask
+      summary: 'Create Data Set Import Task '
       description: <p>Starts a data set import task for a specific application.</p>
       tags:
-        - Create
-        - Data
-        - Sets
-        - Import
-        - Tasks
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
+        - Data
         - Datasets
         - Import
+        - Sets
         - Tasks
   /applications/{applicationId}/deployments:
     GET:
-      summary: ListDeployments
+      summary: 'List Deployments '
       description: >-
         <p>Returns a list of all deployments of a specific application. A
         deployment is a combination of a specific application and a specific
         version of that application. Each deployment is mapped to a particular
         application version.</p>
       tags:
-        - Lists
-        - Deployments
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
-        - Datasets
-        - Import
-        - Tasks
         - Deployments
   /environments:
     GET:
-      summary: ListEnvironments
+      summary: 'List Environments '
       description: <p>Lists the runtime environments.</p>
       tags:
-        - Lists
-        - Environments
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
         - Environments
   /applications/{applicationId}:
     PATCH:
-      summary: UpdateApplication
+      summary: 'Update Application '
       description: <p>Updates an application and creates a new version.</p>
       tags:
-        - Update
         - Applications
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
   /applications/{applicationId}/environment/{environmentId}:
     DELETE:
-      summary: DeleteApplicationFromEnvironment
+      summary: 'Delete Application From Environment '
       description: >-
         <p>Deletes a specific application from the specific runtime environment
         where it was previously deployed. You cannot delete a runtime
@@ -125,376 +67,126 @@ paths:
         deployed to it. This API removes the association of the application with
         the runtime environment so you can delete the environment smoothly.</p>
       tags:
-        - Delete
         - Applications
-        - From
-        - Environments
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
         - Environments
   /environments/{environmentId}:
     PATCH:
-      summary: UpdateEnvironment
+      summary: 'Update Environment '
       description: >-
         <p>Updates the configuration details for a specific runtime
         environment.</p>
       tags:
-        - Update
-        - Environments
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
         - Environments
   /applications/{applicationId}/versions/{applicationVersion}:
     GET:
-      summary: GetApplicationVersion
+      summary: 'Get Application Version '
       description: >-
         <p>Returns details about a specific version of a specific
         application.</p>
       tags:
-        - Get
-        - Applications
-        - Versions
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
         - Applications
         - Versions
   /applications/{applicationId}/batch-job-executions/{executionId}:
     GET:
-      summary: GetBatchJobExecution
+      summary: 'Get Batch Job Execution '
       description: >-
         <p>Gets the details of a specific batch job execution for a specific
         application.</p>
       tags:
-        - Get
+        - Applications
         - Batches
-        - Jobs
         - Execution
-        - Identifiers
-        - Batches
-        - Jobs
         - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
+        - Jobs
   /applications/{applicationId}/datasets/{dataSetName}:
     GET:
-      summary: GetDataSetDetails
+      summary: 'Get Data Set Details '
       description: <p>Gets the details of a specific data set.</p>
       tags:
-        - Get
+        - Applications
         - Data
-        - Sets
+        - Datasets
         - Details
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
         - Names
+        - Sets
   /applications/{applicationId}/dataset-import-tasks/{taskId}:
     GET:
-      summary: GetDataSetImportTask
+      summary: 'Get Data Set Import Task '
       description: >-
         <p>Gets the status of a data set import task initiated with the
         <a>CreateDataSetImportTask</a> operation.</p>
       tags:
-        - Get
-        - Data
-        - Sets
-        - Import
-        - Tasks
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
+        - Data
         - Datasets
         - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
         - Sets
-        - Names
         - Tasks
   /applications/{applicationId}/deployments/{deploymentId}:
     GET:
-      summary: GetDeployment
+      summary: 'Get Deployment '
       description: >-
         <p>Gets details of a specific deployment with a given deployment
         identifier.</p>
       tags:
-        - Get
-        - Deployments
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
         - Deployments
   /signed-bi-url:
     GET:
-      summary: GetSignedBluinsightsUrl
+      summary: 'Get Signed Bluinsights Url '
       description: >-
         <p>Gets a single sign-on URL that can be used to connect to AWS Blu
         Insights.</p>
       tags:
-        - Get
         - Signed
-        - null
-        - URL
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
         - URL
   /applications/{applicationId}/versions:
     GET:
-      summary: ListApplicationVersions
+      summary: 'List Application Versions '
       description: >-
         <p>Returns a list of the application versions for a specific
         application.</p>
       tags:
-        - Lists
         - Applications
         - Versions
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
   /applications/{applicationId}/batch-job-definitions:
     GET:
-      summary: ListBatchJobDefinitions
+      summary: 'List Batch Job Definitions '
       description: >-
         <p>Lists all the available batch job definitions based on the batch job
         resources uploaded during the application creation. You can use the
         batch job definitions in the list to start a batch job.</p>
       tags:
-        - Lists
-        - Batches
-        - Jobs
-        - Definitions
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
+        - Batches
         - Definitions
+        - Jobs
   /applications/{applicationId}/batch-job-executions:
     GET:
-      summary: ListBatchJobExecutions
+      summary: 'List Batch Job Executions '
       description: >-
         <p>Lists historical, current, and scheduled batch job executions for a
         specific application.</p>
       tags:
-        - Lists
-        - Batches
-        - Jobs
-        - Executions
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
+        - Batches
+        - Executions
+        - Jobs
   /applications/{applicationId}/dataset-import-tasks:
     GET:
-      summary: ListDataSetImportHistory
+      summary: 'List Data Set Import History '
       description: <p>Lists the data set imports for the specified application.</p>
       tags:
-        - Lists
+        - Applications
         - Data
-        - Sets
-        - Import
+        - Datasets
         - History
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
         - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
         - Sets
-        - Names
         - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
   /applications/{applicationId}/datasets:
     GET:
-      summary: ListDataSets
+      summary: 'List Data Sets '
       description: >-
         <p>Lists the data sets imported for a specific application. In Amazon
         Web Services Mainframe Modernization, data sets are associated with
@@ -503,215 +195,47 @@ paths:
         Modernization can import data sets into catalogs using <a
         href="https://docs.aws.amazon.com/m2/latest/APIReference/API_CreateDataSetImportTask.html">CreateDataSetImportTask</a>.</p>
       tags:
-        - Lists
-        - Data
-        - Sets
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
         - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
         - Data
+        - Datasets
         - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
   /engine-versions:
     GET:
-      summary: ListEngineVersions
+      summary: 'List Engine Versions '
       description: <p>Lists the available engine versions.</p>
       tags:
-        - Lists
         - Engines
         - Versions
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
-        - Engines
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes one or more tags from the specified resource.</p>
       tags:
-        - Untag
-        - Resources
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
-        - Engines
         - ARN
+        - Resources
+        - Tags
+        - Untag
   /applications/{applicationId}/start:
     POST:
-      summary: StartApplication
+      summary: 'Start Application '
       description: <p>Starts an application that is currently stopped.</p>
       tags:
-        - Start
         - Applications
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
-        - Engines
-        - ARN
-        - Start
   /applications/{applicationId}/batch-job:
     POST:
-      summary: StartBatchJob
+      summary: 'Start Batch Job '
       description: >-
         <p>Starts a batch job and returns the unique identifier of this
         execution of the batch job. The associated application must be running
         in order to start the batch job.</p>
       tags:
-        - Start
+        - Applications
         - Batches
         - Jobs
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
-        - Engines
-        - ARN
-        - Start
   /applications/{applicationId}/stop:
     POST:
-      summary: StopApplication
+      summary: 'Stop Application '
       description: <p>Stops a running applic
       tags:
+        - Applications
         - Stop
-        - Applications
-        - Identifiers
-        - Batches
-        - Jobs
-        - Executions
-        - Execution
-        - Cancel
-        - Applications
-        - Datasets
-        - Import
-        - Tasks
-        - Deployments
-        - Environments
-        - Environments
-        - Versions
-        - Applications
-        - Versions
-        - Datasets
-        - Data
-        - Sets
-        - Names
-        - Tasks
-        - Deployments
-        - Signed
-        - null
-        - URL
-        - Definitions
-        - Engines
-        - ARN
-        - Start
-        - null
