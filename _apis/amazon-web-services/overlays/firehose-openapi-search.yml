@@ -4,7 +4,7 @@ info:
 paths:
   /:
     POST:
-      summary: UpdateDestination
+      summary: 'Update Destination '
       description: >-
         <p>Updates the specified destination of the specified delivery
         stream.</p> <p>Use this operation to change the destination type (for
@@ -36,5 +36,4 @@ paths:
         Use the new version ID to set
         <code>CurrentDeliveryStreamVersionId</code> in the next
       tags:
-        - Update
         - Destinations
