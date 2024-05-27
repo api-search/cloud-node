@@ -4797,7 +4797,28 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/entity-resolution/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Identifiers
+      - Lists
+      - Mapping
+      - Mappingworkflows
+      - Workflows
+      - Matching
+      - Matching Workflows
+      - Schemas
+      - Names
+      - Jobs
+      - Match
+      - Matches
+      - Er
+      - Erservices
+      - Prov
+      - Providers
+      - Services
+      - ARN
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/entity-resolution/
@@ -4834,7 +4855,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/eventbridge/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Endpoints
     properties:
       - type: Documentation
         url: https://aws.amazon.com/eventbridge/
@@ -4872,7 +4894,8 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/firehose/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Destinations
     properties:
       - type: Documentation
         url: https://aws.amazon.com/firehose/
@@ -4913,7 +4936,31 @@ apis:
     humanURL: >-
       https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Evidently.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Batches
+      - Cancel
+      - Data
+      - Deliveries
+      - Evaluate
+      - Evaluations
+      - Events
+      - Experiment
+      - Experiments
+      - Feature
+      - Features
+      - Launch
+      - Launches
+      - Patterns
+      - Projects
+      - References
+      - Resources
+      - Results
+      - Segments
+      - Stop
+      - Tags
+      - Tests
+      - Untag
     properties:
       - type: Documentation
         url: >-
@@ -4933,7 +4980,9 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/forecast/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Datasets
+      - Groups
     properties:
       - type: Documentation
         url: https://aws.amazon.com/forecast/
