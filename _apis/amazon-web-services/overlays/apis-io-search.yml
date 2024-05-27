@@ -5018,7 +5018,22 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/fis/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Experiment
+      - Templates
+      - Accounts
+      - Configurations
+      - Target
+      - Actions
+      - Experiments
+      - Stop
+      - Resources
+      - Types
+      - Resolved
+      - Targets
+      - ARN
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://aws.amazon.com/fis/
