@@ -4,23 +4,22 @@ info:
 paths:
   /virtualclusters/{virtualClusterId}/jobruns/{jobRunId}:
     GET:
-      summary: DescribeJobRun
+      summary: 'Describe Job Run '
       description: >-
         <p>Displays detailed information about a job run. A job run is a unit of
         work, such as a Spark jar, PySpark script, or SparkSQL query, that you
         submit to Amazon EMR on EKS.</p>
       tags:
+        - Clusters
         - Describe
-        - Jobs
-        - Runs
-        - Cluster
-        - Identifiers
         - Job RUns
         - Jobs
         - Runs
+        - Virtual
+        - Virtual Clusters
   /jobtemplates:
     GET:
-      summary: ListJobTemplates
+      summary: 'List Job Templates '
       description: >-
         <p>Lists job templates based on a set of parameters. Job template stores
         values of StartJobRun API request in a template and can be used to start
@@ -28,37 +27,26 @@ paths:
         StartJobRun API request values, enforcing certain values in StartJobRun
         API request.</p>
       tags:
-        - Lists
+        - Job Templates
         - Jobs
         - Templates
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
   /virtualclusters/{virtualClusterId}/endpoints:
     GET:
-      summary: ListManagedEndpoints
+      summary: 'List Managed Endpoints '
       description: >-
         <p>Lists managed endpoints based on a set of parameters. A managed
         endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on
         EKS so that Amazon EMR Studio can communicate with your virtual
         cluster.</p>
       tags:
-        - Lists
+        - Clusters
+        - Endpoints
         - Managed
-        - Endpoints
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
-        - Endpoints
+        - Virtual
+        - Virtual Clusters
   /virtualclusters:
     GET:
-      summary: ListVirtualClusters
+      summary: 'List Virtual Clusters '
       description: >-
         <p>Lists information about the specified virtual cluster. Virtual
         cluster is a managed entity on Amazon EMR on EKS. You can create,
@@ -68,20 +56,12 @@ paths:
         virtual clusters the same way you model Kubernetes namespaces to meet
         your requirements.</p>
       tags:
-        - Lists
-        - Virtual
         - Clusters
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
-        - Endpoints
+        - Virtual
         - Virtual Clusters
   /jobtemplates/{templateId}:
     GET:
-      summary: DescribeJobTemplate
+      summary: 'Describe Job Template '
       description: >-
         <p>Displays detailed information about a specified job template. Job
         template stores values of StartJobRun API request in a template and can
@@ -90,40 +70,27 @@ paths:
         values in StartJobRun API request.</p>
       tags:
         - Describe
+        - Job Templates
         - Jobs
         - Templates
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
-        - Endpoints
-        - Virtual Clusters
   /virtualclusters/{virtualClusterId}/endpoints/{endpointId}:
     GET:
-      summary: DescribeManagedEndpoint
+      summary: 'Describe Managed Endpoint '
       description: >-
         <p>Displays detailed information about a managed endpoint. A managed
         endpoint is a gateway that connects Amazon EMR Studio to Amazon EMR on
         EKS so that Amazon EMR Studio can communicate with your virtual
         cluster.</p>
       tags:
+        - Clusters
         - Describe
+        - Endpoints
         - Managed
-        - Endpoints
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
-        - Endpoints
+        - Virtual
         - Virtual Clusters
-        - Endpoints
   /virtualclusters/{virtualClusterId}:
     GET:
-      summary: DescribeVirtualCluster
+      summary: 'Describe Virtual Cluster '
       description: >-
         <p>Displays detailed information about a specified virtual cluster.
         Virtual cluster is a managed entity on Amazon EMR on EKS. You can
@@ -133,74 +100,42 @@ paths:
         virtual clusters the same way you model Kubernetes namespaces to meet
         your requirements.</p>
       tags:
+        - Clusters
         - Describe
         - Virtual
-        - Cluster
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
-        - Endpoints
         - Virtual Clusters
-        - Endpoints
   /virtualclusters/{virtualClusterId}/endpoints/{endpointId}/credentials:
     POST:
-      summary: GetManagedEndpointSessionCredentials
+      summary: 'Get Managed Endpoint Session Credentials '
       description: <p>Generate a session token to connect to a managed endpoint. </p>
       tags:
-        - Get
+        - Clusters
+        - Credentials
+        - Endpoints
         - Managed
-        - Endpoints
         - Sessions
-        - Credentials
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
-        - Endpoints
+        - Virtual
         - Virtual Clusters
-        - Endpoints
-        - Credentials
   /virtualclusters/{virtualClusterId}/jobruns:
     POST:
-      summary: StartJobRun
+      summary: 'Start Job Run '
       description: >-
         <p>Starts a job run. A job run is a unit of work, such as a Spark jar,
         PySpark script, or SparkSQL query, that you submit to Amazon EMR on
         EKS.</p>
       tags:
-        - Start
-        - Jobs
-        - Runs
-        - Cluster
-        - Identifiers
+        - Clusters
         - Job RUns
         - Jobs
         - Runs
-        - Job Templates
-        - Endpoints
+        - Virtual
         - Virtual Clusters
-        - Endpoints
-        - Credentials
   /tags/{resourceArn}:
     DELETE:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes tags from reso
       tags:
-        - Untag
+        - ARN
         - Resources
-        - Cluster
-        - Identifiers
-        - Job RUns
-        - Jobs
-        - Runs
-        - Job Templates
-        - Endpoints
-        - Virtual Clusters
-        - Endpoints
-        - Credentials
-        - null
+        - Tags
+        - Untag
