@@ -4,164 +4,73 @@ info:
 paths:
   /CreateSavingsPlan:
     POST:
-      summary: CreateSavingsPlan
+      summary: 'Create Savings Plan '
       description: <p>Creates a Savings Plan.</p>
       tags:
-        - Create
-        - Savings
         - Plan
-        - Create
         - Savings
-        - Plan
   /DeleteQueuedSavingsPlan:
     POST:
-      summary: DeleteQueuedSavingsPlan
+      summary: 'Delete Queued Savings Plan '
       description: <p>Deletes the queued purchase for the specified Savings Plan.</p>
       tags:
-        - Delete
+        - Plan
         - Queued
         - Savings
-        - Plan
-        - Create
-        - Savings
-        - Plan
-        - Delete
-        - Queued
   /DescribeSavingsPlanRates:
     POST:
-      summary: DescribeSavingsPlanRates
+      summary: 'Describe Savings Plan Rates '
       description: <p>Describes the specified Savings Plans rates.</p>
       tags:
         - Describe
-        - Savings
         - Plan
         - Rates
-        - Create
         - Savings
-        - Plan
-        - Delete
-        - Queued
-        - Describe
-        - Rates
   /DescribeSavingsPlans:
     POST:
-      summary: DescribeSavingsPlans
+      summary: 'Describe Savings Plans '
       description: <p>Describes the specified Savings Plans.</p>
       tags:
         - Describe
-        - Savings
         - Plans
-        - Create
         - Savings
-        - Plan
-        - Delete
-        - Queued
-        - Describe
-        - Rates
-        - Plans
   /DescribeSavingsPlansOfferingRates:
     POST:
-      summary: DescribeSavingsPlansOfferingRates
+      summary: 'Describe Savings Plans Offering Rates '
       description: <p>Describes the specified Savings Plans offering rates.</p>
       tags:
         - Describe
-        - Savings
-        - Plans
         - Offerings
-        - Rates
-        - Create
-        - Savings
-        - Plan
-        - Delete
-        - Queued
-        - Describe
-        - Rates
         - Plans
-        - Offerings
+        - Rates
+        - Savings
   /DescribeSavingsPlansOfferings:
     POST:
-      summary: DescribeSavingsPlansOfferings
+      summary: 'Describe Savings Plans Offerings '
       description: <p>Describes the specified Savings Plans offerings.</p>
       tags:
         - Describe
-        - Savings
+        - Offerings
         - Plans
-        - Offerings
-        - Create
         - Savings
-        - Plan
-        - Delete
-        - Queued
-        - Describe
-        - Rates
-        - Plans
-        - Offerings
-        - Offerings
   /ListTagsForResource:
     POST:
-      summary: ListTagsForResource
+      summary: 'List Tags For Resource '
       description: <p>Lists the tags for the specified resource.</p>
       tags:
-        - Lists
-        - Tags
-        - For
         - Resources
-        - Create
-        - Savings
-        - Plan
-        - Delete
-        - Queued
-        - Describe
-        - Rates
-        - Plans
-        - Offerings
-        - Offerings
-        - Lists
         - Tags
-        - For
-        - Resources
   /TagResource:
     POST:
-      summary: TagResource
+      summary: 'Tag Resource '
       description: <p>Adds the specified tags to the specified resource.</p>
       tags:
-        - Tags
-        - Resources
-        - Create
-        - Savings
-        - Plan
-        - Delete
-        - Queued
-        - Describe
-        - Rates
-        - Plans
-        - Offerings
-        - Offerings
-        - Lists
-        - Tags
-        - For
         - Resources
         - Tags
   /UntagResource:
     POST:
-      summary: UntagResource
+      summary: 'Untag Resource '
       description: <p>Removes the specified tags from the specified res
       tags:
+        - Resources
         - Untag
-        - Resources
-        - Create
-        - Savings
-        - Plan
-        - Delete
-        - Queued
-        - Describe
-        - Rates
-        - Plans
-        - Offerings
-        - Offerings
-        - Lists
-        - Tags
-        - For
-        - Resources
-        - Tags
-        - Unt
