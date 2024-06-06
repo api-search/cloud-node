@@ -15,28 +15,57 @@ modified: 2023/11/8
 specificationVersion: '0.16'
 tags: []
 apis:
-  - name: Microsoft Azure Kafka Restproxy Apis API
-    description: This is a Kafka Restproxy Api lists.
+  - name: Microsoft Azure Kafka API
+    description: >-
+      Use these APIs to create and manage Apache Kafka topics on your Kafka
+      clusters running in Azure HDInsight. For more information, see Apache
+      Kafka REST proxy.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-streams-api
     baseURL: https://example.com
     tags:
-      - Tag
+      - Consume
+      - Consumer
+      - Offset
+      - Offsets
+      - Partition
+      - Partitions
+      - Records
+      - Simple
+      - Topics
+      - Using
+      - Brokers
+      - Kafka
+      - Metadata
+      - About
+      - Specific
+      - Topic Partition
+      - Produce
+      - Producer
+      - Checks
+      - Proxy
+      - REST
+      - Servers
+      - Status
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-streams-api
       - type: OpenAPI
         url: properties/kafka-restproxy-apis-openapi-original.yml
   - name: Microsoft Azure Common Referenced Parameters File API
     description: File containing commonly referenced parameters.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/parameter-files
     baseURL: https://example.com
     tags:
       - Tag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/parameter-files
       - type: OpenAPI
         url: properties/common-referenced-parameters-file-openapi-original.yml
   - name: Microsoft Azure Common Types API
@@ -75,18 +104,31 @@ apis:
   - name: Microsoft Azure Azure Metrics API
     description: A client for issuing REST requests to the Azure metrics service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/monitor/metrics?view=rest-monitor-2023-10-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Er
+      - Ers
+      - Groups
+      - Metrics
+      - Names
+      - Prov
+      - Providers
+      - Resourcegroups
+      - Resources
+      - Subscriptions
+      - Types
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/metrics?view=rest-monitor-2023-10-01
       - type: OpenAPI
         url: properties/azure-metrics-openapi-original.yml
-  - name: Microsoft Azure Common Types For Microsoft.operational Insights API
+  - name: Microsoft Azure Common Types For Operational Insights API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/loganalytics/operations/list?view=rest-loganalytics-2023-09-01&tabs=HTTP
     baseURL: https://example.com
     tags:
       - Tag
@@ -96,16 +138,241 @@ apis:
       - type: OpenAPI
         url: >-
           properties/common-types-for-microsoftoperationalinsights-openapi-original.yml
-  - name: Microsoft Azure Adhybrid Health Service API
-    description: REST APIs for Azure Active Directory Connect Health
+    description: >+
+      Microsoft Azure Operational Insights is an analysis service designed to
+      provide IT administrators with deep insight into their on-premises and
+      cloud environments. It helps you interact with real-time and historical
+      computer data for rapid development of custom insights, while providing
+      Microsoft- and community-developed patterns for data analysis.
+
+  - name: Microsoft Azure Health Service API
+    description: >-
+      Resource health helps you diagnose and get support when an Azure issue
+      impacts your resources. It informs you about the current and past health
+      of your resources and helps you mitigate issues.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/resourcehealth/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Addsservices
+      - Ers
+      - Health
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Prov
+      - Providers
+      - Services
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Names
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Alerts
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Configurations
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Dimensions
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Addsservicemembers
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Addomainservicemembers
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Feature
+      - Features
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Userpreference
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Forestsummary
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Groups
+      - Metrics
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Average
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Sum
+      - Metricmetadata
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Replicationdetails
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Replicationstatus
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Replicationsummary
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Servicemembers
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Members
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Credentials
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Checks
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Premium
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Operations
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Is
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Ops
+      - Reports
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Availability
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Counts
+      - Exporterrors
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Exportstatus
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Feedback
+      - Feedbacktype
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Alertfeedback
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Monitoringconfiguration
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Monitoringconfigurations
+      - Badpassword
+      - Details
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Users
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Connectors
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Data
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Datafreshness
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Globalconfiguration
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Serviceconfiguration
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Tenant
+      - Whitelisting
+      - Blobs
+      - IP
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Risky
+      - Uris
+      - Generate
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - URI
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Addresses
+      - Aggregates
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Aggregate
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
+      - Settings
+      - Microsoft Adhybr
+      - Microsoft Adhybrid
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/resourcehealth/
       - type: OpenAPI
         url: properties/adhybridhealthservice-openapi-original.yml
   - name: Microsoft Azure Azure Enterprise Knowledge Graph Service API
@@ -1672,7 +1939,7 @@ apis:
 
       | Description | Region    | Base URL                                |
 
-      | -     | --------  | -------                                 |
+      | -     | --  | -------                                 |
 
       | Azure       | Global    | api.cognitive.microsofttranslator.com   |
 
