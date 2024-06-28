@@ -11,9 +11,9 @@ description: >-
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: >-
   https://raw.githubusercontent.com/apis-json/artisanal/main/apis/microsoft-azure.yml
-created: 2023/11/8
-modified: 2023/11/8
-specificationVersion: '0.16'
+created: 2023-11-08
+modified: 2024-06-27
+specificationVersion: '0.18'
 tags: []
 apis:
   - name: Kafka Restproxy APIs
