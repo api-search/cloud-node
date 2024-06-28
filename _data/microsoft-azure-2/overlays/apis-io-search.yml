@@ -217,166 +217,456 @@ apis:
         url: >-
           overlays/azure-maps-routeset-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Maps Wayfinding Service API
-    description: Azure Maps Wayfinding REST APIs
+    description: >+
+      The Azure Maps Creator wayfinding service allows you to navigate from
+      place to place anywhere within your indoor map. The service utilizes
+      stairs and elevators to navigate between floors and provides guidance to
+      help you navigate around physical obstructions. This article describes how
+      to generate a path from a starting point to a destination point in a
+      sample indoor map.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-maps/how-to-creator-wayfinding
     baseURL: https://example.com
     tags:
-      - Tag
+      - Between
+      - Calculate
+      - Facility
+      - Locations
+      - Paths
+      - Wayfinding
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-maps/how-to-creator-wayfinding
       - type: OpenAPI
         url: properties/azure-maps-wayfinding-service-openapi-original.yml
+    score: 135
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-maps-wayfinding-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Maps Weather Service API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/weather?view=rest-maps-2024-04-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Forecast
+      - Format
+      - Hourly
+      - Weather
+      - Minute
+      - Days
+      - Quarter
+      - Conditions
+      - Current
+      - Daily
+      - Routes
+      - Alerts
+      - Severe
+      - Indices
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/weather?view=rest-maps-2024-04-01
       - type: OpenAPI
         url: properties/azure-maps-weather-service-openapi-original.yml
+    description: >-
+      Azure Maps Weather services are a set of RESTful APIs that allows
+      developers to integrate highly dynamic historical, real-time, and
+      forecasted weather data and visualizations into their solutions.
+    score: 868
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-maps-weather-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Maps Route Service API
-    description: Azure Maps Route REST APIs
+    description: >-
+      Use to calculate a route between a specified origin and destination,
+      passing through any specified waypoints.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/route?view=rest-maps-2024-04-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Format
+      - Matrix
+      - Routes
+      - Directions
+      - Ranges
+      - Batches
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/route?view=rest-maps-2024-04-01
       - type: OpenAPI
         url: properties/azure-maps-route-service-openapi-original.yml
+    score: 2022
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-maps-route-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Microsoft Marketplace Rating And Reviews API
-    description: Microsoft Marketplace Rating And Reviews API
+    description: >-
+      This dashboard displays a consolidated view of customer feedback for
+      offers on Microsoft AppSource and Azure Marketplace. As customers browse,
+      search, and purchase offers in both marketplaces, they can leave ratings
+      and reviews for the offers they've acquired.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/partner-center/insights/ratings-reviews
     baseURL: https://example.com
     tags:
-      - Tag
+      - Products
+      - Reviews
+      - Unique
+      - Comments
+      - Given
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/partner-center/insights/ratings-reviews
       - type: OpenAPI
         url: >-
           properties/microsoft-marketplace-rating-and-reviews-api-openapi-original.yml
+    score: 139
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/microsoft-marketplace-rating-and-reviews-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Maps Search Service API
-    description: Azure Maps Search REST APIs
+    description: >-
+      Use to get latitude and longitude coordinates of a street address in an
+      unstructured or query input format. The Get Search Address API is an HTTP
+      GET request returns the latitude and longitude coordinates when passed in
+      a street address or name of a place as the search criteria.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/search/get-search-address?view=rest-maps-1.0&tabs=HTTP
     baseURL: https://example.com
     tags:
-      - Tag
+      - Format
+      - Polygon
+      - Search
+      - Fuzzy
+      - Poi
+      - Nearby
+      - Categories
+      - Trees
+      - Addresses
+      - Reverse
+      - Street
+      - Structured
+      - Geometry
+      - Routes
+      - Batches
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/search/get-search-address?view=rest-maps-1.0&tabs=HTTP
       - type: OpenAPI
         url: properties/azure-maps-search-service-openapi-original.yml
+    score: 2356
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-maps-search-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Mixed Reality Remote Rendering API
-    description: >
-      Describing the [Azure Remote
-      Rendering](https://docs.microsoft.com/azure/remote-rendering/) REST API
-      for rendering sessions and asset conversions. 
+    description: >+
+      Azure Remote Rendering brings your highest quality 3D content and
+      interactive experiences to mixed reality devices, such as HoloLens 2. This
+      service uses the computing power of Azure to render even the most complex
+      models in the cloud and streams them in real time to your devices, so
+      users can interact and collaborate with 3D content in amazing detail.
 
-
-      All requests to these APIs must be authenticated using the Secure Token
-      Service as described in the [Azure Remote rendering documentation chapter
-      about
-      authentication](https://docs.microsoft.com/azure/remote-rendering/how-tos/tokens).
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://azure.microsoft.com/en-us/products/remote-rendering
     baseURL: https://example.com
     tags:
-      - Tag
+      - Accounts
+      - Assets
+      - Azure
+      - Blobs
+      - Conversions
+      - Storage
+      - Stored
+      - Using
+      - Status
+      - Rendering
+      - Sessions
+      - Properties
+      - Lease
+      - Maximum
+      - Time
+      - ':Stop'
+      - Stops
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://azure.microsoft.com/en-us/products/remote-rendering
       - type: OpenAPI
         url: properties/mixedrealityremoterendering-openapi-original.yml
+    score: 437
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/mixedrealityremoterendering-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Monitor Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/python/api/azure-mgmt-monitor/azure.mgmt.monitor.monitormanagementclient?view=azure-python
     baseURL: https://example.com
     tags:
-      - Tag
+      - Metrics
+      - Microsoft Insights
+      - Providers
+      - Resources
+      - URI
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/python/api/azure-mgmt-monitor/azure.mgmt.monitor.monitormanagementclient?view=azure-python
       - type: OpenAPI
         url: properties/monitorclient-openapi-original.yml
+    description: >-
+      This ready contains multiple API versions, to help you deal with all of
+      the Azure clouds (Azure Stack, Azure Government, Azure China, etc.). By
+      default, it uses the latest API version available on public Azure. For
+      production, you should stick to a particular api-version and/or profile.
+      The profile sets a mapping between an operation group and its API version.
+      The api-version parameter sets the default API version if the operation
+      group is not described in the profile.
+    score: 55
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/monitorclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Monitor Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/python/api/azure-mgmt-monitor/azure.mgmt.monitor.monitormanagementclient?view=azure-python
     baseURL: https://example.com
     tags:
-      - Tag
+      - Links
+      - Microsoft Insights
+      - Private
+      - Providers
+      - Scopes
+      - Subscriptions
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Resources
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Async
+      - Microsoft Insights
+      - Operation
+      - Statuses
+      - Microsoft Insights
+      - Microsoft Insights
+      - Connections
+      - Endpoints
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Scoped
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/python/api/azure-mgmt-monitor/azure.mgmt.monitor.monitormanagementclient?view=azure-python
       - type: OpenAPI
         url: properties/monitormanagementclient-openapi-original.yml
+    description: >-
+      This ready contains multiple API versions, to help you deal with all of
+      the Azure clouds (Azure Stack, Azure Government, Azure China, etc.). By
+      default, it uses the latest API version available on public Azure. For
+      production, you should stick to a particular api-version and/or profile.
+      The profile sets a mapping between an operation group and its API version.
+      The api-version parameter sets the default API version if the operation
+      group is not described in the profile.
+    score: 831
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/monitormanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Maps Web Feature Service API
-    description: Azure Maps Web Feature REST APIs
+    description: >-
+      Azure Maps is a suite of geospatial mapping services that enable
+      developers and enterprise organizations to build intelligent
+      location-enabled and map-based experiences. Build compelling functionality
+      including asset tracking, vehicle routing, map creation, geolocation, and
+      more into your mobile- and web-based apps.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://azure.microsoft.com/en-us/products/azure-maps
     baseURL: https://example.com
     tags:
-      - Tag
+      - Dataset Identifier
+      - Datasets
+      - Conformance
+      - Collections
+      - Definitions
+      - Items
+      - Feature
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://azure.microsoft.com/en-us/products/azure-maps
       - type: OpenAPI
         url: properties/azure-maps-web-feature-service-openapi-original.yml
+    score: 606
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-maps-web-feature-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Action Groups API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups
     baseURL: https://example.com
     tags:
-      - Tag
+      - Actions
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Providers
+      - Resources
+      - Subscriptions
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Notifications
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Status
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Subscribe
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups
       - type: OpenAPI
         url: properties/azure-action-groups-api-openapi-original.yml
+    description: >-
+      When Azure Monitor data indicates that there might be a problem with your
+      infrastructure or application, an alert is triggered. You can use an
+      action group to send a notification such as a voice call, SMS or email
+      when the alert is triggered in addition to the alert itself. Action groups
+      are a collection of notification preferences and actions. Azure Monitor,
+      Azure Service Health, and Azure Advisor use action groups to notify users
+      about the alert and take an action. 
+    score: 1091
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-action-groups-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Activity Log Alerts API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/monitor/activity-log-alerts?view=rest-monitor-2020-10-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Activity
+      - Alerts
+      - Groups
+      - Logs
+      - Microsoft Insights
+      - Names
+      - Providers
+      - Resources
+      - Subscriptions
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/activity-log-alerts?view=rest-monitor-2020-10-01
       - type: OpenAPI
         url: properties/azure-activity-log-alerts-api-openapi-original.yml
+    description: >-
+      The Azure Activity Log is a log that provides insight into operations
+      performed on resources in your subscription. Operations include create,
+      update, delete, and other actions taken on resources. The Activity Log is
+      a platform-wide log and isn't limited to a particular service.
+    score: 304
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-activity-log-alerts-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Microsoft Insights API
-    description: Azure Monitor client to create/update/delete Scheduled Query Rules
+    description: >-
+      You can easily integrate Azure Application Insights with Azure API
+      Management. Azure Application Insights is an extensible service for web
+      developers building and managing apps on multiple platforms.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights?tabs=rest
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Providers
+      - Queries
+      - Resourcegroups
+      - Resources
+      - Rules
+      - Scheduled
+      - Subscriptions
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-app-insights?tabs=rest
       - type: OpenAPI
         url: properties/microsoft-insights-api-openapi-original.yml
+    score: 339
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/microsoft-insights-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Scheduled Query Rules API
     description: Azure Monitor client to create/update/delete Scheduled Query Rules.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/monitor/scheduled-query-rules?view=rest-monitor-2021-08-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Insights
+      - Providers
+      - Queries
+      - Rules
+      - Scheduled
+      - Subscriptions
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Resources
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/scheduled-query-rules?view=rest-monitor-2021-08-01
       - type: OpenAPI
         url: properties/scheduled-query-rules-api-openapi-original.yml
+    score: 447
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/scheduled-query-rules-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Metrics Definitions API
     description: Provides APIs for getting the metric metadata for Azure resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -2112,8 +2402,8 @@ apis:
       - type: OpenAPI
         url: properties/servicebusmanagementclient-openapi-original.yml
   - name: >-
-      Microsoft Azure Api For Managing Scom Managed Instances And
-      Monitored Resources. API
+      Microsoft Azure Api For Managing Scom Managed Instances And Monitored
+      Resources. API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2493,9 +2783,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-sql-server-api-spec-openapi-original.yml
-  - name: >-
-      Microsoft Azure Sql Database Datamasking Policies And Rules
-      API
+  - name: Microsoft Azure Sql Database Datamasking Policies And Rules API
     description: >-
       Provides create, read, update and delete functionality for Azure SQL
       Database datamasking policies and rules.
@@ -2524,9 +2812,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/database-threat-detection-policy-apis-openapi-original.yml
-  - name: >-
-      Microsoft Azure Sql Database Disaster Recovery Configurations
-      API
+  - name: Microsoft Azure Sql Database Disaster Recovery Configurations API
     description: >-
       Provides create, read, update, delete, and failover functionality for
       Azure SQL Database disaster recovery configurations.
@@ -4227,9 +4513,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/containerservicefleetclient-openapi-original.yml
-  - name: >-
-      Microsoft Azure Data Migration Service (Classic) Resource
-      Provider API
+  - name: Microsoft Azure Data Migration Service (Classic) Resource Provider API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
