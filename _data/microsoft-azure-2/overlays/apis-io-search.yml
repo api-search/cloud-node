@@ -1,4 +1,3 @@
----
 name: Microsoft Azure (Two)
 description: >-
   Microsoft Azure, often referred to as Azure is a cloud computing platform run
@@ -17,89 +16,206 @@ specificationVersion: '0.16'
 tags: []
 apis:
   - name: Azure Maps Tileset Service
-    description: APIs for managing Tilesets.
+    description: >-
+      The Get Map Tiles API in an HTTP GET request that allows users to request
+      map tiles in vector or raster formats typically to be integrated into a
+      map control or SDK. Some example tiles that can be requested are Azure
+      Maps road tiles, real-time Weather Radar tiles or the map tiles created
+      using Azure Maps Creator.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2024-04-01&tabs=HTTP
     baseURL: https://example.com
     tags:
-      - Tag
+      - Tilesets
+      - Tileset
+      - Operation
+      - Operations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2024-04-01&tabs=HTTP
       - type: OpenAPI
         url: properties/azure-maps-tileset-service-openapi-original.yml
+    score: 313
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-maps-tileset-service-openapi-api-evangelist-ratings.yml
   - name: Azure Maps Render Service
     description: Azure Maps Render REST APIs
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/render?view=rest-maps-2024-04-01&viewFallbackFrom=rest-maps-2023-06-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Maps
+      - Tiles
+      - Tileset
+      - Attribution
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/render?view=rest-maps-2024-04-01&viewFallbackFrom=rest-maps-2023-06-01
       - type: OpenAPI
         url: properties/azure-maps-render-service-openapi-original.yml
+    score: 360
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-maps-render-service-openapi-api-evangelist-ratings.yml
   - name: Azure Maps Data Registry Service
-    description: APIs for managing data registry in Azure Maps.
+    description: >+
+      The data registry service enables you to register data content in an Azure
+      Storage Account with your Azure Maps account. An example of data might
+      include a collection of Geofences used in the Azure Maps Geofencing
+      service. Another example is ZIP files containing drawing packages (DWG) or
+      GeoJSON files that Azure Maps Creator uses to create or update indoor
+      maps.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-maps/how-to-create-data-registries?tabs=System-assigned
     baseURL: https://example.com
     tags:
-      - Tag
+      - Accounts
+      - Azure
+      - Data
+      - Maps
+      - Registries
+      - Information
+      - Specified
+      - Ud
+      - Register
+      - Storage
+      - Stored
+      - Registered
+      - Unregister
+      - Checks
+      - Operation
+      - Operations
+      - Replace](/rest/api/maps/data Registry/register Or Replace)
+      - Status
+      - '[data'
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-maps/how-to-create-data-registries?tabs=System-assigned
       - type: OpenAPI
         url: properties/azure-maps-data-registry-service-openapi-original.yml
+    score: 268
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-maps-data-registry-service-openapi-api-evangelist-ratings.yml
   - name: Azure Maps Traffic Service
-    description: Azure Maps Traffic REST APIs
+    description: >-
+      The Azure Maps Traffic service is a suite of web services designed for
+      developers to create web and mobile applications around real-time traffic.
+      This data can be visualized on maps or used to generate smarter routes
+      that factor in current driving conditions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage
     baseURL: https://example.com
     tags:
-      - Tag
+      - Flows
+      - Format
+      - Tiles
+      - Traffic
+      - Segments
+      - Ent
+      - Inc
+      - Incident
+      - Detail
+      - Viewport
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/azure/azure-maps/traffic-coverage
       - type: OpenAPI
         url: properties/azure-maps-traffic-service-openapi-original.yml
+    score: 684
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-maps-traffic-service-openapi-api-evangelist-ratings.yml
   - name: Azure Maps Time Zone Service
     description: Azure Maps Time Zone REST APIs
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/timezone?view=rest-maps-2024-04-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Format
+      - Timezones
+      - Coordinates
+      - Enum
+      - Windows
+      - Iana
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/timezone?view=rest-maps-2024-04-01
       - type: OpenAPI
         url: properties/azure-maps-time-zone-service-openapi-original.yml
+    score: 576
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-maps-time-zone-service-openapi-api-evangelist-ratings.yml
   - name: Azure Maps Spatial Service
-    description: Azure Maps Spatial REST APIs
+    description: >-
+      Azure Maps is a suite of geospatial mapping services that enable
+      developers and enterprise organizations to build intelligent
+      location-enabled and map-based experiences. Build compelling functionality
+      including asset tracking, vehicle routing, map creation, geolocation, and
+      more into your mobile- and web-based apps.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://azure.microsoft.com/en-us/products/azure-maps
     baseURL: https://example.com
     tags:
-      - Tag
+      - Format
+      - Geofences
+      - Spatial
+      - Buffer
+      - Closest
+      - Points
+      - Polygon
+      - Circle
+      - Distance
+      - Great
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://azure.microsoft.com/en-us/products/azure-maps
       - type: OpenAPI
         url: properties/azure-maps-spatial-service-openapi-original.yml
+    score: 923
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-maps-spatial-service-openapi-api-evangelist-ratings.yml
   - name: Azure Maps Routeset Service.
-    description: APIs for managing routesets.
+    description: ' Upon a search query, Azure Maps returns an optimal route from location A to location B. You''re provided with accurate travel times, live updates of travel information, and route instructions. You can also add more search parameters such as current traffic, vehicle type, and conditions to avoid. The optimization of the route depends on the region. That''s because, Azure Maps has various levels of information and accuracy for different regions.'
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage?pivots=route-v1
     baseURL: https://example.com
     tags:
-      - Tag
+      - Routeset
+      - Routesets
+      - Details
+      - Checks
+      - Operation
+      - Operations
+      - Process
+      - Status
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-maps/routing-coverage?pivots=route-v1
       - type: OpenAPI
         url: properties/azure-maps-routeset-service-openapi-original.yml
+    score: 240
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-maps-routeset-service-openapi-api-evangelist-ratings.yml
   - name: Azure Maps Wayfinding Service
     description: Azure Maps Wayfinding REST APIs
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
