@@ -914,105 +914,295 @@ apis:
           overlays/azure-maps-geocoding-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Metric Batch API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/monitor/metrics-batch/batch?view=rest-monitor-2023-10-01&tabs=HTTP
     baseURL: https://example.com
     tags:
-      - Tag
+      - Batches
+      - Metrics:get
+      - Subscriptions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/metrics-batch/batch?view=rest-monitor-2023-10-01&tabs=HTTP
       - type: OpenAPI
         url: properties/azure-monitor-metric-batch-openapi-original.yml
+    description: >-
+      Heavy use of the metrics API can result in throttling or performance
+      problems. Migrating to the metrics:getBatch API allows you to query
+      multiple resources in a single REST request. The two APIs share a common
+      set of query parameter and response formats that make migration easy.
+    score: 142
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-monitor-metric-batch-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Aoa Front End Apis API
-    description: Azure Object Anchors front end APIs.
+    description: >-
+      API authentication and authorization in API Management involve securing
+      the end-to-end communication of client apps to the API Management gateway
+      and through to backend APIs. In many customer environments, OAuth 2.0 is
+      the preferred API authorization protocol. API Management supports OAuth
+      2.0 authorization between the client and the API Management gateway,
+      between the gateway and the backend API, or both independently.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/api-management/authentication-authorization-overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Accounts
+      - Jobs
+      - Status
+      - Blobs
+      - Endpoints
+      - URI
+      - Uploads
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/api-management/authentication-authorization-overview
       - type: OpenAPI
         url: properties/aoa-front-end-apis-openapi-original.yml
+    score: 206
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/aoa-front-end-apis-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Mixed Reality Sts Client API
-    description: Definition for the Mixed Reality Cloud STS service APIs.
+    description: >-
+      Mixed Reality services, like Azure Spatial Anchors, Azure Remote
+      Rendering, and others, use the Mixed Reality security token service (STS)
+      for authentication. This package supports exchanging Mixed Reality account
+      credentials for an access token from the STS that can be used to access
+      Mixed Reality services.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/mixedreality.authentication-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Access
+      - Accounts
+      - Mixed
+      - Reality
+      - Services
+      - Tokens
+      - Used
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/mixedreality.authentication-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/mixedrealitystsclient-openapi-original.yml
+    score: 64
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/mixedrealitystsclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Ingestion Using Data Collection Rules API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Collections
+      - Data
+      - Directly
+      - Ingest
+      - Ingestions
+      - Rules
+      - Stream
+      - Streams
+      - Used
+      - Using
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview
       - type: OpenAPI
         url: properties/ingestion-using-data-collection-rules-openapi-original.yml
+    description: >-
+      Data collection rules (DCRs) are part of an ETL-like data collection
+      process that improves on legacy data collection methods for Azure Monitor.
+      This process uses a common data ingestion pipeline, the Azure Monitor
+      pipeline, for all data sources and a standard method of configuration
+      that's more manageable and scalable than other methods. 
+    score: 81
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/ingestion-using-data-collection-rules-openapi-api-evangelist-ratings.yml
   - name: >-
       Microsoft Azure (Two) Microsoft.mobile Packet Core Mobile Packet Core
       Service API
     description: Mobile Packet Core Management API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/mobilenetwork/packet-core-data-planes?view=rest-mobilenetwork-2024-04-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Core
+      - Microsoft Mobile
+      - Operations
+      - Packets
+      - Providers
+      - Amf
+      - Deployments
+      - Microsoft Mobile
+      - Subscriptions
+      - Clusters
+      - Microsoft Mobile
+      - Services
+      - Microsoft Mobile
+      - Nrf
+      - Microsoft Mobile
+      - Nssf
+      - Microsoft Mobile
+      - Observability
+      - Microsoft Mobile
+      - Smf
+      - Microsoft Mobile
+      - Upf
+      - Groups
+      - Microsoft Mobile
+      - Names
+      - Resources
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/mobilenetwork/packet-core-data-planes?view=rest-mobilenetwork-2024-04-01
       - type: OpenAPI
         url: >-
           properties/microsoftmobilepacketcore-mobile-packet-core-service-openapi-original.yml
+    score: 1914
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/microsoftmobilepacketcore-mobile-packet-core-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Workspaces Control Plane API
-    description: Provides operations for working with Azure Monitor Workspaces
+    description: >+
+      Azure operations can be divided into two categories - control plane and
+      data plane. This article describes the differences between those two types
+      of operations.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/control-plane-and-data-plane
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Monitor
+      - Operations
+      - Providers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/control-plane-and-data-plane
       - type: OpenAPI
         url: >-
           properties/azure-monitor-workspaces-control-plane-api-openapi-original.yml
+    score: 42
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-workspaces-control-plane-api-openapi-api-evangelist-ratings.yml
   - name: >-
       Microsoft Azure (Two) Microsoft.mobile Packet Core Network Function
       Resource API
     description: Mobile Packet Core Network Function Management API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/mobilenetwork/packet-core-data-planes/get?view=rest-mobilenetwork-2024-04-01&tabs=HTTP
     baseURL: https://example.com
     tags:
-      - Tag
+      - Core
+      - Microsoft Mobile
+      - Operations
+      - Packets
+      - Providers
+      - Functions
+      - Microsoft Mobile
+      - Networks
+      - Subscriptions
+      - Groups
+      - Microsoft Mobile
+      - Names
+      - Resources
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
+      - Microsoft Mobile
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/mobilenetwork/packet-core-data-planes/get?view=rest-mobilenetwork-2024-04-01&tabs=HTTP
       - type: OpenAPI
         url: >-
           properties/microsoftmobilepacketcore-network-function-resource-openapi-original.yml
+    score: 310
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/microsoftmobilepacketcore-network-function-resource-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Vm Insights Onboarding API
-    description: API to manage VM Insights Onboarding
+    description: >-
+      Azure Policy lets you set and enforce requirements for all new resources
+      you create and resources you modify. VM insights policy initiatives, which
+      are predefined sets of policies created for VM insights, install the
+      agents required for VM insights and enable monitoring on all new virtual
+      machines in your Azure environment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-policy
     baseURL: https://example.com
     tags:
-      - Tag
+      - Default
+      - Insights
+      - Microsoft Insights
+      - Onboarding
+      - Providers
+      - Resources
+      - Statuses
+      - URI
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-enable-policy
       - type: OpenAPI
         url: properties/vm-insights-onboarding-api-openapi-original.yml
+    score: 46
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/vm-insights-onboarding-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure (Two) Guest Diagnostic Settings Association API
     description: >-
       API to Add/Remove/List Guest Diagnostics Settings Association for Azure
