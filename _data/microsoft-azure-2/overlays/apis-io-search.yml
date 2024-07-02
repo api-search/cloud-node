@@ -668,113 +668,250 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/scheduled-query-rules-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Metrics Definitions API
-    description: Provides APIs for getting the metric metadata for Azure resources.
+    description: >-
+      Retrieve metric definitions, dimension values, and metric values using the
+      Azure Monitor API and use the data in your applications, or store in a
+      database for analysis. You can also list alert rules and view activity
+      logs using the Azure Monitor API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/monitor/metric-definitions?view=rest-monitor-2023-10-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Definitions
+      - Metrics
+      - Microsoft Insights
+      - Providers
+      - Subscriptions
+      - Microsoft Insights
+      - Resources
+      - URI
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/metric-definitions?view=rest-monitor-2023-10-01
       - type: OpenAPI
         url: properties/azure-monitor-metrics-definitions-api-openapi-original.yml
+    score: 90
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-metrics-definitions-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Metrics Data API
-    description: Provides APIs for getting the metric data for Azure resources.
+    description: >-
+      Retrieve metric definitions, dimension values, and metric values using the
+      Azure Monitor API and use the data in your applications, or store in a
+      database for analysis. You can also list alert rules and view activity
+      logs using the Azure Monitor API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/monitor/metrics?view=rest-monitor-2023-10-01
     baseURL: https://example.com
     tags:
       - Tag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/metrics?view=rest-monitor-2023-10-01
       - type: OpenAPI
         url: properties/azure-monitor-metrics-data-api-openapi-original.yml
+    score: 448
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-metrics-data-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Operations API
-    description: >-
-      Lists all of the possible operations available for the Azure Monitor
-      resource provider.
+    description: >+
+      Retrieve metric definitions, dimension values, and metric values using the
+      Azure Monitor API and use the data in your applications, or store in a
+      database for analysis. You can also list alert rules and view activity
+      logs using the Azure Monitor API.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/rest-api-walkthrough?tabs=portal
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Insights
+      - Operations
+      - Providers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/rest-api-walkthrough?tabs=portal
       - type: OpenAPI
         url: properties/azure-monitor-operations-api-openapi-original.yml
+    score: 37
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-operations-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Data Collection Endpoints API
     description: >-
-      Provides operations for working with Azure Monitor data collection
-      endpoints
+      A data collection endpoint (DCE) is a connection where data sources send
+      collected data for processing and ingestion into Azure Monitor. This
+      article provides an overview of data collection endpoints and explains how
+      to create and set them up based on your deployment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-endpoint-overview?tabs=portal
     baseURL: https://example.com
     tags:
-      - Tag
+      - Collections
+      - Data
+      - Endpoints
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Resources
+      - Specified
+      - Subscriptions
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/data-collection-endpoints?view=rest-monitor-2022-06-01
       - type: OpenAPI
         url: >-
           properties/azure-monitor-data-collection-endpoints-api-openapi-original.yml
+    score: 291
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-data-collection-endpoints-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Data Collection Rule Associations API
     description: >-
-      Provides operations for working with Azure Monitor data collection rule
-      associations
+      Data collection rules (DCRs) are part of an ETL-like data collection
+      process that improves on legacy data collection methods for Azure Monitor.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Associations
+      - Collections
+      - Data
+      - Microsoft Insights
+      - Resources
+      - Rules
+      - Specified
+      - URI
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Subscriptions
+      - Endpoints
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview
       - type: OpenAPI
         url: >-
           properties/azure-monitor-data-collection-rule-associations-api-openapi-original.yml
+    score: 290
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-data-collection-rule-associations-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Data Collection Rules API
     description: Provides operations for working with Azure Monitor data collection rules
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/monitor/data-collection-rules?view=rest-monitor-2022-06-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Collections
+      - Data
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Resources
+      - Rules
+      - Specified
+      - Subscriptions
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/monitor/data-collection-rules?view=rest-monitor-2022-06-01
       - type: OpenAPI
         url: >-
           properties/azure-monitor-data-collection-rules-api-openapi-original.yml
+    score: 382
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-data-collection-rules-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Data Collection Control Plane API
     description: >-
       Provides operations for working with Azure Monitor data collection rule
       associations
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/control-plane-metrics
     baseURL: https://example.com
     tags:
-      - Tag
+      - Collections
+      - Data
+      - Groups
+      - Microsoft Insights
+      - Names
+      - Resources
+      - Rules
+      - Specified
+      - Subscriptions
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/control-plane-metrics
       - type: OpenAPI
         url: >-
           properties/azure-monitor-data-collection-control-plane-api-openapi-original.yml
+    score: 547
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-monitor-data-collection-control-plane-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Maps Geocoding Service API
-    description: Azure Maps Geocoding REST APIs
+    description: >-
+      Use to get longitude and latitude coordinates of a street address or name
+      of a place. The Get Geocoding API is an HTTP GET request that returns the
+      longitude and latitude coordinates of the location being searched.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding?view=rest-maps-2024-04-01&tabs=HTTP
     baseURL: https://example.com
     tags:
-      - Tag
+      - Geocode
+      - Batches
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding?view=rest-maps-2024-04-01&tabs=HTTP
       - type: OpenAPI
         url: properties/azure-maps-geocoding-service-openapi-original.yml
+    score: 278
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-maps-geocoding-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Monitor Metric Batch API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
