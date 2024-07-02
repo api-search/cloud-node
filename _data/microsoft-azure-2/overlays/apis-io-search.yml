@@ -1,4 +1,4 @@
-name: Microsoft Azure (Two)
+name: Microsoft Azure
 description: >-
   Microsoft Azure, often referred to as Azure is a cloud computing platform run
   by Microsoft. It offers access, management, and the development of
@@ -306,7 +306,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/azure-maps-route-service-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Microsoft Marketplace Rating And Reviews API
+  - name: Microsoft Azure Microsoft Marketplace Rating And Reviews API
     description: >-
       This dashboard displays a consolidated view of customer feedback for
       offers on Microsoft AppSource and Azure Marketplace. As customers browse,
@@ -369,7 +369,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/azure-maps-search-service-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Mixed Reality Remote Rendering API
+  - name: Microsoft Azure Mixed Reality Remote Rendering API
     description: >+
       Azure Remote Rendering brings your highest quality 3D content and
       interactive experiences to mixed reality devices, such as HoloLens 2. This
@@ -408,7 +408,7 @@ apis:
       - type: API Evangelist Ratings
         url: >-
           overlays/mixedrealityremoterendering-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Monitor Client API
+  - name: Microsoft Azure Monitor Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: >-
       https://learn.microsoft.com/en-us/python/api/azure-mgmt-monitor/azure.mgmt.monitor.monitormanagementclient?view=azure-python
@@ -437,7 +437,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/monitorclient-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Monitor Management Client API
+  - name: Microsoft Azure Monitor Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: >-
       https://learn.microsoft.com/en-us/python/api/azure-mgmt-monitor/azure.mgmt.monitor.monitormanagementclient?view=azure-python
@@ -601,7 +601,7 @@ apis:
       - type: API Evangelist Ratings
         url: >-
           overlays/azure-activity-log-alerts-api-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Microsoft Insights API
+  - name: Microsoft Azure Microsoft Insights API
     description: >-
       You can easily integrate Azure Application Insights with Azure API
       Management. Azure Application Insights is an extensible service for web
@@ -636,7 +636,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/microsoft-insights-api-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Scheduled Query Rules API
+  - name: Microsoft Azure Scheduled Query Rules API
     description: Azure Monitor client to create/update/delete Scheduled Query Rules.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: >-
@@ -936,7 +936,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/azure-monitor-metric-batch-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Aoa Front End Apis API
+  - name: Microsoft Azure Aoa Front End APIs API
     description: >-
       API authentication and authorization in API Management involve securing
       the end-to-end communication of client apps to the API Management gateway
@@ -966,7 +966,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/aoa-front-end-apis-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Mixed Reality Sts Client API
+  - name: Microsoft Azure Mixed Reality Sts Client API
     description: >-
       Mixed Reality services, like Azure Spatial Anchors, Azure Remote
       Rendering, and others, use the Mixed Reality security token service (STS)
@@ -995,7 +995,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/mixedrealitystsclient-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Ingestion Using Data Collection Rules API
+  - name: Microsoft Azure Ingestion Using Data Collection Rules API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: >-
       https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview
@@ -1029,7 +1029,7 @@ apis:
         url: >-
           overlays/ingestion-using-data-collection-rules-openapi-api-evangelist-ratings.yml
   - name: >-
-      Microsoft Azure (Two) Microsoft.mobile Packet Core Mobile Packet Core
+      Microsoft Azure Microsoft.mobile Packet Core Mobile Packet Core
       Service API
     description: Mobile Packet Core Management API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -1136,7 +1136,7 @@ apis:
         url: >-
           overlays/azure-monitor-workspaces-control-plane-api-openapi-api-evangelist-ratings.yml
   - name: >-
-      Microsoft Azure (Two) Microsoft.mobile Packet Core Network Function
+      Microsoft Azure Microsoft.mobile Packet Core Network Function
       Resource API
     description: Mobile Packet Core Network Function Management API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -1173,7 +1173,7 @@ apis:
       - type: API Evangelist Ratings
         url: >-
           overlays/microsoftmobilepacketcore-network-function-resource-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Vm Insights Onboarding API
+  - name: Microsoft Azure Vm Insights Onboarding API
     description: >-
       Azure Policy lets you set and enforce requirements for all new resources
       you create and resources you modify. VM insights policy initiatives, which
@@ -1203,7 +1203,7 @@ apis:
     overlays:
       - type: API Evangelist Ratings
         url: overlays/vm-insights-onboarding-api-openapi-api-evangelist-ratings.yml
-  - name: Microsoft Azure (Two) Guest Diagnostic Settings Association API
+  - name: Microsoft Azure Guest Diagnostic Settings Association API
     description: >-
       API to Add/Remove/List Guest Diagnostics Settings Association for Azure
       Resources
@@ -1218,7 +1218,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/guest-diagnostic-settings-association-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Guest Diagnostic Settings API
+  - name: Microsoft Azure Guest Diagnostic Settings API
     description: API to Add/Remove/List Guest Diagnostics Configuration to Azure Resources
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1241,7 +1241,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-tenant-action-groups-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Express Route Cross Connection Rest Apis API
+  - name: Microsoft Azure Express Route Cross Connection Rest APIs API
     description: >-
       The Microsoft Azure ExpressRouteCrossConnection Resource Provider REST
       APIs describes the operations for the connectivity provider to provision
@@ -1257,7 +1257,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/expressroutecrossconnection-rest-apis-openapi-original.yml
-  - name: Microsoft Azure (Two) Virtual Wanas Aservice Management Client API
+  - name: Microsoft Azure Virtual Wanas Aservice Management Client API
     description: REST API for Azure VirtualWAN As a Service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1269,7 +1269,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/virtualwanasaservicemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Manager API
+  - name: Microsoft Azure Network Manager API
     description: >-
       The Microsoft Azure Virtual Network Manager API provides a RESTful set of
       web services that interact with Microsoft Azure Network Manager service to
@@ -1284,7 +1284,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkmanager-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Manager Active Configuration API
+  - name: Microsoft Azure Network Manager Active Configuration API
     description: >-
       The Microsoft Azure Network Manager Active Configuration API provides a
       RESTful set of web services that interact with Microsoft Azure Network
@@ -1299,7 +1299,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkmanageractiveconfiguration-openapi-original.yml
-  - name: Microsoft Azure (Two) Scope Connections API
+  - name: Microsoft Azure Scope Connections API
     description: >-
       The Microsoft Azure Virtual Network Manager API provides a RESTful set of
       web services that interact with Microsoft Azure Network Manager service to
@@ -1314,7 +1314,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/scopeconnections-openapi-original.yml
-  - name: Microsoft Azure (Two) Connectivity Configuration API
+  - name: Microsoft Azure Connectivity Configuration API
     description: >-
       The Microsoft Azure Virtual Network Manager Connectivity Configuration API
       provides a RESTful set of web services that interact with Microsoft Azure
@@ -1329,7 +1329,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/connectivityconfiguration-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Manager Effective Configuration API
+  - name: Microsoft Azure Network Manager Effective Configuration API
     description: >-
       The Microsoft Azure Network Manager effective configuration API provides a
       RESTful set of web services that interact with Microsoft Azure Networks
@@ -1346,7 +1346,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkmanagereffectiveconfiguration-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Group API
+  - name: Microsoft Azure Network Group API
     description: >-
       The Microsoft Azure Network Group API provides a RESTful set of web
       services that interact with Microsoft Azure Network Manager service to
@@ -1361,7 +1361,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkgroup-openapi-original.yml
-  - name: Microsoft Azure (Two) Security Admin Configuration API
+  - name: Microsoft Azure Security Admin Configuration API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1372,7 +1372,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/securityadminconfiguration-openapi-original.yml
-  - name: Microsoft Azure (Two) Managed Service Entity Client API
+  - name: Microsoft Azure Managed Service Entity Client API
     description: The Managed Service Identity Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1384,7 +1384,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/managedserviceidentityclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft Net App API
+  - name: Microsoft Azure Microsoft Net App API
     description: Microsoft NetApp Azure Resource Provider specification
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1396,7 +1396,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoft-netapp-openapi-original.yml
-  - name: Microsoft Azure (Two) New Relic.observability API
+  - name: Microsoft Azure New Relic.observability API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1407,7 +1407,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/newrelicobservability-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Resource Provider Client API
+  - name: Microsoft Azure Network Resource Provider Client API
     description: >-
       The Windows Azure Network management API provides a RESTful set of web
       services that interact with Windows Azure Networks service to manage your
@@ -1423,7 +1423,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkresourceproviderclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Security User Configuration API
+  - name: Microsoft Azure Security User Configuration API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1434,7 +1434,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/securityuserconfiguration-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Security Perimeter API
+  - name: Microsoft Azure Network Security Perimeter API
     description: >-
       The Network Security Perimeter API provides a RESTful set of web services
       that interact with network security perimeter resource.
@@ -1448,7 +1448,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networksecurityperimeter-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Manager Group Membership API
+  - name: Microsoft Azure Network Manager Group Membership API
     description: >-
       The Microsoft Azure Network Manager Group Membership API provides a
       RESTful set of web services that interact with Microsoft Azure Networks
@@ -1465,7 +1465,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkmanagergroupmembership-openapi-original.yml
-  - name: Microsoft Azure (Two) Routing Configuration API
+  - name: Microsoft Azure Routing Configuration API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1488,7 +1488,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-traffic-collector-openapi-original.yml
-  - name: Microsoft Azure (Two) Nginx.nginx Plus API
+  - name: Microsoft Azure Nginx.nginx Plus API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1499,7 +1499,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/nginxnginxplus-openapi-original.yml
-  - name: Microsoft Azure (Two) Notification Hubs Management Client API
+  - name: Microsoft Azure Notification Hubs Management Client API
     description: Azure NotificationHub client
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1511,7 +1511,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/notificationhubsmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Notification Hubs Rp Client API
+  - name: Microsoft Azure Notification Hubs Rp Client API
     description: Microsoft Notification Hubs Resource Provider REST API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1549,7 +1549,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-log-analytics-query-packs-openapi-original.yml
-  - name: Microsoft Azure (Two) Open Energy Platform Management Service Apis API
+  - name: Microsoft Azure Open Energy Platform Management Service APIs API
     description: Open Energy Platform Management Service APIs
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1562,7 +1562,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/open-energy-platform-management-service-apis-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.network Analytics API
+  - name: Microsoft Azure Microsoft.network Analytics API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1573,7 +1573,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftnetworkanalytics-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Cloud API
+  - name: Microsoft Azure Network Cloud API
     description: >-
       The Network Cloud APIs provide management of the on-premises clusters and
       their resources, such as, racks, bare metal hosts, virtual machines,
@@ -1588,7 +1588,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkcloud-openapi-original.yml
-  - name: Microsoft Azure (Two) Off Azure Spring Boot API
+  - name: Microsoft Azure Off Azure Spring Boot API
     description: The Microsoft.OffAzureSpringBoot Rest API spec.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1600,7 +1600,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/offazurespringboot-openapi-original.yml
-  - name: Microsoft Azure (Two) Palo Alto Networks.cloudngfw API
+  - name: Microsoft Azure Palo Alto Networks.cloudngfw API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1623,7 +1623,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-orbital-openapi-original.yml
-  - name: Microsoft Azure (Two) Portal API
+  - name: Microsoft Azure Portal API
     description: Allows creation and deletion of Azure Shared Dashboards.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1648,7 +1648,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-log-analytics-operations-management-openapi-original.yml
-  - name: Microsoft Azure (Two) Peering Management Client API
+  - name: Microsoft Azure Peering Management Client API
     description: APIs to manage Peering resources through the Azure Resource Manager.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1660,7 +1660,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/peeringmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft Azure Playwright Service Management API
+  - name: Microsoft Azure Microsoft Azure Playwright Service Management API
     description: Microsoft.AzurePlaywrightService Resource Provider management API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1673,7 +1673,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/microsoft-azureplaywrightservice-management-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Policy Events Client API
+  - name: Microsoft Azure Policy Events Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1684,7 +1684,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/policyeventsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Policy States Client API
+  - name: Microsoft Azure Policy States Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1695,7 +1695,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/policystatesclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Check Policy Restrictions Client API
+  - name: Microsoft Azure Check Policy Restrictions Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1706,7 +1706,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/checkpolicyrestrictionsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Remediations Client API
+  - name: Microsoft Azure Remediations Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1717,7 +1717,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/remediationsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Policy Insights Operations API
+  - name: Microsoft Azure Policy Insights Operations API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1728,7 +1728,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/policy-insights-operations-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Policy Metadata Client API
+  - name: Microsoft Azure Policy Metadata Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1739,7 +1739,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/policymetadataclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Attestations Client API
+  - name: Microsoft Azure Attestations Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1750,7 +1750,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/attestationsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Component Policy States Client API
+  - name: Microsoft Azure Component Policy States Client API
     description: >-
       Query component policy states at varying resource scopes for Resource
       Provider mode policies.
@@ -1764,7 +1764,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/componentpolicystatesclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Postgre Sqlmanagement Client API
+  - name: Microsoft Azure Postgre Sqlmanagement Client API
     description: >-
       The Microsoft Azure management API provides create, read, update, and
       delete functionality for Azure PostgreSQL resources including servers,
@@ -1780,7 +1780,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/postgresqlmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Postgre Sqlserver Management Client API
+  - name: Microsoft Azure Postgre Sqlserver Management Client API
     description: >-
       The Microsoft Azure management API provides create, read, update, and
       delete functionality for Azure PostgreSQL resources including servers,
@@ -1796,7 +1796,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/postgresqlservermanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Power Bidedicated API
+  - name: Microsoft Azure Power Bidedicated API
     description: >-
       PowerBI Dedicated Web API provides a RESTful set of web services that
       enables users to create, retrieve, update, and delete Power BI dedicated
@@ -1811,7 +1811,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/powerbidedicated-openapi-original.yml
-  - name: Microsoft Azure (Two) Power Bi Embedded Management Client API
+  - name: Microsoft Azure Power Bi Embedded Management Client API
     description: >-
       Client to manage your Power BI Embedded workspace collections and retrieve
       workspaces.
@@ -1825,7 +1825,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/power-bi-embedded-management-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Policy Tracked Resources Client API
+  - name: Microsoft Azure Policy Tracked Resources Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1837,7 +1837,7 @@ apis:
       - type: OpenAPI
         url: properties/policytrackedresourcesclient-openapi-original.yml
   - name: >-
-      Microsoft Azure (Two) Microsoft Playwright Testing Auth Manager Service
+      Microsoft Azure Microsoft Playwright Testing Auth Manager Service
       API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1850,7 +1850,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/microsoft-playwrighttesting-authmanager-service-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Private Dns Management Client API
+  - name: Microsoft Azure Private Dns Management Client API
     description: The Private DNS Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1862,7 +1862,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/privatednsmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Private Link Services For Power Biclient API
+  - name: Microsoft Azure Private Link Services For Power Biclient API
     description: >-
       Client to manage Power BI Private Link Service resources and connection
       members.
@@ -1890,7 +1890,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-cosmos-db-for-postgresql-openapi-original.yml
-  - name: Microsoft Azure (Two) Professional Service API
+  - name: Microsoft Azure Professional Service API
     description: REST APIs for Marketplace Professional Service Offers
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1902,7 +1902,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/professionalservice-openapi-original.yml
-  - name: Microsoft Azure (Two) Programmable Connectivity API
+  - name: Microsoft Azure Programmable Connectivity API
     description: >-
       Azure Programmable Connectivity (APC) provides a unified interface to the
       Network APIs of multiple Telecom Operators. Note that Operators may
@@ -1918,7 +1918,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/programmable-connectivity-openapi-original.yml
-  - name: Microsoft Azure (Two) Power Platform API
+  - name: Microsoft Azure Power Platform API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -1929,7 +1929,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/powerplatform-openapi-original.yml
-  - name: Microsoft Azure (Two) Provider Hub API
+  - name: Microsoft Azure Provider Hub API
     description: Microsoft ProviderHub
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1941,7 +1941,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/providerhub-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Policy Client API
+  - name: Microsoft Azure Purview Policy Client API
     description: Creates a Microsoft.Purview management client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -1953,7 +1953,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/purviewpolicyclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Hyperscale Citus Management Client API
+  - name: Microsoft Azure Hyperscale Citus Management Client API
     description: >-
       The Microsoft Azure management API provides create, read, update, and
       delete functionality for Azure PostgreSQL Hyperscale (Citus) resources
@@ -1981,7 +1981,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-quota-extension-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Recommendations Service API
+  - name: Microsoft Azure Recommendations Service API
     description: Dynamics 365 Recommendations Service resource provider
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2017,7 +2017,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-site-recovery-management-service-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Quantum Client API
+  - name: Microsoft Azure Quantum Client API
     description: Azure Quantum REST API client
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2041,7 +2041,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-quantum-workspace-services-openapi-original.yml
-  - name: Microsoft Azure (Two) Recovery Services Backup Client API
+  - name: Microsoft Azure Recovery Services Backup Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2076,7 +2076,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-red-hat-openshift-4-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Recovery Services Client API
+  - name: Microsoft Azure Recovery Services Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2087,7 +2087,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/recoveryservicesclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Redis Management Client API
+  - name: Microsoft Azure Redis Management Client API
     description: REST API for Azure Redis Cache Service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2099,7 +2099,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/redismanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Redis Enterprise Management Client API
+  - name: Microsoft Azure Redis Enterprise Management Client API
     description: REST API for managing Redis Enterprise resources in Azure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2111,7 +2111,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/redisenterprisemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Redis Enterprise API
+  - name: Microsoft Azure Redis Enterprise API
     description: REST API for managing Redis Enterprise resources in Azure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2123,7 +2123,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/redisenterprise-openapi-original.yml
-  - name: Microsoft Azure (Two) Relay API
+  - name: Microsoft Azure Relay API
     description: >-
       Use these API to manage Azure Relay resources through Azure Resource
       Manager.
@@ -2137,7 +2137,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/relay-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Appliances API
+  - name: Microsoft Azure Appliances API
     description: The appliances Rest API spec.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2161,7 +2161,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-resource-graph-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Management Client API
+  - name: Microsoft Azure Purview Management Client API
     description: Creates a Microsoft.Purview management client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2173,7 +2173,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/purviewmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Resource Mover Service API
+  - name: Microsoft Azure Resource Mover Service API
     description: >-
       A first party Azure service orchestrating the move of Azure resources from
       one Azure region to another or between zones within a region.
@@ -2199,7 +2199,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-resource-graph-query-openapi-original.yml
-  - name: Microsoft Azure (Two) Arg Query Generation API
+  - name: Microsoft Azure Arg Query Generation API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2210,7 +2210,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/arg-query-generation-openapi-original.yml
-  - name: Microsoft Azure (Two) Site Recovery Management Client API
+  - name: Microsoft Azure Site Recovery Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2221,7 +2221,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/siterecoverymanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Scheduler Management Client API
+  - name: Microsoft Azure Scheduler Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2232,7 +2232,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/schedulermanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Catalog Service Rest Api Document API
+  - name: Microsoft Azure Purview Catalog Service Rest API Document API
     description: >-
       Purview Catalog Service is a fully managed cloud service whose users can
       discover the data sources they need and understand the data sources they
@@ -2250,7 +2250,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/purview-catalog-service-rest-api-document-openapi-original.yml
-  - name: Microsoft Azure (Two) Data Plane Account Client API
+  - name: Microsoft Azure Data Plane Account Client API
     description: Creates a Microsoft.Purview data plane account client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2262,7 +2262,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/dataplaneaccountclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Devops Policies Rest Api Document API
+  - name: Microsoft Azure Purview Devops Policies Rest API Document API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2295,7 +2295,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-analytics-purview-data-map-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Self Service Policies Rest Api Document API
+  - name: Microsoft Azure Purview Self Service Policies Rest API Document API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2308,7 +2308,7 @@ apis:
         url: >-
           properties/purview-self-service-policies-rest-api-document-openapi-original.yml
   - name: >-
-      Microsoft Azure (Two) Purview Metadata Policies Service Rest Api Document
+      Microsoft Azure Purview Metadata Policies Service Rest API Document
       API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2321,7 +2321,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/purview-metadata-policies-service-rest-api-document-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft Scanning Client API
+  - name: Microsoft Azure Microsoft Scanning Client API
     description: Creates a Microsoft.Scanning management client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2345,7 +2345,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-reservation-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Share Client API
+  - name: Microsoft Azure Purview Share Client API
     description: Creates a data plane client for Purview Share.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2357,7 +2357,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/purview-share-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Distribution Service Rest Api Document API
+  - name: Microsoft Azure Purview Distribution Service Rest API Document API
     description: >-
       Purview distribution service enables various Azure RPs to fetch the
       policies and attributes for data governance.
@@ -2372,7 +2372,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/purview-distribution-service-rest-api-document-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.resource Health API
+  - name: Microsoft Azure Microsoft.resource Health API
     description: The Resource Health Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2384,7 +2384,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftresourcehealth-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Data Map Service Rest Api Document API
+  - name: Microsoft Azure Purview Data Map Service Rest API Document API
     description: >-
       Purview Data Map Service is a fully managed cloud service whose users can
       discover the data sources they need and understand the data sources they
@@ -2402,7 +2402,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/purview-data-map-service-rest-api-document-openapi-original.yml
-  - name: Microsoft Azure (Two) Saa S API
+  - name: Microsoft Azure Saa S API
     description: REST APIs for Azure Marketplace SaaS Offers
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2414,7 +2414,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/saas-openapi-original.yml
-  - name: Microsoft Azure (Two) Purview Workflow Service API
+  - name: Microsoft Azure Purview Workflow Service API
     description: >-
       Workflows are automated, repeatable business processes which allow
       organizations to track changes, enforce policy compliance, and ensure
@@ -2433,7 +2433,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/purview-workflow-service-openapi-original.yml
-  - name: Microsoft Azure (Two) Feature Client API
+  - name: Microsoft Azure Feature Client API
     description: Feature provider
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2445,7 +2445,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/featureclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Management Lock Client API
+  - name: Microsoft Azure Management Lock Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2456,7 +2456,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/managementlockclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Policy Client API
+  - name: Microsoft Azure Policy Client API
     description: >-
       To manage and control access to your resources, you can define customized
       policies and assign them at a scope.
@@ -2470,7 +2470,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/policyclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Resource Private Link Client API
+  - name: Microsoft Azure Resource Private Link Client API
     description: Provides operations for managing private link resources
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2482,7 +2482,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/resourceprivatelinkclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Application Client API
+  - name: Microsoft Azure Application Client API
     description: ARM applications
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2512,7 +2512,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-easm-openapi-original.yml
-  - name: Microsoft Azure (Two) Defender Easm API
+  - name: Microsoft Azure Defender Easm API
     description: >-
       Defender EASM discovers and maps your digital attack surface to provide an
       "outside-in" perspective using probes to discover assets. The assets are
@@ -2530,7 +2530,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/defender-easm-openapi-original.yml
-  - name: Microsoft Azure (Two) Subscription Client API
+  - name: Microsoft Azure Subscription Client API
     description: >-
       All resource groups and resources exist within subscriptions. These
       operation enable you get information about your subscriptions and tenants.
@@ -2546,7 +2546,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/subscriptionclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Resource Management Client API
+  - name: Microsoft Azure Resource Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2557,7 +2557,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/resourcemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Management Link Client API
+  - name: Microsoft Azure Management Link Client API
     description: >-
       Azure resources can be linked together to form logical relationships. You
       can establish links between resources belonging to different resource
@@ -2575,7 +2575,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/managementlinkclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Deployment Scripts Client API
+  - name: Microsoft Azure Deployment Scripts Client API
     description: >-
       The APIs listed in this specification can be used to manage Deployment
       Scripts resource through the Azure Resource Manager.
@@ -2589,7 +2589,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/deploymentscriptsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Changes Client API
+  - name: Microsoft Azure Changes Client API
     description: The Resource Changes Client
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2601,7 +2601,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/changesclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Template Specs Client API
+  - name: Microsoft Azure Template Specs Client API
     description: >-
       The APIs listed in this specification can be used to manage Template Spec
       resources through the Azure Resource Manager.
@@ -2615,7 +2615,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/templatespecsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Bicep Client API
+  - name: Microsoft Azure Bicep Client API
     description: >-
       The APIs listed in this specification can be used to manage Bicep related
       operations through the Azure Resource Manager.
@@ -2629,7 +2629,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/bicepclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Scvmm API
+  - name: Microsoft Azure Scvmm API
     description: The Microsoft.ScVmm Rest API spec.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2641,7 +2641,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/scvmm-openapi-original.yml
-  - name: Microsoft Azure (Two) Managed Application Client API
+  - name: Microsoft Azure Managed Application Client API
     description: ARM managed applications (appliances)
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2653,7 +2653,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/managedapplicationclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Search Management Client API
+  - name: Microsoft Azure Search Management Client API
     description: Client that can be used to manage Azure Search services and API keys.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2665,7 +2665,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/searchmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Security And Compliance Apis API
+  - name: Microsoft Azure Security And Compliance APIs API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2676,7 +2676,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/securityandcomplianceapis-openapi-original.yml
-  - name: Microsoft Azure (Two) Deployment Stacks Client API
+  - name: Microsoft Azure Deployment Stacks Client API
     description: >-
       The APIs listed in this specification can be used to manage deployment
       stack resources through the Azure Resource Manager.
@@ -2690,7 +2690,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/deploymentstacksclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Snapshots Client API
+  - name: Microsoft Azure Snapshots Client API
     description: The Resource Snapshots Client
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2716,7 +2716,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-schema-registry-openapi-original.yml
-  - name: Microsoft Azure (Two) Service Bus Management Client API
+  - name: Microsoft Azure Service Bus Management Client API
     description: Azure Service Bus client for managing Queues, Topics, and Subscriptions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2729,7 +2729,7 @@ apis:
       - type: OpenAPI
         url: properties/servicebusmanagementclient-openapi-original.yml
   - name: >-
-      Microsoft Azure Api For Managing Scom Managed Instances And Monitored
+      Microsoft Azure API For Managing Scom Managed Instances And Monitored
       Resources. API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2742,7 +2742,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-api-for-managing-scom-managed-instances-and-monitored-resources-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft Defender For Cloud API
+  - name: Microsoft Azure Microsoft Defender For Cloud API
     description: >-
       API spec for Microsoft.Security (Microsoft Defender for Cloud) resource
       provider
@@ -2756,7 +2756,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoft-defender-for-cloud-openapi-original.yml
-  - name: Microsoft Azure (Two) Security Center API
+  - name: Microsoft Azure Security Center API
     description: API spec for Microsoft.Security (Azure Security Center) resource provider
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2768,7 +2768,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/security-center-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.easm API
+  - name: Microsoft Azure Microsoft.easm API
     description: REST APIs for Easm
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2780,7 +2780,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsofteasm-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.security API
+  - name: Microsoft Azure Microsoft.security API
     description: REST APIs for Defender for DevOps
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2792,7 +2792,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftsecurity-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.security Dev Ops API
+  - name: Microsoft Azure Microsoft.security Dev Ops API
     description: REST APIs for Defender for DevOps
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2804,7 +2804,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftsecuritydevops-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft Sentinel Upload Indicators API
+  - name: Microsoft Azure Microsoft Sentinel Upload Indicators API
     description: Spec for Microsoft Sentinel Upload Indicators API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2817,7 +2817,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/microsoft-sentinel-upload-indicators-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft Serial Console Client API
+  - name: Microsoft Azure Microsoft Serial Console Client API
     description: >-
       The Azure Serial Console allows you to access the serial console of a
       Virtual Machine or VM scale set instance
@@ -2831,7 +2831,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftserialconsoleclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Service Map API
+  - name: Microsoft Azure Service Map API
     description: Service Map API Reference
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2843,7 +2843,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/service-map-openapi-original.yml
-  - name: Microsoft Azure (Two) Service Fabric Management Client API
+  - name: Microsoft Azure Service Fabric Management Client API
     description: Azure Service Fabric Resource Provider API Client
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2855,7 +2855,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/servicefabricmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Data Sensitivity Settings API
+  - name: Microsoft Azure Data Sensitivity Settings API
     description: API spec for Microsoft.Security Data Sensitivity Settings
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2867,7 +2867,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/data-sensitivity-settings-openapi-original.yml
-  - name: Microsoft Azure (Two) Search Service Client API
+  - name: Microsoft Azure Search Service Client API
     description: >-
       Client that can be used to manage and query indexes and documents, as well
       as manage other resources, on a search service.
@@ -2881,7 +2881,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/searchserviceclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Security Insights API
+  - name: Microsoft Azure Security Insights API
     description: >-
       API spec for Microsoft.SecurityInsights (Azure Security Insights) resource
       provider
@@ -2895,7 +2895,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/security-insights-openapi-original.yml
-  - name: Microsoft Azure (Two) Search Index Client API
+  - name: Microsoft Azure Search Index Client API
     description: >-
       Client that can be used to query an index and upload, merge, or delete
       documents.
@@ -2909,7 +2909,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/searchindexclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Sea Breeze Management Client API
+  - name: Microsoft Azure Sea Breeze Management Client API
     description: APIs to deploy and manage resources to SeaBreeze.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2921,7 +2921,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/seabreezemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.service Linker API
+  - name: Microsoft Azure Microsoft.service Linker API
     description: Microsoft.ServiceLinker provider
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2933,7 +2933,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftservicelinker-openapi-original.yml
-  - name: Microsoft Azure (Two) Signal Rmanagement Client API
+  - name: Microsoft Azure Signal Rmanagement Client API
     description: REST API for Azure SignalR Service
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2945,7 +2945,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/signalrmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Traffic Controller API
+  - name: Microsoft Azure Traffic Controller API
     description: Traffic Controller Provider management API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -2957,7 +2957,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/trafficcontroller-openapi-original.yml
-  - name: Microsoft Azure (Two) Sql Virtual Machine Management Client API
+  - name: Microsoft Azure Sql Virtual Machine Management Client API
     description: >-
       The SQL virtual machine management API provides a RESTful set of web APIs
       that interact with Azure Compute, Network & Storage services to manage
@@ -2974,7 +2974,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/sqlvirtualmachinemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Software Plan Rp API
+  - name: Microsoft Azure Software Plan Rp API
     description: >-
       Azure software plans let users create and manage licenses for various
       software used in Azure.
@@ -3000,7 +3000,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azuresphereproviderclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Service Fabric Client Apis API
+  - name: Microsoft Azure Service Fabric Client APIs API
     description: >-
       Service Fabric REST Client APIs allows management of Service Fabric
       clusters, applications and services.
@@ -3014,7 +3014,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/service-fabric-client-apis-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.standby Pool API
+  - name: Microsoft Azure Microsoft.standby Pool API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3065,7 +3065,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-sql-database-openapi-original.yml
-  - name: Microsoft Azure (Two) Sql Management Client API
+  - name: Microsoft Azure Sql Management Client API
     description: >-
       The Azure SQL Database management API provides a RESTful set of web APIs
       that interact with Azure SQL Database services to manage your databases.
@@ -3095,7 +3095,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-sql-database-capabilities-openapi-original.yml
-  - name: Microsoft Azure Sql Server Api Spec API
+  - name: Microsoft Azure Sql Server API Spec API
     description: >-
       The Azure SQL Server management API provides a RESTful set of web services
       that interact with Azure SQL Server services to manage your databases. The
@@ -3125,7 +3125,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-sql-database-datamasking-policies-and-rules-openapi-original.yml
-  - name: Microsoft Azure (Two) Database Threat Detection Policy Apis API
+  - name: Microsoft Azure Database Threat Detection Policy APIs API
     description: >-
       Provides create, read and update functionality for database Threat
       Detection policies.
@@ -3183,7 +3183,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-sql-database-importexport-spec-openapi-original.yml
-  - name: Microsoft Azure Sql Database Api Spec API
+  - name: Microsoft Azure Sql Database API Spec API
     description: >-
       The Azure SQL Database management API provides a RESTful set of web
       services that interact with Azure SQL Database services to manage your
@@ -3198,7 +3198,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-sql-database-api-spec-openapi-original.yml
-  - name: Microsoft Azure (Two) Stor Simple Management Client API
+  - name: Microsoft Azure Stor Simple Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3209,7 +3209,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storsimplemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage Cache Mgmt Client API
+  - name: Microsoft Azure Storage Cache Mgmt Client API
     description: >-
       A Storage Cache provides scalable caching service for NAS clients, serving
       data from either NFSv3 or Blob at-rest storage (referred to as "Storage
@@ -3224,7 +3224,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storage-cache-mgmt-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage Import Export API
+  - name: Microsoft Azure Storage Import Export API
     description: The Storage Import/Export Resource Provider API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3236,7 +3236,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storageimportexport-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage Pool Management API
+  - name: Microsoft Azure Storage Pool Management API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3247,7 +3247,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storagepoolmanagement-openapi-original.yml
-  - name: Microsoft Azure (Two) Managed Lustre Client API
+  - name: Microsoft Azure Managed Lustre Client API
     description: >-
       Azure Managed Lustre provides a fully managed Lustre® file system,
       integrated with Blob storage, for use on demand. These operations create
@@ -3262,7 +3262,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/managed-lustre-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft Storage Sync API
+  - name: Microsoft Azure Microsoft Storage Sync API
     description: Microsoft Storage Sync Service API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3274,7 +3274,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoft-storage-sync-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage Actions Management Client API
+  - name: Microsoft Azure Storage Actions Management Client API
     description: The Azure Storage Actions Management API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3286,7 +3286,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storageactionsmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage Management API
+  - name: Microsoft Azure Storage Management API
     description: The Azure Storage Management API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3298,7 +3298,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storagemanagement-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage Management Client API
+  - name: Microsoft Azure Storage Management Client API
     description: The Storage Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3310,7 +3310,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storagemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage API
+  - name: Microsoft Azure Storage API
     description: Storage Resource Provider API Common Types
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3322,7 +3322,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storage-openapi-original.yml
-  - name: Microsoft Azure (Two) Stream Analytics Management Client API
+  - name: Microsoft Azure Stream Analytics Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3333,7 +3333,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/streamanalyticsmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Stor Simple8000series Management Client API
+  - name: Microsoft Azure Stor Simple8000series Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3344,7 +3344,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storsimple8000seriesmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Storage Mover Client API
+  - name: Microsoft Azure Storage Mover Client API
     description: The Azure Storage Mover REST API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3356,7 +3356,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/storagemoverclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Syntex API
+  - name: Microsoft Azure Syntex API
     description: Syntex provider
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3368,7 +3368,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/syntex-openapi-original.yml
-  - name: Microsoft Azure (Two) Synapse Management Client API
+  - name: Microsoft Azure Synapse Management Client API
     description: Azure Synapse Analytics APIs
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3416,7 +3416,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-queue-storage-openapi-original.yml
-  - name: Microsoft Azure (Two) Subscription Definitions Client API
+  - name: Microsoft Azure Subscription Definitions Client API
     description: >-
       Subscription definitions client provides an interface to create, modify
       and retrieve azure subscriptions programmatically.
@@ -3430,7 +3430,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/subscriptiondefinitionsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.support API
+  - name: Microsoft Azure Microsoft.support API
     description: Microsoft Azure Support Resource Provider.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3453,7 +3453,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-file-storage-openapi-original.yml
-  - name: Microsoft Azure (Two) Test Base API
+  - name: Microsoft Azure Test Base API
     description: Restful APIs for Test Base Action Requests.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3465,7 +3465,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/test-base-openapi-original.yml
-  - name: Microsoft Azure (Two) Synapse Sql V3management Client API
+  - name: Microsoft Azure Synapse Sql V3management Client API
     description: Azure Synapse Analytics APIs
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3477,7 +3477,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/synapsesqlv3managementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Time Series Insights Client API
+  - name: Microsoft Azure Time Series Insights Client API
     description: Time Series Insights client
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3489,7 +3489,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/timeseriesinsightsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Artifacts Client API
+  - name: Microsoft Azure Artifacts Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3500,7 +3500,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/artifactsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Access Control Client API
+  - name: Microsoft Azure Access Control Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3511,7 +3511,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/accesscontrolclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Vnet Client API
+  - name: Microsoft Azure Vnet Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3522,7 +3522,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/vnetclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Monitoring Client API
+  - name: Microsoft Azure Monitoring Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3533,7 +3533,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/monitoringclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Spark Client API
+  - name: Microsoft Azure Spark Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3544,7 +3544,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/sparkclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Traffic Manager Management Client API
+  - name: Microsoft Azure Traffic Manager Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3579,7 +3579,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-video-analyzer-resource-provider-openapi-original.yml
-  - name: Microsoft Azure (Two) Visual Studio Resource Provider Client API
+  - name: Microsoft Azure Visual Studio Resource Provider Client API
     description: >-
       Use these APIs to manage Visual Studio Team Services resources through the
       Azure Resource Manager. All task operations conform to the HTTP/1.1
@@ -3608,7 +3608,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azureaidocumenttranslation-openapi-original.yml
-  - name: Microsoft Azure (Two) Visual Studio Projects Resource Provider Client API
+  - name: Microsoft Azure Visual Studio Projects Resource Provider Client API
     description: >-
       Use these APIs to manage Visual Studio Team Services resources through the
       Azure Resource Manager. All task operations conform to the HTTP/1.1
@@ -3627,7 +3627,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/visual-studio-projects-resource-provider-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Text Translation API
+  - name: Microsoft Azure Text Translation API
     description: >-
       Text translation is a cloud-based REST API feature of the Translator
       service that uses neural
@@ -3674,7 +3674,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/text-translation-openapi-original.yml
-  - name: Microsoft Azure (Two) Managed Private Endpoints Client API
+  - name: Microsoft Azure Managed Private Endpoints Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3697,7 +3697,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-vmware-solution-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Vi API
+  - name: Microsoft Azure Vi API
     description: Microsoft Azure Video Indexer
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3709,7 +3709,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/vi-openapi-original.yml
-  - name: Microsoft Azure (Two) Vmware Cloud Simple API
+  - name: Microsoft Azure Vmware Cloud Simple API
     description: Description of the new service
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3735,7 +3735,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-video-analyzer-for-edge-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.voice Services API
+  - name: Microsoft Azure Microsoft.voice Services API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3746,7 +3746,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftvoiceservices-openapi-original.yml
-  - name: Microsoft Azure (Two) Web Site Management Client API
+  - name: Microsoft Azure Web Site Management Client API
     description: >-
       Use these APIs to manage Azure Websites resources through the Azure
       Resource Manager. All task operations conform to the HTTP/1.1 protocol
@@ -3764,7 +3764,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/website-management-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Logic Apps Management Client API
+  - name: Microsoft Azure Logic Apps Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3775,7 +3775,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/logicappsmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Certificates Api Client API
+  - name: Microsoft Azure Certificates API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3786,7 +3786,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/certificates-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Common Definitions API
+  - name: Microsoft Azure Common Definitions API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3797,7 +3797,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/common-definitions-openapi-original.yml
-  - name: Microsoft Azure (Two) Deleted Web Apps Api Client API
+  - name: Microsoft Azure Deleted Web Apps API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3808,7 +3808,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/deletedwebapps-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Diagnostics Api Client API
+  - name: Microsoft Azure Diagnostics API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3819,7 +3819,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/diagnostics-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Provider Api Client API
+  - name: Microsoft Azure Provider API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3830,7 +3830,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/provider-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Recommendations Api Client API
+  - name: Microsoft Azure Recommendations API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3841,7 +3841,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/recommendations-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Resource Health Metadata Api Client API
+  - name: Microsoft Azure Resource Health Metadata API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3852,7 +3852,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/resourcehealthmetadata-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Api Client API
+  - name: Microsoft Azure API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3863,7 +3863,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Web Apps Api Client API
+  - name: Microsoft Azure Web Apps API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3874,7 +3874,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/webapps-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) App Service Environments Api Client API
+  - name: Microsoft Azure App Service Environments API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3885,7 +3885,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/appserviceenvironments-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) App Service Plans Api Client API
+  - name: Microsoft Azure App Service Plans API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3896,7 +3896,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/appserviceplans-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Static Sites Api Client API
+  - name: Microsoft Azure Static Sites API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3907,7 +3907,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/staticsites-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Global Api Client API
+  - name: Microsoft Azure Global API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3918,7 +3918,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/global-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Kube Environments Api Client API
+  - name: Microsoft Azure Kube Environments API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3929,7 +3929,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/kubeenvironments-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Container Apps Revisions Api Client API
+  - name: Microsoft Azure Container Apps Revisions API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3940,7 +3940,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/containerappsrevisions-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Workload Monitor API
+  - name: Microsoft Azure Workload Monitor API
     description: APIs for workload monitoring
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -3952,7 +3952,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/workload-monitor-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Windowsesu API
+  - name: Microsoft Azure Windowsesu API
     description: >-
       Manage Multi-Access Keys (MAK) that enable Windows Extended Security
       Updates (ESU).
@@ -3966,7 +3966,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/windowsesu-openapi-original.yml
-  - name: Microsoft Azure (Two) App Service Certificate Orders Api Client API
+  - name: Microsoft Azure App Service Certificate Orders API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3977,7 +3977,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/appservicecertificateorders-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Certificate Registration Provider Api Client API
+  - name: Microsoft Azure Certificate Registration Provider API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -3989,7 +3989,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/certificateregistrationprovider-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Certificate Orders Diagnostics Api Client API
+  - name: Microsoft Azure Certificate Orders Diagnostics API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4001,7 +4001,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/certificateordersdiagnostics-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Device Services API
+  - name: Microsoft Azure Device Services API
     description: >-
       Use this API to manage the Windows IoT device services in your Azure
       subscription.
@@ -4016,7 +4016,7 @@ apis:
       - type: OpenAPI
         url: properties/deviceservices-openapi-original.yml
   - name: >-
-      Microsoft Azure (Two) Microsoft.voice Services.acg.provisioning
+      Microsoft Azure Microsoft.voice Services.acg.provisioning
       Platform.api API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4029,7 +4029,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/microsoftvoiceservicesacgprovisioningplatformapi-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.voice Services.provisioning API
+  - name: Microsoft Azure Microsoft.voice Services.provisioning API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4040,7 +4040,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/microsoftvoiceservicesprovisioning-openapi-original.yml
-  - name: Microsoft Azure (Two) Domain Registration Provider Api Client API
+  - name: Microsoft Azure Domain Registration Provider API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4051,7 +4051,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/domainregistrationprovider-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Domains Api Client API
+  - name: Microsoft Azure Domains API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4062,7 +4062,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/domains-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Top Level Domains Api Client API
+  - name: Microsoft Azure Top Level Domains API Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4073,7 +4073,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/topleveldomains-api-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Workloads Client API
+  - name: Microsoft Azure Workloads Client API
     description: Workloads client provides access to various workload operations
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4085,7 +4085,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/workloads-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Web Pub Sub Management Client API
+  - name: Microsoft Azure Web Pub Sub Management Client API
     description: REST API for Azure WebPubSub Service
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4108,7 +4108,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-web-pubsub-service-rest-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Commerce Management Client API
+  - name: Microsoft Azure Commerce Management Client API
     description: The Admin Commerce Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4120,7 +4120,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/commercemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Backup Management Client API
+  - name: Microsoft Azure Backup Management Client API
     description: The Admin Backup Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4132,7 +4132,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/backupmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Compute Admin Client API
+  - name: Microsoft Azure Compute Admin Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4143,7 +4143,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/compute-admin-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Compute Disk Admin Management Client API
+  - name: Microsoft Azure Compute Disk Admin Management Client API
     description: The Admin Compute Disk Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4155,7 +4155,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/computediskadminmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Container Service Admin Client API
+  - name: Microsoft Azure Container Service Admin Client API
     description: Admin Container Service Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4167,7 +4167,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/containerserviceadminclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Fabric Admin Client API
+  - name: Microsoft Azure Fabric Admin Client API
     description: Application operation results.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4179,7 +4179,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/fabricadminclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Gallery Management Client API
+  - name: Microsoft Azure Gallery Management Client API
     description: The Admin Gallery Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4191,7 +4191,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/gallerymanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Infrastructure Insights Management Client API
+  - name: Microsoft Azure Infrastructure Insights Management Client API
     description: Alert operation endpoints and objects.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4215,7 +4215,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azurebridgeadminclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Network Admin Management Client API
+  - name: Microsoft Azure Network Admin Management Client API
     description: Load balancer admin operation endpoints and objects.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4227,7 +4227,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/networkadminmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Deployment Admin Client API
+  - name: Microsoft Azure Deployment Admin Client API
     description: Deployment Admin Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4239,7 +4239,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/deploymentadminclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Update Admin Client API
+  - name: Microsoft Azure Update Admin Client API
     description: The Update Admin Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4251,7 +4251,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/updateadminclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Subscriptions Management Client API
+  - name: Microsoft Azure Subscriptions Management Client API
     description: The Admin Subscriptions Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4263,7 +4263,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/subscriptionsmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Capability Types API
+  - name: Microsoft Azure Capability Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4274,7 +4274,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/capability-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Capability Metadata Types API
+  - name: Microsoft Azure Capability Metadata Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4285,7 +4285,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/capability-metadata-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Common Types API
+  - name: Microsoft Azure Common Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4296,7 +4296,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/common-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Experiment Types API
+  - name: Microsoft Azure Experiment Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4307,7 +4307,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/experiment-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Target Metadata Types API
+  - name: Microsoft Azure Target Metadata Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4318,7 +4318,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/target-metadata-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Target Types API
+  - name: Microsoft Azure Target Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4329,7 +4329,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/target-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Private Accesses Types API
+  - name: Microsoft Azure Private Accesses Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4340,7 +4340,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/privateaccesses-types-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2024 02 01 API
+  - name: Microsoft Azure Open Ai API Version 2024 02 01 API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4352,7 +4352,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-openai-api-version-2024-02-01-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 05 15 API
+  - name: Microsoft Azure Open Ai API Version 2023 05 15 API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4364,7 +4364,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-openai-api-version-2023-05-15-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2022 12 01 API
+  - name: Microsoft Azure Open Ai API Version 2022 12 01 API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4376,7 +4376,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-openai-api-version-2022-12-01-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 06 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2023 06 01 Preview API
     description: >-
       APIs for fine-tuning, managing deployments of OpenAI models and to support
       OpenAI DALL-E.
@@ -4391,7 +4391,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2023-06-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2022 03 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2022 03 01 Preview API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4403,7 +4403,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2022-03-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2022 06 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2022 06 01 Preview API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4415,7 +4415,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2022-06-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 03 15 Preview API
+  - name: Microsoft Azure Open Ai API Version 2023 03 15 Preview API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4428,7 +4428,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2023-03-15-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 08 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2023 08 01 Preview API
     description: >-
       APIs for fine-tuning, managing deployments of OpenAI models and to support
       OpenAI DALL-E.
@@ -4443,7 +4443,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2023-08-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 10 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2023 10 01 Preview API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4456,7 +4456,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2023-10-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 07 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2023 07 01 Preview API
     description: >-
       APIs for fine-tuning, managing deployments of OpenAI models and to support
       OpenAI DALL-E.
@@ -4471,7 +4471,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2023-07-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 09 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2023 09 01 Preview API
     description: >-
       APIs for fine-tuning, managing deployments of OpenAI models and to support
       OpenAI DALL-E.
@@ -4486,7 +4486,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2023-09-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2023 12 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2023 12 01 Preview API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4499,7 +4499,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2023-12-01-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2024 02 15 Preview API
+  - name: Microsoft Azure Open Ai API Version 2024 02 15 Preview API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4512,7 +4512,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-openai-api-version-2024-02-15-preview-openapi-original.yml
-  - name: Microsoft Azure Open Ai Api Version 2024 03 01 Preview API
+  - name: Microsoft Azure Open Ai API Version 2024 03 01 Preview API
     description: APIs for fine-tuning and managing deployments of OpenAI models.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4537,7 +4537,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-openai-service-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Custom Vision Prediction Client API
+  - name: Microsoft Azure Custom Vision Prediction Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4560,7 +4560,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-openai-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Training API
+  - name: Microsoft Azure Training API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4571,7 +4571,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/trainingapi-openapi-original.yml
-  - name: Microsoft Azure (Two) Prediction Endpoint API
+  - name: Microsoft Azure Prediction Endpoint API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4582,7 +4582,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/predictionendpoint-openapi-original.yml
-  - name: Microsoft Azure (Two) Custom Vision Training Client API
+  - name: Microsoft Azure Custom Vision Training Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4593,7 +4593,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/custom-vision-training-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Luis Runtime Client API
+  - name: Microsoft Azure Luis Runtime Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4604,7 +4604,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/luis-runtime-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Luis Authoring Client API
+  - name: Microsoft Azure Luis Authoring Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4615,7 +4615,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/luis-authoring-client-openapi-original.yml
-  - name: Microsoft Azure (Two) Speaker Verification API
+  - name: Microsoft Azure Speaker Verification API
     description: >-
       The Azure Cognitive Service Speaker Recognition service provides
       algorithms that verify and identify speakers by their unique voice
@@ -4632,7 +4632,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speaker-verification-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Batch Synthesis API
+  - name: Microsoft Azure Batch Synthesis API
     description: Batch synthesis API for text-to-speech.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4644,7 +4644,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/batch-synthesis-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Speech Services Api V2.0 API
+  - name: Microsoft Azure Speech Services API V2.0 API
     description: Speech Services API v2.0.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4656,7 +4656,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speech-services-api-v20-openapi-original.yml
-  - name: Microsoft Azure (Two) Speech Services Api V3.0 API
+  - name: Microsoft Azure Speech Services API V3.0 API
     description: Speech Services API v3.0.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4668,7 +4668,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speech-services-api-v30-openapi-original.yml
-  - name: Microsoft Azure (Two) Speech Services Api V3.1 API
+  - name: Microsoft Azure Speech Services API V3.1 API
     description: Speech Services API v3.1.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4680,7 +4680,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speech-services-api-v31-openapi-original.yml
-  - name: Microsoft Azure (Two) Speaker Entification API
+  - name: Microsoft Azure Speaker Entification API
     description: |-
       This API is currently available in:
 
@@ -4695,7 +4695,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speaker-identification-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Speech Services Api V3.2 Preview.1 API
+  - name: Microsoft Azure Speech Services API V3.2 Preview.1 API
     description: Speech Services API v3.2-preview.1.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4707,7 +4707,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speech-services-api-v32-preview1-openapi-original.yml
-  - name: Microsoft Azure (Two) Speech Services Api V3.2 Preview.2 API
+  - name: Microsoft Azure Speech Services API V3.2 Preview.2 API
     description: Speech Services API v3.2-preview.2.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4719,7 +4719,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speech-services-api-v32-preview2-openapi-original.yml
-  - name: Microsoft Azure (Two) Speech Services Api V3.1 Preview.1 API
+  - name: Microsoft Azure Speech Services API V3.1 Preview.1 API
     description: Speech Services API v3.1-preview.1.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4731,7 +4731,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/speech-services-api-v31-preview1-openapi-original.yml
-  - name: Microsoft Azure (Two) Custom Voice API
+  - name: Microsoft Azure Custom Voice API
     description: Custom voice API to create and deploy your voice.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4743,7 +4743,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/custom-voice-api-openapi-original.yml
-  - name: Microsoft Azure (Two) Cloud Service Management Client API
+  - name: Microsoft Azure Cloud Service Management Client API
     description: The Cloud Service Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4755,7 +4755,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/cloudservicemanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Shared Image Gallery Service Client API
+  - name: Microsoft Azure Shared Image Gallery Service Client API
     description: Shared Image Gallery Service Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4767,7 +4767,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/sharedimagegalleryserviceclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Shared Gallery Service Client API
+  - name: Microsoft Azure Shared Gallery Service Client API
     description: Shared Gallery Service Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4779,7 +4779,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/sharedgalleryserviceclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Community Gallery Service Client API
+  - name: Microsoft Azure Community Gallery Service Client API
     description: Community Gallery Service Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4791,7 +4791,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/communitygalleryserviceclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Compute Diagnostic Resource Provider Client API
+  - name: Microsoft Azure Compute Diagnostic Resource Provider Client API
     description: The Compute Diagnostic Resource Provider Client
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4804,7 +4804,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/computediagnosticresourceproviderclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Run Commands Client API
+  - name: Microsoft Azure Run Commands Client API
     description: The Run Commands Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4816,7 +4816,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/runcommandsclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Disk Resource Provider Client API
+  - name: Microsoft Azure Disk Resource Provider Client API
     description: The Disk Resource Provider Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4828,7 +4828,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/diskresourceproviderclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Container Service Fleet Client API
+  - name: Microsoft Azure Container Service Fleet Client API
     description: Azure Kubernetes Fleet Manager api client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4852,7 +4852,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/azure-data-migration-service-classic-resource-provider-openapi-original.yml
-  - name: Microsoft Azure (Two) Hdinsight On Aks Management Client API
+  - name: Microsoft Azure Hdinsight On Aks Management Client API
     description: The HDInsight on AKS Management Client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4876,7 +4876,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-media-services-openapi-original.yml
-  - name: Microsoft Azure (Two) Media Services Management Client API
+  - name: Microsoft Azure Media Services Management Client API
     description: Media Services resource management APIs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4888,7 +4888,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/mediaservicesmanagementclient-openapi-original.yml
-  - name: Microsoft Azure Migrate Engine Apis API
+  - name: Microsoft Azure Migrate Engine APIs API
     description: A first party Azure service for modernizing workloads.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
@@ -4924,7 +4924,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-migrate-openapi-original.yml
-  - name: Microsoft Azure (Two) Microsoft.azure.amh.web Role.v2020 05 01 API
+  - name: Microsoft Azure Microsoft.azure.amh.web Role.v2020 05 01 API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4946,7 +4946,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/azure-maps-feedback-service-openapi-original.yml
-  - name: Microsoft Azure (Two) My Sqlmanagement Client API
+  - name: Microsoft Azure My Sqlmanagement Client API
     description: >-
       The Microsoft Azure management API provides create, read, update, and
       delete functionality for Azure MySQL resources including servers,
@@ -4961,7 +4961,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/mysqlmanagementclient-openapi-original.yml
-  - name: Microsoft Azure (Two) Common Alert Types API
+  - name: Microsoft Azure Common Alert Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4972,7 +4972,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/common-alert-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Common Entity Types API
+  - name: Microsoft Azure Common Entity Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4983,7 +4983,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/common-entity-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Common Incident Types API
+  - name: Microsoft Azure Common Incident Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4994,7 +4994,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/common-incident-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Common Content Metadata Types API
+  - name: Microsoft Azure Common Content Metadata Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -5005,7 +5005,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/common-content-metadata-types-openapi-original.yml
-  - name: Microsoft Azure (Two) Common Relation Types API
+  - name: Microsoft Azure Common Relation Types API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
