@@ -1029,8 +1029,8 @@ apis:
         url: >-
           overlays/ingestion-using-data-collection-rules-openapi-api-evangelist-ratings.yml
   - name: >-
-      Microsoft Azure Microsoft.mobile Packet Core Mobile Packet Core
-      Service API
+      Microsoft Azure Microsoft.mobile Packet Core Mobile Packet Core Service
+      API
     description: Mobile Packet Core Management API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: >-
@@ -1135,9 +1135,7 @@ apis:
       - type: API Evangelist Ratings
         url: >-
           overlays/azure-monitor-workspaces-control-plane-api-openapi-api-evangelist-ratings.yml
-  - name: >-
-      Microsoft Azure Microsoft.mobile Packet Core Network Function
-      Resource API
+  - name: Microsoft Azure Microsoft.mobile Packet Core Network Function Resource API
     description: Mobile Packet Core Network Function Management API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: >-
@@ -1208,39 +1206,120 @@ apis:
       API to Add/Remove/List Guest Diagnostics Settings Association for Azure
       Resources
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings
     baseURL: https://example.com
     tags:
-      - Tag
+      - Associations
+      - Diagnostic
+      - Guest
+      - Microsoft Insights
+      - Names
+      - Providers
+      - Resources
+      - Settings
+      - URI
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Subscriptions
+      - Groups
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings
       - type: OpenAPI
         url: >-
           properties/guest-diagnostic-settings-association-api-openapi-original.yml
+    score: 270
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/guest-diagnostic-settings-association-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Guest Diagnostic Settings API
-    description: API to Add/Remove/List Guest Diagnostics Configuration to Azure Resources
+    description: >-
+      Azure Diagnostics extension is an agent in Azure Monitor that collects
+      monitoring data from the guest operating system of Azure compute resources
+      including virtual machines. This article provides an overview of Azure
+      Diagnostics extension, the specific functionality that it supports, and
+      options for installation and configuration.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Diagnostic
+      - Groups
+      - Guest
+      - Microsoft Insights
+      - Names
+      - Providers
+      - Resourcegroups
+      - Resources
+      - Settings
+      - Subscriptions
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
+      - Microsoft Insights
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview
       - type: OpenAPI
         url: properties/guest-diagnostic-settings-api-openapi-original.yml
+    score: 344
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/guest-diagnostic-settings-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Tenant Action Groups API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups
     baseURL: https://example.com
     tags:
-      - Tag
+      - Actions
+      - Groups
+      - Management
+      - Microsoft Insights
+      - Microsoft Management
+      - Names
+      - Providers
+      - Tenant
+      - Microsoft Insights
+      - Microsoft Management
+      - Microsoft Insights
+      - Microsoft Management
+      - Microsoft Insights
+      - Microsoft Management
+      - Microsoft Insights
+      - Microsoft Management
+      - Microsoft Insights
+      - Microsoft Management
+      - Notifications
+      - Microsoft Insights
+      - Microsoft Management
+      - Status
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups
       - type: OpenAPI
         url: properties/azure-tenant-action-groups-api-openapi-original.yml
+    description: >-
+      When Azure Monitor data indicates that there might be a problem with your
+      infrastructure or application, an alert is triggered. You can use an
+      action group to send a notification such as a voice call, SMS or email
+      when the alert is triggered in addition to the alert itself. Action groups
+      are a collection of notification preferences and actions.
+    score: 497
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-tenant-action-groups-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Express Route Cross Connection Rest APIs API
     description: >-
       The Microsoft Azure ExpressRouteCrossConnection Resource Provider REST
@@ -1248,87 +1327,367 @@ apis:
       ExpressRoute circuit, create and modify BGP peering entities and
       troubleshoot connectivity on customer's ExpressRoute circuit. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/expressroute/cross-connections-api-development
     baseURL: https://example.com
     tags:
-      - Tag
+      - Connections
+      - Express
+      - Microsoft Network
+      - Providers
+      - Routes
+      - Subscriptions
+      - Groups
+      - Microsoft Network
+      - Names
+      - Resources
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Peerings
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Arp
+      - Devices
+      - Microsoft Network
+      - Paths
+      - Tables
+      - Microsoft Network
+      - Summaries
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/expressroute/cross-connections-api-development
       - type: OpenAPI
         url: properties/expressroutecrossconnection-rest-apis-openapi-original.yml
+    score: 731
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/expressroutecrossconnection-rest-apis-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Virtual Wanas Aservice Management Client API
     description: REST API for Azure VirtualWAN As a Service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/virtualwan/virtual-wans?view=rest-virtualwan-2023-11-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Microsoft Network
+      - Names
+      - Providers
+      - Resources
+      - Subscriptions
+      - Virtual
+      - WAN
+      - Wanname
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Sites
+      - VPN
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Links
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Configurations
+      - Microsoft Network
+      - Microsoft Network
+      - Security
+      - Supported
+      - Microsoft Network
+      - Servers
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Policies
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Hub
+      - Hubs
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Maps
+      - Microsoft Network
+      - Routes
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Connections
+      - Microsoft Network
+      - Networks
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Gateways
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Reset
+      - Microsoft Network
+      - Startpacketcapture
+      - Microsoft Network
+      - Stoppacketcapture
+      - Microsoft Network
+      - Resetconnection
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Getikesas
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Nat
+      - Rules
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - P2svpn
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Generatevpnprofile
+      - Microsoft Network
+      - Health
+      - Microsoft Network
+      - P2s
+      - Detailed
+      - Microsoft Network
+      - Microsoft Network
+      - Generate
+      - Microsoft Network
+      - Profiles
+      - Microsoft Network
+      - Tables
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Disconnect
+      - Microsoft Network
+      - Express
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Appliance
+      - Appliances
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Learned
+      - Microsoft Network
+      - Advertised
+      - Microsoft Network
+      - IP
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Effective
+      - Microsoft Network
+      - Inbound
+      - Microsoft Network
+      - Microsoft Network
+      - Outbound
+      - Intent
+      - Microsoft Network
+      - Routing
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/virtualwan/virtual-wans?view=rest-virtualwan-2023-11-01
       - type: OpenAPI
         url: properties/virtualwanasaservicemanagementclient-openapi-original.yml
+    score: 6717
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/virtualwanasaservicemanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Network Manager API
     description: >-
-      The Microsoft Azure Virtual Network Manager API provides a RESTful set of
-      web services that interact with Microsoft Azure Network Manager service to
-      manage your network resources.
+      Azure Virtual Network Manager is a central management service for your
+      virtual network resources. It allows you to easily manage your virtual
+      network infrastructure while scaling your cloud-based workloads. You can
+      use the centralized solution to create and manage complex network
+      topologies and network security rules globally across subscriptions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/networkmanager/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Commits
+      - Deployments
+      - Effective
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Status
+      - Subscriptions
+      - Virtual
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/networkmanager/
       - type: OpenAPI
         url: properties/networkmanager-openapi-original.yml
+    score: 391
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/networkmanager-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Network Manager Active Configuration API
     description: >-
       The Microsoft Azure Network Manager Active Configuration API provides a
       RESTful set of web services that interact with Microsoft Azure Network
       Manager service to list all active configuration by network manager.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/connectivity-configurations?view=rest-networkmanager-2023-11-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Active
+      - Configurations
+      - Connectivity
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Subscriptions
+      - Administrative
+      - Microsoft Network
+      - Rules
+      - Security
+      - Microsoft Network
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/connectivity-configurations?view=rest-networkmanager-2023-11-01
       - type: OpenAPI
         url: properties/networkmanageractiveconfiguration-openapi-original.yml
+    score: 103
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/networkmanageractiveconfiguration-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Scope Connections API
     description: >-
       The Microsoft Azure Virtual Network Manager API provides a RESTful set of
       web services that interact with Microsoft Azure Network Manager service to
       manage your network resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/scope-connections?view=rest-networkmanager-2023-11-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Connections
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Scopes
+      - Subscriptions
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/scope-connections?view=rest-networkmanager-2023-11-01
       - type: OpenAPI
         url: properties/scopeconnections-openapi-original.yml
+    score: 136
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/scopeconnections-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Connectivity Configuration API
     description: >-
       The Microsoft Azure Virtual Network Manager Connectivity Configuration API
       provides a RESTful set of web services that interact with Microsoft Azure
       Network Manager service to manage your network resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/connectivity-configurations?view=rest-networkmanager-2023-11-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Configurations
+      - Connectivity
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Subscriptions
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/connectivity-configurations?view=rest-networkmanager-2023-11-01
       - type: OpenAPI
         url: properties/connectivityconfiguration-openapi-original.yml
+    score: 179
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/connectivityconfiguration-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Network Manager Effective Configuration API
     description: >-
       The Microsoft Azure Network Manager effective configuration API provides a
@@ -1337,76 +1696,472 @@ apis:
       capture the relationship between an end user and the Microsoft Azure
       Networks service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/list-network-manager-effective-connectivity-configurations?view=rest-networkmanager-2023-11-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Configurations
+      - Connectivity
+      - Effective
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Subscriptions
+      - Virtual
+      - Administrative
+      - Microsoft Network
+      - Rules
+      - Security
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/list-network-manager-effective-connectivity-configurations?view=rest-networkmanager-2023-11-01
       - type: OpenAPI
         url: properties/networkmanagereffectiveconfiguration-openapi-original.yml
+    score: 60
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/networkmanagereffectiveconfiguration-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Network Group API
     description: >-
       The Microsoft Azure Network Group API provides a RESTful set of web
       services that interact with Microsoft Azure Network Manager service to
       manage your network resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/virtualnetwork/network-security-groups?view=rest-virtualnetwork-2023-11-01&viewFallbackFrom=rest-virtualnetwork-2023-09-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Subscriptions
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Effective
+      - Microsoft Network
+      - Virtual
+      - Members
+      - Microsoft Network
+      - Static
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/virtualnetwork/network-security-groups?view=rest-virtualnetwork-2023-11-01&viewFallbackFrom=rest-virtualnetwork-2023-09-01
       - type: OpenAPI
         url: properties/networkgroup-openapi-original.yml
+    score: 372
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/networkgroup-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Security Admin Configuration API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/security-admin-configurations?view=rest-networkmanager-2023-11-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Administrative
+      - Configurations
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Security
+      - Subscriptions
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Collections
+      - Microsoft Network
+      - Rules
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/security-admin-configurations?view=rest-networkmanager-2023-11-01
       - type: OpenAPI
         url: properties/securityadminconfiguration-openapi-original.yml
+    description: Creates or updates a network manager security admin configuration.
+    score: 400
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/securityadminconfiguration-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Managed Service Entity Client API
-    description: The Managed Service Identity Client.
+    description: >-
+      Microsoft Azure managed identities provide an automatically managed
+      identity in Azure Active Directory for applications to use when connecting
+      to resources that support Azure Active Directory (Azure AD)
+      authentication. Applications can use managed identities to obtain Azure AD
+      tokens without having to manage any credentials.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.managedserviceidentities-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Default
+      - Entities
+      - Identities
+      - Identity
+      - Microsoft Managed
+      - Providers
+      - Scopes
+      - Microsoft Managed
+      - Operations
+      - Assigned
+      - Microsoft Managed
+      - Subscriptions
+      - Users
+      - Groups
+      - Microsoft Managed
+      - Names
+      - Resources
+      - Associated
+      - Microsoft Managed
+      - Microsoft Managed
+      - Microsoft Managed
+      - Microsoft Managed
+      - Microsoft Managed
+      - Credentials
+      - Federated
+      - Microsoft Managed
+      - Microsoft Managed
+      - Microsoft Managed
+      - Microsoft Managed
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.managedserviceidentities-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/managedserviceidentityclient-openapi-original.yml
+    score: 852
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/managedserviceidentityclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Microsoft Net App API
-    description: Microsoft NetApp Azure Resource Provider specification
+    description: >+
+      The Azure NetApp Files service is an enterprise-class, high-performant,
+      metered file storage service. Besides using the Azure portal, you can also
+      manage resources by using REST API. The REST API for the Azure NetApp
+      Files service defines HTTP operations against the supported resources.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/netapp/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Applications
+      - Describes
+      - Microsoft Net
+      - Operations
+      - Providers
+      - Resources
+      - Availability
+      - Checks
+      - Locations
+      - Microsoft Net
+      - Names
+      - Subscriptions
+      - Files
+      - Microsoft Net
+      - Paths
+      - Microsoft Net
+      - Quota
+      - Limits
+      - Microsoft Net
+      - Microsoft Net
+      - Information
+      - Microsoft Net
+      - Regions
+      - Specific
+      - Default
+      - Microsoft Net
+      - Microsoft Net
+      - Describe
+      - Microsoft Net
+      - Networks
+      - Queries
+      - Sets
+      - Sibling
+      - Features
+      - Microsoft Net
+      - Accounts
+      - Microsoft Net
+      - Groups
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Credentials
+      - Identity
+      - Microsoft Net
+      - Renew
+      - Encryption
+      - Keys
+      - Microsoft Net
+      - Migrate
+      - Sources
+      - Volumes
+      - Capacity
+      - Microsoft Net
+      - Pools
+      - Microsoft Net
+      - Microsoft Net
+      - Specified
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Populate
+      - Zones
+      - Items
+      - Microsoft Net
+      - Revert
+      - Snapshots
+      - Cifs
+      - Microsoft Net
+      - Password
+      - Reset
+      - Clone
+      - Microsoft Net
+      - Parents
+      - Split
+      - Break
+      - Locks
+      - Microsoft Net
+      - LDAP
+      - Microsoft Net
+      - Users
+      - Microsoft Net
+      - Replication
+      - Microsoft Net
+      - Re Establish
+      - Reestablish
+      - Microsoft Net
+      - Status
+      - Microsoft Net
+      - Replications
+      - Microsoft Net
+      - Resync
+      - Microsoft Net
+      - Authorize
+      - Microsoft Net
+      - Initialize
+      - Microsoft Net
+      - Re
+      - Reinitialize
+      - Clusters
+      - Microsoft Net
+      - Migrations
+      - Peer
+      - Peerings
+      - Prem
+      - Microsoft Net
+      - Process
+      - Finalize
+      - Microsoft Net
+      - Microsoft Net
+      - Perform
+      - Transfers
+      - Change
+      - Microsoft Net
+      - Microsoft Net
+      - Relocate
+      - Microsoft Net
+      - Relocation
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Restore
+      - Microsoft Net
+      - Policies
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Backup
+      - Current
+      - Latest
+      - Microsoft Net
+      - Microsoft Net
+      - Backups
+      - Microsoft Net
+      - Vault
+      - Vaults
+      - Microsoft Net
+      - Under
+      - Microsoft Net
+      - Microsoft Net
+      - Patch
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Rules
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Body
+      - Group,
+      - Implicitly
+      - Microsoft Net
+      - Regular
+      - Thereafter
+      - Those
+      - Treated
+      - Using
+      - Will
+      - Microsoft Net
+      - Microsoft Net
+      - Subvolumes
+      - Associated
+      - Microsoft Net
+      - Subvolume
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Metadata
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
+      - Microsoft Net
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/netapp/
       - type: OpenAPI
         url: properties/microsoft-netapp-openapi-original.yml
   - name: Microsoft Azure New Relic.observability API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/new-relic-overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Operations
+      - Providers
+      - Relic Observability
+      - Accounts
+      - Relic Observability
+      - Subscriptions
+      - Monitors
+      - Relic Observability
+      - Organizations
+      - Relic Observability
+      - Plans
+      - Relic Observability
+      - Groups
+      - Names
+      - Relic Observability
+      - Resources
+      - Relic Observability
+      - Relic Observability
+      - Relic Observability
+      - Relic Observability
+      - Metrics
+      - Relic Observability
+      - Rules
+      - Relic Observability
+      - Status
+      - Applications
+      - Relic Observability
+      - Services
+      - Billing
+      - Relic Observability
+      - Switch
+      - Hosts
+      - Relic Observability
+      - Monitored
+      - Relic Observability
+      - Given
+      - Information
+      - Mapped
+      - Marketplace
+      - Relic Observability
+      - Active
+      - Associated
+      - Connected
+      - Deployments
+      - Linked
+      - Partners
+      - Relic Observability
+      - Relic Observability
+      - Tags
+      - Relic Observability
+      - Sets
+      - Relic Observability
+      - Relic Observability
+      - Relic Observability
+      - Currently
+      - Relic
+      - Relic Observability
+      - Configurations
+      - Relic Observability
+      - Relic Observability
+      - Relic Observability
+      - Relic Observability
+      - Azure
+      - Relic Observability
+      - Same
+      - Targets
+      - Host
+      - Payloads
+      - Relic Observability
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/partner-solutions/new-relic/new-relic-overview
       - type: OpenAPI
         url: properties/newrelicobservability-openapi-original.yml
+    description: >-
+      Azure Native ISV Services enable you to easily provision, manage, and
+      tightly integrate independent software vendor (ISV) software and services
+      on Azure. This Azure Native ISV Service is developed and managed by
+      Microsoft and New Relic.
+    score: 1818
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/newrelicobservability-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Network Resource Provider Client API
     description: >-
       The Windows Azure Network management API provides a RESTful set of web
@@ -1425,29 +2180,84 @@ apis:
         url: properties/networkresourceproviderclient-openapi-original.yml
   - name: Microsoft Azure Security User Configuration API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/security-user-configurations?view=rest-networkmanager-2021-02-01-preview
     baseURL: https://example.com
     tags:
       - Tag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/security-user-configurations?view=rest-networkmanager-2021-02-01-preview
       - type: OpenAPI
         url: properties/securityuserconfiguration-openapi-original.yml
+    description: Creates or updates a network manager security user configuration.
   - name: Microsoft Azure Network Security Perimeter API
     description: >-
       The Network Security Perimeter API provides a RESTful set of web services
       that interact with network security perimeter resource.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/network-security-perimeters?view=rest-networkmanager-2023-07-01-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Microsoft Network
+      - Names
+      - Networks
+      - Perimeter
+      - Perimeters
+      - Providers
+      - Resources
+      - Security
+      - Subscriptions
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Profiles
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Access
+      - Microsoft Network
+      - Rules
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Associations
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Reconcile
+      - Associable
+      - Locations
+      - Microsoft Network
+      - Types
+      - Microsoft Network
+      - Links
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - References
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/network-security-perimeters?view=rest-networkmanager-2023-07-01-preview
       - type: OpenAPI
         url: properties/networksecurityperimeter-openapi-original.yml
+    score: 1072
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/networksecurityperimeter-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Network Manager Group Membership API
     description: >-
       The Microsoft Azure Network Manager Group Membership API provides a
@@ -1456,85 +2266,365 @@ apis:
       capture the relationship between an end user and the Microsoft Azure
       Networks service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/networkmanager/network-managers?view=rest-networkmanager-2023-11-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Memberships
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Subscriptions
+      - Virtual
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/networkmanager/network-managers?view=rest-networkmanager-2023-11-01
       - type: OpenAPI
         url: properties/networkmanagergroupmembership-openapi-original.yml
+    score: 32
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/networkmanagergroupmembership-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Routing Configuration API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/maps/route?view=rest-maps-2024-04-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Configurations
+      - Groups
+      - Managers
+      - Microsoft Network
+      - Names
+      - Networks
+      - Providers
+      - Resources
+      - Routing
+      - Subscriptions
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Collections
+      - Microsoft Network
+      - Rules
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/maps/route?view=rest-maps-2024-04-01
       - type: OpenAPI
         url: properties/routingconfiguration-openapi-original.yml
+    description: >-
+      Azure automatically creates a route table for each subnet within an Azure
+      virtual network and adds system default routes to the table. To learn more
+      about virtual networks and subnets, see Virtual network overview
+    score: 392
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/routingconfiguration-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Traffic Collector API
-    description: Azure Traffic Collector service
+    description: >-
+      ExpressRoute Traffic Collector enables sampling of network flows sent over
+      your ExpressRoute circuits. Flow logs get sent to a Log Analytics
+      workspace where you can create your own log queries for further analysis. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/expressroute/traffic-collector
     baseURL: https://example.com
     tags:
-      - Tag
+      - Functions
+      - Microsoft Network
+      - Operations
+      - Providers
+      - Azure
+      - Collectors
+      - Microsoft Network
+      - Subscriptions
+      - Traffic
+      - Groups
+      - Microsoft Network
+      - Names
+      - Resources
+      - Collector
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Policies
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/azure/expressroute/traffic-collector
       - type: OpenAPI
         url: properties/azure-traffic-collector-openapi-original.yml
-  - name: Microsoft Azure Nginx.nginx Plus API
+    score: 823
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-traffic-collector-openapi-api-evangelist-ratings.yml
+  - name: Microsoft Azure Nginx Plus API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://azuremarketplace.microsoft.com/en/marketplace/apps/nginxinc.nginx-plus-v1-standard?tab=Overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Certificates
+      - Configurations
+      - Default
+      - Deployments
+      - Given
+      - Groups
+      - Names
+      - Nginx
+      - Nginx Nginx
+      - Operations
+      - Plus
+      - Provided
+      - Reset
+      - Resources
+      - Specified
+      - Subscriptions
+      - Under
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://azuremarketplace.microsoft.com/en/marketplace/apps/nginxinc.nginx-plus-v1-standard?tab=Overview
       - type: OpenAPI
         url: properties/nginxnginxplus-openapi-original.yml
+    description: >+
+      Deliver applications with performance, reliability, security, and scale
+      with NGINX Plus on Azure. Deploy quickly and cost-effectively, and benefit
+      from speeds <30ms. NGINX plus is the all-in-one—yet surprisingly
+      lightweight—load balancer, reverse proxy, API gateway and content cache.
+      Try it for free today!
+
+    score: 833
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/nginxnginxplus-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Notification Hubs Management Client API
-    description: Azure NotificationHub client
+    description: >-
+      Azure Notification Hubs provide an easy-to-use and scaled-out push engine
+      that allows you to send notifications to any platform (iOS, Android,
+      Windows, Kindle, Baidu, etc.) from any backend (cloud or on-premises). 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/notificationhubs/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Hubs
+      - Microsoft Notification
+      - Operations
+      - Providers
+      - Availability
+      - Checks
+      - Microsoft Notification
+      - Namespaces
+      - Subscriptions
+      - Groups
+      - Microsoft Notification
+      - Names
+      - Resources
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Authorization
+      - Microsoft Notification
+      - Rules
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Keys
+      - Microsoft Notification
+      - Microsoft Notification
+      - Regenerate
+      - Hub
+      - Microsoft Notification
+      - Notifications
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Debugsend
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Credentials
+      - Microsoft Notification
+      - Pns
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/notificationhubs/
       - type: OpenAPI
         url: properties/notificationhubsmanagementclient-openapi-original.yml
+    score: 2200
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/notificationhubsmanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Notification Hubs Rp Client API
-    description: Microsoft Notification Hubs Resource Provider REST API.
+    description: >-
+      Azure Notification Hubs provide an easy-to-use and scaled-out push engine
+      that allows you to send notifications to any platform (iOS, Android,
+      Windows, Kindle, Baidu, etc.) from any backend (cloud or on-premises). 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/notificationhubs/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Availability
+      - Checks
+      - Given
+      - Groups
+      - Hub
+      - Hubs
+      - Microsoft Notification
+      - Names
+      - Namespaces
+      - Notifications
+      - Resources
+      - Subscriptions
+      - Microsoft Notification
+      - Creates/Update
+      - Microsoft Notification
+      - Microsoft Notification
+      - Patch
+      - Associated
+      - Microsoft Notification
+      - Microsoft Notification
+      - Debugsend
+      - Microsoft Notification
+      - Send
+      - Tests
+      - Authorization
+      - Creates/Updates
+      - Microsoft Notification
+      - Rules
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Connections
+      - Keys
+      - Microsoft Notification
+      - Primary
+      - Secondary
+      - Strings
+      - Microsoft Notification
+      - Primary/Secondary
+      - Regenerate
+      - Regenerates
+      - Credentials
+      - Microsoft Notification
+      - PNS
+      - Pns
+      - Across
+      - Azure
+      - Based
+      - Because
+      - Domains
+      - Microsoft Notification
+      - Services
+      - Useful
+      - Microsoft Notification
+      - Idempotent
+      - Microsoft Notification
+      - Operation
+      - Existing
+      - Microsoft Notification
+      - Patches
+      - Also
+      - Microsoft Notification
+      - Under
+      - Available
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Microsoft Notification
+      - Operations
+      - Approves
+      - Called
+      - Connection This
+      - Directly
+      - Endpoints
+      - Microsoft Notification
+      - Private
+      - Public
+      - Rejects
+      - Users
+      - Microsoft Notification
+      - Microsoft Notification
+      - Belong
+      - Microsoft Notification
+      - Namespace This
+      - Contracts
+      - Links
+      - Microsoft Notification
+      - Networking
+      - RP
+      - Required
+      - Used
+      - Ids
+      - Microsoft Notification
+      - RP This
+      - Supported
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/notificationhubs/
       - type: OpenAPI
         url: properties/notificationhubs-rp-client-openapi-original.yml
+    score: 2615
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/notificationhubs-rp-client-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Log Analytics API
-    description: Azure Log Analytics API reference
+    description: >-
+      Log Analytics is a service that helps you collect and analyze data
+      generated by resources in your cloud and on-premises environments.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/loganalytics/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Analytics
+      - Execute
+      - Queries
+      - Workspaces
+      - Information
+      - Metadata
+      - $Batch
+      - Batches
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/loganalytics/
       - type: OpenAPI
         url: properties/azure-log-analytics-openapi-original.yml
+    score: 212
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-log-analytics-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Log Analytics Query Packs API
     description: >-
       Azure Log Analytics API reference for management of saved Queries within
@@ -1836,9 +2926,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/policytrackedresourcesclient-openapi-original.yml
-  - name: >-
-      Microsoft Azure Microsoft Playwright Testing Auth Manager Service
-      API
+  - name: Microsoft Azure Microsoft Playwright Testing Auth Manager Service API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -2307,9 +3395,7 @@ apis:
       - type: OpenAPI
         url: >-
           properties/purview-self-service-policies-rest-api-document-openapi-original.yml
-  - name: >-
-      Microsoft Azure Purview Metadata Policies Service Rest API Document
-      API
+  - name: Microsoft Azure Purview Metadata Policies Service Rest API Document API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
@@ -4015,9 +5101,7 @@ apis:
         url: https://example.com
       - type: OpenAPI
         url: properties/deviceservices-openapi-original.yml
-  - name: >-
-      Microsoft Azure Microsoft.voice Services.acg.provisioning
-      Platform.api API
+  - name: Microsoft Azure Microsoft.voice Services.acg.provisioning Platform.api API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
