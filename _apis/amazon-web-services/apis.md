@@ -1,6 +1,6 @@
 ---
 aid: amazon-web-services
-type: Index
+type: Overlay
 name: Amazon Web Services
 description: >-
   Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand
@@ -8,30 +8,47 @@ description: >-
   on a metered, pay-as-you-go basis. Clients will often use this in combination
   with autoscaling.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/amazon-web-services/apis.md
-created: 2023-11-06
-modified: 2024-05-22
+url: >-
+  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/amazon-web-services.yml
+created: 2023/11/06
+modified: '2024-07-03'
 specificationVersion: '0.18'
 tags:
   - Cloud
 apis:
-  - name: Amazon Certificate Manager
+  - name: AWS Certificate Manager
     description: >-
-      <fullname>Certificate Manager</fullname> <p>You can use Certificate
-      Manager (ACM) to manage SSL/TLS certificates for your Amazon Web
-      Services-based websites and applications. For more information about using
-      ACM, see the <a
-      href="https://docs.aws.amazon.com/acm/latest/userguide/">Certificate
-      Manager User Guide</a>.</p>
+      Utilize the AWS Certificate Manager (ACM) to effortlessly handle the
+      provisioning, management, and deployment of SSL/TLS certificates for both
+      public and private use with AWS services and internal connected resources.
+      With ACM, the tedious tasks of purchasing, uploading, and renewing SSL/TLS
+      certificates are streamlined and automated, saving you valuable time and
+      effort.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/certificate-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Certificates
+      - Options
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/certificate-manager/
       - type: OpenAPI
         url: properties/acm-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/certificate-manager//pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/certificate-manager//getting-started/
+      - type: Partners
+        url: https://aws.amazon.com/certificate-manager//partners/
+      - type: Events
+        url: https://aws.amazon.com/certificate-manager//events/
+      - type: Features
+        url: https://aws.amazon.com/certificate-manager/features/
+      - type: Resources
+        url: https://aws.amazon.com/certificate-manager/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/certificate-manager/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/acm-openapi-search.yml
@@ -40,41 +57,37 @@ apis:
     aid: amazon-web-services:acm
   - name: Amazon Identity and Access Management Access Analyzer
     description: >-
-      <p>Identity and Access Management Access Analyzer helps you to set,
-      verify, and refine your IAM policies by providing a suite of capabilities.
-      Its features include findings for external and unused access, basic and
-      custom policy checks for validating policies, and policy generation to
-      generate fine-grained policies. To start using IAM Access Analyzer to
-      identify external or unused access, you first need to create an
-      analyzer.</p> <p> <b>External access analyzers</b> help identify potential
-      risks of accessing resources by enabling you to identify any resource
-      policies that grant access to an external principal. It does this by using
-      logic-based reasoning to analyze resource-based policies in your Amazon
-      Web Services environment. An external principal can be another Amazon Web
-      Services account, a root user, an IAM user or role, a federated user, an
-      Amazon Web Services service, or an anonymous user. You can also use IAM
-      Access Analyzer to preview public and cross-account access to your
-      resources before deploying permissions changes.</p> <p> <b>Unused access
-      analyzers</b> help identify potential identity access risks by enabling
-      you to identify unused IAM roles, unused access keys, unused console
-      passwords, and IAM principals with unused service and action-level
-      permissions.</p> <p>Beyond findings, IAM Access Analyzer provides basic
-      and custom policy checks to validate IAM policies before deploying
-      permissions changes. You can use policy generation to refine permissions
-      by attaching a policy generated using access activity logged in CloudTrail
-      logs. </p> <p>This guide describes the IAM Access Analyzer operations that
-      you can call programmatically. For general information about IAM Access
-      Analyzer, see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html">Identity
-      and Access Management Access Analyzer</a> in the <b>IAM User
-      Guide</b>.</p>
+      The API for IAM Access Analyzer offers users a variety of tools to
+      effectively manage their Identity and Access Management policies. These
+      tools include the ability to identify external and unused access, perform
+      basic and custom policy checks, and create highly detailed policies.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/access-analyzer/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Analyzed
+      - Analyzer
+      - Analyzers
+      - Archive
+      - Checks
+      - Findings
+      - Generated
+      - Generation
+      - Grants
+      - Names
+      - Policies
+      - Previews
+      - Resources
+      - Rules
+      - Scans
+      - Untag
+      - Validate
+      - Validations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/access-analyzer/
       - type: OpenAPI
         url: properties/accessanalyzer-openapi-original.yml
     overlays:
@@ -85,43 +98,185 @@ apis:
     aid: amazon-web-services:accessanalyzer
   - name: AWS Migration Hub
     description: >-
-      <p>The AWS Migration Hub API methods help to obtain server and application
-      migration status and integrate your resource-specific migration tool by
-      providing a programmatic interface to Migration Hub.</p> <p>Remember that
-      you must set your AWS Migration Hub home region before you call any of
-      these APIs, or a <code>HomeRegionNotSetException</code> error will be
-      returned. Also, you must make the API calls while in your home region.</p>
+      The AWS Migration Hub API provides users with the ability to view server
+      and application migration progress and easily incorporate
+      resource-specific migration tools through a code-based interface. To
+      ensure smooth operation, it is crucial to specify your AWS Migration Hub
+      home region before using any API functions to prevent encountering a
+      HomeRegionNotSetException error. Furthermore, all API requests should
+      originate from within your assigned home region for proper functioning.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/migration-hub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Attributes
+      - Migrations
+      - Resources
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/migration-hub/
       - type: OpenAPI
         url: properties/awsmigrationhub-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/migration-hub/features/
+      - type: Pricing
+        url: https://aws.amazon.com/migration-hub/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/migration-hub/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/migration-hub/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/migration-hub/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/migration-hub/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/awsmigrationhub-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/awsmigrationhub-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:awsmigrationhub
-  - name: Amazon API Gateway
+  - name: Amazon Managed Service for Prometheus
     description: >-
-      <fullname>Amazon API Gateway</fullname> <p>Amazon API Gateway helps
-      developers deliver robust, secure, and scalable mobile and web application
-      back ends. API Gateway allows developers to securely connect mobile and
-      web applications to APIs that run on Lambda, Amazon EC2, or other publicly
-      addressable web services that are hosted outside of AWS.</p>
+      The Amazon Managed Service for Prometheus API is a serverless monitoring
+      service designed for container metrics. It allows users to securely
+      monitor container environments at scale using the familiar open-source
+      Prometheus data model and query language. This service provides improved
+      scalability, availability, and security without the need to manage
+      underlying infrastructure. The API includes both an Amazon Web Services
+      API for managing resources such as workspaces, rule groups, and alert
+      managers, as well as a Prometheus-compatible API for working within the
+      Prometheus workspace.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/prometheus/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Alert  Management
+      - Alerts
+      - Ali
+      - Alias
+      - Configurations
+      - Default
+      - Definitions
+      - Describe
+      - Groups
+      - Logging
+      - Managers
+      - Names
+      - Namespaces
+      - Resources
+      - Rule  Groups  Namespaces
+      - Rule Groups
+      - Rules
+      - Scraper  Configurations
+      - Scraper Configurations
+      - Scrapers
+      - Untag
+      - Workspaces
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/prometheus/
+      - type: OpenAPI
+        url: properties/amp-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/prometheus/features/
+      - type: Pricing
+        url: https://aws.amazon.com/prometheus/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/prometheus/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/prometheus/customers/
+      - type: Partners
+        url: https://aws.amazon.com/prometheus/partners/
+      - type: Resources
+        url: https://aws.amazon.com/prometheus/resources/
+      - type: Videos
+        url: https://aws.amazon.com/prometheus/videos/
+    overlays:
+      - type: APIs.io Search
+        url: overlays/amp-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/amp-openapi-api-evangelist-ratings.yml
+    aid: amazon-web-services:amp
+  - name: Amazon API Gateway
+    description: >-
+      Amazon API Gateway is a powerful tool that enables developers to create
+      and manage secure and scalable back ends for mobile and web applications.
+      With API Gateway, developers can easily connect their applications to APIs
+      running on Lambda, Amazon EC2, or other external web services. This
+      ensures robust and reliable communication between applications and APIs,
+      all within a secure environment.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://aws.amazon.com/api-gateway/
+    baseURL: https://example.com
+    tags:
+      - ARN
+      - Accounts
+      - Authorizers
+      - Base Paths
+      - Cache
+      - Certificates
+      - Clients
+      - Data
+      - Default
+      - Deployments
+      - Documentation
+      - Domain Names
+      - Domains
+      - Exports
+      - Flush
+      - Gateways
+      - Import
+      - Integrations
+      - Keys
+      - Links
+      - Mapping
+      - Methods
+      - Model Name
+      - Models
+      - Names
+      - Parts
+      - Paths
+      - Plans
+      - REST
+      - Request Validators
+      - Resources
+      - Response Types
+      - Responses
+      - Stage Name
+      - Stages
+      - Status Codes
+      - Tags
+      - Templates
+      - Types
+      - Untag
+      - Usage
+      - Usage Plans
+      - VPC
+      - VPC Links
+      - Validators
+      - Versions
+      - Vpclink
+    properties:
+      - type: Documentation
+        url: https://aws.amazon.com/api-gateway/
       - type: OpenAPI
         url: properties/apigateway-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/api-gateway/features/
+      - type: Pricing
+        url: https://aws.amazon.com/api-gateway/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/api-gateway/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/api-gateway/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/api-gateway/faqs/
+      - type: Documentation
+        url: https://console.aws.amazon.com/apigateway/
+      - type: Websockets
+        url: >-
+          https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-overview.html
     overlays:
       - type: APIs.io Search
         url: overlays/apigateway-openapi-search.yml
@@ -130,36 +285,23 @@ apis:
     aid: amazon-web-services:apigateway
   - name: Amazon Web Services Private Certificate Authority
     description: >-
-      <p>This is the <i>Amazon Web Services Private Certificate Authority API
-      Reference</i>. It provides descriptions, syntax, and usage examples for
-      each of the actions and data types involved in creating and managing a
-      private certificate authority (CA) for your organization.</p> <p>The
-      documentation for each action shows the API request parameters and the
-      JSON response. Alternatively, you can use one of the Amazon Web Services
-      SDKs to access an API that is tailored to the programming language or
-      platform that you prefer. For more information, see <a
-      href="https://aws.amazon.com/tools/#SDKs">Amazon Web Services
-      SDKs</a>.</p> <p>Each Amazon Web Services Private CA API operation has a
-      quota that determines the number of times the operation can be called per
-      second. Amazon Web Services Private CA throttles API requests at different
-      rates depending on the operation. Throttling means that Amazon Web
-      Services Private CA rejects an otherwise valid request because the request
-      exceeds the operation's quota for the number of requests per second. When
-      a request is throttled, Amazon Web Services Private CA returns a <a
-      href="https://docs.aws.amazon.com/privateca/latest/APIReference/CommonErrors.html">ThrottlingException</a>
-      error. Amazon Web Services Private CA does not guarantee a minimum request
-      rate for APIs. </p> <p>To see an up-to-date list of your Amazon Web
-      Services Private CA quotas, or to request a quota increase, log into your
-      Amazon Web Services account and visit the <a
-      href="https://console.aws.amazon.com/servicequotas/">Service Quotas</a>
-      console.</p>
+      The API Reference for Amazon Web Services Private Certificate Authority
+      offers a detailed overview on setting up and controlling a private
+      certificate authority (CA) for your organization. It provides in-depth
+      explanations on each action and data type, including syntax and usage
+      examples. The documentation for each action includes information on API
+      request parameters and JSON responses. Additionally, users have the option
+      to utilize Amazon Web Services SDKs for accessing APIs that are customized
+      for their preferred programming language or platform.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/private-ca/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Authorization
+      - Certificates
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/private-ca/
       - type: OpenAPI
         url: properties/acm-pca-openapi-original.yml
     overlays:
@@ -168,80 +310,38 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/acm-pca-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:acm-pca
-  - name: Amazon AppConfig
+  - name: AWS Application Fabric
     description: >-
-      <p>Use AppConfig, a capability of Amazon Web Services Systems Manager, to
-      create, manage, and quickly deploy application configurations. AppConfig
-      supports controlled deployments to applications of any size and includes
-      built-in validation checks and monitoring. You can use AppConfig with
-      applications hosted on Amazon EC2 instances, Lambda, containers, mobile
-      applications, or IoT devices.</p> <p>To prevent errors when deploying
-      application configurations, especially for production systems where a
-      simple typo could cause an unexpected outage, AppConfig includes
-      validators. A validator provides a syntactic or semantic check to ensure
-      that the configuration you want to deploy works as intended. To validate
-      your application configuration data, you provide a schema or an Amazon Web
-      Services Lambda function that runs against the configuration. The
-      configuration deployment or update can only proceed when the configuration
-      data is valid.</p> <p>During a configuration deployment, AppConfig
-      monitors the application to ensure that the deployment is successful. If
-      the system encounters an error, AppConfig rolls back the change to
-      minimize impact for your application users. You can configure a deployment
-      strategy for each application or environment that includes deployment
-      criteria, including velocity, bake time, and alarms to monitor. Similar to
-      error monitoring, if a deployment triggers an alarm, AppConfig
-      automatically rolls back to the previous version. </p> <p>AppConfig
-      supports multiple use cases. Here are some examples:</p> <ul> <li> <p>
-      <b>Feature flags</b>: Use AppConfig to turn on new features that require a
-      timely deployment, such as a product launch or announcement. </p> </li>
-      <li> <p> <b>Application tuning</b>: Use AppConfig to carefully introduce
-      changes to your application that can only be tested with production
-      traffic.</p> </li> <li> <p> <b>Allow list</b>: Use AppConfig to allow
-      premium subscribers to access paid content. </p> </li> <li> <p>
-      <b>Operational issues</b>: Use AppConfig to reduce stress on your
-      application when a dependency or other external factor impacts the
-      system.</p> </li> </ul> <p>This reference is intended to be used with the
-      <a
-      href="http://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html">AppConfig
-      User Guide</a>.</p>
+      The Amazon Web Services AppFabric API offers effortless incorporation of
+      SaaS applications into your company's infrastructure, facilitating
+      streamlined oversight and protection by IT and security professionals
+      using a standardized data structure. Leveraging the capabilities of
+      generative AI, employees can simplify their daily workflows.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appfabric/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Application  Authorizations
+      - Application  Bundles
+      - Applications
+      - Authorization
+      - Batches
+      - Bundles
+      - Connect
+      - Destinations
+      - Ingestion  Destinations
+      - Ingestions
+      - Resources
+      - Stop
+      - Tasks
+      - Untag
+      - User  Access
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/appconfig-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/appconfig-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/appconfig-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:appconfig
-  - name: AWS AppFabric
-    description: >-
-      <p>Amazon Web Services AppFabric quickly connects software as a service
-      (SaaS) applications across your organization. This allows IT and security
-      teams to easily manage and secure applications using a standard schema,
-      and employees can complete everyday tasks faster using generative
-      artificial intelligence (AI). You can use these APIs to complete AppFabric
-      tasks, such as setting up audit log ingestions or viewing user access. For
-      more information about AppFabric, including the required permissions to
-      use the service, see the <a
-      href="https://docs.aws.amazon.com/appfabric/latest/adminguide/">Amazon Web
-      Services AppFabric Administration Guide</a>. For more information about
-      using the Command Line Interface (CLI) to manage your AppFabric resources,
-      see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/appfabric/index.html">AppFabric
-      section of the CLI Reference</a>.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appfabric/
       - type: OpenAPI
         url: properties/appfabric-openapi-original.yml
     overlays:
@@ -252,43 +352,40 @@ apis:
     aid: amazon-web-services:appfabric
   - name: Amazon AppFlow
     description: >-
-      <p>Welcome to the Amazon AppFlow API reference. This guide is for
-      developers who need detailed information about the Amazon AppFlow API
-      operations, data types, and errors. </p> <p>Amazon AppFlow is a fully
-      managed integration service that enables you to securely transfer data
-      between software as a service (SaaS) applications like Salesforce,
-      Marketo, Slack, and ServiceNow, and Amazon Web Services like Amazon S3 and
-      Amazon Redshift. </p> <p>Use the following links to get started on the
-      Amazon AppFlow API:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Operations.html">Actions</a>:
-      An alphabetical list of all Amazon AppFlow API operations.</p> </li> <li>
-      <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Types.html">Data
-      types</a>: An alphabetical list of all Amazon AppFlow data types.</p>
-      </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/CommonParameters.html">Common
-      parameters</a>: Parameters that all Query operations can use.</p> </li>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/appflow/1.0/APIReference/CommonErrors.html">Common
-      errors</a>: Client and server errors that all operations can return.</p>
-      </li> </ul> <p>If you're new to Amazon AppFlow, we recommend that you
-      review the <a
-      href="https://docs.aws.amazon.com/appflow/latest/userguide/what-is-appflow.html">Amazon
-      AppFlow User Guide</a>.</p> <p>Amazon AppFlow API users can use
-      vendor-specific mechanisms for OAuth, and include applicable OAuth
-      attributes (such as <code>auth-code</code> and <code>redirecturi</code>)
-      with the connector-specific <code>ConnectorProfileProperties</code> when
-      creating a new connector profile using Amazon AppFlow API operations. For
-      example, Salesforce users can refer to the <a
-      href="https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm">
-      <i>Authorize Apps with OAuth</i> </a> documentation.</p>
+      This API, Amazon AppFlow, allows for seamless automation of data flows
+      between SaaS applications and AWS services with just a few clicks. You can
+      run these data flows at your preferred frequency, whether on a schedule,
+      in response to a business event, or on demand. Simplify data preparation
+      through transformations, partitioning, and aggregation. Additionally,
+      automate the preparation and registration of your schema with the AWS Glue
+      Data Catalog for easy discovery and sharing of data with AWS analytics and
+      machine learning services.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appflow/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Cache
+      - Cancel
+      - Connectors
+      - Describe
+      - Entities
+      - Execution
+      - Executions
+      - Flows
+      - Metadata
+      - Profiles
+      - Records
+      - Register
+      - Registrations
+      - Reset
+      - Resources
+      - Stop
+      - Unregister
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appflow/
       - type: OpenAPI
         url: properties/appflow-openapi-original.yml
     overlays:
@@ -297,51 +394,35 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/appflow-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appflow
-  - name: Amazon Application Auto Scaling
+  - name: AWS Auto Scaling
     description: >-
-      <p>With Application Auto Scaling, you can configure automatic scaling for
-      the following resources:</p> <ul> <li> <p>Amazon AppStream 2.0 fleets</p>
-      </li> <li> <p>Amazon Aurora Replicas</p> </li> <li> <p>Amazon Comprehend
-      document classification and entity recognizer endpoints</p> </li> <li>
-      <p>Amazon DynamoDB tables and global secondary indexes throughput
-      capacity</p> </li> <li> <p>Amazon ECS services</p> </li> <li> <p>Amazon
-      ElastiCache for Redis clusters (replication groups)</p> </li> <li>
-      <p>Amazon EMR clusters</p> </li> <li> <p>Amazon Keyspaces (for Apache
-      Cassandra) tables</p> </li> <li> <p>Lambda function provisioned
-      concurrency</p> </li> <li> <p>Amazon Managed Streaming for Apache Kafka
-      broker storage</p> </li> <li> <p>Amazon Neptune clusters</p> </li> <li>
-      <p>Amazon SageMaker endpoint variants</p> </li> <li> <p>Amazon SageMaker
-      Serverless endpoint provisioned concurrency</p> </li> <li> <p>Amazon
-      SageMaker inference components</p> </li> <li> <p>Spot Fleets (Amazon
-      EC2)</p> </li> <li> <p>Custom resources provided by your own applications
-      or services</p> </li> </ul> <p>To learn more about Application Auto
-      Scaling, see the <a
-      href="https://docs.aws.amazon.com/autoscaling/application/userguide/what-is-application-auto-scaling.html">Application
-      Auto Scaling User Guide</a>.</p> <p> <b>API Summary</b> </p> <p>The
-      Application Auto Scaling service API includes three key sets of actions:
-      </p> <ul> <li> <p>Register and manage scalable targets - Register Amazon
-      Web Services or custom resources as scalable targets (a resource that
-      Application Auto Scaling can scale), set minimum and maximum capacity
-      limits, and retrieve information on existing scalable targets.</p> </li>
-      <li> <p>Configure and manage automatic scaling - Define scaling policies
-      to dynamically scale your resources in response to CloudWatch alarms,
-      schedule one-time or recurring scaling actions, and retrieve your recent
-      scaling activity history.</p> </li> <li> <p>Suspend and resume scaling -
-      Temporarily suspend and later resume automatic scaling by calling the <a
-      href="https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html">RegisterScalableTarget</a>
-      API action for any Application Auto Scaling scalable target. You can
-      suspend and resume (individually or in combination) scale-out activities
-      that are triggered by a scaling policy, scale-in activities that are
-      triggered by a scaling policy, and scheduled scaling.</p> </li> </ul>
+      AWS Auto Scaling is a service that automatically adjusts the capacity of
+      your applications to maintain consistent performance at the most
+      cost-effective rate. It allows you to easily set up scaling for multiple
+      resources across various services in just minutes. With a user-friendly
+      interface, you can create scaling plans for resources such as Amazon EC2
+      instances, Amazon ECS tasks, Amazon DynamoDB tables, Amazon Aurora
+      Replicas, and Spot Fleets.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/autoscaling/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/autoscaling/
       - type: OpenAPI
         url: properties/application-autoscaling-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/autoscaling/features/
+      - type: Pricing
+        url: https://aws.amazon.com/autoscaling/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/autoscaling/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/autoscaling/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/application-autoscaling-openapi-search.yml
@@ -350,21 +431,24 @@ apis:
     aid: amazon-web-services:application-autoscaling
   - name: AWS Application Cost Profiler
     description: >-
-      <p>This reference provides descriptions of the AWS Application Cost
-      Profiler API.</p> <p>The AWS Application Cost Profiler API provides
-      programmatic access to view, create, update, and delete application cost
-      report definitions, as well as to import your usage data into the
-      Application Cost Profiler service.</p> <p>For more information about using
-      this service, see the <a
-      href="https://docs.aws.amazon.com/application-cost-profiler/latest/userguide/introduction.html">AWS
-      Application Cost Profiler User Guide</a>.</p>
+      The AWS Application Cost Profiler API enables users to manage application
+      cost report definitions, including viewing, creating, updating, and
+      deleting them. It also allows users to import usage data into the
+      Application Cost Profiler service. For more information on using this API,
+      please consult the AWS Application Cost Profiler User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-application-cost-profiler/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Definitions
+      - Import
+      - Reports
+      - Usage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-application-cost-profiler/
       - type: OpenAPI
         url: properties/applicationcostprofiler-openapi-original.yml
     overlays:
@@ -375,110 +459,195 @@ apis:
     aid: amazon-web-services:applicationcostprofiler
   - name: AWS App Mesh
     description: >-
-      <p>AWS App Mesh is a service mesh based on the Envoy proxy that makes it
-      easy to monitor and
-               control containerized microservices. App Mesh standardizes how your microservices
-               communicate, giving you end-to-end visibility and helping to ensure high-availability for
-               your applications.</p>
-               <p>App Mesh gives you consistent visibility and network traffic controls for every
-               microservice in an application. You can use App Mesh with Amazon ECS
-               (using the Amazon EC2 launch type), Amazon EKS, and Kubernetes on AWS.</p>
-               <note>
-                  <p>App Mesh supports containerized microservice applications that use service discovery
-                  naming for their components. To use App Mesh, you must have a containerized application
-                  running on Amazon EC2 instances, hosted in either Amazon ECS, Amazon EKS, or Kubernetes on AWS. For
-                  more information about service discovery on Amazon ECS, see <a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html">Service Discovery</a> in the
-                     <i>Amazon Elastic Container Service Developer Guide</i>. Kubernetes <code>kube-dns</code> is supported.
-                  For more information, see <a href="https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/">DNS
-                     for Services and Pods</a> in the Kubernetes documentation.</p>
-               </note>
+      The AWS App Mesh is a service mesh powered by the Envoy proxy that
+      streamlines the monitoring and management of containerized microservices.
+      It simplifies communication between microservices, providing in-depth
+      visibility and ensuring reliable availability for applications. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/app-mesh/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Gateways
+      - Mesh
+      - Meshes
+      - Names
+      - Nodes
+      - Resources
+      - Router
+      - Routers
+      - Routes
+      - Services
+      - Tags
+      - Untag
+      - Virtual
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/app-mesh/
       - type: OpenAPI
         url: properties/appmesh-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/app-mesh/features/
+      - type: Pricing
+        url: https://aws.amazon.com/app-mesh/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/app-mesh/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/app-mesh/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/app-mesh/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/appmesh-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/appmesh-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appmesh
-  - name: Amazon AppSync
+  - name: AWS AppSync
     description: >-
-      <p>AppSync provides API actions for creating and interacting with data
-      sources using GraphQL from your application.</p>
+      With AWS AppSync, easily create serverless GraphQL and Pub/Sub APIs that
+      streamline application development by providing a secure endpoint for
+      querying, updating, and publishing data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appsync/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Associate
+      - Associations
+      - Cache
+      - Caches
+      - Code
+      - Creation
+      - Data
+      - Data Planes
+      - Data Source
+      - Disassociate
+      - Domain Names
+      - Domains
+      - Environments
+      - Evaluate
+      - Evaluate Code
+      - Evaluate Template
+      - Fields
+      - Flush
+      - Functions
+      - Graph QL
+      - Introspections
+      - Keys
+      - Mapping
+      - Merge
+      - Merged
+      - Names
+      - Resolvers
+      - Resources
+      - Schemas
+      - Sources
+      - Tags
+      - Templates
+      - Types
+      - Untag
+      - Variables
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appsync/
       - type: OpenAPI
         url: properties/appsync-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/appsync/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/appsync/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/appsync/customers/
+      - type: Resources
+        url: https://aws.amazon.com/appsync/resources/
+      - type: Blog
+        url: https://aws.amazon.com/appsync/blog/
+      - type: Introspection
+        url: >-
+          https://docs.aws.amazon.com/appsync/latest/devguide/rds-introspection.html
     overlays:
       - type: APIs.io Search
         url: overlays/appsync-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/appsync-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appsync
-  - name: Amazon AppStream 2.0
+  - name: Amazon AppStream
     description: >-
-      <fullname>Amazon AppStream 2.0</fullname> <p>This is the <i>Amazon
-      AppStream 2.0 API Reference</i>. This documentation provides descriptions
-      and syntax for each of the actions and data types in AppStream 2.0.
-      AppStream 2.0 is a fully managed, secure application streaming service
-      that lets you stream desktop applications to users without rewriting
-      applications. AppStream 2.0 manages the AWS resources that are required to
-      host and run your applications, scales automatically, and provides access
-      to your users on demand. </p> <note> <p>You can call the AppStream 2.0 API
-      operations by using an interface VPC endpoint (interface endpoint). For
-      more information, see <a
-      href="https://docs.aws.amazon.com/appstream2/latest/developerguide/access-api-cli-through-interface-vpc-endpoint.html">Access
-      AppStream 2.0 API Operations and CLI Commands Through an Interface VPC
-      Endpoint</a> in the <i>Amazon AppStream 2.0 Administration Guide</i>.</p>
-      </note> <p>To learn more about AppStream 2.0, see the following
-      resources:</p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/appstream2">Amazon AppStream 2.0 product
-      page</a> </p> </li> <li> <p> <a
-      href="http://aws.amazon.com/documentation/appstream2">Amazon AppStream 2.0
-      documentation</a> </p> </li> </ul>
+      Explore the Amazon AppStream 2.0 API Reference to access detailed
+      descriptions and syntax for actions and data types within the service.
+      Amazon AppStream 2.0 is a secure, fully managed application streaming
+      service that allows you to effortlessly stream desktop applications to
+      users without the need for application rewriting. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/appstream2/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Stack
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/appstream2/
       - type: OpenAPI
         url: properties/appstream-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/appstream2/features/
+      - type: Pricing
+        url: https://aws.amazon.com/appstream2/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/appstream2/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/appstream2/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/appstream2/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/appstream2/customers/
+      - type: Vendors
+        url: https://aws.amazon.com/appstream2/software-vendors/
+      - type: Enterprise
+        url: https://aws.amazon.com/appstream2/enterprises/
+      - type: Education
+        url: https://aws.amazon.com/appstream2/education/
     overlays:
       - type: APIs.io Search
         url: overlays/appstream-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/appstream-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:appstream
-  - name: Amazon Amplify
+  - name: Amplify
     description: >-
-      <p>Amplify enables developers to develop and deploy cloud-powered mobile
-      and web apps. Amplify Hosting provides a continuous delivery and hosting
-      service for web applications. For more information, see the <a
-      href="https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html">Amplify
-      Hosting User Guide</a>. The Amplify Framework is a comprehensive set of
-      SDKs, libraries, tools, and documentation for client app development. For
-      more information, see the <a href="https://docs.amplify.aws/">Amplify
-      Framework.</a> </p>
+      Amplify is an API designed to facilitate the development and deployment of
+      cloud-powered mobile and web applications. Amplify Hosting offers a
+      continuous delivery and hosting service specifically tailored for web
+      applications. To learn more about Amplify Hosting, refer to the user
+      guide. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/amplify/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Access Logs
+      - Applications
+      - Artifacts
+      - Associations
+      - Backend Environments
+      - Backends
+      - Branch
+      - Branches
+      - Deployments
+      - Domains
+      - Environments
+      - Generate
+      - Jobs
+      - Logs
+      - Names
+      - Resources
+      - Stop
+      - Tags
+      - URL
+      - Untag
+      - Webhooks
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/amplify/
       - type: OpenAPI
         url: properties/amplify-openapi-original.yml
     overlays:
@@ -487,39 +656,41 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/amplify-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:amplify
-  - name: Amazon App Runner
+  - name: AWS App Runner
     description: >-
-      <fullname>App Runner</fullname> <p>App Runner is an application service
-      that provides a fast, simple, and cost-effective way to go directly from
-      an existing container image or source code to a running service in the
-      Amazon Web Services Cloud in seconds. You don't need to learn new
-      technologies, decide which compute service to use, or understand how to
-      provision and configure Amazon Web Services resources.</p> <p>App Runner
-      connects directly to your container registry or source code repository. It
-      provides an automatic delivery pipeline with fully managed operations,
-      high performance, scalability, and security.</p> <p>For more information
-      about App Runner, see the <a
-      href="https://docs.aws.amazon.com/apprunner/latest/dg/">App Runner
-      Developer Guide</a>. For release information, see the <a
-      href="https://docs.aws.amazon.com/apprunner/latest/relnotes/">App Runner
-      Release Notes</a>.</p> <p> To install the Software Development Kits
-      (SDKs), Integrated Development Environment (IDE) Toolkits, and command
-      line tools that you can use to access the API, see <a
-      href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p>
-      <p> <b>Endpoints</b> </p> <p>For a list of Region-specific endpoints that
-      App Runner supports, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/apprunner.html">App
-      Runner endpoints and quotas</a> in the <i>Amazon Web Services General
-      Reference</i>.</p>
+      App Runner is an application service on Amazon Web Services that allows
+      you to quickly and easily deploy container images or source code to the
+      cloud. It eliminates the need to learn new technologies or manually
+      provision resources. App Runner seamlessly connects to your container
+      registry or source code repository, providing a fully managed delivery
+      pipeline with high performance, scalability, and security. For more
+      information, refer to the App Runner Developer Guide and Release Notes. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/apprunner/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Connections
+      - Ingress
+      - VPC
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/apprunner/
       - type: OpenAPI
         url: properties/apprunner-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/apprunner/features/
+      - type: Pricing
+        url: https://aws.amazon.com/apprunner/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/apprunner/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/apprunner/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/apprunner/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/apprunner/customers/
+      - type: Partners
+        url: https://aws.amazon.com/apprunner/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/apprunner-openapi-search.yml
@@ -528,29 +699,38 @@ apis:
     aid: amazon-web-services:apprunner
   - name: Amazon Athena
     description: >-
-      <p>Amazon Athena is an interactive query service that lets you use
-      standard SQL to analyze data directly in Amazon S3. You can point Athena
-      at your data in Amazon S3 and run ad-hoc queries and get results in
-      seconds. Athena is serverless, so there is no infrastructure to set up or
-      manage. You pay only for the queries you run. Athena scales
-      automatically—executing queries in parallel—so results are fast, even with
-      large datasets and complex queries. For more information, see <a
-      href="http://docs.aws.amazon.com/athena/latest/ug/what-is.html">What is
-      Amazon Athena</a> in the <i>Amazon Athena User Guide</i>.</p> <p>If you
-      connect to Athena using the JDBC driver, use version 1.1.0 of the driver
-      or later with the Amazon Athena API. Earlier version drivers do not
-      support the API. For more information and to download the driver, see <a
-      href="https://docs.aws.amazon.com/athena/latest/ug/connect-with-jdbc.html">Accessing
-      Amazon Athena with JDBC</a>.</p>
+      Amazon Athena is a user-friendly query service that allows you to analyze
+      data stored in Amazon S3 using standard SQL. By pointing Athena to your
+      data in S3, you can easily run ad-hoc queries and receive results within
+      seconds. This serverless tool eliminates the need for infrastructure setup
+      and management, as you only pay for the queries you execute. Athena is
+      designed to scale automatically, executing queries in parallel to deliver
+      fast results even with large datasets and complex queries. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/athena/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Group
+      - Work
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/athena/
       - type: OpenAPI
         url: properties/athena-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/athena/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/athena/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/athena/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/athena/faqs/
+      - type: Features
+        url: https://aws.amazon.com/athena/features/
+      - type: Spark
+        url: https://aws.amazon.com/athena/spark/
+      - type: Connectors
+        url: https://docs.aws.amazon.com/athena/latest/ug/connectors-prebuilt.html
     overlays:
       - type: APIs.io Search
         url: overlays/athena-openapi-search.yml
@@ -559,23 +739,35 @@ apis:
     aid: amazon-web-services:athena
   - name: Amazon EC2 Auto Scaling
     description: >-
-      <fullname>Amazon EC2 Auto Scaling</fullname> <p>Amazon EC2 Auto Scaling is
-      designed to automatically launch and terminate EC2 instances based on
-      user-defined scaling policies, scheduled actions, and health checks.</p>
-      <p>For more information, see the <a
-      href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/">Amazon EC2
-      Auto Scaling User Guide</a> and the <a
-      href="https://docs.aws.amazon.com/autoscaling/ec2/APIReference/Welcome.html">Amazon
-      EC2 Auto Scaling API Reference</a>.</p>
+      The Amazon EC2 Auto Scaling API allows users to automate the launching and
+      terminating of EC2 instances based on predefined scaling policies,
+      scheduled actions, and health checks. Refer to the Amazon EC2 Auto Scaling
+      User Guide and API Reference for further details.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ec2/autoscaling/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Auto
+      - Group
+      - Scaling
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ec2/autoscaling/
       - type: OpenAPI
         url: properties/autoscaling-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ec2/autoscaling/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ec2/autoscaling/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/ec2/autoscaling/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/ec2/autoscaling/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/ec2/autoscaling/faqs/
+      - type: Tutorial
+        url: >-
+          https://docs.aws.amazon.com/autoscaling/latest/userguide/GettingStartedTutorial.html
     overlays:
       - type: APIs.io Search
         url: overlays/autoscaling-openapi-search.yml
@@ -584,76 +776,110 @@ apis:
     aid: amazon-web-services:autoscaling
   - name: AWS B2B Data Interchange
     description: >-
-      <p>This is the <i>Amazon Web Services B2B Data Interchange API
-      Reference</i>. It provides descriptions, API request parameters, and the
-      XML response for each of the B2BI API actions.</p> <p>B2BI enables
-      automated exchange of EDI (electronic data interchange) based
-      business-critical transactions at cloud scale, with elasticity and
-      pay-as-you-go pricing. Businesses use EDI documents to exchange
-      transactional data with trading partners, such as suppliers and end
-      customers, using standardized formats such as X12.</p> <note> <p>Rather
-      than actually running a command, you can use the
-      <code>--generate-cli-skeleton</code> parameter with any API call to
-      generate and display a parameter template. You can then use the generated
-      template to customize and use as input on a later command. For details,
-      see <a
-      href="https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-skeleton.html#cli-usage-skeleton-generate">Generate
-      and use a parameter skeleton file</a>.</p> </note>
+      The Amazon Web Services B2B Data Interchange API Reference is a
+      comprehensive guide that includes detailed descriptions, API request
+      parameters, and XML responses for each of the B2BI API actions. B2BI
+      facilitates the seamless exchange of EDI-based business transactions at
+      cloud scale, offering elasticity and pay-as-you-go pricing. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/b2b-data-interchange/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Transformers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/b2b-data-interchange/
       - type: OpenAPI
         url: properties/b2bi-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/b2b-data-interchange/features/
+      - type: Pricing
+        url: https://aws.amazon.com/b2b-data-interchange/features/
+      - type: FAQ
+        url: https://aws.amazon.com/b2b-data-interchange/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/b2bi-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/b2bi-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:b2bi
-  - name: Amazon Audit Manager
+  - name: AWS Audit Manager
     description: >-
-      <p>Welcome to the Audit Manager API reference. This guide is for
-      developers who need detailed information about the Audit Manager API
-      operations, data types, and errors. </p> <p>Audit Manager is a service
-      that provides automated evidence collection so that you can continually
-      audit your Amazon Web Services usage. You can use it to assess the
-      effectiveness of your controls, manage risk, and simplify compliance.</p>
-      <p>Audit Manager provides prebuilt frameworks that structure and automate
-      assessments for a given compliance standard. Frameworks include a prebuilt
-      collection of controls with descriptions and testing procedures. These
-      controls are grouped according to the requirements of the specified
-      compliance standard or regulation. You can also customize frameworks and
-      controls to support internal audits with specific requirements. </p>
-      <p>Use the following links to get started with the Audit Manager API:</p>
-      <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Operations.html">Actions</a>:
-      An alphabetical list of all Audit Manager API operations.</p> </li> <li>
-      <p> <a
-      href="https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Types.html">Data
-      types</a>: An alphabetical list of all Audit Manager data types.</p> </li>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/audit-manager/latest/APIReference/CommonParameters.html">Common
-      parameters</a>: Parameters that all operations can use.</p> </li> <li> <p>
-      <a
-      href="https://docs.aws.amazon.com/audit-manager/latest/APIReference/CommonErrors.html">Common
-      errors</a>: Client and server errors that all operations can return.</p>
-      </li> </ul> <p>If you're new to Audit Manager, we recommend that you
-      review the <a
-      href="https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html">
-      Audit Manager User Guide</a>.</p>
+      Introducing the Audit Manager API reference, a comprehensive resource for
+      developers looking for in-depth insights into Audit Manager API
+      functionalities, data structures, and error handling. Audit Manager is a
+      robust service designed to automate the collection of evidence to support
+      ongoing auditing of your Amazon Web Services usage. With this tool, users
+      can evaluate the effectiveness of controls, mitigate risks, and simplify
+      compliance procedures.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/audit-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Administrative
+      - Assessments
+      - Associate
+      - Attributes
+      - Batches
+      - Change
+      - Change Logs
+      - Controls
+      - Data
+      - Delegation
+      - Delegations
+      - Deregister
+      - Disassociate
+      - Domains
+      - Evidence
+      - File
+      - Folders
+      - Frameworks
+      - Import
+      - Insights
+      - Integrity
+      - Keywords
+      - Logs
+      - Notifications
+      - Organizations
+      - Register
+      - Reports
+      - Resources
+      - Scopes
+      - Services
+      - Sets
+      - Settings
+      - Share
+      - Sources
+      - Status
+      - Tags
+      - URL
+      - Untag
+      - Uploads
+      - Validate
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/audit-manager/
       - type: OpenAPI
         url: properties/auditmanager-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/audit-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/audit-manager/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/audit-manager/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/audit-manager/faqs/
+      - type: User Guide
+        url: >-
+          https://docs.aws.amazon.com/audit-manager/latest/userguide/framework-overviews.html
+      - type: Examples
+        url: >-
+          https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_id-based-policy-examples.html
+      - type: Dashboard
+        url: >-
+          https://docs.aws.amazon.com/audit-manager/latest/userguide/dashboard.html
     overlays:
       - type: APIs.io Search
         url: overlays/auditmanager-openapi-search.yml
@@ -662,31 +888,33 @@ apis:
     aid: amazon-web-services:auditmanager
   - name: AWS Auto Scaling
     description: >-
-      <fullname>AWS Auto Scaling</fullname> <p>Use AWS Auto Scaling to create
-      scaling plans for your applications to automatically scale your scalable
-      AWS resources. </p> <p> <b>API Summary</b> </p> <p>You can use the AWS
-      Auto Scaling service API to accomplish the following tasks:</p> <ul> <li>
-      <p>Create and manage scaling plans</p> </li> <li> <p>Define target
-      tracking scaling policies to dynamically scale your resources based on
-      utilization</p> </li> <li> <p>Scale Amazon EC2 Auto Scaling groups using
-      predictive scaling and dynamic scaling to scale your Amazon EC2 capacity
-      faster</p> </li> <li> <p>Set minimum and maximum capacity limits</p> </li>
-      <li> <p>Retrieve information on existing scaling plans</p> </li> <li>
-      <p>Access current forecast data and historical forecast data for up to 56
-      days previous</p> </li> </ul> <p>To learn more about AWS Auto Scaling,
-      including information about granting IAM users required permissions for
-      AWS Auto Scaling actions, see the <a
-      href="https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html">AWS
-      Auto Scaling User Guide</a>. </p>
+      This API allows you to easily create and manage scaling plans for your
+      applications using AWS Auto Scaling. With this service, you can define
+      target tracking scaling policies to automatically scale your AWS resources
+      based on utilization, as well as scale Amazon EC2 Auto Scaling groups
+      using predictive scaling and dynamic scaling to quickly adjust your
+      capacity. You can also set minimum and maximum capacity limits, retrieve
+      information on existing scaling plans, and access forecast data for up to
+      56 days previous.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/autoscaling/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Plan
+      - Scaling
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/autoscaling/
       - type: OpenAPI
         url: properties/autoscaling-plans-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/autoscaling/features/
+      - type: Pricing
+        url: https://aws.amazon.com/autoscaling/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/autoscaling/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/autoscaling/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/autoscaling-plans-openapi-search.yml
@@ -695,19 +923,87 @@ apis:
     aid: amazon-web-services:autoscaling-plans
   - name: AWS Backup
     description: >-
-      <fullname>Backup</fullname> <p>Backup is a unified backup service designed
-      to protect Amazon Web Services services and their associated data. Backup
-      simplifies the creation, migration, restoration, and deletion of backups,
-      while also providing reporting and auditing.</p>
+      This API, Backup Backup, offers a comprehensive backup solution
+      specifically tailored for Amazon Web Services (AWS) and its related data.
+      With features such as simplified backup creation, migration, restoration,
+      and deletion, as well as robust reporting and auditing capabilities,
+      Backup Backup ensures the protection of your AWS services and data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/backup/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Accounts
+      - Air
+      - Associations
+      - Audit
+      - Backup
+      - Cancel
+      - Configurations
+      - Copy
+      - Describe
+      - Disassociate
+      - Exports
+      - Frameworks
+      - Gapped
+      - Global
+      - Hold
+      - Holds
+      - Inferred
+      - JSON
+      - Jobs
+      - Legal
+      - Lifecycle
+      - Locks
+      - Logically
+      - Metadata
+      - Names
+      - Notifications
+      - Parents
+      - Plan
+      - Plans
+      - Points
+      - Policies
+      - Protected
+      - Recovery
+      - Regions
+      - Reports
+      - Resources
+      - Restore
+      - Results
+      - Selections
+      - Settings
+      - Stop
+      - Summaries
+      - Supported
+      - Tags
+      - Templates
+      - Testing
+      - Types
+      - Untag
+      - Val
+      - Validations
+      - Vault
+      - Vaults
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/backup/
       - type: OpenAPI
         url: properties/backup-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/backup/#
+      - type: Pricing
+        url: https://aws.amazon.com/backup/pricing/?nc=sn&loc=3
+      - type: Getting Started
+        url: https://aws.amazon.com/backup/getting-started/?nc=sn&loc=4
+      - type: Resources
+        url: https://aws.amazon.com/backup/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/backup/faqs/?nc=sn&loc=6
+      - type: Customers
+        url: https://aws.amazon.com/backup/customers/?nc=sn&loc=7
     overlays:
       - type: APIs.io Search
         url: overlays/backup-openapi-search.yml
@@ -716,87 +1012,161 @@ apis:
     aid: amazon-web-services:backup
   - name: AWS Batch
     description: >-
-      <fullname>Batch</fullname> <p>Using Batch, you can run batch computing
-      workloads on the Amazon Web Services Cloud. Batch computing is a common
-      means for developers, scientists, and engineers to access large amounts of
-      compute resources. Batch uses the advantages of the batch computing to
-      remove the undifferentiated heavy lifting of configuring and managing
-      required infrastructure. At the same time, it also adopts a familiar batch
-      computing software approach. You can use Batch to efficiently provision
-      resources d, and work toward eliminating capacity constraints, reducing
-      your overall compute costs, and delivering results more quickly.</p> <p>As
-      a fully managed service, Batch can run batch computing workloads of any
-      scale. Batch automatically provisions compute resources and optimizes
-      workload distribution based on the quantity and scale of your specific
-      workloads. With Batch, there's no need to install or manage batch
-      computing software. This means that you can focus on analyzing results and
-      solving your specific problems instead.</p>
+      Batch Using Batch, you can run batch computing workloads on the Amazon Web
+      Services Cloud. Batch computing is a common means for developers,
+      scientists, and engineers to access large amounts of compute resources.
+      Batch uses the advantages of the batch computing to remove the
+      undifferentiated heavy lifting of configuring and managing required
+      infrastructure. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/batch/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Cancel
+      - Cancel Jobs
+      - Compute
+      - Computer Environments
+      - Definitions
+      - Deregister
+      - Deregister Job Definitions
+      - Describe
+      - Environments
+      - Job Definitions
+      - Job Queues
+      - Jobs
+      - Policies
+      - Queues
+      - Register
+      - Register Job Definitions
+      - Resources
+      - Scheduling
+      - Scheduling Policies
+      - Scheduling Policy
+      - Submit
+      - Submit Jobs
+      - Tags
+      - Terminate
+      - Terminate Jobs
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/batch/
       - type: OpenAPI
         url: properties/batch-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/batch/features/?nc=sn&loc=2
+      - type: Pricing
+        url: https://aws.amazon.com/batch/pricing/?nc=sn&loc=3
+      - type: FAQ
+        url: https://aws.amazon.com/batch/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/batch-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/batch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:batch
-  - name: AWS Bedrock Agent
+  - name: Amazon Bedrock Agent
     description: >-
-      <p>An example service, deployed with the Octane Service creator, which
-      will echo the string</p>
+      Enhance the capabilities of generative AI applications by allowing them to
+      seamlessly perform complex multi-step tasks across various company systems
+      and data sources. Amazon Bedrock agents improve operational efficiency,
+      customer service, and decision-making processes whilst simultaneously
+      driving down costs and fostering innovation within the organization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/bedrock/agents/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Agent
+      - Agents
+      - Alias
+      - Aliases
+      - Base
+      - Generate
+      - Invoke
+      - Knowledge
+      - Knowledgebases
+      - Retrieve
+      - Sessions
+      - Text
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/bedrock/agents/
       - type: OpenAPI
-        url: properties/bedrock-agent-openapi-original.yml
+        url: properties/bedrock-agent-runtime-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/bedrock/agents/#
+      - type: Pricing
+        url: >-
+          https://aws.amazon.com/bedrock/pricing/?refid=0eaabb80-ee46-4e73-94ae-368ffb759b62
+      - type: Models
+        url: https://aws.amazon.com/bedrock/agents/
+      - type: FAQ
+        url: >-
+          https://aws.amazon.com/bedrock/faqs/?refid=0eaabb80-ee46-4e73-94ae-368ffb759b62
+      - type: Testimonials
+        url: https://aws.amazon.com/bedrock/testimonials/
+      - type: Resources
+        url: >-
+          https://aws.amazon.com/bedrock/resources/?refid=0eaabb80-ee46-4e73-94ae-368ffb759b62
     overlays:
       - type: APIs.io Search
-        url: overlays/bedrock-agent-openapi-search.yml
+        url: overlays/bedrock-agent-runtime-openapi-search.yml
       - type: API Evangelist Ratings
-        url: overlays/bedrock-agent-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:bedrock-agent
+        url: overlays/bedrock-agent-runtime-openapi-api-evangelist-ratings.yml
+    aid: amazon-web-services:bedrock-agent-runtime
   - name: AWS Billing Conductor
     description: >-
-      <p>Amazon Web Services Billing Conductor is a fully managed service that
-      you can use to customize a <a
-      href="https://docs.aws.amazon.com/billingconductor/latest/userguide/understanding-eb.html#eb-other-definitions">proforma</a>
-      version of your billing data each month, to accurately show or chargeback
-      your end customers. Amazon Web Services Billing Conductor doesn't change
-      the way you're billed by Amazon Web Services each month by design.
-      Instead, it provides you with a mechanism to configure, generate, and
-      display rates to certain customers over a given billing period. You can
-      also analyze the difference between the rates you apply to your accounting
-      groupings relative to your actual rates from Amazon Web Services. As a
-      result of your Amazon Web Services Billing Conductor configuration, the
-      payer account can also see the custom rate applied on the billing details
-      page of the <a href="https://console.aws.amazon.com/billing">Amazon Web
-      Services Billing console</a>, or configure a cost and usage report per
-      billing group.</p> <p>This documentation shows how you can configure
-      Amazon Web Services Billing Conductor using its API. For more information
-      about using the <a
-      href="https://console.aws.amazon.com/billingconductor/">Amazon Web
-      Services Billing Conductor</a> user interface, see the <a
-      href="https://docs.aws.amazon.com/billingconductor/latest/userguide/what-is-billingconductor.html">
-      Amazon Web Services Billing Conductor User Guide</a>.</p>
+      The Amazon Web Services Billing Conductor API is a fully managed service
+      that allows you to customize your billing data each month for accurate
+      showback or chargeback to your end customers. It does not alter the way
+      you are billed by AWS, but rather enables you to configure, generate, and
+      display rates for specific customers during a billing period. You can also
+      compare the rates you set to your actual AWS rates. With the API, payer
+      accounts can view custom rates on the billing details page or set up cost
+      and usage reports per billing group. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Associate
+      - Associated
+      - Associations
+      - Batches
+      - Billing
+      - Cost
+      - Custom
+      - Disassociate
+      - Groups
+      - Items
+      - Line
+      - Plan
+      - Plans
+      - Pricing
+      - Reports
+      - Resources
+      - Rules
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/
       - type: OpenAPI
         url: properties/billingconductor-openapi-original.yml
+      - type: Features
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-billing-conductor/features/
+      - type: Pricing
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-billing-conductor/pricing/
+      - type: Getting Started
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-billing-conductor/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/aws-cost-management/aws-billing-conductor/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/billingconductor-openapi-search.yml
@@ -805,71 +1175,62 @@ apis:
     aid: amazon-web-services:billingconductor
   - name: AWS Budgets
     description: >-
-      <p>Use the Amazon Web Services Budgets API to plan your service usage,
-      service costs, and instance reservations. This API reference provides
-      descriptions, syntax, and usage examples for each of the actions and data
-      types for the Amazon Web Services Budgets feature. </p> <p>Budgets provide
-      you with a way to see the following information:</p> <ul> <li> <p>How
-      close your plan is to your budgeted amount or to the free tier limits</p>
-      </li> <li> <p>Your usage-to-date, including how much you've used of your
-      Reserved Instances (RIs)</p> </li> <li> <p>Your current estimated charges
-      from Amazon Web Services, and how much your predicted usage will accrue in
-      charges by the end of the month</p> </li> <li> <p>How much of your budget
-      has been used</p> </li> </ul> <p>Amazon Web Services updates your budget
-      status several times a day. Budgets track your unblended costs,
-      subscriptions, refunds, and RIs. You can create the following types of
-      budgets:</p> <ul> <li> <p> <b>Cost budgets</b> - Plan how much you want to
-      spend on a service.</p> </li> <li> <p> <b>Usage budgets</b> - Plan how
-      much you want to use one or more services.</p> </li> <li> <p> <b>RI
-      utilization budgets</b> - Define a utilization threshold, and receive
-      alerts when your RI usage falls below that threshold. This lets you see if
-      your RIs are unused or under-utilized.</p> </li> <li> <p> <b>RI coverage
-      budgets</b> - Define a coverage threshold, and receive alerts when the
-      number of your instance hours that are covered by RIs fall below that
-      threshold. This lets you see how much of your instance usage is covered by
-      a reservation.</p> </li> </ul> <p>Service Endpoint</p> <p>The Amazon Web
-      Services Budgets API provides the following endpoint:</p> <ul> <li>
-      <p>https://budgets.amazonaws.com</p> </li> </ul> <p>For information about
-      costs that are associated with the Amazon Web Services Budgets API, see <a
-      href="https://aws.amazon.com/aws-cost-management/pricing/">Amazon Web
-      Services Cost Management Pricing</a>.</p>
+      Manage your expenses and usage with ease using the AWS Budgets API. Create
+      personalized budgets to monitor your costs and usage, and receive instant
+      notifications via email or SNS alerts if you surpass your set threshold.
+      Stay on top of your spending and act swiftly to prevent overages.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-budgets/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Subscribers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-cost-management/aws-budgets/
       - type: OpenAPI
         url: properties/budgets-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/aws-cost-management/aws-budgets/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/aws-cost-management/aws-budgets/faqs/
+      - type: Reports
+        url: >-
+          https://aws.amazon.com/blogs/aws-cloud-financial-management/launch-aws-budgets-reports/
     overlays:
       - type: APIs.io Search
         url: overlays/budgets-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/budgets-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:budgets
-  - name: AWS Cost Explorer
+  - name: AWS  Cost Explorer
     description: >-
-      <p>You can use the Cost Explorer API to programmatically query your cost
-      and usage data. You can query for aggregated data such as total monthly
-      costs or total daily usage. You can also query for granular data. This
-      might include the number of daily write operations for Amazon DynamoDB
-      database tables in your production environment. </p> <p>Service
-      Endpoint</p> <p>The Cost Explorer API provides the following endpoint:</p>
-      <ul> <li> <p> <code>https://ce.us-east-1.amazonaws.com</code> </p> </li>
-      </ul> <p>For information about the costs that are associated with the Cost
-      Explorer API, see <a
-      href="http://aws.amazon.com/aws-cost-management/pricing/">Amazon Web
-      Services Cost Management Pricing</a>.</p>
+      The Cost Explorer API allows you to access your cost and usage data
+      programmatically. You can retrieve aggregated information like total
+      monthly costs or daily usage, as well as more detailed data such as
+      specific operations for services like Amazon DynamoDB. The service
+      endpoint for the Cost Explorer API is https://ce.us-east-1.amazonaws.com.
+      For pricing details, refer to Amazon Web Services Cost Management Pricing.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
+    baseURL: https://ce.us-east-1.amazonaws.com
+    tags:
+      - Categories
+      - Cost
+      - Definitions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
       - type: OpenAPI
         url: properties/ce-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/features/
+      - type: Pricing
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/faqs/
+      - type: Getting Started
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-explorer/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/ce-openapi-search.yml
@@ -878,58 +1239,131 @@ apis:
     aid: amazon-web-services:ce
   - name: AWS Chime
     description: >-
-      <important> <p> <b>Most of these APIs are no longer supported and will not
-      be updated.</b> We recommend using the latest versions in the <a
-      href="https://docs.aws.amazon.com/chime-sdk/latest/APIReference/welcome.html">Amazon
-      Chime SDK API reference</a>, in the Amazon Chime SDK.</p> <p>Using the
-      latest versions requires migrating to dedicated namespaces. For more
-      information, refer to <a
-      href="https://docs.aws.amazon.com/chime-sdk/latest/dg/migrate-from-chm-namespace.html">Migrating
-      from the Amazon Chime namespace</a> in the <i>Amazon Chime SDK Developer
-      Guide</i>.</p> </important> <p>The Amazon Chime application programming
-      interface (API) is designed so administrators can perform key tasks, such
-      as creating and managing Amazon Chime accounts, users, and Voice
-      Connectors. This guide provides detailed information about the Amazon
-      Chime API, including operations, types, inputs and outputs, and error
-      codes.</p> <p>You can use an AWS SDK, the AWS Command Line Interface (AWS
-      CLI), or the REST API to make API calls for Amazon Chime. We recommend
-      using an AWS SDK or the AWS CLI. The page for each API action contains a
-      <i>See Also</i> section that includes links to information about using the
-      action with a language-specific AWS SDK or the AWS CLI.</p> <dl> <dt>Using
-      an AWS SDK</dt> <dd> <p> You don't need to write code to calculate a
-      signature for request authentication. The SDK clients authenticate your
-      requests by using access keys that you provide. For more information about
-      AWS SDKs, see the <a href="http://aws.amazon.com/developer/">AWS Developer
-      Center</a>. </p> </dd> <dt>Using the AWS CLI</dt> <dd> <p>Use your access
-      keys with the AWS CLI to make API calls. For information about setting up
-      the AWS CLI, see <a
-      href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html">Installing
-      the AWS Command Line Interface</a> in the <i>AWS Command Line Interface
-      User Guide</i>. For a list of available Amazon Chime commands, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/chime/index.html">Amazon
-      Chime commands</a> in the <i>AWS CLI Command Reference</i>. </p> </dd>
-      <dt>Using REST APIs</dt> <dd> <p>If you use REST to make API calls, you
-      must authenticate your request by providing a signature. Amazon Chime
-      supports Signature Version 4. For more information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a> in the <i>Amazon Web Services General
-      Reference</i>.</p> <p>When making REST API calls, use the service name
-      <code>chime</code> and REST endpoint
-      <code>https://service.chime.aws.amazon.com</code>.</p> </dd> </dl>
-      <p>Administrative permissions are controlled using AWS Identity and Access
-      Management (IAM). For more information, see <a
-      href="https://docs.aws.amazon.com/chime/latest/ag/security-iam.html">Identity
-      and Access Management for Amazon Chime</a> in the <i>Amazon Chime
-      Administration Guide</i>.</p>
+      The Amazon Chime API is a comprehensive communications solution that
+      allows users to host online meetings, chat, and make business calls from a
+      single platform. Key features include hosting high-quality video meetings,
+      audio calls, screen sharing, meeting chat, dial-in numbers, and in-room
+      video conferencing. The API also includes chat and chat room functionality
+      for ongoing communications, as well as user management and advanced
+      features like single sign-on (SSO) via the Amazon Chime management
+      console. The user-friendly app is compatible with Windows, Mac, web, iOS,
+      and Android devices. Developers can further enhance their applications
+      with messaging, audio, video, and screen sharing capabilities using the
+      Amazon Chime SDK.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/chime/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Addresses
+      - Administrative
+      - Administrator
+      - Applications
+      - Arn?scope=app
+      - Associate
+      - Attendees
+      - Available
+      - Batches
+      - Bots
+      - Call
+      - Calling
+      - Calls
+      - Capture
+      - Channels
+      - Configurations
+      - Connectors
+      - Conversations
+      - Countries
+      - Credentials
+      - Delegate
+      - Describe
+      - Dial
+      - Disassociate
+      - Emergency
+      - Endpoints
+      - Events
+      - Global
+      - Groups
+      - Health
+      - Id?operation=disassociate
+      - Id?operation=logout
+      - Instances
+      - Invite
+      - Logging
+      - Logout
+      - Marker
+      - Media
+      - Meetings
+      - Members
+      - Memberships
+      - Messages
+      - Messaging
+      - Moderated
+      - Moderators
+      - Numbers
+      - Orders
+      - Origination
+      - Out
+      - PIN
+      - Personal
+      - Phone
+      - Pin
+      - Pipelines
+      - Programmable
+      - Proxy
+      - Read
+      - Redact
+      - Regenerate
+      - Reset
+      - Resources
+      - Restore
+      - Retention
+      - Rooms
+      - Rules
+      - SIP
+      - Search
+      - Security
+      - Send
+      - Sessions
+      - Settings
+      - Sign In
+      - Stop
+      - Streaming
+      - Supported
+      - Suspend
+      - Tags
+      - Termination
+      - Tokens
+      - Transactions
+      - Transcriptions
+      - Unsuspend
+      - Untag
+      - Users
+      - Validate
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/chime/
       - type: OpenAPI
         url: properties/chime-openapi-original.yml
+      - type: Contact
+        url: https://pages.awscloud.com/chime-contact-us
+      - type: SDK
+        url: https://aws.amazon.com/chime/chime-sdk/
+      - type: Downloads
+        url: https://aws.amazon.com/chime/download/
+      - type: Answers
+        url: http://answers.chime.aws
+      - type: Pricing
+        url: https://aws.amazon.com/chime/pricing/
+      - type: Customers
+        url: https://aws.amazon.com/chime/customers/
+      - type: FAQ
+        url: https://aws.amazon.com/chime/faq/
+      - type: Getting Started
+        url: https://aws.amazon.com/chime/getting-started/
+      - type: Features
+        url: https://aws.amazon.com/chime/features/
     overlays:
       - type: APIs.io Search
         url: overlays/chime-openapi-search.yml
@@ -938,49 +1372,110 @@ apis:
     aid: amazon-web-services:chime
   - name: AWS Clean Rooms
     description: >-
-      <p>Welcome to the <i>Clean Rooms API Reference</i>.</p> <p>Clean Rooms is
-      an Amazon Web Services service that helps multiple parties to join their
-      data together in a secure collaboration workspace. In the collaboration,
-      members who can query and receive results can get insights into the
-      collective datasets without either party getting access to the other
-      party's raw data.</p> <p>To learn more about Clean Rooms concepts,
-      procedures, and best practices, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/userguide/what-is.html">Clean
-      Rooms User Guide</a>.</p> <p>To learn more about SQL commands, functions,
-      and conditions supported in Clean Rooms, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html">Clean
-      Rooms SQL Reference</a>.</p>
+      Introducing the Clean Rooms API, designed for use with Amazon Web
+      Services. This API allows multiple parties to securely collaborate and
+      combine their data in a shared workspace. This collaborative environment
+      enables members to query and receive insights from aggregated datasets
+      without exposing raw data to other parties. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/clean-rooms/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Analysis
+      - Analysis Templates
+      - Associations
+      - Audience
+      - Batches
+      - Budgets
+      - Collaboration
+      - Collaborations
+      - Configuration Audience Model Associations
+      - Configured
+      - Impact
+      - Members
+      - Memberships
+      - Models
+      - Names
+      - Previews
+      - Privacy
+      - Privacy Budget Templates
+      - Privacy Budgets
+      - Protected
+      - Queries
+      - Resources
+      - Rules
+      - Schemas
+      - Tables
+      - Tags
+      - Templates
+      - Types
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/clean-rooms/
       - type: OpenAPI
         url: properties/cleanrooms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/clean-rooms/#
+      - type: FAQ
+        url: https://aws.amazon.com/clean-rooms/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/clean-rooms/customers/
+      - type: Partners
+        url: https://aws.amazon.com/clean-rooms/partners/
+      - type: Pricing
+        url: https://aws.amazon.com/clean-rooms/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/clean-rooms/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/cleanrooms-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cleanrooms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cleanrooms
-  - name: Amazon Braket
+  - name: ' Amazon Braket'
     description: >-
-      <p>The Amazon Braket API Reference provides information about the
-      operations and structures supported in Amazon Braket.</p> <p>Additional
-      Resources:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/braket/latest/developerguide/what-is-braket.html">Amazon
-      Braket Developer Guide</a> </p> </li> </ul>
+      Amazon Braket is a comprehensive and user-friendly quantum computing
+      service designed to support researchers and developers in leveraging the
+      power of quantum technology to enhance their research and speed up
+      discovery processes. With Amazon Braket, users have access to an
+      integrated development environment that enables them to experiment with
+      and create quantum algorithms, validate them using quantum circuit
+      simulators, and execute them on a variety of quantum hardware platforms.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/braket/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Cancel
+      - Device
+      - Devices
+      - Jobs
+      - Quantum
+      - Resources
+      - Search
+      - Tags
+      - Tasks
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/braket/
       - type: OpenAPI
         url: properties/braket-openapi-original.yml
+      - type: Getting Started
+        url: https://aws.amazon.com/braket/#
+      - type: Quantum Computers
+        url: https://aws.amazon.com/braket/#
+      - type: Customers
+        url: https://aws.amazon.com/braket/customers/
+      - type: Features
+        url: https://aws.amazon.com/braket/features/
+      - type: Pricing
+        url: https://aws.amazon.com/braket/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/braket/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/braket-openapi-search.yml
@@ -989,19 +1484,29 @@ apis:
     aid: amazon-web-services:braket
   - name: AWS Cloud Control
     description: >-
-      <p>For more information about Amazon Web Services Cloud Control API, see
-      the <a
-      href="https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/what-is-cloudcontrolapi.html">Amazon
-      Web Services Cloud Control API User Guide</a>.</p>
+      The AWS Cloud Control API simplifies the management of AWS and third-party
+      services by providing a standardized set of APIs for developers and
+      partners. With five key operations (CRUDL), users can easily create, read,
+      update, delete, and list their cloud infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudcontrolapi/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudcontrolapi/
       - type: OpenAPI
         url: properties/cloudcontrol-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/cloudcontrolapi/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/cloudcontrolapi/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/cloudcontrolapi/faqs/
+      - type: User Guide
+        url: >-
+          https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/what-is-cloudcontrolapi.html
     overlays:
       - type: APIs.io Search
         url: overlays/cloudcontrol-openapi-search.yml
@@ -1010,25 +1515,76 @@ apis:
     aid: amazon-web-services:cloudcontrol
   - name: Amazon Cloud Directory
     description: >-
-      <fullname>Amazon Cloud Directory</fullname> <p>Amazon Cloud Directory is a
-      component of the AWS Directory Service that simplifies the development and
-      management of cloud-scale web, mobile, and IoT applications. This guide
-      describes the Cloud Directory operations that you can call
-      programmatically and includes detailed information on data types and
-      errors. For information about AWS Directory Services features, see <a
-      href="https://aws.amazon.com/directoryservice/">AWS Directory Service</a>
-      and the <a
-      href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">AWS
-      Directory Service Administration Guide</a>.</p>
+      The Amazon Cloud Directory is a feature within the AWS Directory Service
+      designed to streamline the creation and organization of large-scale cloud
+      applications for web, mobile, and IoT platforms. This documentation
+      provides a comprehensive overview of Cloud Directory operations that can
+      be accessed programmatically, offering detailed insights into data types
+      and potential errors. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloud-directory/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applied Schema
+      - Attach
+      - Attached
+      - Attachments
+      - Attributes
+      - Batches
+      - Children
+      - Detach
+      - Development
+      - Directories
+      - Directory
+      - Disable
+      - Enable
+      - Facets
+      - Incoming
+      - Index
+      - Indices
+      - Information
+      - JSON
+      - Link
+      - Links
+      - Lookups
+      - Managed
+      - Names
+      - Objects
+      - Outgoing
+      - Parent Paths
+      - Parents
+      - Paths
+      - Policies
+      - Publish
+      - Published
+      - Read
+      - Removes
+      - Resources
+      - Schemas
+      - Tags
+      - Targets
+      - Typed
+      - Typed Links
+      - Untag
+      - Upgrade
+      - Upgrade Applied
+      - Upgradepublished
+      - Versions
+      - Write
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloud-directory/
       - type: OpenAPI
         url: properties/clouddirectory-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloud-directory/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloud-directory/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloud-directory/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/cloud-directory/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/clouddirectory-openapi-search.yml
@@ -1037,34 +1593,38 @@ apis:
     aid: amazon-web-services:clouddirectory
   - name: AWS CloudFormation
     description: >-
-      <fullname>CloudFormation</fullname> <p>CloudFormation allows you to create
-      and manage Amazon Web Services infrastructure deployments predictably and
-      repeatedly. You can use CloudFormation to leverage Amazon Web Services
-      products, such as Amazon Elastic Compute Cloud, Amazon Elastic Block
-      Store, Amazon Simple Notification Service, Elastic Load Balancing, and
-      Auto Scaling to build highly reliable, highly scalable, cost-effective
-      applications without creating or configuring the underlying Amazon Web
-      Services infrastructure.</p> <p>With CloudFormation, you declare all your
-      resources and dependencies in a template file. The template defines a
-      collection of resources as a single unit called a stack. CloudFormation
-      creates and deletes all member resources of the stack together and manages
-      all dependencies between the resources for you.</p> <p>For more
-      information about CloudFormation, see the <a
-      href="http://aws.amazon.com/cloudformation/">CloudFormation product
-      page</a>.</p> <p>CloudFormation makes use of other Amazon Web Services
-      products. If you need additional technical information about a specific
-      Amazon Web Services product, you can find the product's technical
-      documentation at <a
-      href="https://docs.aws.amazon.com/">docs.aws.amazon.com</a>.</p>
+      CloudFormation is an Amazon Web Services tool that allows users to easily
+      create and manage infrastructure deployments in a predictable and
+      repeatable manner. With CloudFormation, you can utilize various AWS
+      products like EC2, EBS, SNS, ELB, and Auto Scaling to build reliable and
+      scalable applications without needing to manually configure the underlying
+      infrastructure. By declaring resources and their dependencies in a
+      template file, CloudFormation organizes them into a stack, enabling
+      seamless creation and deletion of all resources within the stack while
+      managing dependencies between them.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudformation/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Templates
+      - Validate
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudformation/
       - type: OpenAPI
         url: properties/cloudformation-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudformation/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudformation/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudformation/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/cloudformation/resources/
+      - type: Partners
+        url: https://aws.amazon.com/cloudformation/partners/
+      - type: FAQ
+        url: https://aws.amazon.com/cloudformation/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cloudformation-openapi-search.yml
@@ -1073,42 +1633,33 @@ apis:
     aid: amazon-web-services:cloudformation
   - name: AWS Cloud9
     description: >-
-      <fullname>Cloud9</fullname> <p>Cloud9 is a collection of tools that you
-      can use to code, build, run, test, debug, and release software in the
-      cloud.</p> <p>For more information about Cloud9, see the <a
-      href="https://docs.aws.amazon.com/cloud9/latest/user-guide">Cloud9 User
-      Guide</a>.</p> <p>Cloud9 supports these operations:</p> <ul> <li> <p>
-      <code>CreateEnvironmentEC2</code>: Creates an Cloud9 development
-      environment, launches an Amazon EC2 instance, and then connects from the
-      instance to the environment.</p> </li> <li> <p>
-      <code>CreateEnvironmentMembership</code>: Adds an environment member to an
-      environment.</p> </li> <li> <p> <code>DeleteEnvironment</code>: Deletes an
-      environment. If an Amazon EC2 instance is connected to the environment,
-      also terminates the instance.</p> </li> <li> <p>
-      <code>DeleteEnvironmentMembership</code>: Deletes an environment member
-      from an environment.</p> </li> <li> <p>
-      <code>DescribeEnvironmentMemberships</code>: Gets information about
-      environment members for an environment.</p> </li> <li> <p>
-      <code>DescribeEnvironments</code>: Gets information about
-      environments.</p> </li> <li> <p> <code>DescribeEnvironmentStatus</code>:
-      Gets status information for an environment.</p> </li> <li> <p>
-      <code>ListEnvironments</code>: Gets a list of environment identifiers.</p>
-      </li> <li> <p> <code>ListTagsForResource</code>: Gets the tags for an
-      environment.</p> </li> <li> <p> <code>TagResource</code>: Adds tags to an
-      environment.</p> </li> <li> <p> <code>UntagResource</code>: Removes tags
-      from an environment.</p> </li> <li> <p> <code>UpdateEnvironment</code>:
-      Changes the settings of an existing environment.</p> </li> <li> <p>
-      <code>UpdateEnvironmentMembership</code>: Changes the settings of an
-      existing environment member for an environment.</p> </li> </ul>
+      The Cloud9 API provides a wide range of tools for coding, building,
+      running, testing, debugging, and releasing software in the cloud. Users
+      can access these features through operations such as creating a
+      development environment on Amazon EC2, managing environment memberships,
+      deleting environments and members, getting information about environments
+      and members, listing environments, managing tags, and updating environment
+      settings. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloud9/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Environments
+      - Memberships
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloud9/
       - type: OpenAPI
         url: properties/cloud9-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/cloud9/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloud9/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/cloud9/faqs/
+      - type: Environments
+        url: >-
+          https://aws.amazon.com/blogs/aws/aws-cloud9-cloud-developer-environments/
     overlays:
       - type: APIs.io Search
         url: overlays/cloud9-openapi-search.yml
@@ -1117,53 +1668,137 @@ apis:
     aid: amazon-web-services:cloud9
   - name: Amazon CloudFront
     description: >-
-      <fullname>Amazon CloudFront</fullname> <p>Amazon CloudFront is a global
-      content delivery network (CDN) service that accelerates delivery of your
-      websites, APIs, video content or other web assets. It integrates with
-      other Amazon Web Services products to give developers and businesses an
-      easy way to accelerate content to end users with no minimum usage
-      commitments.</p>
+      Amazon CloudFront is a reliable global content delivery network (CDN)
+      service that speeds up the delivery of websites, APIs, video content, and
+      other web assets. By seamlessly integrating with various Amazon Web
+      Services products, developers and businesses can effortlessly optimize
+      content delivery to end users without any mandatory usage requirements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudfront/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Alias
+      - Aliases
+      - Associate
+      - Cache
+      - Cloud
+      - Cloudfront
+      - Configurations
+      - Conflicting
+      - Continuous
+      - Controls
+      - Copy
+      - Deployments
+      - Describe
+      - Distributions
+      - Encryption
+      - Entities
+      - Fields
+      - Front
+      - Functions
+      - Groups
+      - Headers
+      - Identities
+      - Identity
+      - Invalidations
+      - Keys
+      - Levels
+      - Logs
+      - Monitoring
+      - Names
+      - Operations
+      - Origin
+      - Policies
+      - Primary
+      - Profiles
+      - Promote
+      - Public
+      - Publish
+      - Real Time
+      - Resources
+      - Responses
+      - Staging
+      - Store
+      - Stores
+      - Streaming
+      - Subscriptions
+      - Tagging
+      - Tags
+      - Targets
+      - Tests
+      - Untag
+      - Value
+      - Web
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudfront/
       - type: OpenAPI
         url: properties/cloudfront-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudfront/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudfront/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudfront/getting-started/
+      - type: Media
+        url: https://aws.amazon.com/cloudfront/media/
+      - type: Custoners
+        url: https://aws.amazon.com/cloudfront/customers/
+      - type: Partners
+        url: https://aws.amazon.com/cloudfront/partners/
+      - type: Resources
+        url: https://aws.amazon.com/cloudfront/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/cloudfront/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cloudfront-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cloudfront-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudfront
-  - name: AWS Clean Rooms Machine Learning
+  - name: AWS Clean Rooms ML
     description: >-
-      <p>Welcome to the <i>Amazon Web Services Clean Rooms ML API
-      Reference</i>.</p> <p>Amazon Web Services Clean Rooms ML provides a
-      privacy-enhancing method for two parties to identify similar users in
-      their data without the need to share their data with each other. The first
-      party brings the training data to Clean Rooms so that they can create and
-      configure an audience model (lookalike model) and associate it with a
-      collaboration. The second party then brings their seed data to Clean Rooms
-      and generates an audience (lookalike segment) that resembles the training
-      data.</p> <p>To learn more about Amazon Web Services Clean Rooms ML
-      concepts, procedures, and best practices, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/userguide/machine-learning.html">Clean
-      Rooms User Guide</a>.</p> <p>To learn more about SQL commands, functions,
-      and conditions supported in Clean Rooms, see the <a
-      href="https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html">Clean
-      Rooms SQL Reference</a>.</p>
+      Introducing the Amazon Web Services Clean Rooms ML API Reference, a
+      solution that offers a secure way for two parties to identify similar
+      users in their datasets without sharing their data. First, one party
+      provides training data to create and configure an audience model, which is
+      associated with a collaboration. Then, the second party brings their seed
+      data to generate an audience that closely resembles the training data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/clean-rooms/ml/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Audience
+      - Configured
+      - Datasets
+      - Exports
+      - Generation
+      - Jobs
+      - Models
+      - Policies
+      - Resources
+      - Tags
+      - Training
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/clean-rooms/ml/
       - type: OpenAPI
         url: properties/cleanroomsml-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/clean-rooms/ml/
+      - type: FAQ
+        url: https://aws.amazon.com/clean-rooms/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/clean-rooms/customers/
+      - type: Partners
+        url: https://aws.amazon.com/clean-rooms/partners/
+      - type: Pricing
+        url: https://aws.amazon.com/clean-rooms/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/clean-rooms/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/cleanroomsml-openapi-search.yml
@@ -1172,45 +1807,59 @@ apis:
     aid: amazon-web-services:cleanroomsml
   - name: AWS CloudHSM
     description: >-
-      <p>For more information about AWS CloudHSM, see <a
-      href="http://aws.amazon.com/cloudhsm/">AWS CloudHSM</a> and the <a
-      href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/">AWS CloudHSM
-      User Guide</a>.</p>
+      The AWS CloudHSM API provides a secure and compliant solution for managing
+      and accessing keys on FIPS-validated hardware. With customer-owned,
+      single-tenant HSM instances running in your Virtual Private Cloud (VPC),
+      you can easily meet corporate, contractual, and regulatory data security
+      requirements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudhsm/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudhsm/
       - type: OpenAPI
         url: properties/cloudhsmv2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudhsm/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudhsm/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudhsm/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/cloudhsm/resources/
+      - type: Customers
+        url: https://aws.amazon.com/cloudhsm/customers/
+      - type: FAQ
+        url: https://aws.amazon.com/cloudhsm/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cloudhsmv2-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/cloudhsmv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudhsmv2
-  - name: Amazon CloudSearch Configuration
+  - name: Amazon CloudSearch
     description: >-
-      <fullname>Amazon CloudSearch Configuration Service</fullname> <p>You use
-      the Amazon CloudSearch configuration service to create, configure, and
-      manage search domains. Configuration service requests are submitted using
-      the AWS Query protocol. AWS Query requests are HTTP or HTTPS requests
-      submitted via HTTP GET or POST with a query parameter named Action.</p>
-      <p>The endpoint for configuration service requests is region-specific:
-      cloudsearch.<i>region</i>.amazonaws.com. For example,
-      cloudsearch.us-east-1.amazonaws.com. For a current list of supported
-      regions and endpoints, see <a
-      href="http://docs.aws.amazon.com/general/latest/gr/rande.html#cloudsearch_region"
-      target="_blank">Regions and Endpoints</a>.</p>
+      Amazon CloudSearch, is a cloud-based service that simplifies the process
+      of setting up, managing, and expanding a search solution for your website.
+      It allows you to easily search through extensive datasets, including web
+      pages, documents, forum posts, and product information. With Amazon
+      CloudSearch, you can enhance your website with search functionality
+      without the need for extensive expertise or concerns about hardware
+      management. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/cloudsearch/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Policies
+      - Services
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/cloudsearch/
       - type: OpenAPI
         url: properties/cloudsearch-openapi-original.yml
     overlays:
@@ -1219,26 +1868,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/cloudsearch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cloudsearch
-  - name: CloudTrail Data Service
+  - name: AWS CloudTrail Data
     description: >-
-      <p>The CloudTrail Data Service lets you ingest events into CloudTrail from
-      any source in your hybrid environments, such as in-house or SaaS
-      applications hosted on-premises or in the cloud, virtual machines, or
-      containers. You can store, access, analyze, troubleshoot and take action
-      on this data without maintaining multiple log aggregators and reporting
-      tools. After you run <code>PutAuditEvents</code> to ingest your
-      application activity into CloudTrail, you can use CloudTrail Lake to
-      search, query, and analyze the data that is logged from your
-      applications.</p>
+      With AWS CloudTrail, you can monitor your AWS deployments in the cloud by
+      getting a history of AWS API calls for your account, including API calls
+      made by using the AWS Management Console, the AWS SDKs, the command line
+      tools, and higher-level AWS services. You can also identify which users
+      and accounts called AWS APIs for services that support CloudTrail, the
+      source IP address from which the calls were made, and when the calls
+      occurred. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/cloudtrail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Audit
+      - Events
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/cloudtrail/
       - type: OpenAPI
         url: properties/cloudtrail-data-openapi-original.yml
+      - type: User Guide
+        url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/index.html
+      - type: Partners
+        url: >-
+          https://docs.aws.amazon.com/awscloudtrail/latest/partner-onboarding/cloudtrail-lake-partner-onboarding.html
     overlays:
       - type: APIs.io Search
         url: overlays/cloudtrail-data-openapi-search.yml
@@ -1247,84 +1901,43 @@ apis:
     aid: amazon-web-services:cloudtrail-data
   - name: Amazon CodeCatalyst
     description: >-
-      <p>Welcome to the Amazon CodeCatalyst API reference. This reference
-      provides descriptions of operations and data types for Amazon
-      CodeCatalyst. You can use the Amazon CodeCatalyst API to work with the
-      following objects. </p> <p>Spaces, by calling the following:</p> <ul> <li>
-      <p> <a>DeleteSpace</a>, which deletes a space.</p> </li> <li> <p>
-      <a>GetSpace</a>, which returns information about a space.</p> </li> <li>
-      <p> <a>GetSubscription</a>, which returns information about the Amazon Web
-      Services account used for billing purposes and the billing plan for the
-      space.</p> </li> <li> <p> <a>ListSpaces</a>, which retrieves a list of
-      spaces.</p> </li> <li> <p> <a>UpdateSpace</a>, which changes one or more
-      values for a space.</p> </li> </ul> <p>Projects, by calling the
-      following:</p> <ul> <li> <p> <a>CreateProject</a> which creates a project
-      in a specified space.</p> </li> <li> <p> <a>GetProject</a>, which returns
-      information about a project.</p> </li> <li> <p> <a>ListProjects</a>, which
-      retrieves a list of projects in a space.</p> </li> </ul> <p>Users, by
-      calling the following:</p> <ul> <li> <p> <a>GetUserDetails</a>, which
-      returns information about a user in Amazon CodeCatalyst.</p> </li> </ul>
-      <p>Source repositories, by calling the following:</p> <ul> <li> <p>
-      <a>CreateSourceRepository</a>, which creates an empty Git-based source
-      repository in a specified project.</p> </li> <li> <p>
-      <a>CreateSourceRepositoryBranch</a>, which creates a branch in a specified
-      repository where you can work on code.</p> </li> <li> <p>
-      <a>DeleteSourceRepository</a>, which deletes a source repository.</p>
-      </li> <li> <p> <a>GetSourceRepository</a>, which returns information about
-      a source repository.</p> </li> <li> <p>
-      <a>GetSourceRepositoryCloneUrls</a>, which returns information about the
-      URLs that can be used with a Git client to clone a source repository.</p>
-      </li> <li> <p> <a>ListSourceRepositories</a>, which retrieves a list of
-      source repositories in a project.</p> </li> <li> <p>
-      <a>ListSourceRepositoryBranches</a>, which retrieves a list of branches in
-      a source repository.</p> </li> </ul> <p>Dev Environments and the Amazon
-      Web Services Toolkits, by calling the following:</p> <ul> <li> <p>
-      <a>CreateDevEnvironment</a>, which creates a Dev Environment, where you
-      can quickly work on the code stored in the source repositories of your
-      project.</p> </li> <li> <p> <a>DeleteDevEnvironment</a>, which deletes a
-      Dev Environment.</p> </li> <li> <p> <a>GetDevEnvironment</a>, which
-      returns information about a Dev Environment.</p> </li> <li> <p>
-      <a>ListDevEnvironments</a>, which retrieves a list of Dev Environments in
-      a project.</p> </li> <li> <p> <a>ListDevEnvironmentSessions</a>, which
-      retrieves a list of active Dev Environment sessions in a project.</p>
-      </li> <li> <p> <a>StartDevEnvironment</a>, which starts a specified Dev
-      Environment and puts it into an active state.</p> </li> <li> <p>
-      <a>StartDevEnvironmentSession</a>, which starts a session to a specified
-      Dev Environment.</p> </li> <li> <p> <a>StopDevEnvironment</a>, which stops
-      a specified Dev Environment and puts it into an stopped state.</p> </li>
-      <li> <p> <a>StopDevEnvironmentSession</a>, which stops a session for a
-      specified Dev Environment.</p> </li> <li> <p> <a>UpdateDevEnvironment</a>,
-      which changes one or more values for a Dev Environment.</p> </li> </ul>
-      <p>Workflows, by calling the following:</p> <ul> <li> <p>
-      <a>GetWorkflow</a>, which returns information about a workflow.</p> </li>
-      <li> <p> <a>GetWorkflowRun</a>, which returns information about a
-      specified run of a workflow.</p> </li> <li> <p> <a>ListWorkflowRuns</a>,
-      which retrieves a list of runs of a specified workflow.</p> </li> <li> <p>
-      <a>ListWorkflows</a>, which retrieves a list of workflows in a specified
-      project.</p> </li> <li> <p> <a>StartWorkflowRun</a>, which starts a run of
-      a specified workflow.</p> </li> </ul> <p>Security, activity, and resource
-      management in Amazon CodeCatalyst, by calling the following:</p> <ul> <li>
-      <p> <a>CreateAccessToken</a>, which creates a personal access token (PAT)
-      for the current user.</p> </li> <li> <p> <a>DeleteAccessToken</a>, which
-      deletes a specified personal access token (PAT).</p> </li> <li> <p>
-      <a>ListAccessTokens</a>, which lists all personal access tokens (PATs)
-      associated with a user.</p> </li> <li> <p> <a>ListEventLogs</a>, which
-      retrieves a list of events that occurred during a specified time period in
-      a space.</p> </li> <li> <p> <a>VerifySession</a>, which verifies whether
-      the calling user has a valid Amazon CodeCatalyst login and session.</p>
-      </li> </ul> <note> <p>If you are using the Amazon CodeCatalyst APIs with
-      an SDK or the CLI, you must configure your computer to work with Amazon
-      CodeCatalyst and single sign-on (SSO). For more information, see <a
-      href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/set-up-cli.html">Setting
-      up to use the CLI with Amazon CodeCatalyst</a> and the SSO documentation
-      for your SDK.</p> </note>
+      Amazon CodeCatalyst is a unified software development service for
+      development teams to quickly build, deliver and scale applications on AWS
+      while adhering to organization-specific best practices. Developers can
+      automate development tasks and innovate faster with generative AI
+      capabilities, and spend less time setting up project tools, managing CI/CD
+      pipelines, provisioning and configuring various development environments
+      or coordinating with team members.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codecatalyst/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Branch
+      - Branches
+      - Clone
+      - Details
+      - Environments
+      - Events
+      - Logs
+      - Names
+      - Projects
+      - Repositories
+      - Runs
+      - Sessions
+      - Sources
+      - Space
+      - Spaces
+      - Stop
+      - Subscriptions
+      - Tokens
+      - URL
+      - Users
+      - Verify
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codecatalyst/
       - type: OpenAPI
         url: properties/codecatalyst-openapi-original.yml
     overlays:
@@ -1334,28 +1947,36 @@ apis:
         url: overlays/codecatalyst-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:codecatalyst
   - name: AWS CodeBuild
-    description: >-
-      <fullname>CodeBuild</fullname> <p>CodeBuild is a fully managed build
-      service in the cloud. CodeBuild compiles your source code, runs unit
-      tests, and produces artifacts that are ready to deploy. CodeBuild
-      eliminates the need to provision, manage, and scale your own build
-      servers. It provides prepackaged build environments for the most popular
-      programming languages and build tools, such as Apache Maven, Gradle, and
-      more. You can also fully customize build environments in CodeBuild to use
-      your own build tools. CodeBuild scales automatically to meet peak build
-      requests. You pay only for the build time you consume. For more
-      information about CodeBuild, see the <i> <a
-      href="https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html">CodeBuild
-      User Guide</a>.</i> </p>
+    description: >+
+      AWS CodeBuild is a fully managed continuous integration service that
+      compiles source code, runs tests, and produces ready-to-deploy software
+      packages. With CodeBuild, you don’t need to provision, manage, and scale
+      your own build servers. You just specify the location of your source code
+      and choose your build settings, and CodeBuild will run your build scripts
+      for compiling, testing, and packaging your code.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codebuild/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Webhooks
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codebuild/
       - type: OpenAPI
         url: properties/codebuild-openapi-original.yml
+      - type: Testimonials
+        url: https://aws.amazon.com/codebuild/customer-testimonials/
+      - type: Integrations
+        url: https://aws.amazon.com/codebuild/product-integrations/
+      - type: FAQ
+        url: https://aws.amazon.com/codebuild/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/codebuild/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/codebuild/pricing/
+      - type: Features
+        url: https://aws.amazon.com/codebuild/features/
     overlays:
       - type: APIs.io Search
         url: overlays/codebuild-openapi-search.yml
@@ -1364,31 +1985,38 @@ apis:
     aid: amazon-web-services:codebuild
   - name: Amazon CodeGuru Reviewer
     description: >-
-      <p>This section provides documentation for the Amazon CodeGuru Reviewer
-      API operations. CodeGuru Reviewer is a service that uses program analysis
-      and machine learning to detect potential defects that are difficult for
-      developers to find and recommends fixes in your Java and Python code.</p>
-      <p>By proactively detecting and providing recommendations for addressing
-      code defects and implementing best practices, CodeGuru Reviewer improves
-      the overall quality and maintainability of your code base during the code
-      review stage. For more information about CodeGuru Reviewer, see the <i> <a
-      href="https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/welcome.html">Amazon
-      CodeGuru Reviewer User Guide</a>.</i> </p> <p>To improve the security of
-      your CodeGuru Reviewer API calls, you can establish a private connection
-      between your VPC and CodeGuru Reviewer by creating an <i>interface VPC
-      endpoint</i>. For more information, see <a
-      href="https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/vpc-interface-endpoints.html">CodeGuru
-      Reviewer and interface VPC endpoints (Amazon Web Services PrivateLink)</a>
-      in the <i>Amazon CodeGuru Reviewer User Guide</i>.</p>
+      Amazon CodeGuru Reviewer is a service that uses program analysis and
+      machine learning to detect potential defects that are difficult for
+      developers to find and offers suggestions for improving your Java and
+      Python code. This service has been released for general availability in
+      several Regions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/index.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Associations
+      - Code
+      - Code Reviews
+      - Describe
+      - Disassociate
+      - Feedback
+      - Recommendations
+      - Repositories
+      - Resources
+      - Reviews
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/index.html
       - type: OpenAPI
         url: properties/codeguru-reviewer-openapi-original.yml
+      - type: User Guide
+        url: https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/index.html
+      - type: CLI
+        url: >-
+          https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeguru-reviewer/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/codeguru-reviewer-openapi-search.yml
@@ -1397,154 +2025,44 @@ apis:
     aid: amazon-web-services:codeguru-reviewer
   - name: AWS CodeArtifact
     description: >-
-      <p> CodeArtifact is a fully managed artifact repository compatible with
-      language-native package managers and build tools such as npm, Apache
-      Maven, pip, and dotnet. You can use CodeArtifact to share packages with
-      development teams and pull packages. Packages can be pulled from both
-      public and CodeArtifact repositories. You can also create an upstream
-      relationship between a CodeArtifact repository and another repository,
-      which effectively merges their contents from the point of view of a
-      package manager client. </p> <p> <b>CodeArtifact Components</b> </p>
-      <p>Use the information in this guide to help you work with the following
-      CodeArtifact components:</p> <ul> <li> <p> <b>Repository</b>: A
-      CodeArtifact repository contains a set of <a
-      href="https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html#welcome-concepts-package-version">package
-      versions</a>, each of which maps to a set of assets, or files.
-      Repositories are polyglot, so a single repository can contain packages of
-      any supported type. Each repository exposes endpoints for fetching and
-      publishing packages using tools like the <b> <code>npm</code> </b> CLI,
-      the Maven CLI (<b> <code>mvn</code> </b>), Python CLIs (<b>
-      <code>pip</code> </b> and <code>twine</code>), and NuGet CLIs
-      (<code>nuget</code> and <code>dotnet</code>).</p> </li> <li> <p>
-      <b>Domain</b>: Repositories are aggregated into a higher-level entity
-      known as a <i>domain</i>. All package assets and metadata are stored in
-      the domain, but are consumed through repositories. A given package asset,
-      such as a Maven JAR file, is stored once per domain, no matter how many
-      repositories it's present in. All of the assets and metadata in a domain
-      are encrypted with the same customer master key (CMK) stored in Key
-      Management Service (KMS).</p> <p>Each repository is a member of a single
-      domain and can't be moved to a different domain.</p> <p>The domain allows
-      organizational policy to be applied across multiple repositories, such as
-      which accounts can access repositories in the domain, and which public
-      repositories can be used as sources of packages.</p> <p>Although an
-      organization can have multiple domains, we recommend a single production
-      domain that contains all published artifacts so that teams can find and
-      share packages across their organization.</p> </li> <li> <p>
-      <b>Package</b>: A <i>package</i> is a bundle of software and the metadata
-      required to resolve dependencies and install the software. CodeArtifact
-      supports <a
-      href="https://docs.aws.amazon.com/codeartifact/latest/ug/using-npm.html">npm</a>,
-      <a
-      href="https://docs.aws.amazon.com/codeartifact/latest/ug/using-python.html">PyPI</a>,
-      <a
-      href="https://docs.aws.amazon.com/codeartifact/latest/ug/using-maven">Maven</a>,
-      and <a
-      href="https://docs.aws.amazon.com/codeartifact/latest/ug/using-nuget">NuGet</a>
-      package formats.</p> <p>In CodeArtifact, a package consists of:</p> <ul>
-      <li> <p>A <i>name</i> (for example, <code>webpack</code> is the name of a
-      popular npm package)</p> </li> <li> <p>An optional namespace (for example,
-      <code>@types</code> in <code>@types/node</code>)</p> </li> <li> <p>A set
-      of versions (for example, <code>1.0.0</code>, <code>1.0.1</code>,
-      <code>1.0.2</code>, etc.)</p> </li> <li> <p> Package-level metadata (for
-      example, npm tags)</p> </li> </ul> </li> <li> <p> <b>Package version</b>:
-      A version of a package, such as <code>@types/node 12.6.9</code>. The
-      version number format and semantics vary for different package formats.
-      For example, npm package versions must conform to the <a
-      href="https://semver.org/">Semantic Versioning specification</a>. In
-      CodeArtifact, a package version consists of the version identifier,
-      metadata at the package version level, and a set of assets.</p> </li> <li>
-      <p> <b>Upstream repository</b>: One repository is <i>upstream</i> of
-      another when the package versions in it can be accessed from the
-      repository endpoint of the downstream repository, effectively merging the
-      contents of the two repositories from the point of view of a client.
-      CodeArtifact allows creating an upstream relationship between two
-      repositories.</p> </li> <li> <p> <b>Asset</b>: An individual file stored
-      in CodeArtifact associated with a package version, such as an npm
-      <code>.tgz</code> file or Maven POM and JAR files.</p> </li> </ul>
-      <p>CodeArtifact supports these operations:</p> <ul> <li> <p>
-      <code>AssociateExternalConnection</code>: Adds an existing external
-      connection to a repository. </p> </li> <li> <p>
-      <code>CopyPackageVersions</code>: Copies package versions from one
-      repository to another repository in the same domain.</p> </li> <li> <p>
-      <code>CreateDomain</code>: Creates a domain</p> </li> <li> <p>
-      <code>CreateRepository</code>: Creates a CodeArtifact repository in a
-      domain. </p> </li> <li> <p> <code>DeleteDomain</code>: Deletes a domain.
-      You cannot delete a domain that contains repositories. </p> </li> <li> <p>
-      <code>DeleteDomainPermissionsPolicy</code>: Deletes the resource policy
-      that is set on a domain.</p> </li> <li> <p> <code>DeletePackage</code>:
-      Deletes a package and all associated package versions.</p> </li> <li> <p>
-      <code>DeletePackageVersions</code>: Deletes versions of a package. After a
-      package has been deleted, it can be republished, but its assets and
-      metadata cannot be restored because they have been permanently removed
-      from storage.</p> </li> <li> <p> <code>DeleteRepository</code>: Deletes a
-      repository. </p> </li> <li> <p>
-      <code>DeleteRepositoryPermissionsPolicy</code>: Deletes the resource
-      policy that is set on a repository.</p> </li> <li> <p>
-      <code>DescribeDomain</code>: Returns a <code>DomainDescription</code>
-      object that contains information about the requested domain.</p> </li>
-      <li> <p> <code>DescribePackage</code>: Returns a <a
-      href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageDescription.html">PackageDescription</a>
-      object that contains details about a package. </p> </li> <li> <p>
-      <code>DescribePackageVersion</code>: Returns a <a
-      href="https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html">PackageVersionDescription</a>
-      object that contains details about a package version. </p> </li> <li> <p>
-      <code>DescribeRepository</code>: Returns a
-      <code>RepositoryDescription</code> object that contains detailed
-      information about the requested repository. </p> </li> <li> <p>
-      <code>DisposePackageVersions</code>: Disposes versions of a package. A
-      package version with the status <code>Disposed</code> cannot be restored
-      because they have been permanently removed from storage.</p> </li> <li>
-      <p> <code>DisassociateExternalConnection</code>: Removes an existing
-      external connection from a repository. </p> </li> <li> <p>
-      <code>GetAuthorizationToken</code>: Generates a temporary authorization
-      token for accessing repositories in the domain. The token expires the
-      authorization period has passed. The default authorization period is 12
-      hours and can be customized to any length with a maximum of 12 hours.</p>
-      </li> <li> <p> <code>GetDomainPermissionsPolicy</code>: Returns the policy
-      of a resource that is attached to the specified domain. </p> </li> <li>
-      <p> <code>GetPackageVersionAsset</code>: Returns the contents of an asset
-      that is in a package version. </p> </li> <li> <p>
-      <code>GetPackageVersionReadme</code>: Gets the readme file or descriptive
-      text for a package version.</p> </li> <li> <p>
-      <code>GetRepositoryEndpoint</code>: Returns the endpoint of a repository
-      for a specific package format. A repository has one endpoint for each
-      package format: </p> <ul> <li> <p> <code>maven</code> </p> </li> <li> <p>
-      <code>npm</code> </p> </li> <li> <p> <code>nuget</code> </p> </li> <li>
-      <p> <code>pypi</code> </p> </li> </ul> </li> <li> <p>
-      <code>GetRepositoryPermissionsPolicy</code>: Returns the resource policy
-      that is set on a repository. </p> </li> <li> <p> <code>ListDomains</code>:
-      Returns a list of <code>DomainSummary</code> objects. Each returned
-      <code>DomainSummary</code> object contains information about a domain.</p>
-      </li> <li> <p> <code>ListPackages</code>: Lists the packages in a
-      repository.</p> </li> <li> <p> <code>ListPackageVersionAssets</code>:
-      Lists the assets for a given package version.</p> </li> <li> <p>
-      <code>ListPackageVersionDependencies</code>: Returns a list of the direct
-      dependencies for a package version. </p> </li> <li> <p>
-      <code>ListPackageVersions</code>: Returns a list of package versions for a
-      specified package in a repository.</p> </li> <li> <p>
-      <code>ListRepositories</code>: Returns a list of repositories owned by the
-      Amazon Web Services account that called this method.</p> </li> <li> <p>
-      <code>ListRepositoriesInDomain</code>: Returns a list of the repositories
-      in a domain.</p> </li> <li> <p> <code>PublishPackageVersion</code>:
-      Creates a new package version containing one or more assets.</p> </li>
-      <li> <p> <code>PutDomainPermissionsPolicy</code>: Attaches a resource
-      policy to a domain.</p> </li> <li> <p>
-      <code>PutPackageOriginConfiguration</code>: Sets the package origin
-      configuration for a package, which determine how new versions of the
-      package can be added to a specific repository.</p> </li> <li> <p>
-      <code>PutRepositoryPermissionsPolicy</code>: Sets the resource policy on a
-      repository that specifies permissions to access it. </p> </li> <li> <p>
-      <code>UpdatePackageVersionsStatus</code>: Updates the status of one or
-      more versions of a package.</p> </li> <li> <p>
-      <code>UpdateRepository</code>: Updates the properties of a repository.</p>
-      </li> </ul>
+      CodeArtifact is a managed artifact repository that supports various
+      language-native package managers and build tools like npm, Apache Maven,
+      pip, and dotnet. It allows teams to share and pull packages from both
+      public and CodeArtifact repositories. Additionally, CodeArtifact enables
+      the creation of upstream relationships between repositories, effectively
+      combining their contents for package manager clients.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codeartifact/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Assets
+      - Authorization
+      - Configurations
+      - Connections
+      - Copy
+      - Dependencies
+      - Describe
+      - Disassociate
+      - Dispose
+      - Domains
+      - Endpoints
+      - External
+      - Origin
+      - Packages
+      - Permissions
+      - Policies
+      - Publish
+      - Readme
+      - Repositories
+      - Resources
+      - Status
+      - Tags
+      - Tokens
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codeartifact/
       - type: OpenAPI
         url: properties/codeartifact-openapi-original.yml
     overlays:
@@ -1555,35 +2073,33 @@ apis:
     aid: amazon-web-services:codeartifact
   - name: AWS CloudTrail
     description: >-
-      <fullname>CloudTrail</fullname> <p>This is the CloudTrail API Reference.
-      It provides descriptions of actions, data types, common parameters, and
-      common errors for CloudTrail.</p> <p>CloudTrail is a web service that
-      records Amazon Web Services API calls for your Amazon Web Services account
-      and delivers log files to an Amazon S3 bucket. The recorded information
-      includes the identity of the user, the start time of the Amazon Web
-      Services API call, the source IP address, the request parameters, and the
-      response elements returned by the service.</p> <note> <p>As an alternative
-      to the API, you can use one of the Amazon Web Services SDKs, which consist
-      of libraries and sample code for various programming languages and
-      platforms (Java, Ruby, .NET, iOS, Android, etc.). The SDKs provide
-      programmatic access to CloudTrail. For example, the SDKs handle
-      cryptographically signing requests, managing errors, and retrying requests
-      automatically. For more information about the Amazon Web Services SDKs,
-      including how to download and install them, see <a
-      href="http://aws.amazon.com/tools/">Tools to Build on Amazon Web
-      Services</a>.</p> </note> <p>See the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html">CloudTrail
-      User Guide</a> for information about the data that is included with each
-      Amazon Web Services API call listed in the log files.</p>
+      The CloudTrail API Reference provides detailed information on actions,
+      data types, parameters, and errors for CloudTrail, a web service that
+      records Amazon Web Services API calls and stores log files in an Amazon S3
+      bucket. The recorded information includes user identity, API call start
+      time, source IP address, request parameters, and response elements. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudtrail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Trails
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudtrail/
       - type: OpenAPI
         url: properties/cloudtrail-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudtrail/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudtrail/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudtrail/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/cloudtrail/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/cloudtrail/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/cloudtrail/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/cloudtrail-openapi-search.yml
@@ -1592,75 +2108,34 @@ apis:
     aid: amazon-web-services:cloudtrail
   - name: AWS CodeDeploy
     description: >-
-      <p>CodeDeploy is a deployment service that automates application
-      deployments to Amazon EC2 instances, on-premises instances running in your
-      own facility, serverless Lambda functions, or applications in an Amazon
-      ECS service.</p> <p>You can deploy a nearly unlimited variety of
-      application content, such as an updated Lambda function, updated
-      applications in an Amazon ECS service, code, web and configuration files,
-      executables, packages, scripts, multimedia files, and so on. CodeDeploy
-      can deploy application content stored in Amazon S3 buckets, GitHub
-      repositories, or Bitbucket repositories. You do not need to make changes
-      to your existing code before you can use CodeDeploy.</p> <p>CodeDeploy
-      makes it easier for you to rapidly release new features, helps you avoid
-      downtime during application deployment, and handles the complexity of
-      updating your applications, without many of the risks associated with
-      error-prone manual deployments.</p> <p> <b>CodeDeploy Components</b> </p>
-      <p>Use the information in this guide to help you work with the following
-      CodeDeploy components:</p> <ul> <li> <p> <b>Application</b>: A name that
-      uniquely identifies the application you want to deploy. CodeDeploy uses
-      this name, which functions as a container, to ensure the correct
-      combination of revision, deployment configuration, and deployment group
-      are referenced during a deployment.</p> </li> <li> <p> <b>Deployment
-      group</b>: A set of individual instances, CodeDeploy Lambda deployment
-      configuration settings, or an Amazon ECS service and network details. A
-      Lambda deployment group specifies how to route traffic to a new version of
-      a Lambda function. An Amazon ECS deployment group specifies the service
-      created in Amazon ECS to deploy, a load balancer, and a listener to
-      reroute production traffic to an updated containerized application. An
-      Amazon EC2/On-premises deployment group contains individually tagged
-      instances, Amazon EC2 instances in Amazon EC2 Auto Scaling groups, or
-      both. All deployment groups can specify optional trigger, alarm, and
-      rollback settings.</p> </li> <li> <p> <b>Deployment configuration</b>: A
-      set of deployment rules and deployment success and failure conditions used
-      by CodeDeploy during a deployment.</p> </li> <li> <p> <b>Deployment</b>:
-      The process and the components used when updating a Lambda function, a
-      containerized application in an Amazon ECS service, or of installing
-      content on one or more instances. </p> </li> <li> <p> <b>Application
-      revisions</b>: For an Lambda deployment, this is an AppSpec file that
-      specifies the Lambda function to be updated and one or more functions to
-      validate deployment lifecycle events. For an Amazon ECS deployment, this
-      is an AppSpec file that specifies the Amazon ECS task definition,
-      container, and port where production traffic is rerouted. For an
-      EC2/On-premises deployment, this is an archive file that contains source
-      content—source code, webpages, executable files, and deployment
-      scripts—along with an AppSpec file. Revisions are stored in Amazon S3
-      buckets or GitHub repositories. For Amazon S3, a revision is uniquely
-      identified by its Amazon S3 object key and its ETag, version, or both. For
-      GitHub, a revision is uniquely identified by its commit ID.</p> </li>
-      </ul> <p>This guide also contains information to help you get details
-      about the instances in your deployments, to make on-premises instances
-      available for CodeDeploy deployments, to get details about a Lambda
-      function deployment, and to get details about Amazon ECS service
-      deployments.</p> <p> <b>CodeDeploy Information Resources</b> </p> <ul>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/codedeploy/latest/userguide">CodeDeploy
-      User Guide</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/codedeploy/latest/APIReference/">CodeDeploy
-      API Reference Guide</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/deploy/index.html">CLI
-      Reference for CodeDeploy</a> </p> </li> <li> <p> <a
-      href="https://forums.aws.amazon.com/forum.jspa?forumID=179">CodeDeploy
-      Developer Forum</a> </p> </li> </ul>
+      AWS CodeDeploy is a deployment service that effortlessly automates
+      software deployments to a range of compute services including Amazon EC2,
+      ECS, AWS Lambda, and on-premises servers. By utilizing CodeDeploy, you can
+      streamline software deployments, reducing the risk of errors associated
+      with manual operations.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codedeploy/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Deployments
+      - Group
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codedeploy/
       - type: OpenAPI
         url: properties/codedeploy-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/codedeploy/features/
+      - type: Pricing
+        url: https://aws.amazon.com/codedeploy/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/codedeploy/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/codedeploy/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/codedeploy/faqs/
+      - type: Integrations
+        url: https://aws.amazon.com/codedeploy/product-integrations/
     overlays:
       - type: APIs.io Search
         url: overlays/codedeploy-openapi-search.yml
@@ -1669,26 +2144,41 @@ apis:
     aid: amazon-web-services:codedeploy
   - name: Amazon CodeGuru Security
     description: >-
-      <note> <p>Amazon CodeGuru Security is in preview release and is subject to
-      change.</p> </note> <p>This section provides documentation for the Amazon
-      CodeGuru Security API operations. CodeGuru Security is a service that uses
-      program analysis and machine learning to detect security policy violations
-      and vulnerabilities, and recommends ways to address these security
-      risks.</p> <p>By proactively detecting and providing recommendations for
-      addressing security risks, CodeGuru Security improves the overall security
-      of your application code. For more information about CodeGuru Security,
-      see the <a
-      href="https://docs.aws.amazon.com/codeguru/latest/security-ug/what-is-codeguru-security.html">Amazon
-      CodeGuru Security User Guide</a>. </p>
+      Amazon CodeGuru Security is a static application security tool that uses
+      machine learning to detect security policy violations and vulnerabilities.
+      It provides suggestions for addressing security risks and generates
+      metrics so you can track the security posture of your applications.
+      CodeGuru Security’s policies, which are informed by years of Amazon.com
+      and AWS security best practices, help you to create and deploy secure,
+      high-quality applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/codeguru/latest/security-api/index.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Batches
+      - Configurations
+      - Findings
+      - Metrics
+      - Names
+      - Resources
+      - Scans
+      - Summaries
+      - Tags
+      - URL
+      - Untag
+      - Uploads
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/codeguru/latest/security-api/index.html
       - type: OpenAPI
         url: properties/codeguru-security-openapi-original.yml
+      - type: User Guide
+        url: https://docs.aws.amazon.com/codeguru/latest/security-ug/index.html
+      - type: CLI
+        url: >-
+          https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeguru-security/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/codeguru-security-openapi-search.yml
@@ -1697,193 +2187,32 @@ apis:
     aid: amazon-web-services:codeguru-security
   - name: AWS CodeCommit
     description: >-
-      <fullname>CodeCommit</fullname> <p>This is the <i>CodeCommit API
-      Reference</i>. This reference provides descriptions of the operations and
-      data types for CodeCommit API along with usage examples.</p> <p>You can
-      use the CodeCommit API to work with the following objects:</p>
-      <p>Repositories, by calling the following:</p> <ul> <li> <p>
-      <a>BatchGetRepositories</a>, which returns information about one or more
-      repositories associated with your Amazon Web Services account.</p> </li>
-      <li> <p> <a>CreateRepository</a>, which creates an CodeCommit
-      repository.</p> </li> <li> <p> <a>DeleteRepository</a>, which deletes an
-      CodeCommit repository.</p> </li> <li> <p> <a>GetRepository</a>, which
-      returns information about a specified repository.</p> </li> <li> <p>
-      <a>ListRepositories</a>, which lists all CodeCommit repositories
-      associated with your Amazon Web Services account.</p> </li> <li> <p>
-      <a>UpdateRepositoryDescription</a>, which sets or updates the description
-      of the repository.</p> </li> <li> <p>
-      <a>UpdateRepositoryEncryptionKey</a>, which updates the Key Management
-      Service encryption key used to encrypt and decrypt a repository.</p> </li>
-      <li> <p> <a>UpdateRepositoryName</a>, which changes the name of the
-      repository. If you change the name of a repository, no other users of that
-      repository can access it until you send them the new HTTPS or SSH URL to
-      use.</p> </li> </ul> <p>Branches, by calling the following:</p> <ul> <li>
-      <p> <a>CreateBranch</a>, which creates a branch in a specified
-      repository.</p> </li> <li> <p> <a>DeleteBranch</a>, which deletes the
-      specified branch in a repository unless it is the default branch.</p>
-      </li> <li> <p> <a>GetBranch</a>, which returns information about a
-      specified branch.</p> </li> <li> <p> <a>ListBranches</a>, which lists all
-      branches for a specified repository.</p> </li> <li> <p>
-      <a>UpdateDefaultBranch</a>, which changes the default branch for a
-      repository.</p> </li> </ul> <p>Files, by calling the following:</p> <ul>
-      <li> <p> <a>DeleteFile</a>, which deletes the content of a specified file
-      from a specified branch.</p> </li> <li> <p> <a>GetBlob</a>, which returns
-      the base-64 encoded content of an individual Git blob object in a
-      repository.</p> </li> <li> <p> <a>GetFile</a>, which returns the base-64
-      encoded content of a specified file.</p> </li> <li> <p> <a>GetFolder</a>,
-      which returns the contents of a specified folder or directory.</p> </li>
-      <li> <p> <a>ListFileCommitHistory</a>, which retrieves a list of commits
-      and changes to a specified file. </p> </li> <li> <p> <a>PutFile</a>, which
-      adds or modifies a single file in a specified repository and branch.</p>
-      </li> </ul> <p>Commits, by calling the following:</p> <ul> <li> <p>
-      <a>BatchGetCommits</a>, which returns information about one or more
-      commits in a repository.</p> </li> <li> <p> <a>CreateCommit</a>, which
-      creates a commit for changes to a repository.</p> </li> <li> <p>
-      <a>GetCommit</a>, which returns information about a commit, including
-      commit messages and author and committer information.</p> </li> <li> <p>
-      <a>GetDifferences</a>, which returns information about the differences in
-      a valid commit specifier (such as a branch, tag, HEAD, commit ID, or other
-      fully qualified reference).</p> </li> </ul> <p>Merges, by calling the
-      following:</p> <ul> <li> <p> <a>BatchDescribeMergeConflicts</a>, which
-      returns information about conflicts in a merge between commits in a
-      repository.</p> </li> <li> <p> <a>CreateUnreferencedMergeCommit</a>, which
-      creates an unreferenced commit between two branches or commits for the
-      purpose of comparing them and identifying any potential conflicts.</p>
-      </li> <li> <p> <a>DescribeMergeConflicts</a>, which returns information
-      about merge conflicts between the base, source, and destination versions
-      of a file in a potential merge.</p> </li> <li> <p> <a>GetMergeCommit</a>,
-      which returns information about the merge between a source and destination
-      commit. </p> </li> <li> <p> <a>GetMergeConflicts</a>, which returns
-      information about merge conflicts between the source and destination
-      branch in a pull request.</p> </li> <li> <p> <a>GetMergeOptions</a>, which
-      returns information about the available merge options between two branches
-      or commit specifiers.</p> </li> <li> <p>
-      <a>MergeBranchesByFastForward</a>, which merges two branches using the
-      fast-forward merge option.</p> </li> <li> <p>
-      <a>MergeBranchesBySquash</a>, which merges two branches using the squash
-      merge option.</p> </li> <li> <p> <a>MergeBranchesByThreeWay</a>, which
-      merges two branches using the three-way merge option.</p> </li> </ul>
-      <p>Pull requests, by calling the following:</p> <ul> <li> <p>
-      <a>CreatePullRequest</a>, which creates a pull request in a specified
-      repository.</p> </li> <li> <p> <a>CreatePullRequestApprovalRule</a>, which
-      creates an approval rule for a specified pull request.</p> </li> <li> <p>
-      <a>DeletePullRequestApprovalRule</a>, which deletes an approval rule for a
-      specified pull request.</p> </li> <li> <p>
-      <a>DescribePullRequestEvents</a>, which returns information about one or
-      more pull request events.</p> </li> <li> <p>
-      <a>EvaluatePullRequestApprovalRules</a>, which evaluates whether a pull
-      request has met all the conditions specified in its associated approval
-      rules.</p> </li> <li> <p> <a>GetCommentsForPullRequest</a>, which returns
-      information about comments on a specified pull request.</p> </li> <li> <p>
-      <a>GetPullRequest</a>, which returns information about a specified pull
-      request.</p> </li> <li> <p> <a>GetPullRequestApprovalStates</a>, which
-      returns information about the approval states for a specified pull
-      request.</p> </li> <li> <p> <a>GetPullRequestOverrideState</a>, which
-      returns information about whether approval rules have been set aside
-      (overriden) for a pull request, and if so, the Amazon Resource Name (ARN)
-      of the user or identity that overrode the rules and their requirements for
-      the pull request.</p> </li> <li> <p> <a>ListPullRequests</a>, which lists
-      all pull requests for a repository.</p> </li> <li> <p>
-      <a>MergePullRequestByFastForward</a>, which merges the source destination
-      branch of a pull request into the specified destination branch for that
-      pull request using the fast-forward merge option.</p> </li> <li> <p>
-      <a>MergePullRequestBySquash</a>, which merges the source destination
-      branch of a pull request into the specified destination branch for that
-      pull request using the squash merge option.</p> </li> <li> <p>
-      <a>MergePullRequestByThreeWay</a>, which merges the source destination
-      branch of a pull request into the specified destination branch for that
-      pull request using the three-way merge option.</p> </li> <li> <p>
-      <a>OverridePullRequestApprovalRules</a>, which sets aside all approval
-      rule requirements for a pull request.</p> </li> <li> <p>
-      <a>PostCommentForPullRequest</a>, which posts a comment to a pull request
-      at the specified line, file, or request.</p> </li> <li> <p>
-      <a>UpdatePullRequestApprovalRuleContent</a>, which updates the structure
-      of an approval rule for a pull request.</p> </li> <li> <p>
-      <a>UpdatePullRequestApprovalState</a>, which updates the state of an
-      approval on a pull request.</p> </li> <li> <p>
-      <a>UpdatePullRequestDescription</a>, which updates the description of a
-      pull request.</p> </li> <li> <p> <a>UpdatePullRequestStatus</a>, which
-      updates the status of a pull request.</p> </li> <li> <p>
-      <a>UpdatePullRequestTitle</a>, which updates the title of a pull
-      request.</p> </li> </ul> <p>Approval rule templates, by calling the
-      following:</p> <ul> <li> <p>
-      <a>AssociateApprovalRuleTemplateWithRepository</a>, which associates a
-      template with a specified repository. After the template is associated
-      with a repository, CodeCommit creates approval rules that match the
-      template conditions on every pull request created in the specified
-      repository.</p> </li> <li> <p>
-      <a>BatchAssociateApprovalRuleTemplateWithRepositories</a>, which
-      associates a template with one or more specified repositories. After the
-      template is associated with a repository, CodeCommit creates approval
-      rules that match the template conditions on every pull request created in
-      the specified repositories.</p> </li> <li> <p>
-      <a>BatchDisassociateApprovalRuleTemplateFromRepositories</a>, which
-      removes the association between a template and specified repositories so
-      that approval rules based on the template are not automatically created
-      when pull requests are created in those repositories.</p> </li> <li> <p>
-      <a>CreateApprovalRuleTemplate</a>, which creates a template for approval
-      rules that can then be associated with one or more repositories in your
-      Amazon Web Services account.</p> </li> <li> <p>
-      <a>DeleteApprovalRuleTemplate</a>, which deletes the specified template.
-      It does not remove approval rules on pull requests already created with
-      the template.</p> </li> <li> <p>
-      <a>DisassociateApprovalRuleTemplateFromRepository</a>, which removes the
-      association between a template and a repository so that approval rules
-      based on the template are not automatically created when pull requests are
-      created in the specified repository.</p> </li> <li> <p>
-      <a>GetApprovalRuleTemplate</a>, which returns information about an
-      approval rule template.</p> </li> <li> <p>
-      <a>ListApprovalRuleTemplates</a>, which lists all approval rule templates
-      in the Amazon Web Services Region in your Amazon Web Services account.</p>
-      </li> <li> <p> <a>ListAssociatedApprovalRuleTemplatesForRepository</a>,
-      which lists all approval rule templates that are associated with a
-      specified repository.</p> </li> <li> <p>
-      <a>ListRepositoriesForApprovalRuleTemplate</a>, which lists all
-      repositories associated with the specified approval rule template.</p>
-      </li> <li> <p> <a>UpdateApprovalRuleTemplateDescription</a>, which updates
-      the description of an approval rule template.</p> </li> <li> <p>
-      <a>UpdateApprovalRuleTemplateName</a>, which updates the name of an
-      approval rule template.</p> </li> <li> <p>
-      <a>UpdateApprovalRuleTemplateContent</a>, which updates the content of an
-      approval rule template.</p> </li> </ul> <p>Comments in a repository, by
-      calling the following:</p> <ul> <li> <p> <a>DeleteCommentContent</a>,
-      which deletes the content of a comment on a commit in a repository.</p>
-      </li> <li> <p> <a>GetComment</a>, which returns information about a
-      comment on a commit.</p> </li> <li> <p> <a>GetCommentReactions</a>, which
-      returns information about emoji reactions to comments.</p> </li> <li> <p>
-      <a>GetCommentsForComparedCommit</a>, which returns information about
-      comments on the comparison between two commit specifiers in a
-      repository.</p> </li> <li> <p> <a>PostCommentForComparedCommit</a>, which
-      creates a comment on the comparison between two commit specifiers in a
-      repository.</p> </li> <li> <p> <a>PostCommentReply</a>, which creates a
-      reply to a comment.</p> </li> <li> <p> <a>PutCommentReaction</a>, which
-      creates or updates an emoji reaction to a comment.</p> </li> <li> <p>
-      <a>UpdateComment</a>, which updates the content of a comment on a commit
-      in a repository.</p> </li> </ul> <p>Tags used to tag resources in
-      CodeCommit (not Git tags), by calling the following:</p> <ul> <li> <p>
-      <a>ListTagsForResource</a>, which gets information about Amazon Web
-      Servicestags for a specified Amazon Resource Name (ARN) in CodeCommit.</p>
-      </li> <li> <p> <a>TagResource</a>, which adds or updates tags for a
-      resource in CodeCommit.</p> </li> <li> <p> <a>UntagResource</a>, which
-      removes tags for a resource in CodeCommit.</p> </li> </ul> <p>Triggers, by
-      calling the following:</p> <ul> <li> <p> <a>GetRepositoryTriggers</a>,
-      which returns information about triggers configured for a repository.</p>
-      </li> <li> <p> <a>PutRepositoryTriggers</a>, which replaces all triggers
-      for a repository and can be used to create or delete triggers.</p> </li>
-      <li> <p> <a>TestRepositoryTriggers</a>, which tests the functionality of a
-      repository trigger by sending data to the trigger target.</p> </li> </ul>
-      <p>For information about how to use CodeCommit, see the <a
-      href="https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html">CodeCommit
-      User Guide</a>.</p>
+      Securely host highly scalable private Git repositories and collaborate on
+      code. AWS CodeCommit is a secure, highly scalable, fully managed source
+      control service that hosts private Git repositories.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codecommit/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Names
+      - Repositories
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codecommit/
       - type: OpenAPI
         url: properties/codecommit-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/codecommit/features/
+      - type: Pricing
+        url: https://aws.amazon.com/codecommit/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/codecommit/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/codecommit/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/codecommit/faqs/
+      - type: User Guide
+        url: https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html
     overlays:
       - type: APIs.io Search
         url: overlays/codecommit-openapi-search.yml
@@ -1892,34 +2221,62 @@ apis:
     aid: amazon-web-services:codecommit
   - name: Amazon CodeGuru Profiler
     description: >-
-      <p> This section provides documentation for the Amazon CodeGuru Profiler
-      API operations. </p> <p> Amazon CodeGuru Profiler collects runtime
-      performance data from your live applications, and provides recommendations
-      that can help you fine-tune your application performance. Using machine
-      learning algorithms, CodeGuru Profiler can help you find your most
-      expensive lines of code and suggest ways you can improve efficiency and
-      remove CPU bottlenecks. </p> <p> Amazon CodeGuru Profiler provides
-      different visualizations of profiling data to help you identify what code
-      is running on the CPU, see how much time is consumed, and suggest ways to
-      reduce CPU utilization. </p> <note> <p>Amazon CodeGuru Profiler currently
-      supports applications written in all Java virtual machine (JVM) languages
-      and Python. While CodeGuru Profiler supports both visualizations and
-      recommendations for applications written in Java, it can also generate
-      visualizations and a subset of recommendations for applications written in
-      other JVM languages and Python.</p> </note> <p> For more information, see
-      <a
-      href="https://docs.aws.amazon.com/codeguru/latest/profiler-ug/what-is-codeguru-profiler.html">What
-      is Amazon CodeGuru Profiler</a> in the <i>Amazon CodeGuru Profiler User
-      Guide</i>. </p>
+      The Amazon CodeGuru Profiler API gathers real-time performance data from
+      your applications and offers tailored suggestions to optimize their
+      performance. By leveraging machine learning techniques, CodeGuru Profiler
+      assists in pinpointing the most resource-intensive lines of code and
+      suggests enhancements to increase efficiency and overcome CPU bottlenecks.
+      With various visualization tools, the API allows you to track CPU usage,
+      identify time-consuming code segments, and offers actionable insights to
+      minimize CPU consumption.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/codeguru/latest/profiler-api/index.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Actions
+      - Agent
+      - Anomalies
+      - Anomaly
+      - Batches
+      - Channels
+      - Configurations
+      - Configure
+      - Data
+      - Feedback
+      - Findings
+      - Frames
+      - Groups
+      - Instances
+      - Internal
+      - Metrics
+      - Names
+      - Notifications
+      - Permission
+      - Policies
+      - Posts
+      - Profiles
+      - Profiling
+      - Recommendations
+      - Removes
+      - Reports
+      - Resources
+      - Submit
+      - Summaries
+      - Tags
+      - Times
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/index.html
       - type: OpenAPI
         url: properties/codeguruprofiler-openapi-original.yml
+      - type: User Guide
+        url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/index.html
+      - type: CLI
+        url: >-
+          https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeguruprofiler/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/codeguruprofiler-openapi-search.yml
@@ -1928,101 +2285,30 @@ apis:
     aid: amazon-web-services:codeguruprofiler
   - name: AWS CodePipeline
     description: >-
-      <fullname>CodePipeline</fullname> <p> <b>Overview</b> </p> <p>This is the
-      CodePipeline API Reference. This guide provides descriptions of the
-      actions and data types for CodePipeline. Some functionality for your
-      pipeline can only be configured through the API. For more information, see
-      the <a
-      href="https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html">CodePipeline
-      User Guide</a>.</p> <p>You can use the CodePipeline API to work with
-      pipelines, stages, actions, and transitions.</p> <p> <i>Pipelines</i> are
-      models of automated release processes. Each pipeline is uniquely named,
-      and consists of stages, actions, and transitions. </p> <p>You can work
-      with pipelines by calling:</p> <ul> <li> <p> <a>CreatePipeline</a>, which
-      creates a uniquely named pipeline.</p> </li> <li> <p>
-      <a>DeletePipeline</a>, which deletes the specified pipeline.</p> </li>
-      <li> <p> <a>GetPipeline</a>, which returns information about the pipeline
-      structure and pipeline metadata, including the pipeline Amazon Resource
-      Name (ARN).</p> </li> <li> <p> <a>GetPipelineExecution</a>, which returns
-      information about a specific execution of a pipeline.</p> </li> <li> <p>
-      <a>GetPipelineState</a>, which returns information about the current state
-      of the stages and actions of a pipeline.</p> </li> <li> <p>
-      <a>ListActionExecutions</a>, which returns action-level details for past
-      executions. The details include full stage and action-level details,
-      including individual action duration, status, any errors that occurred
-      during the execution, and input and output artifact location details.</p>
-      </li> <li> <p> <a>ListPipelines</a>, which gets a summary of all of the
-      pipelines associated with your account.</p> </li> <li> <p>
-      <a>ListPipelineExecutions</a>, which gets a summary of the most recent
-      executions for a pipeline.</p> </li> <li> <p>
-      <a>StartPipelineExecution</a>, which runs the most recent revision of an
-      artifact through the pipeline.</p> </li> <li> <p>
-      <a>StopPipelineExecution</a>, which stops the specified pipeline execution
-      from continuing through the pipeline.</p> </li> <li> <p>
-      <a>UpdatePipeline</a>, which updates a pipeline with edits or changes to
-      the structure of the pipeline.</p> </li> </ul> <p>Pipelines include
-      <i>stages</i>. Each stage contains one or more actions that must complete
-      before the next stage begins. A stage results in success or failure. If a
-      stage fails, the pipeline stops at that stage and remains stopped until
-      either a new version of an artifact appears in the source location, or a
-      user takes action to rerun the most recent artifact through the pipeline.
-      You can call <a>GetPipelineState</a>, which displays the status of a
-      pipeline, including the status of stages in the pipeline, or
-      <a>GetPipeline</a>, which returns the entire structure of the pipeline,
-      including the stages of that pipeline. For more information about the
-      structure of stages and actions, see <a
-      href="https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-structure.html">CodePipeline
-      Pipeline Structure Reference</a>.</p> <p>Pipeline stages include
-      <i>actions</i> that are categorized into categories such as source or
-      build actions performed in a stage of a pipeline. For example, you can use
-      a source action to import artifacts into a pipeline from a source such as
-      Amazon S3. Like stages, you do not work with actions directly in most
-      cases, but you do define and interact with actions when working with
-      pipeline operations such as <a>CreatePipeline</a> and
-      <a>GetPipelineState</a>. Valid action categories are:</p> <ul> <li>
-      <p>Source</p> </li> <li> <p>Build</p> </li> <li> <p>Test</p> </li> <li>
-      <p>Deploy</p> </li> <li> <p>Approval</p> </li> <li> <p>Invoke</p> </li>
-      </ul> <p>Pipelines also include <i>transitions</i>, which allow the
-      transition of artifacts from one stage to the next in a pipeline after the
-      actions in one stage complete.</p> <p>You can work with transitions by
-      calling:</p> <ul> <li> <p> <a>DisableStageTransition</a>, which prevents
-      artifacts from transitioning to the next stage in a pipeline.</p> </li>
-      <li> <p> <a>EnableStageTransition</a>, which enables transition of
-      artifacts between stages in a pipeline. </p> </li> </ul> <p> <b>Using the
-      API to integrate with CodePipeline</b> </p> <p>For third-party integrators
-      or developers who want to create their own integrations with CodePipeline,
-      the expected sequence varies from the standard API user. To integrate with
-      CodePipeline, developers need to work with the following items:</p> <p>
-      <b>Jobs</b>, which are instances of an action. For example, a job for a
-      source action might import a revision of an artifact from a source. </p>
-      <p>You can work with jobs by calling:</p> <ul> <li> <p>
-      <a>AcknowledgeJob</a>, which confirms whether a job worker has received
-      the specified job.</p> </li> <li> <p> <a>GetJobDetails</a>, which returns
-      the details of a job.</p> </li> <li> <p> <a>PollForJobs</a>, which
-      determines whether there are any jobs to act on.</p> </li> <li> <p>
-      <a>PutJobFailureResult</a>, which provides details of a job failure. </p>
-      </li> <li> <p> <a>PutJobSuccessResult</a>, which provides details of a job
-      success.</p> </li> </ul> <p> <b>Third party jobs</b>, which are instances
-      of an action created by a partner action and integrated into CodePipeline.
-      Partner actions are created by members of the Amazon Web Services Partner
-      Network.</p> <p>You can work with third party jobs by calling:</p> <ul>
-      <li> <p> <a>AcknowledgeThirdPartyJob</a>, which confirms whether a job
-      worker has received the specified job.</p> </li> <li> <p>
-      <a>GetThirdPartyJobDetails</a>, which requests the details of a job for a
-      partner action.</p> </li> <li> <p> <a>PollForThirdPartyJobs</a>, which
-      determines whether there are any jobs to act on. </p> </li> <li> <p>
-      <a>PutThirdPartyJobFailureResult</a>, which provides details of a job
-      failure.</p> </li> <li> <p> <a>PutThirdPartyJobSuccessResult</a>, which
-      provides details of a job success.</p> </li> </ul>
+      The API provided by AWS CodePipeline is a comprehensive continuous
+      delivery service that simplifies the automation of release pipelines,
+      facilitating swift and dependable updates to both applications and
+      infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/codepipeline/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Pipelines
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/codepipeline/
       - type: OpenAPI
         url: properties/codepipeline-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/codepipeline/features/
+      - type: Pricing
+        url: https://aws.amazon.com/codepipeline/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/codepipeline/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/codepipeline/faqs/
+      - type: Integrations
+        url: https://aws.amazon.com/codepipeline/product-integrations/
     overlays:
       - type: APIs.io Search
         url: overlays/codepipeline-openapi-search.yml
@@ -2031,43 +2317,31 @@ apis:
     aid: amazon-web-services:codepipeline
   - name: AWS CodeStar Notifications
     description: >-
-      <p>This AWS CodeStar Notifications API Reference provides descriptions and
-      usage examples of the operations and data types for the AWS CodeStar
-      Notifications API. You can use the AWS CodeStar Notifications API to work
-      with the following objects:</p> <p>Notification rules, by calling the
-      following: </p> <ul> <li> <p> <a>CreateNotificationRule</a>, which creates
-      a notification rule for a resource in your account. </p> </li> <li> <p>
-      <a>DeleteNotificationRule</a>, which deletes a notification rule. </p>
-      </li> <li> <p> <a>DescribeNotificationRule</a>, which provides information
-      about a notification rule. </p> </li> <li> <p>
-      <a>ListNotificationRules</a>, which lists the notification rules
-      associated with your account. </p> </li> <li> <p>
-      <a>UpdateNotificationRule</a>, which changes the name, events, or targets
-      associated with a notification rule. </p> </li> <li> <p> <a>Subscribe</a>,
-      which subscribes a target to a notification rule. </p> </li> <li> <p>
-      <a>Unsubscribe</a>, which removes a target from a notification rule. </p>
-      </li> </ul> <p>Targets, by calling the following: </p> <ul> <li> <p>
-      <a>DeleteTarget</a>, which removes a notification rule target from a
-      notification rule. </p> </li> <li> <p> <a>ListTargets</a>, which lists the
-      targets associated with a notification rule. </p> </li> </ul> <p>Events,
-      by calling the following: </p> <ul> <li> <p> <a>ListEventTypes</a>, which
-      lists the event types you can include in a notification rule. </p> </li>
-      </ul> <p>Tags, by calling the following: </p> <ul> <li> <p>
-      <a>ListTagsForResource</a>, which lists the tags already associated with a
-      notification rule in your account. </p> </li> <li> <p> <a>TagResource</a>,
-      which associates a tag you provide with a notification rule in your
-      account. </p> </li> <li> <p> <a>UntagResource</a>, which removes a tag
-      from a notification rule in your account. </p> </li> </ul> <p> For
-      information about how to use AWS CodeStar Notifications, see the <a
-      href="https://docs.aws.amazon.com/dtconsole/latest/userguide/what-is-dtconsole.html">Amazon
-      Web Services Developer Tools Console User Guide</a>. </p>
+      The AWS CodeStar Notifications API Reference offers detailed explanations
+      and practical examples on using the various operations and data types
+      within the AWS CodeStar Notifications API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/codestar-notifications/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Describe
+      - Events
+      - Notifications
+      - Resources
+      - Rules
+      - Subscribe
+      - Tags
+      - Targets
+      - Targets
+      - Types
+      - Unsubscribe
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/codestar-notifications/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/codestar-notifications-openapi-original.yml
     overlays:
@@ -2078,57 +2352,22 @@ apis:
     aid: amazon-web-services:codestar-notifications
   - name: AWS CodeStar Connections
     description: >-
-      <fullname>AWS CodeStar Connections</fullname> <p>This Amazon Web Services
-      CodeStar Connections API Reference provides descriptions and usage
-      examples of the operations and data types for the Amazon Web Services
-      CodeStar Connections API. You can use the connections API to work with
-      connections and installations.</p> <p> <i>Connections</i> are
-      configurations that you use to connect Amazon Web Services resources to
-      external code repositories. Each connection is a resource that can be
-      given to services such as CodePipeline to connect to a third-party
-      repository such as Bitbucket. For example, you can add the connection in
-      CodePipeline so that it triggers your pipeline when a code change is made
-      to your third-party code repository. Each connection is named and
-      associated with a unique ARN that is used to reference the connection.</p>
-      <p>When you create a connection, the console initiates a third-party
-      connection handshake. <i>Installations</i> are the apps that are used to
-      conduct this handshake. For example, the installation for the Bitbucket
-      provider type is the Bitbucket app. When you create a connection, you can
-      choose an existing installation or create one.</p> <p>When you want to
-      create a connection to an installed provider type such as GitHub
-      Enterprise Server, you create a <i>host</i> for your connections.</p>
-      <p>You can work with connections by calling:</p> <ul> <li> <p>
-      <a>CreateConnection</a>, which creates a uniquely named connection that
-      can be referenced by services such as CodePipeline.</p> </li> <li> <p>
-      <a>DeleteConnection</a>, which deletes the specified connection.</p> </li>
-      <li> <p> <a>GetConnection</a>, which returns information about the
-      connection, including the connection status.</p> </li> <li> <p>
-      <a>ListConnections</a>, which lists the connections associated with your
-      account.</p> </li> </ul> <p>You can work with hosts by calling:</p> <ul>
-      <li> <p> <a>CreateHost</a>, which creates a host that represents the
-      infrastructure where your provider is installed.</p> </li> <li> <p>
-      <a>DeleteHost</a>, which deletes the specified host.</p> </li> <li> <p>
-      <a>GetHost</a>, which returns information about the host, including the
-      setup status.</p> </li> <li> <p> <a>ListHosts</a>, which lists the hosts
-      associated with your account.</p> </li> </ul> <p>You can work with tags in
-      Amazon Web Services CodeStar Connections by calling the following:</p>
-      <ul> <li> <p> <a>ListTagsForResource</a>, which gets information about
-      Amazon Web Services tags for a specified Amazon Resource Name (ARN) in
-      Amazon Web Services CodeStar Connections.</p> </li> <li> <p>
-      <a>TagResource</a>, which adds or updates tags for a resource in Amazon
-      Web Services CodeStar Connections.</p> </li> <li> <p>
-      <a>UntagResource</a>, which removes tags for a resource in Amazon Web
-      Services CodeStar Connections.</p> </li> </ul> <p>For information about
-      how to use Amazon Web Services CodeStar Connections, see the <a
-      href="https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html">Developer
-      Tools User Guide</a>.</p>
+      AWS CodeStar Connections is an API provided by Amazon Web Services that
+      allows you to work with connections and installations. Connections are
+      configurations used to connect AWS resources to external code
+      repositories, allowing services like CodePipeline to trigger actions based
+      on changes in third-party code repositories.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - Sync
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/codestar-connections-openapi-original.yml
     overlays:
@@ -2139,70 +2378,23 @@ apis:
     aid: amazon-web-services:codestar-connections
   - name: Amazon Cognito User Pools
     description: >-
-      <p>With the Amazon Cognito user pools API, you can configure user pools
-      and authenticate users. To authenticate users from third-party identity
-      providers (IdPs) in this API, you can <a
-      href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation-consolidate-users.html">link
-      IdP users to native user profiles</a>. Learn more about the authentication
-      and authorization of federated users at <a
-      href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html">Adding
-      user pool sign-in through a third party</a> and in the <a
-      href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-userpools-server-contract-reference.html">User
-      pool federation endpoints and hosted UI reference</a>.</p> <p>This API
-      reference provides detailed information about API operations and object
-      types in Amazon Cognito.</p> <p>Along with resource management operations,
-      the Amazon Cognito user pools API includes classes of operations and
-      authorization models for client-side and server-side authentication of
-      users. You can interact with operations in the Amazon Cognito user pools
-      API as any of the following subjects.</p> <ol> <li> <p>An administrator
-      who wants to configure user pools, app clients, users, groups, or other
-      user pool functions.</p> </li> <li> <p>A server-side app, like a web
-      application, that wants to use its Amazon Web Services privileges to
-      manage, authenticate, or authorize a user.</p> </li> <li> <p>A client-side
-      app, like a mobile app, that wants to make unauthenticated requests to
-      manage, authenticate, or authorize a user.</p> </li> </ol> <p>For more
-      information, see <a
-      href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html">Using
-      the Amazon Cognito user pools API and user pool endpoints</a> in the
-      <i>Amazon Cognito Developer Guide</i>.</p> <p>With your Amazon Web
-      Services SDK, you can build the logic to support operational flows in
-      every use case for this API. You can also make direct REST API requests to
-      <a
-      href="https://docs.aws.amazon.com/general/latest/gr/cognito_identity.html#cognito_identity_your_user_pools_region">Amazon
-      Cognito user pools service endpoints</a>. The following links can get you
-      started with the <code>CognitoIdentityProvider</code> client in other
-      supported Amazon Web Services SDKs.</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/index.html#cli-aws-cognito-idp">Amazon
-      Web Services Command Line Interface</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/CognitoIdentityProvider/TCognitoIdentityProviderClient.html">Amazon
-      Web Services SDK for .NET</a> </p> </li> <li> <p> <a
-      href="https://sdk.amazonaws.com/cpp/api/LATEST/aws-cpp-sdk-cognito-idp/html/class_aws_1_1_cognito_identity_provider_1_1_cognito_identity_provider_client.html">Amazon
-      Web Services SDK for C++</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-go/api/service/cognitoidentityprovider/#CognitoIdentityProvider">Amazon
-      Web Services SDK for Go</a> </p> </li> <li> <p> <a
-      href="https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cognitoidentityprovider/CognitoIdentityProviderClient.html">Amazon
-      Web Services SDK for Java V2</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html">Amazon
-      Web Services SDK for JavaScript</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-idp-2016-04-18.html">Amazon
-      Web Services SDK for PHP V3</a> </p> </li> <li> <p> <a
-      href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html">Amazon
-      Web Services SDK for Python</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CognitoIdentityProvider/Client.html">Amazon
-      Web Services SDK for Ruby V3</a> </p> </li> </ul> <p>To get started with
-      an Amazon Web Services SDK, see <a
-      href="http://aws.amazon.com/developer/tools/">Tools to Build on Amazon Web
-      Services</a>. For example actions and scenarios, see <a
-      href="https://docs.aws.amazon.com/cognito/latest/developerguide/service_code_examples_cognito-identity-provider.html">Code
-      examples for Amazon Cognito Identity Provider using Amazon Web Services
-      SDKs</a>.</p>
+      Amazon Cognito user pool, serves as a user directory for authenticating
+      and authorizing users in web and mobile applications. When integrated into
+      your app, the user pool functions as an OpenID Connect (OIDC) identity
+      provider, offering enhanced security features, identity federation
+      capabilities, seamless app integration, and customizable user experiences.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Attributes
+      - Users
+      - Verify
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html
       - type: OpenAPI
         url: properties/cognito-idp-openapi-original.yml
     overlays:
@@ -2213,34 +2405,41 @@ apis:
     aid: amazon-web-services:cognito-idp
   - name: Amazon Cognito Sync
     description: >-
-      <fullname>Amazon Cognito Sync</fullname> <p>Amazon Cognito Sync provides
-      an AWS service and client library that enable cross-device syncing of
-      application-related user data. High-level client libraries are available
-      for both iOS and Android. You can use these libraries to persist data
-      locally so that it's available even if the device is offline. Developer
-      credentials don't need to be stored on the mobile device to access the
-      service. You can use Amazon Cognito to obtain a normalized user ID and
-      credentials. User data is persisted in a dataset that can store up to 1 MB
-      of key-value pairs, and you can have up to 20 datasets per user
-      identity.</p> <p>With Amazon Cognito Sync, the data stored for each
-      identity is accessible only to credentials assigned to that identity. In
-      order to use the Cognito Sync service, you need to make API calls using
-      credentials retrieved with <a
-      href="http://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html">Amazon
-      Cognito Identity service</a>.</p> <p>If you want to use Cognito Sync in an
-      Android or iOS application, you will probably want to make API calls via
-      the AWS Mobile SDK. To learn more, see the <a
-      href="http://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/cognito-sync.html">Developer
-      Guide for Android</a> and the <a
-      href="http://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-sync.html">Developer
-      Guide for iOS</a>.</p>
+      Amazon Cognito Sync is an AWS service and client library that allows for
+      seamless syncing of user data across multiple devices. With high-level
+      client libraries available for iOS and Android, developers can easily
+      persist data locally for offline access without the need to store
+      credentials on the device. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Bulk
+      - Bulk Publish
+      - Cognito
+      - Configurations
+      - Datasets
+      - Describe
+      - Details
+      - Device
+      - Entities
+      - Entity Pools
+      - Events
+      - Identity
+      - Names
+      - Pools
+      - Publish
+      - Records
+      - Register
+      - Sets
+      - Subscriptions
+      - Unsubscribe
+      - Usage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync.html
       - type: OpenAPI
         url: properties/cognito-sync-openapi-original.yml
     overlays:
@@ -2251,23 +2450,33 @@ apis:
     aid: amazon-web-services:cognito-sync
   - name: Amazon Comprehend Medical
     description: >-
-      <p>Amazon Comprehend Medical extracts structured information from
-      unstructured clinical text. Use these actions to gain insight in your
-      documents. Amazon Comprehend Medical only detects entities in English
-      language texts. Amazon Comprehend Medical places limits on the sizes of
-      files allowed for different API operations. To learn more, see <a
-      href="https://docs.aws.amazon.com/comprehend-medical/latest/dev/comprehendmedical-quotas.html">Guidelines
-      and quotas</a> in the <i>Amazon Comprehend Medical Developer
-      Guide</i>.</p>
+      The Amazon Comprehend Medical API is designed to extract structured
+      information from unstructured clinical text, allowing users to gain
+      valuable insights from their documents. It should be noted, however, that
+      this API only detects entities in English language texts and imposes size
+      limits on files for various API operations.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/comprehend/medical/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Inference
+      - Jobs
+      - Stop
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/comprehend/medical/
       - type: OpenAPI
         url: properties/comprehendmedical-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/comprehend/medical/features/
+      - type: Pricing
+        url: https://aws.amazon.com/comprehend/medical/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/comprehend/medical/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/comprehend/medical/resources/
+      - type: Customers
+        url: https://aws.amazon.com/comprehend/medical/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/comprehendmedical-openapi-search.yml
@@ -2276,30 +2485,21 @@ apis:
     aid: amazon-web-services:comprehendmedical
   - name: Amazon Cognito Federated Identities
     description: >-
-      <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito
-      Federated Identities is a web service that delivers scoped temporary
-      credentials to mobile devices and other untrusted environments. It
-      uniquely identifies a device and supplies the user with a consistent
-      identity over the lifetime of an application.</p> <p>Using Amazon Cognito
-      Federated Identities, you can enable authentication with one or more
-      third-party identity providers (Facebook, Google, or Login with Amazon) or
-      an Amazon Cognito user pool, and you can also choose to support
-      unauthenticated access from your app. Cognito delivers a unique identifier
-      for each user and acts as an OpenID token provider trusted by AWS Security
-      Token Service (STS) to access temporary, limited-privilege AWS
-      credentials.</p> <p>For a description of the authentication flow from the
-      Amazon Cognito Developer Guide see <a
-      href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication
-      Flow</a>.</p> <p>For more information see <a
-      href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon
-      Cognito Federated Identities</a>.</p>
+      Amazon Cognito Federated Identities is a web service that provides scoped
+      temporary credentials for mobile devices and other untrusted environments.
+      It offers consistent identity management for users throughout the lifespan
+      of an application. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Identity
+      - Pools
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/cognito-identity-openapi-original.yml
     overlays:
@@ -2310,31 +2510,156 @@ apis:
     aid: amazon-web-services:cognito-identity
   - name: Amazon Connect
     description: >-
-      <p>Amazon Connect is a cloud-based contact center solution that you use to
-      set up and manage a customer contact center and provide reliable customer
-      engagement at any scale.</p> <p>Amazon Connect provides metrics and
-      real-time reporting that enable you to optimize contact routing. You can
-      also resolve customer issues more efficiently by getting customers in
-      touch with the appropriate agents.</p> <p>There are limits to the number
-      of Amazon Connect resources that you can create. There are also limits to
-      the number of requests that you can make per second. For more information,
-      see <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-service-limits.html">Amazon
-      Connect Service Quotas</a> in the <i>Amazon Connect Administrator
-      Guide</i>.</p> <p>You can connect programmatically to an Amazon Web
-      Services service by using an endpoint. For a list of Amazon Connect
-      endpoints, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/connect_region.html">Amazon
-      Connect Endpoints</a>.</p>
+      The API for Amazon Connect is a cloud-based solution for setting up and
+      managing customer contact centers, offering reliable customer engagement
+      at any scale. It provides metrics and real-time reporting for optimizing
+      contact routing and efficiently resolving customer issues by connecting
+      them with the appropriate agents. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Activate
+      - Agent
+      - Analysis
+      - Analytics
+      - Applications
+      - Approved
+      - Associate
+      - Associations
+      - Attributes
+      - Availability
+      - Available
+      - Batches
+      - Bots
+      - Caller
+      - Case
+      - Cases
+      - Chat
+      - Claim
+      - Code
+      - Concurrency
+      - Configurations
+      - Connect
+      - Connects
+      - Contacts
+      - Content
+      - Current
+      - Data
+      - Deactivate
+      - Default
+      - Describe
+      - Disassociate
+      - Dismiss
+      - Distributions
+      - Entities
+      - Evaluations
+      - Events
+      - Federate
+      - Federation
+      - File
+      - Flows
+      - Forms
+      - Functions
+      - Groups
+      - Hierarchy
+      - Historical
+      - Hours
+      - Identity
+      - Import
+      - Info
+      - Initial
+      - Instances
+      - Integrations
+      - Keys
+      - Lambda
+      - Languages
+      - Maximum
+      - Metadata
+      - Metrics
+      - Modules
+      - Monitors
+      - Names
+      - Numbers
+      - Operation
+      - Operations
+      - Origin
+      - Origins
+      - Outbound
+      - Participants
+      - Pause
+      - Permissions
+      - Persistent
+      - Phone
+      - Predefined
+      - Proficiencies
+      - Profiles
+      - Prompts
+      - Queues
+      - RTC
+      - Real Time
+      - Recording
+      - References
+      - Removes
+      - Replicate
+      - Resources
+      - Resume
+      - Roles
+      - Routing
+      - Rules
+      - Schedules
+      - Search
+      - Security
+      - Segments
+      - Send
+      - Sets
+      - Status
+      - Statuses
+      - Stop
+      - Storage
+      - Streaming
+      - Structures
+      - Submit
+      - Summaries
+      - Suspend
+      - Tags
+      - Tasks
+      - Templates
+      - Time
+      - Timer
+      - Tokens
+      - Traffic
+      - Transfers
+      - Types
+      - Untag
+      - Userdata
+      - Users
+      - Versions
+      - View
+      - Views
+      - Vocabularies
+      - Web
+      - Web RTC
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/
       - type: OpenAPI
         url: properties/connect-openapi-original.yml
+      - type: Use Cases
+        url: https://aws.amazon.com/connect/
+      - type: Featured
+        url: https://aws.amazon.com/connect/
+      - type: Pricing
+        url: https://aws.amazon.com/connect/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/connect/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/connect/resources/
+      - type: Customers
+        url: https://aws.amazon.com/connect/customers/
+      - type: Partners
+        url: https://aws.amazon.com/connect/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/connect-openapi-search.yml
@@ -2343,66 +2668,77 @@ apis:
     aid: amazon-web-services:connect
   - name: AWS Config
     description: >-
-      <fullname>Config</fullname> <p>Config provides a way to keep track of the
-      configurations of all the Amazon Web Services resources associated with
-      your Amazon Web Services account. You can use Config to get the current
-      and historical configurations of each Amazon Web Services resource and
-      also to get information about the relationship between the resources. An
-      Amazon Web Services resource can be an Amazon Compute Cloud (Amazon EC2)
-      instance, an Elastic Block Store (EBS) volume, an elastic network
-      Interface (ENI), or a security group. For a complete list of resources
-      currently supported by Config, see <a
-      href="https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html#supported-resources">Supported
-      Amazon Web Services resources</a>.</p> <p>You can access and manage Config
-      through the Amazon Web Services Management Console, the Amazon Web
-      Services Command Line Interface (Amazon Web Services CLI), the Config API,
-      or the Amazon Web Services SDKs for Config. This reference guide contains
-      documentation for the Config API and the Amazon Web Services CLI commands
-      that you can use to manage Config. The Config API uses the Signature
-      Version 4 protocol for signing requests. For more information about how to
-      sign a request with this protocol, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a>. For detailed information about Config
-      features and their associated actions or commands, as well as how to work
-      with Amazon Web Services Management Console, see <a
-      href="https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html">What
-      Is Config</a> in the <i>Config Developer Guide</i>.</p>
+      Config provides a comprehensive solution for monitoring and managing the
+      configurations of Amazon Web Services resources within your AWS account.
+      With Config, you can easily access current and historical configurations
+      for resources such as Amazon EC2 instances, EBS volumes, ENIs, and
+      security groups.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/config/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/config/
       - type: OpenAPI
         url: properties/config-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/config/features/
+      - type: Pricing
+        url: https://aws.amazon.com/config/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/config/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/config/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/config/faq/
+      - type: Customers
+        url: https://aws.amazon.com/config/customers/
+      - type: Partners
+        url: https://aws.amazon.com/config/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/config-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/config-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:config
-  - name: Amazon Connect Contact Lens
+  - name: Contact Lens for Amazon Connect
     description: >-
-      <p>Contact Lens for Amazon Connect enables you to analyze conversations
-      between customer and agents, by using speech transcription, natural
-      language processing, and intelligent search capabilities. It performs
-      sentiment analysis, detects issues, and enables you to automatically
-      categorize contacts.</p> <p>Contact Lens for Amazon Connect provides both
-      real-time and post-call analytics of customer-agent conversations. For
-      more information, see <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html">Analyze
-      conversations using Contact Lens</a> in the <i>Amazon Connect
-      Administrator Guide</i>. </p>
+      The Contact Lens API for Amazon Connect allows users to analyze
+      conversations between customers and agents through features such as speech
+      transcription, natural language processing, and intelligent search. It
+      includes sentiment analysis, issue detection, and automatic contact
+      categorization. This tool provides real-time and post-call analytics for
+      customer-agent interactions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/contact-lens/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Analysis
+      - Contacts
+      - Real Time
+      - Segments
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/contact-lens/
       - type: OpenAPI
         url: properties/connect-contact-lens-openapi-original.yml
+      - type: Use Cases
+        url: https://aws.amazon.com/connect/contact-lens/
+      - type: Features
+        url: https://aws.amazon.com/connect/contact-lens/
+      - type: Pricing
+        url: https://aws.amazon.com/connect/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/connect/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/connect/resources/
+      - type: Customers
+        url: https://aws.amazon.com/connect/customers/
+      - type: Partners
+        url: https://aws.amazon.com/connect/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/connect-contact-lens-openapi-search.yml
@@ -2411,30 +2747,30 @@ apis:
     aid: amazon-web-services:connect-contact-lens
   - name: AWS Compute Optimizer
     description: >-
-      <p>Compute Optimizer is a service that analyzes the configuration and
-      utilization metrics of your Amazon Web Services compute resources, such as
-      Amazon EC2 instances, Amazon EC2 Auto Scaling groups, Lambda functions,
-      Amazon EBS volumes, and Amazon ECS services on Fargate. It reports whether
-      your resources are optimal, and generates optimization recommendations to
-      reduce the cost and improve the performance of your workloads. Compute
-      Optimizer also provides recent utilization metric data, in addition to
-      projected utilization metric data for the recommendations, which you can
-      use to evaluate which recommendation provides the best price-performance
-      trade-off. The analysis of your usage patterns can help you decide when to
-      move or resize your running resources, and still meet your performance and
-      capacity requirements. For more information about Compute Optimizer,
-      including the required permissions to use the service, see the <a
-      href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/">Compute
-      Optimizer User Guide</a>.</p>
+      Compute Optimizer is an API that evaluates the configuration and usage
+      metrics of your AWS compute resources, including EC2 instances, Auto
+      Scaling groups, Lambda functions, EBS volumes, and ECS services on
+      Fargate. It provides optimization recommendations to enhance performance
+      and reduce costs, based on current and projected utilization data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/compute-optimizer/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Enrollment
+      - Status
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/compute-optimizer/
       - type: OpenAPI
         url: properties/compute-optimizer-openapi-original.yml
+      - type: Metrics
+        url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/metrics.html
+      - type: FAQ
+        url: https://aws.amazon.com/compute-optimizer/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/compute-optimizer/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/compute-optimizer/pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/compute-optimizer-openapi-search.yml
@@ -2443,19 +2779,33 @@ apis:
     aid: amazon-web-services:compute-optimizer
   - name: Amazon Comprehend
     description: >-
-      <p>Amazon Comprehend is an Amazon Web Services service for gaining insight
-      into the content of documents. Use these actions to determine the topics
-      contained in your documents, the topics they discuss, the predominant
-      sentiment expressed in them, the predominant language used, and more.</p>
+      Amazon Comprehend is an AI-powered service from Amazon Web Services that
+      provides deep analysis of document content. It allows users to extract
+      topics, sentiment, language, and other insights from their documents.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/comprehend/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Flywheel
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/comprehend/
       - type: OpenAPI
         url: properties/comprehend-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/comprehend/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/comprehend/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/comprehend/customers/
+      - type: Resources
+        url: https://aws.amazon.com/comprehend/resources/
+      - type: Features
+        url: https://aws.amazon.com/comprehend/features/
+      - type: Intelligent Document Processing
+        url: https://aws.amazon.com/comprehend/idp/
+      - type: Trust and Safety
+        url: https://aws.amazon.com/comprehend/trust-and-safety/
     overlays:
       - type: APIs.io Search
         url: overlays/comprehend-openapi-search.yml
@@ -2464,21 +2814,25 @@ apis:
     aid: amazon-web-services:comprehend
   - name: AWS Cost Optimization Hub
     description: >-
-      <p>You can use the Cost Optimization Hub API to programmatically identify,
-      filter, aggregate, and quantify savings for your cost optimization
-      recommendations across multiple Amazon Web Services Regions and Amazon Web
-      Services accounts in your organization.</p> <p>The Cost Optimization Hub
-      API provides the following endpoint:</p> <ul> <li> <p>
-      https://cost-optimization-hub.us-east-1.amazonaws.com </p> </li> </ul>
+      The Cost Optimization Hub API allows you to automate the identification,
+      filtering, aggregation, and quantification of cost savings for your
+      optimization recommendations across various Amazon Web Services Regions
+      and accounts within your organization. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/cost-optimization-hub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Preferences
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-cost-management/cost-optimization-hub/
       - type: OpenAPI
         url: properties/cost-optimization-hub-openapi-original.yml
+      - type: Getting Started
+        url: >-
+          https://aws.amazon.com/aws-cost-management/cost-optimization-hub/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/aws-cost-management/cost-optimization-hub/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cost-optimization-hub-openapi-search.yml
@@ -2487,84 +2841,44 @@ apis:
     aid: amazon-web-services:cost-optimization-hub
   - name: AWS Control Tower
     description: >-
-      <p>These interfaces allow you to apply the Amazon Web Services library of
-      pre-defined <i>controls</i> to your organizational units,
-      programmatically. In Amazon Web Services Control Tower, the terms
-      "control" and "guardrail" are synonyms.</p> <p>To call these APIs, you'll
-      need to know:</p> <ul> <li> <p>the <code>controlIdentifier</code> for the
-      control--or guardrail--you are targeting.</p> </li> <li> <p>the ARN
-      associated with the target organizational unit (OU), which we call the
-      <code>targetIdentifier</code>.</p> </li> <li> <p>the ARN associated with a
-      resource that you wish to tag or untag.</p> </li> </ul> <p> <b>To get the
-      <code>controlIdentifier</code> for your Amazon Web Services Control Tower
-      control:</b> </p> <p>The <code>controlIdentifier</code> is an ARN that is
-      specified for each control. You can view the
-      <code>controlIdentifier</code> in the console on the <b>Control
-      details</b> page, as well as in the documentation.</p> <p>The
-      <code>controlIdentifier</code> is unique in each Amazon Web Services
-      Region for each control. You can find the <code>controlIdentifier</code>
-      for each Region and control in the <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/control-metadata-tables.html">Tables
-      of control metadata</a> in the <i>Amazon Web Services Control Tower User
-      Guide.</i> </p> <p>A quick-reference list of control identifers for the
-      Amazon Web Services Control Tower legacy <i>Strongly recommended</i> and
-      <i>Elective</i> controls is given in <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/control-identifiers.html.html">Resource
-      identifiers for APIs and controls</a> in the <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/control-identifiers.html">Controls
-      reference guide section</a> of the <i>Amazon Web Services Control Tower
-      User Guide</i>. Remember that <i>Mandatory</i> controls cannot be added or
-      removed.</p> <note> <p> <b>ARN format:</b>
-      <code>arn:aws:controltower:{REGION}::control/{CONTROL_NAME}</code> </p>
-      <p> <b>Example:</b> </p> <p>
-      <code>arn:aws:controltower:us-west-2::control/AWS-GR_AUTOSCALING_LAUNCH_CONFIG_PUBLIC_IP_DISABLED</code>
-      </p> </note> <p> <b>To get the <code>targetIdentifier</code>:</b> </p>
-      <p>The <code>targetIdentifier</code> is the ARN for an OU.</p> <p>In the
-      Amazon Web Services Organizations console, you can find the ARN for the OU
-      on the <b>Organizational unit details</b> page associated with that
-      OU.</p> <note> <p> <b>OU ARN format:</b> </p> <p>
-      <code>arn:${Partition}:organizations::${MasterAccountId}:ou/o-${OrganizationId}/ou-${OrganizationalUnitId}</code>
-      </p> </note> <p class="title"> <b>Details and examples</b> </p> <ul> <li>
-      <p> <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/control-api-examples-short.html">Control
-      API input and output examples with CLI</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/enable-controls.html">Enable
-      controls with CloudFormation</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/control-metadata-tables.html">Control
-      metadata tables</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/control-identifiers.html">List
-      of identifiers for legacy controls</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/controls.html">Controls
-      reference guide</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/controls-reference.html">Controls
-      library groupings</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/creating-resources-with-cloudformation.html">Creating
-      Amazon Web Services Control Tower resources with Amazon Web Services
-      CloudFormation</a> </p> </li> </ul> <p>To view the open source resource
-      repository on GitHub, see <a
-      href="https://github.com/aws-cloudformation/aws-cloudformation-resource-providers-controltower">aws-cloudformation/aws-cloudformation-resource-providers-controltower</a>
-      </p> <p> <b>Recording API Requests</b> </p> <p>Amazon Web Services Control
-      Tower supports Amazon Web Services CloudTrail, a service that records
-      Amazon Web Services API calls for your Amazon Web Services account and
-      delivers log files to an Amazon S3 bucket. By using information collected
-      by CloudTrail, you can determine which requests the Amazon Web Services
-      Control Tower service received, who made the request and when, and so on.
-      For more about Amazon Web Services Control Tower and its support for
-      CloudTrail, see <a
-      href="https://docs.aws.amazon.com/controltower/latest/userguide/logging-using-cloudtrail.html">Logging
-      Amazon Web Services Control Tower Actions with Amazon Web Services
-      CloudTrail</a> in the Amazon Web Services Control Tower User Guide. To
-      learn more about CloudTrail, including how to turn it on and find your log
-      files, see the Amazon Web Services CloudTrail User Guide.</p>
+      Use AWS Control Tower to set up and operate your multi-account AWS
+      environment with prescriptive controls designed to accelerate your cloud
+      journey.  AWS Control Tower orchestrates multiple AWS services on your
+      behalf while maintaining the security and compliance needs of your new or
+      existing organization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/controltower/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Baselines
+      - Controls
+      - Disable
+      - Enable
+      - Enabled
+      - Landing
+      - Landing Zones
+      - Operation
+      - Reset
+      - Resources
+      - Tags
+      - Untag
+      - Zones
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/controltower/
       - type: OpenAPI
         url: properties/controltower-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/controltower/features/
+      - type: Pricing
+        url: https://aws.amazon.com/controltower/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/controltower/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/controltower/customers/
+      - type: Partners
+        url: https://aws.amazon.com/controltower/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/controltower-openapi-search.yml
@@ -2573,20 +2887,44 @@ apis:
     aid: amazon-web-services:controltower
   - name: AWS Glue DataBrew
     description: >-
-      <p>Glue DataBrew is a visual, cloud-scale data-preparation service.
-      DataBrew simplifies data preparation tasks, targeting data issues that are
-      hard to spot and time-consuming to fix. DataBrew empowers users of all
-      technical levels to visualize the data and perform one-click data
-      transformations, with no coding required.</p>
+      DataBrew is a user-friendly API designed to simplify the data preparation
+      process by allowing users of all technical levels to visualize and
+      transform data with just one click. This visual, cloud-scale service
+      targets and resolves data issues that are difficult to identify and
+      time-consuming to address, making data preparation more efficient and
+      accessible. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/glue/features/databrew/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Actions
+      - Batches
+      - Datasets
+      - Describe
+      - Jobs
+      - Names
+      - Profiles
+      - Projects
+      - Publish
+      - Recipes
+      - Resources
+      - Rulesets
+      - Runs
+      - Schedules
+      - Send
+      - Sessions
+      - Stop
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/glue/features/databrew/
       - type: OpenAPI
         url: properties/databrew-openapi-original.yml
+      - type: About
+        url: https://docs.aws.amazon.com/databrew/latest/dg/what-is.html
     overlays:
       - type: APIs.io Search
         url: overlays/databrew-openapi-search.yml
@@ -2595,24 +2933,59 @@ apis:
     aid: amazon-web-services:databrew
   - name: Amazon Connect Customer Profiles
     description: >-
-      <fullname>Amazon Connect Customer Profiles</fullname> <p>Amazon Connect
-      Customer Profiles is a unified customer profile for your contact center
-      that has pre-built connectors powered by AppFlow that make it easy to
-      combine customer information from third party applications, such as
-      Salesforce (CRM), ServiceNow (ITSM), and your enterprise resource planning
-      (ERP), with contact history from your Amazon Connect contact center. If
-      you're new to Amazon Connect, you might find it helpful to review the <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/">Amazon
-      Connect Administrator Guide</a>.</p>
+      The Amazon Connect Customer Profiles API offers a centralized customer
+      profile solution for contact centers, featuring pre-built connectors
+      utilizing AppFlow technology. These connectors seamlessly integrate
+      customer data from third-party applications like Salesforce, ServiceNow,
+      and ERP systems with contact history from your Amazon Connect contact
+      center. If you are a new user, the Amazon Connect Administrator Guide can
+      assist you in familiarizing yourself with the platform.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/customer-profiles/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Attributes
+      - Auto
+      - Based
+      - Calculated
+      - Definitions
+      - Detect
+      - Domains
+      - Entities
+      - Events
+      - Identity
+      - Integrations
+      - Jobs
+      - Keys
+      - Matches
+      - Merge
+      - Merging
+      - Names
+      - Objects
+      - Previews
+      - Profiles
+      - Resolutions
+      - Resources
+      - Rules
+      - Search
+      - Similar
+      - Steps
+      - Stream
+      - Streams
+      - Tags
+      - Templates
+      - Types
+      - Untag
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/customer-profiles/
       - type: OpenAPI
         url: properties/customer-profiles-openapi-original.yml
+      - type: Use Cases
+        url: https://aws.amazon.com/connect/customer-profiles/
     overlays:
       - type: APIs.io Search
         url: overlays/customer-profiles-openapi-search.yml
@@ -2621,27 +2994,28 @@ apis:
     aid: amazon-web-services:customer-profiles
   - name: AWS Cost and Usage Report
     description: >-
-      <p>You can use the Amazon Web Services Cost and Usage Report API to
-      programmatically create, query, and delete Amazon Web Services Cost and
-      Usage Report definitions.</p> <p>Amazon Web Services Cost and Usage Report
-      track the monthly Amazon Web Services costs and usage associated with your
-      Amazon Web Services account. The report contains line items for each
-      unique combination of Amazon Web Services product, usage type, and
-      operation that your Amazon Web Services account uses. You can configure
-      the Amazon Web Services Cost and Usage Report to show only the data that
-      you want, using the Amazon Web Services Cost and Usage Report API.</p>
-      <p>Service Endpoint</p> <p>The Amazon Web Services Cost and Usage Report
-      API provides the following endpoint:</p> <ul> <li>
-      <p>cur.us-east-1.amazonaws.com</p> </li> </ul>
+      With the Amazon Web Services Cost and Usage Report API, you can manage
+      Cost and Usage Report definitions programmatically. This API allows you to
+      create, query, and delete Cost and Usage Report definitions, which track
+      monthly costs and usage associated with your Amazon Web Services account.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/
       - type: OpenAPI
         url: properties/cur-openapi-original.yml
+      - type: Features
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/features/
+      - type: FAQ
+        url: >-
+          https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/cur-openapi-search.yml
@@ -2649,24 +3023,33 @@ apis:
         url: overlays/cur-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:cur
   - name: AWS DataSync
-    description: >-
-      <fullname>DataSync</fullname> <p>DataSync is an online data movement and
-      discovery service that simplifies data migration and helps you quickly,
-      easily, and securely transfer your file or object data to, from, and
-      between Amazon Web Services storage services.</p> <p>This API interface
-      reference includes documentation for using DataSync programmatically. For
-      complete information, see the <i> <a
-      href="https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html">DataSync
-      User Guide</a> </i>.</p>
+    description: >
+      AWS DataSync is a secure, online service that automates and accelerates
+      moving data between on premises and AWS Storage services.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/datasync/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Data
+      - Execution
+      - Tasks
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/datasync/
       - type: OpenAPI
         url: properties/datasync-openapi-original.yml
+      - type: Discovery
+        url: https://aws.amazon.com/datasync/discovery/
+      - type: Customers
+        url: https://aws.amazon.com/datasync/customers/
+      - type: FAQ
+        url: https://aws.amazon.com/datasync/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/datasync/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/datasync/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/datasync/pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/datasync-openapi-search.yml
@@ -2675,22 +3058,79 @@ apis:
     aid: amazon-web-services:datasync
   - name: Amazon DataZone
     description: >-
-      <p>Amazon DataZone is a data management service that enables you to
-      catalog, discover, govern, share, and analyze your data. With Amazon
-      DataZone, you can share and access your data across accounts and supported
-      regions. Amazon DataZone simplifies your experience across Amazon Web
-      Services services, including, but not limited to, Amazon Redshift, Amazon
-      Athena, Amazon Web Services Glue, and Amazon Web Services Lake
-      Formation.</p>
+      Amazon DataZone is a comprehensive data management service designed to
+      streamline the organization, governance, and analysis of your data. This
+      API allows you to easily catalog, discover, and share your data across
+      accounts and regions. With Amazon DataZone, you can seamlessly integrate
+      with various Amazon Web Services offerings such as Redshift, Athena, Glue,
+      and Lake Formation to enhance your data management capabilities.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/datazone/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accept
+      - Activities
+      - Assets
+      - Blueprints
+      - Cancel
+      - Change
+      - Configurations
+      - Data
+      - Domains
+      - Environments
+      - Forms
+      - Glossaries
+      - Glossary
+      - Grants""
+      - Grants
+      - Groups
+      - Groups
+      - IAM
+      - Listings
+      - Listings
+      - Login
+      - Memberships
+      - Notifications
+      - Portals
+      - Predictions
+      - Profiles
+      - Projects
+      - Reject
+      - Resources
+      - Revisions
+      - Revoke
+      - Runs
+      - Search
+      - Sets
+      - Sources
+      - Sources
+      - Status
+      - Subscriptions
+      - Tags
+      - Targets
+      - Targets
+      - Term
+      - Terms
+      - Types
+      - URL
+      - Untag
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/datazone/
       - type: OpenAPI
         url: properties/datazone-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/datazone/features/
+      - type: FAQ
+        url: https://aws.amazon.com/datazone/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/datazone/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/datazone/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/datazone/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/datazone-openapi-search.yml
@@ -2699,35 +3139,38 @@ apis:
     aid: amazon-web-services:datazone
   - name: AWS Data Exchange
     description: >-
-      <p>AWS Data Exchange is a service that makes it easy for AWS customers to
+      AWS Data Exchange is a service that makes it easy for AWS customers to
       exchange data in the cloud. You can use the AWS Data Exchange APIs to
-      create, update, manage, and access file-based data set in the AWS
-      Cloud.</p> <p>As a subscriber, you can view and access the data sets that
-      you have an entitlement to through a subscription. You can use the APIs to
-      download or copy your entitled data sets to Amazon Simple Storage Service
-      (Amazon S3) for use across a variety of AWS analytics and machine learning
-      services.</p> <p>As a provider, you can create and manage your data sets
-      that you would like to publish to a product. Being able to package and
-      provide your data sets into products requires a few steps to determine
-      eligibility. For more information, visit the <i>AWS Data Exchange User
-      Guide</i>.</p> <p>A data set is a collection of data that can be changed
-      or updated over time. Data sets can be updated using revisions, which
-      represent a new version or incremental change to a data set. A revision
-      contains one or more assets. An asset in AWS Data Exchange is a piece of
-      data that can be stored as an Amazon S3 object, Redshift datashare, API
-      Gateway API, AWS Lake Formation data permission, or Amazon S3 data access.
-      The asset can be a structured data file, an image file, or some other data
-      file. Jobs are asynchronous import or export operations used to create or
-      copy assets.</p>
+      create, update, manage, and access file-based data set in the AWS Cloud. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/data-exchange/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Actions
+      - Assets
+      - Data
+      - Events
+      - Jobs
+      - Notifications
+      - Resources
+      - Revisions
+      - Revoke
+      - Send
+      - Sets
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/data-exchange/
       - type: OpenAPI
         url: properties/dataexchange-openapi-original.yml
+      - type: Updates
+        url: https://aws.amazon.com/data-exchange/latest-updates/
+      - type: Updates
+        url: https://aws.amazon.com/data-exchange/latest-updates/
+      - type: Providers
+        url: https://aws.amazon.com/data-exchange/providers/
     overlays:
       - type: APIs.io Search
         url: overlays/dataexchange-openapi-search.yml
@@ -2736,35 +3179,25 @@ apis:
     aid: amazon-web-services:dataexchange
   - name: AWS Data Pipeline
     description: >-
-      <p>AWS Data Pipeline configures and manages a data-driven workflow called
-      a pipeline. AWS Data Pipeline handles the details of scheduling and
-      ensuring that data dependencies are met so that your application can focus
-      on processing the data.</p> <p>AWS Data Pipeline provides a JAR
-      implementation of a task runner called AWS Data Pipeline Task Runner. AWS
-      Data Pipeline Task Runner provides logic for common data management
-      scenarios, such as performing database queries and running data analysis
-      using Amazon Elastic MapReduce (Amazon EMR). You can use AWS Data Pipeline
-      Task Runner as your task runner, or you can write your own task runner to
-      provide custom data management.</p> <p>AWS Data Pipeline implements two
-      main sets of functionality. Use the first set to create a pipeline and
-      define data sources, schedules, dependencies, and the transforms to be
-      performed on the data. Use the second set in your task runner application
-      to receive the next task ready for processing. The logic for performing
-      the task, such as querying the data, running data analysis, or converting
-      the data from one format to another, is contained within the task runner.
-      The task runner performs the task assigned to it by the web service,
-      reporting progress to the web service as it does so. When the task is
-      done, the task runner reports the final success or failure of the task to
-      the web service.</p>
+      AWS Data Pipeline configures and manages a data-driven workflow called a
+      pipeline. AWS Data Pipeline handles the details of scheduling and ensuring
+      that data dependencies are met so that your application can focus on
+      processing the data. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/data-pipeline/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Definitions
+      - Pipelines
+      - Validate
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/data-pipeline/
       - type: OpenAPI
         url: properties/datapipeline-openapi-original.yml
+      - type: Guide
+        url: >-
+          https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/datapipeline-openapi-search.yml
@@ -2773,27 +3206,29 @@ apis:
     aid: amazon-web-services:datapipeline
   - name: AWS Device Farm
     description: >-
-      <p>Welcome to the AWS Device Farm API documentation, which contains APIs
-      for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm
-      makes it possible for you to test your web applications on desktop
-      browsers using Selenium. The APIs for desktop browser testing contain
-      <code>TestGrid</code> in their names. For more information, see <a
-      href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web
-      Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing
-      on real mobile devices</p> <p>Device Farm makes it possible for you to
-      test apps on physical phones, tablets, and other devices in the cloud. For
-      more information, see the <a
-      href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device
-      Farm Developer Guide</a>.</p> </li> </ul>
+      Explore the AWS Device Farm API documentation, offering APIs for two main
+      testing services: desktop browser testing and real mobile device testing.
+      Use Device Farm to test your web applications on desktop browsers with
+      Selenium through the TestGrid-named APIs. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/device-farm/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - VPCE
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/device-farm/
       - type: OpenAPI
         url: properties/devicefarm-openapi-original.yml
+      - type: Device List
+        url: https://aws.amazon.com/device-farm/device-list/
+      - type: Pricing
+        url: https://aws.amazon.com/device-farm/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/device-farm/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/device-farm/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/devicefarm-openapi-search.yml
@@ -2802,25 +3237,31 @@ apis:
     aid: amazon-web-services:devicefarm
   - name: AWS Direct Connect
     description: >-
-      <p>Direct Connect links your internal network to an Direct Connect
-      location over a standard Ethernet fiber-optic cable. One end of the cable
-      is connected to your router, the other to an Direct Connect router. With
-      this connection in place, you can create virtual interfaces directly to
-      the Amazon Web Services Cloud (for example, to Amazon EC2 and Amazon S3)
-      and to Amazon VPC, bypassing Internet service providers in your network
-      path. A connection provides access to all Amazon Web Services Regions
-      except the China (Beijing) and (China) Ningxia Regions. Amazon Web
-      Services resources in the China Regions can only be accessed through
-      locations associated with those Regions.</p>
+      Direct Connect allows you to establish a high-speed, private connection
+      between your internal network and an Direct Connect location using a
+      standard Ethernet fiber-optic cable. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/directconnect/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Attributes
+      - Interfaces
+      - Virtual
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/directconnect/
       - type: OpenAPI
         url: properties/directconnect-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/directconnect/features/
+      - type: Pricing
+        url: https://aws.amazon.com/directconnect/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/directconnect/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/directconnect/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/directconnect/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/directconnect-openapi-search.yml
@@ -2829,64 +3270,59 @@ apis:
     aid: amazon-web-services:directconnect
   - name: AWS Detective
     description: >-
-      <p>Detective uses machine learning and purpose-built visualizations to
-      help you to analyze and investigate security issues across your Amazon Web
-      Services (Amazon Web Services) workloads. Detective automatically extracts
-      time-based events such as login attempts, API calls, and network traffic
-      from CloudTrail and Amazon Virtual Private Cloud (Amazon VPC) flow logs.
-      It also extracts findings detected by Amazon GuardDuty.</p> <p>The
-      Detective API primarily supports the creation and management of behavior
-      graphs. A behavior graph contains the extracted data from a set of member
-      accounts, and is created and managed by an administrator account.</p>
-      <p>To add a member account to the behavior graph, the administrator
-      account sends an invitation to the account. When the account accepts the
-      invitation, it becomes a member account in the behavior graph.</p>
-      <p>Detective is also integrated with Organizations. The organization
-      management account designates the Detective administrator account for the
-      organization. That account becomes the administrator account for the
-      organization behavior graph. The Detective administrator account is also
-      the delegated administrator account for Detective in Organizations.</p>
-      <p>The Detective administrator account can enable any organization account
-      as a member account in the organization behavior graph. The organization
-      accounts do not receive invitations. The Detective administrator account
-      can also invite other accounts to the organization behavior graph.</p>
-      <p>Every behavior graph is specific to a Region. You can only use the API
-      to manage behavior graphs that belong to the Region that is associated
-      with the currently selected endpoint.</p> <p>The administrator account for
-      a behavior graph can use the Detective API to do the following:</p> <ul>
-      <li> <p>Enable and disable Detective. Enabling Detective creates a new
-      behavior graph.</p> </li> <li> <p>View the list of member accounts in a
-      behavior graph.</p> </li> <li> <p>Add member accounts to a behavior
-      graph.</p> </li> <li> <p>Remove member accounts from a behavior graph.</p>
-      </li> <li> <p>Apply tags to a behavior graph.</p> </li> </ul> <p>The
-      organization management account can use the Detective API to select the
-      delegated administrator for Detective.</p> <p>The Detective administrator
-      account for an organization can use the Detective API to do the
-      following:</p> <ul> <li> <p>Perform all of the functions of an
-      administrator account.</p> </li> <li> <p>Determine whether to
-      automatically enable new organization accounts as member accounts in the
-      organization behavior graph.</p> </li> </ul> <p>An invited member account
-      can use the Detective API to do the following:</p> <ul> <li> <p>View the
-      list of behavior graphs that they are invited to.</p> </li> <li> <p>Accept
-      an invitation to contribute to a behavior graph.</p> </li> <li> <p>Decline
-      an invitation to contribute to a behavior graph.</p> </li> <li> <p>Remove
-      their account from a behavior graph.</p> </li> </ul> <p>All API actions
-      are logged as CloudTrail events. See <a
-      href="https://docs.aws.amazon.com/detective/latest/adminguide/logging-using-cloudtrail.html">Logging
-      Detective API Calls with CloudTrail</a>.</p> <note> <p>We replaced the
-      term "master account" with the term "administrator account." An
-      administrator account is used to centrally manage multiple accounts. In
-      the case of Detective, the administrator account manages the accounts in
-      their behavior graph.</p> </note>
+      The Amazon Detective API streamlines the investigation process for
+      security teams, enabling faster and more efficient analysis. By leveraging
+      prebuilt data aggregations, summaries, and context provided by Amazon
+      Detective, users can quickly assess and understand potential security
+      threats.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/detective/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accept
+      - Accounts
+      - Accounts List
+      - Administrative
+      - Batches
+      - Configurations
+      - Data Source
+      - Describe
+      - Disable
+      - Disassociate
+      - Enable
+      - Graphs
+      - Indicators
+      - Investigations
+      - Invitation
+      - Invitations
+      - Members
+      - Memberships
+      - Monitoring
+      - Monitoring State
+      - Organizations
+      - Packages
+      - Reject
+      - Removal
+      - Resources
+      - States
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/detective/
       - type: OpenAPI
         url: properties/detective-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/detective/features/
+      - type: Pricing
+        url: https://aws.amazon.com/detective/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/detective/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/detective/faqs/
+      - type: FAQ
+        url: https://aws.amazon.com/detective/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/detective-openapi-search.yml
@@ -2895,22 +3331,25 @@ apis:
     aid: amazon-web-services:detective
   - name: Amazon Data Lifecycle Manager
     description: >-
-      <fullname>Amazon Data Lifecycle Manager</fullname> <p>With Amazon Data
-      Lifecycle Manager, you can manage the lifecycle of your Amazon Web
-      Services resources. You create lifecycle policies, which are used to
-      automate operations on the specified resources.</p> <p>Amazon Data
-      Lifecycle Manager supports Amazon EBS volumes and snapshots. For
-      information about using Amazon Data Lifecycle Manager with Amazon EBS, see
-      <a
-      href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html">
-      Amazon Data Lifecycle Manager</a> in the <i>Amazon EC2 User Guide</i>.</p>
+      Amazon Data Lifecycle Manager With Amazon Data Lifecycle Manager, you can
+      manage the lifecycle of your Amazon Web Services resources. You create
+      lifecycle policies, which are used to automate operations on the specified
+      resources. Amazon Data Lifecycle Manager supports Amazon EBS volumes and
+      snapshots.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Lifecycle
+      - Policies
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html
       - type: OpenAPI
         url: properties/dlm-openapi-original.yml
     overlays:
@@ -2921,139 +3360,118 @@ apis:
     aid: amazon-web-services:dlm
   - name: Amazon DevOps Guru
     description: >-
-      <p> Amazon DevOps Guru is a fully managed service that helps you identify
-      anomalous behavior in business critical operational applications. You
-      specify the Amazon Web Services resources that you want DevOps Guru to
-      cover, then the Amazon CloudWatch metrics and Amazon Web Services
-      CloudTrail events related to those resources are analyzed. When anomalous
-      behavior is detected, DevOps Guru creates an <i>insight</i> that includes
-      recommendations, related events, and related metrics that can help you
-      improve your operational applications. For more information, see <a
-      href="https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html">What
-      is Amazon DevOps Guru</a>. </p> <p> You can specify 1 or 2 Amazon Simple
-      Notification Service topics so you are notified every time a new insight
-      is created. You can also enable DevOps Guru to generate an OpsItem in
-      Amazon Web Services Systems Manager for each insight to help you manage
-      and track your work addressing insights. </p> <p> To learn about the
-      DevOps Guru workflow, see <a
-      href="https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html#how-it-works">How
-      DevOps Guru works</a>. To learn about DevOps Guru concepts, see <a
-      href="https://docs.aws.amazon.com/devops-guru/latest/userguide/concepts.html">Concepts
-      in DevOps Guru</a>. </p>
+      Amazon DevOps Guru is a managed service designed to detect abnormal
+      behavior in critical operational applications. Users can select the Amazon
+      Web Services resources they want DevOps Guru to monitor, allowing the
+      service to analyze CloudWatch metrics and CloudTrail events related to
+      those resources. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/devops-guru/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accounts
+      - Anomalies
+      - Anomalous
+      - Anomaly
+      - Channels
+      - Collections
+      - Configurations
+      - Cost
+      - Describe
+      - Estimation
+      - Events
+      - Feedback
+      - Groups
+      - Health
+      - Insights
+      - Integrations
+      - Logs
+      - Monitored
+      - Notifications
+      - Organizations
+      - Overview
+      - Recommendations
+      - Removes
+      - Resources
+      - Search
+      - Services
+      - Sources
+      - Types
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/devops-guru/
       - type: OpenAPI
         url: properties/devops-guru-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/devops-guru/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/devops-guru/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/devops-guru/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/devops-guru/customers/
+      - type: Partners
+        url: https://aws.amazon.com/devops-guru/partners/
+      - type: Features
+        url: https://aws.amazon.com/devops-guru/features/
     overlays:
       - type: APIs.io Search
         url: overlays/devops-guru-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/devops-guru-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:devops-guru
-  - name: AWS DAX
+  - name: Amazon DynamoDB Accelerator (DAX)
     description: >-
-      <p>DAX is a managed caching service engineered for Amazon DynamoDB. DAX
-      dramatically speeds up database reads by caching frequently-accessed data
-      from DynamoDB, so applications can access that data with sub-millisecond
-      latency. You can create a DAX cluster easily, using the AWS Management
-      Console. With a few simple modifications to your code, your application
-      can begin taking advantage of the DAX cluster and realize significant
-      improvements in read performance.</p>
+      DAX is a managed caching service designed specifically for Amazon
+      DynamoDB. It significantly boosts database read speeds by storing
+      frequently accessed data from DynamoDB, allowing applications to retrieve
+      that data with extremely low latency. Setting up a DAX cluster is a
+      straightforward process through the AWS Management Console. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/dynamodbaccelerator/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Subnets
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/dynamodbaccelerator/
       - type: OpenAPI
         url: properties/dax-openapi-original.yml
+      - type: Customers
+        url: https://aws.amazon.com/dynamodbaccelerator/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/dax-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/dax-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:dax
-  - name: AWS Application Discovery
+  - name: AWS Application Discovery Service
     description: >-
-      <fullname>Amazon Web Services Application Discovery Service</fullname>
-      <p>Amazon Web Services Application Discovery Service (Application
-      Discovery Service) helps you plan application migration projects. It
-      automatically identifies servers, virtual machines (VMs), and network
-      dependencies in your on-premises data centers. For more information, see
-      the <a href="http://aws.amazon.com/application-discovery/faqs/">Amazon Web
-      Services Application Discovery Service FAQ</a>. </p> <p>Application
-      Discovery Service offers three ways of performing discovery and collecting
-      data about your on-premises servers:</p> <ul> <li> <p> <b>Agentless
-      discovery</b> using Amazon Web Services Application Discovery Service
-      Agentless Collector (Agentless Collector), which doesn't require you to
-      install an agent on each host.</p> <ul> <li> <p>Agentless Collector
-      gathers server information regardless of the operating systems, which
-      minimizes the time required for initial on-premises infrastructure
-      assessment.</p> </li> <li> <p>Agentless Collector doesn't collect
-      information about network dependencies, only agent-based discovery
-      collects that information. </p> </li> </ul> </li> </ul> <ul> <li> <p>
-      <b>Agent-based discovery</b> using the Amazon Web Services Application
-      Discovery Agent (Application Discovery Agent) collects a richer set of
-      data than agentless discovery, which you install on one or more hosts in
-      your data center.</p> <ul> <li> <p> The agent captures infrastructure and
-      application information, including an inventory of running processes,
-      system performance information, resource utilization, and network
-      dependencies.</p> </li> <li> <p>The information collected by agents is
-      secured at rest and in transit to the Application Discovery Service
-      database in the Amazon Web Services cloud. For more information, see <a
-      href="https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html">Amazon
-      Web Services Application Discovery Agent</a>.</p> </li> </ul> </li> </ul>
-      <ul> <li> <p> <b>Amazon Web Services Partner Network (APN) solutions</b>
-      integrate with Application Discovery Service, enabling you to import
-      details of your on-premises environment directly into Amazon Web Services
-      Migration Hub (Migration Hub) without using Agentless Collector or
-      Application Discovery Agent.</p> <ul> <li> <p>Third-party application
-      discovery tools can query Amazon Web Services Application Discovery
-      Service, and they can write to the Application Discovery Service database
-      using the public API.</p> </li> <li> <p>In this way, you can import data
-      into Migration Hub and view it, so that you can associate applications
-      with servers and track migrations.</p> </li> </ul> </li> </ul> <p>
-      <b>Working With This Guide</b> </p> <p>This API reference provides
-      descriptions, syntax, and usage examples for each of the actions and data
-      types for Application Discovery Service. The topic for each action shows
-      the API request parameters and the response. Alternatively, you can use
-      one of the Amazon Web Services SDKs to access an API that is tailored to
-      the programming language or platform that you're using. For more
-      information, see <a href="http://aws.amazon.com/tools/#SDKs">Amazon Web
-      Services SDKs</a>.</p> <note> <ul> <li> <p>Remember that you must set your
-      Migration Hub home Region before you call any of these APIs.</p> </li>
-      <li> <p>You must make API calls for write actions (create, notify,
-      associate, disassociate, import, or put) while in your home Region, or a
-      <code>HomeRegionNotSetException</code> error is returned.</p> </li> <li>
-      <p>API calls for read actions (list, describe, stop, and delete) are
-      permitted outside of your home Region.</p> </li> <li> <p>Although it is
-      unlikely, the Migration Hub home Region could change. If you call APIs
-      outside the home Region, an <code>InvalidInputException</code> is
-      returned.</p> </li> <li> <p>You must call <code>GetHomeRegion</code> to
-      obtain the latest Migration Hub home Region.</p> </li> </ul> </note>
-      <p>This guide is intended for use with the <a
-      href="https://docs.aws.amazon.com/application-discovery/latest/userguide/">Amazon
-      Web Services Application Discovery Service User Guide</a>.</p> <important>
-      <p>All data is handled according to the <a
-      href="https://aws.amazon.com/privacy/">Amazon Web Services Privacy
-      Policy</a>. You can operate Application Discovery Service offline to
-      inspect collected data before it is shared with the service.</p>
-      </important>
+      The Amazon Web Services Application Discovery Service helps users plan
+      application migration projects by automatically identifying servers,
+      virtual machines, and network dependencies in on-premises data centers. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/application-discovery/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/application-discovery/
       - type: OpenAPI
         url: properties/discovery-openapi-original.yml
+      - type: Feature
+        url: https://aws.amazon.com/application-discovery/features/
+      - type: Pricing
+        url: https://aws.amazon.com/application-discovery/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/application-discovery/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/application-discovery/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/application-discovery/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/application-discovery/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/discovery-openapi-search.yml
@@ -3062,32 +3480,29 @@ apis:
     aid: amazon-web-services:discovery
   - name: AWS Directory Service
     description: >-
-      <fullname>Directory Service</fullname> <p>Directory Service is a web
-      service that makes it easy for you to setup and run directories in the
-      Amazon Web Services cloud, or connect your Amazon Web Services resources
-      with an existing self-managed Microsoft Active Directory. This guide
-      provides detailed information about Directory Service operations, data
-      types, parameters, and errors. For information about Directory Services
-      features, see <a href="https://aws.amazon.com/directoryservice/">Directory
-      Service</a> and the <a
-      href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory
-      Service Administration Guide</a>.</p> <note> <p>Amazon Web Services
-      provides SDKs that consist of libraries and sample code for various
-      programming languages and platforms (Java, Ruby, .Net, iOS, Android,
-      etc.). The SDKs provide a convenient way to create programmatic access to
-      Directory Service and other Amazon Web Services services. For more
-      information about the Amazon Web Services SDKs, including how to download
-      and install them, see <a href="http://aws.amazon.com/tools/">Tools for
-      Amazon Web Services</a>.</p> </note>
+      API for Directory Service is a convenient web service designed to help
+      users easily establish and manage directories in the Amazon Web Services
+      cloud. It also allows users to connect their Amazon Web Services resources
+      to an existing Microsoft Active Directory that they manage themselves. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/directoryservice/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Trust
+      - Verify
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/directoryservice/
       - type: OpenAPI
         url: properties/ds-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/directoryservice/features/
+      - type: Pricing
+        url: https://aws.amazon.com/directoryservice/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/directoryservice/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/directoryservice/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/ds-openapi-search.yml
@@ -3095,16 +3510,64 @@ apis:
         url: overlays/ds-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ds
   - name: AWS Elastic Disaster Recovery Service
-    description: <p>AWS Elastic Disaster Recovery Service.</p>
+    description: >-
+      AWS Elastic Disaster Recovery (AWS DRS), helps to reduce downtime and
+      prevent data loss by quickly and reliably recovering on-premises and
+      cloud-based applications. It utilizes cost-effective storage, minimal
+      computing resources, and offers point-in-time recovery for optimal
+      efficiency.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/disaster-recovery/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Actions
+      - Associate
+      - Configurations
+      - Data
+      - Describe
+      - Disconnect
+      - Exports
+      - Extended
+      - Extensible
+      - Failback
+      - Initialize
+      - Instances
+      - Items
+      - Jobs
+      - Launch
+      - Logs
+      - Networks
+      - Recovery
+      - Replication
+      - Resources
+      - Retry
+      - Reverse
+      - Servers
+      - Services
+      - Snapshots
+      - Sources
+      - Stack
+      - Staging
+      - Stop
+      - Tags
+      - Templates
+      - Terminate
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/disaster-recovery/
       - type: OpenAPI
         url: properties/drs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/disaster-recovery/features/
+      - type: Pricing
+        url: https://aws.amazon.com/disaster-recovery/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/disaster-recovery/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/disaster-recovery/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/drs-openapi-search.yml
@@ -3113,26 +3576,36 @@ apis:
     aid: amazon-web-services:drs
   - name: AWS Database Migration Service
     description: >-
-      <fullname>Database Migration Service</fullname> <p>Database Migration
-      Service (DMS) can migrate your data to and from the most widely used
-      commercial and open-source databases such as Oracle, PostgreSQL, Microsoft
-      SQL Server, Amazon Redshift, MariaDB, Amazon Aurora, MySQL, and SAP
-      Adaptive Server Enterprise (ASE). The service supports homogeneous
-      migrations such as Oracle to Oracle, as well as heterogeneous migrations
-      between different database platforms, such as Oracle to MySQL or SQL
-      Server to PostgreSQL.</p> <p>For more information about DMS, see <a
-      href="https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html">What
-      Is Database Migration Service?</a> in the <i>Database Migration Service
-      User Guide.</i> </p>
+      Our Database Migration Service (DMS) is a flexible tool that can
+      seamlessly move data between a variety of commercial and open-source
+      databases, including Oracle, PostgreSQL, Microsoft SQL Server, Amazon
+      Redshift, MariaDB, Amazon Aurora, MySQL, and SAP Adaptive Server
+      Enterprise (ASE). 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/dms/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Database
+      - Migrations
+      - Subscriptions
+      - Events
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/dms/
       - type: OpenAPI
         url: properties/dms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/dms/features/
+      - type: Schema Conversion Tool
+        url: https://aws.amazon.com/dms/schema-conversion-tool/
+      - type: Pricing
+        url: https://aws.amazon.com/dms/pricing/
+      - type: Resources
+        url: https://docs.aws.amazon.com/dms/
+      - type: Partners
+        url: https://aws.amazon.com/dms/partners/
+      - type: Customers
+        url: https://aws.amazon.com/dms/testimonials/
     overlays:
       - type: APIs.io Search
         url: overlays/dms-openapi-search.yml
@@ -3141,42 +3614,42 @@ apis:
     aid: amazon-web-services:dms
   - name: Amazon Elastic Block Store
     description: >-
-      <p>You can use the Amazon Elastic Block Store (Amazon EBS) direct APIs to
+      Use the Amazon Elastic Block Store (Amazon EBS) direct APIs to easily
       create Amazon EBS snapshots, write data directly to your snapshots, read
-      data on your snapshots, and identify the differences or changes between
-      two snapshots. If you’re an independent software vendor (ISV) who offers
-      backup services for Amazon EBS, the EBS direct APIs make it more efficient
-      and cost-effective to track incremental changes on your Amazon EBS volumes
-      through snapshots. This can be done without having to create new volumes
-      from snapshots, and then use Amazon Elastic Compute Cloud (Amazon EC2)
-      instances to compare the differences.</p> <p>You can create incremental
-      snapshots directly from data on-premises into volumes and the cloud to use
-      for quick disaster recovery. With the ability to write and read snapshots,
-      you can write your on-premises data to an snapshot during a disaster. Then
-      after recovery, you can restore it back to Amazon Web Services or
-      on-premises from the snapshot. You no longer need to build and maintain
-      complex mechanisms to copy data to and from Amazon EBS.</p> <p>This API
-      reference provides detailed information about the actions, data types,
-      parameters, and errors of the EBS direct APIs. For more information about
-      the elements that make up the EBS direct APIs, and examples of how to use
-      them effectively, see <a
-      href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-accessing-snapshot.html">Accessing
-      the Contents of an Amazon EBS Snapshot</a> in the <i>Amazon Elastic
-      Compute Cloud User Guide</i>. For more information about the supported
-      Amazon Web Services Regions, endpoints, and service quotas for the EBS
-      direct APIs, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/ebs-service.html">Amazon
-      Elastic Block Store Endpoints and Quotas</a> in the <i>Amazon Web Services
-      General Reference</i>.</p>
+      data on your snapshots, and identify differences or changes between two
+      snapshots. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ebs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Blocks
+      - Changed
+      - Changed Blocks
+      - Complete
+      - Completions
+      - Index
+      - Second
+      - Snapshots
+      - Storage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ebs/
       - type: OpenAPI
         url: properties/ebs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ebs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ebs/pricing/
+      - type: Volume Types
+        url: https://aws.amazon.com/ebs/volume-types/
+      - type: Resources
+        url: https://aws.amazon.com/ebs/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/ebs/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/ebs/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/ebs/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/ebs-openapi-search.yml
@@ -3185,20 +3658,35 @@ apis:
     aid: amazon-web-services:ebs
   - name: Amazon DocumentDB
     description: >-
-      <p>Amazon DocumentDB is a fast, reliable, and fully managed database
-      service. Amazon DocumentDB makes it easy to set up, operate, and scale
-      MongoDB-compatible databases in the cloud. With Amazon DocumentDB, you can
-      run the same application code and use the same drivers and tools that you
-      use with MongoDB.</p>
+      Amazon DocumentDB is a cloud-based database service that offers fast and
+      reliable performance. It is fully managed and compatible with MongoDB,
+      making it easy to set up, operate, and scale databases. With Amazon
+      DocumentDB, you can seamlessly run your existing application code and
+      access the same drivers and tools you currently use with MongoDB.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/documentdb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Stop
+      - Database Cluster
+      - Database
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/documentdb/
       - type: OpenAPI
         url: properties/docdb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/documentdb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/documentdb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/documentdb/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/documentdb/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/documentdb/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/documentdb/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/docdb-openapi-search.yml
@@ -3206,14 +3694,28 @@ apis:
         url: overlays/docdb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:docdb
   - name: Amazon Elastic DocumentDB
-    description: <p>The new Amazon Elastic DocumentDB service endpoint.</p>
+    description: >-
+      The Amazon DocumentDB API offers elastic clusters that can handle high
+      volumes of reads/writes per second and store petabytes of data. These
+      clusters make it easier for developers to work with Amazon DocumentDB by
+      removing the need to select, oversee, or update instances.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-using-elastic-clusters.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Cluster
+      - Clusters
+      - Resources
+      - Restore
+      - Snapshots
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-using-elastic-clusters.html
       - type: OpenAPI
         url: properties/docdb-elastic-openapi-original.yml
     overlays:
@@ -3224,16 +3726,23 @@ apis:
     aid: amazon-web-services:docdb-elastic
   - name: Amazon EC2 Instance Connect
     description: >-
-      <p>Amazon EC2 Instance Connect enables system administrators to publish
-      one-time use SSH public keys to EC2, providing users a simple and secure
-      way to connect to their instances.</p>
+      Amazon EC2 Instance Connect allows system administrators to generate and
+      share one-time use SSH public keys on EC2, offering users a convenient and
+      reliable method to access their instances securely.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Console
+      - Keys
+      - SSHPublic
+      - Send
+      - Serial
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
       - type: OpenAPI
         url: properties/ec2-instance-connect-openapi-original.yml
     overlays:
@@ -3244,19 +3753,42 @@ apis:
     aid: amazon-web-services:ec2-instance-connect
   - name: Amazon DynamoDB
     description: >-
-      <p>Amazon DynamoDB is a fast, highly scalable, highly available,
-      cost-effective non-relational database service.</p> <p>Amazon DynamoDB
-      removes traditional scalability limitations on data storage while
-      maintaining low latency and predictable performance.</p>
+      Amazon DynamoDB, is a NoSQL database service that operates in a serverless
+      environment, allowing you to build modern applications of any size. With
+      DynamoDB, you only pay for the resources you use, and the database can
+      scale down to zero, eliminating cold starts, version upgrades, maintenance
+      windows, patching, and downtime. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/dynamodb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Database
+      - ' NoSQL'
+      - ' Live'
+      - Time
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/dynamodb/
       - type: OpenAPI
         url: properties/dynamodb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/dynamodb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/dynamodb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/dynamodb/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/dynamodb/getting-started/
+      - type: Migrations
+        url: https://aws.amazon.com/dynamodb/migrations/
+      - type: Partners
+        url: https://aws.amazon.com/dynamodb/partners/
+      - type: Solutions
+        url: https://aws.amazon.com/dynamodb/solutions-by-industry/
+      - type: FAQ
+        url: https://aws.amazon.com/dynamodb/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/dynamodb/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/dynamodb-openapi-search.yml
@@ -3265,20 +3797,46 @@ apis:
     aid: amazon-web-services:dynamodb
   - name: Amazon Elastic Compute Cloud
     description: >-
-      <fullname>Amazon Elastic Compute Cloud</fullname> <p>Amazon Elastic
-      Compute Cloud (Amazon EC2) provides resizable computing capacity in the
-      Amazon Web Services (AWS) cloud. Using Amazon EC2 eliminates your need to
-      invest in hardware up front, so you can develop and deploy applications
-      faster.</p>
+      The Amazon Elastic Compute Cloud (Amazon EC2) API provides a comprehensive
+      compute platform with a wide range of instance options and the latest
+      technology choices in processors, storage, networking, operating systems,
+      and purchase models to suit your workload requirements. We are the leading
+      cloud provider to support Intel, AMD, and Arm processors, offer on-demand
+      EC2 Mac instances, and feature 400 Gbps Ethernet networking. This API
+      delivers exceptional price performance for machine learning training and
+      the most cost-effective inference instances in the cloud. AWS has the
+      largest number of SAP, high performance computing (HPC), ML, and Windows
+      workloads compared to any other cloud provider.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ec2/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Withdraw
+      - CIDR
+      - Storage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ec2/
       - type: OpenAPI
         url: properties/ec2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ec2/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ec2/pricing/
+      - type: Instance Types
+        url: https://aws.amazon.com/ec2/instance-types/
+      - type: FAQ
+        url: https://aws.amazon.com/ec2/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/ec2/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/ec2/resources/
+      - type: Videos
+        url: https://aws.amazon.com/ec2/videos/
+      - type: Customers
+        url: https://aws.amazon.com/ec2/customers/
+      - type: Cost Optimizations
+        url: https://aws.amazon.com/ec2/cost-and-capacity/
     overlays:
       - type: APIs.io Search
         url: overlays/ec2-openapi-search.yml
@@ -3287,27 +3845,72 @@ apis:
     aid: amazon-web-services:ec2
   - name: Amazon Elastic Kubernetes Service
     description: >-
-      <p>Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service
-      that makes it easy for you to run Kubernetes on Amazon Web Services
-      without needing to setup or maintain your own Kubernetes control plane.
-      Kubernetes is an open-source system for automating the deployment,
-      scaling, and management of containerized applications.</p> <p>Amazon EKS
-      runs up-to-date versions of the open-source Kubernetes software, so you
-      can use all the existing plugins and tooling from the Kubernetes
-      community. Applications running on Amazon EKS are fully compatible with
-      applications running on any standard Kubernetes environment, whether
-      running in on-premises data centers or public clouds. This means that you
-      can easily migrate any standard Kubernetes application to Amazon EKS
-      without any code modification required.</p>
+      Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed service
+      designed to simplify the process of running Kubernetes on Amazon Web
+      Services. With Amazon EKS, users can easily deploy, scale, and manage
+      containerized applications without the need to set up or maintain their
+      own Kubernetes control plane. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/eks/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Addons
+      - Anywhere
+      - Associate
+      - Associated
+      - Associations
+      - Clusters
+      - Configurations
+      - Deregister
+      - Describe
+      - Disassociate
+      - EKS
+      - Encryption
+      - Entities
+      - Entries
+      - Entry
+      - Er
+      - Fargate
+      - Groups
+      - Identity
+      - Insights
+      - Names
+      - Node Groups
+      - Nodes
+      - Pods
+      - Policies
+      - Principals
+      - Profiles
+      - Prov
+      - Providers
+      - Register
+      - Registrations
+      - Resources
+      - Schemas
+      - Subscriptions
+      - Supported
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/eks/
       - type: OpenAPI
         url: properties/eks-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/eks/features/
+      - type: Pricing
+        url: https://aws.amazon.com/eks/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/eks/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/eks/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/eks/customers/
+      - type: Partners
+        url: https://aws.amazon.com/eks/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/eks-openapi-search.yml
@@ -3316,26 +3919,37 @@ apis:
     aid: amazon-web-services:eks
   - name: Amazon Elastic Container Registry
     description: >-
-      <fullname>Amazon Elastic Container Registry</fullname> <p>Amazon Elastic
-      Container Registry (Amazon ECR) is a managed container image registry
-      service. Customers can use the familiar Docker CLI, or their preferred
-      client, to push, pull, and manage images. Amazon ECR provides a secure,
-      scalable, and reliable registry for your Docker or Open Container
-      Initiative (OCI) images. Amazon ECR supports private repositories with
-      resource-based permissions using IAM so that specific users or Amazon EC2
-      instances can access repositories and images.</p> <p>Amazon ECR has
-      service endpoints in each supported Region. For more information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/ecr.html">Amazon ECR
-      endpoints</a> in the <i>Amazon Web Services General Reference</i>.</p>
+      The Amazon Elastic Container Registry (Amazon ECR) is a managed service
+      that allows customers to store and manage container images securely. Users
+      can easily push, pull, and manage images using the Docker CLI or their
+      preferred client. Amazon ECR supports private repositories with
+      resource-based permissions using IAM, allowing specific users or Amazon
+      EC2 instances to access repositories and images. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ecr/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Cache
+      - Pull
+      - Rules
+      - Validate
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ecr/
       - type: OpenAPI
         url: properties/ecr-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ecr/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ecr/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/ecr/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/ecr/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/ecr/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/ecr/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/ecr-openapi-search.yml
@@ -3344,31 +3958,43 @@ apis:
     aid: amazon-web-services:ecr
   - name: Amazon Elastic Container Service
     description: >-
-      <fullname>Amazon Elastic Container Service</fullname> <p>Amazon Elastic
-      Container Service (Amazon ECS) is a highly scalable, fast, container
-      management service. It makes it easy to run, stop, and manage Docker
-      containers. You can host your cluster on a serverless infrastructure
-      that's managed by Amazon ECS by launching your services or tasks on
-      Fargate. For more control, you can host your tasks on a cluster of Amazon
-      Elastic Compute Cloud (Amazon EC2) or External (on-premises) instances
-      that you manage.</p> <p>Amazon ECS makes it easy to launch and stop
-      container-based applications with simple API calls. This makes it easy to
-      get the state of your cluster from a centralized service, and gives you
-      access to many familiar Amazon EC2 features.</p> <p>You can use Amazon ECS
-      to schedule the placement of containers across your cluster based on your
-      resource needs, isolation policies, and availability requirements. With
-      Amazon ECS, you don't need to operate your own cluster management and
-      configuration management systems. You also don't need to worry about
-      scaling your management infrastructure. </p>
+      Amazon Elastic Container Service (Amazon ECS) is a robust container
+      management service provided by Amazon. It enables easy running, stopping,
+      and management of Docker containers with high scalability and speed.
+      Amazon ECS allows you to host your container clusters on a serverless
+      infrastructure using Fargate or on Amazon EC2 instances that you manage.
+      With Amazon ECS, you can effortlessly launch and stop container-based
+      applications through simple API calls and benefit from centralized
+      monitoring capabilities and familiar Amazon EC2 features. Additionally,
+      Amazon ECS offers advanced scheduling capabilities for placing containers
+      based on resource requirements, isolation policies, and availability
+      needs. By using Amazon ECS, you can simplify cluster management,
+      configuration, and scalability, eliminating the need for your own cluster
+      and configuration management systems.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ecs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Tasks
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ecs/
       - type: OpenAPI
         url: properties/ecs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ecs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/ecs/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/ecs/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/ecs/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/ecs/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/ecs/customers/
+      - type: Partners
+        url: https://aws.amazon.com/ecs/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/ecs-openapi-search.yml
@@ -3377,25 +4003,41 @@ apis:
     aid: amazon-web-services:ecs
   - name: Amazon ElastiCache
     description: >-
-      <fullname>Amazon ElastiCache</fullname> <p>Amazon ElastiCache is a web
-      service that makes it easier to set up, operate, and scale a distributed
-      cache in the cloud.</p> <p>With ElastiCache, customers get all of the
-      benefits of a high-performance, in-memory cache with less of the
-      administrative burden involved in launching and managing a distributed
-      cache. The service makes setup, scaling, and cluster failure handling much
-      simpler than in a self-managed cache deployment.</p> <p>In addition,
-      through integration with Amazon CloudWatch, customers get enhanced
-      visibility into the key performance statistics associated with their cache
-      and can receive alarms if a part of their cache runs hot.</p>
+      Amazon ElastiCache is a convenient web service that simplifies the process
+      of setting up, operating, and expanding a distributed cache in the cloud.
+      By utilizing ElastiCache, users can enjoy the advantages of a
+      high-performance, in-memory cache without the extensive administrative
+      tasks typically associated with launching and maintaining a distributed
+      cache. The service streamlines setup, scaling, and cluster failure
+      management compared to a self-managed cache deployment. Additionally,
+      Amazon ElastiCache offers integration with Amazon CloudWatch, providing
+      users with increased visibility into the important performance metrics of
+      their cache and the ability to receive alerts if any parts of their cache
+      become overloaded.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/elasticache/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Migrations
+      - Tests
+      - Cache
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/elasticache/
       - type: OpenAPI
         url: properties/elasticache-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/elasticache/features/
+      - type: Pricing
+        url: https://aws.amazon.com/elasticache/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/elasticache/resources/
+      - type: Migrations
+        url: https://aws.amazon.com/elasticache/migrations/
+      - type: FAQ
+        url: https://aws.amazon.com/elasticache/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/elasticache/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticache-openapi-search.yml
@@ -3404,26 +4046,29 @@ apis:
     aid: amazon-web-services:elasticache
   - name: Amazon Elastic Container Registry Public
     description: >-
-      <fullname>Amazon Elastic Container Registry Public</fullname> <p>Amazon
-      Elastic Container Registry Public (Amazon ECR Public) is a managed
-      container image registry service. Amazon ECR provides both public and
-      private registries to host your container images. You can use the Docker
-      CLI or your preferred client to push, pull, and manage images. Amazon ECR
-      provides a secure, scalable, and reliable registry for your Docker or Open
-      Container Initiative (OCI) images. Amazon ECR supports public repositories
-      with this API. For information about the Amazon ECR API for private
-      repositories, see <a
-      href="https://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html">Amazon
-      Elastic Container Registry API Reference</a>.</p>
+      The Amazon Elastic Container Registry Public (Amazon ECR Public) is a
+      managed service that allows you to host and manage container images in
+      both public and private registries. You can utilize popular tools like the
+      Docker CLI to push, pull, and manage images within a secure, scalable, and
+      reliable registry for Docker or OCI images. This API specifically supports
+      public repositories within Amazon ECR, while private repository
+      functionality can be found in the Amazon Elastic Container Registry API
+      Reference.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/AmazonECR/latest/public/what-is-ecr.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Layers
+      - Uploads
+      - Containers
+      - Registry
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/AmazonECR/latest/public/what-is-ecr.html
       - type: OpenAPI
         url: properties/ecr-public-openapi-original.yml
+      - type: Gallery
+        url: https://gallery.ecr.aws/
     overlays:
       - type: APIs.io Search
         url: overlays/ecr-public-openapi-search.yml
@@ -3432,155 +4077,219 @@ apis:
     aid: amazon-web-services:ecr-public
   - name: Amazon Elastic File System
     description: >-
-      <fullname>Amazon Elastic File System</fullname> <p>Amazon Elastic File
-      System (Amazon EFS) provides simple, scalable file storage for use with
-      Amazon EC2 Linux and Mac instances in the Amazon Web Services Cloud. With
-      Amazon EFS, storage capacity is elastic, growing and shrinking
-      automatically as you add and remove files, so that your applications have
-      the storage they need, when they need it. For more information, see the <a
-      href="https://docs.aws.amazon.com/efs/latest/ug/api-reference.html">Amazon
-      Elastic File System API Reference</a> and the <a
-      href="https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html">Amazon
-      Elastic File System User Guide</a>.</p>
+      Introducing Amazon Elastic File System (Amazon EFS), a user-friendly,
+      scalable file storage solution designed for seamless integration with
+      Amazon EC2 Linux and Mac instances within the AWS Cloud. With Amazon EFS,
+      storage capacity dynamically adjusts to accommodate your changing file
+      needs, ensuring your applications always have the necessary storage
+      resources available. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/efs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Accounts
+      - Backup
+      - Configurations
+      - Describe
+      - File
+      - Groups
+      - Lifecycle
+      - Modify
+      - Mount
+      - Points
+      - Policies
+      - Preferences
+      - Protection
+      - Replication
+      - Resources
+      - Security
+      - Sources
+      - Systems
+      - Tags
+      - Targets
+      - Targets
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/efs/
       - type: OpenAPI
         url: properties/elasticfilesystem-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/efs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/efs/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/efs/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/efs/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/efs/faq/
+      - type: Customers
+        url: https://aws.amazon.com/efs/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticfilesystem-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/elasticfilesystem-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticfilesystem
-  - name: AWS Elastic Beanstalk
+  - name: AWS Elastic Load Balancing
     description: >-
-      <fullname>AWS Elastic Beanstalk</fullname> <p>AWS Elastic Beanstalk makes
-      it easy for you to create, deploy, and manage scalable, fault-tolerant
-      applications running on the Amazon Web Services cloud.</p> <p>For more
-      information about this product, go to the <a
-      href="http://aws.amazon.com/elasticbeanstalk/">AWS Elastic Beanstalk</a>
-      details page. The location of the latest AWS Elastic Beanstalk WSDL is <a
-      href="https://elasticbeanstalk.s3.amazonaws.com/doc/2010-12-01/AWSElasticBeanstalk.wsdl">https://elasticbeanstalk.s3.amazonaws.com/doc/2010-12-01/AWSElasticBeanstalk.wsdl</a>.
-      To install the Software Development Kits (SDKs), Integrated Development
-      Environment (IDE) Toolkits, and command line tools that enable you to
-      access the API, go to <a href="http://aws.amazon.com/tools/">Tools for
-      Amazon Web Services</a>.</p> <p> <b>Endpoints</b> </p> <p>For a list of
-      region-specific endpoints that AWS Elastic Beanstalk supports, go to <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#elasticbeanstalk_region">Regions
-      and Endpoints</a> in the <i>Amazon Web Services Glossary</i>.</p>
+      Elastic Load Balancing is a feature that allows you to distribute incoming
+      traffic across your EC2 instances, increasing the availability of your
+      application. The load balancer monitors the health of registered instances
+      and ensures that traffic is only routed to healthy instances. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/elasticloadbalancing/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Balancer
+      - Listeners
+      - Load
+      - Policies
+      - Sets
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/elasticloadbalancing/
+      - type: OpenAPI
+        url: properties/elasticloadbalancing-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/elasticloadbalancing/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/elasticloadbalancing/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/elasticloadbalancing/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/elasticloadbalancing/partners/
+      - type: Customers
+        url: https://aws.amazon.com/elasticloadbalancing/customers/
+      - type: Features
+        url: https://aws.amazon.com/elasticloadbalancing/features/
+      - type: Application Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/application-load-balancer/
+      - type: Network Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/network-load-balancer/
+      - type: Gateway Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer/
+      - type: Classic Load Balancers
+        url: https://aws.amazon.com/elasticloadbalancing/classic-load-balancer/
+    overlays:
+      - type: APIs.io Search
+        url: overlays/elasticloadbalancing-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/elasticloadbalancing-openapi-api-evangelist-ratings.yml
+    aid: amazon-web-services:elasticloadbalancing
+  - name: AWS Elastic Beanstalk
+    description: >-
+      AWS Elastic Beanstalk makes it easy to develop, deploy, and maintain
+      resilient and scalable applications in the Amazon Web Services cloud.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://aws.amazon.com/elasticbeanstalk/
+    baseURL: https://example.com
+    tags:
+      - Configurations
+      - Settings
+      - Validate
+      - Applications
+    properties:
+      - type: Documentation
+        url: https://aws.amazon.com/elasticbeanstalk/
       - type: OpenAPI
         url: properties/elasticbeanstalk-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/elasticbeanstalk/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/elasticbeanstalk/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/elasticbeanstalk/developer-resources/
+      - type: FAQ
+        url: https://aws.amazon.com/elasticbeanstalk/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/elasticbeanstalk/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticbeanstalk-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/elasticbeanstalk-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticbeanstalk
-  - name: Elastic Load Balancing V2
+  - name: Amazon EMR
     description: >-
-      <fullname>Elastic Load Balancing</fullname> <p>A load balancer distributes
-      incoming traffic across targets, such as your EC2 instances. This enables
-      you to increase the availability of your application. The load balancer
-      also monitors the health of its registered targets and ensures that it
-      routes traffic only to healthy targets. You configure your load balancer
-      to accept incoming traffic by specifying one or more listeners, which are
-      configured with a protocol and port number for connections from clients to
-      the load balancer. You configure a target group with a protocol and port
-      number for connections from the load balancer to the targets, and with
-      health check settings to be used when checking the health status of the
-      targets.</p> <p>Elastic Load Balancing supports the following types of
-      load balancers: Application Load Balancers, Network Load Balancers,
-      Gateway Load Balancers, and Classic Load Balancers. This reference covers
-      the following load balancer types:</p> <ul> <li> <p>Application Load
-      Balancer - Operates at the application layer (layer 7) and supports HTTP
-      and HTTPS.</p> </li> <li> <p>Network Load Balancer - Operates at the
-      transport layer (layer 4) and supports TCP, TLS, and UDP.</p> </li> <li>
-      <p>Gateway Load Balancer - Operates at the network layer (layer 3).</p>
-      </li> </ul> <p>For more information, see the <a
-      href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/">Elastic
-      Load Balancing User Guide</a>.</p> <p>All Elastic Load Balancing
-      operations are idempotent, which means that they complete at most one
-      time. If you repeat an operation, it succeeds.</p>
+      The API provided by Amazon EMR is a powerful web service designed to
+      streamline the processing of large datasets with efficiency. By leveraging
+      Hadoop processing and integrating various Amazon Web Services, this tool
+      allows for seamless execution of tasks like web indexing, data mining, log
+      file analysis, machine learning, scientific simulation, and data warehouse
+      management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/emr/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Mapping
+      - Sessions
+      - Studios
+      - Datasets
     properties:
       - type: Documentation
-        url: https://example.com
-      - type: OpenAPI
-        url: properties/elasticloadbalancingv2-openapi-original.yml
-    overlays:
-      - type: APIs.io Search
-        url: overlays/elasticloadbalancingv2-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/elasticloadbalancingv2-openapi-api-evangelist-ratings.yml
-    aid: amazon-web-services:elasticloadbalancingv2
-  - name: Amazon Elastic Map Reduce
-    description: >-
-      <p>Amazon EMR is a web service that makes it easier to process large
-      amounts of data efficiently. Amazon EMR uses Hadoop processing combined
-      with several Amazon Web Services services to do tasks such as web
-      indexing, data mining, log file analysis, machine learning, scientific
-      simulation, and data warehouse management.</p>
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
-    properties:
-      - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/emr/
       - type: OpenAPI
         url: properties/elasticmapreduce-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/emr/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/emr/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/emr/partners/
+      - type: Getting Started
+        url: https://aws.amazon.com/emr/getting-started/
+      - type: Features
+        url: https://aws.amazon.com/emr/features/
+      - type: Studio
+        url: https://aws.amazon.com/emr/features/studio/
+      - type: Notebooks
+        url: https://aws.amazon.com/emr/features/notebooks/
+      - type: Serverless
+        url: https://aws.amazon.com/emr/serverless/
     overlays:
       - type: APIs.io Search
         url: overlays/elasticmapreduce-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/elasticmapreduce-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:elasticmapreduce
-  - name: Amazon Elastic Map Reduce Containers
+  - name: Amazon EMR on EKS
     description: >-
-      <p>Amazon EMR on EKS provides a deployment option for Amazon EMR that
-      allows you to run open-source big data frameworks on Amazon Elastic
-      Kubernetes Service (Amazon EKS). With this deployment option, you can
-      focus on running analytics workloads while Amazon EMR on EKS builds,
-      configures, and manages containers for open-source applications. For more
-      information about Amazon EMR on EKS concepts and tasks, see <a
-      href="https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html">What
-      is shared id="EMR-EKS"/&gt;</a>.</p> <p> <i>Amazon EMR containers</i> is
-      the API name for Amazon EMR on EKS. The <code>emr-containers</code> prefix
-      is used in the following scenarios: </p> <ul> <li> <p>It is the prefix in
-      the CLI commands for Amazon EMR on EKS. For example, <code>aws
-      emr-containers start-job-run</code>.</p> </li> <li> <p>It is the prefix
-      before IAM policy actions for Amazon EMR on EKS. For example,
-      <code>"Action": [ "emr-containers:StartJobRun"]</code>. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-actions">Policy
-      actions for Amazon EMR on EKS</a>.</p> </li> <li> <p>It is the prefix used
-      in Amazon EMR on EKS service endpoints. For example,
-      <code>emr-containers.us-east-2.amazonaws.com</code>. For more information,
-      see <a
-      href="https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/service-quotas.html#service-endpoints">Amazon
-      EMR on EKSService Endpoints</a>.</p> </li> </ul>
+      Amazon EMR on EKS is a deployment option that allows you to run big data
+      frameworks on Amazon EKS. This option allows you to focus on analytics
+      workloads while Amazon EMR on EKS manages containers for open-source
+      applications. The API name for this service is Amazon EMR containers, and
+      it is used for CLI commands, IAM policy actions, and service endpoints
+      related to Amazon EMR on EKS. For more information about Amazon EMR on EKS
+      concepts and tasks, please refer to the documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Clusters
+      - Credentials
+      - Describe
+      - Endpoints
+      - Job RUns
+      - Job Templates
+      - Jobs
+      - Managed
+      - Resources
+      - Runs
+      - Sessions
+      - Tags
+      - Templates
+      - Untag
+      - Virtual
+      - Virtual Clusters
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html
       - type: OpenAPI
         url: properties/emr-containers-openapi-original.yml
     overlays:
@@ -3589,17 +4298,29 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/emr-containers-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:emr-containers
-  - name: AWS Elastic Transcoder
+  - name: AWS Elastic Transcoder Service
     description: >-
-      <fullname>AWS Elastic Transcoder Service</fullname> <p>The AWS Elastic
-      Transcoder Service.</p>
+      Amazon Elastic Transcoder is media transcoding in the cloud. It is
+      designed to be a highly scalable, easy to use and a cost effective way for
+      developers and businesses to convert (or “transcode”) media files from
+      their source format into versions that will playback on devices like
+      smartphones, tablets and PCs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/elastictranscoder/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Jobs
+      - Notifications
+      - Pipelines
+      - Presets
+      - Read
+      - Roles
+      - Status
+      - Tests
+      - Transcoder
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/elastictranscoder/
       - type: OpenAPI
         url: properties/elastictranscoder-openapi-original.yml
     overlays:
@@ -3610,68 +4331,66 @@ apis:
     aid: amazon-web-services:elastictranscoder
   - name: Amazon Simple Email Service
     description: >-
-      <fullname>Amazon Simple Email Service</fullname> <p> This document
-      contains reference information for the <a
-      href="https://aws.amazon.com/ses/">Amazon Simple Email Service</a> (Amazon
-      SES) API, version 2010-12-01. This document is best used in conjunction
-      with the <a
-      href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html">Amazon
-      SES Developer Guide</a>. </p> <note> <p> For a list of Amazon SES
-      endpoints to use in service requests, see <a
-      href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/regions.html">Regions
-      and Amazon SES</a> in the <a
-      href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html">Amazon
-      SES Developer Guide</a>.</p> </note> <p>This documentation contains
-      reference information related to the following:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/ses/latest/APIReference/API_Operations.html">Amazon
-      SES API Actions</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/ses/latest/APIReference/API_Types.html">Amazon
-      SES API Data Types</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/ses/latest/APIReference/CommonParameters.html">Common
-      Parameters</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/ses/latest/APIReference/CommonErrors.html">Common
-      Errors</a> </p> </li> </ul>
+      This document provides detailed information about the Amazon Simple Email
+      Service (Amazon SES) API version 2010-12-01. It is recommended to refer to
+      the Amazon SES Developer Guide in conjunction with this document. The
+      Amazon SES Developer Guide also includes a list of Amazon SES endpoints
+      for service requests. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ses/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Emails
+      - Identity
+      - Verify
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ses/
       - type: OpenAPI
         url: properties/email-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/ses/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/ses/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/ses/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/ses/developer-resources/
+      - type: Customers
+        url: https://aws.amazon.com/ses/customers/
+      - type: Partners
+        url: https://aws.amazon.com/ses/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/email-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/email-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:email
-  - name: Amazon Elastic Map Reduce Serverless
+  - name: Amazon EMR Serverless
     description: >-
-      <p>Amazon EMR Serverless is a new deployment option for Amazon EMR. Amazon
-      EMR Serverless provides a serverless runtime environment that simplifies
-      running analytics applications using the latest open source frameworks
-      such as Apache Spark and Apache Hive. With Amazon EMR Serverless, you
-      don’t have to configure, optimize, secure, or operate clusters to run
-      applications with these frameworks.</p> <p>The API reference to Amazon EMR
-      Serverless is <code>emr-serverless</code>. The <code>emr-serverless</code>
-      prefix is used in the following scenarios: </p> <ul> <li> <p>It is the
-      prefix in the CLI commands for Amazon EMR Serverless. For example,
-      <code>aws emr-serverless start-job-run</code>.</p> </li> <li> <p>It is the
-      prefix before IAM policy actions for Amazon EMR Serverless. For example,
-      <code>"Action": ["emr-serverless:StartJobRun"]</code>. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-actions">Policy
-      actions for Amazon EMR Serverless</a>.</p> </li> <li> <p>It is the prefix
-      used in Amazon EMR Serverless service endpoints. For example,
-      <code>emr-serverless.us-east-2.amazonaws.com</code>.</p> </li> </ul>
+      Introducing Amazon EMR Serverless, a new deployment option for Amazon EMR
+      that offers a serverless runtime environment for running analytics
+      applications with popular open source frameworks like Apache Spark and
+      Apache Hive. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
+    humanURL: >-
+      https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html
+    baseURL: https://emr-serverless.[region].amazonaws.com
+    tags:
+      - ARN
+      - Applications
+      - Dashboard
+      - Job RUns
+      - Jobs
+      - Resources
+      - Runs
+      - Stop
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html
       - type: OpenAPI
         url: properties/emr-serverless-openapi-original.yml
     overlays:
@@ -3680,28 +4399,65 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/emr-serverless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:emr-serverless
-  - name: Amazon Elasticsearch Configuration
+  - name: Amazon Elasticsearch Configuration Service
     description: >-
-      <fullname>Amazon Elasticsearch Configuration Service</fullname> <p>Use the
-      Amazon Elasticsearch Configuration API to create, configure, and manage
-      Elasticsearch domains.</p> <p>For sample code that uses the Configuration
-      API, see the <a
-      href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-samples.html">Amazon
-      Elasticsearch Service Developer Guide</a>. The guide also contains <a
-      href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-request-signing.html">sample
-      code for sending signed HTTP requests to the Elasticsearch APIs</a>.</p>
-      <p>The endpoint for configuration service requests is region-specific:
-      es.<i>region</i>.amazonaws.com. For example, es.us-east-1.amazonaws.com.
-      For a current list of supported regions and endpoints, see <a
-      href="http://docs.aws.amazon.com/general/latest/gr/rande.html#elasticsearch-service-regions"
-      target="_blank">Regions and Endpoints</a>.</p>
+      Utilize the Amazon Elasticsearch Configuration Service API for creating,
+      customizing, and overseeing Elasticsearch domains. Developers can refer to
+      the Amazon Elasticsearch Service Developer Guide for sample code
+      showcasing the Configuration API in action, as well as instructions for
+      sending signed HTTP requests to Elasticsearch APIs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
-    baseURL: https://example.com
-    tags: []
+    humanURL: >-
+      https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html
+    baseURL: https://es.[region].amazonaws.com
+    tags:
+      - Accept
+      - Access
+      - Associate
+      - Authorize
+      - Auto
+      - Cancel
+      - Change
+      - Clusters
+      - Compatible
+      - Configurations
+      - Connections
+      - Describe
+      - Dissociate
+      - Domains
+      - Elasticsearch
+      - Endpoints
+      - History
+      - Inbound
+      - Info
+      - Instances
+      - Limits
+      - Names
+      - Offerings
+      - Outbound
+      - Packages
+      - Progress
+      - Purchase
+      - Reject
+      - Removal
+      - Removes
+      - Reserved
+      - Revoke
+      - Roles
+      - Search
+      - Services
+      - Software
+      - Status
+      - Tags
+      - Tunes
+      - Types
+      - Upgrade
+      - VPC
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html
       - type: OpenAPI
         url: properties/es-openapi-original.yml
     overlays:
@@ -3710,24 +4466,24 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/es-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:es
-  - name: AWS Marketplace Entitlement
+  - name: AWS Marketplace Entitlement Service
     description: >-
-      <fullname>AWS Marketplace Entitlement Service</fullname> <p>This reference
-      provides descriptions of the AWS Marketplace Entitlement Service API.</p>
-      <p>AWS Marketplace Entitlement Service is used to determine the
-      entitlement of a customer to a given product. An entitlement represents
-      capacity in a product owned by the customer. For example, a customer might
-      own some number of users or seats in an SaaS application or some amount of
-      data capacity in a multi-tenant database.</p> <p> <b>Getting Entitlement
-      Records</b> </p> <ul> <li> <p> <i>GetEntitlements</i>- Gets the
-      entitlements for a Marketplace product.</p> </li> </ul>
+      The AWS Marketplace Entitlement Service API documentation provides an
+      overview of how to use the service to determine a customer's entitlement
+      to a specific product. Entitlements represent the capacity or access a
+      customer has to a particular product, such as user seats in an SaaS
+      application or data capacity in a database. The GetEntitlements function
+      retrieves entitlement records for a Marketplace product.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace/latest/userguide/checking-entitlements.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Entitlements
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace/latest/userguide/checking-entitlements.html
       - type: OpenAPI
         url: properties/entitlementmarketplace-openapi-original.yml
     overlays:
@@ -3736,31 +4492,53 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/entitlementmarketplace-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:entitlementmarketplace
-  - name: Entity Resolution
+  - name: AWS Entity Resolution
     description: >-
-      <p>Welcome to the <i>Entity Resolution API Reference</i>.</p> <p>Entity
-      Resolution is an Amazon Web Services service that provides pre-configured
-      entity resolution capabilities that enable developers and analysts at
-      advertising and marketing companies to build an accurate and complete view
-      of their consumers.</p> <p> With Entity Resolution, you can match source
-      records containing consumer identifiers, such as name, email address, and
-      phone number. This is true even when these records have incomplete or
-      conflicting identifiers. For example, Entity Resolution can effectively
-      match a source record from a customer relationship management (CRM) system
-      with a source record from a marketing system containing campaign
-      information.</p> <p>To learn more about Entity Resolution concepts,
-      procedures, and best practices, see the <a
-      href="https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html">Entity
-      Resolution User Guide</a>.</p>
+      Discover the capabilities of the Entity Resolution API, a part of Amazon
+      Web Services that simplifies the process of matching consumer identifiers
+      within source records. By utilizing Entity Resolution, developers and
+      analysts in the advertising and marketing industries can effortlessly
+      create a comprehensive and accurate view of their customers.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/entity-resolution/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Er
+      - Erservices
+      - Jobs
+      - Mapping
+      - Mappingworkflows
+      - Match
+      - Matches
+      - Matching
+      - Matching Workflows
+      - Names
+      - Prov
+      - Providers
+      - Resources
+      - Schemas
+      - Services
+      - Tags
+      - Untag
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/entity-resolution/
       - type: OpenAPI
         url: properties/entityresolution-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/entity-resolution/features/
+      - type: FAQ
+        url: https://aws.amazon.com/entity-resolution/faqs/
+      - type: Pricing
+        url: https://aws.amazon.com/entity-resolution/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/entity-resolution/resources/
+      - type: Customers
+        url: https://aws.amazon.com/entity-resolution/customers/
+      - type: Partners
+        url: https://aws.amazon.com/entity-resolution/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/entityresolution-openapi-search.yml
@@ -3769,30 +4547,41 @@ apis:
     aid: amazon-web-services:entityresolution
   - name: Amazon EventBridge
     description: >-
-      <p>Amazon EventBridge helps you to respond to state changes in your Amazon
-      Web Services resources. When your resources change state, they
-      automatically send events to an event stream. You can create rules that
-      match selected events in the stream and route them to targets to take
-      action. You can also use rules to take action on a predetermined schedule.
-      For example, you can configure rules to:</p> <ul> <li> <p>Automatically
-      invoke an Lambda function to update DNS entries when an event notifies you
-      that Amazon EC2 instance enters the running state.</p> </li> <li>
-      <p>Direct specific API records from CloudTrail to an Amazon Kinesis data
-      stream for detailed analysis of potential security or availability
-      risks.</p> </li> <li> <p>Periodically invoke a built-in target to create a
-      snapshot of an Amazon EBS volume.</p> </li> </ul> <p>For more information
-      about the features of Amazon EventBridge, see the <a
-      href="https://docs.aws.amazon.com/eventbridge/latest/userguide">Amazon
-      EventBridge User Guide</a>.</p>
+      With Amazon EventBridge, you can easily monitor and respond to changes in
+      your AWS resources by setting up rules that trigger actions based on
+      specific events. Events generated by your resources are sent to an event
+      stream, allowing you to create customized rules that match certain events
+      and direct them to designated targets for further processing. You can also
+      schedule actions to be performed at specific intervals. For example, you
+      can automate tasks such as updating DNS entries, analyzing API records for
+      security risks, or creating snapshots of EBS volumes. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/eventbridge/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Endpoints
+      - ' Events'
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/eventbridge/
       - type: OpenAPI
         url: properties/eventbridge-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/eventbridge/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/eventbridge/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/eventbridge/faqs/
+      - type: Integrations
+        url: https://aws.amazon.com/eventbridge/integrations/
+      - type: Features
+        url: https://aws.amazon.com/eventbridge/features/
+      - type: Event Bus
+        url: https://aws.amazon.com/eventbridge/event-bus/
+      - type: Pipes
+        url: https://aws.amazon.com/eventbridge/pipes/
+      - type: Scheduler
+        url: https://aws.amazon.com/eventbridge/scheduler/
     overlays:
       - type: APIs.io Search
         url: overlays/eventbridge-openapi-search.yml
@@ -3801,20 +4590,35 @@ apis:
     aid: amazon-web-services:eventbridge
   - name: Amazon Kinesis Data Firehose
     description: >-
-      <fullname>Amazon Kinesis Data Firehose API Reference</fullname> <p>Amazon
-      Kinesis Data Firehose is a fully managed service that delivers real-time
-      streaming data to destinations such as Amazon Simple Storage Service
-      (Amazon S3), Amazon OpenSearch Service, Amazon Redshift, Splunk, and
-      various other supportd destinations.</p>
+      The Amazon Kinesis Data Firehose API is a comprehensive tool for managing
+      real-time streaming data delivery to a variety of destinations, including
+      Amazon S3, Amazon OpenSearch Service, Amazon Redshift, Splunk, and more.
+      This fully managed service streamlines the process of transmitting data
+      effectively and efficiently.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/firehose/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Destinations
+      - Data
+      - Delivery
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/firehose/
       - type: OpenAPI
         url: properties/firehose-openapi-original.yml
+      - type: FAQ
+        url: https://aws.amazon.com/firehose/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/firehose/resources/
+      - type: Customers
+        url: https://aws.amazon.com/firehose/customers/
+      - type: Partners
+        url: https://aws.amazon.com/firehose/partners/
+      - type: Pricing
+        url: https://aws.amazon.com/firehose/pricing/
+      - type: Features
+        url: https://aws.amazon.com/firehose/features/
     overlays:
       - type: APIs.io Search
         url: overlays/firehose-openapi-search.yml
@@ -3823,24 +4627,43 @@ apis:
     aid: amazon-web-services:firehose
   - name: Amazon CloudWatch Evidently
     description: >-
-      <p>You can use Amazon CloudWatch Evidently to safely validate new features
-      by serving them to a specified percentage of your users while you roll out
-      the feature. You can monitor the performance of the new feature to help
-      you decide when to ramp up traffic to your users. This helps you reduce
-      risk and identify unintended consequences before you fully launch the
-      feature.</p> <p>You can also conduct A/B experiments to make feature
-      design decisions based on evidence and data. An experiment can test as
-      many as five variations at once. Evidently collects experiment data and
-      analyzes it using statistical methods. It also provides clear
-      recommendations about which variations perform better. You can test both
-      user-facing features and backend features.</p>
+      Utilize Amazon CloudWatch Evidently API to securely introduce and test new
+      features to a percentage of your user base before full deployment.
+      Monitoring the performance of these new features allows you to make
+      informed decisions on when to increase user traffic. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Evidently.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Batches
+      - Cancel
+      - Data
+      - Deliveries
+      - Evaluate
+      - Evaluations
+      - Events
+      - Experiment
+      - Experiments
+      - Feature
+      - Features
+      - Launch
+      - Launches
+      - Patterns
+      - Projects
+      - References
+      - Resources
+      - Results
+      - Segments
+      - Stop
+      - Tags
+      - Tests
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Evidently.html
       - type: OpenAPI
         url: properties/evidently-openapi-original.yml
     overlays:
@@ -3850,16 +4673,32 @@ apis:
         url: overlays/evidently-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:evidently
   - name: Amazon Forecast
-    description: <p>Provides APIs for creating and managing Amazon Forecast resources.</p>
+    description: >-
+      Amazon Forecast, is a powerful tool designed for businesses looking to
+      analyze and predict time-series data using machine learning.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/forecast/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Datasets
+      - Groups
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/forecast/
       - type: OpenAPI
         url: properties/forecast-openapi-original.yml
+      - type: Partners
+        url: https://aws.amazon.com/forecast/partners/
+      - type: Customers
+        url: https://aws.amazon.com/forecast/customers/
+      - type: Resources
+        url: https://aws.amazon.com/forecast/resources/
+      - type: Embedded Solutions
+        url: https://aws.amazon.com/forecast/embedded-solutions/
+      - type: Pricing
+        url: https://aws.amazon.com/forecast/pricing/
+      - type: Features
+        url: https://aws.amazon.com/forecast/features/
     overlays:
       - type: APIs.io Search
         url: overlays/forecast-openapi-search.yml
@@ -3868,20 +4707,45 @@ apis:
     aid: amazon-web-services:forecast
   - name: AWS Fault Injection Simulator
     description: >-
-      <p>Fault Injection Simulator is a managed service that enables you to
-      perform fault injection experiments on your Amazon Web Services workloads.
-      For more information, see the <a
-      href="https://docs.aws.amazon.com/fis/latest/userguide/">Fault Injection
-      Simulator User Guide</a>.</p>
+      AWS Fault Injection Service (FIS), a component of the AWS Resilience Hub,
+      is a comprehensive service designed to enhance an application's
+      performance, observability, and resilience through the implementation of
+      fault injection experiments. By streamlining the setup and execution of
+      controlled fault injection tests across various AWS services, FIS empowers
+      teams to increase their confidence in the reliability of their
+      applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/fis/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Actions
+      - Configurations
+      - Experiment
+      - Experiments
+      - Resolved
+      - Resources
+      - Stop
+      - Tags
+      - Targets
+      - Targets
+      - Templates
+      - Types
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/fis/
       - type: OpenAPI
         url: properties/fis-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/fis/features/
+      - type: Pricing
+        url: https://aws.amazon.com/fis/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/fis/faqs/
+      - type: Pricing
+        url: https://aws.amazon.com/fis/pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/fis-openapi-search.yml
@@ -3890,34 +4754,34 @@ apis:
     aid: amazon-web-services:fis
   - name: Amazon Fraud Detector
     description: >-
-      <p>This is the Amazon Fraud Detector API Reference. This guide is for
-      developers who need detailed information about Amazon Fraud Detector API
-      actions, data types, and errors. For more information about Amazon Fraud
-      Detector features, see the <a
-      href="https://docs.aws.amazon.com/frauddetector/latest/ug/">Amazon Fraud
-      Detector User Guide</a>.</p> <p>We provide the Query API as well as AWS
-      software development kits (SDK) for Amazon Fraud Detector in Java and
-      Python programming languages.</p> <p>The Amazon Fraud Detector Query API
-      provides HTTPS requests that use the HTTP verb GET or POST and a Query
-      parameter <code>Action</code>. AWS SDK provides libraries, sample code,
-      tutorials, and other resources for software developers who prefer to build
-      applications using language-specific APIs instead of submitting a request
-      over HTTP or HTTPS. These libraries provide basic functions that
-      automatically take care of tasks such as cryptographically signing your
-      requests, retrying requests, and handling error responses, so that it is
-      easier for you to get started. For more information about the AWS SDKs, go
-      to <a href="https://aws.amazon.com/developer/tools/">Tools to build on
-      AWS</a> page, scroll down to the <b>SDK</b> section, and choose plus (+)
-      sign to expand the section. </p>
+      Build, deploy, and manage fraud detection models without previous machine
+      learning (ML) experience. Gain insights from your historical data, plus
+      20+ years of Amazon experience, to construct an accurate, customized fraud
+      detection model. Start detecting fraud immediately, easily enhance models
+      with customized business rules, and deploy results to generate critical
+      predictions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/fraud-detector/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Variables
+      - Fraud
+      - ' Detection'
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/fraud-detector/
       - type: OpenAPI
         url: properties/frauddetector-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/fraud-detector/features/
+      - type: Pricing
+        url: https://aws.amazon.com/fraud-detector/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/fraud-detector/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/fraud-detector/resources/
+      - type: Customers
+        url: https://aws.amazon.com/fraud-detector/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/frauddetector-openapi-search.yml
@@ -3926,24 +4790,32 @@ apis:
     aid: amazon-web-services:frauddetector
   - name: AWS Firewall Manager
     description: >-
-      <p>This is the <i>Firewall Manager API Reference</i>. This guide is for
-      developers who need detailed information about the Firewall Manager API
-      actions, data types, and errors. For detailed information about Firewall
-      Manager features, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html">Firewall
-      Manager Developer Guide</a>.</p> <p>Some API actions require explicit
-      resource permissions. For information, see the developer guide topic <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/fms-security_iam_service-with-iam.html#fms-security_iam_service-with-iam-roles-service">Service
-      roles for Firewall Manager</a>. </p>
+      Welcome to the Firewall Manager API Reference. This comprehensive guide is
+      designed for developers seeking in-depth information on the various
+      actions, data types, and errors associated with the Firewall Manager API.
+      For a more detailed overview of Firewall Manager features, please refer to
+      the Firewall Manager Developer Guide. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/firewall-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/firewall-manager/
       - type: OpenAPI
         url: properties/fms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/firewall-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/firewall-manager/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/firewall-manager/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/firewall-manager/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/firewall-manager/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/fms-openapi-search.yml
@@ -3952,128 +4824,68 @@ apis:
     aid: amazon-web-services:fms
   - name: Amazon GameLift
     description: >-
-      <p>Amazon GameLift provides solutions for hosting session-based
-      multiplayer game servers in the cloud, including tools for deploying,
-      operating, and scaling game servers. Built on Amazon Web Services global
-      computing infrastructure, GameLift helps you deliver high-performance,
-      high-reliability, low-cost game servers while dynamically scaling your
-      resource usage to meet player demand. </p> <p> <b>About Amazon GameLift
-      solutions</b> </p> <p>Get more information on these Amazon GameLift
-      solutions in the <a
-      href="https://docs.aws.amazon.com/gamelift/latest/developerguide/">Amazon
-      GameLift Developer Guide</a>.</p> <ul> <li> <p>Amazon GameLift managed
-      hosting -- Amazon GameLift offers a fully managed service to set up and
-      maintain computing machines for hosting, manage game session and player
-      session life cycle, and handle security, storage, and performance
-      tracking. You can use automatic scaling tools to balance player demand and
-      hosting costs, configure your game session management to minimize player
-      latency, and add FlexMatch for matchmaking.</p> </li> <li> <p>Managed
-      hosting with Realtime Servers -- With Amazon GameLift Realtime Servers,
-      you can quickly configure and set up ready-to-go game servers for your
-      game. Realtime Servers provides a game server framework with core Amazon
-      GameLift infrastructure already built in. Then use the full range of
-      Amazon GameLift managed hosting features, including FlexMatch, for your
-      game.</p> </li> <li> <p>Amazon GameLift FleetIQ -- Use Amazon GameLift
-      FleetIQ as a standalone service while hosting your games using EC2
-      instances and Auto Scaling groups. Amazon GameLift FleetIQ provides
-      optimizations for game hosting, including boosting the viability of
-      low-cost Spot Instances gaming. For a complete solution, pair the Amazon
-      GameLift FleetIQ and FlexMatch standalone services.</p> </li> <li>
-      <p>Amazon GameLift FlexMatch -- Add matchmaking to your game hosting
-      solution. FlexMatch is a customizable matchmaking service for multiplayer
-      games. Use FlexMatch as integrated with Amazon GameLift managed hosting or
-      incorporate FlexMatch as a standalone service into your own hosting
-      solution.</p> </li> </ul> <p> <b>About this API Reference</b> </p> <p>This
-      reference guide describes the low-level service API for Amazon GameLift.
-      With each topic in this guide, you can find links to language-specific SDK
-      guides and the Amazon Web Services CLI reference. Useful links:</p> <ul>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-awssdk.html">Amazon
-      GameLift API operations listed by tasks</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-components.html">
-      Amazon GameLift tools and resources</a> </p> </li> </ul>
+      The Amazon GameLift API offers comprehensive cloud hosting solutions for
+      session-based multiplayer game servers. It includes features for
+      deploying, managing, and expanding game servers seamlessly. Leveraging
+      Amazon Web Services' robust global computing network, GameLift ensures
+      top-tier performance, reliability, and cost-efficiency for your game
+      servers.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/gamelift/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Matchmaking
+      - Rules
+      - Sets
+      - Validate
+      - Games
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/gamelift/
       - type: OpenAPI
         url: properties/gamelift-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/gamelift/pricing/
+      - type: Features
+        url: https://aws.amazon.com/gamelift/features/
+      - type: Resources
+        url: https://aws.amazon.com/gamelift/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/gamelift/faq/
+      - type: Getting-started
+        url: https://aws.amazon.com/gamelift/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/gamelift-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/gamelift-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:gamelift
-  - name: AWS Global Accelerator
+  - name: Global Accelerator
     description: >-
-      <fullname>Global Accelerator</fullname> <p>This is the <i>Global
-      Accelerator API Reference</i>. This guide is for developers who need
-      detailed information about Global Accelerator API actions, data types, and
-      errors. For more information about Global Accelerator features, see the <a
-      href="https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html">Global
-      Accelerator Developer Guide</a>.</p> <p>Global Accelerator is a service in
-      which you create <i>accelerators</i> to improve the performance of your
-      applications for local and global users. Depending on the type of
-      accelerator you choose, you can gain additional benefits. </p> <ul> <li>
-      <p>By using a standard accelerator, you can improve availability of your
-      internet applications that are used by a global audience. With a standard
-      accelerator, Global Accelerator directs traffic to optimal endpoints over
-      the Amazon Web Services global network. </p> </li> <li> <p>For other
-      scenarios, you might choose a custom routing accelerator. With a custom
-      routing accelerator, you can use application logic to directly map one or
-      more users to a specific endpoint among many endpoints.</p> </li> </ul>
-      <important> <p>Global Accelerator is a global service that supports
-      endpoints in multiple Amazon Web Services Regions but you must specify the
-      US West (Oregon) Region to create, update, or otherwise work with
-      accelerators. That is, for example, specify <code>--region
-      us-west-2</code> on Amazon Web Services CLI commands.</p> </important>
-      <p>By default, Global Accelerator provides you with static IP addresses
-      that you associate with your accelerator. The static IP addresses are
-      anycast from the Amazon Web Services edge network. For IPv4, Global
-      Accelerator provides two static IPv4 addresses. For dual-stack, Global
-      Accelerator provides a total of four addresses: two static IPv4 addresses
-      and two static IPv6 addresses. With a standard accelerator for IPv4,
-      instead of using the addresses that Global Accelerator provides, you can
-      configure these entry points to be IPv4 addresses from your own IP address
-      ranges that you bring to Global Accelerator (BYOIP). </p> <p>For a
-      standard accelerator, they distribute incoming application traffic across
-      multiple endpoint resources in multiple Amazon Web Services Regions ,
-      which increases the availability of your applications. Endpoints for
-      standard accelerators can be Network Load Balancers, Application Load
-      Balancers, Amazon EC2 instances, or Elastic IP addresses that are located
-      in one Amazon Web Services Region or multiple Amazon Web Services Regions.
-      For custom routing accelerators, you map traffic that arrives to the
-      static IP addresses to specific Amazon EC2 servers in endpoints that are
-      virtual private cloud (VPC) subnets.</p> <important> <p>The static IP
-      addresses remain assigned to your accelerator for as long as it exists,
-      even if you disable the accelerator and it no longer accepts or routes
-      traffic. However, when you <i>delete</i> an accelerator, you lose the
-      static IP addresses that are assigned to it, so you can no longer route
-      traffic by using them. You can use IAM policies like tag-based permissions
-      with Global Accelerator to limit the users who have permissions to delete
-      an accelerator. For more information, see <a
-      href="https://docs.aws.amazon.com/global-accelerator/latest/dg/access-control-manage-access-tag-policies.html">Tag-based
-      policies</a>.</p> </important> <p>For standard accelerators, Global
-      Accelerator uses the Amazon Web Services global network to route traffic
-      to the optimal regional endpoint based on health, client location, and
-      policies that you configure. The service reacts instantly to changes in
-      health or configuration to ensure that internet traffic from clients is
-      always directed to healthy endpoints.</p> <p>For more information about
-      understanding and using Global Accelerator, see the <a
-      href="https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html">Global
-      Accelerator Developer Guide</a>.</p>
+      Global Accelerator is a powerful API service that allows developers to
+      create accelerators to enhance the performance of their applications for
+      both local and global users. This API Reference provides detailed
+      information on Global Accelerator API actions, data types, and errors,
+      catering to developers looking to leverage Global Accelerator features.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/global-accelerator/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - CIDR
+      - Withdraw
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/global-accelerator/
       - type: OpenAPI
         url: properties/globalaccelerator-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/global-accelerator/features/
+      - type: Pricing
+        url: https://aws.amazon.com/global-accelerator/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/global-accelerator/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/global-accelerator/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/globalaccelerator-openapi-search.yml
@@ -4082,77 +4894,139 @@ apis:
     aid: amazon-web-services:globalaccelerator
   - name: Amazon S3 Glacier
     description: >-
-      <p> Amazon S3 Glacier (Glacier) is a storage solution for "cold data."</p>
-      <p>Glacier is an extremely low-cost storage service that provides secure,
-      durable, and easy-to-use storage for data backup and archival. With
-      Glacier, customers can store their data cost effectively for months,
-      years, or decades. Glacier also enables customers to offload the
-      administrative burdens of operating and scaling storage to AWS, so they
-      don't have to worry about capacity planning, hardware provisioning, data
-      replication, hardware failure and recovery, or time-consuming hardware
-      migrations.</p> <p>Glacier is a great storage choice when low storage cost
-      is paramount and your data is rarely retrieved. If your application
-      requires fast or frequent access to your data, consider using Amazon S3.
-      For more information, see <a href="http://aws.amazon.com/s3/">Amazon
-      Simple Storage Service (Amazon S3)</a>.</p> <p>You can store any kind of
-      data in any format. There is no maximum limit on the total amount of data
-      you can store in Glacier.</p> <p>If you are a first-time user of Glacier,
-      we recommend that you begin by reading the following sections in the
-      <i>Amazon S3 Glacier Developer Guide</i>:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html">What
-      is Amazon S3 Glacier</a> - This section of the Developer Guide describes
-      the underlying data model, the operations it supports, and the AWS SDKs
-      that you can use to interact with the service.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/amazonglacier/latest/dev/amazon-glacier-getting-started.html">Getting
-      Started with Amazon S3 Glacier</a> - The Getting Started section walks you
-      through the process of creating a vault, uploading archives, creating jobs
-      to download archives, retrieving the job output, and deleting
-      archives.</p> </li> </ul>
+      Amazon S3 Glacier (Glacier) is a cost-effective storage solution designed
+      for long-term storage of infrequently accessed data. It provides secure,
+      durable, and easy-to-use storage for data backup and archival purposes.
+      With Glacier, users can store data for extended periods without worrying
+      about capacity planning or hardware management. Glacier is ideal for when
+      low storage costs are a priority and data retrieval is rare. For
+      applications requiring fast or frequent access to data, Amazon S3 is
+      recommended. Users can store data in any format without limits on the
+      total amount of data stored in Glacier. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/s3/storage-classes/glacier/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Accounts
+      - Archive
+      - Archives
+      - Capacity
+      - Complete
+      - Configurations
+      - Data
+      - Describe
+      - Initiate
+      - Jobs
+      - Locks
+      - Multipart
+      - Names
+      - Notifications
+      - Output
+      - Policies
+      - Provisioned
+      - Purchase
+      - Removes
+      - Retrieval
+      - Sets
+      - Tags
+      - Uploads
+      - Vault
+      - Vaults
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/s3/storage-classes/glacier/
       - type: OpenAPI
         url: properties/glacier-openapi-original.yml
+      - type: Instant-retrieval
+        url: https://aws.amazon.com/s3/storage-classes/glacier/instant-retrieval/
     overlays:
       - type: APIs.io Search
         url: overlays/glacier-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/glacier-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:glacier
-  - name: AWs FinSpace
-    description: <p> The FinSpace APIs let you take actions inside the FinSpace.</p>
+  - name: AWS FinSpace
+    description: >-
+      Experience seamless data processing and analytics tailored for Capital
+      Markets with our API, which offers Managed kdb Insights. Take advantage of
+      our free AWS training to enhance your skills and advance your career with
+      AWS Cloud Practitioner Essentials. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/finspace/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Change Sets
+      - Credentials
+      - Data
+      - Data Views
+      - Datasets
+      - Details
+      - Disable
+      - Disassociate
+      - Enable
+      - External
+      - Groups
+      - Locations
+      - Password
+      - Permission
+      - Programmatic
+      - Reset
+      - Users
+      - View
+      - Views
+      - Working
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/finspace/
       - type: OpenAPI
         url: properties/finspace-data-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/finspace/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/finspace/getting-started/
+      - type: Partners
+        url: https://aws.amazon.com/finspace/partners/
+      - type: FAQ
+        url: https://aws.amazon.com/finspace/faqs/
+      - type: Getting-started
+        url: https://aws.amazon.com/finspace/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/finspace-data-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/finspace-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:finspace-data
-  - name: fsAmazon FSx
+  - name: Amazon FSx
     description: >-
-      <p>Amazon FSx is a fully managed service that makes it easy for storage
-      and application administrators to launch and use shared file storage.</p>
+      The Amazon FSx API simplifies the process of launching, managing, and
+      expanding feature-rich, high-performance file systems in the cloud. With
+      its reliability, security, scalability, and numerous capabilities, Amazon
+      FSx supports a variety of workloads. Leveraging the latest AWS
+      technologies in compute, networking, and disk storage, Amazon FSx delivers
+      high performance at a lower total cost of ownership.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/fsx/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Volumes
+      - File Systems
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/fsx/
       - type: OpenAPI
         url: properties/fsx-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/fsx/pricing/
+      - type: Netapp-ontap
+        url: https://aws.amazon.com/fsx/netapp-ontap/
+      - type: Openzfs
+        url: https://aws.amazon.com/fsx/openzfs/
+      - type: Windows
+        url: https://aws.amazon.com/fsx/windows/
+      - type: Lustre
+        url: https://aws.amazon.com/fsx/lustre/
     overlays:
       - type: APIs.io Search
         url: overlays/fsx-openapi-search.yml
@@ -4161,31 +5035,66 @@ apis:
     aid: amazon-web-services:fsx
   - name: AWS IoT Greengrass
     description: >-
-      <p>IoT Greengrass brings local compute, messaging, data management, sync,
-      and ML inference capabilities to edge devices. This enables devices to
-      collect and analyze data closer to the source of information, react
-      autonomously to local events, and communicate securely with each other on
-      local networks. Local devices can also communicate securely with Amazon
-      Web Services IoT Core and export IoT data to the Amazon Web Services
-      Cloud. IoT Greengrass developers can use Lambda functions and components
-      to create and deploy applications to fleets of edge devices for local
-      operation.</p> <p>IoT Greengrass Version 2 provides a new major version of
-      the IoT Greengrass Core software, new APIs, and a new console. Use this
-      API reference to learn how to use the IoT Greengrass V2 API operations to
-      manage components, manage deployments, and core devices.</p> <p>For more
-      information, see <a
-      href="https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-iot-greengrass.html">What
-      is IoT Greengrass?</a> in the <i>IoT Greengrass V2 Developer
-      Guide</i>.</p>
+      IoT Greengrass brings local compute, messaging, data management, sync, and
+      ML inference capabilities to edge devices. This enables devices to collect
+      and analyze data closer to the source of information, react autonomously
+      to local events, and communicate securely with each other on local
+      networks. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/greengrass/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Artifacts
+      - Associate
+      - Associated
+      - Ates
+      - Batches
+      - Cancel
+      - Cand
+      - Candidates
+      - Clients
+      - Components
+      - Connectivity
+      - Core
+      - Deployments
+      - Describe
+      - Device
+      - Devices
+      - Disassociate
+      - Effective
+      - Green Grass
+      - Info
+      - Installed
+      - Metadata
+      - Names
+      - Resolve
+      - Resources
+      - Roles
+      - Service Roles
+      - Services
+      - Tags
+      - Things
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/greengrass/
       - type: OpenAPI
         url: properties/greengrassv2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/greengrass/features/
+      - type: Ml
+        url: https://aws.amazon.com/greengrass/ml/
+      - type: Pricing
+        url: https://aws.amazon.com/greengrass/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/greengrass/partners/
+      - type: Getting-started
+        url: https://aws.amazon.com/greengrass/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/greengrass/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/greengrassv2-openapi-search.yml
@@ -4194,44 +5103,85 @@ apis:
     aid: amazon-web-services:greengrassv2
   - name: AWS Glue
     description: >-
-      <fullname>Glue</fullname> <p>Defines the public endpoint for the Glue
-      service.</p>
+      The first step in any analytics or machine learning project is ensuring
+      your data is prepared for quality results. AWS Glue is a serverless data
+      integration service that streamlines and simplifies the data preparation
+      process, making it faster and more cost-effective. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/glue/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/glue/
       - type: OpenAPI
         url: properties/glue-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/glue/features/
+      - type: Pricing
+        url: https://aws.amazon.com/glue/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/glue/partners/
+      - type: Getting Started
+        url: https://aws.amazon.com/glue/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/glue/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/glue/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/glue/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/glue-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/glue-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:glue
-  - name: grafana
+  - name: Amazon Managed Grafana
     description: >-
-      <p>Amazon Managed Grafana is a fully managed and secure data visualization
-      service that you can use to instantly query, correlate, and visualize
-      operational metrics, logs, and traces from multiple sources. Amazon
-      Managed Grafana makes it easy to deploy, operate, and scale Grafana, a
-      widely deployed data visualization tool that is popular for its extensible
-      data support.</p> <p>With Amazon Managed Grafana, you create logically
-      isolated Grafana servers called <i>workspaces</i>. In a workspace, you can
-      create Grafana dashboards and visualizations to analyze your metrics,
-      logs, and traces without having to build, package, or deploy any hardware
-      to run Grafana servers. </p>
+      Amazon Managed Grafana is a managed and secure data visualization service
+      that allows you to easily query, correlate, and visualize operational
+      metrics, logs, and traces from various sources. It simplifies the
+      deployment, operation, and scalability of Grafana, a popular data
+      visualization tool known for its flexible data support. Users can create
+      isolated Grafana servers, called workspaces, where they can design
+      dashboards and visualizations to analyze their data without the need for
+      hardware deployment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/grafana/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Authentication
+      - Configurations
+      - Disassociate
+      - Keys
+      - Licenses
+      - Names
+      - Permissions
+      - Resources
+      - Tags
+      - Types
+      - Untag
+      - Versions
+      - Workspaces
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/grafana/
       - type: OpenAPI
         url: properties/grafana-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/grafana/features/
+      - type: Pricing
+        url: https://aws.amazon.com/grafana/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/grafana/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/grafana/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/grafana/customers/
+      - type: Partners
+        url: https://aws.amazon.com/grafana/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/grafana-openapi-search.yml
@@ -4240,82 +5190,200 @@ apis:
     aid: amazon-web-services:grafana
   - name: Amazon GuardDuty
     description: >-
-      <p>Amazon GuardDuty is a continuous security monitoring service that
-      analyzes and processes the following foundational data sources - VPC flow
-      logs, Amazon Web Services CloudTrail management event logs, CloudTrail S3
-      data event logs, EKS audit logs, DNS logs, Amazon EBS volume data, runtime
-      activity belonging to container workloads, such as Amazon EKS, Amazon ECS
-      (including Amazon Web Services Fargate), and Amazon EC2 instances. It uses
-      threat intelligence feeds, such as lists of malicious IPs and domains, and
-      machine learning to identify unexpected, potentially unauthorized, and
-      malicious activity within your Amazon Web Services environment. This can
-      include issues like escalations of privileges, uses of exposed
-      credentials, or communication with malicious IPs, domains, or presence of
-      malware on your Amazon EC2 instances and container workloads. For example,
-      GuardDuty can detect compromised EC2 instances and container workloads
-      serving malware, or mining bitcoin. </p> <p>GuardDuty also monitors Amazon
-      Web Services account access behavior for signs of compromise, such as
-      unauthorized infrastructure deployments like EC2 instances deployed in a
-      Region that has never been used, or unusual API calls like a password
-      policy change to reduce password strength. </p> <p>GuardDuty informs you
-      about the status of your Amazon Web Services environment by producing
-      security findings that you can view in the GuardDuty console or through
-      Amazon EventBridge. For more information, see the <i> <a
-      href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html">Amazon
-      GuardDuty User Guide</a> </i>. </p>
+      Amazon GuardDuty is a security monitoring service that continuously
+      analyzes various data sources within your Amazon Web Services environment,
+      such as VPC flow logs, CloudTrail event logs, EKS audit logs, DNS logs,
+      and more. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/guardduty/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Administrative
+      - Administrator
+      - Archive
+      - Configurations
+      - Count
+      - Coverage
+      - Days
+      - Decline
+      - Describe
+      - Destinations
+      - Detectors
+      - Disable
+      - Disassociate
+      - Enable
+      - Feedback
+      - Filter
+      - Filters
+      - Findings
+      - Free
+      - IP
+      - IPSet
+      - IPSets
+      - Intelligence
+      - Invitation
+      - Invitations
+      - Invite
+      - Malware
+      - Master
+      - Members
+      - Monitoring
+      - Names
+      - Organizations
+      - Publishing
+      - Remaining
+      - Resources
+      - Samples
+      - Scans
+      - Sets
+      - Settings
+      - Statistics
+      - Stop
+      - Tags
+      - Threat
+      - Trials
+      - Unarchive
+      - Untag
+      - Usage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/guardduty/
       - type: OpenAPI
         url: properties/guardduty-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/guardduty/features/
+      - type: Pricing
+        url: https://aws.amazon.com/guardduty/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/guardduty/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/guardduty/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/guardduty/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/guardduty/resources/partners/
+      - type: Customers
+        url: https://aws.amazon.com/guardduty/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/guardduty-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/guardduty-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:guardduty
-  - name:  AWS IoT Greengrass
+  - name: AWS IoT Greengrass
     description: >-
-      AWS IoT Greengrass seamlessly extends AWS onto physical devices so they
-      can act locally on the data they generate, while still using the cloud for
-      management, analytics, and durable storage. AWS IoT Greengrass ensures
-      your devices can respond quickly to local events and operate with
-      intermittent connectivity. AWS IoT Greengrass minimizes the cost of
-      transmitting data to the cloud by allowing you to author AWS Lambda
-      functions that execute locally.
+      This API, AWS IoT Greengrass, extends the capabilities of AWS to physical
+      devices, enabling them to process data locally while still utilizing the
+      cloud for management, analytics, and storage. This allows devices to
+      respond quickly to local events even with intermittent connectivity,
+      minimizing the cost of transmitting data to the cloud by enabling the
+      execution of AWS Lambda functions locally.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/greengrass/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - $Reset
+      - $Stop
+      - ARN
+      - Accounts
+      - Associated
+      - Authorities
+      - Authority
+      - Bulk
+      - Certificate Authorities
+      - Certificates
+      - Configurations
+      - Connectivity
+      - Connectors
+      - Core
+      - Cores
+      - Definitions
+      - Deployments
+      - Detailed
+      - Device
+      - Devices
+      - Expiry
+      - Functions
+      - Green Grass
+      - Groups
+      - Info
+      - Jobs
+      - Loggers
+      - Names
+      - Reports
+      - Reset
+      - Resources
+      - Roles
+      - Runtime
+      - Runtime Configurations
+      - Service Roles
+      - Services
+      - Software
+      - Status
+      - Stop
+      - Subscriptions
+      - Tags
+      - Things
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/greengrass/
       - type: OpenAPI
         url: properties/greengrass-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/greengrass/features/
+      - type: Ml
+        url: https://aws.amazon.com/greengrass/ml/
+      - type: Pricing
+        url: https://aws.amazon.com/greengrass/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/greengrass/partners/
+      - type: Getting-started
+        url: https://aws.amazon.com/greengrass/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/greengrass/faqs/
+      - type: Device-tester
+        url: https://aws.amazon.com/greengrass/device-tester/
     overlays:
       - type: APIs.io Search
         url: overlays/greengrass-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/greengrass-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:greengrass
-  - name: healthlake
+  - name: AWS HealthLake
     description: >-
-      <p>AWS HealthLake is a HIPAA eligibile service that allows customers to
-      store, transform, query, and analyze their FHIR-formatted data in a
-      consistent fashion in the cloud.</p>
+      AWS HealthLake is a service designed for healthcare companies that need a
+      comprehensive view of individual and patient population health data. This
+      HIPAA-eligible service utilizes FHIR API transactions to securely store
+      and transform data into a queryable format at a large scale.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/healthlake/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/healthlake/
       - type: OpenAPI
         url: properties/healthlake-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/healthlake/features/
+      - type: Pricing
+        url: https://aws.amazon.com/healthlake/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/healthlake/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/healthlake/resources/
+      - type: Customers
+        url: https://aws.amazon.com/healthlake/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/healthlake/customers/
+      - type: Partners
+        url: https://aws.amazon.com/healthlake/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/healthlake-openapi-search.yml
@@ -4324,25 +5392,31 @@ apis:
     aid: amazon-web-services:healthlake
   - name: AWS Identity and Access Management
     description: >-
-      <fullname>Identity and Access Management</fullname> <p>Identity and Access
-      Management (IAM) is a web service for securely controlling access to
-      Amazon Web Services services. With IAM, you can centrally manage users,
-      security credentials such as access keys, and permissions that control
-      which Amazon Web Services resources users and applications can access. For
-      more information about IAM, see <a
-      href="http://aws.amazon.com/iam/">Identity and Access Management (IAM)</a>
-      and the <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/">Identity and
-      Access Management User Guide</a>.</p>
+      IAM is a trusted web service that enables secure access control for Amazon
+      Web Services. It offers centralized management of users, access keys, and
+      permissions to regulate access to AWS resources. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Certificates
+      - Signing
+      - Uploads
+      - ' Identity'
+      - ' IAM'
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/
       - type: OpenAPI
         url: properties/iam-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iam/features/
+      - type: Getting Started
+        url: https://aws.amazon.com/iam/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/iam/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/iam/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/iam-openapi-search.yml
@@ -4351,44 +5425,82 @@ apis:
     aid: amazon-web-services:iam
   - name: AWS Ground Station
     description: >-
-      <p>Welcome to the AWS Ground Station API Reference. AWS Ground Station is
-      a fully managed service that enables you to control satellite
+      Welcome to the AWS Ground Station API Reference. AWS Ground Station is a
+      fully managed service that enables you to control satellite
       communications, downlink and process satellite data, and scale your
       satellite operations efficiently and cost-effectively without having to
-      build or manage your own ground station infrastructure.</p>
+      build or manage your own ground station infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ground-station/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Agent
+      - Configurations
+      - Contacts
+      - Dataflow
+      - Describe
+      - Endpoints
+      - Ephemer
+      - Ground
+      - Groundstation
+      - Groups
+      - Minute
+      - Mission
+      - Mission Profile
+      - Profiles
+      - Register
+      - Reserve
+      - Resources
+      - Satellites
+      - Stations
+      - Status
+      - Tags
+      - Types
+      - Untag
+      - Usage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ground-station/
       - type: OpenAPI
         url: properties/groundstation-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/ground-station/features/
+      - type: Locations
+        url: https://aws.amazon.com/ground-station/locations/
+      - type: Pricing
+        url: https://aws.amazon.com/ground-station/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/ground-station/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/ground-station/faqs/
+      - type: Features
+        url: https://aws.amazon.com/ground-station/features/
     overlays:
       - type: APIs.io Search
         url: overlays/groundstation-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/groundstation-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:groundstation
-  - name: AWS Identity Store
+  - name: AWS  Identity Store
     description: >-
-      <p>The Identity Store service used by IAM Identity Center provides a
-      single place to retrieve all of your identities (users and groups). For
-      more information, see the <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">IAM
-      Identity Center User Guide</a>.</p> <p>This reference guide describes the
-      identity store operations that you can call programmatically and includes
-      detailed information about data types and errors.</p> <note> <p>IAM
-      Identity Center uses the <code>sso</code> and <code>identitystore</code>
-      API namespaces.</p> </note>
+      The API for the Identity Store service within IAM Identity Center is a
+      central hub for accessing all user and group identities. You can find
+      detailed information on how to use this service in the IAM Identity Center
+      User Guide, which outlines the available identity store operations that
+      can be accessed programmatically. The API utilizes the sso and
+      identitystore namespaces for seamless integration with your systems.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Users
+      - Identity
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/welcome.html
       - type: OpenAPI
         url: properties/identitystore-openapi-original.yml
     overlays:
@@ -4399,20 +5511,55 @@ apis:
     aid: amazon-web-services:identitystore
   - name: AWS EC2 Image Builder
     description: >-
-      <p>EC2 Image Builder is a fully managed Amazon Web Services service that
-      makes it easier to automate the creation, management, and deployment of
-      customized, secure, and up-to-date "golden" server images that are
-      pre-installed and pre-configured with software and settings to meet
-      specific IT standards.</p>
+      The API for EC2 Image Builder is a comprehensive AWS service designed to
+      streamline the process of automating the creation, control, and
+      distribution of personalized, secure, and current server images which are
+      pre-loaded and pre-configured with software and settings according to
+      required IT guidelines.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/image-builder/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Actions
+      - Aggregations
+      - Build
+      - Cancel
+      - Components
+      - Configurations
+      - Container
+      - Creation
+      - Distributions
+      - Execution
+      - Executions
+      - Findings
+      - Images
+      - Import
+      - Infrastructure
+      - Lifecycle
+      - Packages
+      - Pipelines
+      - Policies
+      - Recipes
+      - Resources
+      - Scans
+      - Send
+      - States
+      - Steps
+      - Tags
+      - Untag
+      - Versions
+      - Waiting
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/image-builder/
       - type: OpenAPI
         url: properties/imagebuilder-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/image-builder/features/
+      - type: FAQ
+        url: https://aws.amazon.com/image-builder/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/imagebuilder-openapi-search.yml
@@ -4421,18 +5568,34 @@ apis:
     aid: amazon-web-services:imagebuilder
   - name: Amazon Inspector Scan
     description: >-
-      <p>Amazon Inspector Scan is a vulnerability discovery service that scans a
-      provided Software Bill of Materials (SBOM) for security
-      vulnerabilities.</p>
+      The Amazon Inspector API effortlessly identifies workloads, such as Amazon
+      EC2 instances, containers, and Lambda functions, and conducts thorough
+      scans to detect software vulnerabilities and unintentional network risks.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/inspector/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Inspector
+      - Scans
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/inspector/
       - type: OpenAPI
         url: properties/inspector-scan-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/inspector/features/
+      - type: Pricing
+        url: https://aws.amazon.com/inspector/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/inspector/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/inspector/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/inspector/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/inspector/customers/
+      - type: Partners
+        url: https://aws.amazon.com/inspector/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/inspector-scan-openapi-search.yml
@@ -4441,64 +5604,38 @@ apis:
     aid: amazon-web-services:inspector-scan
   - name: AWS Health
     description: >-
-      <fullname>Health</fullname> <p>The Health API provides access to the
-      Health information that appears in the <a
-      href="https://health.aws.amazon.com/health/home">Health Dashboard</a>. You
-      can use the API operations to get information about events that might
-      affect your Amazon Web Services and resources.</p> <p>You must have a
-      Business, Enterprise On-Ramp, or Enterprise Support plan from <a
-      href="http://aws.amazon.com/premiumsupport/">Amazon Web Services
-      Support</a> to use the Health API. If you call the Health API from an
-      Amazon Web Services account that doesn't have a Business, Enterprise
-      On-Ramp, or Enterprise Support plan, you receive a
-      <code>SubscriptionRequiredException</code> error.</p> <p>For API access,
-      you need an access key ID and a secret access key. Use temporary
-      credentials instead of long-term access keys when possible. Temporary
-      credentials include an access key ID, a secret access key, and a security
-      token that indicates when the credentials expire. For more information,
-      see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html">Best
-      practices for managing Amazon Web Services access keys</a> in the
-      <i>Amazon Web Services General Reference</i>.</p> <p>You can use the
-      Health endpoint health.us-east-1.amazonaws.com (HTTPS) to call the Health
-      API operations. Health supports a multi-Region application architecture
-      and has two regional endpoints in an active-passive configuration. You can
-      use the high availability endpoint example to determine which Amazon Web
-      Services Region is active, so that you can get the latest information from
-      the API. For more information, see <a
-      href="https://docs.aws.amazon.com/health/latest/ug/health-api.html">Accessing
-      the Health API</a> in the <i>Health User Guide</i>.</p> <p>For
-      authentication of requests, Health uses the <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a>.</p> <p>If your Amazon Web Services account
-      is part of Organizations, you can use the Health organizational view
-      feature. This feature provides a centralized view of Health events across
-      all accounts in your organization. You can aggregate Health events in real
-      time to identify accounts in your organization that are affected by an
-      operational event or get notified of security vulnerabilities. Use the
-      organizational view API operations to enable this feature and return event
-      information. For more information, see <a
-      href="https://docs.aws.amazon.com/health/latest/ug/aggregate-events.html">Aggregating
-      Health events</a> in the <i>Health User Guide</i>.</p> <note> <p>When you
-      use the Health API operations to return Health events, see the following
-      recommendations:</p> <ul> <li> <p>Use the <a
-      href="https://docs.aws.amazon.com/health/latest/APIReference/API_Event.html#AWSHealth-Type-Event-eventScopeCode">eventScopeCode</a>
-      parameter to specify whether to return Health events that are public or
-      account-specific.</p> </li> <li> <p>Use pagination to view all events from
-      the response. For example, if you call the
-      <code>DescribeEventsForOrganization</code> operation to get all events in
-      your organization, you might receive several page results. Specify the
-      <code>nextToken</code> in the next request to return more results.</p>
-      </li> </ul> </note>
+      The Health API grants access to Health information displayed in the Health
+      Dashboard. Users can utilize API operations to retrieve data on events
+      that may impact their Amazon Web Services and resources. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/health/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Enable
+      - Health
+      - Organizations
+      - Services
+      - Healthcare
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/health/
       - type: OpenAPI
         url: properties/health-openapi-original.yml
+      - type: Case-studies
+        url: https://aws.amazon.com/health/case-studies/
+      - type: Life Science Solutions
+        url: https://aws.amazon.com/health/life-sciences/solutions/
+      - type: Genomics Solutions
+        url: https://aws.amazon.com/health/genomics/solutions/
+      - type: Healthcare Solutions
+        url: https://aws.amazon.com/health/healthcare/solutions/
+      - type: Providers
+        url: https://aws.amazon.com/health/providers/
+      - type: Payors
+        url: https://aws.amazon.com/health/payors/
+      - type: Healthtech
+        url: https://aws.amazon.com/health/healthtech/
     overlays:
       - type: APIs.io Search
         url: overlays/health-openapi-search.yml
@@ -4507,37 +5644,160 @@ apis:
     aid: amazon-web-services:health
   - name: AWS IoT
     description: >-
-      <fullname>IoT</fullname> <p>IoT provides secure, bi-directional
-      communication between Internet-connected devices (such as sensors,
-      actuators, embedded devices, or smart appliances) and the Amazon Web
-      Services cloud. You can discover your custom IoT-Data endpoint to
-      communicate with, configure rules for data processing and integration with
-      other services, organize resources associated with each device (Registry),
-      configure logging, and create and manage policies and credentials to
-      authenticate devices.</p> <p>The service endpoints that expose this API
-      are listed in <a
-      href="https://docs.aws.amazon.com/general/latest/gr/iot-core.html">Amazon
-      Web Services IoT Core Endpoints and Quotas</a>. You must use the endpoint
-      for the region that has the resources you want to access.</p> <p>The
-      service name used by <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Amazon
-      Web Services Signature Version 4</a> to sign the request is:
-      <i>execute-api</i>.</p> <p>For more information about how IoT works, see
-      the <a
-      href="https://docs.aws.amazon.com/iot/latest/developerguide/aws-iot-how-it-works.html">Developer
-      Guide</a>.</p> <p>For information about how to use the credentials
-      provider for IoT, see <a
-      href="https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html">Authorizing
-      Direct Calls to Amazon Web Services Services</a>.</p>
+      The IoT API enables secure communication between Internet-connected
+      devices and the Amazon Web Services cloud. Users can access custom
+      IoT-Data endpoints, set up data processing rules, integrate with other
+      services, manage device resources, configure logging, and create
+      authentication policies and credentials. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accept
+      - Accounts
+      - Actions
+      - Active
+      - Aggregation
+      - Alias
+      - Aliases
+      - Associate
+      - Ate
+      - Attached
+      - Audit
+      - Audits
+      - Authorization
+      - Authorizers
+      - Behavior
+      - Behaviors
+      - Billing
+      - Buckets
+      - CA
+      - CACertificate
+      - CACertificates
+      - Cancel
+      - Cardinality
+      - Certificates
+      - Claim
+      - Code
+      - Configurations
+      - Confirm
+      - Confirmation
+      - Confirmdestination
+      - Custom
+      - Default
+      - Demand
+      - Deprecate
+      - Describe
+      - Destinations
+      - Detach
+      - Detect
+      - Dimensions
+      - Disable
+      - Documents
+      - Domains
+      - Dynamic
+      - Effective
+      - Enable
+      - Endpoints
+      - Er
+      - Ers
+      - Events
+      - Execution
+      - Executions
+      - Findings
+      - Fleets
+      - Groups
+      - Index
+      - Indexing
+      - Indices
+      - Invoke
+      - Jobs
+      - Keys
+      - Levels
+      - Logging
+      - Managed
+      - Metrics
+      - Mitigation
+      - Mitigation Actions
+      - Models
+      - Names
+      - Numbers
+      - OTAUpdate
+      - OTAUpdates
+      - 'On'
+      - Options
+      - Out
+      - Outgoing
+      - Packages
+      - Percentiles
+      - Policies
+      - Principals
+      - Profiles
+      - Prov
+      - Providers
+      - Provisioning
+      - Register
+      - Registration Codes
+      - Registrations
+      - Reject
+      - Related
+      - Removes
+      - Replace
+      - Reports
+      - Resources
+      - Roles
+      - Rules
+      - Scheduled
+      - Scheduled Audits
+      - Search
+      - Security
+      - Sets
+      - States
+      - Statistics
+      - Stop
+      - Stream
+      - Streams
+      - Summaries
+      - Suppressions
+      - Tags
+      - Targets
+      - Tasks
+      - Templates
+      - Tests
+      - Things
+      - Tokens
+      - Topics
+      - Training
+      - Transfers
+      - Types
+      - Untag
+      - Validate
+      - Values
+      - Verification
+      - Versions
+      - Violations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot/
       - type: OpenAPI
         url: properties/iot-openapi-original.yml
+      - type: Customers
+        url: https://aws.amazon.com/iot/customers/
+      - type: News
+        url: https://aws.amazon.com/iot/iot-events-partner-news/
+      - type: Partners
+        url: https://aws.amazon.com/iot/partner-solutions/
+      - type: Solutions
+        url: https://aws.amazon.com/iot/solutions/
+      - type: Resources
+        url: https://aws.amazon.com/iot/resources/
+      - type: Blog
+        url: https://aws.amazon.com/iot/blog/
+      - type: Customers
+        url: https://aws.amazon.com/iot/customers/
+      - type: Edukit
+        url: https://aws.amazon.com/iot/edukit/
     overlays:
       - type: APIs.io Search
         url: overlays/iot-openapi-search.yml
@@ -4546,24 +5806,20 @@ apis:
     aid: amazon-web-services:iot
   - name: AWS IoT Jobs
     description: >-
-      <p>AWS IoT Jobs is a service that allows you to define a set of jobs —
-      remote operations that are sent to and executed on one or more devices
-      connected to AWS IoT. For example, you can define a job that instructs a
-      set of devices to download and install application or firmware updates,
-      reboot, rotate certificates, or perform remote troubleshooting
-      operations.</p> <p> To create a job, you make a job document which is a
-      description of the remote operations to be performed, and you specify a
-      list of targets that should perform the operations. The targets can be
-      individual things, thing groups or both.</p> <p> AWS IoT Jobs sends a
-      message to inform the targets that a job is available. The target starts
-      the execution of the job by downloading the job document, performing the
-      operations it specifies, and reporting its progress to AWS IoT. The Jobs
-      service provides commands to track the progress of a job on a specific
-      target and for all the targets of the job</p>
+      AWS IoT Jobs is a service that allows you to create and manage a set of
+      remote operations to be executed on devices connected to AWS IoT. These
+      operations can include tasks such as downloading updates, installing
+      firmware, rebooting devices, rotating certificates, and troubleshooting. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Executions
+      - Jobs
+      - Names
+      - Next
+      - Pending
+      - Things
     properties:
       - type: Documentation
         url: https://example.com
@@ -4577,42 +5833,31 @@ apis:
     aid: amazon-web-services:iot-jobs-data
   - name: Amazon CloudWatch Internet Monitor
     description: >-
-      <p>Amazon CloudWatch Internet Monitor provides visibility into how
-      internet issues impact the performance and availability between your
-      applications hosted on Amazon Web Services and your end users. It can
-      reduce the time it takes for you to diagnose internet issues from days to
-      minutes. Internet Monitor uses the connectivity data that Amazon Web
-      Services captures from its global networking footprint to calculate a
-      baseline of performance and availability for internet traffic. This is the
-      same data that Amazon Web Services uses to monitor internet uptime and
-      availability. With those measurements as a baseline, Internet Monitor
-      raises awareness for you when there are significant problems for your end
-      users in the different geographic locations where your application
-      runs.</p> <p>Internet Monitor publishes internet measurements to
-      CloudWatch Logs and CloudWatch Metrics, to easily support using CloudWatch
-      tools with health information for geographies and networks specific to
-      your application. Internet Monitor sends health events to Amazon
-      EventBridge so that you can set up notifications. If an issue is caused by
-      the Amazon Web Services network, you also automatically receive an Amazon
-      Web Services Health Dashboard notification with the steps that Amazon Web
-      Services is taking to mitigate the problem.</p> <p>To use Internet
-      Monitor, you create a <i>monitor</i> and associate your application's
-      resources with it - VPCs, NLBs, CloudFront distributions, or WorkSpaces
-      directories - so Internet Monitor can determine where your application's
-      internet traffic is. Internet Monitor then provides internet measurements
-      from Amazon Web Services that are specific to the locations and ASNs
-      (typically, internet service providers or ISPs) that communicate with your
-      application.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html">Using
-      Amazon CloudWatch Internet Monitor</a> in the <i>Amazon CloudWatch User
-      Guide</i>.</p>
+      Amazon CloudWatch Internet Monitor provides visibility into how internet
+      issues impact the performance and availability between your applications
+      hosted on Amazon Web Services and your end users. It can reduce the time
+      it takes for you to diagnose internet issues from days to minutes. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Events
+      - Health
+      - Monitors
+      - Names
+      - Queries
+      - Resources
+      - Results
+      - Status
+      - Stop
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html
       - type: OpenAPI
         url: properties/internetmonitor-openapi-original.yml
     overlays:
@@ -4623,38 +5868,51 @@ apis:
     aid: amazon-web-services:internetmonitor
   - name: AWS IoT Analytics
     description: >-
-      <p>IoT Analytics allows you to collect large amounts of device data,
-      process messages, and store them. You can then query the data and run
-      sophisticated analytics on it. IoT Analytics enables advanced data
-      exploration through integration with Jupyter Notebooks and data
-      visualization through integration with Amazon QuickSight.</p>
-      <p>Traditional analytics and business intelligence tools are designed to
-      process structured data. IoT data often comes from devices that record
-      noisy processes (such as temperature, motion, or sound). As a result the
-      data from these devices can have significant gaps, corrupted messages, and
-      false readings that must be cleaned up before analysis can occur. Also,
-      IoT data is often only meaningful in the context of other data from
-      external sources. </p> <p>IoT Analytics automates the steps required to
-      analyze data from IoT devices. IoT Analytics filters, transforms, and
-      enriches IoT data before storing it in a time-series data store for
-      analysis. You can set up the service to collect only the data you need
-      from your devices, apply mathematical transforms to process the data, and
-      enrich the data with device-specific metadata such as device type and
-      location before storing it. Then, you can analyze your data by running
-      queries using the built-in SQL query engine, or perform more complex
-      analytics and machine learning inference. IoT Analytics includes pre-built
-      models for common IoT use cases so you can answer questions like which
-      devices are about to fail or which customers are at risk of abandoning
-      their wearable devices.</p>
+      IoT Analytics is a powerful tool designed to streamline the collection,
+      processing, storage, and analysis of large amounts of device data. This
+      API allows users to easily query and run sophisticated analytics on IoT
+      data, enabling advanced exploration and visualization through integration
+      with Jupyter Notebooks and Amazon QuickSight. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-analytics/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Activity
+      - Batches
+      - Cancel
+      - Channels
+      - Content
+      - Contents
+      - Data
+      - Data Store
+      - Datasets
+      - Logging
+      - Messages
+      - Names
+      - Options
+      - Pipeline Activities
+      - Pipelines
+      - Reprocessing
+      - Resources
+      - Runs
+      - Samples
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-analytics/
       - type: OpenAPI
         url: properties/iotanalytics-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-analytics/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-analytics/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-analytics/faq/
+      - type: Resources
+        url: https://aws.amazon.com/iot-analytics/resources/
+      - type: Partners
+        url: https://aws.amazon.com/iot-analytics/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/iotanalytics-openapi-search.yml
@@ -4663,44 +5921,80 @@ apis:
     aid: amazon-web-services:iotanalytics
   - name: AWS IoT Core Device Advisor
     description: >-
-      <p>Amazon Web Services IoT Core Device Advisor is a cloud-based, fully
-      managed test capability for validating IoT devices during device software
-      development. Device Advisor provides pre-built tests that you can use to
-      validate IoT devices for reliable and secure connectivity with Amazon Web
-      Services IoT Core before deploying devices to production. By using Device
-      Advisor, you can confirm that your devices can connect to Amazon Web
-      Services IoT Core, follow security best practices and, if applicable,
-      receive software updates from IoT Device Management. You can also download
-      signed qualification reports to submit to the Amazon Web Services Partner
-      Network to get your device qualified for the Amazon Web Services Partner
-      Device Catalog without the need to send your device in and wait for it to
-      be tested.</p>
+      Amazon Web Services IoT Core Device Advisor is a cloud-based testing
+      service designed to verify the functionality and security of IoT devices
+      before deployment. It offers a range of pre-built tests to ensure reliable
+      connectivity with Amazon Web Services IoT Core. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-core/device-advisor/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Definitions
+      - Endpoints
+      - Reports
+      - Resources
+      - Runs
+      - Stop
+      - Suites
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-core/device-advisor/
       - type: OpenAPI
         url: properties/iotdeviceadvisor-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-core/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-core/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/iot-core/getting-started/
+      - type: Features
+        url: https://aws.amazon.com/iot-core/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/iot/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/iotdeviceadvisor-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iotdeviceadvisor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotdeviceadvisor
-  - name: AWS IoT 1-Click Projects
-    description: <p>The AWS IoT 1-Click Projects API Reference</p>
+  - name: ' AWS IoT 1-Click Projects'
+    description: >-
+      This API allows AWS IoT 1-Click devices to easily and securely connect to
+      AWS IoT Core upon deployment, eliminating the need for manual certificate
+      management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-1-click/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Device
+      - Devices
+      - Disassociate
+      - Names
+      - Placements
+      - Projects
+      - Resources
+      - Tags
+      - Templates
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-1-click/
       - type: OpenAPI
         url: properties/iot1click-projects-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-1-click/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-1-click/pricing/
+      - type: Devices
+        url: https://aws.amazon.com/iot-1-click/devices/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-1-click/faq/
+      - type: Features
+        url: https://aws.amazon.com/iot-1-click/features/
     overlays:
       - type: APIs.io Search
         url: overlays/iot1click-projects-openapi-search.yml
@@ -4709,43 +6003,82 @@ apis:
     aid: amazon-web-services:iot1click-projects
   - name: AWS IoT Events
     description: >-
-      <p>IoT Events monitors your equipment or device fleets for failures or
-      changes in operation, and triggers actions when such events occur. You can
-      use IoT Events Data API commands to send inputs to detectors, list
-      detectors, and view or update a detector's status.</p> <p> For more
-      information, see <a
-      href="https://docs.aws.amazon.com/iotevents/latest/developerguide/what-is-iotevents.html">What
-      is IoT Events?</a> in the <i>IoT Events Developer Guide</i>.</p>
+      The IoT Events API allows you to track the status and performance of your
+      equipment or device fleets, enabling you to detect failures or changes in
+      operation and take appropriate actions. With IoT Events Data API, you can
+      interact with detectors by sending inputs, listing detectors, and
+      accessing or modifying their status. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-events/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Acknowledge
+      - Alarm
+      - Alarms
+      - Batches
+      - Describe
+      - Detectors
+      - Disable
+      - Enable
+      - Inputs
+      - Keys
+      - Messages
+      - Models
+      - Names
+      - Reset
+      - Snooze
+      - Values
+      - Events
+      - IoT
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-events/
       - type: OpenAPI
         url: properties/iotevents-data-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-events/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-events/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-events/faqs/
+      - type: Features
+        url: https://aws.amazon.com/iot-events/features/
     overlays:
       - type: APIs.io Search
         url: overlays/iotevents-data-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iotevents-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotevents-data
-  - name: Fleet Hub for AWS IoT Device Management
+  - name: AWS IoT Device Management
     description: >-
-      <p>With Fleet Hub for AWS IoT Device Management you can build stand-alone
-      web applications for monitoring the health of your device fleets.</p>
-      <note> <p>Fleet Hub for AWS IoT Device Management is in public preview and
-      is subject to change.</p> </note>
+      AWS IoT Device Management simplifies the process of registering,
+      organizing, monitoring, and remotely managing IoT devices on a large
+      scale. Seamlessly integrate with AWS IoT Core for cloud device
+      connectivity and management, as well as with AWS IoT Device Defender for
+      auditing and monitoring the security posture of your fleet.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-device-management/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Devices
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-device-management/
       - type: OpenAPI
         url: properties/iotfleethub-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-device-management/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-device-management/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/iot-device-management/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-device-management/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/iotfleethub-openapi-search.yml
@@ -4754,26 +6087,28 @@ apis:
     aid: amazon-web-services:iotfleethub
   - name: AWS IoT Data
     description: >-
-      <fullname>IoT data</fullname> <p>IoT data enables secure, bi-directional
-      communication between Internet-connected things (such as sensors,
-      actuators, embedded devices, or smart appliances) and the Amazon Web
-      Services cloud. It implements a broker for applications and things to
-      publish messages over HTTP (Publish) and retrieve, update, and delete
-      shadows. A shadow is a persistent representation of your things and their
-      state in the Amazon Web Services cloud.</p> <p>Find the endpoint address
-      for actions in IoT data by running this CLI command:</p> <p> <code>aws iot
-      describe-endpoint --endpoint-type iot:Data-ATS</code> </p> <p>The service
-      name used by <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Amazon
-      Web ServicesSignature Version 4</a> to sign requests is:
-      <i>iotdevicegateway</i>.</p>
+      This API, IoT data, facilitates secure communication between
+      Internet-connected devices and the Amazon Web Services cloud. It acts as a
+      broker for devices to publish messages via HTTP and manage shadows,
+      persistent representations of the device state in the AWS cloud. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Messages
+      - Named
+      - Names
+      - Publish
+      - Retained
+      - Shadow
+      - Shadows
+      - Things
+      - Topics
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html
       - type: OpenAPI
         url: properties/iot-data-openapi-original.yml
     overlays:
@@ -4782,19 +6117,37 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot-data
-  - name: AWS IoT 1-Click Devices
+  - name: AWS IoT 1-Click devices
     description: >-
-      <p>Describes all of the AWS IoT 1-Click device-related API operations for
-      the service.
-       Also provides sample requests, responses, and errors for the supported web services
-       protocols.</p>
+      Manufacturing partners of AWS IoT 1-Click develop devices that
+      effortlessly connect to the AWS Cloud upon unboxing. These supported
+      devices come pre-provisioned with certificates during manufacturing,
+      eliminating the need for writing firmware or device-specific code to
+      utilize them.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-1-click/devices/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Claim
+      - Claims
+      - Code
+      - Describe
+      - Device
+      - Devices
+      - Events
+      - Finalize
+      - Initiate
+      - Invoke
+      - Methods
+      - Resources
+      - States
+      - Tags
+      - Unclaim
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-1-click/devices/
       - type: OpenAPI
         url: properties/iot1click-devices-openapi-original.yml
     overlays:
@@ -4803,20 +6156,24 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/iot1click-devices-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iot1click-devices
-  - name: iotsecuretunneling
+  - name: AWS oT Secure Tunneling
     description: >-
-      <fullname>IoT Secure Tunneling</fullname> <p>IoT Secure Tunneling creates
-      remote connections to devices deployed in the field.</p> <p>For more
-      information about how IoT Secure Tunneling works, see <a
-      href="https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneling.html">IoT
-      Secure Tunneling</a>.</p>
+      This API, IoT Secure Tunneling, allows users to establish secure remote
+      connections to devices deployed in the field. This is particularly useful
+      for devices situated behind restricted firewalls at remote sites. With IoT
+      Secure Tunneling, users can troubleshoot, perform configuration updates,
+      and execute other operational tasks on these devices. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneling.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneling.html
       - type: OpenAPI
         url: properties/iotsecuretunneling-openapi-original.yml
     overlays:
@@ -4827,24 +6184,32 @@ apis:
     aid: amazon-web-services:iotsecuretunneling
   - name: AWS IoT FleetWise
     description: >-
-      <p>Amazon Web Services IoT FleetWise is a fully managed service that you
-      can use to collect, model, and transfer vehicle data to the Amazon Web
-      Services cloud at scale. With Amazon Web Services IoT FleetWise, you can
-      standardize all of your vehicle data models, independent of the in-vehicle
-      communication architecture, and define data collection rules to transfer
-      only high-value data to the cloud. </p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What
-      is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services
-      IoT FleetWise Developer Guide</i>.</p>
+      The Amazon Web Services IoT FleetWise API is a comprehensive solution for
+      efficiently gathering and transmitting vehicle data to the AWS cloud. This
+      fully managed service allows users to standardize data models, regardless
+      of communication systems in use, and set up rules for transferring only
+      essential data to the cloud.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-fleetwise/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Vehicles
+      - ' Fleets'
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-fleetwise/
       - type: OpenAPI
         url: properties/iotfleetwise-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-fleetwise/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-fleetwise/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-fleetwise/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/iot-fleetwise/customers/
+      - type: Partners
+        url: https://aws.amazon.com/iot-fleetwise/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/iotfleetwise-openapi-search.yml
@@ -4853,190 +6218,55 @@ apis:
     aid: amazon-web-services:iotfleetwise
   - name: Amazon Interactive Video Service (IVS)
     description: >-
-      <p> <b>Introduction</b> </p> <p>The Amazon Interactive Video Service (IVS)
-      API is REST compatible, using a standard HTTP API and an Amazon Web
-      Services EventBridge event stream for responses. JSON is used for both
-      requests and responses, including errors.</p> <p>The API is an Amazon Web
-      Services regional service. For a list of supported regions and Amazon IVS
-      HTTPS service endpoints, see the <a
-      href="https://docs.aws.amazon.com/general/latest/gr/ivs.html">Amazon IVS
-      page</a> in the <i>Amazon Web Services General Reference</i>.</p> <p> <i>
-      <b>All API request parameters and URLs are case sensitive. </b> </i> </p>
-      <p>For a summary of notable documentation changes in each release, see <a
-      href="https://docs.aws.amazon.com/ivs/latest/userguide/doc-history.html">
-      Document History</a>.</p> <p> <b>Allowed Header Values</b> </p> <ul> <li>
-      <p> <code> <b>Accept:</b> </code> application/json</p> </li> <li> <p>
-      <code> <b>Accept-Encoding:</b> </code> gzip, deflate</p> </li> <li> <p>
-      <code> <b>Content-Type:</b> </code>application/json</p> </li> </ul> <p>
-      <b>Resources</b> </p> <p>The following resources contain information about
-      your IVS live stream (see <a
-      href="https://docs.aws.amazon.com/ivs/latest/userguide/getting-started.html">
-      Getting Started with Amazon IVS</a>):</p> <ul> <li> <p> <b>Channel</b> —
-      Stores configuration data related to your live stream. You first create a
-      channel and then use the channel’s stream key to start your live stream.
-      See the Channel endpoints for more information. </p> </li> <li> <p>
-      <b>Stream key</b> — An identifier assigned by Amazon IVS when you create a
-      channel, which is then used to authorize streaming. See the StreamKey
-      endpoints for more information. <i> <b>Treat the stream key like a secret,
-      since it allows anyone to stream to the channel.</b> </i> </p> </li> <li>
-      <p> <b>Playback key pair</b> — Video playback may be restricted using
-      playback-authorization tokens, which use public-key encryption. A playback
-      key pair is the public-private pair of keys used to sign and validate the
-      playback-authorization token. See the PlaybackKeyPair endpoints for more
-      information.</p> </li> <li> <p> <b>Recording configuration</b> — Stores
-      configuration related to recording a live stream and where to store the
-      recorded content. Multiple channels can reference the same recording
-      configuration. See the Recording Configuration endpoints for more
-      information.</p> </li> <li> <p> <b>Playback restriction policy</b> —
-      Restricts playback by countries and/or origin sites. See the Playback
-      Restriction Policy endpoints for more information.</p> </li> </ul> <p>
-      <b>Tagging</b> </p> <p>A <i>tag</i> is a metadata label that you assign to
-      an Amazon Web Services resource. A tag comprises a <i>key</i> and a
-      <i>value</i>, both set by you. For example, you might set a tag as
-      <code>topic:nature</code> to label a particular video category. See <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html">Tagging
-      Amazon Web Services Resources</a> for more information, including
-      restrictions that apply to tags and "Tag naming limits and requirements";
-      Amazon IVS has no service-specific constraints beyond what is documented
-      there.</p> <p>Tags can help you identify and organize your Amazon Web
-      Services resources. For example, you can use the same tag for different
-      resources to indicate that they are related. You can also use tags to
-      manage access (see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html">
-      Access Tags</a>). </p> <p>The Amazon IVS API has these tag-related
-      endpoints: <a>TagResource</a>, <a>UntagResource</a>, and
-      <a>ListTagsForResource</a>. The following resources support tagging:
-      Channels, Stream Keys, Playback Key Pairs, and Recording
-      Configurations.</p> <p>At most 50 tags can be applied to a resource. </p>
-      <p> <b>Authentication versus Authorization</b> </p> <p>Note the
-      differences between these concepts:</p> <ul> <li> <p>
-      <i>Authentication</i> is about verifying identity. You need to be
-      authenticated to sign Amazon IVS API requests.</p> </li> <li> <p>
-      <i>Authorization</i> is about granting permissions. Your IAM roles need to
-      have permissions for Amazon IVS API requests. In addition, authorization
-      is needed to view <a
-      href="https://docs.aws.amazon.com/ivs/latest/userguide/private-channels.html">Amazon
-      IVS private channels</a>. (Private channels are channels that are enabled
-      for "playback authorization.")</p> </li> </ul> <p> <b>Authentication</b>
-      </p> <p>All Amazon IVS API requests must be authenticated with a
-      signature. The Amazon Web Services Command-Line Interface (CLI) and Amazon
-      IVS Player SDKs take care of signing the underlying API calls for you.
-      However, if your application calls the Amazon IVS API directly, it’s your
-      responsibility to sign the requests.</p> <p>You generate a signature using
-      valid Amazon Web Services credentials that have permission to perform the
-      requested action. For example, you must sign PutMetadata requests with a
-      signature generated from a user account that has the
-      <code>ivs:PutMetadata</code> permission.</p> <p>For more information:</p>
-      <ul> <li> <p>Authentication and generating signatures — See <a
-      href="https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html">Authenticating
-      Requests (Amazon Web Services Signature Version 4)</a> in the <i>Amazon
-      Web Services General Reference</i>.</p> </li> <li> <p>Managing Amazon IVS
-      permissions — See <a
-      href="https://docs.aws.amazon.com/ivs/latest/userguide/security-iam.html">Identity
-      and Access Management</a> on the Security page of the <i>Amazon IVS User
-      Guide</i>.</p> </li> </ul> <p> <b>Amazon Resource Names (ARNs)</b> </p>
-      <p>ARNs uniquely identify AWS resources. An ARN is required when you need
-      to specify a resource unambiguously across all of AWS, such as in IAM
-      policies and API calls. For more information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon
-      Resource Names</a> in the <i>AWS General Reference</i>.</p> <p> <b>Channel
-      Endpoints</b> </p> <ul> <li> <p> <a>CreateChannel</a> — Creates a new
-      channel and an associated stream key to start streaming.</p> </li> <li>
-      <p> <a>GetChannel</a> — Gets the channel configuration for the specified
-      channel ARN.</p> </li> <li> <p> <a>BatchGetChannel</a> — Performs
-      <a>GetChannel</a> on multiple ARNs simultaneously.</p> </li> <li> <p>
-      <a>ListChannels</a> — Gets summary information about all channels in your
-      account, in the Amazon Web Services region where the API request is
-      processed. This list can be filtered to match a specified name or
-      recording-configuration ARN. Filters are mutually exclusive and cannot be
-      used together. If you try to use both filters, you will get an error (409
-      Conflict Exception).</p> </li> <li> <p> <a>UpdateChannel</a> — Updates a
-      channel's configuration. This does not affect an ongoing stream of this
-      channel. You must stop and restart the stream for the changes to take
-      effect.</p> </li> <li> <p> <a>DeleteChannel</a> — Deletes the specified
-      channel.</p> </li> </ul> <p> <b>Playback Restriction Policy Endpoints</b>
-      </p> <ul> <li> <p> <a>CreatePlaybackRestrictionPolicy</a> — Creates a new
-      playback restriction policy, for constraining playback by countries and/or
-      origins.</p> </li> <li> <p> <a>DeletePlaybackRestrictionPolicy</a> —
-      Deletes the specified playback restriction policy</p> </li> <li> <p>
-      <a>GetPlaybackRestrictionPolicy</a> — Gets the specified playback
-      restriction policy.</p> </li> <li> <p>
-      <a>ListPlaybackRestrictionPolicies</a> — Gets summary information about
-      playback restriction policies.</p> </li> <li> <p>
-      <a>UpdatePlaybackRestrictionPolicy</a> — Updates a specified playback
-      restriction policy.</p> </li> </ul> <p> <b>Private Channel Endpoints</b>
-      </p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/ivs/latest/userguide/private-channels.html">Setting
-      Up Private Channels</a> in the <i>Amazon IVS User Guide</i>.</p> <ul> <li>
-      <p> <a>ImportPlaybackKeyPair</a> — Imports the public portion of a new key
-      pair and returns its <code>arn</code> and <code>fingerprint</code>. The
-      <code>privateKey</code> can then be used to generate viewer authorization
-      tokens, to grant viewers access to private channels (channels enabled for
-      playback authorization).</p> </li> <li> <p> <a>GetPlaybackKeyPair</a> —
-      Gets a specified playback authorization key pair and returns the
-      <code>arn</code> and <code>fingerprint</code>. The <code>privateKey</code>
-      held by the caller can be used to generate viewer authorization tokens, to
-      grant viewers access to private channels.</p> </li> <li> <p>
-      <a>ListPlaybackKeyPairs</a> — Gets summary information about playback key
-      pairs.</p> </li> <li> <p> <a>DeletePlaybackKeyPair</a> — Deletes a
-      specified authorization key pair. This invalidates future viewer tokens
-      generated using the key pair’s <code>privateKey</code>.</p> </li> <li> <p>
-      <a>StartViewerSessionRevocation</a> — Starts the process of revoking the
-      viewer session associated with a specified channel ARN and viewer ID.
-      Optionally, you can provide a version to revoke viewer sessions less than
-      and including that version.</p> </li> <li> <p>
-      <a>BatchStartViewerSessionRevocation</a> — Performs
-      <a>StartViewerSessionRevocation</a> on multiple channel ARN and viewer ID
-      pairs simultaneously.</p> </li> </ul> <p> <b>RecordingConfiguration
-      Endpoints</b> </p> <ul> <li> <p> <a>CreateRecordingConfiguration</a> —
-      Creates a new recording configuration, used to enable recording to Amazon
-      S3.</p> </li> <li> <p> <a>GetRecordingConfiguration</a> — Gets the
-      recording-configuration metadata for the specified ARN.</p> </li> <li> <p>
-      <a>ListRecordingConfigurations</a> — Gets summary information about all
-      recording configurations in your account, in the Amazon Web Services
-      region where the API request is processed.</p> </li> <li> <p>
-      <a>DeleteRecordingConfiguration</a> — Deletes the recording configuration
-      for the specified ARN.</p> </li> </ul> <p> <b>Stream Endpoints</b> </p>
-      <ul> <li> <p> <a>GetStream</a> — Gets information about the active (live)
-      stream on a specified channel.</p> </li> <li> <p> <a>GetStreamSession</a>
-      — Gets metadata on a specified stream.</p> </li> <li> <p>
-      <a>ListStreams</a> — Gets summary information about live streams in your
-      account, in the Amazon Web Services region where the API request is
-      processed.</p> </li> <li> <p> <a>ListStreamSessions</a> — Gets a summary
-      of current and previous streams for a specified channel in your account,
-      in the AWS region where the API request is processed.</p> </li> <li> <p>
-      <a>StopStream</a> — Disconnects the incoming RTMPS stream for the
-      specified channel. Can be used in conjunction with <a>DeleteStreamKey</a>
-      to prevent further streaming to a channel.</p> </li> <li> <p>
-      <a>PutMetadata</a> — Inserts metadata into the active stream of the
-      specified channel. At most 5 requests per second per channel are allowed,
-      each with a maximum 1 KB payload. (If 5 TPS is not sufficient for your
-      needs, we recommend batching your data into a single PutMetadata call.) At
-      most 155 requests per second per account are allowed.</p> </li> </ul> <p>
-      <b>StreamKey Endpoints</b> </p> <ul> <li> <p> <a>CreateStreamKey</a> —
-      Creates a stream key, used to initiate a stream, for the specified channel
-      ARN.</p> </li> <li> <p> <a>GetStreamKey</a> — Gets stream key information
-      for the specified ARN.</p> </li> <li> <p> <a>BatchGetStreamKey</a> —
-      Performs <a>GetStreamKey</a> on multiple ARNs simultaneously.</p> </li>
-      <li> <p> <a>ListStreamKeys</a> — Gets summary information about stream
-      keys for the specified channel.</p> </li> <li> <p> <a>DeleteStreamKey</a>
-      — Deletes the stream key for the specified ARN, so it can no longer be
-      used to stream.</p> </li> </ul> <p> <b>Amazon Web Services Tags
-      Endpoints</b> </p> <ul> <li> <p> <a>TagResource</a> — Adds or updates tags
-      for the Amazon Web Services resource with the specified ARN.</p> </li>
-      <li> <p> <a>UntagResource</a> — Removes tags from the resource with the
-      specified ARN.</p> </li> <li> <p> <a>ListTagsForResource</a> — Gets
-      information about Amazon Web Services tags for the specified ARN.</p>
-      </li> </ul>
+      The Amazon IVS API is a REST-compatible interface utilizing standard HTTP
+      requests and an EventBridge event stream for responses. JSON format is
+      used for both requests and responses, including error messages. This
+      regional service is compatible with various Amazon IVS HTTPS endpoints
+      across supported regions as detailed in the Amazon Web Services General
+      Reference. API Request Parameters and URLs are case-sensitive. For a
+      detailed account of documentation changes in each release, please refer to
+      the Document History section.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ivs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Batches
+      - Channels
+      - Configurations
+      - Import
+      - Keys
+      - Metadata
+      - Pairs
+      - Playback
+      - Policies
+      - Recording
+      - Resources
+      - Restrictions
+      - Revocations
+      - Sessions
+      - Stop
+      - Stream
+      - Streams
+      - Tags
+      - Untag
+      - Videos
+      - Viewers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ivs/
       - type: OpenAPI
         url: properties/ivs-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/ivs/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/ivs/faqs/
+      - type: Features
+        url: https://aws.amazon.com/ivs/features/
+      - type: Resources
+        url: https://aws.amazon.com/ivs/resources/
+      - type: Blogs
+        url: https://aws.amazon.com/ivs/blogs/
     overlays:
       - type: APIs.io Search
         url: overlays/ivs-openapi-search.yml
@@ -5045,19 +6275,44 @@ apis:
     aid: amazon-web-services:ivs
   - name: AWS IoT Events
     description: >-
-      <p>AWS IoT Events monitors your equipment or device fleets for failures or
-      changes in operation, and triggers actions when such events occur. You can
-      use AWS IoT Events API operations to create, read, update, and delete
-      inputs and detector models, and to list their versions.</p>
+      With AWS IoT Events, you can effortlessly monitor your equipment or device
+      fleets for any failures or operational changes, and automatically trigger
+      actions in response to these events. The API provides operations to manage
+      inputs and detector models, including creating, reading, updating, and
+      deleting them, as well as listing their versions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-events/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alarm
+      - Analysis
+      - Describe
+      - Detectors
+      - Events
+      - Inputs
+      - Logging
+      - Models
+      - Names
+      - Options
+      - Resources
+      - Results
+      - Routings
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-events/
       - type: OpenAPI
         url: properties/iotevents-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-events/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-events/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-events/faqs/
+      - type: Features
+        url: https://aws.amazon.com/iot-events/features/
     overlays:
       - type: APIs.io Search
         url: overlays/iotevents-openapi-search.yml
@@ -5066,47 +6321,137 @@ apis:
     aid: amazon-web-services:iotevents
   - name: AWS IoT SiteWise
     description: >-
-      <p>Welcome to the IoT SiteWise API Reference. IoT SiteWise is an Amazon
-      Web Services service that connects <a
-      href="https://en.wikipedia.org/wiki/Internet_of_things#Industrial_applications">Industrial
-      Internet of Things (IIoT)</a> devices to the power of the Amazon Web
-      Services Cloud. For more information, see the <a
-      href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/">IoT
-      SiteWise User Guide</a>. For information about IoT SiteWise quotas, see <a
-      href="https://docs.aws.amazon.com/iot-sitewise/latest/userguide/quotas.html">Quotas</a>
-      in the <i>IoT SiteWise User Guide</i>.</p>
+      Introducing the IoT SiteWise API, a powerful tool for connecting
+      Industrial Internet of Things (IIoT) devices to the Amazon Web Services
+      Cloud. Dive into the IoT SiteWise User Guide for further details and
+      resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-sitewise/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Access
+      - Accounts
+      - Actions
+      - Aggregates
+      - Assets
+      - Associate
+      - Associated
+      - Batches
+      - Bulk
+      - Capabilities
+      - Composite
+      - Compositions
+      - Configurations
+      - Dashboard
+      - Dashboards
+      - Default
+      - Describe
+      - Disassociate
+      - Encryption
+      - Execute
+      - Execution
+      - Gateways
+      - Hierarchy
+      - History
+      - Import
+      - Interpolated
+      - Jobs
+      - Latest
+      - Logging
+      - Models
+      - Namespaces
+      - Options
+      - Policies
+      - Portals
+      - Projects
+      - Properties
+      - Queries
+      - Relationships
+      - Resources
+      - Series
+      - Storage
+      - Tags
+      - Time
+      - Time Series
+      - Untag
+      - Value
+      - Values
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-sitewise/
       - type: OpenAPI
         url: properties/iotsitewise-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-sitewise/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-sitewise/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/iot-sitewise/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-sitewise/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/iot-sitewise/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/iotsitewise-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/iotsitewise-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:iotsitewise
-  - name: AWS IoT TwinMaker
+  - name: IoT TwinMaker
     description: >-
-      <p>IoT TwinMaker is a service with which you can build operational digital
-      twins of physical systems. IoT TwinMaker overlays measurements and
-      analysis from real-world sensors, cameras, and enterprise applications so
-      you can create data visualizations to monitor your physical factory,
-      building, or industrial plant. You can use this real-world data to monitor
-      operations and diagnose and repair errors.</p>
+      IoT TwinMaker is a cutting-edge service that allows users to create
+      accurate digital replicas, also known as digital twins, of physical
+      systems. By integrating data from a variety of sources including sensors,
+      cameras, and enterprise applications, users can generate detailed
+      visualizations to effectively monitor the performance of their factories,
+      buildings, or industrial plants. This real-time data can be utilized for
+      operational monitoring, error detection, and troubleshooting purposes.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iot-twinmaker/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Cancel
+      - Components
+      - Entities
+      - Execute
+      - Execution
+      - History
+      - Jobs
+      - Metadata
+      - Plan
+      - Pricing
+      - Pricing Plans
+      - Properties
+      - Queries
+      - Resources
+      - Scenes
+      - Sources
+      - Sync
+      - Tags
+      - Transfers
+      - Types
+      - Untag
+      - Value
+      - Values
+      - Workspaces
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iot-twinmaker/
       - type: OpenAPI
         url: properties/iottwinmaker-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iot-twinmaker/features/
+      - type: Pricing
+        url: https://aws.amazon.com/iot-twinmaker/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/iot-twinmaker/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/iot-twinmaker/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/iot-twinmaker/customers/
+      - type: Partners
+        url: https://aws.amazon.com/iot-twinmaker/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/iottwinmaker-openapi-search.yml
@@ -5115,131 +6460,32 @@ apis:
     aid: amazon-web-services:iottwinmaker
   - name: Amazon IVS Chat
     description: >-
-      <p> <b>Introduction</b> </p> <p>The Amazon IVS Chat control-plane API
-      enables you to create and manage Amazon IVS Chat resources. You also need
-      to integrate with the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/chat-messaging-api.html">
-      Amazon IVS Chat Messaging API</a>, to enable users to interact with chat
-      rooms in real time.</p> <p>The API is an AWS regional service. For a list
-      of supported regions and Amazon IVS Chat HTTPS service endpoints, see the
-      Amazon IVS Chat information on the <a
-      href="https://docs.aws.amazon.com/general/latest/gr/ivs.html">Amazon IVS
-      page</a> in the <i>AWS General Reference</i>. </p> <p> <b>Notes on
-      terminology:</b> </p> <ul> <li> <p>You create service applications using
-      the Amazon IVS Chat API. We refer to these as <i>applications</i>.</p>
-      </li> <li> <p>You create front-end client applications (browser and
-      Android/iOS apps) using the Amazon IVS Chat Messaging API. We refer to
-      these as <i>clients</i>. </p> </li> </ul> <p> <b>Resources</b> </p> <p>The
-      following resources are part of Amazon IVS Chat:</p> <ul> <li> <p>
-      <b>LoggingConfiguration</b> — A configuration that allows customers to
-      store and record sent messages in a chat room. See the Logging
-      Configuration endpoints for more information.</p> </li> <li> <p>
-      <b>Room</b> — The central Amazon IVS Chat resource through which clients
-      connect to and exchange chat messages. See the Room endpoints for more
-      information.</p> </li> </ul> <p> <b>Tagging</b> </p> <p>A <i>tag</i> is a
-      metadata label that you assign to an AWS resource. A tag comprises a
-      <i>key</i> and a <i>value</i>, both set by you. For example, you might set
-      a tag as <code>topic:nature</code> to label a particular video category.
-      See <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html">Tagging
-      AWS Resources</a> for more information, including restrictions that apply
-      to tags and "Tag naming limits and requirements"; Amazon IVS Chat has no
-      service-specific constraints beyond what is documented there.</p> <p>Tags
-      can help you identify and organize your AWS resources. For example, you
-      can use the same tag for different resources to indicate that they are
-      related. You can also use tags to manage access (see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html">Access
-      Tags</a>).</p> <p>The Amazon IVS Chat API has these tag-related endpoints:
-      <a>TagResource</a>, <a>UntagResource</a>, and <a>ListTagsForResource</a>.
-      The following resource supports tagging: Room.</p> <p>At most 50 tags can
-      be applied to a resource.</p> <p> <b>API Access Security</b> </p> <p>Your
-      Amazon IVS Chat applications (service applications and clients) must be
-      authenticated and authorized to access Amazon IVS Chat resources. Note the
-      differences between these concepts:</p> <ul> <li> <p>
-      <i>Authentication</i> is about verifying identity. Requests to the Amazon
-      IVS Chat API must be signed to verify your identity.</p> </li> <li> <p>
-      <i>Authorization</i> is about granting permissions. Your IAM roles need to
-      have permissions for Amazon IVS Chat API requests.</p> </li> </ul>
-      <p>Users (viewers) connect to a room using secure access tokens that you
-      create using the <a>CreateChatToken</a> endpoint through the AWS SDK. You
-      call CreateChatToken for every user’s chat session, passing identity and
-      authorization information about the user.</p> <p> <b>Signing API
-      Requests</b> </p> <p>HTTP API requests must be signed with an AWS SigV4
-      signature using your AWS security credentials. The AWS Command Line
-      Interface (CLI) and the AWS SDKs take care of signing the underlying API
-      calls for you. However, if your application calls the Amazon IVS Chat HTTP
-      API directly, it’s your responsibility to sign the requests.</p> <p>You
-      generate a signature using valid AWS credentials for an IAM role that has
-      permission to perform the requested action. For example, DeleteMessage
-      requests must be made using an IAM role that has the
-      <code>ivschat:DeleteMessage</code> permission.</p> <p>For more
-      information:</p> <ul> <li> <p>Authentication and generating signatures —
-      See <a
-      href="https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html">Authenticating
-      Requests (Amazon Web Services Signature Version 4)</a> in the <i>Amazon
-      Web Services General Reference</i>.</p> </li> <li> <p>Managing Amazon IVS
-      permissions — See <a
-      href="https://docs.aws.amazon.com/ivs/latest/userguide/security-iam.html">Identity
-      and Access Management</a> on the Security page of the <i>Amazon IVS User
-      Guide</i>.</p> </li> </ul> <p> <b>Amazon Resource Names (ARNs)</b> </p>
-      <p>ARNs uniquely identify AWS resources. An ARN is required when you need
-      to specify a resource unambiguously across all of AWS, such as in IAM
-      policies and API calls. For more information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon
-      Resource Names</a> in the <i>AWS General Reference</i>.</p> <p>
-      <b>Messaging Endpoints</b> </p> <ul> <li> <p> <a>DeleteMessage</a> — Sends
-      an event to a specific room which directs clients to delete a specific
-      message; that is, unrender it from view and delete it from the client’s
-      chat history. This event’s <code>EventName</code> is
-      <code>aws:DELETE_MESSAGE</code>. This replicates the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-deletemessage-publish.html">
-      DeleteMessage</a> WebSocket operation in the Amazon IVS Chat Messaging
-      API.</p> </li> <li> <p> <a>DisconnectUser</a> — Disconnects all
-      connections using a specified user ID from a room. This replicates the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-disconnectuser-publish.html">
-      DisconnectUser</a> WebSocket operation in the Amazon IVS Chat Messaging
-      API.</p> </li> <li> <p> <a>SendEvent</a> — Sends an event to a room. Use
-      this within your application’s business logic to send events to clients of
-      a room; e.g., to notify clients to change the way the chat UI is
-      rendered.</p> </li> </ul> <p> <b>Chat Token Endpoint</b> </p> <ul> <li>
-      <p> <a>CreateChatToken</a> — Creates an encrypted token that is used by a
-      chat participant to establish an individual WebSocket chat connection to a
-      room. When the token is used to connect to chat, the connection is valid
-      for the session duration specified in the request. The token becomes
-      invalid at the token-expiration timestamp included in the response.</p>
-      </li> </ul> <p> <b>Room Endpoints</b> </p> <ul> <li> <p> <a>CreateRoom</a>
-      — Creates a room that allows clients to connect and pass messages.</p>
-      </li> <li> <p> <a>DeleteRoom</a> — Deletes the specified room.</p> </li>
-      <li> <p> <a>GetRoom</a> — Gets the specified room.</p> </li> <li> <p>
-      <a>ListRooms</a> — Gets summary information about all your rooms in the
-      AWS region where the API request is processed. </p> </li> <li> <p>
-      <a>UpdateRoom</a> — Updates a room’s configuration.</p> </li> </ul> <p>
-      <b>Logging Configuration Endpoints</b> </p> <ul> <li> <p>
-      <a>CreateLoggingConfiguration</a> — Creates a logging configuration that
-      allows clients to store and record sent messages.</p> </li> <li> <p>
-      <a>DeleteLoggingConfiguration</a> — Deletes the specified logging
-      configuration.</p> </li> <li> <p> <a>GetLoggingConfiguration</a> — Gets
-      the specified logging configuration.</p> </li> <li> <p>
-      <a>ListLoggingConfigurations</a> — Gets summary information about all your
-      logging configurations in the AWS region where the API request is
-      processed.</p> </li> <li> <p> <a>UpdateLoggingConfiguration</a> — Updates
-      a specified logging configuration.</p> </li> </ul> <p> <b>Tags
-      Endpoints</b> </p> <ul> <li> <p> <a>ListTagsForResource</a> — Gets
-      information about AWS tags for the specified ARN.</p> </li> <li> <p>
-      <a>TagResource</a> — Adds or updates tags for the AWS resource with the
-      specified ARN.</p> </li> <li> <p> <a>UntagResource</a> — Removes tags from
-      the resource with the specified ARN.</p> </li> </ul> <p>All the above are
-      HTTP operations. There is a separate <i>messaging</i> API for managing
-      Chat resources; see the <a
-      href="https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/chat-messaging-api.html">
-      Amazon IVS Chat Messaging API Reference</a>.</p>
+      The Amazon IVS Chat control-plane API allows you to create and manage
+      resources for Amazon IVS Chat, and integrate with the Amazon IVS Chat
+      Messaging API for real-time chat room interactions. This regional AWS
+      service includes resources such as LoggingConfiguration and Room, which
+      can be tagged for organization and access management.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ivs/features/chat/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Chat
+      - Configurations
+      - Disconnect
+      - Events
+      - Logging
+      - Messages
+      - Resources
+      - Rooms
+      - Send
+      - Tags
+      - Tokens
+      - Untag
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ivs/features/chat/
       - type: OpenAPI
         url: properties/ivschat-openapi-original.yml
     overlays:
@@ -5248,17 +6494,65 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ivschat-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ivschat
-  - name: Amazon MSK Clusters
-    description: <p>The operations for managing an Amazon MSK cluster.</p>
+  - name: Amazon MSK
+    description: >-
+      Amazon Managed Streaming for Apache Kafka (Amazon MSK) simplifies the
+      process of ingesting and processing real-time streaming data by offering a
+      fully managed Apache Kafka service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/msk/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Bootstrap
+      - Brokers
+      - Clients
+      - Clusters
+      - Compatible
+      - Configurations
+      - Connections
+      - Connectivity
+      - Count
+      - Describe
+      - Info
+      - Kafka
+      - Monitoring
+      - Nodes
+      - Operation
+      - Operations
+      - Policies
+      - Reboot
+      - Replication
+      - Replicators
+      - Resources
+      - Revisions
+      - Secrets
+      - Security
+      - Storage
+      - Tags
+      - Types
+      - Untag
+      - VPC
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/msk/
       - type: OpenAPI
         url: properties/kafka-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/msk/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/msk/getting-started/
+      - type: Partners
+        url: https://aws.amazon.com/msk/partners/
+      - type: Customer-success
+        url: https://aws.amazon.com/msk/customer-success/
+      - type: Resources
+        url: https://aws.amazon.com/msk/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/msk/faqs/
+      - type: Features
+        url: https://aws.amazon.com/msk/features/
     overlays:
       - type: APIs.io Search
         url: overlays/kafka-openapi-search.yml
@@ -5266,16 +6560,32 @@ apis:
         url: overlays/kafka-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kafka
   - name: Amazon Kendra
-    description: <p>Amazon Kendra is a service for indexing large document sets.</p>
+    description: >-
+      Amazon Kendra is a sophisticated enterprise search tool that simplifies
+      the process of searching through multiple content repositories by
+      providing pre-installed connectors.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/kendra/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Thesaurus
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/kendra/
       - type: OpenAPI
         url: properties/kendra-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/kendra/features/
+      - type: Connectors
+        url: https://aws.amazon.com/kendra/connectors/
+      - type: Pricing
+        url: https://aws.amazon.com/kendra/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/kendra/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/kendra/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/kendra/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/kendra-openapi-search.yml
@@ -5284,40 +6594,42 @@ apis:
     aid: amazon-web-services:kendra
   - name: Amazon Keyspaces
     description: >-
-      <p>Amazon Keyspaces (for Apache Cassandra) is a scalable, highly
-      available, and managed Apache Cassandra-compatible database service.
-      Amazon Keyspaces makes it easy to migrate, run, and scale Cassandra
-      workloads in the Amazon Web Services Cloud. With just a few clicks on the
-      Amazon Web Services Management Console or a few lines of code, you can
-      create keyspaces and tables in Amazon Keyspaces, without deploying any
-      infrastructure or installing software. </p> <p>In addition to supporting
-      Cassandra Query Language (CQL) requests via open-source Cassandra drivers,
-      Amazon Keyspaces supports data definition language (DDL) operations to
-      manage keyspaces and tables using the Amazon Web Services SDK and CLI, as
-      well as infrastructure as code (IaC) services and tools such as
-      CloudFormation and Terraform. This API reference describes the supported
-      DDL operations in detail.</p> <p>For the list of all supported CQL APIs,
-      see <a
-      href="https://docs.aws.amazon.com/keyspaces/latest/devguide/cassandra-apis.html">Supported
-      Cassandra APIs, operations, and data types in Amazon Keyspaces</a> in the
-      <i>Amazon Keyspaces Developer Guide</i>.</p> <p>To learn how Amazon
-      Keyspaces API actions are recorded with CloudTrail, see <a
-      href="https://docs.aws.amazon.com/keyspaces/latest/devguide/logging-using-cloudtrail.html#service-name-info-in-cloudtrail">Amazon
-      Keyspaces information in CloudTrail</a> in the <i>Amazon Keyspaces
-      Developer Guide</i>.</p> <p>For more information about Amazon Web Services
-      APIs, for example how to implement retry logic or how to sign Amazon Web
-      Services API requests, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-apis.html">Amazon
-      Web Services APIs</a> in the <i>General Reference</i>.</p>
+      Amazon Keyspaces (for Apache Cassandra) is a managed, highly scalable, and
+      reliable database service that is compatible with Apache Cassandra. This
+      service makes it simple to migrate, operate, and expand Cassandra
+      workloads within the Amazon Web Services Cloud environment. Users can
+      easily create keyspaces and tables in Amazon Keyspaces with just a few
+      clicks on the Amazon Web Services Management Console or through a few
+      lines of code, without the need to set up any infrastructure or install
+      software. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/keyspaces/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Tables
+      - KeySpaces
+      - Cassandra
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/keyspaces/
       - type: OpenAPI
         url: properties/keyspaces-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/keyspaces/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/keyspaces/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/keyspaces/customers/
+      - type: Resources
+        url: https://aws.amazon.com/keyspaces/resources/
+      - type: Getting-started
+        url: https://aws.amazon.com/keyspaces/getting-started/
+      - type: Scaling-data
+        url: https://aws.amazon.com/keyspaces/scaling-data/
+      - type: Features
+        url: https://aws.amazon.com/keyspaces/features/
+      - type: Regions
+        url: https://aws.amazon.com/keyspaces/multi-region-replication/
     overlays:
       - type: APIs.io Search
         url: overlays/keyspaces-openapi-search.yml
@@ -5326,27 +6638,60 @@ apis:
     aid: amazon-web-services:keyspaces
   - name: AWS IoT Wireless
     description: >-
-      <p>AWS IoT Wireless provides bi-directional communication between
-      internet-connected wireless devices and the AWS Cloud. To onboard both
-      LoRaWAN and Sidewalk devices to AWS IoT, use the IoT Wireless API. These
-      wireless devices use the Low Power Wide Area Networking (LPWAN)
-      communication protocol to communicate with AWS IoT.</p> <p>Using the API,
-      you can perform create, read, update, and delete operations for your
-      wireless devices, gateways, destinations, and profiles. After onboarding
-      your devices, you can use the API operations to set log levels and monitor
-      your devices with CloudWatch.</p> <p>You can also use the API operations
-      to create multicast groups and schedule a multicast session for sending a
-      downlink message to devices in the group. By using Firmware Updates
-      Over-The-Air (FUOTA) API operations, you can create a FUOTA task and
-      schedule a session to update the firmware of individual devices or an
-      entire group of devices in a multicast group.</p>
+      The AWS IoT Wireless API allows for bi-directional communication between
+      internet-connected wireless devices and the AWS Cloud. It supports
+      onboarding of LoRaWAN and Sidewalk devices, which use the Low Power Wide
+      Area Networking (LPWAN) protocol to communicate with AWS IoT. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/iot-wireless/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accounts
+      - Analyzer
+      - Associate
+      - Bulk
+      - Certificates
+      - Configurations
+      - Data
+      - Definitions
+      - Deregister
+      - Destinations
+      - Device
+      - Devices
+      - Disassociate
+      - Endpoints
+      - Estimates
+      - Events
+      - Firmware
+      - Gateways
+      - Groups
+      - Import
+      - Information
+      - Levels
+      - Logs
+      - Multicast
+      - Names
+      - Networks
+      - Partners
+      - Positions
+      - Profiles
+      - Reset
+      - Resources
+      - Send
+      - Services
+      - Sessions
+      - Single
+      - Statistics
+      - Tags
+      - Tasks
+      - Tests
+      - Things
+      - Types
+      - Untag
+      - Wireless
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/iot-wireless/
       - type: OpenAPI
         url: properties/iotwireless-openapi-original.yml
     overlays:
@@ -5357,17 +6702,23 @@ apis:
     aid: amazon-web-services:iotwireless
   - name: Amazon Kendra Intelligent Ranking
     description: >-
-      <p>Amazon Kendra Intelligent Ranking uses Amazon Kendra semantic search
-      capabilities to intelligently re-rank a search service's results.</p>
+      Amazon Kendra Intelligent Ranking leverages the advanced semantic search
+      capabilities of Amazon Kendra to intelligently re-prioritize the search
+      results provided by a search service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/kendra/latest/dg/intelligent-rerank.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Execution
+      - Plan
+      - Rescore
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/kendra/latest/dg/intelligent-rerank.html
       - type: OpenAPI
         url: properties/kendra-ranking-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/kendra/intelligent-ranking-pricing/
     overlays:
       - type: APIs.io Search
         url: overlays/kendra-ranking-openapi-search.yml
@@ -5376,22 +6727,68 @@ apis:
     aid: amazon-web-services:kendra-ranking
   - name: AWS Lambda
     description: >-
-      <fullname>AWS Lambda</fullname> <p><b>Overview</b></p> <p>This is the AWS
-      Lambda API Reference. The AWS Lambda Developer Guide provides additional
-      information. For the service overview, go to <a
-      href="http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">What is
-      AWS Lambda</a>, and for information about how the service works, go to <a
-      href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">AWS
-      LambdaL How it Works</a> in the AWS Lambda Developer Guide.</p>
+      This is the API Reference for AWS Lambda, a serverless computing service
+      provided by Amazon Web Services. For a more in-depth understanding of AWS
+      Lambda, please refer to the AWS Lambda Developer Guide. You can also visit
+      "What is AWS Lambda" for a service overview and "AWS Lambda How it Works"
+      in the AWS Lambda Developer Guide for detailed information on how the
+      service functions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lambda/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Alias
+      - Aliases
+      - Async
+      - Code
+      - Concurrency
+      - Configurations
+      - Events
+      - Functions
+      - Invocations
+      - Invoke
+      - Layers
+      - Management
+      - Mapping
+      - Names
+      - Numbers
+      - Permission
+      - Policies
+      - Provisioned
+      - Publish
+      - Removes
+      - Resources
+      - Responses
+      - Runtime
+      - Settings
+      - Signing
+      - Sources
+      - Statements
+      - Stream
+      - Streaming
+      - Tags
+      - URL
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lambda/
       - type: OpenAPI
         url: properties/lambda-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lambda/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lambda/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/lambda/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/lambda/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/lambda/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/lambda/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/lambda-openapi-search.yml
@@ -5400,102 +6797,68 @@ apis:
     aid: amazon-web-services:lambda
   - name: Amazon Kinesis Data Streams
     description: >-
-      <fullname>Amazon Kinesis Data Streams Service API Reference</fullname>
-      <p>Amazon Kinesis Data Streams is a managed service that scales
-      elastically for real-time processing of streaming big data.</p>
+      The Amazon Kinesis Data Streams Service API Reference provides developers
+      with access to a managed service that can dynamically scale for processing
+      streaming big data in real-time.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/kinesis/data-streams/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Mode
+      - Stream
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/kinesis/data-streams/
       - type: OpenAPI
         url: properties/kinesis-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/kinesis/data-streams/features/
+      - type: Pricing
+        url: https://aws.amazon.com/kinesis/data-streams/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/kinesis/data-streams/getting-started/
+      - type: Customers
+        url: https://aws.amazon.com/kinesis/data-streams/customers/
+      - type: Integrations
+        url: https://aws.amazon.com/kinesis/data-streams/integrations/
+      - type: Resources
+        url: https://aws.amazon.com/kinesis/data-streams/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/kinesis/data-streams/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/kinesis-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/kinesis-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:kinesis
-  - name: AWS Key Management Service (KMS)
+  - name: AWS Key Management Service
     description: >-
-      <fullname>Key Management Service</fullname> <p>Key Management Service
-      (KMS) is an encryption and key management web service. This guide
-      describes the KMS operations that you can call programmatically. For
-      general information about KMS, see the <a
-      href="https://docs.aws.amazon.com/kms/latest/developerguide/"> <i>Key
-      Management Service Developer Guide</i> </a>.</p> <note> <p>KMS has
-      replaced the term <i>customer master key (CMK)</i> with <i>KMS key</i> and
-      <i>KMS key</i>. The concept has not changed. To prevent breaking changes,
-      KMS is keeping some variations of this term.</p> <p>Amazon Web Services
-      provides SDKs that consist of libraries and sample code for various
-      programming languages and platforms (Java, Ruby, .Net, macOS, Android,
-      etc.). The SDKs provide a convenient way to create programmatic access to
-      KMS and other Amazon Web Services services. For example, the SDKs take
-      care of tasks such as signing requests (see below), managing errors, and
-      retrying requests automatically. For more information about the Amazon Web
-      Services SDKs, including how to download and install them, see <a
-      href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p>
-      </note> <p>We recommend that you use the Amazon Web Services SDKs to make
-      programmatic API calls to KMS.</p> <p>If you need to use FIPS 140-2
-      validated cryptographic modules when communicating with Amazon Web
-      Services, use the FIPS endpoint in your preferred Amazon Web Services
-      Region. For more information about the available FIPS endpoints, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/kms.html#kms_region">Service
-      endpoints</a> in the Key Management Service topic of the <i>Amazon Web
-      Services General Reference</i>.</p> <p>All KMS API calls must be signed
-      and be transmitted using Transport Layer Security (TLS). KMS recommends
-      you always use the latest supported TLS version. Clients must also support
-      cipher suites with Perfect Forward Secrecy (PFS) such as Ephemeral
-      Diffie-Hellman (DHE) or Elliptic Curve Ephemeral Diffie-Hellman (ECDHE).
-      Most modern systems such as Java 7 and later support these modes.</p> <p>
-      <b>Signing Requests</b> </p> <p>Requests must be signed using an access
-      key ID and a secret access key. We strongly recommend that you do not use
-      your Amazon Web Services account root access key ID and secret access key
-      for everyday work. You can use the access key ID and secret access key for
-      an IAM user or you can use the Security Token Service (STS) to generate
-      temporary security credentials and use those to sign requests. </p> <p>All
-      KMS requests must be signed with <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4</a>.</p> <p> <b>Logging API Requests</b> </p> <p>KMS supports
-      CloudTrail, a service that logs Amazon Web Services API calls and related
-      events for your Amazon Web Services account and delivers them to an Amazon
-      S3 bucket that you specify. By using the information collected by
-      CloudTrail, you can determine what requests were made to KMS, who made the
-      request, when it was made, and so on. To learn more about CloudTrail,
-      including how to turn it on and find your log files, see the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/">CloudTrail
-      User Guide</a>.</p> <p> <b>Additional Resources</b> </p> <p>For more
-      information about credentials and request signing, see the following:</p>
-      <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html">Amazon
-      Web Services Security Credentials</a> - This topic provides general
-      information about the types of credentials used to access Amazon Web
-      Services.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary
-      Security Credentials</a> - This section of the <i>IAM User Guide</i>
-      describes how to create and use temporary security credentials.</p> </li>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Signature
-      Version 4 Signing Process</a> - This set of topics walks you through the
-      process of signing a request using an access key ID and a secret access
-      key.</p> </li> </ul> <p> <b>Commonly Used API Operations</b> </p> <p>Of
-      the API operations discussed in this guide, the following will prove the
-      most useful for most applications. You will likely perform operations
-      other than these, such as creating keys and assigning policies, by using
-      the console.</p> <ul> <li> <p> <a>Encrypt</a> </p> </li> <li> <p>
-      <a>Decrypt</a> </p> </li> <li> <p> <a>GenerateDataKey</a> </p> </li> <li>
-      <p> <a>GenerateDataKeyWithoutPlaintext</a> </p> </li> </ul>
+      The Key Management Service (KMS) API is an encryption and key management
+      web service that allows you to programmatically call various operations.
+      KMS has replaced the term customer master key (CMK) with KMS key, but the
+      concept remains the same. Amazon Web Services provides SDKs for various
+      programming languages and platforms to create programmatic access to KMS. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Verify
+      - Keys
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/kms/
       - type: OpenAPI
         url: properties/kms-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/kms/features/
+      - type: Pricing
+        url: https://aws.amazon.com/kms/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/kms/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/kms/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/kms/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/kms-openapi-search.yml
@@ -5504,20 +6867,26 @@ apis:
     aid: amazon-web-services:kms
   - name: AWS Launch Wizard
     description: >-
-      <p>Launch Wizard offers a guided way of sizing, configuring, and deploying
-      Amazon Web Services resources for third party applications, such as
-      Microsoft SQL Server Always On and HANA based SAP systems, without the
-      need to manually identify and provision individual Amazon Web Services
-      resources.</p>
+      Launch Wizard is a tool that simplifies the process of sizing,
+      configuring, and deploying Amazon Web Services resources for third party
+      applications, including Microsoft SQL Server Always On and HANA based SAP
+      systems. This streamlined approach eliminates the need for manual
+      identification and provisioning of individual AWS resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/launchwizard/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Deployments
+      - Events
+      - Patterns
+      - Workloads
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/launchwizard/
       - type: OpenAPI
         url: properties/launch-wizard-openapi-original.yml
+      - type: FAQ
+        url: https://aws.amazon.com/launchwizard/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/launch-wizard-openapi-search.yml
@@ -5526,17 +6895,42 @@ apis:
     aid: amazon-web-services:launch-wizard
   - name: Amazon Lex Build-Time Actions
     description: >-
-      <fullname>Amazon Lex Build-Time Actions</fullname> <p> Amazon Lex is an
-      AWS service for building conversational voice and text interfaces. Use
-      these actions to create, update, and delete conversational bots for new
-      and existing client applications. </p>
+      Build voice and text conversational interfaces with Amazon Lex API for
+      AWS. These actions will allow you to easily create, update, and delete
+      chatbots for both new and existing client applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/lex/latest/dg/API_Operations.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Alias
+      - Aliases
+      - Associations
+      - Bot Name
+      - Bots
+      - Built In
+      - Channels
+      - Exports
+      - Import
+      - Imports
+      - Intent
+      - Intents
+      - Migrations
+      - Names
+      - Resources
+      - Signatures
+      - Slot Types
+      - Slots
+      - Tags
+      - Types
+      - Untag
+      - Users
+      - Utterances
+      - Versions
+      - View
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/lex/latest/dg/API_Operations.html
       - type: OpenAPI
         url: properties/lex-models-openapi-original.yml
     overlays:
@@ -5547,18 +6941,30 @@ apis:
     aid: amazon-web-services:lex-models
   - name: AWS License Manager
     description: >-
-      <p>License Manager makes it easier to manage licenses from software
-      vendors across multiple Amazon Web Services accounts and on-premises
-      servers.</p>
+      The License Manager API simplifies the management of software licenses for
+      various vendors across numerous Amazon Web Services accounts and physical
+      servers located on-premises.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/license-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Services
+      - Settings
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/license-manager/
       - type: OpenAPI
         url: properties/license-manager-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/license-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/license-manager/pricing/
+      - type: Customers
+        url: https://aws.amazon.com/license-manager/customers/
+      - type: Resources
+        url: https://aws.amazon.com/license-manager/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/license-manager/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/license-manager-openapi-search.yml
@@ -5567,35 +6973,40 @@ apis:
     aid: amazon-web-services:license-manager
   - name: Amazon Lightsail
     description: >-
-      <p>Amazon Lightsail is the easiest way to get started with Amazon Web
-      Services (Amazon Web Services) for developers who need to build websites
-      or web applications. It includes everything you need to launch your
-      project quickly - instances (virtual private servers), container services,
-      storage buckets, managed databases, SSD-based block storage, static IP
-      addresses, load balancers, content delivery network (CDN) distributions,
-      DNS management of registered domains, and resource snapshots (backups) -
-      for a low, predictable monthly price.</p> <p>You can manage your Lightsail
-      resources using the Lightsail console, Lightsail API, Command Line
-      Interface (CLI), or SDKs. For more information about Lightsail concepts
-      and tasks, see the <a
-      href="https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-set-up-access-keys-to-use-sdk-api-cli">Amazon
-      Lightsail Developer Guide</a>.</p> <p>This API Reference provides detailed
-      information about the actions, data types, parameters, and errors of the
-      Lightsail service. For more information about the supported Amazon Web
-      Services Regions, endpoints, and service quotas of the Lightsail service,
-      see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/lightsail.html">Amazon
-      Lightsail Endpoints and Quotas</a> in the <i>Amazon Web Services General
-      Reference</i>.</p>
+      The Amazon Lightsail API is a user-friendly platform that offers
+      developers a simple way to leverage Amazon Web Services for building
+      websites and web applications. It provides a wide range of essential
+      features, including virtual private servers, container services, storage
+      options, managed databases, and more, all at a cost-effective monthly
+      rate. With the ability to manage resources through the Lightsail console,
+      API, CLI, and SDKs, developers can easily launch and maintain their
+      projects.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lightsail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Databases
+      - Parameters
+      - Relational
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lightsail/
       - type: OpenAPI
         url: properties/lightsail-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/lightsail/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/lightsail/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/lightsail/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/lightsail/faq/
+      - type: Customers
+        url: https://aws.amazon.com/lightsail/customers/
+      - type: Features
+        url: https://aws.amazon.com/lightsail/features/
+      - type: Research
+        url: https://aws.amazon.com/lightsail/research/
     overlays:
       - type: APIs.io Search
         url: overlays/lightsail-openapi-search.yml
@@ -5604,18 +7015,32 @@ apis:
     aid: amazon-web-services:lightsail
   - name: Amazon Lookout for Equipment
     description: >-
-      <p>Amazon Lookout for Equipment is a machine learning service that uses
+      Amazon Lookout for Equipment is a machine learning service that uses
       advanced analytics to identify anomalies in machines from sensor data for
-      use in predictive maintenance. </p>
+      use in predictive maintenance.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lookout-for-equipment/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Retraining
+      - Scheduler
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lookout-for-equipment/
       - type: OpenAPI
         url: properties/lookoutequipment-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lookout-for-equipment/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lookout-for-equipment/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/lookout-for-equipment/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/lookout-for-equipment/resources/
+      - type: Customers
+        url: https://aws.amazon.com/lookout-for-equipment/customers/
+      - type: Partners
+        url: https://aws.amazon.com/lookout-for-equipment/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/lookoutequipment-openapi-search.yml
@@ -5624,17 +7049,76 @@ apis:
     aid: amazon-web-services:lookoutequipment
   - name: AWS Lake Formation
     description: >-
-      <fullname>Lake Formation</fullname> <p>Defines the public endpoint for the
-      Lake Formation service.</p>
+      The AWS Lake Formation API streamlines data permissions management and
+      facilitates seamless sharing within and outside your organization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lake-formation/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Assume
+      - Batches
+      - Cancel
+      - Cells
+      - Center
+      - Commit
+      - Configurations
+      - Credentials
+      - Data
+      - Databases
+      - Decorated
+      - Deregister
+      - Describe
+      - Effective
+      - Extend
+      - Filter
+      - Formation
+      - Glue
+      - Grants
+      - Identity
+      - LFTag
+      - LFTags
+      - Lakes
+      - Lftag
+      - Objects
+      - 'On'
+      - Opt
+      - Optimizers
+      - Partition
+      - Paths
+      - Permissions
+      - Planning
+      - Queries
+      - Register
+      - Removes
+      - Resources
+      - Results
+      - Revoke
+      - Roles
+      - SAML
+      - Saml
+      - Search
+      - Settings
+      - States
+      - Statistics
+      - Storage
+      - Tables
+      - Temporary
+      - Transactions
+      - Units
+      - Work
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lake-formation/
       - type: OpenAPI
         url: properties/lakeformation-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lake-formation/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lake-formation/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/lake-formation/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/lake-formation/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/lakeformation-openapi-search.yml
@@ -5643,40 +7127,22 @@ apis:
     aid: amazon-web-services:lakeformation
   - name: Amazon CloudWatch Logs
     description: >-
-      <p>You can use Amazon CloudWatch Logs to monitor, store, and access your
-      log files from EC2 instances, CloudTrail, and other sources. You can then
-      retrieve the associated log data from CloudWatch Logs using the CloudWatch
-      console. Alternatively, you can use CloudWatch Logs commands in the Amazon
-      Web Services CLI, CloudWatch Logs API, or CloudWatch Logs SDK.</p> <p>You
-      can use CloudWatch Logs to:</p> <ul> <li> <p> <b>Monitor logs from EC2
-      instances in real time</b>: You can use CloudWatch Logs to monitor
-      applications and systems using log data. For example, CloudWatch Logs can
-      track the number of errors that occur in your application logs. Then, it
-      can send you a notification whenever the rate of errors exceeds a
-      threshold that you specify. CloudWatch Logs uses your log data for
-      monitoring so no code changes are required. For example, you can monitor
-      application logs for specific literal terms (such as
-      "NullReferenceException"). You can also count the number of occurrences of
-      a literal term at a particular position in log data (such as "404" status
-      codes in an Apache access log). When the term you are searching for is
-      found, CloudWatch Logs reports the data to a CloudWatch metric that you
-      specify.</p> </li> <li> <p> <b>Monitor CloudTrail logged events</b>: You
-      can create alarms in CloudWatch and receive notifications of particular
-      API activity as captured by CloudTrail. You can use the notification to
-      perform troubleshooting.</p> </li> <li> <p> <b>Archive log data</b>: You
-      can use CloudWatch Logs to store your log data in highly durable storage.
-      You can change the log retention setting so that any log events earlier
-      than this setting are automatically deleted. The CloudWatch Logs agent
-      helps to quickly send both rotated and non-rotated log data off of a host
-      and into the log service. You can then access the raw log data when you
-      need it.</p> </li> </ul>
+      This API allows you to monitor, store, and access log files from EC2
+      instances, CloudTrail, and other sources using Amazon CloudWatch Logs. You
+      can retrieve log data through the CloudWatch console, AWS CLI, API, or
+      SDK. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Anomaly
+      - Detectors
+      - Logs
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
       - type: OpenAPI
         url: properties/logs-openapi-original.yml
     overlays:
@@ -5687,19 +7153,54 @@ apis:
     aid: amazon-web-services:logs
   - name: Amazon Lookout for Metrics
     description: >-
-      <p>This is the <i>Amazon Lookout for Metrics API Reference</i>. For an
-      introduction to the service with tutorials for getting started, visit <a
-      href="https://docs.aws.amazon.com/lookoutmetrics/latest/dev">Amazon
-      Lookout for Metrics Developer Guide</a>.</p>
+      Amazon Lookout for Metrics, leverages machine learning technology to
+      identify and explain abnormal patterns in business and operational
+      datasets.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lookout-for-metrics/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Activate
+      - Alerts
+      - Anomaly
+      - Configurations
+      - Data
+      - Deactivate
+      - Describe
+      - Detect
+      - Detections
+      - Detectors
+      - Executions
+      - Feedback
+      - Groups
+      - Metrics
+      - Quality
+      - Related
+      - Resources
+      - Samples
+      - Series
+      - Sets
+      - Summaries
+      - Tags
+      - Tests
+      - Time
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lookout-for-metrics/
       - type: OpenAPI
         url: properties/lookoutmetrics-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lookout-for-metrics/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lookout-for-metrics/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/lookout-for-metrics/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/lookout-for-metrics/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/lookout-for-metrics/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/lookoutmetrics-openapi-search.yml
@@ -5708,24 +7209,53 @@ apis:
     aid: amazon-web-services:lookoutmetrics
   - name: Amazon Lookout for Vision
     description: >-
-      <p>This is the Amazon Lookout for Vision API Reference. It provides
-      descriptions of actions, data types, common parameters, and common
-      errors.</p> <p>Amazon Lookout for Vision enables you to find visual
-      defects in industrial products, accurately and at scale. It uses computer
-      vision to identify missing components in an industrial product, damage to
-      vehicles or structures, irregularities in production lines, and even
-      minuscule defects in silicon wafers — or any other physical item where
-      quality is important such as a missing capacitor on printed circuit
-      boards.</p>
+      The Amazon Lookout for Vision API offers details on actions, data types,
+      parameters, and errors. This API allows users to detect visual defects in
+      various industrial products with precision and efficiency. By utilizing
+      computer vision technology, it can identify missing parts in products,
+      damages in vehicles or structures, inconsistencies in manufacturing lines,
+      and even tiny imperfections in items like silicon wafers or printed
+      circuit boards. Lookout for Vision is a powerful tool for ensuring quality
+      in production processes.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lookout-for-vision/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Anomalies
+      - Datasets
+      - Describe
+      - Detect
+      - Entries
+      - Jobs
+      - Model Packaging Jobs
+      - Models
+      - Names
+      - Packaging
+      - Projects
+      - Resources
+      - Stop
+      - Tags
+      - Types
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lookout-for-vision/
       - type: OpenAPI
         url: properties/lookoutvision-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lookout-for-vision/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lookout-for-vision/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/lookout-for-vision/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/lookout-for-vision/resources/
+      - type: Partners
+        url: https://aws.amazon.com/lookout-for-vision/partners/
+      - type: Customers
+        url: https://aws.amazon.com/lookout-for-vision/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/lookoutvision-openapi-search.yml
@@ -5733,16 +7263,33 @@ apis:
         url: overlays/lookoutvision-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:lookoutvision
   - name: Amazon Machine Learning
-    description: Definition of the public APIs exposed by Amazon Machine Learning
+    description: >-
+      Amazon Machine Learning allows users to leverage machine learning
+      capabilities at scale, offering a wide range of services, infrastructure,
+      and deployment resources. Trusted by over 100,000 customers, from major
+      corporations to new businesses, AWS machine learning services are used to
+      tackle business challenges and foster innovation. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ai/machine-learning/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Machine Learning
+      - Model
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ai/machine-learning/
       - type: OpenAPI
         url: properties/machinelearning-openapi-original.yml
+      - type: Infrastructure
+        url: https://aws.amazon.com/ai/infrastructure/
+      - type: Learn
+        url: https://aws.amazon.com/machine-learning/learn/
+      - type: Resources
+        url: https://aws.amazon.com/ai/resources/
+      - type: Use Cases
+        url: https://aws.amazon.com/machine-learning/ai-use-cases/
+      - type: Partners
+        url: https://aws.amazon.com/machine-learning/partner-solutions/
     overlays:
       - type: APIs.io Search
         url: overlays/machinelearning-openapi-search.yml
@@ -5751,48 +7298,142 @@ apis:
     aid: amazon-web-services:machinelearning
   - name: Amazon Macie
     description: >-
-      <p>Amazon Macie is a fully managed data security and data privacy service
+      Amazon Macie is a fully managed data security and data privacy service
       that uses machine learning and pattern matching to help you discover and
       protect your sensitive data in AWS. Macie automates the discovery of
       sensitive data, such as PII and intellectual property, to provide you with
-      insight into the data that your organization stores in AWS. Macie also
-      provides an inventory of your Amazon S3 buckets, which it continually
-      monitors for you. If Macie detects sensitive data or potential data access
-      issues, it generates detailed findings for you to review and act upon as
-      necessary.</p>
+      insight into the data that your organization stores in AWS. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/macie/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accept
+      - Accounts
+      - Administrative
+      - Administrator
+      - Allow
+      - Artifacts
+      - Automated
+      - Availability
+      - Batches
+      - Buckets
+      - Buckets
+      - Classifications
+      - Configurations
+      - Count
+      - Custom
+      - Data
+      - Data Source
+      - Decline
+      - Describe
+      - Detections
+      - Disassociate
+      - Discovery
+      - Entifiers
+      - Exports
+      - Filter
+      - Filters
+      - Findings
+      - Findings Filter
+      - Inspections
+      - Invitation
+      - Invitations
+      - Jobs
+      - Managed
+      - Master
+      - Members
+      - Occurrences
+      - Organizations
+      - Profiles
+      - Publication
+      - Resources
+      - Reveal
+      - Samples
+      - Scopes
+      - Search
+      - Sensitive
+      - Sensitivity
+      - Sessions
+      - Statistics
+      - Tags
+      - Templates
+      - Tests
+      - Totals
+      - Untag
+      - Usage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/macie/
       - type: OpenAPI
         url: properties/macie2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/macie/features/
+      - type: Pricing
+        url: https://aws.amazon.com/macie/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/macie/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/macie/faq/
+      - type: Resources
+        url: https://aws.amazon.com/macie/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/macie2-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/macie2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:macie2
-  - name: Amazon Web Services Mainframe Modernization
+  - name: AWS Mainframe Modernization
     description: >-
-      <p>Amazon Web Services Mainframe Modernization provides tools and
-      resources to help you plan and implement migration and modernization from
-      mainframes to Amazon Web Services managed runtime environments. It
-      provides tools for analyzing existing mainframe applications, developing
-      or updating mainframe applications using COBOL or PL/I, and implementing
-      an automated pipeline for continuous integration and continuous delivery
-      (CI/CD) of the applications.</p>
+      The Amazon Web Services Mainframe Modernization API offers a comprehensive
+      suite of tools and support for seamlessly transitioning from mainframes to
+      AWS managed runtime environments. It includes features for examining
+      current mainframe applications, creating or enhancing applications with
+      COBOL or PL/I, and setting up a streamlined automated process for
+      continuous integration and delivery of the applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mainframe-modernization/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Batches
+      - Cancel
+      - Data
+      - Datasets
+      - Definitions
+      - Deployments
+      - Details
+      - Engines
+      - Environments
+      - Execution
+      - Executions
+      - History
+      - Import
+      - Jobs
+      - Names
+      - Resources
+      - Sets
+      - Signed
+      - Stop
+      - Tags
+      - Tasks
+      - URL
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mainframe-modernization/
       - type: OpenAPI
         url: properties/m2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mainframe-modernization/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mainframe-modernization/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/mainframe-modernization/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/mainframe-modernization/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/m2-openapi-search.yml
@@ -5801,17 +7442,75 @@ apis:
     aid: amazon-web-services:m2
   - name: AWS Location
     description: >-
-      <p>"Suite of geospatial services including Maps, Places, Routes, Tracking,
-      and Geofencing"</p>
+      Amazon Location Service makes it easy for developers to add location
+      functionality, such as maps, points of interest, geocoding, routing,
+      tracking, and geofencing, to their applications without sacrificing data
+      security and user privacy.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/location/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Associate
+      - Batches
+      - Calculate
+      - Calculators
+      - Collections
+      - Consumer
+      - Consumers
+      - Descriptions
+      - Device
+      - Devices
+      - Disassociate
+      - Evaluate
+      - File
+      - Fonts
+      - Geofences
+      - Geofencing
+      - Glyphs
+      - History
+      - Index
+      - Indexes
+      - Keys
+      - Latest
+      - Maps
+      - Matrix
+      - Metadata
+      - Names
+      - Places
+      - Positions
+      - Ranges
+      - Resources
+      - Routes
+      - Search
+      - Sprites
+      - Stack
+      - Styles
+      - Suggestions
+      - Tags
+      - Text
+      - Tiles
+      - Trackers
+      - Tracking
+      - Unicode
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/location/
       - type: OpenAPI
         url: properties/location-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/location/features/
+      - type: Pricing
+        url: https://aws.amazon.com/location/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/location/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/location/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/location/customers/
+      - type: Data-providers
+        url: https://aws.amazon.com/location/data-providers/
     overlays:
       - type: APIs.io Search
         url: overlays/location-openapi-search.yml
@@ -5820,20 +7519,30 @@ apis:
     aid: amazon-web-services:location
   - name: AWS Marketplace Catalog
     description: >-
-      <p>Catalog API actions allow you to manage your entities through list,
-      describe, and update capabilities. An entity can be a product or an offer
-      on AWS Marketplace. </p> <p>You can automate your entity update process by
-      integrating the AWS Marketplace Catalog API with your AWS Marketplace
-      product build or deployment pipelines. You can also create your own
-      applications on top of the Catalog API to manage your products on AWS
-      Marketplace.</p>
+      The AWS Marketplace Catalog API enables users to interact with their
+      entities, such as products or offers on AWS Marketplace, by providing
+      functionality for listing, describing, and updating them. By integrating
+      the AWS Marketplace Catalog API with product build or deployment
+      pipelines, users can streamline the process of updating entities. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Cancel
+      - Change
+      - Describe
+      - Entities
+      - Policies
+      - Resources
+      - Sets
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/welcome.html
       - type: OpenAPI
         url: properties/marketplace-catalog-openapi-original.yml
     overlays:
@@ -5844,24 +7553,41 @@ apis:
     aid: amazon-web-services:marketplace-catalog
   - name: Amazon Managed Blockchain (AMB)
     description: >-
-      <p>Amazon Managed Blockchain (AMB) Query provides you with convenient
-      access to multi-blockchain network data, which makes it easier for you to
-      extract contextual data related to blockchain activity. You can use AMB
-      Query to read data from public blockchain networks, such as Bitcoin
-      Mainnet and Ethereum Mainnet. You can also get information such as the
-      current and historical balances of addresses, or you can get a list of
-      blockchain transactions for a given time period. Additionally, you can get
-      details of a given transaction, such as transaction events, which you can
-      further analyze or use in business logic for your applications.</p>
+      The Amazon Managed Blockchain (AMB) Query API allows users to easily
+      access multi-blockchain network data, enabling them to extract relevant
+      information regarding blockchain activity. This API allows users to read
+      data from public blockchain networks like Bitcoin Mainnet and Ethereum
+      Mainnet, providing details such as current and historical balances of
+      addresses, as well as a list of blockchain transactions within a specified
+      time frame. Users can also retrieve specific transaction details,
+      including transaction events, which can be further analyzed or
+      incorporated into business logic for various applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/managed-blockchain/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Assets
+      - Balance
+      - Balances
+      - Batches
+      - Blockchain
+      - Contracts
+      - Events
+      - Tokens
+      - Transactions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/managed-blockchain/
       - type: OpenAPI
         url: properties/managedblockchain-query-openapi-original.yml
+      - type: Getting-started
+        url: https://aws.amazon.com/managed-blockchain/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/managed-blockchain/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/managed-blockchain/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/managed-blockchain/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/managedblockchain-query-openapi-search.yml
@@ -5870,20 +7596,31 @@ apis:
     aid: amazon-web-services:managedblockchain-query
   - name: AWS Marketplace Deployment
     description: >-
-      <p>The AWS Marketplace Deployment Service supports the Quick Launch
+      The AWS Marketplace Deployment Service supports the Quick Launch
       experience, which is a deployment option for software as a service (SaaS)
       products. Quick Launch simplifies and reduces the time, resources, and
       steps required to configure, deploy, and launch a products. The AWS
       Marketplace Deployment Service provides sellers with a secure method for
       passing deployment parameters (for example, API keys and external IDs) to
-      buyers during the Quick Launch experience.</p>
+      buyers during the Quick Launch experience.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Resources
+      - Tags
+      - Untag
+      - Catalog
+      - Catalogs
+      - Deployments
+      - Parameters
+      - Products
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace-deployment/latest/api-reference/welcome.html
       - type: OpenAPI
         url: properties/marketplace-deployment-openapi-original.yml
     overlays:
@@ -5893,16 +7630,57 @@ apis:
         url: overlays/marketplace-deployment-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-deployment
   - name: AWS Elemental MediaConnect
-    description: API for AWS Elemental MediaConnect
+    description: >-
+      AWS Elemental MediaConnect is an advanced live video transport service
+      that combines the reliability and security of satellite and fiber-optic
+      technology with the flexibility, agility, and cost-effectiveness of
+      IP-based networks.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediaconnect/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Bridges
+      - Describe
+      - Entitlements
+      - Flows
+      - Gateways
+      - Grants
+      - Instances
+      - Interfaces
+      - Media
+      - Metadata
+      - Names
+      - Offerings
+      - Output
+      - Outputs
+      - Purchase
+      - Removes
+      - Reservations
+      - Resources
+      - Sources
+      - States
+      - Stop
+      - Stream
+      - Streams
+      - Tags
+      - Untag
+      - VPC
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediaconnect/
       - type: OpenAPI
         url: properties/mediaconnect-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/mediaconnect/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediaconnect/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/mediaconnect/faqs/
+      - type: Ready
+        url: https://aws.amazon.com/mediaconnect/ready/
+      - type: Features
+        url: https://aws.amazon.com/mediaconnect/features/
     overlays:
       - type: APIs.io Search
         url: overlays/mediaconnect-openapi-search.yml
@@ -5910,33 +7688,109 @@ apis:
         url: overlays/mediaconnect-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediaconnect
   - name: AWS Elemental MediaConvert
-    description: AWS Elemental MediaConvert
+    description: >-
+      AWS Elemental MediaConvert is a high-quality video transcoding service
+      designed for creating live stream content for broadcast and multi-screen
+      delivery on a large scale.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediaconvert/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Associate
+      - Certificates
+      - Describe
+      - Disassociate
+      - Endpoints
+      - Jobs
+      - Names
+      - Policies
+      - Presets
+      - Queues
+      - Resources
+      - Tags
+      - Templates
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediaconvert/
       - type: OpenAPI
         url: properties/mediaconvert-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mediaconvert/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mediaconvert/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediaconvert/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/mediaconvert/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/mediaconvert/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/mediaconvert-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/mediaconvert-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediaconvert
-  - name:  AWS Elemental MediaLive
-    description: API for AWS Elemental MediaLive
+  - name: AWS Elemental MediaLive
+    description: >-
+      AWS Elemental MediaLive is a professional live video processing service
+      designed to produce high-quality streams for distribution to both
+      broadcast televisions and internet-connected devices.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/medialive/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accept
+      - Accounts
+      - Batches
+      - Cancel
+      - Channels
+      - Claim
+      - Classes
+      - Configurations
+      - Data
+      - Describe
+      - Device
+      - Devices
+      - Groups
+      - Inputs
+      - Maintenance
+      - Multiplex
+      - Multiplexes
+      - Names
+      - Offerings
+      - Partners
+      - Program
+      - Programs
+      - Purchase
+      - Reboot
+      - Reject
+      - Reservations
+      - Resources
+      - Schedules
+      - Security
+      - Stop
+      - Tags
+      - Thumbnails
+      - Transfers
+      - Window
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/medialive/
       - type: OpenAPI
         url: properties/medialive-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/medialive/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/medialive/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/medialive/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/medialive/faqs/
+      - type: Features
+        url: https://aws.amazon.com/medialive/features/
     overlays:
       - type: APIs.io Search
         url: overlays/medialive-openapi-search.yml
@@ -5945,28 +7799,23 @@ apis:
     aid: amazon-web-services:medialive
   - name: AWS Marketplace Agreement
     description: >-
-      <p>AWS Marketplace is a curated digital catalog that customers can use to
-      find, buy, deploy, and manage third-party software, data, and services to
-      build solutions and run their businesses. The AWS Marketplace Agreement
-      Service provides an API interface that helps AWS Marketplace sellers
-      manage their product-related agreements, including listing, searching, and
-      filtering agreements.</p> <p>To manage agreements in AWS Marketplace, you
-      must ensure that your AWS Identity and Access Management (IAM) policies
-      and roles are set up. The user must have the required policies/permissions
-      that allow them to carry out the actions in AWS:</p> <ul> <li> <p>
-      <code>DescribeAgreement</code> – Grants permission to users to obtain
-      detailed meta data about any of their agreements.</p> </li> <li> <p>
-      <code>GetAgreementTerms</code> – Grants permission to users to obtain
-      details about the terms of an agreement.</p> </li> <li> <p>
-      <code>SearchAgreements</code> – Grants permission to users to search
-      through all their agreements.</p> </li> </ul>
+      The AWS Marketplace API enables sellers to manage product-related
+      agreements, including listing, searching, and filtering agreements. To use
+      this API, sellers must ensure that their AWS IAM policies and roles are
+      properly configured. Users must have the necessary permissions to carry
+      out actions such as describing agreements, getting agreement terms, and
+      searching through all agreements.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace-agreements/latest/api-reference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Agreements
+      - Search
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace-agreements/latest/api-reference/welcome.html
       - type: OpenAPI
         url: properties/marketplace-agreement-openapi-original.yml
     overlays:
@@ -5975,35 +7824,57 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/marketplace-agreement-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:marketplace-agreement
-  - name: AWS Elemental MediaStore
+  - name: AWS Marketplace
     description: >-
-      <p>An AWS Elemental MediaStore container is a namespace that holds folders
-      and objects. You use a container endpoint to create, read, and delete
-      objects. </p>
+      The AWS Elemental MediaStore API is designed to provide high-performance
+      storage specifically tailored for media content, offering reliable
+      consistency and minimal latency to support the seamless delivery of live
+      streaming video content.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediastore/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediastore/
       - type: OpenAPI
         url: properties/mediastore-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mediastore/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mediastore/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediastore/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/mediastore/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/mediastore/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/mediastore-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/mediastore-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediastore
-  - name: AWS Marketplace Commerce Analytics
-    description: Provides AWS Marketplace business intelligence data on-demand.
+  - name: AWS Marketplace Commerce Analytics Service
+    description: >-
+      The AWS Marketplace Commerce Analytics Service allows you to access
+      product and customer data from AWS Marketplace through a programmable
+      interface. Upon signing up for the service, you can retrieve usage,
+      subscription, and billing reports using the AWS SDK.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Data
+      - Exports
+      - Support
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html
       - type: OpenAPI
         url: properties/marketplacecommerceanalytics-openapi-original.yml
     overlays:
@@ -6015,69 +7886,104 @@ apis:
     aid: amazon-web-services:marketplacecommerceanalytics
   - name: AWS Marketplace Metering Service
     description: >-
-      <fullname>AWS Marketplace Metering Service</fullname> <p>This reference
-      provides descriptions of the low-level AWS Marketplace Metering Service
-      API.</p> <p>AWS Marketplace sellers can use this API to submit usage data
-      for custom usage dimensions.</p> <p>For information on the permissions you
-      need to use this API, see <a
-      href="https://docs.aws.amazon.com/marketplace/latest/userguide/iam-user-policy-for-aws-marketplace-actions.html">AWS
-      Marketplace metering and entitlement API permissions</a> in the <i>AWS
-      Marketplace Seller Guide.</i> </p> <p> <b>Submitting Metering Records</b>
-      </p> <ul> <li> <p> <i>MeterUsage</i> - Submits the metering record for an
-      AWS Marketplace product. <code>MeterUsage</code> is called from an EC2
-      instance or a container running on EKS or ECS.</p> </li> <li> <p>
-      <i>BatchMeterUsage</i> - Submits the metering record for a set of
-      customers. <code>BatchMeterUsage</code> is called from a
-      software-as-a-service (SaaS) application.</p> </li> </ul> <p> <b>Accepting
-      New Customers</b> </p> <ul> <li> <p> <i>ResolveCustomer</i> - Called by a
-      SaaS application during the registration process. When a buyer visits your
-      website during the registration process, the buyer submits a Registration
-      Token through the browser. The Registration Token is resolved through this
-      API to obtain a <code>CustomerIdentifier</code> along with the
-      <code>CustomerAWSAccountId</code> and <code>ProductCode</code>.</p> </li>
-      </ul> <p> <b>Entitlement and Metering for Paid Container Products</b> </p>
-      <ul> <li> <p>Paid container software products sold through AWS Marketplace
-      must integrate with the AWS Marketplace Metering Service and call the
-      <code>RegisterUsage</code> operation for software entitlement and
-      metering. Free and BYOL products for Amazon ECS or Amazon EKS aren't
-      required to call <code>RegisterUsage</code>, but you can do so if you want
-      to receive usage data in your seller reports. For more information on
-      using the <code>RegisterUsage</code> operation, see <a
-      href="https://docs.aws.amazon.com/marketplace/latest/userguide/container-based-products.html">Container-Based
-      Products</a>. </p> </li> </ul> <p> <code>BatchMeterUsage</code> API calls
-      are captured by AWS CloudTrail. You can use Cloudtrail to verify that the
-      SaaS metering records that you sent are accurate by searching for records
-      with the <code>eventName</code> of <code>BatchMeterUsage</code>. You can
-      also use CloudTrail to audit records over time. For more information, see
-      the <i> <a
-      href="http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html">AWS
-      CloudTrail User Guide</a>.</i> </p>
+      The AWS Marketplace Metering Service API allows AWS Marketplace sellers to
+      submit usage data for custom usage dimensions. This reference provides
+      detailed descriptions of the low-level API functions available for use.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/marketplace/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Customers
+      - Resolve
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/marketplace/
       - type: OpenAPI
         url: properties/meteringmarketplace-openapi-original.yml
+      - type: Seller Guide
+        url: https://docs.aws.amazon.com/marketplace/latest/userguide/index.html
+      - type: Buyer Guide
+        url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/meteringmarketplace-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/meteringmarketplace-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:meteringmarketplace
-  - name: Application Migration
-    description: <p>The Application Migration Service service.</p>
+  - name: AWS Application Migration Service
+    description: >-
+      The AWS Application Migration Service streamlines the migration of your
+      source servers to run directly on AWS, reducing the need for manual
+      processes that are time-consuming and prone to errors. It also offers
+      convenient optimization options for modernizing your applications, both
+      through pre-built configurations and custom settings.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/application-migration-service/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Actions
+      - Applications
+      - Archive
+      - Archived
+      - Associate
+      - Change
+      - Clients
+      - Configurations
+      - Connectors
+      - Cycle
+      - Data
+      - Describe
+      - Disassociate
+      - Disconnect
+      - Errors
+      - Exports
+      - Finalize
+      - Import
+      - Imports
+      - Initialize
+      - Instances
+      - Items
+      - Jobs
+      - Launch
+      - Life
+      - Logs
+      - Managed
+      - Mark
+      - Pause
+      - Removes
+      - Replication
+      - Resources
+      - Resume
+      - Retry
+      - Servers
+      - Services
+      - Sources
+      - States
+      - Stop
+      - Tags
+      - Targets
+      - Templates
+      - Terminate
+      - Tests
+      - Types
+      - Unarchive
+      - Untag
+      - Waves
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/application-migration-service/
       - type: OpenAPI
         url: properties/mgn-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/application-migration-service/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/application-migration-service/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/application-migration-service/resources/
+      - type: Windows
+        url: https://aws.amazon.com/application-migration-service/windows/
     overlays:
       - type: APIs.io Search
         url: overlays/mgn-openapi-search.yml
@@ -6086,144 +7992,76 @@ apis:
     aid: amazon-web-services:mgn
   - name: AWS HealthImaging
     description: >-
-      <p>This is the <i>AWS HealthImaging API Reference</i>. AWS HealthImaging
-      is a HIPAA-eligible service that helps health care providers and their
-      medical imaging ISV partners store, transform, and apply machine learning
-      to medical images. For an introduction to the service, see the <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/what-is.html">
-      <i>AWS HealthImaging Developer Guide</i> </a>.</p> <note> <p>We recommend
-      using one of the AWS Software Development Kits (SDKs) for your programming
-      language, as they take care of request authentication, serialization, and
-      connection management. For more information, see <a
-      href="http://aws.amazon.com/developer/tools">Tools to build on
-      AWS</a>.</p> <p>For information about using HealthImaging API actions in
-      one of the language-specific AWS SDKs, refer to the <i>See Also</i> link
-      at the end of each section that describes an API action or data type.</p>
-      </note> <p>The following sections list AWS HealthImaging API actions
-      categorized according to functionality. Links are provided to actions
-      within this Reference, along with links back to corresponding sections in
-      the <i>AWS HealthImaging Developer Guide</i> where you can view console
-      procedures and CLI/SDK code examples.</p> <p class="title"> <b>Data store
-      actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_CreateDatastore.html">CreateDatastore</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/create-data-store.html">Creating
-      a data store</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDatastore.html">GetDatastore</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-data-store.html">Getting
-      data store properties</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDatastores.html">ListDatastores</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/list-data-stores.html">Listing
-      data stores</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteDatastore.html">DeleteDatastore</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/delete-data-store.html">Deleting
-      a data store</a>.</p> </li> </ul> <p class="title"> <b>Import job
-      actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_StartDICOMImportJob.html">StartDICOMImportJob</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/start-dicom-import-job.html">Starting
-      an import job</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDICOMImportJob.html">GetDICOMImportJob</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-dicom-import-job.html">Getting
-      import job properties</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListDICOMImportJobs.html">ListDICOMImportJobs</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/list-dicom-import-jobs.html">Listing
-      import jobs</a>.</p> </li> </ul> <p class="title"> <b>Image set access
-      actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_SearchImageSets.html">SearchImageSets</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/search-image-sets.html">Searching
-      image sets</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSet.html">GetImageSet</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-set-properties.html">Getting
-      image set properties</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageSetMetadata.html">GetImageSetMetadata</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-set-metadata.html">Getting
-      image set metadata</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageFrame.html">GetImageFrame</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-frame.html">Getting
-      image set pixel data</a>.</p> </li> </ul> <p class="title"> <b>Image set
-      modification actions</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListImageSetVersions.html">ListImageSetVersions</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/list-image-set-versions.html">Listing
-      image set versions</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_UpdateImageSetMetadata.html">UpdateImageSetMetadata</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/update-image-set-metadata.html">Updating
-      image set metadata</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_CopyImageSet.html">CopyImageSet</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/copy-image-set.html">Copying
-      an image set</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DeleteImageSet.html">DeleteImageSet</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/delete-image-set.html">Deleting
-      an image set</a>.</p> </li> </ul> <p class="title"> <b>Tagging actions</b>
-      </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_TagResource.html">TagResource</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-data-store.html">Tagging
-      a data store</a> and <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-image-set.html">Tagging
-      an image set</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListTagsForResource.html">ListTagsForResource</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-data-store.html">Tagging
-      a data store</a> and <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-image-set.html">Tagging
-      an image set</a>.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_UntagResource.html">UntagResource</a>
-      – See <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-data-store.html">Tagging
-      a data store</a> and <a
-      href="https://docs.aws.amazon.com/healthimaging/latest/devguide/tag-list-untag-image-set.html">Tagging
-      an image set</a>.</p> </li> </ul>
+      The AWS HealthImaging API is a secure service that meets HIPAA compliance
+      standards. It is specifically built to help healthcare providers and their
+      medical imaging ISV partners effectively store, manipulate, and utilize
+      machine learning techniques on medical images.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Copy
+      - Data Store
+      - Frames
+      - Images
+      - Jobs
+      - Metadata
+      - Resources
+      - Search
+      - Sets
+      - Sources
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
         url: https://example.com
       - type: OpenAPI
         url: properties/medical-imaging-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/healthimaging/features/
+      - type: Pricing
+        url: https://aws.amazon.com/healthimaging/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/healthimaging/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/healthimaging/customers/
+      - type: Resources
+        url: https://aws.amazon.com/healthimaging/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/medical-imaging-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/medical-imaging-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:medical-imaging
-  - name: AWS Migration Hub Refactor Spaces
+  - name: Amazon Web Services Migration Hub Refactor Spaces
     description: >-
-      <p><fullname>Amazon Web Services Migration Hub Refactor Spaces</fullname>
-      <p>This API reference provides descriptions, syntax, and other details
-      about each of the actions and data types for Amazon Web Services Migration
-      Hub Refactor Spaces (Refactor Spaces). The topic for each action shows the
-      API request parameters and the response. Alternatively, you can use one of
-      the Amazon Web Services SDKs to access an API that is tailored to the
-      programming language or platform that you're using. For more information,
-      see <a href="https://aws.amazon.com/tools/#SDKs">Amazon Web Services
-      SDKs</a>.</p> <p>To share Refactor Spaces environments with other Amazon
-      Web Services accounts or with Organizations and their OUs, use Resource
-      Access Manager's <code>CreateResourceShare</code> API. See <a
-      href="https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html">CreateResourceShare</a>
-      in the <i>Amazon Web Services RAM API Reference</i>.</p></p>
+      Refactor Spaces within AWS Migration Hub serves as a comprehensive
+      solution for gradually refactoring applications into microservices within
+      the AWS ecosystem. By leveraging Refactor Spaces, users can seamlessly
+      transition from monolithic to microservices architecture, minimizing the
+      manual effort involved in setting up and managing AWS infrastructure. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/what-is-mhub-refactor-spaces.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Environments
+      - Policies
+      - Resource Policies
+      - Resources
+      - Routes
+      - Services
+      - Tags
+      - Untag
+      - VPC
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/what-is-mhub-refactor-spaces.html
       - type: OpenAPI
         url: properties/migration-hub-refactor-spaces-openapi-original.yml
     overlays:
@@ -6233,47 +8071,76 @@ apis:
         url: >-
           overlays/migration-hub-refactor-spaces-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migration-hub-refactor-spaces
-  - name: AWS MemoryDB for Redis
+  - name: AWS MemoryDB
     description: >-
-      <p>MemoryDB for Redis is a fully managed, Redis-compatible, in-memory
-      database that delivers ultra-fast performance and Multi-AZ durability for
-      modern applications built using microservices architectures. MemoryDB
-      stores the entire database in-memory, enabling low latency and high
-      throughput data access. It is compatible with Redis, a popular open source
-      data store, enabling you to leverage Redis’ flexible and friendly data
-      structures, APIs, and commands.</p>
+      MemoryDB for Redis is a managed in-memory database that offers fast
+      performance and Multi-AZ durability for microservices applications. It
+      stores the entire database in-memory for low latency and high throughput
+      access. Compatible with Redis, it supports Redis' data structures, APIs,
+      and commands.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/memorydb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/memorydb/
       - type: OpenAPI
         url: properties/memorydb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/memorydb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/memorydb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/memorydb/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/memorydb/faqs/
+      - type: Sla
+        url: https://aws.amazon.com/memorydb/sla/
     overlays:
       - type: APIs.io Search
         url: overlays/memorydb-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/memorydb-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:memorydb
-  - name: AWS Migration Hub Strategy Recommendations
+  - name: Migration Hub Strategy Recommendations
     description: >-
-      <p><fullname>Migration Hub Strategy Recommendations</fullname> <p>This API
-      reference provides descriptions, syntax, and other details about each of
-      the actions and data types for Migration Hub Strategy Recommendations
-      (Strategy Recommendations). The topic for each action shows the API
-      request parameters and the response. Alternatively, you can use one of the
-      AWS SDKs to access an API that is tailored to the programming language or
-      platform that you're using. For more information, see <a
-      href="http://aws.amazon.com/tools/#SDKs">AWS SDKs</a>.</p></p>
+      AWS Migration Hub offers a centralized platform for monitoring migration
+      tasks from various AWS tools and partner solutions. Through Migration Hub,
+      users can select the migration tools that align with their requirements
+      and gain insight into the progress of their migration projects.
+      Additionally, Migration Hub delivers essential metrics and progress
+      updates for specific applications, regardless of the tools employed for
+      their migration.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/migrationhub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Analyzable
+      - Application Components
+      - Applications
+      - Assessments
+      - Collectors
+      - Components
+      - Configurations
+      - Details
+      - File
+      - Generation
+      - Import
+      - Latest
+      - Portfolio
+      - Preferences
+      - Recommendations
+      - Reports
+      - Servers
+      - Stop
+      - Strategies
+      - Summaries
+      - Tasks
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/migrationhub/
       - type: OpenAPI
         url: properties/migrationhubstrategy-openapi-original.yml
     overlays:
@@ -6282,21 +8149,43 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/migrationhubstrategy-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:migrationhubstrategy
-  - name: AWS Migration Hub Orchestrator
+  - name: AWS Migration Hub Orchestrator.
     description: >-
-      <p>This API reference provides descriptions, syntax, and other details
-      about each of the actions and data types for AWS Migration Hub
-      Orchestrator. he topic for each action shows the API request parameters
-      and the response. Alternatively, you can use one of the AWS SDKs to access
-      an API that is tailored to the programming language or platform that
-      you're using.</p>
+      This API reference provides descriptions, syntax, and other details about
+      each of the actions and data types for AWS Migration Hub Orchestrator. he
+      topic for each action shows the API request parameters and the response.
+      Alternatively, you can use one of the AWS SDKs to access an API that is
+      tailored to the programming language or platform that you're using.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/what-is-migrationhub-orchestrator.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Groups
+      - Migration Workflow Templates
+      - Migration Workflows
+      - Plugins
+      - Resources
+      - Retry
+      - Retry Workflow Steps
+      - Step Groups
+      - Steps
+      - Stop
+      - Tags
+      - Template Steps
+      - Templates
+      - Templatestepgroups
+      - Untag
+      - Workflow Step
+      - Workflow Step Group
+      - Workflow Step Groups
+      - Workflow Steps
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/what-is-migrationhub-orchestrator.html
       - type: OpenAPI
         url: properties/migrationhuborchestrator-openapi-original.yml
     overlays:
@@ -6307,27 +8196,51 @@ apis:
     aid: amazon-web-services:migrationhuborchestrator
   - name: AWS Elemental MediaTailor
     description: >-
-      <p>Use the AWS Elemental MediaTailor SDKs and CLI to configure scalable ad
-      insertion and linear channels. With MediaTailor, you can assemble existing
-      content into a linear stream and serve targeted ads to viewers while
-      maintaining broadcast quality in over-the-top (OTT) video applications.
-      For information about using the service, including detailed information
-      about the settings covered in this guide, see the <a
-      href="https://docs.aws.amazon.com/mediatailor/latest/ug/">AWS Elemental
-      MediaTailor User Guide</a>.</p> <p>Through the SDKs and the CLI you manage
-      AWS Elemental MediaTailor configurations and channels the same as you do
-      through the console. For example, you specify ad insertion behavior and
-      mapping information for the origin server and the ad decision server
-      (ADS).</p>
+      AWS Elemental MediaTailor is a versatile platform designed for video
+      providers to easily create customized linear over-the-top (OTT) channels
+      by leveraging their existing video content. With this service, users can
+      seamlessly monetize their channels and live streams through personalized
+      ad insertion, enhancing the overall viewing experience for audiences.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/mediatailor/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Alerts
+      - Channels
+      - Configurations
+      - Configure
+      - Live
+      - Locations
+      - Logs
+      - Names
+      - Playback
+      - Policies
+      - Prefetch
+      - Program
+      - Resources
+      - Schedules
+      - Sources
+      - Stop
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/mediatailor/
       - type: OpenAPI
         url: properties/mediatailor-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/mediatailor/features/
+      - type: Pricing
+        url: https://aws.amazon.com/mediatailor/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/mediatailor/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/mediatailor/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/mediatailor/resources/
+      - type: Integrations
+        url: https://aws.amazon.com/mediatailor/integrations/
     overlays:
       - type: APIs.io Search
         url: overlays/mediatailor-openapi-search.yml
@@ -6335,47 +8248,73 @@ apis:
         url: overlays/mediatailor-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mediatailor
   - name: Amazon Mechanical Turk
-    description: <fullname>Amazon Mechanical Turk API Reference</fullname>
+    description: >-
+      This API, Amazon Mechanical Turk (MTurk), offers a platform for
+      individuals and businesses to easily outsource tasks to a distributed
+      workforce. These tasks can range from data validation and research to more
+      subjective tasks like survey participation and content moderation. MTurk
+      allows companies to leverage a global workforce to streamline processes,
+      improve data collection and analysis, and enhance machine learning
+      projects.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://www.mturk.com/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Qualification
+      - Types
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://www.mturk.com/
       - type: OpenAPI
         url: properties/mturk-requester-openapi-original.yml
+      - type: Worker
+        url: https://www.mturk.com/worker
+      - type: Product
+        url: https://www.mturk.com/product-details
+      - type: Pricing
+        url: https://www.mturk.com/pricing
+      - type: Help
+        url: https://www.mturk.com/help
+      - type: Resources
+        url: https://www.mturk.com/resources
+      - type: Customers
+        url: https://www.mturk.com/customers
     overlays:
       - type: APIs.io Search
         url: overlays/mturk-requester-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/mturk-requester-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mturk-requester
-  - name: Amazon CloudWatch Monitors
-    description: >-
-      <p>Amazon CloudWatch monitors your Amazon Web Services (Amazon Web
-      Services) resources and the applications you run on Amazon Web Services in
-      real time. You can use CloudWatch to collect and track metrics, which are
-      the variables you want to measure for your resources and applications.</p>
-      <p>CloudWatch alarms send notifications or automatically change the
-      resources you are monitoring based on rules that you define. For example,
-      you can monitor the CPU usage and disk reads and writes of your Amazon EC2
-      instances. Then, use this data to determine whether you should launch
-      additional instances to handle increased load. You can also use this data
-      to stop under-used instances to save money.</p> <p>In addition to
-      monitoring the built-in metrics that come with Amazon Web Services, you
-      can monitor your own custom metrics. With CloudWatch, you gain system-wide
-      visibility into resource utilization, application performance, and
-      operational health.</p>
+  - name: Amazon CloudWatch
+    description: >+
+      Amazon CloudWatch is a service that monitors applications, responds to
+      performance changes, optimizes resource use, and provides insights into
+      operational health. By collecting data across AWS resources, CloudWatch
+      gives visibility into system-wide performance and allows users to set
+      alarms, automatically react to changes, and gain a unified view of
+      operational health.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloudwatch/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloudwatch/
       - type: OpenAPI
         url: properties/monitoring-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloudwatch/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloudwatch/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/cloudwatch/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/cloudwatch/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/cloudwatch/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/monitoring-openapi-search.yml
@@ -6384,48 +8323,43 @@ apis:
     aid: amazon-web-services:monitoring
   - name: Amazon Managed Workflows for Apache Airflow
     description: >-
-      <p><fullname>Amazon Managed Workflows for Apache Airflow</fullname>
-      <p>This section contains the Amazon Managed Workflows for Apache Airflow
-      (MWAA) API reference documentation. For more information, see <a
-      href="https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html">What
-      is Amazon MWAA?</a>.</p> <p> <b>Endpoints</b> </p> <ul> <li> <p>
-      <code>api.airflow.{region}.amazonaws.com</code> - This endpoint is used
-      for environment management.</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateEnvironment.html">CreateEnvironment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_DeleteEnvironment.html">DeleteEnvironment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_GetEnvironment.html">GetEnvironment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_ListEnvironments.html">ListEnvironments</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_ListTagsForResource.html">ListTagsForResource</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_TagResource.html">TagResource</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_UntagResource.html">UntagResource</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_UpdateEnvironment.html">UpdateEnvironment</a>
-      </p> </li> </ul> </li> <li> <p>
-      <code>env.airflow.{region}.amazonaws.com</code> - This endpoint is used to
-      operate the Airflow environment.</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateCliToken.html
-      ">CreateCliToken</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateWebLoginToken.html">CreateWebLoginToken</a>
-      </p> </li> </ul> </li> </ul> <p> <b>Regions</b> </p> <p>For a list of
-      supported regions, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/mwaa.html">Amazon MWAA
-      endpoints and quotas</a> in the <i>Amazon Web Services General
-      Reference</i>.</p></p>
+      Amazon Managed Workflows for Apache Airflow (Amazon MWAA) is a service
+      that helps you organize and automate your tasks by utilizing Directed
+      Acyclic Graphs (DAGs) written in Python. Your DAGs, plugins, and Python
+      requirements are stored in an Amazon Simple Storage Service (S3) bucket
+      provided by you. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/managed-workflows-for-apache-airflow/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - CLI
+      - Environments
+      - Login
+      - Metrics
+      - Names
+      - Publish
+      - Resources
+      - Tags
+      - Tokens
+      - Untag
+      - Web
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/
       - type: OpenAPI
         url: properties/mwaa-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/features/
+      - type: Pricing
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/pricing/
+      - type: Getting-started
+        url: >-
+          https://aws.amazon.com/managed-workflows-for-apache-airflow/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/managed-workflows-for-apache-airflow/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/mwaa-openapi-search.yml
@@ -6434,34 +8368,37 @@ apis:
     aid: amazon-web-services:mwaa
   - name: Amazon Neptune
     description: >-
-      <fullname>Amazon Neptune</fullname> <p>Amazon Neptune is a fast, reliable,
-      fully-managed graph database service that makes it easy to build and run
-      applications that work with highly connected datasets. The core of Amazon
-      Neptune is a purpose-built, high-performance graph database engine
-      optimized for storing billions of relationships and querying the graph
-      with milliseconds latency. Amazon Neptune supports popular graph models
-      Property Graph and W3C's RDF, and their respective query languages Apache
-      TinkerPop Gremlin and SPARQL, allowing you to easily build queries that
-      efficiently navigate highly connected datasets. Neptune powers graph use
-      cases such as recommendation engines, fraud detection, knowledge graphs,
-      drug discovery, and network security.</p> <p>This interface reference for
-      Amazon Neptune contains documentation for a programming or command line
-      interface you can use to manage Amazon Neptune. Note that Amazon Neptune
-      is asynchronous, which means that some interfaces might require techniques
-      such as polling or callback functions to determine when a command has been
-      applied. In this reference, the parameter descriptions indicate whether a
-      command is applied immediately, on the next instance reboot, or during the
-      maintenance window. The reference structure is as follows, and we list
-      following some related topics from the user guide.</p>
+      Amazon Neptune Amazon Neptune is a fast, reliable, fully-managed graph
+      database service that makes it easy to build and run applications that
+      work with highly connected datasets. The core of Amazon Neptune is a
+      purpose-built, high-performance graph database engine optimized for
+      storing billions of relationships and querying the graph with milliseconds
+      latency.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/neptune/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - DBCluster
+      - Stop
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/neptune/
       - type: OpenAPI
         url: properties/neptune-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/neptune/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/neptune/faqs/
+      - type: Features
+        url: https://aws.amazon.com/neptune/features/
+      - type: Global-database
+        url: https://aws.amazon.com/neptune/global-database/
+      - type: Machine-learning
+        url: https://aws.amazon.com/neptune/machine-learning/
+      - type: Serverless
+        url: https://aws.amazon.com/neptune/serverless/
+      - type: Getting-started
+        url: https://aws.amazon.com/neptune/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/neptune-openapi-search.yml
@@ -6470,39 +8407,72 @@ apis:
     aid: amazon-web-services:neptune
   - name: Amazon MQ
     description: >-
-      <p>Amazon MQ is a managed message broker service for Apache ActiveMQ and
-      RabbitMQ that makes it easy to set up and operate message brokers in the
-      cloud. A message broker allows software applications and components to
-      communicate using various programming languages, operating systems, and
-      formal messaging protocols.</p>
+      Amazon MQ is an API service that manages message brokers for Apache
+      ActiveMQ and RabbitMQ, simplifying the setup and operation of message
+      brokers in the cloud. Message brokers enable communication between
+      software applications and components, supporting multiple programming
+      languages, operating systems, and messaging protocols.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/amazon-mq/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Brokers
+      - ActiveMQ
+      - RabbitMQ
+      - Real-Time
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/amazon-mq/
       - type: OpenAPI
         url: properties/mq-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/amazon-mq/features/
+      - type: Pricing
+        url: https://aws.amazon.com/amazon-mq/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/amazon-mq/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/amazon-mq/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/amazon-mq/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/mq-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/mq-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:mq
-  - name: Amazon Neptune Analytics
+  - name: Neptune Analytics
     description: >-
-      <p>Neptune Analytics is a new analytics database engine for Amazon Neptune
-      that helps customers get to insights faster by quickly processing large
-      amounts of graph data, invoking popular graph analytic algorithms in
-      low-latency queries, and getting analytics results in seconds.</p>
+      Neptune Analytics is a cutting-edge analytics database engine designed for
+      Amazon Neptune, enabling users to efficiently analyze vast amounts of
+      graph data. By leveraging high-speed processing capabilities and executing
+      popular graph analytic algorithms through rapid queries, Neptune Analytics
+      greatly accelerates the insights generation process, delivering analytics
+      results within seconds.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Endpoints
+      - Graphs
+      - Import
+      - Import Tasks
+      - Private
+      - Queries
+      - Resources
+      - Restore
+      - Snapshots
+      - Summaries
+      - Tags
+      - Tasks
+      - Untag
+      - VPC
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html
       - type: OpenAPI
         url: properties/neptune-graph-openapi-original.yml
     overlays:
@@ -6513,20 +8483,58 @@ apis:
     aid: amazon-web-services:neptune-graph
   - name: Amazon Nimble Studio
     description: >-
-      <p>Welcome to the Amazon Nimble Studio API reference. This API reference
-      provides methods, schema, resources, parameters, and more to help you get
-      the most out of Nimble Studio.</p> <p>Nimble Studio is a virtual studio
-      that empowers visual effects, animation, and interactive content teams to
-      create content securely within a scalable, private cloud service.</p>
+      Thank you for visiting the Amazon Nimble Studio API documentation. This
+      comprehensive reference guide offers detailed information on methods,
+      schema, resources, and parameters to maximize your utilization of Nimble
+      Studio. Nimble Studio is a cutting-edge virtual studio designed to support
+      visual effects, animation, and interactive content teams, enabling them to
+      create securely within a flexible, private cloud environment.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/nimble-studio/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Acceptances
+      - Backup
+      - Backups
+      - Components
+      - Configurations
+      - Details
+      - EULA
+      - Eulas
+      - Images
+      - Initialization
+      - Initialize
+      - Launch
+      - Members
+      - Memberships
+      - Principals
+      - Profiles
+      - Repair
+      - Resources
+      - SSO
+      - SSOConfiguration
+      - Sessions
+      - Stop
+      - Stream
+      - Streaming
+      - Streams
+      - Studios
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/nimble-studio/
       - type: OpenAPI
         url: properties/nimble-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/nimble-studio/features/
+      - type: Pricing
+        url: https://aws.amazon.com/nimble-studio/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/nimble-studio/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/nimble-studio/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/nimble-openapi-search.yml
@@ -6535,27 +8543,26 @@ apis:
     aid: amazon-web-services:nimble
   - name: Amazon CloudWatch Network Monitor
     description: >-
-      <p>Amazon CloudWatch Network Monitor is an Amazon Web Services active
-      network monitoring service that identifies if a network issues exists
-      within the Amazon Web Services network or your own company network. Within
-      Network Monitor you'll choose the source VPCs and subnets from the Amazon
-      Web Services network in which you operate and then you'll choose the
-      destination IP addresses from your on-premises network. From these sources
-      and destinations, Network Monitor creates a monitor containing all the
-      possible source and destination combinations, each of which is called a
-      probe, within a single monitor. These probes then monitor network traffic
-      to help you identify where network issues might be affecting your
-      traffic.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html">Using
-      Amazon CloudWatch Network Monitor</a> in the <i>Amazon CloudWatch User
-      Guide</i>.</p>
+      Amazon CloudWatch Network Monitor is an active network monitoring service
+      provided by Amazon Web Services. It is designed to identify network issues
+      within either the AWS network or your own company's network. With Network
+      Monitor, users can select source VPCs and subnets from AWS and specify
+      destination IP addresses from their own on-premises network. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Monitors
+      - Names
+      - Probes
+      - Resources
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html
       - type: OpenAPI
         url: properties/networkmonitor-openapi-original.yml
     overlays:
@@ -6566,19 +8573,71 @@ apis:
     aid: amazon-web-services:networkmonitor
   - name: AWS HealthOmics
     description: >-
-      <p>This is the <i>AWS HealthOmics API Reference</i>. For an introduction
-      to the service, see <a
-      href="https://docs.aws.amazon.com/omics/latest/dev/">What is AWS
-      HealthOmics?</a> in the <i>AWS HealthOmics User Guide</i>.</p>
+      AWS HealthOmics is a specialized platform designed to assist healthcare
+      and life science organizations, as well as their software partners, in
+      storing, retrieving, and analyzing various omics data including genomic
+      and transcriptomic data. By leveraging this service, users can extract
+      valuable insights from the data to enhance health outcomes. The platform
+      also enables large-scale analysis and facilitates collaborative research
+      efforts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/healthomics/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Abort
+      - Activation
+      - Activation Jobs
+      - Annotations
+      - Batches
+      - Cancel
+      - Complete
+      - Export Jobs
+      - Exports
+      - Groups
+      - Import
+      - Import JObs
+      - Import Jobs
+      - Jobs
+      - Metadata
+      - Multipart
+      - Names
+      - Parts
+      - Read
+      - Readsets
+      - Reference Store
+      - References
+      - Resources
+      - Runs
+      - Sequence
+      - Sequence Stores
+      - Sets
+      - Share
+      - Shares
+      - Store
+      - Stores
+      - Tags
+      - Tasks
+      - Untag
+      - Uploads
+      - Variants
+      - Versions
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/healthomics/
       - type: OpenAPI
         url: properties/omics-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/healthomics/features/
+      - type: Pricing
+        url: https://aws.amazon.com/healthomics/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/healthomics/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/healthomics/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/healthomics/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/omics-openapi-search.yml
@@ -6587,27 +8646,28 @@ apis:
     aid: amazon-web-services:omics
   - name: Amazon CloudWatch Observability Access Manager
     description: >-
-      <p>Use Amazon CloudWatch Observability Access Manager to create and manage
-      links between source accounts and monitoring accounts by using
-      <i>CloudWatch cross-account observability</i>. With CloudWatch
-      cross-account observability, you can monitor and troubleshoot applications
-      that span multiple accounts within a Region. Seamlessly search, visualize,
-      and analyze your metrics, logs, traces, and Application Insights
-      applications in any of the linked accounts without account boundaries.</p>
-      <p>Set up one or more Amazon Web Services accounts as <i>monitoring
-      accounts</i> and link them with multiple <i>source accounts</i>. A
-      monitoring account is a central Amazon Web Services account that can view
-      and interact with observability data generated from source accounts. A
-      source account is an individual Amazon Web Services account that generates
-      observability data for the resources that reside in it. Source accounts
-      share their observability data with the monitoring account. The shared
-      observability data can include metrics in Amazon CloudWatch, logs in
-      Amazon CloudWatch Logs, traces in X-Ray, and applications in Amazon
-      CloudWatch Application Insights.</p>
+      Use Amazon CloudWatch Observability Access Manager to establish and manage
+      connections between source accounts and monitoring accounts for CloudWatch
+      cross-account observability. This feature allows you to effectively
+      monitor and troubleshoot applications that span across multiple accounts
+      within a specific region. With CloudWatch cross-account observability, you
+      can seamlessly search, visualize, and analyze metrics, logs, traces, and
+      Application Insights applications from linked accounts without any account
+      limitations. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/OAM/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Attached
+      - Link
+      - Links
+      - Policies
+      - Resources
+      - Sink
+      - Sinks
+      - Tags
+      - Untag
     properties:
       - type: Documentation
         url: https://example.com
@@ -6621,69 +8681,32 @@ apis:
     aid: amazon-web-services:oam
   - name: AWS Network Firewall
     description: >-
-      <p>This is the API Reference for Network Firewall. This guide is for
-      developers who need detailed information about the Network Firewall API
-      actions, data types, and errors. </p> <ul> <li> <p>The REST API requires
-      you to handle connection details, such as calculating signatures, handling
-      request retries, and error handling. For general information about using
-      the Amazon Web Services REST APIs, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/aws-apis.html">Amazon
-      Web Services APIs</a>. </p> <p>To access Network Firewall using the REST
-      API endpoint: <code>https://network-firewall.&lt;region&gt;.amazonaws.com
-      </code> </p> </li> <li> <p>Alternatively, you can use one of the Amazon
-      Web Services SDKs to access an API that's tailored to the programming
-      language or platform that you're using. For more information, see <a
-      href="http://aws.amazon.com/tools/#SDKs">Amazon Web Services SDKs</a>.</p>
-      </li> <li> <p>For descriptions of Network Firewall features, including and
-      step-by-step instructions on how to use them through the Network Firewall
-      console, see the <a
-      href="https://docs.aws.amazon.com/network-firewall/latest/developerguide/">Network
-      Firewall Developer Guide</a>.</p> </li> </ul> <p>Network Firewall is a
-      stateful, managed, network firewall and intrusion detection and prevention
-      service for Amazon Virtual Private Cloud (Amazon VPC). With Network
-      Firewall, you can filter traffic at the perimeter of your VPC. This
-      includes filtering traffic going to and coming from an internet gateway,
-      NAT gateway, or over VPN or Direct Connect. Network Firewall uses rules
-      that are compatible with Suricata, a free, open source network analysis
-      and threat detection engine. Network Firewall supports Suricata version
-      6.0.9. For information about Suricata, see the <a
-      href="https://suricata.io/">Suricata website</a>.</p> <p>You can use
-      Network Firewall to monitor and protect your VPC traffic in a number of
-      ways. The following are just a few examples: </p> <ul> <li> <p>Allow
-      domains or IP addresses for known Amazon Web Services service endpoints,
-      such as Amazon S3, and block all other forms of traffic.</p> </li> <li>
-      <p>Use custom lists of known bad domains to limit the types of domain
-      names that your applications can access.</p> </li> <li> <p>Perform deep
-      packet inspection on traffic entering or leaving your VPC.</p> </li> <li>
-      <p>Use stateful protocol detection to filter protocols like HTTPS,
-      regardless of the port used.</p> </li> </ul> <p>To enable Network Firewall
-      for your VPCs, you perform steps in both Amazon VPC and in Network
-      Firewall. For information about using Amazon VPC, see <a
-      href="https://docs.aws.amazon.com/vpc/latest/userguide/">Amazon VPC User
-      Guide</a>.</p> <p>To start using Network Firewall, do the following: </p>
-      <ol> <li> <p>(Optional) If you don't already have a VPC that you want to
-      protect, create it in Amazon VPC. </p> </li> <li> <p>In Amazon VPC, in
-      each Availability Zone where you want to have a firewall endpoint, create
-      a subnet for the sole use of Network Firewall. </p> </li> <li> <p>In
-      Network Firewall, create stateless and stateful rule groups, to define the
-      components of the network traffic filtering behavior that you want your
-      firewall to have. </p> </li> <li> <p>In Network Firewall, create a
-      firewall policy that uses your rule groups and specifies additional
-      default traffic filtering behavior. </p> </li> <li> <p>In Network
-      Firewall, create a firewall and specify your new firewall policy and VPC
-      subnets. Network Firewall creates a firewall endpoint in each subnet that
-      you specify, with the behavior that's defined in the firewall policy.</p>
-      </li> <li> <p>In Amazon VPC, use ingress routing enhancements to route
-      traffic through the new firewall endpoints.</p> </li> </ol>
+      Utilize AWS Network Firewall to establish customized firewall rules that
+      offer precise management of network traffic and seamlessly implement
+      firewall security measures across your VPCs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://example.comhttps://aws.amazon.com/network-firewall/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - TLSInspection
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/network-firewall/
       - type: OpenAPI
         url: properties/network-firewall-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/network-firewall/features/
+      - type: Pricing
+        url: https://aws.amazon.com/network-firewall/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/network-firewall/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/network-firewall/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/network-firewall/partners/
+      - type: Customers
+        url: https://aws.amazon.com/network-firewall/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/network-firewall-openapi-search.yml
@@ -6692,182 +8715,190 @@ apis:
     aid: amazon-web-services:network-firewall
   - name: Amazon OpenSearch Serverless
     description: >-
-      <p>Use the Amazon OpenSearch Serverless API to create, configure, and
-      manage OpenSearch Serverless collections and security policies.</p>
-      <p>OpenSearch Serverless is an on-demand, pre-provisioned serverless
-      configuration for Amazon OpenSearch Service. OpenSearch Serverless removes
-      the operational complexities of provisioning, configuring, and tuning your
-      OpenSearch clusters. It enables you to easily search and analyze petabytes
-      of data without having to worry about the underlying infrastructure and
-      data management.</p> <p> To learn more about OpenSearch Serverless, see <a
-      href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-overview.html">What
-      is Amazon OpenSearch Serverless?</a> </p>
+      Use the Amazon OpenSearch Serverless API to create, configure, and manage
+      OpenSearch Serverless collections and security policies. OpenSearch
+      Serverless is an on-demand, pre-provisioned serverless configuration for
+      Amazon OpenSearch Service. OpenSearch Serverless removes the operational
+      complexities of provisioning, configuring, and tuning your OpenSearch
+      clusters. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/opensearch-service/features/serverless/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Endpoints
+      - VPC
+      - Search
+      - Serverless
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/opensearch-service/features/serverless/
       - type: OpenAPI
         url: properties/opensearchserverless-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/opensearch-service/features/
+      - type: Pricing
+        url: https://aws.amazon.com/opensearch-service/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/opensearch-service/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/opensearch-service/resources/
+      - type: Customers
+        url: https://aws.amazon.com/opensearch-service/customers/
+      - type: Migrations
+        url: https://aws.amazon.com/big-data/datalakes-and-analytics/migrations/
+      - type: Partners
+        url: >-
+          https://aws.amazon.com/big-data/datalakes-and-analytics/partner-solutions/
+      - type: Customers
+        url: https://aws.amazon.com/big-data/datalakes-and-analytics/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/opensearchserverless-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/opensearchserverless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opensearchserverless
-  - name: Amazon OpenSearch
+  - name: Amazon OpenSearch Service
     description: >-
-      <p>Use the Amazon OpenSearch Service configuration API to create,
-      configure, and manage OpenSearch Service domains.</p> <p>For sample code
-      that uses the configuration API, see the <a
-      href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/opensearch-configuration-samples.html">
-      <i>Amazon OpenSearch Service Developer Guide</i> </a>. The guide also
-      contains <a
-      href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/request-signing.html">sample
-      code</a> for sending signed HTTP requests to the OpenSearch APIs. The
-      endpoint for configuration service requests is Region specific:
-      es.<i>region</i>.amazonaws.com. For example, es.us-east-1.amazonaws.com.
-      For a current list of supported Regions and endpoints, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#service-regions">Amazon
-      Web Services service endpoints</a>.</p>
+      Amazon OpenSearch Service makes it easy for you to perform interactive log
+      analytics, real-time application monitoring, website search, and more.
+      OpenSearch is an open source, distributed search and analytics suite
+      derived from Elasticsearch. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/opensearch-service/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Access
+      - Actions
+      - Associate
+      - Authorize
+      - Auto
+      - Cancel
+      - Change
+      - Compatible
+      - Configurations
+      - Connections
+      - Data
+      - Describe
+      - Details
+      - Dissociate
+      - Domains
+      - Dry
+      - Endpoints
+      - Engines
+      - Health
+      - History
+      - Inbound
+      - Info
+      - Instances
+      - Limits
+      - Maintenance
+      - Maintenances
+      - Names
+      - Nodes
+      - Offerings
+      - Open Search
+      - Outbound
+      - Packages
+      - Progress
+      - Purchase
+      - Reject
+      - Removal
+      - Removes
+      - Reserved
+      - Revoke
+      - Runs
+      - Scheduled
+      - Search
+      - Services
+      - Software
+      - Sources
+      - Status
+      - Tags
+      - Tunes
+      - Types
+      - Upgrade
+      - VPC
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/opensearch-service/
       - type: OpenAPI
         url: properties/opensearch-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/opensearch-service/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/opensearch-service/partners/
+      - type: FAQ
+        url: https://aws.amazon.com/opensearch-service/faqs/
+      - type: Getting-started
+        url: https://aws.amazon.com/opensearch-service/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/opensearch-service/resources/
+      - type: Customers
+        url: https://aws.amazon.com/opensearch-service/customers/
+      - type: Features
+        url: https://aws.amazon.com/opensearch-service/features/
+      - type: Migrations
+        url: https://aws.amazon.com/opensearch-service/migrations/
     overlays:
       - type: APIs.io Search
         url: overlays/opensearch-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/opensearch-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:opensearch
-  - name: Amazon Organizations
+  - name: AWS Organizations
     description: >-
-      <p>Organizations is a web service that enables you to consolidate your
-      multiple Amazon Web Services accounts into an <i>organization</i> and
-      centrally manage your accounts and their resources.</p> <p>This guide
-      provides descriptions of the Organizations operations. For more
-      information about using this service, see the <a
-      href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html">Organizations
-      User Guide</a>.</p> <p> <b>Support and feedback for Organizations</b> </p>
-      <p>We welcome your feedback. Send your comments to <a
-      href="mailto:feedback-awsorganizations@amazon.com">feedback-awsorganizations@amazon.com</a>
-      or post your feedback and questions in the <a
-      href="http://forums.aws.amazon.com/forum.jspa?forumID=219">Organizations
-      support forum</a>. For more information about the Amazon Web Services
-      support forums, see <a
-      href="http://forums.aws.amazon.com/help.jspa">Forums Help</a>.</p> <p>
-      <b>Endpoint to call When using the CLI or the Amazon Web Services SDK</b>
-      </p> <p>For the current release of Organizations, specify the
-      <code>us-east-1</code> region for all Amazon Web Services API and CLI
-      calls made from the commercial Amazon Web Services Regions outside of
-      China. If calling from one of the Amazon Web Services Regions in China,
-      then specify <code>cn-northwest-1</code>. You can do this in the CLI by
-      using these parameters and commands:</p> <ul> <li> <p>Use the following
-      parameter with each command to specify both the endpoint and its
-      region:</p> <p> <code>--endpoint-url
-      https://organizations.us-east-1.amazonaws.com</code> <i>(from commercial
-      Amazon Web Services Regions outside of China)</i> </p> <p>or</p> <p>
-      <code>--endpoint-url
-      https://organizations.cn-northwest-1.amazonaws.com.cn</code> <i>(from
-      Amazon Web Services Regions in China)</i> </p> </li> <li> <p>Use the
-      default endpoint, but configure your default region with this command:</p>
-      <p> <code>aws configure set default.region us-east-1</code> <i>(from
-      commercial Amazon Web Services Regions outside of China)</i> </p>
-      <p>or</p> <p> <code>aws configure set default.region cn-northwest-1</code>
-      <i>(from Amazon Web Services Regions in China)</i> </p> </li> <li> <p>Use
-      the following parameter with each command to specify the endpoint:</p> <p>
-      <code>--region us-east-1</code> <i>(from commercial Amazon Web Services
-      Regions outside of China)</i> </p> <p>or</p> <p> <code>--region
-      cn-northwest-1</code> <i>(from Amazon Web Services Regions in China)</i>
-      </p> </li> </ul> <p> <b>Recording API Requests</b> </p> <p>Organizations
-      supports CloudTrail, a service that records Amazon Web Services API calls
-      for your Amazon Web Services account and delivers log files to an Amazon
-      S3 bucket. By using information collected by CloudTrail, you can determine
-      which requests the Organizations service received, who made the request
-      and when, and so on. For more about Organizations and its support for
-      CloudTrail, see <a
-      href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_incident-response.html#orgs_cloudtrail-integration">Logging
-      Organizations API calls with CloudTrail</a> in the <i>Organizations User
-      Guide</i>. To learn more about CloudTrail, including how to turn it on and
-      find your log files, see the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/what_is_cloud_trail_top_level.html">CloudTrail
-      User Guide</a>.</p>
+      AWS Organizations simplifies the management of policies across multiple
+      AWS accounts by providing a policy-based management system. This feature
+      enables users to efficiently manage policies for groups of accounts and
+      streamline the process of creating new accounts through automation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/organizations/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Policies
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/organizations/
       - type: OpenAPI
         url: properties/organizations-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/organizations/features/
+      - type: Resources
+        url: https://aws.amazon.com/organizations/resources/
+      - type: Best Practices
+        url: https://aws.amazon.com/organizations/getting-started/best-practices/
+      - type: Resources
+        url: https://aws.amazon.com/organizations/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/organizations/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/organizations/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/organizations-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/organizations-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:organizations
-  - name: AWS OpsWorks CM
+  - name: AWS OpsWorks
     description: >-
-      <fullname>AWS OpsWorks CM</fullname> <p>AWS OpsWorks for configuration
-      management (CM) is a service that runs and manages configuration
-      management servers. You can use AWS OpsWorks CM to create and manage AWS
-      OpsWorks for Chef Automate and AWS OpsWorks for Puppet Enterprise servers,
-      and add or remove nodes for the servers to manage.</p> <p> <b>Glossary of
-      terms</b> </p> <ul> <li> <p> <b>Server</b>: A configuration management
-      server that can be highly-available. The configuration management server
-      runs on an Amazon Elastic Compute Cloud (EC2) instance, and may use
-      various other AWS services, such as Amazon Relational Database Service
-      (RDS) and Elastic Load Balancing. A server is a generic abstraction over
-      the configuration manager that you want to use, much like Amazon RDS. In
-      AWS OpsWorks CM, you do not start or stop servers. After you create
-      servers, they continue to run until they are deleted.</p> </li> <li> <p>
-      <b>Engine</b>: The engine is the specific configuration manager that you
-      want to use. Valid values in this release include
-      <code>ChefAutomate</code> and <code>Puppet</code>.</p> </li> <li> <p>
-      <b>Backup</b>: This is an application-level backup of the data that the
-      configuration manager stores. AWS OpsWorks CM creates an S3 bucket for
-      backups when you launch the first server. A backup maintains a snapshot of
-      a server's configuration-related attributes at the time the backup
-      starts.</p> </li> <li> <p> <b>Events</b>: Events are always related to a
-      server. Events are written during server creation, when health checks run,
-      when backups are created, when system maintenance is performed, etc. When
-      you delete a server, the server's events are also deleted.</p> </li> <li>
-      <p> <b>Account attributes</b>: Every account has attributes that are
-      assigned in the AWS OpsWorks CM database. These attributes store
-      information about configuration limits (servers, backups, etc.) and your
-      customer account. </p> </li> </ul> <p> <b>Endpoints</b> </p> <p>AWS
-      OpsWorks CM supports the following endpoints, all HTTPS. You must connect
-      to one of the following endpoints. Your servers can only be accessed or
-      managed within the endpoint in which they are created.</p> <ul> <li>
-      <p>opsworks-cm.us-east-1.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.us-east-2.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.us-west-1.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.us-west-2.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.ap-northeast-1.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.ap-southeast-1.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.ap-southeast-2.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.eu-central-1.amazonaws.com</p> </li> <li>
-      <p>opsworks-cm.eu-west-1.amazonaws.com</p> </li> </ul> <p>For more
-      information, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/opsworks-service.html">AWS
-      OpsWorks endpoints and quotas</a> in the AWS General Reference.</p> <p>
-      <b>Throttling limits</b> </p> <p>All API operations allow for five
-      requests per second with a burst of 10 requests per second.</p>
+      The API offered by AWS OpsWorks allows for seamless configuration
+      management through the utilization of Chef and Puppet, powerful automation
+      platforms that enable code-based automation of server configurations. With
+      OpsWorks, users can leverage Chef and Puppet to automate the setup,
+      deployment, and maintenance of servers within Amazon EC2 instances or
+      on-premises compute environments. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/opsworks/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Attributes
+      - Engines
+      - Servers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/opsworks/
       - type: OpenAPI
         url: properties/opsworkscm-openapi-original.yml
     overlays:
@@ -6878,19 +8909,31 @@ apis:
     aid: amazon-web-services:opsworkscm
   - name: Amazon OpenSearch Ingestion
     description: >-
-      <p>Use the Amazon OpenSearch Ingestion API to create and manage ingestion
-      pipelines. OpenSearch Ingestion is a fully managed data collector that
-      delivers real-time log and trace data to OpenSearch Service domains. For
-      more information, see <a
-      href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html">Getting
-      data into your cluster using OpenSearch Ingestion</a>.</p>
+      The Amazon OpenSearch Ingestion API is a fully managed, serverless data
+      collection tool designed to deliver real-time log, metric, and trace data
+      to Amazon OpenSearch Service domains and OpenSearch Serverless
+      collections. With OpenSearch Ingestion, there is no longer a need for
+      third-party solutions like Logstash or Jaeger to ingest data into your
+      OpenSearch Service domains and OpenSearch Serverless collections. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Blueprints
+      - Change
+      - Names
+      - Pipelines
+      - Progress
+      - Resources
+      - Stop
+      - Tags
+      - Untag
+      - Validate
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html
       - type: OpenAPI
         url: properties/osis-openapi-original.yml
     overlays:
@@ -6901,20 +8944,59 @@ apis:
     aid: amazon-web-services:osis
   - name: AWS Panorama
     description: >-
-      <p><fullname>AWS Panorama</fullname> <p> <b>Overview</b> </p> <p>This is
-      the <i>AWS Panorama API Reference</i>. For an introduction to the service,
-      see <a
-      href="https://docs.aws.amazon.com/panorama/latest/dev/panorama-welcome.html">What
-      is AWS Panorama?</a> in the <i>AWS Panorama Developer Guide</i>.</p></p>
+      AWS Panorama is a set of machine learning (ML) tools and software
+      development kit (SDK) that enables the integration of computer vision (CV)
+      capabilities into on-site internet protocol (IP) cameras.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/panorama/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Dependencies
+      - Describe
+      - Details
+      - Device
+      - Devices
+      - Import
+      - Instances
+      - Jobs
+      - Metadata
+      - Nodes
+      - Packages
+      - Patch
+      - Provision
+      - Register
+      - Removes
+      - Resources
+      - Signals
+      - Tags
+      - Templates
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/panorama/
       - type: OpenAPI
         url: properties/panorama-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/panorama/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/panorama/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/panorama/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/panorama/customers/
+      - type: Partners
+        url: https://aws.amazon.com/panorama/partners/
+      - type: Partners
+        url: https://aws.amazon.com/panorama/partners/
+      - type: Use-cases
+        url: https://aws.amazon.com/panorama/use-cases/
+      - type: Developers
+        url: https://aws.amazon.com/panorama/developers/
+      - type: Appliance
+        url: https://aws.amazon.com/panorama/appliance/
     overlays:
       - type: APIs.io Search
         url: overlays/panorama-openapi-search.yml
@@ -6923,40 +9005,18 @@ apis:
     aid: amazon-web-services:panorama
   - name: AWS Payment Cryptography Control Plane
     description: >-
-      <p>Amazon Web Services Payment Cryptography Control Plane APIs manage
-      encryption keys for use during payment-related cryptographic operations.
-      You can create, import, export, share, manage, and delete keys. You can
-      also manage Identity and Access Management (IAM) policies for keys. For
-      more information, see <a
-      href="https://docs.aws.amazon.com/payment-cryptography/latest/userguide/security-iam.html">Identity
-      and access management</a> in the <i>Amazon Web Services Payment
-      Cryptography User Guide.</i> </p> <p>To use encryption keys for
-      payment-related transaction processing and associated cryptographic
-      operations, you use the <a
-      href="https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIReference/Welcome.html">Amazon
-      Web Services Payment Cryptography Data Plane</a>. You can perform actions
-      like encrypt, decrypt, generate, and verify payment-related data.</p>
-      <p>All Amazon Web Services Payment Cryptography API calls must be signed
-      and transmitted using Transport Layer Security (TLS). We recommend you
-      always use the latest supported TLS version for logging API requests. </p>
-      <p>Amazon Web Services Payment Cryptography supports CloudTrail for
-      control plane operations, a service that logs Amazon Web Services API
-      calls and related events for your Amazon Web Services account and delivers
-      them to an Amazon S3 bucket you specify. By using the information
-      collected by CloudTrail, you can determine what requests were made to
-      Amazon Web Services Payment Cryptography, who made the request, when it
-      was made, and so on. If you don't conﬁgure a trail, you can still view the
-      most recent events in the CloudTrail console. For more information, see
-      the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/">CloudTrail
-      User Guide</a>.</p>
+      The Amazon Web Services Payment Cryptography Control Plane APIs are used
+      to manage encryption keys for payment-related cryptographic operations.
+      With these APIs, you can create, import, export, share, manage, and delete
+      keys, as well as manage Identity and Access Management (IAM) policies. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/payment-cryptography/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alias
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/payment-cryptography/
       - type: OpenAPI
         url: properties/payment-cryptography-openapi-original.yml
     overlays:
@@ -6967,19 +9027,38 @@ apis:
     aid: amazon-web-services:payment-cryptography
   - name: AWS Private CA Connector for Active Directory
     description: >-
-      <p>Amazon Web Services Private CA Connector for Active Directory creates a
-      connector between Amazon Web Services Private CA and Active Directory (AD)
-      that enables you to provision security certificates for AD signed by a
-      private CA that you own. For more information, see <a
-      href="https://docs.aws.amazon.com/privateca/latest/userguide/ad-connector.html">Amazon
-      Web Services Private CA Connector for Active Directory</a>.</p>
+      The Amazon Web Services Private CA Connector for Active Directory
+      establishes a connection between Amazon Web Services Private CA and Active
+      Directory, allowing you to generate security certificates for Active
+      Directory that are signed by your own private CA. For further details,
+      visit the Amazon Web Services Private CA Connector for Active Directory
+      documentation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Connectors
+      - Controls
+      - Directory
+      - Entries
+      - Entry
+      - Groups
+      - Names
+      - Principals
+      - Registrations
+      - Resources
+      - Security
+      - Services
+      - Tags
+      - Templates
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad.html
       - type: OpenAPI
         url: properties/pca-connector-ad-openapi-original.yml
     overlays:
@@ -6988,20 +9067,27 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/pca-connector-ad-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:pca-connector-ad
-  - name: Amazon Personalize Events
+  - name: Amazon Personalize
     description: >-
-      <p>Amazon Personalize can consume real-time user event data, such as
-      <i>stream</i> or <i>click</i> data, and use it for model training either
-      alone or combined with historical data. For more information see <a
-      href="https://docs.aws.amazon.com/personalize/latest/dg/recording-item-interaction-events.html">Recording
-      item interaction events</a>.</p>
+      The Amazon Personalize API enables the consumption of real-time user event
+      data, such as streaming or click data, for model training purposes. This
+      data can be used on its own or in combination with historical data. For
+      further details, refer to the documentation on Recording item interaction
+      events.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/personalize/latest/dg/API_Types_Amazon_Personalize_Events.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Actions
+      - Interactions
+      - Events
+      - Items
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/personalize/latest/dg/API_Types_Amazon_Personalize_Events.html
       - type: OpenAPI
         url: properties/personalize-events-openapi-original.yml
     overlays:
@@ -7010,18 +9096,69 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/personalize-events-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:personalize-events
-  - name: AWS Cloud WAN Core Network
+  - name: 'AWS Cloud WAN Core Network '
     description: >-
-      <p>Amazon Web Services enables you to centrally manage your Amazon Web
-      Services Cloud WAN core network and your Transit Gateway network across
-      Amazon Web Services accounts, Regions, and on-premises locations.</p>
+      This API allows you to efficiently manage your Amazon Web Services Cloud
+      WAN core network and Transit Gateway network across multiple AWS accounts,
+      Regions, and on-premises locations.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Attachments
+      - Associations
+      - Connect
+      - Global
+      - Networks
+      - Peer
+      - Customers
+      - Gateways
+      - Link
+      - Transit
+      - Peers
+      - Connections
+      - Core
+      - Devices
+      - Describe
+      - Links
+      - Sites
+      - VPN
+      - Peerings
+      - Routes
+      - Tables
+      - VPC
+      - Policies
+      - Versions
+      - Device
+      - ARN
+      - Resources
+      - Deregister
+      - Registrations
+      - Disassociate
+      - Change
+      - Execute
+      - Sets
+      - Events
+      - Count
+      - Counts
+      - Relationships
+      - Telemetry
+      - Analysis
+      - Register
+      - Access
+      - Organizations
+      - Services
+      - Tags
+      - Untag
+      - Reject
+      - Restore
+      - Metadata
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html
       - type: OpenAPI
         url: properties/networkmanager-openapi-original.yml
     overlays:
@@ -7032,20 +9169,36 @@ apis:
     aid: amazon-web-services:networkmanager
   - name: AWS Outposts
     description: >-
-      <p>Amazon Web Services Outposts is a fully managed service that extends
-      Amazon Web Services infrastructure, APIs, and tools to customer premises.
-      By providing local access to Amazon Web Services managed infrastructure,
-      Amazon Web Services Outposts enables customers to build and run
-      applications on premises using the same programming interfaces as in
-      Amazon Web Services Regions, while using local compute and storage
-      resources for lower latency and local data processing needs.</p>
+      Amazon Web Services Outposts is a service that brings Amazon Web Services
+      infrastructure, APIs, and tools to customer premises in a fully managed
+      capacity. With Outposts, customers can access AWS managed infrastructure
+      locally, allowing for the development and operation of applications on
+      premises with the same programming interfaces as in AWS Regions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/outposts/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Addresses
+      - Assets
+      - Cancel
+      - Catalog
+      - Connections
+      - Instances
+      - Items
+      - Orders
+      - Outposts
+      - Physical
+      - Properties
+      - Rack
+      - Resources
+      - Sites
+      - Tags
+      - Types
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/outposts/
       - type: OpenAPI
         url: properties/outposts-openapi-original.yml
     overlays:
@@ -7056,17 +9209,32 @@ apis:
     aid: amazon-web-services:outposts
   - name: Amazon Personalize
     description: >-
-      <p>Amazon Personalize is a machine learning service that makes it easy to
-      add individualized recommendations to customers.</p>
+      Amazon Personalize simplifies the process of integrating personalized
+      recommendations powered by machine learning into various platforms,
+      including websites, applications, and email marketing systems, thereby
+      facilitating your digital transformation.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/personalize/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Recommenders
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/personalize/
       - type: OpenAPI
         url: properties/personalize-openapi-original.yml
+      - type: Featurs
+        url: https://aws.amazon.com/personalize/features/
+      - type: Pricing
+        url: https://aws.amazon.com/personalize/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/personalize/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/personalize/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/personalize/customers/
+      - type: Partners
+        url: https://aws.amazon.com/personalize/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/personalize-openapi-search.yml
@@ -7075,50 +9243,58 @@ apis:
     aid: amazon-web-services:personalize
   - name: Amazon Pinpoint Email
     description: >-
-      <fullname>Amazon Pinpoint Email Service</fullname> <p>Welcome to the
-      <i>Amazon Pinpoint Email API Reference</i>. This guide provides
-      information about the Amazon Pinpoint Email API (version 1.0), including
-      supported operations, data types, parameters, and schemas.</p> <p> <a
-      href="https://aws.amazon.com/pinpoint">Amazon Pinpoint</a> is an AWS
-      service that you can use to engage with your customers across multiple
-      messaging channels. You can use Amazon Pinpoint to send email, SMS text
-      messages, voice messages, and push notifications. The Amazon Pinpoint
-      Email API provides programmatic access to options that are unique to the
-      email channel and supplement the options provided by the Amazon Pinpoint
-      API.</p> <p>If you're new to Amazon Pinpoint, you might find it helpful to
-      also review the <a
-      href="https://docs.aws.amazon.com/pinpoint/latest/developerguide/welcome.html">Amazon
-      Pinpoint Developer Guide</a>. The <i>Amazon Pinpoint Developer Guide</i>
-      provides tutorials, code samples, and procedures that demonstrate how to
-      use Amazon Pinpoint features programmatically and how to integrate Amazon
-      Pinpoint functionality into mobile apps and other types of applications.
-      The guide also provides information about key topics such as Amazon
-      Pinpoint integration with other AWS services and the limits that apply to
-      using the service.</p> <p>The Amazon Pinpoint Email API is available in
-      several AWS Regions and it provides an endpoint for each of these Regions.
-      For a list of all the Regions and endpoints where the API is currently
-      available, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region">AWS
-      Service Endpoints</a> in the <i>Amazon Web Services General Reference</i>.
-      To learn more about AWS Regions, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande-manage.html">Managing
-      AWS Regions</a> in the <i>Amazon Web Services General Reference</i>.</p>
-      <p>In each Region, AWS maintains multiple Availability Zones. These
-      Availability Zones are physically isolated from each other, but are united
-      by private, low-latency, high-throughput, and highly redundant network
-      connections. These Availability Zones enable us to provide very high
-      levels of availability and redundancy, while also minimizing latency. To
-      learn more about the number of Availability Zones that are available in
-      each Region, see <a
-      href="http://aws.amazon.com/about-aws/global-infrastructure/">AWS Global
-      Infrastructure</a>.</p>
+      The Amazon Pinpoint Email API is a specialized feature within the AWS
+      service that allows businesses to connect with customers through email
+      messaging. This API enhances the functionality of the Amazon Pinpoint
+      platform, enabling users to send personalized email campaigns and track
+      performance metrics.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accounts
+      - Attributes
+      - Blacklist
+      - Campaigns
+      - Configurations
+      - DKIM
+      - Dashboard
+      - Dedicated
+      - Deliverability
+      - Deliveries
+      - Destinations
+      - Domains
+      - Emails
+      - Entities
+      - Events
+      - Feedback
+      - IP
+      - IP Addresses
+      - Identities
+      - Identity
+      - Mail
+      - Names
+      - Options
+      - Outbound
+      - Pools
+      - Reports
+      - Reputation
+      - Resources
+      - Send
+      - Sending
+      - Sets
+      - Statistics
+      - Subscribed
+      - Tags
+      - Tests
+      - Tracking
+      - Untag
+      - Warmup
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/pinpoint-email-openapi-original.yml
     overlays:
@@ -7129,51 +9305,22 @@ apis:
     aid: amazon-web-services:pinpoint-email
   - name: Amazon Pinpoint SMS and Voice
     description: >-
-      <p>Welcome to the <i>Amazon Pinpoint SMS and Voice, version 2 API
-      Reference</i>. This guide provides information about Amazon Pinpoint SMS
-      and Voice, version 2 API resources, including supported HTTP methods,
-      parameters, and schemas.</p> <p>Amazon Pinpoint is an Amazon Web Services
-      service that you can use to engage with your recipients across multiple
-      messaging channels. The Amazon Pinpoint SMS and Voice, version 2 API
-      provides programmatic access to options that are unique to the SMS and
-      voice channels and supplements the resources provided by the Amazon
-      Pinpoint API.</p> <p>If you're new to Amazon Pinpoint, it's also helpful
-      to review the <a
-      href="https://docs.aws.amazon.com/pinpoint/latest/developerguide/welcome.html">
-      Amazon Pinpoint Developer Guide</a>. The <i>Amazon Pinpoint Developer
-      Guide</i> provides tutorials, code samples, and procedures that
-      demonstrate how to use Amazon Pinpoint features programmatically and how
-      to integrate Amazon Pinpoint functionality into mobile apps and other
-      types of applications. The guide also provides key information, such as
-      Amazon Pinpoint integration with other Amazon Web Services services, and
-      the quotas that apply to use of the service.</p> <p> <b>Regional
-      availability</b> </p> <p>The <i>Amazon Pinpoint SMS and Voice, version 2
-      API Reference</i> is available in several Amazon Web Services Regions and
-      it provides an endpoint for each of these Regions. For a list of all the
-      Regions and endpoints where the API is currently available, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#pinpoint_region">Amazon
-      Web Services Service Endpoints</a> and <a
-      href="https://docs.aws.amazon.com/general/latest/gr/pinpoint.html">Amazon
-      Pinpoint endpoints and quotas</a> in the Amazon Web Services General
-      Reference. To learn more about Amazon Web Services Regions, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande-manage.html">Managing
-      Amazon Web Services Regions</a> in the Amazon Web Services General
-      Reference.</p> <p>In each Region, Amazon Web Services maintains multiple
-      Availability Zones. These Availability Zones are physically isolated from
-      each other, but are united by private, low-latency, high-throughput, and
-      highly redundant network connections. These Availability Zones enable us
-      to provide very high levels of availability and redundancy, while also
-      minimizing latency. To learn more about the number of Availability Zones
-      that are available in each Region, see <a
-      href="https://aws.amazon.com/about-aws/global-infrastructure/">Amazon Web
-      Services Global Infrastructure.</a> </p>
+      The Amazon Pinpoint SMS and Voice, version 2 API allows developers to
+      access specialized features for sending SMS messages and making voice
+      calls, expanding upon the functionalities available in the Amazon Pinpoint
+      API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Destinations
+      - Numbers
+      - Verify
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/welcome.html
       - type: OpenAPI
         url: properties/pinpoint-sms-voice-v2-openapi-original.yml
     overlays:
@@ -7184,20 +9331,26 @@ apis:
     aid: amazon-web-services:pinpoint-sms-voice-v2
   - name: Amazon EventBridge Pipes
     description: >-
-      <p>Amazon EventBridge Pipes connects event sources to targets. Pipes
-      reduces the need for specialized knowledge and integration code when
-      developing event driven architectures. This helps ensures consistency
-      across your company’s applications. With Pipes, the target can be any
-      available EventBridge target. To set up a pipe, you select the event
-      source, add optional event filtering, define optional enrichment, and
-      select the target for the event data. </p>
+      The Amazon EventBridge Pipes API seamlessly connects event sources to
+      targets, simplifying the development of event-driven architectures by
+      eliminating the need for specialized knowledge and integration code. This
+      tool ensures consistency across a company's applications by allowing any
+      available EventBridge target to be used. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Names
+      - Pipe
+      - Pipes
+      - Resources
+      - Stop
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html
       - type: OpenAPI
         url: properties/pipes-openapi-original.yml
     overlays:
@@ -7208,109 +9361,34 @@ apis:
     aid: amazon-web-services:pipes
   - name: AWS Proton
     description: >-
-      <p>This is the Proton Service API Reference. It provides descriptions,
-      syntax and usage examples for each of the <a
-      href="https://docs.aws.amazon.com/proton/latest/APIReference/API_Operations.html">actions</a>
-      and <a
-      href="https://docs.aws.amazon.com/proton/latest/APIReference/API_Types.html">data
-      types</a> for the Proton service.</p> <p>The documentation for each action
-      shows the Query API request parameters and the XML response.</p>
-      <p>Alternatively, you can use the Amazon Web Services CLI to access an
-      API. For more information, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html">Amazon
-      Web Services Command Line Interface User Guide</a>.</p> <p>The Proton
-      service is a two-pronged automation framework. Administrators create
-      service templates to provide standardized infrastructure and deployment
-      tooling for serverless and container based applications. Developers, in
-      turn, select from the available service templates to automate their
-      application or service deployments.</p> <p>Because administrators define
-      the infrastructure and tooling that Proton deploys and manages, they need
-      permissions to use all of the listed API operations.</p> <p>When
-      developers select a specific infrastructure and tooling set, Proton
-      deploys their applications. To monitor their applications that are running
-      on Proton, developers need permissions to the service <i>create</i>,
-      <i>list</i>, <i>update</i> and <i>delete</i> API operations and the
-      service instance <i>list</i> and <i>update</i> API operations.</p> <p>To
-      learn more about Proton, see the <a
-      href="https://docs.aws.amazon.com/proton/latest/userguide/Welcome.html">Proton
-      User Guide</a>.</p> <p> <b>Ensuring Idempotency</b> </p> <p>When you make
-      a mutating API request, the request typically returns a result before the
-      asynchronous workflows of the operation are complete. Operations might
-      also time out or encounter other server issues before they're complete,
-      even if the request already returned a result. This might make it
-      difficult to determine whether the request succeeded. Moreover, you might
-      need to retry the request multiple times to ensure that the operation
-      completes successfully. However, if the original request and the
-      subsequent retries are successful, the operation occurs multiple times.
-      This means that you might create more resources than you intended.</p> <p>
-      <i>Idempotency</i> ensures that an API request action completes no more
-      than one time. With an idempotent request, if the original request action
-      completes successfully, any subsequent retries complete successfully
-      without performing any further actions. However, the result might contain
-      updated information, such as the current creation status.</p> <p>The
-      following lists of APIs are grouped according to methods that ensure
-      idempotency.</p> <p> <b>Idempotent create APIs with a client token</b>
-      </p> <p>The API actions in this list support idempotency with the use of a
-      <i>client token</i>. The corresponding Amazon Web Services CLI commands
-      also support idempotency using a client token. A client token is a unique,
-      case-sensitive string of up to 64 ASCII characters. To make an idempotent
-      API request using one of these actions, specify a client token in the
-      request. We recommend that you <i>don't</i> reuse the same client token
-      for other API requests. If you don’t provide a client token for these
-      APIs, a default client token is automatically provided by SDKs.</p>
-      <p>Given a request action that has succeeded:</p> <p>If you retry the
-      request using the same client token and the same parameters, the retry
-      succeeds without performing any further actions other than returning the
-      original resource detail data in the response.</p> <p>If you retry the
-      request using the same client token, but one or more of the parameters are
-      different, the retry throws a <code>ValidationException</code> with an
-      <code>IdempotentParameterMismatch</code> error.</p> <p>Client tokens
-      expire eight hours after a request is made. If you retry the request with
-      the expired token, a new resource is created.</p> <p>If the original
-      resource is deleted and you retry the request, a new resource is
-      created.</p> <p>Idempotent create APIs with a client token:</p> <ul> <li>
-      <p>CreateEnvironmentTemplateVersion</p> </li> <li>
-      <p>CreateServiceTemplateVersion</p> </li> <li>
-      <p>CreateEnvironmentAccountConnection</p> </li> </ul> <p> <b>Idempotent
-      create APIs</b> </p> <p>Given a request action that has succeeded:</p>
-      <p>If you retry the request with an API from this group, and the original
-      resource <i>hasn't</i> been modified, the retry succeeds without
-      performing any further actions other than returning the original resource
-      detail data in the response.</p> <p>If the original resource has been
-      modified, the retry throws a <code>ConflictException</code>.</p> <p>If you
-      retry with different input parameters, the retry throws a
-      <code>ValidationException</code> with an
-      <code>IdempotentParameterMismatch</code> error.</p> <p>Idempotent create
-      APIs:</p> <ul> <li> <p>CreateEnvironmentTemplate</p> </li> <li>
-      <p>CreateServiceTemplate</p> </li> <li> <p>CreateEnvironment</p> </li>
-      <li> <p>CreateService</p> </li> </ul> <p> <b>Idempotent delete APIs</b>
-      </p> <p>Given a request action that has succeeded:</p> <p>When you retry
-      the request with an API from this group and the resource was deleted, its
-      metadata is returned in the response.</p> <p>If you retry and the resource
-      doesn't exist, the response is empty.</p> <p>In both cases, the retry
-      succeeds.</p> <p>Idempotent delete APIs:</p> <ul> <li>
-      <p>DeleteEnvironmentTemplate</p> </li> <li>
-      <p>DeleteEnvironmentTemplateVersion</p> </li> <li>
-      <p>DeleteServiceTemplate</p> </li> <li>
-      <p>DeleteServiceTemplateVersion</p> </li> <li>
-      <p>DeleteEnvironmentAccountConnection</p> </li> </ul> <p> <b>Asynchronous
-      idempotent delete APIs</b> </p> <p>Given a request action that has
-      succeeded:</p> <p>If you retry the request with an API from this group, if
-      the original request delete operation status is
-      <code>DELETE_IN_PROGRESS</code>, the retry returns the resource detail
-      data in the response without performing any further actions.</p> <p>If the
-      original request delete operation is complete, a retry returns an empty
-      response.</p> <p>Asynchronous idempotent delete APIs:</p> <ul> <li>
-      <p>DeleteEnvironment</p> </li> <li> <p>DeleteService</p> </li> </ul>
+      The Proton Service API Reference provides detailed descriptions, syntax,
+      and usage examples for the various actions and data types available within
+      the Proton service. The API documentation includes Query API request
+      parameters and XML responses for each action. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/proton/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Configurations
+      - Sync
+      - Templates
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/proton/
       - type: OpenAPI
         url: properties/proton-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/proton/features/
+      - type: Pricing
+        url: https://aws.amazon.com/proton/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/proton/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/proton/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/proton/partners/
+      - type: Features
+        url: https://aws.amazon.com/proton/features/
     overlays:
       - type: APIs.io Search
         url: overlays/proton-openapi-search.yml
@@ -7319,20 +9397,46 @@ apis:
     aid: amazon-web-services:proton
   - name: AWS Private 5G
     description: >-
-      <p>Amazon Web Services Private 5G is a managed service that makes it easy
-      to deploy, operate, and scale your own private mobile network at your
-      on-premises location. Private 5G provides the pre-configured hardware and
-      software for mobile networks, helps automate setup, and scales capacity on
-      demand to support additional devices as needed.</p>
+      The Amazon Web Services Private 5G API offers a managed solution for
+      setting up and expanding your private mobile network on-site. It includes
+      pre-configured hardware and software, simplifies setup with automation,
+      and allows for seamless scalability to accommodate more devices when
+      necessary.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/private5g/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Acknowledge
+      - Activate
+      - Configure
+      - Deactivate
+      - Device
+      - Entifiers
+      - Networks
+      - Orders
+      - Ping
+      - Plan
+      - Points
+      - Receipts
+      - Resources
+      - Sites
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/private5g/
       - type: OpenAPI
         url: properties/privatenetworks-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/private5g/features/
+      - type: Pricing
+        url: https://aws.amazon.com/private5g/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/private5g/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/private5g/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/privatenetworks-openapi-search.yml
@@ -7341,20 +9445,38 @@ apis:
     aid: amazon-web-services:privatenetworks
   - name: Amazon Polly
     description: >-
-      <p>Amazon Polly is a web service that makes it easy to synthesize speech
-      from text.</p> <p>The Amazon Polly service provides API operations for
-      synthesizing high-quality speech from plain text and Speech Synthesis
-      Markup Language (SSML), along with managing pronunciations lexicons that
-      enable you to get the best results for your application domain.</p>
+      Amazon Polly is a web service that makes it easy to synthesize speech from
+      text. The Amazon Polly service provides API operations for synthesizing
+      high-quality speech from plain text and Speech Synthesis Markup Language
+      (SSML), along with managing pronunciations lexicons that enable you to get
+      the best results for your application domain.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/polly/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Describe
+      - Lexicons
+      - Names
+      - Speech
+      - Synthesis
+      - Synthesize
+      - Tasks
+      - Voices
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/polly/
       - type: OpenAPI
         url: properties/polly-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/polly/features/
+      - type: Pricing
+        url: https://aws.amazon.com/polly/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/polly/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/polly/resources/
+      - type: Customers
+        url: https://aws.amazon.com/polly/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/polly-openapi-search.yml
@@ -7363,36 +9485,56 @@ apis:
     aid: amazon-web-services:polly
   - name: Amazon Q in Connect
     description: >-
-      <note> <p> <b>Powered by Amazon Bedrock</b>: Amazon Web Services
-      implements <a
-      href="https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html">automated
-      abuse detection</a>. Because Amazon Q in Connect is built on Amazon
-      Bedrock, users can take full advantage of the controls implemented in
-      Amazon Bedrock to enforce safety, security, and the responsible use of
-      artificial intelligence (AI).</p> </note> <p>Amazon Q in Connect is a
-      generative AI customer service assistant. It is an LLM-enhanced evolution
-      of Amazon Connect Wisdom that delivers real-time recommendations to help
-      contact center agents resolve customer issues quickly and accurately.</p>
-      <p>Amazon Q automatically detects customer intent during calls and chats
-      using conversational analytics and natural language understanding (NLU).
-      It then provides agents with immediate, real-time generative responses and
-      suggested actions, and links to relevant documents and articles. Agents
-      can also query Amazon Q directly using natural language or keywords to
-      answer customer requests.</p> <p>Use the Amazon Q in Connect APIs to
-      create an assistant and a knowledge base, for example, or manage content
-      by uploading custom files.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/connect/latest/adminguide/amazon-q-connect.html">Use
-      Amazon Q in Connect for generative AI powered agent assistance in
-      real-time</a> in the <i>Amazon Connect Administrator Guide</i>.</p>
+      The Amazon Q in Connect API is an upgraded version of Amazon Connect
+      Wisdom that utilizes generative AI to provide agents with suggested
+      responses and actions to resolve customer inquiries quickly and enhance
+      customer satisfaction. Instead of having knowledge articles, wikis, and
+      FAQs scattered across various repositories, Amazon Q in Connect integrates
+      them into one platform. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/q/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Assistants
+      - Associations
+      - Base
+      - Bases
+      - Content
+      - Contents
+      - Feedback
+      - Import
+      - Jobs
+      - Knowledge
+      - Notify
+      - Queries
+      - Received
+      - Recommendations
+      - Resources
+      - Responses
+      - Search
+      - Sessions
+      - Summaries
+      - Tags
+      - Templates
+      - URI
+      - Untag
+      - Uploads
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/q/
       - type: OpenAPI
         url: properties/qconnect-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/connect/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/connect/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/connect/resources/
+      - type: Customers
+        url: https://aws.amazon.com/connect/customers/
+      - type: Partners
+        url: https://aws.amazon.com/connect/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/qconnect-openapi-search.yml
@@ -7401,53 +9543,58 @@ apis:
     aid: amazon-web-services:qconnect
   - name: Amazon Q
     description: >-
-      <note> <p>Amazon Q is in preview release and is subject to change.</p>
-      </note> <p>This is the <i>Amazon Q (for business use)</i> API Reference.
-      Amazon Q is a fully managed, generative-AI powered enterprise chat
-      assistant that you can deploy within your organization. Amazon Q enhances
-      employee productivity by supporting key tasks such as question-answering,
-      knowledge discovery, writing email messages, summarizing text, drafting
-      document outlines, and brainstorming ideas. Users ask questions of Amazon
-      Q and get answers that are presented in a conversational manner. For an
-      introduction to the service, see the <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/what-is.html">
-      <i>Amazon Q (for business use) Developer Guide</i> </a>.</p> <p>For an
-      overview of the Amazon Q APIs, see <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/api-ref.html#api-overview">Overview
-      of Amazon Q API operations</a>.</p> <p>For information about the IAM
-      access control permissions you need to use this API, see <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/iam-roles.html">IAM
-      roles for Amazon Q</a> in the <i>Amazon Q (for business use) Developer
-      Guide</i>.</p> <p>You can use the following AWS SDKs to access Amazon Q
-      APIs:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-cpp">AWS SDK for C++</a> </p>
-      </li> <li> <p> <a href="https://docs.aws.amazon.com/sdk-for-go">AWS SDK
-      for Go</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-java">AWS SDK for Java</a> </p>
-      </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-javascript">AWS SDK for
-      JavaScript</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-net">AWS SDK for .NET</a> </p>
-      </li> <li> <p> <a href="https://docs.aws.amazon.com/pythonsdk">AWS SDK for
-      Python (Boto3)</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sdk-for-ruby">AWS SDK for Ruby</a> </p>
-      </li> </ul> <p>The following resources provide additional information
-      about using the Amazon Q API:</p> <ul> <li> <p> <i> <a
-      href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/setting-up.html">Setting
-      up for Amazon Q</a> </i> </p> </li> <li> <p> <i> <a
-      href="https://awscli.amazonaws.com/v2/documentation/api/latest/reference/qbusiness/index.html">Amazon
-      Q CLI Reference</a> </i> </p> </li> <li> <p> <i> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/amazonq.html">Amazon
-      Web Services General Reference</a> </i> </p> </li> </ul>
+      Amazon Q generates code, tests, debugs, and has multistep planning and
+      reasoning capabilities that can transform and implement new code generated
+      from developer requests. Amazon Q also makes it easier for employees to
+      get answers to questions across business data—such as company policies,
+      product information, business results, code base, employees, and many
+      other topics—by connecting to enterprise data repositories to summarize
+      the data logically, analyze trends, and engage in dialogue about the data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/q/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Batches
+      - Chat
+      - Chat Controls
+      - Configurations
+      - Controls
+      - Conversations
+      - Data
+      - Data Source
+      - Documents
+      - Experience
+      - Experiences
+      - Feedback
+      - Groups
+      - Index
+      - Indices
+      - Jobs
+      - Messages
+      - Names
+      - Plugins
+      - Resources
+      - Sources
+      - Start Sync
+      - Stop
+      - Stopsync
+      - Sync
+      - Sync Jobs
+      - Tags
+      - Untag
+      - Users
+      - Web
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/q/
       - type: OpenAPI
         url: properties/qbusiness-openapi-original.yml
+      - type: Getting Started
+        url: https://aws.amazon.com/q/getting-started/
+      - type: Customers
+        url: https://aws.amazon.com/q/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/qbusiness-openapi-search.yml
@@ -7456,40 +9603,31 @@ apis:
     aid: amazon-web-services:qbusiness
   - name: Amazon RDS Performance Insights
     description: >-
-      <fullname>Amazon RDS Performance Insights</fullname> <p>Amazon RDS
-      Performance Insights enables you to monitor and explore different
-      dimensions of database load based on data captured from a running DB
-      instance. The guide provides detailed information about Performance
-      Insights data types, parameters and errors.</p> <p>When Performance
-      Insights is enabled, the Amazon RDS Performance Insights API provides
-      visibility into the performance of your DB instance. Amazon CloudWatch
-      provides the authoritative source for Amazon Web Services service-vended
-      monitoring metrics. Performance Insights offers a domain-specific view of
-      DB load.</p> <p>DB load is measured as average active sessions.
-      Performance Insights provides the data to API consumers as a
-      two-dimensional time-series dataset. The time dimension provides DB load
-      data for each time point in the queried time range. Each time point
-      decomposes overall load in relation to the requested dimensions, measured
-      at that time point. Examples include SQL, Wait event, User, and Host.</p>
-      <ul> <li> <p>To learn more about Performance Insights and Amazon Aurora DB
-      instances, go to the <i> <a
-      href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.html">
-      Amazon Aurora User Guide</a> </i>. </p> </li> <li> <p>To learn more about
-      Performance Insights and Amazon RDS DB instances, go to the <i> <a
-      href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html">
-      Amazon RDS User Guide</a> </i>. </p> </li> <li> <p>To learn more about
-      Performance Insights and Amazon DocumentDB clusters, go to the <i> <a
-      href="https://docs.aws.amazon.com/documentdb/latest/developerguide/performance-insights.html">
-      Amazon DocumentDB Developer Guide</a> </i>.</p> </li> </ul>
+      The Amazon RDS Performance Insights API allows you to monitor and analyze
+      various aspects of database load by capturing data from a running DB
+      instance. This guide provides detailed information on Performance Insights
+      data types, parameters, and errors. With Performance Insights enabled, the
+      API offers visibility into the performance of your DB instance. Amazon
+      CloudWatch serves as the source for monitoring metrics, while Performance
+      Insights provides a specialized view of DB load, measured in average
+      active sessions. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/rds/performance-insights/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/rds/performance-insights/
       - type: OpenAPI
         url: properties/pi-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/rds/performance-insights/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/rds/performance-insights/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/rds/performance-insights/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/pi-openapi-search.yml
@@ -7498,38 +9636,23 @@ apis:
     aid: amazon-web-services:pi
   - name: AWS Price List
     description: >-
-      <p>The Amazon Web Services Price List API is a centralized and convenient
-      way to programmatically query Amazon Web Services for services, products,
-      and pricing information. The Amazon Web Services Price List uses
-      standardized product attributes such as <code>Location</code>,
-      <code>Storage Class</code>, and <code>Operating System</code>, and
-      provides prices at the SKU level. You can use the Amazon Web Services
-      Price List to do the following:</p> <ul> <li> <p>Build cost control and
-      scenario planning tools</p> </li> <li> <p>Reconcile billing data</p> </li>
-      <li> <p>Forecast future spend for budgeting purposes</p> </li> <li>
-      <p>Provide cost benefit analysis that compare your internal workloads with
-      Amazon Web Services</p> </li> </ul> <p>Use <code>GetServices</code>
-      without a service code to retrieve the service codes for all Amazon Web
-      Services, then <code>GetServices</code> with a service code to retrieve
-      the attribute names for that service. After you have the service code and
-      attribute names, you can use <code>GetAttributeValues</code> to see what
-      values are available for an attribute. With the service code and an
-      attribute name and value, you can use <code>GetProducts</code> to find
-      specific products that you're interested in, such as an
-      <code>AmazonEC2</code> instance, with a <code>Provisioned IOPS</code>
-      <code>volumeType</code>.</p> <p>For more information, see <a
-      href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html">Using
-      the Amazon Web Services Price List API</a> in the <i>Billing User
-      Guide</i>.</p>
+      The Amazon Web Services Price List API is a user-friendly tool that allows
+      you to access Amazon Web Services' services, products, and pricing
+      information through programmatic queries. The API utilizes standardized
+      product attributes like Location, Storage Class, and Operating System, and
+      provides pricing at the SKU level. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/pricing/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Prices
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/pricing/
       - type: OpenAPI
         url: properties/pricing-openapi-original.yml
+      - type: Cost-optimization
+        url: https://aws.amazon.com/pricing/cost-optimization/
     overlays:
       - type: APIs.io Search
         url: overlays/pricing-openapi-search.yml
@@ -7538,59 +9661,111 @@ apis:
     aid: amazon-web-services:pricing
   - name: Amazon QLDB
     description: >-
-      <p>The transactional data APIs for Amazon QLDB</p> <note> <p>Instead of
-      interacting directly with this API, we recommend using the QLDB driver or
-      the QLDB shell to execute data transactions on a ledger.</p> <ul> <li>
-      <p>If you are working with an AWS SDK, use the QLDB driver. The driver
-      provides a high-level abstraction layer above this <i>QLDB Session</i>
-      data plane and manages <code>SendCommand</code> API calls for you. For
-      information and a list of supported programming languages, see <a
-      href="https://docs.aws.amazon.com/qldb/latest/developerguide/getting-started-driver.html">Getting
-      started with the driver</a> in the <i>Amazon QLDB Developer Guide</i>.</p>
-      </li> <li> <p>If you are working with the AWS Command Line Interface (AWS
-      CLI), use the QLDB shell. The shell is a command line interface that uses
-      the QLDB driver to interact with a ledger. For information, see <a
-      href="https://docs.aws.amazon.com/qldb/latest/developerguide/data-shell.html">Accessing
-      Amazon QLDB using the QLDB shell</a>.</p> </li> </ul> </note>
+      The recommended way to interact with the transactional data APIs for
+      Amazon QLDB is to use the QLDB driver or the QLDB shell for executing data
+      transactions on a ledger. When working with an AWS SDK, it is advised to
+      use the QLDB driver, which abstracts the data plane and manages
+      SendCommand API calls.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/qldb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Command
+      - Send
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/qldb/
       - type: OpenAPI
         url: properties/qldb-session-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/qldb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/qldb/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/qldb/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/qldb/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/qldb/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/qldb-session-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/qldb-session-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:qldb-session
-  - name: AWS Resource Access Manager
+  - name: Resource Access Manager
     description: >-
-      <p>This is the <i>Resource Access Manager API Reference</i>. This
-      documentation provides descriptions and syntax for each of the actions and
-      data types in RAM. RAM is a service that helps you securely share your
-      Amazon Web Services resources to other Amazon Web Services accounts. If
-      you use Organizations to manage your accounts, then you can share your
-      resources with your entire organization or to organizational units (OUs).
-      For supported resource types, you can also share resources with individual
-      Identity and Access Management (IAM) roles and users. </p> <p>To learn
-      more about RAM, see the following resources:</p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/ram">Resource Access Manager product page</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/ram/latest/userguide/">Resource Access
-      Manager User Guide</a> </p> </li> </ul>
+      The Resource Access Manager API Reference is a comprehensive guide that
+      details all actions and data types available in RAM. RAM is a service
+      designed to facilitate secure resource sharing between different Amazon
+      Web Services accounts. This documentation provides users with the
+      necessary information to effectively utilize RAM's features, including the
+      ability to share resources with entire Organizations or specific
+      organizational units. Additionally, supported resource types can be shared
+      with individual IAM roles and users. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/ram/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accept
+      - Accept Resource Share Invitation
+      - Associate
+      - Associate Resource Share
+      - Associate Resource Share Permission
+      - Associations
+      - Default
+      - Disassociate
+      - Disassociate Resource Share
+      - Disassociate Resource Share Permissions
+      - Enable
+      - Enable Sharing
+      - Invitation
+      - Invitations
+      - Organizations
+      - Pending
+      - Pending Invitation Resources
+      - Permission
+      - Permission Associations
+      - Permission Verions
+      - Permission Version
+      - Permission Versions
+      - Permissions
+      - Policies
+      - Principals
+      - Promote
+      - Promote Permission From Policy
+      - Promote Resource Share From Policy
+      - Reject
+      - Reject Resource Share Invitations
+      - Replace
+      - Replace Permission Associations
+      - Resource Policies
+      - Resource Share
+      - Resource Share Associations
+      - Resource Share Invitations
+      - Resource Share Permissions
+      - Resource Shares
+      - Resource Types
+      - Resources
+      - Set Default Permission Versions
+      - Sets
+      - Share
+      - Shares
+      - Sharing
+      - Tag Resources
+      - Tags
+      - Types
+      - Untag
+      - Updateresourceshare
+      - Versions
+      - Work
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/ram/
       - type: OpenAPI
         url: properties/ram-openapi-original.yml
+      - type: FAQ
+        url: https://aws.amazon.com/ram/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/ram-openapi-search.yml
@@ -7599,24 +9774,41 @@ apis:
     aid: amazon-web-services:ram
   - name: AWS RDS
     description: >-
-      <p><fullname>RDS Data API</fullname> <p>Amazon RDS provides an HTTP
-      endpoint to run SQL statements on an Amazon Aurora DB cluster. To run
-      these statements, you use the RDS Data API (Data API).</p> <p>Data API is
-      available with the following types of Aurora databases:</p> <ul> <li>
-      <p>Aurora PostgreSQL - Serverless v2, Serverless v1, and provisioned</p>
-      </li> <li> <p>Aurora MySQL - Serverless v1 only</p> </li> </ul> <p>For
-      more information about the Data API, see <a
-      href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html">Using
-      RDS Data API</a> in the <i>Amazon Aurora User Guide</i>.</p></p>
+      The RDS Data API from Amazon RDS allows users to execute SQL statements on
+      an Amazon Aurora DB cluster via an HTTP endpoint. This API is compatible
+      with various types of Aurora databases, including Aurora PostgreSQL
+      (Serverless v2, Serverless v1, and provisioned) and Aurora MySQL
+      (Serverless v1). Detailed instructions on utilizing the Data API can be
+      found in the Amazon Aurora User Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/rds/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Execute
+      - Statements
+      - Begins
+      - Transactions
+      - Commit
+      - SQL
+      - Rollback
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/rds/
       - type: OpenAPI
         url: properties/rds-data-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/rds/features/
+      - type: Pricing
+        url: https://aws.amazon.com/rds/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/rds/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/rds/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/rds/customers/
+      - type: Partners
+        url: https://aws.amazon.com/rds/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/rds-data-openapi-search.yml
@@ -7625,21 +9817,121 @@ apis:
     aid: amazon-web-services:rds-data
   - name: Amazon QuickSight
     description: >-
-      <fullname>Amazon QuickSight API Reference</fullname> <p>Amazon QuickSight
-      is a fully managed, serverless business intelligence service for the
-      Amazon Web Services Cloud that makes it easy to extend data and insights
-      to every user in your organization. This API reference contains
-      documentation for a programming interface that you can use to manage
-      Amazon QuickSight. </p>
+      Amazon QuickSight provides businesses with expansive and unified business
+      intelligence solutions. Through modern interactive dashboards, paginated
+      reports, natural language queries, and embedded analytics, all users can
+      access reliable data to meet their analytical needs. With Amazon Q
+      integration, business analysts and users can quickly build, discover, and
+      share valuable insights using natural language, ultimately making informed
+      decisions faster.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/quicksight/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Alias
+      - Aliases
+      - Analysis
+      - Anonymous
+      - Assets
+      - Assignment
+      - Assignments
+      - Bundles
+      - Configurations
+      - Connections
+      - Custom
+      - Customizations
+      - Dashboard
+      - Dashboards
+      - Data
+      - Datasets
+      - Definitions
+      - Describe
+      - Embed
+      - Entities
+      - Exports
+      - Folders
+      - Generate
+      - Groups
+      - IAM
+      - IAMPolicy
+      - IP
+      - Identity
+      - Import
+      - Ingestions
+      - Jobs
+      - Linked
+      - Links
+      - Members
+      - Memberships
+      - Names
+      - Namespaces
+      - Numbers
+      - Permission
+      - Permissions
+      - Policies
+      - Principals
+      - Propagation
+      - Properties
+      - Public
+      - Published
+      - Refresh
+      - Register
+      - Registered
+      - Resolved
+      - Resources
+      - Restore
+      - Restrictions
+      - Results
+      - Roles
+      - Schedules
+      - Search
+      - Services
+      - Sessions
+      - Sets
+      - Settings
+      - Sharing
+      - Snapshots
+      - Sources
+      - Subscriptions
+      - Tags
+      - Templates
+      - Theme
+      - Themes
+      - Topics
+      - Types
+      - URL
+      - Untag
+      - Users
+      - VPC
+      - VPCConnection
+      - VPCConnections
+      - Versions
+      - Vpcconnection
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/quicksight/
       - type: OpenAPI
         url: properties/quicksight-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/quicksight/features/
+      - type: Gallery
+        url: https://aws.amazon.com/quicksight/gallery/
+      - type: Pricing
+        url: https://aws.amazon.com/quicksight/pricing/
+      - type: Customers
+        url: https://aws.amazon.com/quicksight/customers/
+      - type: Partners
+        url: https://aws.amazon.com/quicksight/partners/
+      - type: Blogs
+        url: https://aws.amazon.com/quicksight/resources/blog/
+      - type: Case Studies
+        url: https://aws.amazon.com/quicksight/resources/case_studies/
+      - type: Learning Resources
+        url: https://aws.amazon.com/quicksight/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/quicksight/resources/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/quicksight-openapi-search.yml
@@ -7648,39 +9940,47 @@ apis:
     aid: amazon-web-services:quicksight
   - name: Amazon Redshift
     description: >-
-      <fullname>Amazon Redshift</fullname> <p> <b>Overview</b> </p> <p>This is
-      an interface reference for Amazon Redshift. It contains documentation for
-      one of the programming or command line interfaces you can use to manage
-      Amazon Redshift clusters. Note that Amazon Redshift is asynchronous, which
-      means that some interfaces may require techniques, such as polling or
-      asynchronous callback handlers, to determine when a command has been
-      applied. In this reference, the parameter descriptions indicate whether a
-      change is applied immediately, on the next instance reboot, or during the
-      next maintenance window. For a summary of the Amazon Redshift cluster
-      management interfaces, go to <a
-      href="https://docs.aws.amazon.com/redshift/latest/mgmt/using-aws-sdk.html">Using
-      the Amazon Redshift Management Interfaces</a>.</p> <p>Amazon Redshift
-      manages all the work of setting up, operating, and scaling a data
-      warehouse: provisioning capacity, monitoring and backing up the cluster,
-      and applying patches and upgrades to the Amazon Redshift engine. You can
-      focus on using your data to acquire new insights for your business and
-      customers.</p> <p>If you are a first-time user of Amazon Redshift, we
-      recommend that you begin by reading the <a
-      href="https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html">Amazon
-      Redshift Getting Started Guide</a>.</p> <p>If you are a database
-      developer, the <a
-      href="https://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon
-      Redshift Database Developer Guide</a> explains how to design, build,
-      query, and maintain the databases that make up your data warehouse. </p>
+      Amazon Redshift is a comprehensive data warehouse solution offered by
+      Amazon Web Services. This API reference provides documentation for the
+      various programming and command line interfaces available for managing
+      Amazon Redshift clusters. It is important to note that Amazon Redshift
+      operates asynchronously, requiring techniques such as polling or
+      asynchronous callback handlers to track the status of commands. The
+      parameter descriptions in this reference specify whether a change takes
+      effect immediately, upon the next instance reboot, or during the next
+      maintenance window. Amazon Redshift handles tasks such as provisioning
+      capacity, monitoring, backup, and applying patches and upgrades to the
+      engine, allowing users to focus on leveraging their data for business
+      insights.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/redshift/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Partners
+      - Status
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/redshift/
       - type: OpenAPI
         url: properties/redshift-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/redshift/features/
+      - type: Pricing
+        url: https://aws.amazon.com/redshift/pricing/
+      - type: Customer Success
+        url: https://aws.amazon.com/redshift/customer-success/
+      - type: Solutions
+        url: https://aws.amazon.com/redshift/solutions/
+      - type: Resources
+        url: https://aws.amazon.com/redshift/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/redshift/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/redshift/faqs/
+      - type: Migrations
+        url: https://aws.amazon.com/big-data/datalakes-and-analytics/migrations/
+      - type: Partners
+        url: https://aws.amazon.com/redshift/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/redshift-openapi-search.yml
@@ -7689,225 +9989,100 @@ apis:
     aid: amazon-web-services:redshift
   - name: AWS Recycle Bin
     description: >-
-      <p>This is the <i>Recycle Bin API Reference</i>. This documentation
-      provides descriptions and syntax for each of the actions and data types in
-      Recycle Bin.</p> <p>Recycle Bin is a resource recovery feature that
-      enables you to restore accidentally deleted snapshots and EBS-backed AMIs.
-      When using Recycle Bin, if your resources are deleted, they are retained
-      in the Recycle Bin for a time period that you specify.</p> <p>You can
-      restore a resource from the Recycle Bin at any time before its retention
-      period expires. After you restore a resource from the Recycle Bin, the
-      resource is removed from the Recycle Bin, and you can then use it in the
-      same way you use any other resource of that type in your account. If the
-      retention period expires and the resource is not restored, the resource is
-      permanently deleted from the Recycle Bin and is no longer available for
-      recovery. For more information about Recycle Bin, see <a
-      href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recycle-bin.html">
-      Recycle Bin</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.</p>
+      This is the API Reference for Recycle Bin, a feature that allows you to
+      recover accidentally deleted snapshots and EBS-backed AMIs. The
+      documentation provides detailed descriptions and syntax for each action
+      and data type within Recycle Bin. When you use Recycle Bin, any deleted
+      resources are stored in the bin for a specified time period. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/recyclebin/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Locks
+      - Resources
+      - Rules
+      - Tags
+      - Unlock
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/recyclebin/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/rbin-openapi-original.yml
+      - type: User Guide
+        url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recycle-bin.html
+      - type: Command Line Interface
+        url: https://docs.aws.amazon.com/cli/latest/reference/rbin/index.html
     overlays:
       - type: APIs.io Search
         url: overlays/rbin-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/rbin-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rbin
-  - name: Amazon Redshift Data
+  - name: Amazon Redshift
     description: >-
-      <p>You can use the Amazon Redshift Data API to run queries on Amazon
-      Redshift tables. You can run SQL statements, which are committed if the
-      statement succeeds. </p> <p>For more information about the Amazon Redshift
-      Data API and CLI usage examples, see <a
-      href="https://docs.aws.amazon.com/redshift/latest/mgmt/data-api.html">Using
-      the Amazon Redshift Data API</a> in the <i>Amazon Redshift Management
-      Guide</i>. </p>
+      Utilize the Amazon Redshift Data API to execute queries on Amazon Redshift
+      tables by running SQL statements. Successful statements will be committed.
+      Refer to the Amazon Redshift Management Guide for further details on the
+      Amazon Redshift Data API and CLI usage examples.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/redshift/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Tables
+      - Data
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/redshift/
       - type: OpenAPI
         url: properties/redshift-data-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/redshift/features/
+      - type: Pricing
+        url: https://aws.amazon.com/redshift/pricing/
+      - type: Customer Success
+        url: https://aws.amazon.com/redshift/customer-success/
+      - type: Solutions
+        url: https://aws.amazon.com/redshift/solutions/
     overlays:
       - type: APIs.io Search
         url: overlays/redshift-data-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/redshift-data-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:redshift-data
-  - name: AWS Rekognition
+  - name: Amazon Rekognition
     description: >-
-      <p>This is the API Reference for <a
-      href="https://docs.aws.amazon.com/rekognition/latest/dg/images.html">Amazon
-      Rekognition Image</a>, <a
-      href="https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/what-is.html">Amazon
-      Rekognition Custom Labels</a>, <a
-      href="https://docs.aws.amazon.com/rekognition/latest/dg/video.html">Amazon
-      Rekognition Stored Video</a>, <a
-      href="https://docs.aws.amazon.com/rekognition/latest/dg/streaming-video.html">Amazon
-      Rekognition Streaming Video</a>. It provides descriptions of actions, data
-      types, common parameters, and common errors.</p> <p> <b>Amazon Rekognition
-      Image</b> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_AssociateFaces.html">AssociateFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CompareFaces.html">CompareFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateCollection.html">CreateCollection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateUser.html">CreateUser</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteCollection.html">DeleteCollection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteFaces.html">DeleteFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteUser.html">DeleteUser</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeCollection.html">DescribeCollection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectFaces.html">DetectFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectLabels.html">DetectLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectModerationLabels.html">DetectModerationLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectProtectiveEquipment.html">DetectProtectiveEquipment</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectText.html">DetectText</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DisassociateFaces.html">DisassociateFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetCelebrityInfo.html">GetCelebrityInfo</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetMediaAnalysisJob.html">GetMediaAnalysisJob</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_IndexFaces.html">IndexFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListCollections.html">ListCollections</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListMediaAnalysisJob.html">ListMediaAnalysisJob</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListFaces.html">ListFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListFaces.html">ListUsers</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RecognizeCelebrities.html">RecognizeCelebrities</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFaces.html">SearchFaces</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFacesByImage.html">SearchFacesByImage</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchUsers.html">SearchUsers</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchUsersByImage.html">SearchUsersByImage</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartMediaAnalysisJob.html">StartMediaAnalysisJob</a>
-      </p> </li> </ul> <p> <b>Amazon Rekognition Custom Labels</b> </p> <ul>
-      <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CopyProjectVersion.html">CopyProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateDataset.html">CreateDataset</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateProject.html">CreateProject</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateProjectVersion.html">CreateProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteDataset.html">DeleteDataset</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProject.html">DeleteProject</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectPolicy.html">DeleteProjectPolicy</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectVersion.html">DeleteProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeDataset.html">DescribeDataset</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjects.html">DescribeProjects</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjectVersions.html">DescribeProjectVersions</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectCustomLabels.html">DetectCustomLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DistributeDatasetEntries.html">DistributeDatasetEntries</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListDatasetEntries.html">ListDatasetEntries</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListDatasetLabels.html">ListDatasetLabels</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListProjectPolicies.html">ListProjectPolicies</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_PutProjectPolicy.html">PutProjectPolicy</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartProjectVersion.html">StartProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopProjectVersion.html">StopProjectVersion</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_UpdateDatasetEntries.html">UpdateDatasetEntries</a>
-      </p> </li> </ul> <p> <b>Amazon Rekognition Video Stored Video</b> </p>
-      <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetCelebrityRecognition.html">GetCelebrityRecognition</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetContentModeration.html">GetContentModeration</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetFaceDetection.html">GetFaceDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetFaceSearch.html">GetFaceSearch</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetLabelDetection.html">GetLabelDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetPersonTracking.html">GetPersonTracking</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetSegmentDetection.html">GetSegmentDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetTextDetection.html">GetTextDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartCelebrityRecognition.html">StartCelebrityRecognition</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartContentModeration.html">StartContentModeration</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartFaceDetection.html">StartFaceDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartFaceSearch.html">StartFaceSearch</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartLabelDetection.html">StartLabelDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartPersonTracking.html">StartPersonTracking</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartSegmentDetection.html">StartSegmentDetection</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartTextDetection.html">StartTextDetection</a>
-      </p> </li> </ul> <p> <b>Amazon Rekognition Video Streaming Video</b> </p>
-      <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor.html">CreateStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteStreamProcessor.html">DeleteStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeStreamProcessor.html">DescribeStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListStreamProcessors.html">ListStreamProcessors</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartStreamProcessor.html">StartStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopStreamProcessor.html">StopStreamProcessor</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/rekognition/latest/APIReference/API_UpdateStreamProcessor.html">UpdateStreamProcessor</a>
-      </p> </li> </ul>
+      The Amazon Rekognition API provides endpoints for Amazon Rekognition
+      Image, Amazon Rekognition Custom Labels, Amazon Rekognition Stored Video,
+      and Amazon Rekognition Streaming Video. The API includes actions such as
+      detecting faces, labels, text, and celebrities, as well as functionalities
+      for creating collections, comparing faces, analyzing video content, and
+      managing datasets and projects. Common parameters and errors are also
+      documented to assist developers in integrating this API into their
+      applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/rekognition/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Processor
+      - Stream
+      - Machine Learning
+      - Videos
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/rekognition/
       - type: OpenAPI
         url: properties/rekognition-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/rekognition/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/rekognition/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/rekognition/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/rekognition/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/rekognition-openapi-search.yml
@@ -7916,76 +10091,87 @@ apis:
     aid: amazon-web-services:rekognition
   - name: Amazon Redshift Serverless
     description: >-
-      <p>This is an interface reference for Amazon Redshift Serverless. It
-      contains documentation for one of the programming or command line
-      interfaces you can use to manage Amazon Redshift Serverless. </p>
-      <p>Amazon Redshift Serverless automatically provisions data warehouse
-      capacity and intelligently scales the underlying resources based on
-      workload demands. Amazon Redshift Serverless adjusts capacity in seconds
-      to deliver consistently high performance and simplified operations for
-      even the most demanding and volatile workloads. Amazon Redshift Serverless
-      lets you focus on using your data to acquire new insights for your
-      business and customers. </p> <p> To learn more about Amazon Redshift
-      Serverless, see <a
-      href="https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-whatis.html">What
-      is Amazon Redshift Serverless</a>. </p>
+      This API reference provides documentation for an interface for managing
+      Amazon Redshift Serverless. This service automatically adjusts data
+      warehouse capacity and scales resources based on workload demands,
+      delivering high performance and simplified operations. With Amazon
+      Redshift Serverless, users can focus on utilizing their data to gain new
+      insights for their business and customers.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/redshift/redshift-serverless/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Workgroup
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/redshift/redshift-serverless/
       - type: OpenAPI
         url: properties/redshift-serverless-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/redshift/features/
+      - type: Pricing
+        url: https://aws.amazon.com/redshift/pricing/
+      - type: Customer Success
+        url: https://aws.amazon.com/redshift/customer-success/
+      - type: Solutions
+        url: https://aws.amazon.com/redshift/solutions/
     overlays:
       - type: APIs.io Search
         url: overlays/redshift-serverless-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/redshift-serverless-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:redshift-serverless
-  - name: Amazon Web Services Resource Explorer
+  - name: AWS Resource Explorer
     description: >-
-      <p>Amazon Web Services Resource Explorer is a resource search and
-      discovery service. By using Resource Explorer, you can explore your
-      resources using an internet search engine-like experience. Examples of
-      resources include Amazon Relational Database Service (Amazon RDS)
-      instances, Amazon Simple Storage Service (Amazon S3) buckets, or Amazon
-      DynamoDB tables. You can search for your resources using resource metadata
-      like names, tags, and IDs. Resource Explorer can search across all of the
-      Amazon Web Services Regions in your account in which you turn the service
-      on, to simplify your cross-Region workloads.</p> <p>Resource Explorer
-      scans the resources in each of the Amazon Web Services Regions in your
-      Amazon Web Services account in which you turn on Resource Explorer.
-      Resource Explorer <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/getting-started-terms-and-concepts.html#term-index">creates
-      and maintains an index</a> in each Region, with the details of that
-      Region's resources.</p> <p>You can <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-aggregator-region.html">search
-      across all of the indexed Regions in your account</a> by designating one
-      of your Amazon Web Services Regions to contain the aggregator index for
-      the account. When you <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-aggregator-region-turn-on.html">promote
-      a local index in a Region to become the aggregator index for the
-      account</a>, Resource Explorer automatically replicates the index
-      information from all local indexes in the other Regions to the aggregator
-      index. Therefore, the Region with the aggregator index has a copy of all
-      resource information for all Regions in the account where you turned on
-      Resource Explorer. As a result, views in the aggregator index Region
-      include resources from all of the indexed Regions in your account.</p>
-      <p>For more information about Amazon Web Services Resource Explorer,
-      including how to enable and configure the service, see the <a
-      href="https://docs.aws.amazon.com/resource-explorer/latest/userguide/">Amazon
-      Web Services Resource Explorer User Guide</a>.</p>
+      Amazon Web Services Resource Explorer is a search and discovery service
+      that allows users to explore their resources using an internet search
+      engine-like experience. Examples of resources that can be searched for
+      include Amazon RDS instances, Amazon S3 buckets, and Amazon DynamoDB
+      tables. Users can search for resources using metadata such as names, tags,
+      and IDs. Resource Explorer can search across all AWS Regions in the user's
+      account to simplify cross-Region workloads. By turning on Resource
+      Explorer, users can scan and index resources in each Region, with the
+      option to designate one Region as the aggregator index for the account.
+      This aggregator index contains a copy of all resource information from all
+      Regions where Resource Explorer is enabled. Users can access a
+      comprehensive view of their resources across all indexed Regions in their
+      account. For more information on enabling and configuring Resource
+      Explorer, refer to the user guide provided by Amazon Web Services.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/resourceexplorer/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Associate
+      - Batches
+      - Configurations
+      - Default
+      - Disassociate
+      - Index
+      - Indexes
+      - Levels
+      - Members
+      - Resources
+      - Search
+      - Services
+      - Supported
+      - Tags
+      - Types
+      - Untag
+      - View
+      - Views
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/resourceexplorer/
       - type: OpenAPI
         url: properties/resource-explorer-2-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/resourceexplorer/features/
+      - type: Pricing
+        url: https://aws.amazon.com/resourceexplorer/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/resourceexplorer/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/resource-explorer-2-openapi-search.yml
@@ -7993,14 +10179,24 @@ apis:
         url: overlays/resource-explorer-2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:resource-explorer-2
   - name: AWS Resource Groups Tagging
-    description: <fullname>Resource Groups Tagging API</fullname>
+    description: >-
+      AWS supports tagging on all core infrastructure resources that incur
+      charges. Most other AWS resources also support tagging. Some resources
+      support tagging only through that service's native tagging operations, and
+      don't yet support this API. See the documentation for an individual
+      service for information about that service's native tagging operations.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
+      - Tags
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html
       - type: OpenAPI
         url: properties/resourcegroupstaggingapi-openapi-original.yml
     overlays:
@@ -8009,19 +10205,51 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/resourcegroupstaggingapi-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:resourcegroupstaggingapi
-  - name: robomaker
+  - name: AWS RoboMaker
     description: >-
-      <p>This section provides documentation for the AWS RoboMaker API
-      operations.</p>
+      AWS RoboMaker is a cloud-based simulation service that enables robotics
+      developers to run, scale, and automate simulation without managing any
+      infrastructure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/robomaker/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Batches
+      - Body
+      - Cancel
+      - Deployments
+      - Deregister
+      - Describe
+      - Exports
+      - Fleets
+      - Generation
+      - Jobs
+      - Register
+      - Resources
+      - Restart
+      - Robots
+      - Simulations
+      - Sync
+      - Tags
+      - Templates
+      - Untag
+      - Versions
+      - Worlds
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/robomaker/
       - type: OpenAPI
         url: properties/robomaker-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/robomaker/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/robomaker/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/robomaker/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/robomaker/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/robomaker-openapi-search.yml
@@ -8030,25 +10258,38 @@ apis:
     aid: amazon-web-services:robomaker
   - name: AWS re:Post Private
     description: >-
-      <p>AWS re:Post Private is a private version of AWS re:Post for enterprises
-      with Enterprise Support or Enterprise On-Ramp Support plans. It provides
-      access to knowledge and experts to accelerate cloud adoption and increase
-      developer productivity. With your organization-specific private re:Post,
-      you can build an organization-specific developer community that drives
-      efficiencies at scale and provides access to valuable knowledge resources.
-      Additionally, re:Post Private centralizes trusted AWS technical content
-      and offers private discussion forums to improve how your teams collaborate
-      internally and with AWS to remove technical obstacles, accelerate
-      innovation, and scale more efficiently in the cloud.</p>
+      re:Post Private is a tailored version of AWS re:Post designed exclusively
+      for enterprise customers with Enterprise Support or Enterprise On-Ramp
+      Support plans. This platform grants access to a wealth of knowledge and
+      expert guidance, enabling organizations to expedite their transition to
+      the cloud and enhance developer productivity.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/repost-private/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Administrative
+      - Administrator
+      - Invite
+      - Invites
+      - Register
+      - Resources
+      - Send
+      - Space
+      - Spaces
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/repost-private/
       - type: OpenAPI
         url: properties/repostspace-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/repost-private/features/
+      - type: Pricing
+        url: https://aws.amazon.com/repost-private/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/repost-private/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/repostspace-openapi-search.yml
@@ -8057,33 +10298,37 @@ apis:
     aid: amazon-web-services:repostspace
   - name: AWS Identity and Access Management Roles Anywhere
     description: >-
-      <p>Identity and Access Management Roles Anywhere provides a secure way for
-      your workloads such as servers, containers, and applications that run
-      outside of Amazon Web Services to obtain temporary Amazon Web Services
-      credentials. Your workloads can use the same IAM policies and roles you
-      have for native Amazon Web Services applications to access Amazon Web
-      Services resources. Using IAM Roles Anywhere eliminates the need to manage
-      long-term credentials for workloads running outside of Amazon Web
-      Services.</p> <p> To use IAM Roles Anywhere, your workloads must use X.509
-      certificates issued by their certificate authority (CA). You register the
-      CA with IAM Roles Anywhere as a trust anchor to establish trust between
-      your public key infrastructure (PKI) and IAM Roles Anywhere. If you don't
-      manage your own PKI system, you can use Private Certificate Authority to
-      create a CA and then use that to establish trust with IAM Roles Anywhere.
-      </p> <p>This guide describes the IAM Roles Anywhere operations that you
-      can call programmatically. For more information about IAM Roles Anywhere,
-      see the <a
-      href="https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html">IAM
-      Roles Anywhere User Guide</a>.</p>
+      The API for Identity and Access Management Roles Anywhere enables secure
+      access for workloads running outside of Amazon Web Services to obtain
+      temporary AWS credentials. By leveraging IAM policies and roles, workloads
+      can access AWS resources without the need for long-term credentials
+      management. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/roles-anywhere/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Anchor
+      - Anchors
+      - Disable
+      - Enable
+      - Notifications
+      - Profiles
+      - Reset
+      - Resources
+      - Settings
+      - Subjects
+      - Tags
+      - Trust
+      - Trust Anchors
+      - Trustanchor
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/roles-anywhere/
       - type: OpenAPI
         url: properties/rolesanywhere-openapi-original.yml
+      - type: Resources
+        url: https://aws.amazon.com/iam/roles-anywhere/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/rolesanywhere-openapi-search.yml
@@ -8092,40 +10337,28 @@ apis:
     aid: amazon-web-services:rolesanywhere
   - name: AWS Resource Groups
     description: >-
-      <p>Resource Groups lets you organize Amazon Web Services resources such as
-      Amazon Elastic Compute Cloud instances, Amazon Relational Database Service
-      databases, and Amazon Simple Storage Service buckets into groups using
-      criteria that you define as tags. A resource group is a collection of
-      resources that match the resource types specified in a query, and share
-      one or more tags or portions of tags. You can create a group of resources
-      based on their roles in your cloud infrastructure, lifecycle stages,
-      regions, application layers, or virtually any criteria. Resource Groups
-      enable you to automate management tasks, such as those in Amazon Web
-      Services Systems Manager Automation documents, on tag-related resources in
-      Amazon Web Services Systems Manager. Groups of tagged resources also let
-      you quickly view a custom console in Amazon Web Services Systems Manager
-      that shows Config compliance and other monitoring data about member
-      resources.</p> <p>To create a resource group, build a resource query, and
-      specify tags that identify the criteria that members of the group have in
-      common. Tags are key-value pairs.</p> <p>For more information about
-      Resource Groups, see the <a
-      href="https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html">Resource
-      Groups User Guide</a>.</p> <p>Resource Groups uses a REST-compliant API
-      that you can use to perform the following types of operations.</p> <ul>
-      <li> <p>Create, Read, Update, and Delete (CRUD) operations on resource
-      groups and resource query entities</p> </li> <li> <p>Applying, editing,
-      and removing tags from resource groups</p> </li> <li> <p>Resolving
-      resource group member ARNs so they can be returned as search results</p>
-      </li> <li> <p>Getting data about resources that are members of a group</p>
-      </li> <li> <p>Searching Amazon Web Services resources based on a resource
-      query</p> </li> </ul>
+      The Resource Groups API allows users to effectively organize various
+      Amazon Web Services resources, including instances from Amazon Elastic
+      Compute Cloud, databases from Amazon Relational Database Service, and
+      buckets from Amazon Simple Storage Service. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Configurations
+      - Groups
+      - Queries
+      - Resources
+      - Search
+      - Settings
+      - Tags
+      - Ungroup
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html
       - type: OpenAPI
         url: properties/resource-groups-openapi-original.yml
     overlays:
@@ -8134,61 +10367,24 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/resource-groups-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:resource-groups
-  - name: AWS Routing Control (Recovery Cluster)
+  - name: AWS Routing Control
     description: >-
-      <p>Welcome to the Routing Control (Recovery Cluster) API Reference Guide
-      for Amazon Route 53 Application Recovery Controller.</p> <p>With Route 53
-      ARC, you can use routing control with extreme reliability to recover
-      applications by rerouting traffic across Availability Zones or Amazon Web
-      Services Regions. Routing controls are simple on/off switches hosted on a
-      highly available cluster in Route 53 ARC. A cluster provides a set of five
-      redundant Regional endpoints against which you can run API calls to get or
-      update the state of routing controls. To implement failover, you set one
-      routing control to ON and another one to OFF, to reroute traffic from one
-      Availability Zone or Amazon Web Services Region to another. </p> <p> <i>Be
-      aware that you must specify a Regional endpoint for a cluster when you
-      work with API cluster operations to get or update routing control states
-      in Route 53 ARC.</i> In addition, you must specify the US West (Oregon)
-      Region for Route 53 ARC API calls. For example, use the parameter
-      <code>--region us-west-2</code> with AWS CLI commands. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.update.api.html">
-      Get and update routing control states using the API</a> in the Amazon
-      Route 53 Application Recovery Controller Developer Guide.</p> <p>This API
-      guide includes information about the API operations for how to get and
-      update routing control states in Route 53 ARC. To work with routing
-      control in Route 53 ARC, you must first create the required components
-      (clusters, control panels, and routing controls) using the recovery
-      cluster configuration API.</p> <p>For more information about working with
-      routing control in Route 53 ARC, see the following:</p> <ul> <li>
-      <p>Create clusters, control panels, and routing controls by using API
-      operations. For more information, see the <a
-      href="https://docs.aws.amazon.com/recovery-cluster/latest/api/">Recovery
-      Control Configuration API Reference Guide for Amazon Route 53 Application
-      Recovery Controller</a>.</p> </li> <li> <p>Learn about the components in
-      recovery control, including clusters, routing controls, and control
-      panels, and how to work with Route 53 ARC in the Amazon Web Services
-      console. For more information, see <a
-      href="https://docs.aws.amazon.com/r53recovery/latest/dg/introduction-components.html#introduction-components-routing">
-      Recovery control components</a> in the Amazon Route 53 Application
-      Recovery Controller Developer Guide.</p> </li> <li> <p>Route 53 ARC also
-      provides readiness checks that continually audit resources to help make
-      sure that your applications are scaled and ready to handle failover
-      traffic. For more information about the related API operations, see the <a
-      href="https://docs.aws.amazon.com/recovery-readiness/latest/api/">Recovery
-      Readiness API Reference Guide for Amazon Route 53 Application Recovery
-      Controller</a>.</p> </li> <li> <p>For more information about creating
-      resilient applications and preparing for recovery readiness with Route 53
-      ARC, see the <a
-      href="https://docs.aws.amazon.com/r53recovery/latest/dg/">Amazon Route 53
-      Application Recovery Controller Developer Guide</a>.</p> </li> </ul>
+      Welcome to the API Reference Guide for the Routing Control (Recovery
+      Cluster) feature in Amazon Route 53 Application Recovery Controller (ARC).
+      With Route 53 ARC, you can utilize routing control to recover applications
+      by redirecting traffic across different Availability Zones or Amazon Web
+      Services Regions with high reliability. Routing controls act as simple
+      on/off switches hosted on a highly available cluster within Route 53 ARC. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Controls
+      - Routing
+      - States
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html
       - type: OpenAPI
         url: properties/route53-recovery-cluster-openapi-original.yml
     overlays:
@@ -8197,32 +10393,145 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/route53-recovery-cluster-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53-recovery-cluster
-  - name: Amazon Route 53
-    description: "<p>Amazon Route\_53 is a highly available and scalable Domain Name System (DNS) web service.</p> <p>You can use Route\_53 to:</p> <ul> <li> <p>Register domain names.</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-domain-registration.html\">How domain registration works</a>.</p> </li> <li> <p>Route internet traffic to the resources for your domain</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html\">How internet traffic is routed to your website or web application</a>.</p> </li> <li> <p>Check the health of your resources.</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html\">How Route\_53 checks the health of your resources</a>.</p> </li> </ul>"
+  - name: "Amazon Route\_53"
+    description: >-
+      Amazon Route 53, is a robust and reliable Domain Name System (DNS) web
+      service that ensures high availability and scalability for connecting user
+      requests to internet applications hosted on AWS or on-premises
+      environments.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/route53/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Accounts
+      - Activate
+      - Associate
+      - Associate VPC
+      - Authorization
+      - Authorizers VPC Association
+      - Blocks
+      - CIDR
+      - Change
+      - Checker
+      - Checker IP Ranges
+      - Checks
+      - Collections
+      - Comments
+      - Configurations
+      - Count
+      - DNS Security
+      - DNSAnswer
+      - DNSSEC
+      - Deactivate
+      - Deauthorize VPC Association
+      - Delegation
+      - Delegation Sets
+      - Disable
+      - Disassociate
+      - Disassociate VPC
+      - Enable
+      - Failure
+      - Geo
+      - Geolocation
+      - Health
+      - Health Check
+      - Hosted
+      - Hosted Zone Count
+      - Hosted Zones
+      - Hostedzonelimit
+      - IP
+      - Instances
+      - Key Signing
+      - Keys
+      - Last
+      - Last Failure Reasons
+      - Limits
+      - Locations
+      - Logging
+      - Names
+      - Policies
+      - Queries
+      - Query Logging Configurations
+      - Ranges
+      - Rblocks
+      - Rcollection
+      - Reasons
+      - Record
+      - Resources
+      - Reusable
+      - Sets
+      - Signing
+      - Status
+      - Tags
+      - Tests
+      - Traffic
+      - Traffic Policies
+      - Traffic Policy Instance Count
+      - Traffic Policy Instances
+      - Types
+      - VPC
+      - VPCAssociation
+      - VPCFrom
+      - VPCWith
+      - Versions
+      - Zones
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/route53/
       - type: OpenAPI
         url: properties/route53-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/route53/features/
+      - type: Pricing
+        url: https://aws.amazon.com/route53/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/route53/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/route53/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/route53-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/route53-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53
-  - name: AWS Route 53 Recovery Readiness
-    description: <p>Recovery readiness</p>
+  - name: Amazon Route 53 Application Recovery Controller
+    description: >-
+      The Amazon Route 53 Application Recovery Controller (Route 53 ARC) allows
+      you to monitor the readiness of your applications and resources for
+      recovery and facilitates traffic redirection between AWS Regions or away
+      from Availability Zones to support application disaster recovery efforts.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/amazonarc/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Architecture
+      - Authorization
+      - Cell
+      - Cellreadiness
+      - Cells
+      - Checks
+      - Cross Account Authorizations
+      - Groups
+      - Names
+      - Readiness
+      - Readiness Checks
+      - Recommendations
+      - Recovery
+      - Recovery Groups
+      - Recoverygroupreadiness
+      - Resource Sets
+      - Resources
+      - Rules
+      - Sets
+      - Status
+      - Summaries
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/amazonarc/
       - type: OpenAPI
         url: properties/route53-recovery-readiness-openapi-original.yml
     overlays:
@@ -8233,22 +10542,55 @@ apis:
     aid: amazon-web-services:route53-recovery-readiness
   - name: AWS Resilience Hub
     description: >-
-      <p>Resilience Hub helps you proactively prepare and protect your Amazon
-      Web Services applications from disruptions. It offers continual resiliency
-      assessment and validation that integrates into your software development
-      lifecycle. This enables you to uncover resiliency weaknesses, ensure
-      recovery time objective (RTO) and recovery point objective (RPO) targets
-      for your applications are met, and resolve issues before they are released
-      into production. </p>
+      Resilience Hub is an API designed to help you protect your Amazon Web
+      Services applications by conducting continuous resiliency assessments and
+      validations. Integrated into your software development pipeline, it
+      proactively identifies and mitigates weaknesses in your applications,
+      ensures RTO and RPO targets are met, and resolves potential issues before
+      deployment to production.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/resilience-hub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Alarm
+      - Applications
+      - Assessments
+      - Batches
+      - Compliance
+      - Components
+      - Describe
+      - Draft
+      - Drifts
+      - Import
+      - Inputs
+      - Mapping
+      - Policies
+      - Publish
+      - Recommendations
+      - Removes
+      - Resiliency
+      - Resolutions
+      - Resolve
+      - Resources
+      - Sources
+      - Status
+      - Suggested
+      - Tags
+      - Templates
+      - Tests
+      - Unsupported
+      - Untag
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/resilience-hub/
       - type: OpenAPI
         url: properties/resiliencehub-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/resilience-hub/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/resilience-hub/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/resiliencehub-openapi-search.yml
@@ -8257,15 +10599,19 @@ apis:
     aid: amazon-web-services:resiliencehub
   - name: Amazon Route 53 Domains
     description: >-
-      <p>Amazon Route 53 API actions let you register domain names and perform
-      related operations.</p>
+      The Amazon Route 53 API allows users to easily register domain names and
+      carry out various related functions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Billing
+      - View
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
       - type: OpenAPI
         url: properties/route53domains-openapi-original.yml
     overlays:
@@ -8274,48 +10620,31 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/route53domains-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53domains
-  - name: Amazon Route 53 Resolver
+  - name: AWS route53 resolver
     description: >-
-      <p>When you create a VPC using Amazon VPC, you automatically get DNS
-      resolution within the VPC from Route 53 Resolver. By default, Resolver
-      answers DNS queries for VPC domain names such as domain names for EC2
-      instances or Elastic Load Balancing load balancers. Resolver performs
-      recursive lookups against public name servers for all other domain
-      names.</p> <p>You can also configure DNS resolution between your VPC and
-      your network over a Direct Connect or VPN connection:</p> <p> <b>Forward
-      DNS queries from resolvers on your network to Route 53 Resolver</b> </p>
-      <p>DNS resolvers on your network can forward DNS queries to Resolver in a
-      specified VPC. This allows your DNS resolvers to easily resolve domain
-      names for Amazon Web Services resources such as EC2 instances or records
-      in a Route 53 private hosted zone. For more information, see <a
-      href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How
-      DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a>
-      in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally
-      forward queries from a VPC to resolvers on your network</b> </p> <p>You
-      can configure Resolver to forward queries that it receives from EC2
-      instances in your VPCs to DNS resolvers on your network. To forward
-      selected queries, you create Resolver rules that specify the domain names
-      for the DNS queries that you want to forward (such as example.com), and
-      the IP addresses of the DNS resolvers on your network that you want to
-      forward the queries to. If a query matches multiple rules (example.com,
-      acme.example.com), Resolver chooses the rule with the most specific match
-      (acme.example.com) and forwards the query to the IP addresses that you
-      specified in that rule. For more information, see <a
-      href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How
-      Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a>
-      in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC,
-      Resolver is Regional. In each Region where you have VPCs, you can choose
-      whether to forward queries from your VPCs to your network (outbound
-      queries), from your network to your VPCs (inbound queries), or both.</p>
+      Amazon Route 53 Resolver offers comprehensive functionalities for
+      efficiently resolving DNS queries across AWS, the internet, and
+      on-premises networks. It also enables secure management of DNS within your
+      Amazon Virtual Private Cloud (VPC).
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/route53/resolver/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resolvers
+      - Rules
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/route53/resolver/
       - type: OpenAPI
         url: properties/route53resolver-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/route53/features/
+      - type: Pricing
+        url: https://aws.amazon.com/route53/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/route53/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/route53/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/route53resolver-openapi-search.yml
@@ -8324,27 +10653,40 @@ apis:
     aid: amazon-web-services:route53resolver
   - name: Amazon Lex
     description: >-
-      <p>Amazon Lex provides both build and runtime endpoints. Each endpoint
-      provides a set of operations (API). Your conversational bot uses the
-      runtime API to understand user utterances (user input text or voice). For
-      example, suppose a user says "I want pizza", your bot sends this input to
-      Amazon Lex using the runtime API. Amazon Lex recognizes that the user
-      request is for the OrderPizza intent (one of the intents defined in the
-      bot). Then Amazon Lex engages in user conversation on behalf of the bot to
-      elicit required information (slot values, such as pizza size and crust
-      type), and then performs fulfillment activity (that you configured when
-      you created the bot). You use the build-time API to create and manage your
-      Amazon Lex bot. For a list of build-time operations, see the build-time
-      API, . </p>
+      Amazon Lex offers build and runtime endpoints, each with a specific set of
+      operations. Your conversational bot utilizes the runtime API to interpret
+      user input text or voice. For instance, if a user says "I want pizza," the
+      bot sends this input to Amazon Lex via the runtime API. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/lex/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alias
+      - Bots
+      - Content
+      - Conversational
+      - Names
+      - Posts
+      - Sessions
+      - Text
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/lex/
       - type: OpenAPI
         url: properties/runtimelex-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/lex/features/
+      - type: Pricing
+        url: https://aws.amazon.com/lex/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/lex/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/lex/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/lex/resources/
+      - type: Customers
+        url: https://aws.amazon.com/lex/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/runtimelex-openapi-search.yml
@@ -8353,24 +10695,36 @@ apis:
     aid: amazon-web-services:runtimelex
   - name: Amazon CloudWatch RUM
     description: >-
-      <p>With Amazon CloudWatch RUM, you can perform real-user monitoring to
-      collect client-side data about your web application performance from
-      actual user sessions in real time. The data collected includes page load
-      times, client-side errors, and user behavior. When you view this data, you
-      can see it all aggregated together and also see breakdowns by the browsers
-      and devices that your customers use.</p> <p>You can use the collected data
-      to quickly identify and debug client-side performance issues. CloudWatch
-      RUM helps you visualize anomalies in your application performance and find
-      relevant debugging data such as error messages, stack traces, and user
-      sessions. You can also use RUM to understand the range of end-user impact
-      including the number of users, geolocations, and browsers used.</p>
+      With Amazon CloudWatch RUM, you can monitor real user activities to gather
+      client-side information on your web application's performance from live
+      user sessions. This data includes load times, errors, and user actions.
+      View this data in aggregated form or broken down by browsers and devices
+      used by customers. Use this data to quickly pinpoint and resolve
+      client-side performance issues.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Application Monitors
+      - Applications
+      - Data
+      - Definitions
+      - Destinations
+      - Events
+      - Metric Destination
+      - Metrics
+      - Monitors
+      - Names
+      - Resources
+      - Rummetrics
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
       - type: OpenAPI
         url: properties/rum-openapi-original.yml
     overlays:
@@ -8379,17 +10733,37 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/rum-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:rum
-  - name: AWS Route 53 Recovery Control Configuration
+  - name: Amazon Route 53 Application Recovery Controller
     description: >-
-      <p>Recovery Control Configuration API Reference for Amazon Route 53
-      Application Recovery Controller</p>
+      The Amazon Route 53 Application Recovery Controller provides monitoring
+      and coordination for application recovery across AWS Regions and
+      Availability Zones. By streamlining the recovery process and reducing
+      manual steps, this tool helps ensure that applications and resources are
+      prepared for recovery. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/route53/application-recovery-controller/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Associated
+      - Checks
+      - Clusters
+      - Control Panels
+      - Controls
+      - Describe
+      - Panels
+      - Policies
+      - Resources
+      - Routing
+      - Routing Controls
+      - Rules
+      - Safety
+      - Safety Rules
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/route53/application-recovery-controller/
       - type: OpenAPI
         url: properties/route53-recovery-control-config-openapi-original.yml
     overlays:
@@ -8399,17 +10773,70 @@ apis:
         url: >-
           overlays/route53-recovery-control-config-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:route53-recovery-control-config
-  - name: Amazon Web Services S3
+  - name: 'AWS S3 Control '
     description: >-
-      <p> Amazon Web Services S3 Control provides access to Amazon S3 control
-      plane actions. </p>
+      Amazon Web Services S3 Control, allows users to perform control plane
+      actions on Amazon S3.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_AWS_S3_Control.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Access Grants Instances
+      - Access Point
+      - Async
+      - Blocks
+      - Buckets
+      - Center
+      - Configurations
+      - Data
+      - Data Access
+      - Describe
+      - Dissociate
+      - Entitycenter
+      - Grants
+      - Grants""
+      - Groups
+      - Identity
+      - Instances
+      - Jobs
+      - Lambda
+      - Lens
+      - Lifecycle
+      - Lifecycle Configuration
+      - Locations
+      - Multi
+      - Names
+      - Objects
+      - Operation
+      - Points
+      - Policies
+      - Policy Status
+      - Prefix
+      - Priorities
+      - Public
+      - Regional
+      - Regions
+      - Replication
+      - Resource Policies
+      - Resources
+      - Routes
+      - Status
+      - Storage
+      - Storage Lens
+      - Storage Lens Groups
+      - Submit
+      - Tagging
+      - Tags
+      - Tokens
+      - Untag
+      - Versioning
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_AWS_S3_Control.html
       - type: OpenAPI
         url: properties/s3control-openapi-original.yml
     overlays:
@@ -8418,104 +10845,197 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/s3control-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:s3control
-  - name: Amazon Augmented AI (Amazon A2I)
+  - name: Amazon Augmented AI
     description: >-
-      <p>Amazon Augmented AI (Amazon A2I) adds the benefit of human judgment to
-      any machine learning application. When an AI application can't evaluate
-      data with a high degree of confidence, human reviewers can take over. This
-      human review is called a human review workflow. To create and start a
-      human review workflow, you need three resources: a <i>worker task
-      template</i>, a <i>flow definition</i>, and a <i>human loop</i>.</p>
-      <p>For information about these resources and prerequisites for using
-      Amazon A2I, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-getting-started.html">Get
-      Started with Amazon Augmented AI</a> in the Amazon SageMaker Developer
-      Guide.</p> <p>This API reference includes information about API actions
-      and data types that you can use to interact with Amazon A2I
-      programmatically. Use this guide to:</p> <ul> <li> <p>Start a human loop
-      with the <code>StartHumanLoop</code> operation when using Amazon A2I with
-      a <i>custom task type</i>. To learn more about the difference between
-      custom and built-in task types, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-task-types-general.html">Use
-      Task Types </a>. To learn how to start a human loop using this API, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-start-human-loop.html#a2i-instructions-starthumanloop">Create
-      and Start a Human Loop for a Custom Task Type </a> in the Amazon SageMaker
-      Developer Guide.</p> </li> <li> <p>Manage your human loops. You can list
-      all human loops that you have created, describe individual human loops,
-      and stop and delete human loops. To learn more, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-monitor-humanloop-results.html">Monitor
-      and Manage Your Human Loop </a> in the Amazon SageMaker Developer
-      Guide.</p> </li> </ul> <p>Amazon A2I integrates APIs from various AWS
-      services to create and start human review workflows for those services. To
-      learn how Amazon A2I uses these APIs, see <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-api-references.html">Use
-      APIs in Amazon A2I</a> in the Amazon SageMaker Developer Guide.</p>
+      Amazon Augmented AI (Amazon A2I) enhances machine learning applications by
+      incorporating human judgment when necessary. Human reviewers can step in
+      when an AI application is unable to assess data confidently, through a
+      process known as a human review workflow. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/augmented-ai/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Describe
+      - Human
+      - Loops
+      - Names
+      - Stop
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/augmented-ai/
       - type: OpenAPI
         url: properties/sagemaker-a2i-runtime-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/augmented-ai/features/
+      - type: Pricing
+        url: https://aws.amazon.com/augmented-ai/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/augmented-ai/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/augmented-ai/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/augmented-ai/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/sagemaker-a2i-runtime-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sagemaker-a2i-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-a2i-runtime
-  - name: AWS Sagemaker
+  - name: AWS SageMaker
     description: >-
-      <p>Provides APIs for creating and managing SageMaker resources. </p>
-      <p>Other Resources:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html#first-time-user">SageMaker
-      Developer Guide</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/Welcome.html">Amazon
-      Augmented AI Runtime API Reference</a> </p> </li> </ul>
+      Amazon SageMaker is a fully managed service that provides a comprehensive
+      set of tools for high-performance, cost-effective machine learning (ML)
+      for any scenario. With SageMaker, you can create, train, and deploy ML
+      models at scale using various tools like notebooks, debuggers, profilers,
+      pipelines, MLOps, and more within a single integrated development
+      environment (IDE).
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sagemaker/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Workteam
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sagemaker/
       - type: OpenAPI
         url: properties/sagemaker-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sagemaker/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sagemaker/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/sagemaker/faqs/
+      - type: Getting Started
+        url: https://aws.amazon.com/sagemaker/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/sagemaker/resources/
+      - type: Partners
+        url: https://aws.amazon.com/sagemaker/partners/
+      - type: Customers
+        url: https://aws.amazon.com/sagemaker/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/sagemaker-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sagemaker-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker
-  - name: Amazon S3
-    description: Amazon S3 is an object storage service offering industry-leading scalability, data availability, security, and performance. Millions of customers of all sizes and industries store, manage, analyze, and protect any amount of data for virtually any use case, such as data lakes, cloud-native applications, and mobile apps. With cost-effective storage classes and easy-to-use management features, you can optimize costs, organize and analyze data, and configure fine-tuned access controls to meet specific business and compliance requirements.
+  - name: AWS S3
+    description: >-
+      The API for Amazon Simple Storage Service (Amazon S3) provides an object
+      storage solution with top-notch scalability, data availability, security,
+      and performance. It caters to customers of varying sizes and industries,
+      offering the ability to store and secure any volume of data for a wide
+      range of purposes, including data lakes, cloud-native applications, and
+      mobile apps. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/s3/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ACL
+      - Accelerate
+      - Access
+      - Analytics
+      - Attributes
+      - Blocks
+      - Buckets
+      - Buckets
+      - CORS
+      - Configurations
+      - Content
+      - Controls
+      - Copy
+      - Directory
+      - Encryption
+      - Hold
+      - Intelligent
+      - Inventory
+      - Key&select
+      - Key+?acl
+      - Key+?attributes
+      - Key+?legal
+      - Key+?restore
+      - Key+?retention
+      - Key+?tagging
+      - Key+?torrent
+      - Keys
+      - Legal
+      - Lifecycle
+      - Locations
+      - Locks
+      - Logging
+      - Metrics
+      - Multipart
+      - Notifications
+      - Objects
+      - Ownership
+      - Payments
+      - Policies
+      - Public
+      - Replication
+      - Responses
+      - Restore
+      - Retention
+      - Sessions
+      - Status
+      - Tagging
+      - Tiering
+      - Torrent
+      - Types
+      - Uploads
+      - Versioning
+      - Versions
+      - Websites
+      - Write
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/s3/
       - type: OpenAPI
         url: properties/s3-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/s3/pricing/
+      - type: Security
+        url: https://aws.amazon.com/s3/security/
+      - type: FAQ
+        url: https://aws.amazon.com/s3/faqs/
+      - type: Features
+        url: https://aws.amazon.com/s3/features/
+      - type: Getting-started
+        url: https://aws.amazon.com/s3/getting-started/
+      - type: Videos
+        url: https://aws.amazon.com/s3/videos/
+      - type: Customers
+        url: https://aws.amazon.com/s3/customers/
+      - type: Resources
+        url: https://aws.amazon.com/s3/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/s3-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/s3-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:s3
-  - name: AWS SageMaker Edge Manager Dataplane
+  - name: AWS SageMaker Edge
     description: >-
-      <p>SageMaker Edge Manager dataplane service for communicating with active
-      agents.</p>
+      The API for Amazon SageMaker Edge Manager
+      (aws.greengrass.SageMakerEdgeManager) facilitates the installation of the
+      SageMaker Edge Manager agent binary. This component enables edge device
+      model management, allowing users to optimize, secure, monitor, and
+      maintain machine learning models across fleets of edge devices. The
+      SageMaker Edge Manager component takes care of installing and managing the
+      SageMaker Edge Manager agent lifecycle on the core device. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Deployments
+      - Device
+      - Registrations
+      - Heart Beats
+      - Send
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html
       - type: OpenAPI
         url: properties/sagemaker-edge-openapi-original.yml
     overlays:
@@ -8526,26 +11046,23 @@ apis:
     aid: amazon-web-services:sagemaker-edge
   - name: Amazon SageMaker Feature Store
     description: >-
-      <p>Contains all data plane API operations and data types for the Amazon
-      SageMaker Feature Store. Use this API to put, delete, and retrieve (get)
-      features from a feature store.</p> <p>Use the following operations to
-      configure your <code>OnlineStore</code> and <code>OfflineStore</code>
-      features, and to create and manage feature groups:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFeatureGroup.html">CreateFeatureGroup</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteFeatureGroup.html">DeleteFeatureGroup</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFeatureGroup.html">DescribeFeatureGroup</a>
-      </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFeatureGroups.html">ListFeatureGroups</a>
-      </p> </li> </ul>
+      The Amazon SageMaker Feature Store is a fully managed repository
+      specifically designed for storing, sharing, and managing features for
+      machine learning (ML) models. Features are the inputs necessary for ML
+      models during both training and inference. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sagemaker/feature-store/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Record
+      - Feature
+      - Groups
+      - Names
+      - Machine Learning
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sagemaker/feature-store/
       - type: OpenAPI
         url: properties/sagemaker-featurestore-runtime-openapi-original.yml
     overlays:
@@ -8556,16 +11073,38 @@ apis:
           overlays/sagemaker-featurestore-runtime-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-featurestore-runtime
   - name: Amazon S3 on Outposts
-    description: <p>Amazon S3 on Outposts provides access to S3 on Outposts operations.</p>
+    description: >-
+      Amazon S3 on Outposts delivers object storage to your on-premises AWS
+      Outposts environment to meet local data processing and data residency
+      needs. Using the S3 APIs and features, S3 on Outposts makes it easy to
+      store, secure, tag, retrieve, report on, and control access to the data on
+      your Outpost. AWS Outposts is a fully managed service that extends AWS
+      infrastructure, services, and tools to virtually any data center,
+      co-location space, or on-premises facility for a truly consistent hybrid
+      experience
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/s3/outposts/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Endpoints
+      - Outposts
+      - Shared
+      - Storage
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/s3/outposts/
       - type: OpenAPI
         url: properties/s3outposts-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/outposts/rack/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/outposts/rack/resources/
+      - type: Getting Started
+        url: https://aws.amazon.com/outposts/rack/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/outposts/rack/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/outposts/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/s3outposts-openapi-search.yml
@@ -8574,18 +11113,20 @@ apis:
     aid: amazon-web-services:s3outposts
   - name: Amazon SageMaker Metrics
     description: >-
-      <p>Contains all data plane API operations and data types for Amazon
-      SageMaker Metrics. Use these APIs to put and retrieve (get) features
-      related to your training run.</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_metrics_BatchPutMetrics.html">BatchPutMetrics</a>
-      </p> </li> </ul>
+      Contains all data plane API operations and data types for Amazon SageMaker
+      Metrics. Use these APIs to put and retrieve (get) features related to your
+      training run.    BatchPutMetrics
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Metrics
+      - Data
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html
       - type: OpenAPI
         url: properties/sagemaker-metrics-openapi-original.yml
     overlays:
@@ -8594,19 +11135,51 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sagemaker-metrics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sagemaker-metrics
-  - name: AWS SageMaker Geospatial
+  - name: Geospatial ML with Amazon SageMaker
     description: >-
-      <p>Provides APIs for creating and managing SageMaker geospatial
-      resources.</p>
+      Amazon SageMaker offers specialized machine learning features tailored for
+      geospatial data analysis. With this API, users can easily create, train,
+      and deploy ML models using geospatial data sources. Additionally, the API
+      provides access to pre-built processing operations, pretrained ML models,
+      and visualization tools, enabling users to run geospatial ML efficiently
+      and on a large scale.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sagemaker/geospatial/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Collections
+      - Data
+      - Earth
+      - Enrichment
+      - Exports
+      - Jobs
+      - Machine Learning
+      - Models
+      - Observation
+      - Raster
+      - Resources
+      - Search
+      - Stop
+      - Tags
+      - Tiles
+      - Untag
+      - Vectors
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sagemaker/geospatial/
       - type: OpenAPI
         url: properties/sagemaker-geospatial-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sagemaker/geospatial/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sagemaker/geospatial/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/sagemaker/geospatial/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/sagemaker/geospatial/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/sagemaker/geospatial/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/sagemaker-geospatial-openapi-search.yml
@@ -8615,21 +11188,38 @@ apis:
     aid: amazon-web-services:sagemaker-geospatial
   - name: AWS Savings Plans
     description: >-
-      <p>Savings Plans are a pricing model that offer significant savings on AWS
-      usage (for example, on Amazon EC2 instances). You commit to a consistent
-      amount of usage, in USD per hour, for a term of 1 or 3 years, and receive
-      a lower price for that usage. For more information, see the <a
-      href="https://docs.aws.amazon.com/savingsplans/latest/userguide/">AWS
-      Savings Plans User Guide</a>.</p>
+      Savings Plans is a flexible pricing model that can help you reduce your
+      bill by up to 72% compared to On-Demand prices, in exchange for a one- or
+      three-year hourly spend commitment. AWS offers three types of Savings
+      Plans: Compute Savings Plans, EC2 Instance Savings Plans, and Amazon
+      SageMaker.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/savingsplans/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Describe
+      - Offerings
+      - Plan
+      - Plans
+      - Queued
+      - Rates
+      - Resources
+      - Savings
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/savingsplans/
       - type: OpenAPI
         url: properties/savingsplans-openapi-original.yml
+      - type: FAQ
+        url: https://aws.amazon.com/savingsplans/faq/
+      - type: Compute-pricing
+        url: https://aws.amazon.com/savingsplans/compute-pricing/
+      - type: Ml-pricing
+        url: https://aws.amazon.com/savingsplans/ml-pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/savingsplans/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/savingsplans-openapi-search.yml
@@ -8637,11 +11227,37 @@ apis:
         url: overlays/savingsplans-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:savingsplans
   - name: Amazon EventBridge Schema Registry
-    description: <p>Amazon EventBridge Schema Registry</p>
+    description: >-
+      EventBridge offers pre-defined schemas for events generated by AWS
+      services, but you can also create custom schemas or infer them from events
+      on an event bus. Once you have a schema, you can download code bindings
+      for popular programming languages to accelerate development. You can
+      manage schemas and work with code bindings from the EventBridge console,
+      API, or directly in your IDE using AWS toolkits.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schema.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Binding
+      - Code
+      - Discover
+      - Discovered
+      - Discoverers
+      - Events
+      - Exports
+      - Languages
+      - Names
+      - Policies
+      - Registries
+      - Resources
+      - Schemas
+      - Search
+      - Sources
+      - Stop
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
         url: https://example.com
@@ -8655,19 +11271,26 @@ apis:
     aid: amazon-web-services:schemas
   - name: Amazon EventBridge Scheduler
     description: >-
-      <p> Amazon EventBridge Scheduler is a serverless scheduler that allows you
-      to create, run, and manage tasks from one central, managed service.
-      EventBridge Scheduler delivers your tasks reliably, with built-in
-      mechanisms that adjust your schedules based on the availability of
-      downstream targets. The following reference lists the available API
-      actions, and data types for EventBridge Scheduler. </p>
+      The Amazon EventBridge Scheduler API is a serverless tool for scheduling
+      and managing tasks in one centralized service. It reliably delivers tasks
+      and adjusts schedules based on downstream target availability. This
+      reference provides a list of available API actions and data types for
+      EventBridge Scheduler.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/eventbridge/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Events
+      - Groups
+      - Names
+      - Resources
+      - Schedules
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/eventbridge/
       - type: OpenAPI
         url: properties/scheduler-openapi-original.yml
     overlays:
@@ -8678,30 +11301,31 @@ apis:
     aid: amazon-web-services:scheduler
   - name: Amazon SimpleDB
     description: >-
-      Amazon SimpleDB is a web service providing the core database functions of
-      data indexing and querying in the cloud. By offloading the time and effort
-      associated with building and operating a web-scale database, SimpleDB
-      provides developers the freedom to focus on application development. <p> A
-      traditional, clustered relational database requires a sizable upfront
-      capital outlay, is complex to design, and often requires extensive and
-      repetitive database administration. Amazon SimpleDB is dramatically
-      simpler, requiring no schema, automatically indexing your data and
-      providing a simple API for storage and access. This approach eliminates
-      the administrative burden of data modeling, index maintenance, and
-      performance tuning. Developers gain access to this functionality within
-      Amazon's proven computing environment, are able to scale instantly, and
-      pay only for what they use. </p> <p> Visit <a
-      href="http://aws.amazon.com/simpledb/">http://aws.amazon.com/simpledb/</a>
-      for more information. </p>
+      This API, Amazon SimpleDB, is a cloud-based web service that offers
+      essential database functionalities such as data indexing and querying. By
+      handling the complex tasks of managing a web-scale database, SimpleDB
+      empowers developers to concentrate on developing applications without
+      worrying about database operations. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/simpledb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Databases
+      - SQL
+      - Selects
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/simpledb/
       - type: OpenAPI
         url: properties/sdb-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/simpledb/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/simpledb/getting-started/
+      - type: Developer-resources
+        url: https://aws.amazon.com/simpledb/developer-resources/
+      - type: FAQ
+        url: https://aws.amazon.com/simpledb/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/sdb-openapi-search.yml
@@ -8710,50 +11334,34 @@ apis:
     aid: amazon-web-services:sdb
   - name: Amazon Web Services Secrets Manager
     description: >-
-      <fullname>Amazon Web Services Secrets Manager</fullname> <p>Amazon Web
-      Services Secrets Manager provides a service to enable you to store,
-      manage, and retrieve, secrets.</p> <p>This guide provides descriptions of
-      the Secrets Manager API. For more information about using this service,
-      see the <a
-      href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/introduction.html">Amazon
-      Web Services Secrets Manager User Guide</a>.</p> <p> <b>API Version</b>
-      </p> <p>This version of the Secrets Manager API Reference documents the
-      Secrets Manager API version 2017-10-17.</p> <p>For a list of endpoints,
-      see <a
-      href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/asm_access.html#endpoints">Amazon
-      Web Services Secrets Manager endpoints</a>.</p> <p> <b>Support and
-      Feedback for Amazon Web Services Secrets Manager</b> </p> <p>We welcome
-      your feedback. Send your comments to <a
-      href="mailto:awssecretsmanager-feedback@amazon.com">awssecretsmanager-feedback@amazon.com</a>,
-      or post your feedback and questions in the <a
-      href="http://forums.aws.amazon.com/forum.jspa?forumID=296">Amazon Web
-      Services Secrets Manager Discussion Forum</a>. For more information about
-      the Amazon Web Services Discussion Forums, see <a
-      href="http://forums.aws.amazon.com/help.jspa">Forums Help</a>.</p> <p>
-      <b>Logging API Requests</b> </p> <p>Amazon Web Services Secrets Manager
-      supports Amazon Web Services CloudTrail, a service that records Amazon Web
-      Services API calls for your Amazon Web Services account and delivers log
-      files to an Amazon S3 bucket. By using information that's collected by
-      Amazon Web Services CloudTrail, you can determine the requests
-      successfully made to Secrets Manager, who made the request, when it was
-      made, and so on. For more about Amazon Web Services Secrets Manager and
-      support for Amazon Web Services CloudTrail, see <a
-      href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitoring.html#monitoring_cloudtrail">Logging
-      Amazon Web Services Secrets Manager Events with Amazon Web Services
-      CloudTrail</a> in the <i>Amazon Web Services Secrets Manager User
-      Guide</i>. To learn more about CloudTrail, including enabling it and find
-      your log files, see the <a
-      href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/what_is_cloud_trail_top_level.html">Amazon
-      Web Services CloudTrail User Guide</a>.</p>
+      The AWS Secrets Manager API allows users to securely manage, fetch, and
+      update database credentials, API keys, and other sensitive information at
+      various stages of their existence.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/secrets-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Policies
+      - Resources
+      - Validate
+      - Secrets
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/secrets-manager/
       - type: OpenAPI
         url: properties/secretsmanager-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/secrets-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/secrets-manager/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/secrets-manager/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/secrets-manager/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/secrets-manager/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/secrets-manager/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/secretsmanager-openapi-search.yml
@@ -8762,36 +11370,37 @@ apis:
     aid: amazon-web-services:secretsmanager
   - name: AWS Serverless Application Repository
     description: >-
-      <p>The AWS Serverless Application Repository makes it easy for developers
-      and enterprises to quickly find
-       and deploy serverless applications in the AWS Cloud. For more information about serverless applications,
-       see Serverless Computing and Applications on the AWS website.</p><p>The AWS Serverless Application Repository is deeply integrated with the AWS Lambda console, so that developers of 
-       all levels can get started with serverless computing without needing to learn anything new. You can use category 
-       keywords to browse for applications such as web and mobile backends, data processing applications, or chatbots. 
-       You can also search for applications by name, publisher, or event source. To use an application, you simply choose it, 
-       configure any required fields, and deploy it with a few clicks. </p><p>You can also easily publish applications, sharing them publicly with the community at large, or privately
-       within your team or across your organization. To publish a serverless application (or app), you can use the
-       AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS SDKs to upload the code. Along with the
-       code, you upload a simple manifest file, also known as the AWS Serverless Application Model (AWS SAM) template.
-       For more information about AWS SAM, see AWS Serverless Application Model (AWS SAM) on the AWS Labs
-       GitHub repository.</p><p>The AWS Serverless Application Repository Developer Guide contains more information about the two developer
-       experiences available:</p><ul>
-       <li>
-       <p>Consuming Applications – Browse for applications and view information about them, including
-       source code and readme files. Also install, configure, and deploy applications of your choosing. </p>
-       <p>Publishing Applications – Configure and upload applications to make them available to other
-       developers, and publish new versions of applications. </p>
-       </li>
-       </ul>
+      The AWS Serverless Application Repository simplifies the process for
+      developers and businesses to discover and deploy serverless applications
+      in the AWS Cloud. This integration with the AWS Lambda console allows
+      developers of all skill levels to easily start with serverless computing. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/serverless/serverlessrepo/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Applications
+      - Change
+      - Change Sets
+      - Cloud
+      - Dependencies
+      - Formation
+      - Policies
+      - Semantic
+      - Sets
+      - Templates
+      - Unshare
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/serverless/serverlessrepo/
       - type: OpenAPI
         url: properties/serverlessrepo-openapi-original.yml
+      - type: Publishing
+        url: https://aws.amazon.com/serverless/serverlessrepo/publishing/
+      - type: Resources
+        url: https://aws.amazon.com/serverless/serverlessrepo/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/serverless/serverlessrepo/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/serverlessrepo-openapi-search.yml
@@ -8800,51 +11409,58 @@ apis:
     aid: amazon-web-services:serverlessrepo
   - name: Amazon Security Lake
     description: >-
-      <p>Amazon Security Lake is a fully managed security data lake service. You
+      Amazon Security Lake is a fully managed security data lake service. You
       can use Security Lake to automatically centralize security data from
       cloud, on-premises, and custom sources into a data lake that's stored in
       your Amazon Web Services account. Amazon Web Services Organizations is an
       account management service that lets you consolidate multiple Amazon Web
       Services accounts into an organization that you create and centrally
-      manage. With Organizations, you can create member accounts and invite
-      existing accounts to join your organization. Security Lake helps you
-      analyze security data for a more complete understanding of your security
-      posture across the entire organization. It can also help you improve the
-      protection of your workloads, applications, and data.</p> <p>The data lake
-      is backed by Amazon Simple Storage Service (Amazon S3) buckets, and you
-      retain ownership over your data.</p> <p>Amazon Security Lake integrates
-      with CloudTrail, a service that provides a record of actions taken by a
-      user, role, or an Amazon Web Services service. In Security Lake,
-      CloudTrail captures API calls for Security Lake as events. The calls
-      captured include calls from the Security Lake console and code calls to
-      the Security Lake API operations. If you create a trail, you can enable
-      continuous delivery of CloudTrail events to an Amazon S3 bucket, including
-      events for Security Lake. If you don't configure a trail, you can still
-      view the most recent events in the CloudTrail console in Event history.
-      Using the information collected by CloudTrail you can determine the
-      request that was made to Security Lake, the IP address from which the
-      request was made, who made the request, when it was made, and additional
-      details. To learn more about Security Lake information in CloudTrail, see
-      the <a
-      href="https://docs.aws.amazon.com/security-lake/latest/userguide/securitylake-cloudtrail.html">Amazon
-      Security Lake User Guide</a>.</p> <p>Security Lake automates the
-      collection of security-related log and event data from integrated Amazon
-      Web Services and third-party services. It also helps you manage the
-      lifecycle of data with customizable retention and replication settings.
-      Security Lake converts ingested data into Apache Parquet format and a
-      standard open-source schema called the Open Cybersecurity Schema Framework
-      (OCSF).</p> <p>Other Amazon Web Services and third-party services can
-      subscribe to the data that's stored in Security Lake for incident response
-      and security data analytics.</p>
+      manage. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/security-lake/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Administrator
+      - Configurations
+      - Custom
+      - Data
+      - Data Lakes
+      - Delegate
+      - Delegated
+      - Exceptions
+      - Lakes
+      - Log Sources
+      - Logs
+      - Names
+      - Notifications
+      - Organizations
+      - Register
+      - Resources
+      - Sources
+      - Subscribers
+      - Subscriptions
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/security-lake/
       - type: OpenAPI
         url: properties/securitylake-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/security-lake/features/
+      - type: Pricing
+        url: https://aws.amazon.com/security-lake/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/security-lake/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/security-lake/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/security-lake/customers/
+      - type: Resources
+        url: https://aws.amazon.com/security-lake/resources/
+      - type: Partners
+        url: https://aws.amazon.com/security-lake/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/securitylake-openapi-search.yml
@@ -8853,19 +11469,18 @@ apis:
     aid: amazon-web-services:securitylake
   - name: AWS Service Quotas
     description: >-
-      <p>With Service Quotas, you can view and manage your quotas easily as your
-      Amazon Web Services workloads grow. Quotas, also referred to as limits,
-      are the maximum number of resources that you can create in your Amazon Web
-      Services account. For more information, see the <a
-      href="https://docs.aws.amazon.com/servicequotas/latest/userguide/">Service
-      Quotas User Guide</a>.</p>
+      Easily monitor and control your quotas as your Amazon Web Services
+      projects expand with Service Quotas. Limits, also known as quotas, define
+      the maximum number of resources you can generate within your AWS account. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html
       - type: OpenAPI
         url: properties/service-quotas-openapi-original.yml
     overlays:
@@ -8876,43 +11491,67 @@ apis:
     aid: amazon-web-services:service-quotas
   - name: AWS Cloud Map
     description: >-
-      <fullname>Cloud Map</fullname> <p>With Cloud Map, you can configure public
-      DNS, private DNS, or HTTP namespaces that your microservice applications
-      run in. When an instance becomes available, you can call the Cloud Map API
-      to register the instance with Cloud Map. For public or private DNS
-      namespaces, Cloud Map automatically creates DNS records and an optional
-      health check. Clients that submit public or private DNS queries, or HTTP
-      requests, for the service receive an answer that contains up to eight
-      healthy records. </p>
+      Our Cloud Map API allows you to easily set up and manage public DNS,
+      private DNS, or HTTP namespaces for your microservice applications. By
+      registering instances with Cloud Map via the API, you can ensure seamless
+      integration and availability. Cloud Map automatically creates DNS records
+      and optional health checks for public or private DNS namespaces, providing
+      clients with up to eight healthy records in response to queries or
+      requests.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/cloud-map/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Services
+      - Clouds
+      - Maps
+      - DNS
+      - Namespaces
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/cloud-map/
       - type: OpenAPI
         url: properties/servicediscovery-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/cloud-map/features/
+      - type: Pricing
+        url: https://aws.amazon.com/cloud-map/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/cloud-map/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/servicediscovery-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/servicediscovery-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:servicediscovery
-  - name: Amazon Web Services Service Catalog AppRegistry
+  - name: AWS Service Catalog
     description: >-
-      <p> Amazon Web Services Service Catalog AppRegistry enables organizations
-      to understand the application context of their Amazon Web Services
-      resources. AppRegistry provides a repository of your applications, their
-      resources, and the application metadata that you use within your
-      enterprise.</p>
+      AWS Service Catalog enables IT administrators to create, manage, and
+      distribute portfolios of approved products to end users, who can then
+      access the products they need in a personalized portal. Typical products
+      include servers, databases, websites, or applications that are deployed
+      using AWS resources (for example, an Amazon EC2 instance or an Amazon RDS
+      database). 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/servicecatalog/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Associated
+      - Attributes
+      - Configurations
+      - Details
+      - Disassociate
+      - Groups
+      - Resources
+      - Sync
+      - Tags
+      - Types
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/servicecatalog/
       - type: OpenAPI
         url: properties/servicecatalog-appregistry-openapi-original.yml
     overlays:
@@ -8923,100 +11562,140 @@ apis:
     aid: amazon-web-services:servicecatalog-appregistry
   - name: AWS Shield Advanced
     description: >-
-      <fullname>Shield Advanced</fullname> <p>This is the <i>Shield Advanced API
-      Reference</i>. This guide is for developers who need detailed information
-      about the Shield Advanced API actions, data types, and errors. For
-      detailed information about WAF and Shield Advanced features and an
-      overview of how to use the WAF and Shield Advanced APIs, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/">WAF and
-      Shield Developer Guide</a>.</p>
+      The Shield Advanced API Reference is a comprehensive guide for developers
+      seeking detailed information on the Shield Advanced API actions, data
+      types, and errors. To learn more about the WAF and Shield Advanced
+      features and how to effectively utilize the APIs, refer to the WAF and
+      Shield Developer Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/shield/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Subscriptions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/shield/
       - type: OpenAPI
         url: properties/shield-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/shield/features/
+      - type: Pricing
+        url: https://aws.amazon.com/shield/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/shield/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/shield/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/shield-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/shield-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:shield
-  - name: AWS SimSpace Weaver
+  - name: 'AWS SimSpace Weaver '
     description: >-
-      <p>SimSpace Weaver (SimSpace Weaver) is a service that you can use to
-      build and run large-scale spatial simulations in the Amazon Web Services
-      Cloud. For example, you can create crowd simulations, large real-world
-      environments, and immersive and interactive experiences. For more
-      information about SimSpace Weaver, see the <i> <a
-      href="https://docs.aws.amazon.com/simspaceweaver/latest/userguide/">SimSpace
-      Weaver User Guide</a> </i>.</p> <p>This API reference describes the API
-      operations and data types that you can use to communicate directly with
-      SimSpace Weaver.</p> <p>SimSpace Weaver also provides the SimSpace Weaver
-      app SDK, which you use for app development. The SimSpace Weaver app SDK
-      API reference is included in the SimSpace Weaver app SDK documentation.
-      This documentation is part of the SimSpace Weaver app SDK distributable
-      package.</p>
+      SimSpace Weaver is a cloud-based service on Amazon Web Services that
+      enables users to construct and deploy large spatial simulations. These
+      simulations can include crowd scenarios, real-world environments, and
+      immersive experiences. The SimSpace Weaver API allows direct interaction
+      with the service, providing detailed descriptions of available operations
+      and data structures. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/simspaceweaver/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Clock
+      - Describe
+      - Resources
+      - Simulations
+      - Snapshots
+      - Start Application
+      - Start Clock
+      - Start Simulation
+      - Stop
+      - Stop APplication
+      - Stop Clock
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/simspaceweaver/
       - type: OpenAPI
         url: properties/simspaceweaver-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/simspaceweaver/features/
+      - type: Pricing
+        url: https://aws.amazon.com/simspaceweaver/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/simspaceweaver/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/simspaceweaver-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/simspaceweaver-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:simspaceweaver
-  - name: AWS Server Migration Service
+  - name: AWS Application Migration Service
     description: >-
-      <important> <p> <b>Product update</b> </p> <p>We recommend <a
-      href="http://aws.amazon.com/application-migration-service">Amazon Web
-      Services Application Migration Service</a> (Amazon Web Services MGN) as
-      the primary migration service for lift-and-shift migrations. If Amazon Web
-      Services MGN is unavailable in a specific Amazon Web Services Region, you
-      can use the Server Migration Service APIs through March 2023.</p>
-      </important> <p>Server Migration Service (Server Migration Service) makes
-      it easier and faster for you to migrate your on-premises workloads to
-      Amazon Web Services. To learn more about Server Migration Service, see the
-      following resources:</p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/server-migration-service/">Server Migration
-      Service product page</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/server-migration-service/latest/userguide/">Server
-      Migration Service User Guide</a> </p> </li> </ul>
+      The AWS Application Migration Service streamlines the migration process by
+      automating the conversion of source servers to run on AWS, reducing manual
+      errors and saving time. It also offers a range of built-in and custom
+      optimization options to simplify application modernization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/application-migration-service/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Jobs
+      - Replication
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/application-migration-service/
       - type: OpenAPI
         url: properties/sms-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/application-migration-service/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/application-migration-service/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/application-migration-service/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/sms-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sms-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sms
-  - name: Amazon Web Services Snow Device Management
-    description: <p>Amazon Web Services Snow Device Management documentation.</p>
+  - name: AWS Snow Family
+    description: >-
+      The AWS Snow Family helps customers who need to run operations in austere,
+      non-data center environments, and in locations which lack consistent
+      network connectivity. The Snow Family (comprised of AWS Snowcone,
+      Snowball, and AWS Snowmobile) oﬀers a number of physical devices and
+      capacity profiles, most with built-in computing capabilities.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/snow/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Cancel
+      - Describe
+      - Device
+      - Devices
+      - EC2
+      - Ec2Instances
+      - Execution
+      - Executions
+      - Managed
+      - Resources
+      - Tags
+      - Tasks
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/snow/
       - type: OpenAPI
         url: properties/snow-device-management-openapi-original.yml
+      - type: FAQ
+        url: https://aws.amazon.com/snow/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/snow-device-management-openapi-search.yml
@@ -9025,89 +11704,80 @@ apis:
     aid: amazon-web-services:snow-device-management
   - name: AWS Security Hub
     description: >-
-      <p>Security Hub provides you with a comprehensive view of your security
-      state in Amazon Web Services and helps you assess your Amazon Web Services
-      environment against security industry standards and best practices.</p>
-      <p>Security Hub collects security data across Amazon Web Services
-      accounts, Amazon Web Services, and supported third-party products and
-      helps you analyze your security trends and identify the highest priority
-      security issues.</p> <p>To help you manage the security state of your
-      organization, Security Hub supports multiple security standards. These
-      include the Amazon Web Services Foundational Security Best Practices
-      (FSBP) standard developed by Amazon Web Services, and external compliance
-      frameworks such as the Center for Internet Security (CIS), the Payment
-      Card Industry Data Security Standard (PCI DSS), and the National Institute
-      of Standards and Technology (NIST). Each standard includes several
-      security controls, each of which represents a security best practice.
-      Security Hub runs checks against security controls and generates control
-      findings to help you assess your compliance against security best
-      practices.</p> <p>In addition to generating control findings, Security Hub
-      also receives findings from other Amazon Web Services, such as Amazon
-      GuardDuty and Amazon Inspector, and supported third-party products. This
-      gives you a single pane of glass into a variety of security-related
-      issues. You can also send Security Hub findings to other Amazon Web
-      Services and supported third-party products.</p> <p>Security Hub offers
-      automation features that help you triage and remediate security issues.
-      For example, you can use automation rules to automatically update critical
-      findings when a security check fails. You can also leverage the
-      integration with Amazon EventBridge to trigger automatic responses to
-      specific findings.</p> <p>This guide, the <i>Security Hub API
-      Reference</i>, provides information about the Security Hub API. This
-      includes supported resources, HTTP methods, parameters, and schemas. If
-      you're new to Security Hub, you might find it helpful to also review the
-      <a
-      href="https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html">
-      <i>Security Hub User Guide</i> </a>. The user guide explains key concepts
-      and provides procedures that demonstrate how to use Security Hub features.
-      It also provides information about topics such as integrating Security Hub
-      with other Amazon Web Services.</p> <p>In addition to interacting with
-      Security Hub by making calls to the Security Hub API, you can use a
-      current version of an Amazon Web Services command line tool or SDK. Amazon
-      Web Services provides tools and SDKs that consist of libraries and sample
-      code for various languages and platforms, such as PowerShell, Java, Go,
-      Python, C++, and .NET. These tools and SDKs provide convenient,
-      programmatic access to Security Hub and other Amazon Web Services . They
-      also handle tasks such as signing requests, managing errors, and retrying
-      requests automatically. For information about installing and using the
-      Amazon Web Services tools and SDKs, see <a
-      href="http://aws.amazon.com/developer/tools/">Tools to Build on Amazon Web
-      Services</a>.</p> <p>With the exception of operations that are related to
-      central configuration, Security Hub API requests are executed only in the
-      Amazon Web Services Region that is currently active or in the specific
-      Amazon Web Services Region that you specify in your request. Any
-      configuration or settings change that results from the operation is
-      applied only to that Region. To make the same change in other Regions,
-      call the same API operation in each Region in which you want to apply the
-      change. When you use central configuration, API requests for enabling
-      Security Hub, standards, and controls are executed in the home Region and
-      all linked Regions. For a list of central configuration operations, see
-      the <a
-      href="https://docs.aws.amazon.com/securityhub/latest/userguide/central-configuration-intro.html#central-configuration-concepts">Central
-      configuration terms and concepts</a> section of the <i>Security Hub User
-      Guide</i>.</p> <p>The following throttling limits apply to Security Hub
-      API operations.</p> <ul> <li> <p> <code>BatchEnableStandards</code> -
-      <code>RateLimit</code> of 1 request per second. <code>BurstLimit</code> of
-      1 request per second.</p> </li> <li> <p> <code>GetFindings</code> -
-      <code>RateLimit</code> of 3 requests per second. <code>BurstLimit</code>
-      of 6 requests per second.</p> </li> <li> <p>
-      <code>BatchImportFindings</code> - <code>RateLimit</code> of 10 requests
-      per second. <code>BurstLimit</code> of 30 requests per second.</p> </li>
-      <li> <p> <code>BatchUpdateFindings</code> - <code>RateLimit</code> of 10
-      requests per second. <code>BurstLimit</code> of 30 requests per
-      second.</p> </li> <li> <p> <code>UpdateStandardsControl</code> -
-      <code>RateLimit</code> of 1 request per second. <code>BurstLimit</code> of
-      5 requests per second.</p> </li> <li> <p>All other operations -
-      <code>RateLimit</code> of 10 requests per second. <code>BurstLimit</code>
-      of 30 requests per second.</p> </li> </ul>
+      The Security Hub API offers a comprehensive view of your security state
+      within Amazon Web Services, allowing you to assess your environment
+      against industry standards and best practices. By collecting security data
+      across AWS accounts and third-party products, Security Hub enables
+      analysis of security trends and identification of high-priority issues.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/security-hub/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Accounts
+      - Actions
+      - Administrative
+      - Administrator
+      - Aggregator
+      - Aggregators
+      - Associate
+      - Associations
+      - Automation
+      - Automation Rules
+      - Batches
+      - Configurations
+      - Controls
+      - Count
+      - Decline
+      - Definitions
+      - Deregister
+      - Describe
+      - Disable
+      - Disassociate
+      - Disassociation
+      - Enable
+      - Enabled
+      - Findings
+      - History
+      - Hub
+      - Import
+      - Insights
+      - Invitations
+      - Invite
+      - Master
+      - Members
+      - Organizations
+      - Policies
+      - Products
+      - Register
+      - Resources
+      - Results
+      - Rules
+      - Security
+      - Standards
+      - Subscriptions
+      - Tags
+      - Targets
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/security-hub/
       - type: OpenAPI
         url: properties/securityhub-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/security-hub/features/
+      - type: Pricing
+        url: https://aws.amazon.com/security-hub/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/security-hub/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/security-hub/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/security-hub/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/security-hub/customers/
+      - type: Partners
+        url: https://aws.amazon.com/security-hub/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/securityhub-openapi-search.yml
@@ -9116,79 +11786,66 @@ apis:
     aid: amazon-web-services:securityhub
   - name: Amazon Simple Notification Service
     description: >-
-      <fullname>Amazon Simple Notification Service</fullname> <p>Amazon Simple
-      Notification Service (Amazon SNS) is a web service that enables you to
-      build distributed web-enabled applications. Applications can use Amazon
-      SNS to easily push real-time notification messages to interested
-      subscribers over multiple delivery protocols. For more information about
-      this product see the <a href="http://aws.amazon.com/sns/">Amazon SNS
-      product page</a>. For detailed information about Amazon SNS features and
-      their associated API calls, see the <a
-      href="https://docs.aws.amazon.com/sns/latest/dg/">Amazon SNS Developer
-      Guide</a>. </p> <p>For information on the permissions you need to use this
-      API, see <a
-      href="https://docs.aws.amazon.com/sns/latest/dg/sns-authentication-and-access-control.html">Identity
-      and access management in Amazon SNS</a> in the <i>Amazon SNS Developer
-      Guide.</i> </p> <p>We also provide SDKs that enable you to access Amazon
-      SNS from your preferred programming language. The SDKs contain
-      functionality that automatically takes care of tasks such as:
-      cryptographically signing your service requests, retrying requests, and
-      handling error responses. For a list of available SDKs, go to <a
-      href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.
-      </p>
+      The Amazon Simple Notification Service (Amazon SNS) is a web service that
+      allows developers to create distributed web-enabled applications. With
+      Amazon SNS, applications can easily send real-time notification messages
+      to subscribers using multiple delivery protocols. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sns/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Numbers
+      - Phone
+      - SMSSandbox
+      - Verify
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sns/
       - type: OpenAPI
         url: properties/sns-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sns/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sns/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/sns/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/sns/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/sns-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/sns-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sns
-  - name: Amazon SQS
+  - name: Amazon Simple Queue Service
     description: >-
-      <p>Welcome to the <i>Amazon SQS API Reference</i>.</p> <p>Amazon SQS is a
-      reliable, highly-scalable hosted queue for storing messages as they travel
-      between applications or microservices. Amazon SQS moves data between
-      distributed application components and helps you decouple these
-      components.</p> <p>For information on the permissions you need to use this
-      API, see <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-authentication-and-access-control.html">Identity
-      and access management</a> in the <i>Amazon SQS Developer Guide.</i> </p>
-      <p>You can use <a href="http://aws.amazon.com/tools/#sdk">Amazon Web
-      Services SDKs</a> to access Amazon SQS using your favorite programming
-      language. The SDKs perform tasks such as the following automatically:</p>
-      <ul> <li> <p>Cryptographically sign your service requests</p> </li> <li>
-      <p>Retry requests</p> </li> <li> <p>Handle error responses</p> </li> </ul>
-      <p> <b>Additional information</b> </p> <ul> <li> <p> <a
-      href="http://aws.amazon.com/sqs/">Amazon SQS Product Page</a> </p> </li>
-      <li> <p> <i>Amazon SQS Developer Guide</i> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-making-api-requests.html">Making
-      API Requests</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-metadata.html#sqs-message-attributes">Amazon
-      SQS Message Attributes</a> </p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html">Amazon
-      SQS Dead-Letter Queues</a> </p> </li> </ul> </li> <li> <p> <a
-      href="http://docs.aws.amazon.com/cli/latest/reference/sqs/index.html">Amazon
-      SQS in the <i>Command Line Interface</i> </a> </p> </li> <li> <p>
-      <i>Amazon Web Services General Reference</i> </p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#sqs_region">Regions
-      and Endpoints</a> </p> </li> </ul> </li> </ul>
+      Introducing the Amazon SQS API Reference, a reliable and highly-scalable
+      hosted queue that facilitates the storage and transmission of messages
+      between applications and microservices. Amazon SQS effectively moves data
+      between distributed components, promoting decoupling. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/sqs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Queues
+      - Untag
+      - Tags
+      - Microservices
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/sqs/
       - type: OpenAPI
         url: properties/sqs-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/sqs/features/
+      - type: Pricing
+        url: https://aws.amazon.com/sqs/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/sqs/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/sqs/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/sqs/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/sqs-openapi-search.yml
@@ -9197,22 +11854,38 @@ apis:
     aid: amazon-web-services:sqs
   - name: AWS Service Catalog
     description: >-
-      <fullname>Service Catalog</fullname> <p> <a
-      href="http://aws.amazon.com/servicecatalog">Service Catalog</a> enables
-      organizations to create and manage catalogs of IT services that are
-      approved for Amazon Web Services. To get the most out of this
-      documentation, you should be familiar with the terminology discussed in <a
-      href="http://docs.aws.amazon.com/servicecatalog/latest/adminguide/what-is_concepts.html">Service
-      Catalog Concepts</a>.</p>
+      AWS Service Catalog is a tool that allows you to efficiently handle your
+      cloud resources by overseeing your infrastructure as code (IaC) templates,
+      which can be written in either CloudFormation or Terraform configurations.
+      This service helps you maintain compliance standards while enabling your
+      customers to easily deploy the necessary cloud resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/servicecatalog/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Options
+      - Tags
+      - Catalogs
+      - Services
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/servicecatalog/
       - type: OpenAPI
         url: properties/servicecatalog-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/servicecatalog/features/
+      - type: Pricing
+        url: https://aws.amazon.com/servicecatalog/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/servicecatalog/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/servicecatalog/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/servicecatalog/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/servicecatalog/customers/
+      - type: Partners
+        url: https://aws.amazon.com/servicecatalog/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/servicecatalog-openapi-search.yml
@@ -9221,44 +11894,32 @@ apis:
     aid: amazon-web-services:servicecatalog
   - name: AWS Systems Manager
     description: >-
-      <p>Amazon Web Services Systems Manager is the operations hub for your
-      Amazon Web Services applications and resources and a secure end-to-end
-      management solution for hybrid cloud environments that enables safe and
-      secure operations at scale.</p> <p>This reference is intended to be used
-      with the <a
-      href="https://docs.aws.amazon.com/systems-manager/latest/userguide/">Amazon
-      Web Services Systems Manager User Guide</a>. To get started, see <a
-      href="https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up.html">Setting
-      up Amazon Web Services Systems Manager</a>.</p> <p class="title">
-      <b>Related resources</b> </p> <ul> <li> <p>For information about each of
-      the capabilities that comprise Systems Manager, see <a
-      href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html#systems-manager-capabilities">Systems
-      Manager capabilities</a> in the <i>Amazon Web Services Systems Manager
-      User Guide</i>.</p> </li> <li> <p>For details about predefined runbooks
-      for Automation, a capability of Amazon Web Services Systems Manager, see
-      the <i> <a
-      href="https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-runbook-reference.html">Systems
-      Manager Automation runbook reference</a> </i>.</p> </li> <li> <p>For
-      information about AppConfig, a capability of Systems Manager, see the <i>
-      <a
-      href="https://docs.aws.amazon.com/appconfig/latest/userguide/">AppConfig
-      User Guide</a> </i> and the <i> <a
-      href="https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/">AppConfig
-      API Reference</a> </i>.</p> </li> <li> <p>For information about Incident
-      Manager, a capability of Systems Manager, see the <i> <a
-      href="https://docs.aws.amazon.com/incident-manager/latest/userguide/">Systems
-      Manager Incident Manager User Guide</a> </i> and the <i> <a
-      href="https://docs.aws.amazon.com/incident-manager/latest/APIReference/">Systems
-      Manager Incident Manager API Reference</a> </i>.</p> </li> </ul>
+      AWS Systems Manager provides a comprehensive and secure management
+      solution for resources across AWS and in both multicloud and hybrid
+      environments.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/systems-manager/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Services
+      - Settings
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/systems-manager/
       - type: OpenAPI
         url: properties/ssm-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/systems-manager/features/
+      - type: Pricing
+        url: https://aws.amazon.com/systems-manager/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/systems-manager/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/systems-manager/faq/
+      - type: Customers
+        url: https://aws.amazon.com/systems-manager/customers/
+      - type: Partners
+        url: https://aws.amazon.com/systems-manager/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/ssm-openapi-search.yml
@@ -9267,42 +11928,42 @@ apis:
     aid: amazon-web-services:ssm
   - name: AWS Signer
     description: >-
-      <p>AWS Signer is a fully managed code-signing service to help you ensure
-      the trust and integrity of your code. </p> <p>Signer supports the
-      following applications:</p> <p>With code signing for AWS Lambda, you can
-      sign <a href="http://docs.aws.amazon.com/lambda/latest/dg/">AWS Lambda</a>
-      deployment packages. Integrated support is provided for <a
-      href="http://docs.aws.amazon.com/AmazonS3/latest/gsg/">Amazon S3</a>, <a
-      href="http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/">Amazon
-      CloudWatch</a>, and <a
-      href="http://docs.aws.amazon.com/awscloudtrail/latest/userguide/">AWS
-      CloudTrail</a>. In order to sign code, you create a signing profile and
-      then use Signer to sign Lambda zip files in S3. </p> <p>With code signing
-      for IoT, you can sign code for any IoT device that is supported by AWS.
-      IoT code signing is available for <a
-      href="http://docs.aws.amazon.com/freertos/latest/userguide/">Amazon
-      FreeRTOS</a> and <a
-      href="http://docs.aws.amazon.com/iot/latest/developerguide/">AWS IoT
-      Device Management</a>, and is integrated with <a
-      href="http://docs.aws.amazon.com/acm/latest/userguide/">AWS Certificate
-      Manager (ACM)</a>. In order to sign code, you import a third-party
-      code-signing certificate using ACM, and use that to sign updates in Amazon
-      FreeRTOS and AWS IoT Device Management. </p> <p>With Signer and the
-      Notation CLI from the <a href="https://notaryproject.dev/">Notary&#x2028;
-      Project</a>, you can sign container images stored in a container registry
-      such as Amazon Elastic Container Registry (ECR). The signatures are stored
-      in the registry alongside the images, where they are available for
-      verifying image authenticity and integrity.</p> <p>For more information
-      about Signer, see the <a
-      href="https://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html">AWS
-      Signer Developer Guide</a>.</p>
+      AWS Signer is a managed code-signing service designed to ensure the trust
+      and integrity of your code. This service supports code signing for various
+      applications such as AWS Lambda, IoT devices supported by AWS, and
+      container images stored in registries like Amazon Elastic Container
+      Registry (ECR). With AWS Signer, you can create signing profiles and use
+      them to sign Lambda deployment packages, IoT device code updates, and
+      container images. Integrated support is provided for services like Amazon
+      S3, Amazon CloudWatch, and AWS CloudTrail. For more details on how to use
+      AWS Signer, refer to the AWS Signer Developer Guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/signer/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Describe
+      - Jobs
+      - Names
+      - Payload
+      - Permission
+      - Permissions
+      - Platforms
+      - Profiles
+      - Removes
+      - Resources
+      - Revocations
+      - Revoke
+      - Sign
+      - Signatures
+      - Signing
+      - Statements
+      - Status
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/signer/
       - type: OpenAPI
         url: properties/signer-openapi-original.yml
     overlays:
@@ -9313,22 +11974,43 @@ apis:
     aid: amazon-web-services:signer
   - name: AWS Systems Manager Incident Manager
     description: >-
-      <p>Systems Manager Incident Manager is an incident management console
-      designed to help users mitigate and recover from incidents affecting their
-      Amazon Web Services-hosted applications. An incident is any unplanned
-      interruption or reduction in quality of services. </p> <p>Incident Manager
-      increases incident resolution by notifying responders of impact,
-      highlighting relevant troubleshooting data, and providing collaboration
-      tools to get services back up and running. To achieve the primary goal of
-      reducing the time-to-resolution of critical incidents, Incident Manager
-      automates response plans and enables responder team escalation. </p>
+      This API, Systems Manager Incident Manager, is a comprehensive incident
+      management tool specifically designed to assist users in dealing with
+      unforeseen interruptions or service disruptions in their Amazon Web
+      Services-hosted applications. The platform aims to enhance incident
+      resolution by promptly alerting responders of the impact, presenting key
+      troubleshooting information, and offering collaborative features to
+      facilitate the swift restoration of services. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Batches
+      - Deletion
+      - Events
+      - Findings
+      - Incident
+      - Items
+      - Plan
+      - Plans
+      - Policies
+      - Protection
+      - Record
+      - Records
+      - Related
+      - Replication
+      - Resources
+      - Responses
+      - Sets
+      - Tags
+      - Timeline
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html
       - type: OpenAPI
         url: properties/ssm-incidents-openapi-original.yml
     overlays:
@@ -9337,36 +12019,33 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/ssm-incidents-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:ssm-incidents
-  - name: AWS IAM Identity Center Portal
+  - name: AWS IAM Identity Center
     description: >-
-      <p>AWS IAM Identity Center (successor to AWS Single Sign-On) Portal is a
-      web service that makes it easy for you to assign user access to IAM
-      Identity Center resources such as the AWS access portal. Users can get AWS
-      account applications and roles assigned to them and get federated into the
-      application.</p> <note> <p>Although AWS Single Sign-On was renamed, the
-      <code>sso</code> and <code>identitystore</code> API namespaces will
-      continue to retain their original name for backward compatibility
-      purposes. For more information, see <a
-      href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html#renamed">IAM
-      Identity Center rename</a>.</p> </note> <p>This reference guide describes
-      the IAM Identity Center Portal operations that you can call
-      programatically and includes detailed information on data types and
-      errors.</p> <note> <p>AWS provides SDKs that consist of libraries and
-      sample code for various programming languages and platforms, such as Java,
-      Ruby, .Net, iOS, or Android. The SDKs provide a convenient way to create
-      programmatic access to IAM Identity Center and other AWS services. For
-      more information about the AWS SDKs, including how to download and install
-      them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web
-      Services</a>.</p> </note>
+      The AWS IAM Identity Center Portal is a web service that simplifies the
+      assignment of user access to IAM Identity Center resources, such as the
+      AWS access portal. Users can have AWS account applications and roles
+      assigned to them and be federated into the application. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/iam/identity-center/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Credentials
+      - Federation
+      - Roles
+      - Accounts
+      - Assignment
+      - Logout
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/iam/identity-center/
       - type: OpenAPI
         url: properties/sso-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/iam/identity-center/features/
+      - type: FAQ
+        url: https://aws.amazon.com/iam/identity-center/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/iam/identity-center/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/sso-openapi-search.yml
@@ -9375,17 +12054,34 @@ apis:
     aid: amazon-web-services:sso
   - name: AWS Systems Manager for SAP
     description: >-
-      <p>This API reference provides descriptions, syntax, and other details
-      about each of the actions and data types for AWS Systems Manager for SAP.
-      The topic for each action shows the API request parameters and responses.
-      </p>
+      AWS Systems Manager for SAP is a tool designed to automate the management
+      and operation of SAP applications on AWS. This integration allows for
+      seamless communication between AWS services and SAP applications running
+      on AWS. Users can easily access and utilize AWS Systems Manager for SAP
+      through AWS APIs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Applications
+      - Components
+      - Databases
+      - Deregister
+      - Operation
+      - Operations
+      - Permission
+      - Refresh
+      - Register
+      - Resources
+      - Settings
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html
       - type: OpenAPI
         url: properties/ssm-sap-openapi-original.yml
     overlays:
@@ -9396,104 +12092,72 @@ apis:
     aid: amazon-web-services:ssm-sap
   - name: AWS Step Functions
     description: >-
-      <fullname>Step Functions</fullname> <p>Step Functions is a service that
-      lets you coordinate the components of distributed applications and
-      microservices using visual workflows.</p> <p>You can use Step Functions to
-      build applications from individual components, each of which performs a
-      discrete function, or <i>task</i>, allowing you to scale and change
-      applications quickly. Step Functions provides a console that helps
-      visualize the components of your application as a series of steps. Step
-      Functions automatically triggers and tracks each step, and retries steps
-      when there are errors, so your application executes predictably and in the
-      right order every time. Step Functions logs the state of each step, so you
-      can quickly diagnose and debug any issues.</p> <p>Step Functions manages
-      operations and underlying infrastructure to ensure your application is
-      available at any scale. You can run tasks on Amazon Web Services, your own
-      servers, or any system that has access to Amazon Web Services. You can
-      access and use Step Functions using the console, the Amazon Web Services
-      SDKs, or an HTTP API. For more information about Step Functions, see the
-      <i> <a
-      href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html">Step
-      Functions Developer Guide</a> </i>.</p> <important> <p>If you use the Step
-      Functions API actions using Amazon Web Services SDK integrations, make
-      sure the API actions are in camel case and parameter names are in Pascal
-      case. For example, you could use Step Functions API action
-      <code>startSyncExecution</code> and specify its parameter as
-      <code>StateMachineArn</code>.</p> </important>
+      This API, AWS Step Functions, is a tool that allows developers to easily
+      create visual workflows for utilizing AWS services, building distributed
+      applications, automating processes, orchestrating microservices, and
+      setting up data and machine learning pipelines.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/step-functions/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Alias
+      - Machines
+      - States
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/step-functions/
       - type: OpenAPI
         url: properties/states-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/step-functions/features/
+      - type: Pricing
+        url: https://aws.amazon.com/step-functions/pricing/
+      - type: Use Cases
+        url: https://aws.amazon.com/step-functions/use-cases/
+      - type: Customers
+        url: https://aws.amazon.com/step-functions/customers/
+      - type: Getting Started
+        url: https://aws.amazon.com/step-functions/getting-started/
+      - type: FAQ
+        url: https://aws.amazon.com/step-functions/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/states-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/states-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:states
-  - name: AWS Storage Gateway
+  - name: AWS Storage Gateway Service
     description: >-
-      <fullname>Storage Gateway Service</fullname> <p>Storage Gateway is the
-      service that connects an on-premises software appliance with cloud-based
-      storage to provide seamless and secure integration between an
-      organization's on-premises IT environment and the Amazon Web Services
-      storage infrastructure. The service enables you to securely upload data to
-      the Amazon Web Services Cloud for cost effective backup and rapid disaster
-      recovery.</p> <p>Use the following links to get started using the
-      <i>Storage Gateway Service API Reference</i>:</p> <ul> <li> <p> <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/userguide/AWSStorageGatewayAPI.html#AWSStorageGatewayHTTPRequestsHeaders">Storage
-      Gateway required request headers</a>: Describes the required headers that
-      you must send with every POST request to Storage Gateway.</p> </li> <li>
-      <p> <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/userguide/AWSStorageGatewayAPI.html#AWSStorageGatewaySigningRequests">Signing
-      requests</a>: Storage Gateway requires that you authenticate every request
-      you send; this topic describes how sign such a request.</p> </li> <li> <p>
-      <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/userguide/AWSStorageGatewayAPI.html#APIErrorResponses">Error
-      responses</a>: Provides reference information about Storage Gateway
-      errors.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_Operations.html">Operations
-      in Storage Gateway</a>: Contains detailed descriptions of all Storage
-      Gateway operations, their request parameters, response elements, possible
-      errors, and examples of requests and responses.</p> </li> <li> <p> <a
-      href="https://docs.aws.amazon.com/general/latest/gr/sg.html">Storage
-      Gateway endpoints and quotas</a>: Provides a list of each Amazon Web
-      Services Region and the endpoints available for use with Storage
-      Gateway.</p> </li> </ul> <note> <p>Storage Gateway resource IDs are in
-      uppercase. When you use these resource IDs with the Amazon EC2 API, EC2
-      expects resource IDs in lowercase. You must change your resource ID to
-      lowercase to use it with the EC2 API. For example, in Storage Gateway the
-      ID for a volume might be <code>vol-AA22BB012345DAF670</code>. When you use
-      this ID with the EC2 API, you must change it to
-      <code>vol-aa22bb012345daf670</code>. Otherwise, the EC2 API might not
-      behave as expected.</p> </note> <important> <p>IDs for Storage Gateway
-      volumes and Amazon EBS snapshots created from gateway volumes are changing
-      to a longer format. Starting in December 2016, all new volumes and
-      snapshots will be created with a 17-character string. Starting in April
-      2016, you will be able to use these longer IDs so you can test your
-      systems with the new format. For more information, see <a
-      href="http://aws.amazon.com/ec2/faqs/#longer-ids">Longer EC2 and EBS
-      resource IDs</a>.</p> <p>For example, a volume Amazon Resource Name (ARN)
-      with the longer volume ID format looks like the following:</p> <p>
-      <code>arn:aws:storagegateway:us-west-2:111122223333:gateway/sgw-12A3456B/volume/vol-1122AABBCCDDEEFFG</code>.</p>
-      <p>A snapshot ID with the longer ID format looks like the following:
-      <code>snap-78e226633445566ee</code>.</p> <p>For more information, see <a
-      href="http://forums.aws.amazon.com/ann.jspa?annID=3557">Announcement:
-      Heads-up – Longer Storage Gateway volume and snapshot IDs coming in
-      2016</a>.</p> </important>
+      The Storage Gateway Service API allows seamless and secure integration
+      between on-premises software appliances and cloud-based storage within
+      Amazon Web Services infrastructure. This service enables cost-effective
+      backup and rapid disaster recovery by allowing secure data uploads to the
+      AWS cloud. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/storagegateway/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Types
+      - VTLDevice
+      - Storage
+      - Gateway
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/storagegateway/
       - type: OpenAPI
         url: properties/storagegateway-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/storagegateway/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/storagegateway/getting-started/
+      - type: Developer-resources
+        url: https://aws.amazon.com/storagegateway/developer-resources/
+      - type: FAQ
+        url: https://aws.amazon.com/storagegateway/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/storagegateway/customers/
+      - type: Features
+        url: https://aws.amazon.com/storagegateway/features/
     overlays:
       - type: APIs.io Search
         url: overlays/storagegateway-openapi-search.yml
@@ -9502,46 +12166,61 @@ apis:
     aid: amazon-web-services:storagegateway
   - name: AWS Supply Chain
     description: >-
-      <p> AWS Supply Chain is a cloud-based application that works with your
-      enterprise resource planning (ERP) and supply chain management systems.
-      Using AWS Supply Chain, you can connect and extract your inventory,
-      supply, and demand related data from existing ERP or supply chain systems
-      into a single data model. </p> <p>The AWS Supply Chain API supports
-      configuration data import for Supply Planning.</p> <p> All AWS Supply
-      chain API operations are Amazon-authenticated and certificate-signed. They
-      not only require the use of the AWS SDK, but also allow for the exclusive
-      use of AWS Identity and Access Management users and roles to help
-      facilitate access, trust, and permission policies. </p>
+      The AWS Supply Chain API is a cloud-based application designed to
+      streamline supply chain management processes by connecting and extracting
+      inventory, supply, and demand data from existing ERP and supply chain
+      systems into a single data model. This API supports configuration data
+      import for Supply Planning and all operations are authenticated and signed
+      by Amazon certificates. The use of the AWS SDK is required, along with AWS
+      Identity and Access Management users and roles to ensure secure access and
+      permission policies.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-supply-chain/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Bill
+      - Configurations
+      - Import
+      - Instances
+      - Jobs
+      - Materials
+      - Supply Chain
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-supply-chain/
       - type: OpenAPI
         url: properties/supplychain-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/aws-supply-chain/features/
+      - type: Pricing
+        url: https://aws.amazon.com/aws-supply-chain/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/aws-supply-chain/partners/
+      - type: Resources
+        url: https://aws.amazon.com/aws-supply-chain/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/supplychain-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/supplychain-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:supplychain
-  - name: AWS Security Token
+  - name: AWS Security Token Service
     description: >-
-      <fullname>Security Token Service</fullname> <p>Security Token Service
-      (STS) enables you to request temporary, limited-privilege credentials for
-      users. This guide provides descriptions of the STS API. For more
-      information about using this service, see <a
-      href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary
-      Security Credentials</a>.</p>
+      Introducing the Security Token Service (STS) API, which allows you to
+      conveniently request temporary, restricted-access credentials for your
+      users. This documentation offers comprehensive explanations of the STS API
+      functionality, with detailed instructions on how to utilize this service
+      effectively. For further insights on using temporary security credentials,
+      refer to the resources on Temporary Security Credentials.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Sessions
+      - Tokens
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html
       - type: OpenAPI
         url: properties/sts-openapi-original.yml
     overlays:
@@ -9550,31 +12229,37 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/sts-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:sts
-  - name: Amazon Simple Workflow
+  - name: Amazon Simple Workflow Service
     description: >-
-      <fullname>Amazon Simple Workflow Service</fullname> <p>The Amazon Simple
-      Workflow Service (Amazon SWF) makes it easy to build applications that use
-      Amazon's cloud to coordinate work across distributed components. In Amazon
-      SWF, a <i>task</i> represents a logical unit of work that is performed by
-      a component of your workflow. Coordinating tasks in a workflow involves
-      managing intertask dependencies, scheduling, and concurrency in accordance
-      with the logical flow of the application.</p> <p>Amazon SWF gives you full
-      control over implementing tasks and coordinating them without worrying
-      about underlying complexities such as tracking their progress and
-      maintaining their state.</p> <p>This documentation serves as reference
-      only. For a broader overview of the Amazon SWF programming model, see the
-      <i> <a
-      href="https://docs.aws.amazon.com/amazonswf/latest/developerguide/">Amazon
-      SWF Developer Guide</a> </i>.</p>
+      The Amazon Simple Workflow Service (Amazon SWF) simplifies the process of
+      building cloud-based applications that require coordination between
+      distributed components. Tasks in Amazon SWF represent individual units of
+      work within a workflow, with the service handling the management of
+      intertask dependencies, scheduling, and concurrency to maintain the
+      logical flow of the application.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/swf/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Resources
+      - Untag
+      - Tags
+      - Workflows
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/swf/
       - type: OpenAPI
         url: properties/swf-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/swf/pricing/
+      - type: Testimonials
+        url: https://aws.amazon.com/swf/testimonials/
+      - type: Developer-resources
+        url: https://aws.amazon.com/swf/developer-resources/
+      - type: FAQ
+        url: https://aws.amazon.com/swf/faqs/
+      - type: Getting-started
+        url: https://aws.amazon.com/swf/getting-started/
     overlays:
       - type: APIs.io Search
         url: overlays/swf-openapi-search.yml
@@ -9583,27 +12268,31 @@ apis:
     aid: amazon-web-services:swf
   - name: Amazon CloudWatch Synthetics
     description: >-
-      <fullname>Amazon CloudWatch Synthetics</fullname> <p>You can use Amazon
-      CloudWatch Synthetics to continually monitor your services. You can create
-      and manage <i>canaries</i>, which are modular, lightweight scripts that
-      monitor your endpoints and APIs from the outside-in. You can set up your
-      canaries to run 24 hours a day, once per minute. The canaries help you
-      check the availability and latency of your web services and troubleshoot
-      anomalies by investigating load time data, screenshots of the UI, logs,
-      and metrics. The canaries seamlessly integrate with CloudWatch ServiceLens
-      to help you trace the causes of impacted nodes in your applications. For
-      more information, see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ServiceLens.html">Using
-      ServiceLens to Monitor the Health of Your Applications</a> in the
-      <i>Amazon CloudWatch User Guide</i>.</p> <p>Before you create and manage
-      canaries, be aware of the security considerations. For more information,
-      see <a
-      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servicelens_canaries_security.html">Security
-      Considerations for Synthetics Canaries</a>.</p>
+      Amazon CloudWatch Synthetics provides a way to continuously monitor your
+      services by creating and managing canaries. These canaries are lightweight
+      scripts that monitor your endpoints and APIs externally, allowing you to
+      set them up to run 24/7, once per minute.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/cloudwatch/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Associate
+      - Associated
+      - Canaries
+      - Canary
+      - Describe
+      - Disassociate
+      - Groups
+      - Last
+      - Names
+      - Resources
+      - Runs
+      - Runtime
+      - Stop
+      - Tags
+      - Untag
+      - Versions
     properties:
       - type: Documentation
         url: https://example.com
@@ -9616,14 +12305,24 @@ apis:
         url: overlays/synthetics-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:synthetics
   - name: Amazon Timestream Query
-    description: <fullname>Amazon Timestream Query </fullname> <p/>
+    description: >-
+      Easily store and analyze sensor data for IoT applications, metrics for
+      DevOps use cases, and telemetry for application monitoring scenarios like
+      clickstream data analysis with Amazon Timestream for LiveAnalytics. This
+      managed time-series database engine allows developers and DevOps teams to
+      run InfluxDB databases on AWS using open-source APIs for real-time
+      time-series applications. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/timestream/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Queries
+      - Scheduled
+      - time Series
+      - Analytics
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/timestream/
       - type: OpenAPI
         url: properties/timestream-query-openapi-original.yml
     overlays:
@@ -9634,18 +12333,38 @@ apis:
     aid: amazon-web-services:timestream-query
   - name: Amazon Textract
     description: >-
-      <p>Amazon Textract detects and analyzes text in documents and converts it
-      into machine-readable text. This is the API reference documentation for
-      Amazon Textract.</p>
+      Amazon Textract is an advanced machine learning service that effortlessly
+      extracts text, handwriting, layout elements, and data from scanned
+      documents. Unlike traditional OCR tools, Textract can intelligently
+      identify and extract specific data from various types of documents,
+      including PDFs, images, tables, and forms. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/textract/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Adapter
+      - Content
+      - OCR
+      - PDF
+      - Tables
+      - Forms
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/textract/
       - type: OpenAPI
         url: properties/textract-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/textract/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/textract/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/textract/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/textract/customers/
+      - type: Partners
+        url: https://aws.amazon.com/textract/partners/
+      - type: Features
+        url: https://aws.amazon.com/textract/features/
     overlays:
       - type: APIs.io Search
         url: overlays/textract-openapi-search.yml
@@ -9654,27 +12373,23 @@ apis:
     aid: amazon-web-services:textract
   - name: Amazon Timestream Write
     description: >-
-      <fullname>Amazon Timestream Write</fullname> <p>Amazon Timestream is a
-      fast, scalable, fully managed time-series database service that makes it
-      easy to store and analyze trillions of time-series data points per day.
-      With Timestream, you can easily store and analyze IoT sensor data to
-      derive insights from your IoT applications. You can analyze industrial
-      telemetry to streamline equipment management and maintenance. You can also
-      store and analyze log data and metrics to improve the performance and
-      availability of your applications. </p> <p>Timestream is built from the
-      ground up to effectively ingest, process, and store time-series data. It
-      organizes data to optimize query processing. It automatically scales based
-      on the volume of data ingested and on the query volume to ensure you
-      receive optimal performance while inserting and querying data. As your
-      data grows over time, Timestream’s adaptive query processing engine spans
-      across storage tiers to provide fast analysis while reducing costs.</p>
+      Amazon Timestream is a powerful time-series database service designed for
+      storing and analyzing large volumes of time-series data. It is fully
+      managed and scalable, allowing you to easily store and analyze trillions
+      of data points per day. Timestream is ideal for IoT sensor data analysis,
+      industrial telemetry management, and log data and metric analysis for
+      application performance improvement. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/timestream/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Records
+      - Write
+      - Database
+      - Time-Series
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/timestream/
       - type: OpenAPI
         url: properties/timestream-write-openapi-original.yml
     overlays:
@@ -9683,30 +12398,40 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/timestream-write-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:timestream-write
-  - name: AWS Transfer Family
+  - name: AWS Transfer
     description: >-
-      <p>Transfer Family is a fully managed service that enables the transfer of
-      files over the File Transfer Protocol (FTP), File Transfer Protocol over
-      SSL (FTPS), or Secure Shell (SSH) File Transfer Protocol (SFTP) directly
-      into and out of Amazon Simple Storage Service (Amazon S3) or Amazon EFS.
-      Additionally, you can use Applicability Statement 2 (AS2) to transfer
-      files into and out of Amazon S3. Amazon Web Services helps you seamlessly
-      migrate your file transfer workflows to Transfer Family by integrating
-      with existing authentication systems, and providing DNS routing with
-      Amazon Route 53 so nothing changes for your customers and partners, or
-      their applications. With your data in Amazon S3, you can use it with
-      Amazon Web Services for processing, analytics, machine learning, and
-      archiving. Getting started with Transfer Family is easy since there is no
-      infrastructure to buy and set up.</p>
+      Transfer Family is a managed service that allows for the transfer of files
+      via FTP, FTPS, SFTP, and AS2 directly to and from Amazon S3 or Amazon EFS.
+      Amazon Web Services facilitates the seamless migration of file transfer
+      workflows to Transfer Family by integrating with existing authentication
+      systems and providing DNS routing via Amazon Route 53. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/aws-transfer-family/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Users
+      - Transfers
+      - FTP
+      - FTPS
+      - SFTP
+      - AS2
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/aws-transfer-family/
       - type: OpenAPI
         url: properties/transfer-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/aws-transfer-family/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/aws-transfer-family/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/aws-transfer-family/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/aws-transfer-family/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/aws-transfer-family/customers/
+      - type: Partners
+        url: https://aws.amazon.com/aws-transfer-family/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/transfer-openapi-search.yml
@@ -9715,49 +12440,89 @@ apis:
     aid: amazon-web-services:transfer
   - name: Amazon Transcribe
     description: >-
-      <p>Amazon Transcribe streaming offers three main types of real-time
-      transcription: <b>Standard</b>, <b>Medical</b>, and <b>Call
-      Analytics</b>.</p> <ul> <li> <p> <b>Standard transcriptions</b> are the
-      most common option. Refer to for details.</p> </li> <li> <p> <b>Medical
-      transcriptions</b> are tailored to medical professionals and incorporate
-      medical terms. A common use case for this service is transcribing
-      doctor-patient dialogue in real time, so doctors can focus on their
-      patient instead of taking notes. Refer to for details.</p> </li> <li> <p>
-      <b>Call Analytics transcriptions</b> are designed for use with call center
-      audio on two different channels; if you're looking for insight into
-      customer service calls, use this option. Refer to for details.</p> </li>
-      </ul>
+      The Amazon Transcribe streaming API provides real-time transcription
+      services in three main categories: Standard, Medical, and Call Analytics.
+      Standard transcriptions are suitable for general use cases, while Medical
+      transcriptions are specialized for medical professionals and incorporate
+      medical terminology. The Call Analytics option is specifically designed
+      for call center audio, providing insights into customer service
+      interactions.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/transcribe/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Analytics
+      - Call
+      - Stream
+      - Transcriptions
+      - Medical
+      - Healthcare
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/transcribe/
       - type: OpenAPI
         url: properties/transcribe-streaming-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/transcribe/features/
+      - type: Pricing
+        url: https://aws.amazon.com/transcribe/pricing/
+      - type: Getting-started
+        url: https://aws.amazon.com/transcribe/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/transcribe/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/transcribe/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/transcribe/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/transcribe-streaming-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/transcribe-streaming-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:transcribe-streaming
-  - name: AWS Telco Network Builder (TNB)
+  - name: AWS Telco Network Builder
     description: >-
-      <p> Amazon Web Services Telco Network Builder (TNB) is a network
-      automation service that helps you deploy and manage telecom networks. AWS
-      TNB helps you with the lifecycle management of your telecommunication
-      network functions throughout planning, deployment, and post-deployment
-      activities.</p>
+      The Amazon Web Services Telco Network Builder (TNB) is a network
+      automation service designed to assist in the deployment and management of
+      telecom networks. With AWS TNB, users can efficiently manage the lifecycle
+      of their telecommunication network functions, from initial planning to
+      deployment and ongoing maintenance.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/tnb/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Ate
+      - Cancel
+      - Content
+      - Descriptions
+      - Descriptors
+      - Functions
+      - Info
+      - Instances
+      - Instantiate
+      - Networks
+      - Occs
+      - Operation
+      - Operations
+      - Packages
+      - Resources
+      - Tags
+      - Terminate
+      - Untag
+      - Validate
+      - Tags
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/tnb/
       - type: OpenAPI
         url: properties/tnb-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/tnb/features/
+      - type: Pricing
+        url: https://aws.amazon.com/tnb/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/tnb/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/tnb-openapi-search.yml
@@ -9766,17 +12531,32 @@ apis:
     aid: amazon-web-services:tnb
   - name: AWS Translate
     description: >-
-      <p>Provides translation of the input content from the source language to
-      the target language.</p>
+      Amazon Translate enables users to adapt content for a global audience and
+      efficiently translate and analyze a large amount of text to facilitate
+      communication across different languages.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/translate/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Data
+      - Parallel
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/translate/
       - type: OpenAPI
         url: properties/translate-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/translate/details/
+      - type: Pricing
+        url: https://aws.amazon.com/translate/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/translate/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/translate/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/translate/faqs/
+      - type: Customers
+        url: https://aws.amazon.com/translate/customers/
     overlays:
       - type: APIs.io Search
         url: overlays/translate-openapi-search.yml
@@ -9785,67 +12565,37 @@ apis:
     aid: amazon-web-services:translate
   - name: Amazon Verified Permissions
     description: >-
-      <p>Amazon Verified Permissions is a permissions management service from
-      Amazon Web Services. You can use Verified Permissions to manage
-      permissions for your application, and authorize user access based on those
-      permissions. Using Verified Permissions, application developers can grant
-      access based on information about the users, resources, and requested
-      actions. You can also evaluate additional information like group
-      membership, attributes of the resources, and session context, such as time
-      of request and IP addresses. Verified Permissions manages these
-      permissions by letting you create and store authorization policies for
-      your applications, such as consumer-facing web sites and enterprise
-      business systems.</p> <p>Verified Permissions uses Cedar as the policy
-      language to express your permission requirements. Cedar supports both
+      Amazon Web Services offers Amazon Verified Permissions, a comprehensive
+      permissions management service for applications. By utilizing Verified
+      Permissions, developers can control user access through authorization
+      based on various factors such as user information, resource attributes,
+      and requested actions. This service allows for the creation and storage of
+      authorization policies using the Cedar policy language, supporting both
       role-based access control (RBAC) and attribute-based access control (ABAC)
-      authorization models.</p> <p>For more information about configuring,
-      administering, and using Amazon Verified Permissions in your applications,
-      see the <a
-      href="https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/">Amazon
-      Verified Permissions User Guide</a>.</p> <p>For more information about the
-      Cedar policy language, see the <a
-      href="https://docs.cedarpolicy.com/">Cedar Policy Language Guide</a>.</p>
-      <important> <p>When you write Cedar policies that reference principals,
-      resources and actions, you can define the unique identifiers used for each
-      of those elements. We strongly recommend that you follow these best
-      practices:</p> <ul> <li> <p> <b>Use values like universally unique
-      identifiers (UUIDs) for all principal and resource identifiers.</b> </p>
-      <p>For example, if user <code>jane</code> leaves the company, and you
-      later let someone else use the name <code>jane</code>, then that new user
-      automatically gets access to everything granted by policies that still
-      reference <code>User::"jane"</code>. Cedar can’t distinguish between the
-      new user and the old. This applies to both principal and resource
-      identifiers. Always use identifiers that are guaranteed unique and never
-      reused to ensure that you don’t unintentionally grant access because of
-      the presence of an old identifier in a policy.</p> <p>Where you use a UUID
-      for an entity, we recommend that you follow it with the // comment
-      specifier and the ‘friendly’ name of your entity. This helps to make your
-      policies easier to understand. For example: principal ==
-      User::"a1b2c3d4-e5f6-a1b2-c3d4-EXAMPLE11111", // alice</p> </li> <li> <p>
-      <b>Do not include personally identifying, confidential, or sensitive
-      information as part of the unique identifier for your principals or
-      resources.</b> These identifiers are included in log entries shared in
-      CloudTrail trails.</p> </li> </ul> </important> <p>Several operations
-      return structures that appear similar, but have different purposes. As new
-      functionality is added to the product, the structure used in a parameter
-      of one operation might need to change in a way that wouldn't make sense
-      for the same parameter in a different operation. To help you understand
-      the purpose of each, the following naming convention is used for the
-      structures:</p> <ul> <li> <p>Parameter type structures that end in
-      <code>Detail</code> are used in <code>Get</code> operations.</p> </li>
-      <li> <p>Parameter type structures that end in <code>Item</code> are used
-      in <code>List</code> operations.</p> </li> <li> <p>Parameter type
-      structures that use neither suffix are used in the mutating (create and
-      update) operations.</p> </li> </ul>
+      models. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/verified-permissions/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Policies
+      - Templates
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/verified-permissions/
       - type: OpenAPI
         url: properties/verifiedpermissions-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/verified-permissions/features/
+      - type: Getting Started
+        url: https://aws.amazon.com/verified-permissions/getting-started/
+      - type: Pricing
+        url: https://aws.amazon.com/verified-permissions/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/verified-permissions/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/verified-permissions/faqs/
+      - type: Partners
+        url: https://aws.amazon.com/verified-permissions/partners/
     overlays:
       - type: APIs.io Search
         url: overlays/verifiedpermissions-openapi-search.yml
@@ -9853,14 +12603,27 @@ apis:
         url: overlays/verifiedpermissions-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:verifiedpermissions
   - name: AWS TrustedAdvisor
-    description: <p>TrustedAdvisor Public API</p>
+    description: >-
+      The AWS Trusted Advisor API offers a comprehensive solution to help users
+      optimize costs, enhance performance, bolster security and resilience, and
+      effectively operate in the cloud at scale. By continuously assessing your
+      AWS environment against industry best practices in categories like cost
+      optimization, performance, resilience, security, operational excellence,
+      and service limits, Trusted Advisor provides actionable recommendations to
+      address any areas of concern.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Organizations
+      - Recommendations
+      - Checks
+      - Accounts
+      - Resources
+      - Lifecycle
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/
       - type: OpenAPI
         url: properties/trustedadvisor-openapi-original.yml
     overlays:
@@ -9871,23 +12634,56 @@ apis:
     aid: amazon-web-services:trustedadvisor
   - name: Amazon VPC Lattice
     description: >-
-      <p>Amazon VPC Lattice is a fully managed application networking service
-      that you use to connect, secure, and monitor all of your services across
-      multiple accounts and virtual private clouds (VPCs). Amazon VPC Lattice
-      interconnects your microservices and legacy services within a logical
-      boundary, so that you can discover and manage them more efficiently. For
-      more information, see the <a
-      href="https://docs.aws.amazon.com/vpc-lattice/latest/ug/">Amazon VPC
-      Lattice User Guide</a> </p>
+      The Amazon VPC Lattice API is a comprehensive managed application
+      networking service designed to seamlessly connect, secure, and monitor all
+      services within your organization's various accounts and virtual private
+      clouds. By providing a logical boundary for interconnecting microservices
+      and legacy services, Amazon VPC Lattice enhances the efficiency of
+      discovery and management. Consult the Amazon VPC Lattice User Guide for
+      further details.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/vpc/lattice/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Access Log Subscriptions
+      - Associations
+      - Authentication
+      - Authpolicy
+      - Deregister
+      - Deregister Targets
+      - Groups
+      - Listeners
+      - Logs
+      - Networks
+      - Policies
+      - Register
+      - Registertargets
+      - Resource Policies
+      - Resources
+      - Rules
+      - Service Network Service Associations
+      - Service Network VPC Associations
+      - Service Networks
+      - Services
+      - Subscriptions
+      - Tags
+      - Target Groups
+      - Targets
+      - Untag
+      - VPC
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/vpc/lattice/
       - type: OpenAPI
         url: properties/vpc-lattice-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/vpc/lattice/features/
+      - type: Pricing
+        url: https://aws.amazon.com/vpc/lattice/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/vpc/lattice/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/vpc-lattice-openapi-search.yml
@@ -9896,31 +12692,23 @@ apis:
     aid: amazon-web-services:vpc-lattice
   - name: AWS WAF Classic
     description: >-
-      <note> <p>This is <b>AWS WAF Classic</b> documentation. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p> <p> <b>For the latest version
-      of AWS WAF</b>, use the AWS WAFV2 API and see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">AWS
-      WAF Developer Guide</a>. With the latest version, AWS WAF has a single set
-      of endpoints for regional and global use. </p> </note> <p>This is the
-      <i>AWS WAF Classic API Reference</i> for using AWS WAF Classic with Amazon
-      CloudFront. The AWS WAF Classic actions and data types listed in the
-      reference are available for protecting Amazon CloudFront distributions.
-      You can use these actions and data types via the endpoint
-      <i>waf.amazonaws.com</i>. This guide is for developers who need detailed
-      information about the AWS WAF Classic API actions, data types, and errors.
-      For detailed information about AWS WAF Classic features and an overview of
-      how to use the AWS WAF Classic API, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p>
+      AWS WAF Classic is a web application firewall that allows you to monitor
+      HTTP and HTTPS requests directed towards Amazon API Gateway API, Amazon
+      CloudFront, or an Application Load Balancer. Additionally, AWS WAF Classic
+      enables you to manage access to your content by setting conditions such as
+      originating IP addresses or query string values. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Match
+      - Sets
+      - Firewalls
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html
       - type: OpenAPI
         url: properties/waf-openapi-original.yml
     overlays:
@@ -9931,18 +12719,27 @@ apis:
     aid: amazon-web-services:waf
   - name: Amazon Connect Voice ID
     description: >-
-      <p>Amazon Connect Voice ID provides real-time caller authentication and
-      fraud risk detection, which make voice interactions in contact centers
-      more secure and efficient.</p>
+      Amazon Connect Voice ID is a cutting-edge feature within Amazon Connect
+      that leverages machine learning technology to revolutionize caller
+      authentication and fraud prevention in voice interactions. While
+      traditional contact centers rely on time-consuming knowledge-based
+      authentication methods, Voice ID uses the caller's unique voice
+      characteristics to provide instant and accurate caller verification at a
+      minimal cost. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/connect/voice-id/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Watchlist
+      - Voice
+      - Machine Learning
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/connect/voice-id/
       - type: OpenAPI
         url: properties/voice-id-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/connect/features/
     overlays:
       - type: APIs.io Search
         url: overlays/voice-id-openapi-search.yml
@@ -9951,34 +12748,31 @@ apis:
     aid: amazon-web-services:voice-id
   - name: AWS WAF Classic Regional
     description: >-
-      <note> <p>This is <b>AWS WAF Classic Regional</b> documentation. For more
-      information, see <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p> <p> <b>For the latest version
-      of AWS WAF</b>, use the AWS WAFV2 API and see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">AWS
-      WAF Developer Guide</a>. With the latest version, AWS WAF has a single set
-      of endpoints for regional and global use. </p> </note> <p>This is the
-      <i>AWS WAF Regional Classic API Reference</i> for using AWS WAF Classic
-      with the AWS resources, Elastic Load Balancing (ELB) Application Load
-      Balancers and API Gateway APIs. The AWS WAF Classic actions and data types
-      listed in the reference are available for protecting Elastic Load
-      Balancing (ELB) Application Load Balancers and API Gateway APIs. You can
-      use these actions and data types by means of the endpoints listed in <a
-      href="https://docs.aws.amazon.com/general/latest/gr/rande.html#waf_region">AWS
-      Regions and Endpoints</a>. This guide is for developers who need detailed
-      information about the AWS WAF Classic API actions, data types, and errors.
-      For detailed information about AWS WAF Classic features and an overview of
-      how to use the AWS WAF Classic API, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/classic-waf-chapter.html">AWS
-      WAF Classic</a> in the developer guide.</p>
+      AWS WAF Classic Regional is intended for developers who are implementing
+      AWS WAF Classic with AWS resources such as Elastic Load Balancing (ELB)
+      Application Load Balancers and API Gateway APIs. For the most up-to-date
+      version of AWS WAF, refer to the AWS WAFV2 API and Developer Guide, which
+      now offers a unified set of endpoints for both regional and global use.
+      The AWS WAF Regional Classic API Reference provides detailed information
+      on AWS WAF Classic actions and data types for protecting ELB Application
+      Load Balancers and API Gateway APIs. Developers can access these actions
+      and data types through the listed endpoints in AWS Regions and Endpoints.
+      This guide is designed to offer comprehensive information on API actions,
+      data types, and errors for developers using AWS WAF Classic. Additional
+      resources and detailed instructions on utilizing AWS WAF Classic can be
+      found in the AWS WAF Classic developer guide.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_AWS_WAF_Regional.html
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Match
+      - Sets
+      - Firewalls
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_AWS_WAF_Regional.html
       - type: OpenAPI
         url: properties/waf-regional-openapi-original.yml
     overlays:
@@ -9987,95 +12781,93 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/waf-regional-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:waf-regional
-  - name: Well-Architected Tool
+  - name: AWS Well-Architected Tool
     description: >-
-      <fullname>Well-Architected Tool</fullname> <p>This is the
-      <i>Well-Architected Tool API Reference</i>. The WA Tool API provides
-      programmatic access to the <a
-      href="http://aws.amazon.com/well-architected-tool">Well-Architected
-      Tool</a> in the <a
-      href="https://console.aws.amazon.com/wellarchitected">Amazon Web Services
-      Management Console</a>. For information about the Well-Architected Tool,
-      see the <a
-      href="https://docs.aws.amazon.com/wellarchitected/latest/userguide/intro.html">Well-Architected
-      Tool User Guide</a>.</p>
+      The API offered by the AWS Well Architected Tool serves as a reliable
+      framework to assess your cloud architecture, enabling you to develop
+      scalable designs that can adapt and grow over time.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/well-architected-tool/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Alias
+      - Answers
+      - Associate
+      - Ated
+      - Checks
+      - Consol
+      - Consolidated
+      - Details
+      - Difference
+      - Disassociate
+      - Exports
+      - Global
+      - Import
+      - Improvements
+      - Invitation
+      - Invitations
+      - Lens
+      - Lenses
+      - Milestones
+      - Notifications
+      - Numbers
+      - Profiles
+      - Questions
+      - Reports
+      - Resources
+      - Reviews
+      - Settings
+      - Share
+      - Shares
+      - Summaries
+      - Tags
+      - Templates
+      - Untag
+      - Upgrade
+      - Versions
+      - Workloads
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/well-architected-tool/
       - type: OpenAPI
         url: properties/wellarchitected-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/well-architected-tool/features/
+      - type: Pricing
+        url: https://aws.amazon.com/well-architected-tool/pricing/
+      - type: Partners
+        url: https://aws.amazon.com/well-architected-tool/partners/
+      - type: Customers
+        url: https://aws.amazon.com/well-architected-tool/customers/
+      - type: FAQ
+        url: https://aws.amazon.com/well-architected-tool/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/well-architected-tool/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/wellarchitected-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/wellarchitected-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:wellarchitected
-  - name: AWS WAF V2
+  - name: AWS WAF
     description: >-
-      <fullname>WAF</fullname> <note> <p>This is the latest version of the
-      <b>WAF</b> API, released in November, 2019. The names of the entities that
-      you use to access this API, like endpoints and namespaces, all have the
-      versioning information added, like "V2" or "v2", to distinguish from the
-      prior version. We recommend migrating your resources to this version,
-      because it has a number of significant improvements.</p> <p>If you used
-      WAF prior to this release, you can't use this WAFV2 API to access any WAF
-      resources that you created before. You can access your old rules, web
-      ACLs, and other WAF resources only through the WAF Classic APIs. The WAF
-      Classic APIs have retained the prior names, endpoints, and namespaces.
-      </p> <p>For information, including how to migrate your WAF resources to
-      this version, see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">WAF
-      Developer Guide</a>. </p> </note> <p>WAF is a web application firewall
-      that lets you monitor the HTTP and HTTPS requests that are forwarded to an
-      Amazon CloudFront distribution, Amazon API Gateway REST API, Application
-      Load Balancer, AppSync GraphQL API, Amazon Cognito user pool, App Runner
-      service, or Amazon Web Services Verified Access instance. WAF also lets
-      you control access to your content, to protect the Amazon Web Services
-      resource that WAF is monitoring. Based on conditions that you specify,
-      such as the IP addresses that requests originate from or the values of
-      query strings, the protected resource responds to requests with either the
-      requested content, an HTTP 403 status code (Forbidden), or with a custom
-      response. </p> <p>This API guide is for developers who need detailed
-      information about WAF API actions, data types, and errors. For detailed
-      information about WAF features and guidance for configuring and using WAF,
-      see the <a
-      href="https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html">WAF
-      Developer Guide</a>.</p> <p>You can make calls using the endpoints listed
-      in <a href="https://docs.aws.amazon.com/general/latest/gr/waf.html">WAF
-      endpoints and quotas</a>. </p> <ul> <li> <p>For regional applications, you
-      can use any of the endpoints in the list. A regional application can be an
-      Application Load Balancer (ALB), an Amazon API Gateway REST API, an
-      AppSync GraphQL API, an Amazon Cognito user pool, an App Runner service,
-      or an Amazon Web Services Verified Access instance. </p> </li> <li> <p>For
-      Amazon CloudFront applications, you must use the API endpoint listed for
-      US East (N. Virginia): us-east-1.</p> </li> </ul> <p>Alternatively, you
-      can use one of the Amazon Web Services SDKs to access an API that's
-      tailored to the programming language or platform that you're using. For
-      more information, see <a href="http://aws.amazon.com/tools/#SDKs">Amazon
-      Web Services SDKs</a>.</p> <p>We currently provide two versions of the WAF
-      API: this API and the prior versions, the classic WAF APIs. This new API
-      provides the same functionality as the older versions, with the following
-      major improvements:</p> <ul> <li> <p>You use one API for both global and
-      regional applications. Where you need to distinguish the scope, you
-      specify a <code>Scope</code> parameter and set it to
-      <code>CLOUDFRONT</code> or <code>REGIONAL</code>. </p> </li> <li> <p>You
-      can define a web ACL or rule group with a single call, and update it with
-      a single call. You define all rule specifications in JSON format, and pass
-      them to your rule group or web ACL calls.</p> </li> <li> <p>The limits WAF
-      places on the use of rules more closely reflects the cost of running each
-      type of rule. Rule groups include capacity settings, so you know the
-      maximum cost of a rule group when you use it.</p> </li> </ul>
+      AWS WAF is a powerful web application firewall designed to safeguard your
+      AWS resources by monitoring and managing incoming web requests. It offers
+      protection for various resources like Amazon CloudFront distributions,
+      Amazon API Gateway REST APIs, Application Load Balancers, and AWS AppSync
+      GraphQL APIs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/waf/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ACL
+      - Web
+      - Firewalls
+      - Security
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/waf/
       - type: OpenAPI
         url: properties/wafv2-openapi-original.yml
     overlays:
@@ -10084,37 +12876,37 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/wafv2-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:wafv2
-  - name: AWS WorkMail
+  - name: Amazon WorkMail
     description: >-
-      <p>WorkMail is a secure, managed business email and calendaring service
-      with support for existing desktop and mobile email clients. You can access
-      your email, contacts, and calendars using Microsoft Outlook, your browser,
-      or other native iOS and Android email applications. You can integrate
-      WorkMail with your existing corporate directory and control both the keys
-      that encrypt your data and the location in which your data is stored.</p>
-      <p>The WorkMail API is designed for the following scenarios:</p> <ul> <li>
-      <p>Listing and describing organizations</p> </li> </ul> <ul> <li>
-      <p>Managing users</p> </li> </ul> <ul> <li> <p>Managing groups</p> </li>
-      </ul> <ul> <li> <p>Managing resources</p> </li> </ul> <p>All WorkMail API
-      operations are Amazon-authenticated and certificate-signed. They not only
-      require the use of the AWS SDK, but also allow for the exclusive use of
-      AWS Identity and Access Management users and roles to help facilitate
-      access, trust, and permission policies. By creating a role and allowing an
-      IAM user to access the WorkMail site, the IAM user gains full
-      administrative visibility into the entire WorkMail organization (or as set
-      in the IAM policy). This includes, but is not limited to, the ability to
-      create, update, and delete users, groups, and resources. This allows
-      developers to perform the scenarios listed above, as well as give users
-      the ability to grant access on a selective basis using the IAM model.</p>
+      Amazon WorkMail is a secure and managed business email and calendar
+      service that allows users to access their email, contacts, and calendars
+      through various client applications such as Microsoft Outlook, native iOS
+      and Android email apps, and web browsers. It supports integration with
+      corporate directories, email journaling for compliance, encryption key
+      control, and data storage location control. Additionally, Amazon WorkMail
+      offers interoperability with Microsoft Exchange Server and programmable
+      management of users, groups, and resources through the Amazon WorkMail
+      SDK.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workmail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workmail/
       - type: OpenAPI
         url: properties/workmail-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/workmail/features/
+      - type: Pricing
+        url: https://aws.amazon.com/workmail/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/workmail/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/workmail/faqs/
+      - type: Features
+        url: https://aws.amazon.com/workmail/features/
     overlays:
       - type: APIs.io Search
         url: overlays/workmail-openapi-search.yml
@@ -10123,39 +12915,33 @@ apis:
     aid: amazon-web-services:workmail
   - name: Amazon WorkSpaces
     description: >-
-      <fullname>Amazon WorkSpaces Service</fullname> <p>Amazon WorkSpaces
-      enables you to provision virtual, cloud-based Microsoft Windows or Amazon
-      Linux desktops for your users, known as <i>WorkSpaces</i>. WorkSpaces
-      eliminates the need to procure and deploy hardware or install complex
-      software. You can quickly add or remove users as your needs change. Users
-      can access their virtual desktops from multiple devices or web
-      browsers.</p> <p>This API Reference provides detailed information about
-      the actions, data types, parameters, and errors of the WorkSpaces service.
-      For more information about the supported Amazon Web Services Regions,
-      endpoints, and service quotas of the Amazon WorkSpaces service, see <a
-      href="https://docs.aws.amazon.com/general/latest/gr/wsp.html">WorkSpaces
-      endpoints and quotas</a> in the <i>Amazon Web Services General
-      Reference</i>.</p> <p>You can also manage your WorkSpaces resources using
-      the WorkSpaces console, Command Line Interface (CLI), and SDKs. For more
-      information about administering WorkSpaces, see the <a
-      href="https://docs.aws.amazon.com/workspaces/latest/adminguide/">Amazon
-      WorkSpaces Administration Guide</a>. For more information about using the
-      Amazon WorkSpaces client application or web browser to access provisioned
-      WorkSpaces, see the <a
-      href="https://docs.aws.amazon.com/workspaces/latest/userguide/">Amazon
-      WorkSpaces User Guide</a>. For more information about using the CLI to
-      manage your WorkSpaces resources, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html">WorkSpaces
-      section of the CLI Reference</a>.</p>
+      Amazon WorkSpaces Service is a cloud-based platform that allows you to
+      easily provision virtual desktops for your users, eliminating the need for
+      hardware procurement and complex software installation. With WorkSpaces,
+      you can quickly add or remove users as needed and provide access to
+      virtual desktops from various devices and web browsers. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workspaces/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Images
+      - Permission
+      - Workspaces
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workspaces/
       - type: OpenAPI
         url: properties/workspaces-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/workspaces/pricing/
+      - type: Web
+        url: https://aws.amazon.com/workspaces/web/
+      - type: Thin-client
+        url: https://aws.amazon.com/workspaces/thin-client/
+      - type: All-inclusive
+        url: https://aws.amazon.com/workspaces/all-inclusive/
+      - type: Core
+        url: https://aws.amazon.com/workspaces/core/
     overlays:
       - type: APIs.io Search
         url: overlays/workspaces-openapi-search.yml
@@ -10164,33 +12950,41 @@ apis:
     aid: amazon-web-services:workspaces
   - name: Amazon WorkSpaces Thin Client
     description: >-
-      <p>Amazon WorkSpaces Thin Client is a affordable device built to work with
-      Amazon Web Services End User Computing (EUC) virtual desktops to provide
-      users with a complete cloud desktop solution. WorkSpaces Thin Client is a
-      compact device designed to connect up to two monitors and USB devices like
-      a keyboard, mouse, headset, and webcam. To maximize endpoint security,
-      WorkSpaces Thin Client devices do not allow local data storage or
-      installation of unapproved applications. The WorkSpaces Thin Client device
-      ships preloaded with device management software.</p> <p>You can use these
-      APIs to complete WorkSpaces Thin Client tasks, such as creating
-      environments or viewing devices. For more information about WorkSpaces
-      Thin Client, including the required permissions to use the service, see
-      the <a
-      href="https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/">Amazon
-      WorkSpaces Thin Client Administrator Guide</a>. For more information about
-      using the Command Line Interface (CLI) to manage your WorkSpaces Thin
-      Client resources, see the <a
-      href="https://docs.aws.amazon.com/cli/latest/reference/workspaces-thin-client/index.html">WorkSpaces
-      Thin Client section of the CLI Reference</a>.</p>
+      The Amazon WorkSpaces Thin Client API is designed for use with Amazon Web
+      Services End User Computing (EUC) virtual desktops, providing users with a
+      cost-effective cloud desktop solution. The compact WorkSpaces Thin Client
+      device supports up to two monitors and various peripherals, such as
+      keyboards, mice, headsets, and webcams.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workspaces/thin-client/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Deregister
+      - Device
+      - Devices
+      - Environments
+      - Resources
+      - Sets
+      - Software
+      - Software Sets
+      - Tags
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workspaces/thin-client/
       - type: OpenAPI
         url: properties/workspaces-thin-client-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/workspaces/thin-client/features/
+      - type: Pricing
+        url: https://aws.amazon.com/workspaces/thin-client/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/workspaces/thin-client/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/workspaces/thin-client/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/workspaces/thin-client/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/workspaces-thin-client-openapi-search.yml
@@ -10199,67 +12993,81 @@ apis:
     aid: amazon-web-services:workspaces-thin-client
   - name: Amazon WorkDocs
     description: >-
-      <p>The Amazon WorkDocs API is designed for the following use cases:</p>
-      <ul> <li> <p>File Migration: File migration applications are supported for
-      users who want to migrate their files from an on-premises or off-premises
-      file system or service. Users can insert files into a user directory
-      structure, as well as allow for basic metadata changes, such as
-      modifications to the permissions of files.</p> </li> <li> <p>Security:
-      Support security applications are supported for users who have additional
-      security needs, such as antivirus or data loss prevention. The API
-      actions, along with CloudTrail, allow these applications to detect when
-      changes occur in Amazon WorkDocs. Then, the application can take the
-      necessary actions and replace the target file. If the target file violates
-      the policy, the application can also choose to email the user.</p> </li>
-      <li> <p>eDiscovery/Analytics: General administrative applications are
-      supported, such as eDiscovery and analytics. These applications can choose
-      to mimic or record the actions in an Amazon WorkDocs site, along with
-      CloudTrail, to replicate data for eDiscovery, backup, or analytical
-      applications.</p> </li> </ul> <p>All Amazon WorkDocs API actions are
-      Amazon authenticated and certificate-signed. They not only require the use
-      of the Amazon Web Services SDK, but also allow for the exclusive use of
-      IAM users and roles to help facilitate access, trust, and permission
-      policies. By creating a role and allowing an IAM user to access the Amazon
-      WorkDocs site, the IAM user gains full administrative visibility into the
-      entire Amazon WorkDocs site (or as set in the IAM policy). This includes,
-      but is not limited to, the ability to modify file permissions and upload
-      any file to any user. This allows developers to perform the three use
-      cases above, as well as give users the ability to grant access on a
-      selective basis using the IAM model.</p> <note> <p>The pricing for Amazon
-      WorkDocs APIs varies depending on the API call type for these actions:</p>
-      <ul> <li> <p> <code>READ (Get*)</code> </p> </li> <li> <p> <code>WRITE
-      (Activate*, Add*, Create*, Deactivate*, Initiate*, Update*)</code> </p>
-      </li> <li> <p> <code>LIST (Describe*)</code> </p> </li> <li> <p>
-      <code>DELETE*, CANCEL</code> </p> </li> </ul> <p>For information about
-      Amazon WorkDocs API pricing, see <a
-      href="https://aws.amazon.com/workdocs/pricing/">Amazon WorkDocs
-      Pricing</a>.</p> </note>
+      The Amazon WorkDocs API is tailored for a variety of use cases, including
+      file migration, security applications, and eDiscovery/analytics. The API
+      supports file migration applications for users looking to transfer files
+      from different systems, while also allowing for basic metadata changes.
+      Security applications can utilize the API actions to detect changes in
+      WorkDocs and take necessary actions to ensure data security. General
+      administrative applications, such as eDiscovery and analytics, can record
+      and replicate data from WorkDocs for backup and analysis purposes. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workdocs/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Activation
+      - Activities
+      - Comments
+      - Contents
+      - Current
+      - Custom
+      - Deactivate
+      - Describe
+      - Documents
+      - Folders
+      - Groups
+      - Initiate
+      - Labels
+      - Me
+      - Metadata
+      - Notifications
+      - Organizations
+      - Paths
+      - Permission
+      - Permissions
+      - Principals
+      - Removes
+      - Resources
+      - Restore
+      - Root
+      - Search
+      - Subscriptions
+      - Uploads
+      - Users
+      - Versions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workdocs/
       - type: OpenAPI
         url: properties/workdocs-openapi-original.yml
+      - type: SDK
+        url: https://aws.amazon.com/workdocs/sdk/
+      - type: Pricing
+        url: https://aws.amazon.com/workdocs/pricing/
+      - type: Resources
+        url: https://aws.amazon.com/workdocs/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/workdocs/faq/
     overlays:
       - type: APIs.io Search
         url: overlays/workdocs-openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/workdocs-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:workdocs
-  - name: WorkMail Message Flow
+  - name: AWS WorkMail Message Flow
     description: >-
-      <p>The WorkMail Message Flow API provides access to email messages as they
-      are being sent and received by a WorkMail organization.</p>
+      The WorkMail Message Flow API provides access to email messages as they
+      are being sent and received by a WorkMail organization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.aws.amazon.com/workmail/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Content
+      - Messages
+      - Raw
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.aws.amazon.com/workmail/
       - type: OpenAPI
         url: properties/workmailmessageflow-openapi-original.yml
     overlays:
@@ -10270,23 +13078,51 @@ apis:
     aid: amazon-web-services:workmailmessageflow
   - name: WorkSpaces Web
     description: >-
-      <p>WorkSpaces Web is a low cost, fully managed WorkSpace built
-      specifically to facilitate secure, web-based workloads. WorkSpaces Web
-      makes it easy for customers to safely provide their employees with access
-      to internal websites and SaaS web applications without the administrative
-      burden of appliances or specialized client software. WorkSpaces Web
-      provides simple policy tools tailored for user interactions, while
-      offloading common tasks like capacity management, scaling, and maintaining
-      browser images.</p>
+      The WorkSpaces Web API is a cost-effective, fully managed solution
+      designed to support secure web-based workloads. It streamlines the process
+      of granting employees access to internal websites and SaaS web
+      applications without the need for complex appliances or specialized client
+      software. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/workspaces/web/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - ARN
+      - Access
+      - Browser
+      - Certificates
+      - Disassociate
+      - Entities
+      - Er
+      - Ers
+      - IP
+      - Identity
+      - Logging
+      - Metadata
+      - Networks
+      - Portals
+      - Prov
+      - Providers
+      - Resources
+      - Services
+      - Settings
+      - Store
+      - Stores
+      - Tags
+      - Trust
+      - Untag
+      - Users
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/workspaces/web/
       - type: OpenAPI
         url: properties/workspaces-web-openapi-original.yml
+      - type: Pricing
+        url: https://aws.amazon.com/workspaces/web/pricing/
+      - type: FAQ
+        url: https://aws.amazon.com/workspaces/web/faqs/
+      - type: Resources
+        url: https://aws.amazon.com/workspaces/web/resources/
     overlays:
       - type: APIs.io Search
         url: overlays/workspaces-web-openapi-search.yml
@@ -10295,18 +13131,55 @@ apis:
     aid: amazon-web-services:workspaces-web
   - name: AWS X-Ray
     description: >-
-      <p>Amazon Web Services X-Ray provides APIs for managing debug traces and
-      retrieving service maps and other data created by processing those
-      traces.</p>
+      AWS X-Ray offers comprehensive visibility into the flow of requests within
+      your application, allowing you to analyze and filter visual data
+      pertaining to payloads, functions, traces, services, APIs, and other
+      components. Utilizing both no-code and low-code actions, AWS X-Ray
+      provides a seamless way to track and manage requests throughout your
+      application.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://aws.amazon.com/xray/
     baseURL: https://example.com
-    tags: []
+    tags:
+      - Batches
+      - Configurations
+      - Encryption
+      - Events
+      - Graphs
+      - Groups
+      - Impact
+      - Insights
+      - Policies
+      - Records
+      - Resources
+      - Rules
+      - Sampling
+      - Segments
+      - Series
+      - Services
+      - Statistics
+      - Summaries
+      - Tags
+      - Targets
+      - Telemetry
+      - Time
+      - Traces
+      - Untag
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://aws.amazon.com/xray/
       - type: OpenAPI
         url: properties/xray-openapi-original.yml
+      - type: Features
+        url: https://aws.amazon.com/xray/features/
+      - type: Pricing
+        url: https://aws.amazon.com/xray/pricing/
+      - type: Getting Started
+        url: https://aws.amazon.com/xray/getting-started/
+      - type: Resources
+        url: https://aws.amazon.com/xray/resources/
+      - type: FAQ
+        url: https://aws.amazon.com/xray/faqs/
     overlays:
       - type: APIs.io Search
         url: overlays/xray-openapi-search.yml
@@ -10314,26 +13187,152 @@ apis:
         url: overlays/xray-openapi-api-evangelist-ratings.yml
     aid: amazon-web-services:xray
 common:
+  - type: Portal
+    url: https://aws.amazon.com/
+  - type: Developer
+    url: https://aws.amazon.com/developer/
+  - type: About
+    url: https://aws.amazon.com/about-aws/
+  - type: Documentation
+    url: https://docs.aws.amazon.com/
   - type: Getting Started
-    url: https://aws.amazon.com/getting-started/?nc1=f_cc
+    url: https://aws.amazon.com/getting-started/
+  - type: Tools
+    url: https://aws.amazon.com/developer/tools/
   - type: SDKs
-    url: https://aws.amazon.com/developer/tools/?nc1=f_dr
+    url: https://aws.amazon.com/developer/tools/
+  - type: C++
+    url: https://aws.amazon.com/developer/language/cpp/
+  - type: .NET
+    url: https://aws.amazon.com/developer/language/net/
+  - type: Go
+    url: https://aws.amazon.com/developer/language/go/
+  - type: JavaScript
+    url: https://aws.amazon.com/developer/language/javascript/
+  - type: Java
+    url: https://aws.amazon.com/developer/language/java/
+  - type: Kotlin
+    url: https://aws.amazon.com/developer/language/kotlin/
+  - type: PHP
+    url: https://aws.amazon.com/developer/language/php/
+  - type: Python
+    url: https://aws.amazon.com/developer/language/python/
+  - type: Ruby
+    url: https://aws.amazon.com/developer/language/ruby/
+  - type: Rust
+    url: https://aws.amazon.com/developer/language/rust/
+  - type: Swift
+    url: https://aws.amazon.com/developer/language/swift/
+  - type: Command Line Interface
+    url: https://docs.aws.amazon.com/cli/
+  - type: Open Source
+    url: https://aws.amazon.com/opensource/
   - type: Blog
-    url: https://aws.amazon.com/blogs/?nc1=f_cc
+    url: https://aws.amazon.com/blogs/
+  - type: Press
+    url: https://press.aboutamazon.com/press-release-archive
+  - type: Investors
+    url: https://ir.aboutamazon.com/overview/default.aspx
+  - type: Analysts
+    url: https://aws.amazon.com/resources/analyst-reports/
   - type: Support
-    url: https://aws.amazon.com/premiumsupport/?nc1=f_dr
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/amazon-web-services/
+    url: https://aws.amazon.com/premiumsupport/
+  - type: Support Plans
+    url: https://aws.amazon.com/premiumsupport/plans/
+  - type: Support FAQs
+    url: https://aws.amazon.com/premiumsupport/faqs/
+  - type: Professional Services
+    url: https://aws.amazon.com/professional-services/
+  - type: Managed Services
+    url: https://aws.amazon.com/managed-services/
+  - type: Contact
+    url: https://aws.amazon.com/contact-us/
+  - type: Events
+    url: https://aws.amazon.com/events/
+  - type: Webinars
+    url: https://aws.amazon.com/events/innovation-webinars/
+  - type: Forum
+    url: https://repost.aws/
   - type: Whats New
-    url: https://aws.amazon.com/new/?nc1=f_cc
-  - type: SignUp
-    url: https://portal.aws.amazon.com/billing/signup
-  - type: Login
-    url: https://signin.aws.amazon.com/signin
+    url: https://aws.amazon.com/new/
+  - type: Pricing
+    url: https://aws.amazon.com/pricing/
+  - type: Free Tier
+    url: https://aws.amazon.com/free/
+  - type: Pricing Calculator
+    url: https://calculator.aws/
+  - type: Cost Management
+    url: https://aws.amazon.com/aws-cost-management/
+  - type: Legal
+    url: https://aws.amazon.com/legal/
   - type: Terms of Service
     url: https://aws.amazon.com/serviceterms/
   - type: Privacy Policy
     url: https://aws.amazon.com/privacy/
+  - type: Customer Agreement
+    url: https://aws.amazon.com/agreement/
+  - type: Service Level Agreements
+    url: https://aws.amazon.com/legal/service-level-agreements/
+  - type: Acceptable Use Policy
+    url: https://aws.amazon.com/aup/
+  - type: Trademark
+    url: https://aws.amazon.com/trademark-guidelines/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/amazon-web-services/
+  - type: Twitter
+    url: https://twitter.com/awscloud
+  - type: Facebook
+    url: https://www.facebook.com/amazonwebservices
+  - type: Instagram
+    url: https://www.instagram.com/amazonwebservices/
+  - type: Twitch
+    url: https://www.twitch.tv/aws
+  - type: YouTube
+    url: https://www.youtube.com/user/AmazonWebServices/Cloud/
+  - type: Knowledge Center
+    url: https://repost.aws/knowledge-center
+  - type: Podcast
+    url: https://aws.amazon.com/podcasts/
+  - type: Case Studies
+    url: https://aws.amazon.com/solutions/case-studies/
+  - type: Industries
+    url: https://aws.amazon.com/industries/
+  - type: Solutions
+    url: https://aws.amazon.com/solutions/
+  - type: White Papers
+    url: https://aws.amazon.com/whitepapers/
+  - type: Architecture
+    url: https://aws.amazon.com/architecture/
+  - type: Executive Insights
+    url: https://aws.amazon.com/executive-insights/
+  - type: Partners
+    url: https://aws.amazon.com/partners/
+  - type: Marketplace
+    url: https://aws.amazon.com/marketplace
+  - type: Training
+    url: https://aws.amazon.com/training/
+  - type: Careers
+    url: https://aws.amazon.com/careers/
+  - type: Students
+    url: https://community.aws/students
+  - type: Education
+    url: https://aws.amazon.com/education/
+  - type: Security
+    url: https://aws.amazon.com/security/
+  - type: Accessibility
+    url: https://aws.amazon.com/accessibility/
+  - type: SignUp
+    url: https://portal.aws.amazon.com/billing/signup
+  - type: Login
+    url: https://signin.aws.amazon.com/signin
+  - type: Console
+    url: https://console.aws.amazon.com
+  - type: Billing
+    url: https://console.aws.amazon.com/billing/home
+  - type: Credentials
+    url: https://console.aws.amazon.com/iam/home
+  - type: Health Dashboard
+    url: https://phd.aws.amazon.com/
 maintainers:
   - FN: API Evangelist
     url: https://apievangelist.com
@@ -10341,6 +13340,5 @@ maintainers:
 overlays:
   - type: APIs.io Search
     url: overlays/apis-io-search.yml
-  - type: API Evangelist Ratings
-    url: overlays/apis-io-search.yml
+
 ---
