@@ -3,8 +3,7 @@ name: OVH Cloud
 description: >-
   We are a cloud provider offering Dedicated Servers, VMware® based Hosted Private Cloud, and OpenStack-based Public Cloud to over 1.4 million customers worldwide. We have been an innovator in data center design and management for nearly two decades.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: >-
-  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/microsoft-azure.yml
+url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/ovh-cloud/apis.md
 created: 2024/04/18
 modified: 2024/04/18
 specificationVersion: '0.16'

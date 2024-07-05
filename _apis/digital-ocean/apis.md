@@ -7,8 +7,7 @@ description: >
   developers, startups, and SMBs with cloud infrastructure-as-a-service
   platforms. 
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: >-
-  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/digital-ocean.yml
+url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/digital-ocean/apis.md
 created: 2024/03/30
 modified: 2024/03/30
 specificationVersion: '0.16'

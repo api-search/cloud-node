@@ -4,7 +4,7 @@ description: >-
   services. They are a key part of Google Cloud Platform, allowing you to easily
   add the power of everything from computing to networking to storage to
   machine-learning-based data analysis to your applications.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/google.json
+url: https://raw.githubusercontent.com/api-search/cloud/main/_data/google/overlays/apis-io-search.yml
 created: 2024/04/14
 modified: 2024/04/14
 specificationVersion: '0.16'

@@ -9,8 +9,7 @@ description: >-
   supports many programming languages, tools, and frameworks, including
   Microsoft-specific and third-party software and systems.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: >-
-  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/microsoft-azure.yml
+url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md
 created: 2023-11-08
 modified: 2024-06-27
 specificationVersion: '0.18'
