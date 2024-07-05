@@ -6,7 +6,8 @@ url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/ovh-cloud/api
 created: 2024/04/18
 modified: 2024/04/18
 specificationVersion: '0.16'
-tags: []
+tags:
+  - Cloud
 apis:
 
   - name: OVH Cloud API
