@@ -1,52 +1,75 @@
-name: Google
-description: >-
-  Google Cloud APIs are programmatic interfaces to Google Cloud Platform
-  services. They are a key part of Google Cloud Platform, allowing you to easily
-  add the power of everything from computing to networking to storage to
-  machine-learning-based data analysis to your applications.
-url: https://raw.githubusercontent.com/api-search/cloud/main/_data/google/overlays/apis-io-search.yml
-created: 2024/04/14
-modified: 2024/04/14
-specificationVersion: '0.16'
-tags: []
+name: Digital Ocean
+description: >
+  DigitalOcean Holdings, Inc. is an American multinational technology company
+  and cloud service provider. The company is headquartered in New York City, New
+  York, US, with 15 globally distributed data centers. DigitalOcean provides
+  developers, startups, and SMBs with cloud infrastructure-as-a-service
+  platforms. 
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_data/digital-ocean/overlays/apis-io-search.yml
+created: 2024/03/30
+modified: '2024-07-05'
+specificationVersion: '0.18'
+tags:
+  - Cloud
 apis:
-  - name: Google Cloud API Gateway
-    description: >-
-      API Gateway enables you to provide secure access to your backend services
-      through a well-defined REST API that is consistent across all of your
-      services, regardless of the service implementation. Clients consume your
-      REST APIS to implement standalone apps for a mobile device or tablet,
-      through apps running in a browser, or through any other type of app that
-      can make a request to an HTTP endpoint. 
-    tags: []
-    contact:
-      - FN: Cloud Gateway Support
-        url: https://cloud.google.com/api-gateway/docs/support
-        email: ''
+  - name: Digital Ocean API
+    description: >
+      The DigitalOcean API lets you programmatically manage your Droplets and
+      other resources using conventional HTTP requests. Any action that you can
+      perform through the DigitalOcean Control Panel (except for creating
+      personal access tokens) can also be performed with the API.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.digitalocean.com/
+    baseURL: https://api.example.com
+    tags:
+      - Servers
+      - Cloud
+      - Compute
+    properties:
+      - type: Documentation
+        url: https://docs.digitalocean.com/
+      - type: OpenAPI
+        url: properties/digital-ocean-openapi-original.yml
+    aid: digital-ocean:digital-ocean-api
     overlays:
       - type: APIs.io Search
-        url: >-
-          overlays/https://api.apis.guru/v2/specs/googleapis.com/apigateway/v1alpha2/openapi.json-openapi-search.yml
-    aid: google:google-cloud-api-gateway
-  - name: Books API
-    description: >-
-      This document is intended for developers who want to write applications
-      that can interact with the Google Books API. Google Books has a vision to
-      digitize the world's books. You can use the Google Books API to search
-      content, organize an authenticated user's personal library and modify it
-      as well.
-    tags: []
-    contact:
-      - FN: Google Help
-        url: https://support.google.com/
-        email: ''
-    overlays:
-      - type: APIs.io Search
-        url: >-
-          overlays/https://api.apis.guru/v2/specs/googleapis.com/books/v1/openapi.json-openapi-search.yml
-    aid: google:books-api
+        url: overlays/digital-ocean-openapi-search.yml
+common:
+  - type: Support
+    url: https://docs.digitalocean.com/support/
+  - type: Developer
+    url: https://docs.digitalocean.com/developer-center/
+  - type: Blog
+    url: https://blog.digitalocean.com/
+  - type: Pricing
+    url: https://www.digitalocean.com/pricing
+  - type: Github Organization
+    url: https://github.com/digitalocean
+  - type: Privacy Policy
+    url: https://www.digitalocean.com/legal/privacy-policy
+  - type: Status
+    url: https://status.digitalocean.com/
+  - type: Terms of Service
+    url: https://www.digitalocean.com/legal/terms-of-service-agreement
+  - type: Tutorials
+    url: https://www.digitalocean.com/community
+  - type: Open Source
+    url: https://docs.digitalocean.com/reference/opensource/
+  - type: Libraries
+    url: https://docs.digitalocean.com/reference/libraries/
+  - type: Ideas
+    url: https://ideas.digitalocean.com/documentation
+  - type: Sign Up
+    url: https://cloud.digitalocean.com/registrations/new
+  - type: Login
+    url: https://cloud.digitalocean.com/login
 maintainers:
   - FN: API Evangelist
-    url: https://apievangelist.com
+    url: http://apievangelist.com
     email: info@apievangelist.com
-aid: google
+aid: digital-ocean
+overlays:
+  - type: APIs.io Search
+    url: overlays/apis-io-search.yml
