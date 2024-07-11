@@ -11,7 +11,7 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 url: >-
   https://raw.githubusercontent.com/api-search/cloud/main/_data/microsoft-azure-2/overlays/apis-io-search.yml
 created: 2023/11/8
-modified: '2024-07-05'
+modified: '2024-07-11'
 specificationVersion: '0.18'
 tags:
   - Cloud
@@ -2699,84 +2699,591 @@ apis:
       Azure Log Analytics API reference for management of saved Queries within
       Query Packs.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/azure-monitor/logs/query-packs
     baseURL: https://example.com
     tags:
-      - Tag
+      - Insights
+      - Microsoft Operational
+      - Operations
+      - Providers
+      - Microsoft Operational
+      - Packs
+      - Queries
+      - Subscriptions
+      - Groups
+      - Microsoft Operational
+      - Names
+      - Resources
+      - Microsoft Operational
+      - Pack
+      - Microsoft Operational
+      - Microsoft Operational
+      - Microsoft Operational
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/azure/azure-monitor/logs/query-packs
       - type: OpenAPI
         url: properties/azure-log-analytics-query-packs-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-log-analytics-query-packs-api
+    score: 307
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-log-analytics-query-packs-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Open Energy Platform Management Service APIs API
-    description: Open Energy Platform Management Service APIs
+    description: >+
+      By publishing Azure Data Manager for Energy APIs through Azure API
+      Management, you can use Azure Data Manager for Energy Private Link
+      capability for private traffic and completely remove direct public access
+      to your instance.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-secure-apis
     baseURL: https://example.com
     tags:
-      - Tag
+      - Availability
+      - Checks
+      - Energy
+      - Microsoft Open
+      - Names
+      - Platforms
+      - Providers
+      - Subscriptions
+      - Groups
+      - Microsoft Open
+      - Resources
+      - Services
+      - Microsoft Open
+      - Microsoft Open
+      - Microsoft Open
+      - Microsoft Open
+      - Microsoft Open
+      - Microsoft Open
+      - Partition
+      - Microsoft Open
+      - Microsoft Open
+      - Partitions
+      - Microsoft Open
+      - Operations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/energy-data-services/how-to-secure-apis
       - type: OpenAPI
         url: >-
           properties/open-energy-platform-management-service-apis-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-open-energy-platform-management-service-apis-api
+    score: 470
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/open-energy-platform-management-service-apis-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Microsoft.network Analytics API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/xandr/digital-platform-api/network-analytics
     baseURL: https://example.com
     tags:
-      - Tag
+      - Analytics
+      - Microsoft Network
+      - Operations
+      - Providers
+      - Data
+      - Microsoft Network
+      - Products
+      - Subscriptions
+      - Catalogs
+      - Microsoft Network
+      - Groups
+      - Microsoft Network
+      - Names
+      - Resources
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Roles
+      - Users
+      - Microsoft Network
+      - Types
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Container
+      - Generate
+      - Microsoft Network
+      - Sas
+      - Storage
+      - Tokens
+      - Accounts
+      - Microsoft Network
+      - Assignments
+      - Microsoft Network
+      - Microsoft Network
+      - Keys
+      - Microsoft Network
+      - Rotate
+      - Microsoft Network
+      - Default
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/xandr/digital-platform-api/network-analytics
       - type: OpenAPI
         url: properties/microsoftnetworkanalytics-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-microsoft-network-analytics-api
+    description: >-
+      The Network Analytics report can be used to view both buy and sell-side
+      data for a network member, Direct advertiser impressions (bought across
+      direct publishers and real-time inventory). Direct publishers (sold across
+      direct advertisers and other platform buyers). To drill down into more
+      granular analytics for a specific advertiser or publisher, see the Network
+      Advertiser Analytics and Network Publisher Analytics reports.
+    score: 1213
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/microsoftnetworkanalytics-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Network Cloud API
     description: >-
       The Network Cloud APIs provide management of the on-premises clusters and
       their resources, such as, racks, bare metal hosts, virtual machines,
       workload networks and more.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/operator-nexus/overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Cloud
+      - Microsoft Network
+      - Operations
+      - Providers
+      - Resources
+      - Bare
+      - Machines
+      - Metal
+      - Microsoft Network
+      - Subscriptions
+      - Microsoft Network
+      - Networks
+      - Services
+      - Clusters
+      - Managers
+      - Microsoft Network
+      - Microsoft Network
+      - Kubernetes
+      - Microsoft Network
+      - (L2)
+      - L2networks
+      - Layers
+      - Microsoft Network
+      - (L3)
+      - L3networks
+      - Microsoft Network
+      - Microsoft Network
+      - Rack
+      - SKUs
+      - Skus
+      - Microsoft Network
+      - Names
+      - SKU
+      - Microsoft Network
+      - Racks
+      - Appliances
+      - Microsoft Network
+      - Storage
+      - Microsoft Network
+      - Trunked
+      - Microsoft Network
+      - Virtual
+      - Microsoft Network
+      - Volumes
+      - Groups
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Patch
+      - Cordon
+      - Microsoft Network
+      - Microsoft Network
+      - Power
+      - Microsoft Network
+      - Reimage
+      - (service)
+      - Microsoft Network
+      - Replace
+      - Microsoft Network
+      - Restart
+      - Command
+      - Microsoft Network
+      - Runs
+      - Data
+      - Extraction
+      - Extracts
+      - Microsoft Network
+      - Against
+      - Commands
+      - Microsoft Network
+      - Read
+      - Read Only
+      - Microsoft Network
+      - Microsoft Network
+      - Uncordon
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Keys
+      - Microsoft Network
+      - Sets
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Baseboard
+      - Bmc
+      - Controller
+      - Management
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Deploy
+      - Microsoft Network
+      - Configurations
+      - Metrics
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Execute
+      - Microsoft Network
+      - Protection
+      - Runtime
+      - Scans
+      - Microsoft Network
+      - Versions
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Agent
+      - Microsoft Network
+      - Pools
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Nodes
+      - Targets
+      - Microsoft Network
+      - L2network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - L3network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Appliance
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Appliance,
+      - Disable
+      - Microsoft Network
+      - Remote
+      - Supported
+      - Turn
+      - Vendors
+      - Enable
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Consoles
+      - Microsoft Network
+      - Console
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
+      - Microsoft Network
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/azure/operator-nexus/overview
       - type: OpenAPI
         url: properties/networkcloud-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-network-cloud-api
+    score: 6830
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/networkcloud-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Off Azure Spring Boot API
-    description: The Microsoft.OffAzureSpringBoot Rest API spec.
+    description: >-
+      Azure Spring Apps is a fully managed service that helps Spring developers
+      focus on code, not on infrastructure. Deploy any type of Spring
+      app—including web apps, microservices, event-driven, serverless, and
+      batch—without the need for Kubernetes. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://azure.microsoft.com/en-us/products/spring-apps
     baseURL: https://example.com
     tags:
-      - Tag
+      - Azure
+      - Boot
+      - Groups
+      - Microsoft Off
+      - Names
+      - Providers
+      - Resources
+      - Spring
+      - Springbootsites
+      - Subscriptions
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Refresh
+      - Sites
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Operations
+      - Microsoft Off
+      - Springbootservers
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Springbootapps
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Microsoft Off
+      - Implements
+      - Methods
+      - Microsoft Off
+      - Summaries
+      - Microsoft Off
+      - Errors
+      - Microsoft Off
+      - Microsoft Off
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://azure.microsoft.com/en-us/products/spring-apps
       - type: OpenAPI
         url: properties/offazurespringboot-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-off-azure-spring-boot-api
+    score: 1453
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/offazurespringboot-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Palo Alto Networks.cloudngfw API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://docs.paloaltonetworks.com/cloud-ngfw/azure
     baseURL: https://example.com
     tags:
-      - Tag
+      - Alto
+      - Global
+      - Networks Cloudngfw
+      - Palo
+      - Providers
+      - Rulestacks
+      - Names
+      - Networks Cloudngfw
+      - Rulestack
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Certificates
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Commits
+      - Networks Cloudngfw
+      - Fqdnlists
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Change
+      - Logs
+      - Networks Cloudngfw
+      - Advanced
+      - Networks Cloudngfw
+      - Objects
+      - Security
+      - Applications
+      - Ids
+      - Networks Cloudngfw
+      - Countries
+      - Networks Cloudngfw
+      - Firewalls
+      - Networks Cloudngfw
+      - Categories
+      - Networks Cloudngfw
+      - Predefined
+      - URL
+      - Networks Cloudngfw
+      - Services
+      - Networks Cloudngfw
+      - Posts
+      - Rules
+      - Networks Cloudngfw
+      - Priorities
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Counters
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Refresh
+      - Networks Cloudngfw
+      - Reset
+      - Networks Cloudngfw
+      - Prefixlists
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Pre
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Revert
+      - Networks Cloudngfw
+      - Operations
+      - Networks Cloudngfw
+      - Subscriptions
+      - Information
+      - Networks Cloudngfw
+      - Support
+      - Local
+      - Networks Cloudngfw
+      - Groups
+      - Networks Cloudngfw
+      - Resources
+      - Firewall
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Profiles
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Save
+      - Networks Cloudngfw
+      - Statuses
+      - Default
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
+      - Networks Cloudngfw
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://docs.paloaltonetworks.com/cloud-ngfw/azure
       - type: OpenAPI
         url: properties/paloaltonetworkscloudngfw-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-palo-alto-networks-cloudngfw-api
+    description: >-
+      Cloud Next-Generation Firewall by Palo Alto Networks - an Azure Native ISV
+      Service - is Palo Alto Networks Next-Generation Firewall (NGFW) delivered
+      as a cloud-native service on Azure. You can discover Cloud NGFW in the
+      Azure Marketplace and consume it in your Azure Virtual Networks (VNet) and
+      in Azure Virtual WAN (vWAN). With Cloud NGFW, you can access the core NGFW
+      capabilities such as App-ID and URL filtering based technologies. It
+      provides threat prevention and detection through cloud-delivered security
+      services and threat prevention signatures.
+    score: 5257
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/paloaltonetworkscloudngfw-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Orbital API
     description: Azure Orbital service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -2790,160 +3297,537 @@ apis:
       - type: OpenAPI
         url: properties/azure-orbital-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-orbital-api
+    score: 1040
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-orbital-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Portal API
-    description: Allows creation and deletion of Azure Shared Dashboards.
+    description: >-
+      The Azure portal is a web-based, unified console that provides an
+      alternative to command-line tools. You can manage your Azure subscription
+      with the Azure portal. Build, manage, and monitor everything from simple
+      web apps to complex cloud deployments. Create custom dashboards for an
+      organized view of resources and configure accessibility options for the
+      best experience.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/azure-portal/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Portal
+      - Operations
+      - Providers
+      - Services
+      - Compilefile
+      - Microsoft Portal
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/azure/azure-portal/
       - type: OpenAPI
         url: properties/portal-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-portal-api
+    score: 67
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/portal-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Log Analytics  Operations Management API
-    description: Azure Log Analytics API reference for Solution.
+    description: >-
+      Log Analytics is a service that helps you collect and analyze data
+      generated by resources in your cloud and on-premises environments.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/loganalytics/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Create/Update
+      - Groups
+      - Management
+      - Microsoft Operations
+      - Names
+      - Resourcegroups
+      - Resources
+      - Solution
+      - Solutions
+      - Subscriptions
+      - Microsoft Operations
+      - Patch
+      - Microsoft Operations
+      - Microsoft Operations
+      - Microsoft Operations
+      - Microsoft Operations
+      - Associations
+      - Microsoft Operations
+      - Microsoft Operations
+      - Types
+      - Microsoft Operations
+      - Microsoft Operations
+      - Configurations
+      - Microsoft Operations
+      - Microsoft Operations
+      - Microsoft Operations
+      - Microsoft Operations
+      - Microsoft Operations
+      - Operations
+      - Providers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/loganalytics/
       - type: OpenAPI
         url: >-
           properties/azure-log-analytics-operations-management-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-log-analytics-operations-management-api
+    score: 958
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-log-analytics-operations-management-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Peering Management Client API
-    description: APIs to manage Peering resources through the Azure Resource Manager.
+    description: >-
+      Microsoft Azure Peering Service is a networking service that enhances
+      customer connectivity to Microsoft cloud services such as Microsoft 365,
+      Dynamics 365, software as a service (SaaS) services, Azure, or any
+      Microsoft services accessible via the public internet. Microsoft has
+      partnered with internet service providers (ISPs), internet exchange
+      partners (IXPs), and software-defined cloud interconnect (SDCI) providers
+      worldwide to provide reliable and high-performing public connectivity with
+      optimal routing from the customer to the Microsoft network.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.peering-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Availability
+      - Checks
+      - Microsoft Peering
+      - Providers
+      - Services
+      - Subscriptions
+      - Legacy
+      - Microsoft Peering
+      - Peerings
+      - Microsoft Peering
+      - Operations
+      - Asns
+      - Microsoft Peering
+      - Names
+      - Peer
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Locations
+      - Microsoft Peering
+      - Groups
+      - Microsoft Peering
+      - Resources
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Prefix
+      - Prefixes
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
+      - Microsoft Peering
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.peering-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/peeringmanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-peering-management-client-api
+    score: 1683
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/peeringmanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Microsoft Azure Playwright Service Management API
-    description: Microsoft.AzurePlaywrightService Resource Provider management API.
+    description: >-
+      Microsoft Playwright Testing is a fully managed service for end-to-end
+      testing built on top of Playwright. With Playwright, you can automate
+      end-to-end tests to ensure your web applications work the way you expect
+      it to, across different web browsers and operating systems. The service
+      abstracts the complexity and infrastructure for running Playwright tests
+      with high parallelization.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.playwrighttesting-readme?view=azure-dotnet-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Azure
+      - Operations
+      - Playwright
+      - Providers
+      - Services
+      - Accounts
+      - Microsoft Azure
+      - Subscriptions
+      - Availability
+      - Checks
+      - Microsoft Azure
+      - Names
+      - Locations
+      - Microsoft Azure
+      - Quotas
+      - Microsoft Azure
+      - Quota
+      - Groups
+      - Microsoft Azure
+      - Resources
+      - Microsoft Azure
+      - Microsoft Azure
+      - Microsoft Azure
+      - Microsoft Azure
+      - Microsoft Azure
+      - Microsoft Azure
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.playwrighttesting-readme?view=azure-dotnet-preview
       - type: OpenAPI
         url: >-
           properties/microsoft-azureplaywrightservice-management-api-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-microsoft-azure-playwright-service-management-api
+    score: 541
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/microsoft-azureplaywrightservice-management-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Policy Events Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/policy/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Events
+      - Groups
+      - Insights
+      - Management
+      - Microsoft Policy
+      - Names
+      - Namespaces
+      - Policies
+      - Providers
+      - Queries
+      - Resources
+      - Results
+      - Microsoft Policy
+      - Subscriptions
+      - Microsoft Policy
+      - Microsoft Policy
+      - Authorization
+      - Definitions
+      - Microsoft Policy
+      - Sets
+      - Microsoft Policy
+      - Assignment
+      - Assignments
+      - Microsoft Policy
+      - Microsoft Policy
+      - Resourcegroups
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/policy/
       - type: OpenAPI
         url: properties/policyeventsclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-policy-events-client-api
+    description: >-
+      Policy REST API surfaces operations related to Azure Policy results. These
+      operations include querying policy evaluation events and compliance states
+      and managing policy remediations.
+    score: 1575
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/policyeventsclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Policy States Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/policy/policy-states?view=rest-policy-2019-10-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Insights
+      - Management
+      - Microsoft Policy
+      - Names
+      - Namespaces
+      - Policies
+      - Providers
+      - Queries
+      - Resources
+      - Results
+      - States
+      - Microsoft Policy
+      - Summaries
+      - Summarize
+      - Microsoft Policy
+      - Subscriptions
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Authorization
+      - Definitions
+      - Microsoft Policy
+      - Sets
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Assignment
+      - Assignments
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Resourcegroups
+      - Microsoft Policy
+      - Microsoft Policy
+      - Operations
+      - $Metadata
+      - Microsoft Policy
+      - Scopes
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/policy/policy-states?view=rest-policy-2019-10-01
       - type: OpenAPI
         url: properties/policystatesclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-policy-states-client-api
+    description: API for managing the policy states on Azufre.
+    score: 2736
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/policystatesclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Check Policy Restrictions Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/policy/policy-restrictions?view=rest-policy-2023-03-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Checks
+      - Insights
+      - Microsoft Policy
+      - Policies
+      - Providers
+      - Restrictions
+      - Subscriptions
+      - Groups
+      - Microsoft Policy
+      - Names
+      - Resources
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/policy/policy-restrictions?view=rest-policy-2023-03-01
       - type: OpenAPI
         url: properties/checkpolicyrestrictionsclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-check-policy-restrictions-client-api
+    description: >-
+      Checks what restrictions Azure Policy will place on a resource within a
+      subscription.
+    score: 109
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/checkpolicyrestrictionsclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Remediations Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/policy/remediations?view=rest-policy-2021-10-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Deployments
+      - Groups
+      - Insights
+      - Management
+      - Microsoft Policy
+      - Names
+      - Namespaces
+      - Providers
+      - Remediation
+      - Remediations
+      - Cancels
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Subscriptions
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Resources
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/policy/remediations?view=rest-policy-2021-10-01
       - type: OpenAPI
         url: properties/remediationsclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-remediations-client-api
+    description: For managing remediations on Microsoft Azure.
+    score: 1602
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/remediationsclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Policy Insights Operations API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/policy/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Insights
+      - Microsoft Policy
+      - Operations
+      - Providers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/policy/
       - type: OpenAPI
         url: properties/policy-insights-operations-api-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-policy-insights-operations-api
+    score: 45
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/policy-insights-operations-api-openapi-api-evangelist-ratings.yml
+    description: >+
+      Policy REST API surfaces operations related to Azure Policy results. These
+      operations include querying policy evaluation events and compliance states
+      and managing policy remediations.
+
   - name: Microsoft Azure Policy Metadata Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/policy/policy-metadata?view=rest-policy-2019-10-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Insights
+      - Metadata
+      - Microsoft Policy
+      - Names
+      - Policies
+      - Providers
+      - Resources
+      - Microsoft Policy
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/policy/policy-metadata?view=rest-policy-2019-10-01
       - type: OpenAPI
         url: properties/policymetadataclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-policy-metadata-client-api
+    description: Get a list and manage the policy metadata resources on Azure.
+    score: 103
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/policymetadataclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Attestations Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/attestation/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Attestations
+      - Insights
+      - Microsoft Policy
+      - Providers
+      - Subscriptions
+      - Attestation
+      - Microsoft Policy
+      - Names
+      - Microsoft Policy
+      - Microsoft Policy
+      - Groups
+      - Microsoft Policy
+      - Resources
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
+      - Microsoft Policy
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/attestation/
       - type: OpenAPI
         url: properties/attestationsclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-attestations-client-api
+    description: >-
+      Azure Attestation is a unified solution for remotely verifying the
+      trustworthiness of a platform and integrity of the binaries running inside
+      it. The service supports attestation of the platforms backed by Trusted
+      Platform Modules (TPMs) alongside the ability to attest to the state of
+      Trusted Execution Environments (TEEs) such as Intel® Software Guard
+      Extensions (SGX) enclaves and Virtualization-based Security (VBS)
+      enclaves. The service allows creation and management of attestation
+      providers, user defined policies and policy signer certificates.
+    score: 683
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/attestationsclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Component Policy States Client API
     description: >-
       Query component policy states at varying resource scopes for Resource
       Provider mode policies.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/policy/component-policy-states?view=rest-policy-2022-04-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Components
+      - Insights
+      - Microsoft Policy
+      - Policies
+      - Providers
+      - Queries
+      - Resources
+      - Results
+      - States
+      - Subscriptions
+      - Groups
+      - Microsoft Policy
+      - Names
+      - Microsoft Policy
+      - Authorization
+      - Definitions
+      - Microsoft Policy
+      - Namespaces
+      - Assignment
+      - Assignments
+      - Microsoft Policy
+      - Microsoft Policy
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/policy/component-policy-states?view=rest-policy-2022-04-01
       - type: OpenAPI
         url: properties/componentpolicystatesclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-component-policy-states-client-api
+    score: 1021
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/componentpolicystatesclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Postgre Sqlmanagement Client API
     description: >-
       The Microsoft Azure management API provides create, read, update, and
@@ -2951,16 +3835,29 @@ apis:
       databases, firewall rules, VNET rules, security alert policies, log files,
       encryption keys, active directory administrator and configurations.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.postgresql-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - DNS
+      - Microsoft Dbfor
+      - Postgre
+      - Private
+      - Providers
+      - SQL
+      - Suffix
+      - Zones
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.postgresql-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/postgresqlmanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-postgre-sqlmanagement-client-api
+    score: 34
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/postgresqlmanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Postgre Sqlserver Management Client API
     description: >-
       The Microsoft Azure management API provides create, read, update, and
@@ -2968,86 +3865,208 @@ apis:
       databases, firewall rules, VNET rules, security alert policies, log files
       and configurations with new business model.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.postgresql-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Checks
+      - Locations
+      - Microsoft Dbfor
+      - Names
+      - Networks
+      - Postgre
+      - Providers
+      - SQL
+      - Subnets
+      - Subscriptions
+      - Usage
+      - Virtual
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.postgresql-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/postgresqlservermanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-postgre-sqlserver-management-client-api
+    score: 53
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/postgresqlservermanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Power Bidedicated API
     description: >-
       PowerBI Dedicated Web API provides a RESTful set of web services that
       enables users to create, retrieve, update, and delete Power BI dedicated
       capacities
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/power-bi-embedded/capacities?view=rest-power-bi-embedded-2021-01-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Availability
+      - Bidedicated
+      - Capacities
+      - Capacity
+      - Checks
+      - Dedicated
+      - Groups
+      - Locations
+      - Microsoft Power
+      - Names
+      - Operations
+      - Providers
+      - Resources
+      - Resume
+      - Skus
+      - Subscriptions
+      - Suspend
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/power-bi-embedded/capacities?view=rest-power-bi-embedded-2021-01-01
       - type: OpenAPI
         url: properties/powerbidedicated-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-power-bidedicated-api
+    score: 733
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/powerbidedicated-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Power Bi Embedded Management Client API
     description: >-
       Client to manage your Power BI Embedded workspace collections and retrieve
       workspaces.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-powerbiembedded-readme?view=azure-node-latest
     baseURL: https://example.com
     tags:
-      - Tag
+      - Availability
+      - Checks
+      - Collections
+      - Groups
+      - Keys
+      - Locations
+      - Microsoft Power
+      - Move
+      - Names
+      - Operations
+      - Providers
+      - Regenerate
+      - Resources
+      - Subscriptions
+      - Workspaces
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-powerbiembedded-readme?view=azure-node-latest
       - type: OpenAPI
         url: properties/power-bi-embedded-management-client-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-power-bi-embedded-management-client-api
+    score: 696
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/power-bi-embedded-management-client-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Policy Tracked Resources Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/policy/policy-tracked-resources?view=rest-policy-2018-07-01-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Insights
+      - Management
+      - Microsoft Policy
+      - Names
+      - Namespaces
+      - Policies
+      - Providers
+      - Queries
+      - Resources
+      - Results
+      - Subscriptions
+      - Tracked
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/policy/policy-tracked-resources?view=rest-policy-2018-07-01-preview
       - type: OpenAPI
         url: properties/policytrackedresourcesclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-policy-tracked-resources-client-api
+    description: Queries policy tracked resources under the management group.
+    score: 362
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/policytrackedresourcesclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Microsoft Playwright Testing Auth Manager Service API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/java/api/overview/azure/resourcemanager-playwrighttesting-readme?view=azure-java-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Access
+      - Accounts
+      - Tokens
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/java/api/overview/azure/resourcemanager-playwrighttesting-readme?view=azure-java-preview
       - type: OpenAPI
         url: >-
           properties/microsoft-playwrighttesting-authmanager-service-api-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-microsoft-playwright-testing-auth-manager-service-api
-  - name: Microsoft Azure Private Dns Management Client API
-    description: The Private DNS Management Client.
+    description: >-
+      This is a Java client library for Azure Resource Manager Playwright
+      Testing, which includes the Microsoft Azure SDK for Playwright Testing
+      Management. The package is known as package-2023-10-01-preview and allows
+      for management of Azure Playwright testing services. For more information
+      on using this package, refer to the documentation provided in the Azure
+      Management Libraries for Java.
+    score: 307
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/microsoft-playwrighttesting-authmanager-service-api-openapi-api-evangelist-ratings.yml
+  - name: Microsoft Azure Private DNS Management Client API
+    description: >-
+      Microsoft Azure Private DNS provides a reliable and secure DNS service for
+      your virtual network. Azure Private DNS manages and resolves domain names
+      in the virtual network without the need to configure a custom DNS
+      solution.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.privatedns-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - DNS
+      - Groups
+      - Links
+      - Microsoft Network
+      - Names
+      - Networks
+      - Private
+      - Providers
+      - Record
+      - Relative
+      - Resources
+      - Sets
+      - Subscriptions
+      - Types
+      - Virtual
+      - Zones
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.privatedns-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/privatednsmanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-private-dns-management-client-api
+    score: 1596
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/privatednsmanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Private Link Services For Power Biclient API
     description: >-
       Client to manage Power BI Private Link Service resources and connection
@@ -3056,7 +4075,26 @@ apis:
     humanURL: https://example.com
     baseURL: https://example.com
     tags:
-      - Tag
+      - Asynchronous
+      - Azure
+      - BI
+      - Connections
+      - Endpoints
+      - Groups
+      - Links
+      - Microsoft Power
+      - Names
+      - Operation
+      - Operations
+      - Power
+      - Private
+      - Providers
+      - Resources
+      - Results
+      - Services
+      - Specific
+      - Subscriptions
+      - Under
     properties:
       - type: Documentation
         url: https://example.com
@@ -3064,6 +4102,11 @@ apis:
         url: properties/privatelinkservicesforpowerbiclient-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-private-link-services-for-power-biclient-api
+    score: 936
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/privatelinkservicesforpowerbiclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Cosmos Db For Postgre Sql API
     description: >-
       Azure Cosmos DB for PostgreSQL database service resource provider REST
