@@ -11,7 +11,7 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 url: >-
   https://raw.githubusercontent.com/api-search/cloud/main/_data/microsoft-azure-2/overlays/apis-io-search.yml
 created: 2023/11/8
-modified: '2024-07-11'
+modified: '2024-07-12'
 specificationVersion: '0.18'
 tags:
   - Cloud
@@ -4112,29 +4112,119 @@ apis:
       Azure Cosmos DB for PostgreSQL database service resource provider REST
       APIs
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/postgresqlhsc/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Groupsv2
+      - Microsoft Dbfor
+      - Postgre
+      - Providers
+      - SQL
+      - Servers
+      - Subscriptions
+      - Microsoft Dbfor
+      - Names
+      - Resources
+      - Clusters
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Configurations
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Coordinator
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Nodes
+      - Microsoft Dbfor
+      - Firewall
+      - Microsoft Dbfor
+      - Rules
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Roles
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Restart
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Stop
+      - Microsoft Dbfor
+      - Promote
+      - Availability
+      - Checks
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Operations
+      - Connections
+      - Endpoints
+      - Microsoft Dbfor
+      - Private
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Links
+      - Microsoft Dbfor
+      - Microsoft Dbfor
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/postgresqlhsc/
       - type: OpenAPI
         url: properties/azure-cosmos-db-for-postgresql-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-cosmos-db-for-postgre-sql-api
+    score: 1879
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-cosmos-db-for-postgresql-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Professional Service API
-    description: REST APIs for Marketplace Professional Service Offers
+    description: >-
+      Azure Cosmos DB for Postgres is a fully managed, cloud-native distributed
+      SQL database for transactional applications. The Resource Provider
+      Representational State Transfer (REST) APIs enables you to manage your
+      Azure Cosmos DB resources programmatically. 
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/postgresqlhsc/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Professional
+      - Providers
+      - Resources
+      - Services
+      - Subscriptions
+      - Groups
+      - Microsoft Professional
+      - Names
+      - Microsoft Professional
+      - Microsoft Professional
+      - Microsoft Professional
+      - Microsoft Professional
+      - Unsubscribe
+      - Microsoft Professional
+      - Operation
+      - Results
+      - Microsoft Professional
+      - Operations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/postgresqlhsc/
       - type: OpenAPI
         url: properties/professionalservice-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-professional-service-api
+    score: 461
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/professionalservice-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Programmable Connectivity API
     description: >-
       Azure Programmable Connectivity (APC) provides a unified interface to the
@@ -4142,54 +4232,227 @@ apis:
       deprecate a Network API with less advance notice than the Azure standard,
       in which case APC will also deprecate that Network API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://azure.microsoft.com/en-us/products/programmable-connectivity
     baseURL: https://example.com
     tags:
-      - Tag
+      - Devices
+      - Location:verify
+      - Locations
+      - Network:retrieve
+      - Networks
+      - Number:verify
+      - Numbers
+      - Verifications
+      - SIMs
+      - Swap
+      - Swap:retrieve
+      - Swap:verify
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://azure.microsoft.com/en-us/products/programmable-connectivity
       - type: OpenAPI
         url: properties/programmable-connectivity-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-programmable-connectivity-api
+    score: 341
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/programmable-connectivity-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Power Platform API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/power-platform/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Enterprise
+      - Groups
+      - Links
+      - Microsoft Power
+      - Names
+      - Platforms
+      - Policies
+      - Private
+      - Providers
+      - Resources
+      - Subscriptions
+      - Microsoft Power
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/power-platform/
       - type: OpenAPI
         url: properties/powerplatform-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-power-platform-api
+    description: >-
+      Power Platform API is a RESTful web API that enables you to access Power
+      Platform services and resources.
+    score: 103
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/powerplatform-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Provider Hub API
-    description: Microsoft ProviderHub
+    description: >-
+      This API facilitates the management of Microsoft Azure Provider Hub
+      (RPaaS) resources, adhering to the latest Azure SDK standards and offering
+      a wide range of essential functionalities.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.providerhub-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Custom
+      - Hub
+      - Microsoft Prov
+      - Microsoft Provider
+      - Names
+      - Namespaces
+      - Providers
+      - Registrations
+      - Rollout
+      - Rollouts
+      - Subscriptions
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Default
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Stop
+      - Generate
+      - Manifests
+      - Microsoft Prov
+      - Microsoft Provider
+      - Checkin
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Notifications
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Operations
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Resources
+      - Resourcetype
+      - Types
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - SKU
+      - Skus
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - First
+      - Microsoft Prov
+      - Microsoft Provider
+      - Nested
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Second
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Microsoft Prov
+      - Microsoft Provider
+      - Actions
+      - Microsoft Prov
+      - Microsoft Provider
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.providerhub-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/providerhub-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-provider-hub-api
+    score: 3822
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/providerhub-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Policy Client API
-    description: Creates a Microsoft.Purview management client.
+    description: >-
+      Microsoft Purview Microsoft Purview is a unified data governance service
+      that helps you manage and govern your on-premises, multi-cloud, and
+      software-as-a-service (SaaS) data. Easily create a holistic, up-to-date
+      map of your data landscape with automated data discovery, sensitive data
+      classification, and end-to-end data lineage. Empower data consumers to
+      find valuable, trustworthy data. Manage user access to data in your estate
+      securely and at scale.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/purview/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Based
+      - Microsoft Purview
+      - Policies
+      - Purview
+      - RBAC
+      - Scopes
+      - Microsoft Purview
+      - Operations
+      - Providers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/purview/
       - type: OpenAPI
         url: properties/purviewpolicyclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-purview-policy-client-api
+    score: 97
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/purviewpolicyclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Hyperscale Citus Management Client API
     description: >-
       The Microsoft Azure management API provides create, read, update, and
@@ -4197,64 +4460,300 @@ apis:
       including server groups, servers, databases, firewall rules, VNET rules,
       security alert policies, log files and configurations.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://azure.microsoft.com/en-us/products/postgresql/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Groupsv2
+      - Microsoft Dbfor
+      - Postgre
+      - Providers
+      - SQL
+      - Servers
+      - Subscriptions
+      - Microsoft Dbfor
+      - Names
+      - Resources
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Configurations
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Firewall
+      - Microsoft Dbfor
+      - Rules
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Roles
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Restart
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Stop
+      - Availability
+      - Checks
+      - Microsoft Dbfor
+      - Microsoft Dbfor
+      - Operations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://azure.microsoft.com/en-us/products/postgresql/
       - type: OpenAPI
         url: properties/hyperscalecitusmanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-hyperscale-citus-management-client-api
+    score: 1283
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/hyperscalecitusmanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Quota Extension API
-    description: Microsoft Azure Quota Resource Provider
+    description: >-
+      The Azure Quota Service REST API is designed for viewing and managing
+      quotas for Azure resource providers.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/quota/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Quota
+      - Names
+      - Providers
+      - Resources
+      - Scopes
+      - Usages
+      - Microsoft Quota
+      - Microsoft Quota
+      - Quotas
+      - Microsoft Quota
+      - Microsoft Quota
+      - Microsoft Quota
+      - Microsoft Quota
+      - Quota
+      - Microsoft Quota
+      - Microsoft Quota
+      - Operations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/quota/
       - type: OpenAPI
         url: properties/azure-quota-extension-api-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-quota-extension-api
+    score: 505
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-quota-extension-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Recommendations Service API
     description: Dynamics 365 Recommendations Service resource provider
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/advisor/recommendations?view=rest-advisor-2023-01-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Availability
+      - Checks
+      - Microsoft Recommendations
+      - Names
+      - Providers
+      - Services
+      - Subscriptions
+      - Accounts
+      - Microsoft Recommendations
+      - Groups
+      - Microsoft Recommendations
+      - Resources
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Status
+      - Microsoft Recommendations
+      - Modeling
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Endpoints
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Microsoft Recommendations
+      - Locations
+      - Microsoft Recommendations
+      - Operation
+      - Statuses
+      - Microsoft Recommendations
+      - Operations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/advisor/recommendations?view=rest-advisor-2023-01-01
       - type: OpenAPI
         url: properties/recommendationsservice-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-recommendations-service-api
+    score: 994
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/recommendationsservice-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Quantum Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/advisor/recommendations?view=rest-advisor-2023-01-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Microsoft Quantum
+      - Names
+      - Providers
+      - Resources
+      - Subscriptions
+      - Workspaces
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Locations
+      - Microsoft Quantum
+      - Offerings
+      - Microsoft Quantum
+      - Operations
+      - Availability
+      - Checks
+      - Microsoft Quantum
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/advisor/recommendations?view=rest-advisor-2023-01-01
       - type: OpenAPI
         url: properties/azure-quantum-management-client-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-quantum-management-client-api
+    description: >-
+      Learn about quantum computing with the Azure Quantum service. Use Python
+      and Q#, a language for quantum programming, to create and submit quantum
+      programs in the Azure portal, or set up your own local development
+      environment with the Quantum Development Kit (QDK) to write quantum
+      programs.
+    score: 524
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-quantum-management-client-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Site Recovery Management Service API
-    description: A first party Azure service enabling the data replication.
+    description: >-
+      Azure Site Recovery contributes to your business continuity and disaster
+      recovery (BCDR) strategy by keeping apps and workloads available during
+      outages. Site Recovery replicates on-premises and Azure workloads to a
+      secondary location. When an outage occurs, you fail over to the secondary
+      location. You recover apps to the primary site when it’s up and running
+      again.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/site-recovery/
     baseURL: https://example.com
     tags:
-      - Tag
+      - (Dra)
+      - Agent
+      - Agents
+      - Fabric
+      - Fabrics
+      - Groups
+      - Microsoft Data
+      - Names
+      - Replication
+      - Resources
+      - Subscriptions
+      - Microsoft Data
+      - Puts
+      - Microsoft Data
+      - (Dras)
+      - Microsoft Data
+      - Microsoft Data
+      - Operation
+      - Operations
+      - Status
+      - Alerts
+      - Configurations
+      - Emails
+      - Microsoft Data
+      - Settings
+      - Vault
+      - Vaults
+      - Microsoft Data
+      - Microsoft Data
+      - Events
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Policies
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Items
+      - Microsoft Data
+      - Protected
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Failover
+      - Microsoft Data
+      - Performs
+      - Planned
+      - Microsoft Data
+      - Microsoft Data
+      - Points
+      - Recovery
+      - Microsoft Data
+      - Extensions
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Availability
+      - Checks
+      - Locations
+      - Microsoft Data
+      - Microsoft Data
+      - REST
+      - Supported
+      - Deployments
+      - Microsoft Data
+      - Preflight
+      - Validations
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - Microsoft Data
+      - (workflow)
+      - Jobs
+      - Microsoft Data
+      - (workflows)
+      - Microsoft Data
+      - Microsoft Data
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/site-recovery/
       - type: OpenAPI
         url: >-
           properties/azure-site-recovery-management-service-api-openapi-original.yml
