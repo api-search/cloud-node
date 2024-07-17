@@ -11,7 +11,7 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 url: >-
   https://raw.githubusercontent.com/api-search/cloud/main/_data/microsoft-azure-2/overlays/apis-io-search.yml
 created: 2023/11/8
-modified: '2024-07-12'
+modified: '2024-07-17'
 specificationVersion: '0.18'
 tags:
   - Cloud
@@ -4758,108 +4758,546 @@ apis:
         url: >-
           properties/azure-site-recovery-management-service-api-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-site-recovery-management-service-api
+    score: 3241
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-site-recovery-management-service-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Quantum Client API
-    description: Azure Quantum REST API client
+    description: >+
+      Microsoft Azure Quantum is the cloud quantum computing service of
+      Microsoft Azure, with a diverse set of quantum solutions and technologies.
+      Azure Quantum ensures an open, flexible, and future-proofed path to
+      quantum computing that adapts to your way of working, accelerates your
+      progress, and protects your technology investments.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.quantum-readme?view=azure-dotnet-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Items
+      - Jobs
+      - Levels
+      - Microsoft Quantum
+      - Names
+      - Providers
+      - Quotas
+      - Resources
+      - Sas
+      - Sessions
+      - Status
+      - Storage
+      - Subscriptions
+      - Top
+      - URI
+      - Workspaces
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.quantum-readme?view=azure-dotnet-preview
       - type: OpenAPI
         url: properties/quantum-client-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-quantum-client-api
+    score: 1066
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/quantum-client-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Quantum Workspace Services API
     description: Azure Quantum Workspace Services
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/azurequantum/resourcemanager/workspaces?view=rest-azurequantum-resourcemanager-2023-11-13-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Jobs
+      - Microsoft Quantum
+      - Names
+      - Providers
+      - Resources
+      - Subscriptions
+      - Workspaces
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Status
+      - Microsoft Quantum
+      - Quotas
+      - Microsoft Quantum
+      - Sessions
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Id:close
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Microsoft Quantum
+      - Sas
+      - Storage
+      - URI
+      - Items
+      - Levels
+      - Microsoft Quantum
+      - Top
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/azurequantum/resourcemanager/workspaces?view=rest-azurequantum-resourcemanager-2023-11-13-preview
       - type: OpenAPI
         url: properties/azure-quantum-workspace-services-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-quantum-workspace-services-api
+    score: 1120
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-quantum-workspace-services-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Recovery Services Backup Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Backupstorageconfig
+      - Groups
+      - Microsoft Recovery
+      - Names
+      - Providers
+      - Resources
+      - Services
+      - Subscriptions
+      - Vault
+      - Vaults
+      - Vaultstorageconfig
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Any
+      - Azure
+      - Backup
+      - Capacity2
+      - Configurations
+      - Followings1
+      - Locations
+      - Microsoft Recovery
+      - Passed
+      - Pre
+      - Properties
+      - Protected3
+      - Protection
+      - Regions
+      - Related
+      - VM
+      - Val
+      - Validate
+      - Will
+      - Container
+      - Microsoft Recovery
+      - Status
+      - Feature
+      - Features
+      - Given
+      - Microsoft Recovery
+      - Supported
+      - Fabric
+      - Fabrics
+      - Intent
+      - Microsoft Recovery
+      - Objects
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Intents
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Summaries
+      - Usage
+      - Microsoft Recovery
+      - Operations
+      - Backupconfig
+      - Microsoft Recovery
+      - Vaultconfig
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Encryption
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Connections
+      - Endpoints
+      - Microsoft Recovery
+      - Private
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Operation
+      - Microsoft Recovery
+      - Data
+      - Microsoft Recovery
+      - Move
+      - Prepare
+      - Microsoft Recovery
+      - Results
+      - Microsoft Recovery
+      - Triggers
+      - Containers
+      - Items
+      - Microsoft Recovery
+      - Protected
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Points
+      - Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Restore
+      - Microsoft Recovery
+      - Policies
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Jobs
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Cancels
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Exports
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Statuses
+      - Engines
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Protectable
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Inquire
+      - Inquires
+      - Microsoft Recovery
+      - Under
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Instant
+      - Microsoft Recovery
+      - Provision
+      - Microsoft Recovery
+      - Revoke
+      - Microsoft Recovery
+      - Refresh
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Pin
+      - Security
+      - Another
+      - Data Store
+      - Microsoft Recovery
+      - Store
+      - Microsoft Recovery
+      - Recommended
+      - Guard
+      - Microsoft Recovery
+      - Proxies
+      - Microsoft Recovery
+      - Proxy
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Unlock
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/backup/
       - type: OpenAPI
         url: properties/recoveryservicesbackupclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-recovery-services-backup-client-api
+    description: >+
+      Azure Backup contributes to your business continuity and disaster recovery
+      (BCDR) strategy by backing up data to the Azure clouds. Use Backup to back
+      up data on virtual machines running on-premises, and on Azure VMs.
+
+    score: 6340
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/recoveryservicesbackupclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Red Hat Open Shift Client API
-    description: Rest API for Azure Red Hat OpenShift 4
+    description: >-
+      Microsoft Azure Red Hat OpenShift enables you to deploy fully managed
+      OpenShift clusters, allowing you to maintain regulatory compliance while
+      you stay focused on application development.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/openshift/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Available
+      - Hat
+      - Microsoft Red
+      - Operations
+      - RP
+      - Shift
+      - Clusters
+      - Microsoft Red
+      - Specified
+      - Subscriptions
+      - Groups
+      - Microsoft Red
+      - Names
+      - Resources
+      - Microsoft Red
+      - Subscription,
+      - Microsoft Red
+      - Microsoft Red
+      - Microsoft Red
+      - Administrative
+      - Credentials
+      - Kubeconfig
+      - Microsoft Red
+      - Microsoft Red
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/openshift/
       - type: OpenAPI
         url: properties/azure-red-hat-openshift-client-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-red-hat-open-shift-client-api
+    score: 529
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-red-hat-openshift-client-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Red Hat Open Shift 4 Client API
-    description: Rest API for Azure Red Hat OpenShift 4
+    description: >+
+      This article shows you how to connect to an Azure Red Hat OpenShift
+      cluster running OpenShift 4 as the kubeadmin user through the OpenShift
+      web console.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/openshift/connect-cluster
     baseURL: https://example.com
     tags:
-      - Tag
+      - Available
+      - Hat
+      - Microsoft Red
+      - Operations
+      - RP
+      - Shift
+      - Clusters
+      - Microsoft Red
+      - Specified
+      - Subscriptions
+      - Groups
+      - Microsoft Red
+      - Names
+      - Resources
+      - Microsoft Red
+      - Subscription,
+      - Microsoft Red
+      - Microsoft Red
+      - Microsoft Red
+      - Credentials
+      - Microsoft Red
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/azure/openshift/connect-cluster
       - type: OpenAPI
         url: properties/azure-red-hat-openshift-4-client-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-red-hat-open-shift-4-client-api
+    score: 457
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/azure-red-hat-openshift-4-client-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Recovery Services Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/recoveryservices/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Microsoft Recovery
+      - Names
+      - Providers
+      - Resources
+      - Services
+      - Subscriptions
+      - Usages
+      - Vault
+      - Vaults
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/recoveryservices/
       - type: OpenAPI
         url: properties/recoveryservicesclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-recovery-services-client-api
+    description: >-
+      A Recovery Services vault is an Azure entity that stores, manages, and
+      orchestrates data and information for the Azure Backup service, and the
+      Azure Site Recovery service. These services contribute to your business
+      continuity and disaster recovery (BCDR) strategy. Backup backs up data to
+      Azure from on-premises and Azure VMs. Site Recovery replicates, fails
+      over, and fails back workloads running on on-premises machines and Azure
+      VMs.
+    score: 68
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/recoveryservicesclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Redis Management Client API
-    description: REST API for Azure Redis Cache Service.
+    description: >-
+      Microsoft Azure Cache for Redis provides an in-memory data store based on
+      the Redis software. Redis improves the performance and scalability of an
+      application that uses backend data stores heavily. It's able to process
+      large volumes of application requests by keeping frequently accessed data
+      in the server memory, which can be written to and read from quickly. Redis
+      brings a critical low-latency and high-throughput data storage solution to
+      modern applications.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.redis-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Cache
+      - Operations
+      - Providers
+      - Availability
+      - Checks
+      - Microsoft Cache
+      - Names
+      - Subscriptions
+      - Groups
+      - Microsoft Cache
+      - Notifications
+      - Redis
+      - Resources
+      - Upgrade
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Keys
+      - Microsoft Cache
+      - Microsoft Cache
+      - Regenerate
+      - Force
+      - Microsoft Cache
+      - Reboot
+      - Import
+      - Microsoft Cache
+      - Exports
+      - Microsoft Cache
+      - Cache
+      - Firewall
+      - Microsoft Cache
+      - Rules
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Patch
+      - Schedules
+      - Default
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Linked
+      - Microsoft Cache
+      - Servers
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.redis-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/redismanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-redis-management-client-api
+    score: 1633
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/redismanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Redis Enterprise Management Client API
     description: REST API for managing Redis Enterprise resources in Azure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.redisenterprise-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Cache
+      - Operations
+      - Providers
+      - Locations
+      - Microsoft Cache
+      - Operation
+      - Status
+      - Subscriptions
+      - Clusters
+      - Enterprise
+      - Groups
+      - Microsoft Cache
+      - Names
+      - Redis
+      - Resources
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Databases
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Keys
+      - Microsoft Cache
+      - Microsoft Cache
+      - Regenerate
+      - Import
+      - Microsoft Cache
+      - Exports
+      - Microsoft Cache
+      - Connections
+      - Endpoints
+      - Microsoft Cache
+      - Private
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Links
+      - Microsoft Cache
+      - Force
+      - Microsoft Cache
+      - Unlink
+      - Flush
+      - Microsoft Cache
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.redisenterprise-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/redisenterprisemanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-redis-enterprise-management-client-api
+    score: 1294
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/redisenterprisemanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Redis Enterprise API
     description: REST API for managing Redis Enterprise resources in Azure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
