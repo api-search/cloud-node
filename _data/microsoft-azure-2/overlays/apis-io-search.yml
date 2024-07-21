@@ -11,7 +11,7 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 url: >-
   https://raw.githubusercontent.com/api-search/cloud/main/_data/microsoft-azure-2/overlays/apis-io-search.yml
 created: 2023/11/8
-modified: '2024-07-17'
+modified: '2024-07-21'
 specificationVersion: '0.18'
 tags:
   - Cloud
@@ -5301,134 +5301,702 @@ apis:
   - name: Microsoft Azure Redis Enterprise API
     description: REST API for managing Redis Enterprise resources in Azure.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/redis-enterprise?view=rest-redis-redisenterprisecache-2024-02-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Cache
+      - Operations
+      - Providers
+      - Locations
+      - Microsoft Cache
+      - Operation
+      - Status
+      - Subscriptions
+      - Clusters
+      - Enterprise
+      - Groups
+      - Microsoft Cache
+      - Names
+      - Redis
+      - Resources
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Databases
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Keys
+      - Microsoft Cache
+      - Microsoft Cache
+      - Regenerate
+      - Import
+      - Microsoft Cache
+      - Exports
+      - Microsoft Cache
+      - Connections
+      - Endpoints
+      - Microsoft Cache
+      - Private
+      - Microsoft Cache
+      - Microsoft Cache
+      - Microsoft Cache
+      - Links
+      - Microsoft Cache
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/redis-enterprise?view=rest-redis-redisenterprisecache-2024-02-01
       - type: OpenAPI
         url: properties/redisenterprise-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-redis-enterprise-api
+    score: 1462
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/redisenterprise-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Relay API
-    description: >-
-      Use these API to manage Azure Relay resources through Azure Resource
-      Manager.
+    description: >+
+      Azure Relay provides cloud-enabled communication with enterprise messaging
+      and relayed communication that helps you connect on-premises solutions
+      with the cloud.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/relay/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Groups
+      - Links
+      - Microsoft Relay
+      - Names
+      - Namespaces
+      - Private
+      - Providers
+      - Resources
+      - Subscriptions
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/relay/
       - type: OpenAPI
         url: properties/relay-api-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-relay-api
+    score: 52
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/relay-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Appliances API
-    description: The appliances Rest API spec.
+    description: >-
+      The Azure Migrate appliance is a lightweight appliance that the Azure
+      Migrate: Discovery and assessment tool uses to discover and assess
+      physical or virtual servers from on-premises or any cloud.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/virtualnetwork/network-virtual-appliances?view=rest-virtualnetwork-2024-01-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Connectors
+      - Microsoft Resource
+      - Operations
+      - Providers
+      - Appliances
+      - Microsoft Resource
+      - Subscriptions
+      - Groups
+      - Microsoft Resource
+      - Names
+      - Resources
+      - Specified
+      - Appliance
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Clusters
+      - Credentials
+      - Customers
+      - Microsoft Resource
+      - Users
+      - Microsoft Resource
+      - Graphs
+      - Microsoft Resource
+      - Upgrade
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/virtualnetwork/network-virtual-appliances?view=rest-virtualnetwork-2024-01-01
       - type: OpenAPI
         url: properties/appliances-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-appliances-api
+    score: 440
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/appliances-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Resource Graph API
-    description: Azure Resource Graph API Reference
+    description: >-
+      Azure Resource Graph enables you to get full visibility into your
+      environments by providing high performance and powerful querying
+      capability across all your resources.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Graphs
+      - Microsoft Resource
+      - Providers
+      - Resources
+      - Microsoft Resource
+      - Operations
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview
       - type: OpenAPI
         url: properties/azure-resource-graph-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-resource-graph-api
+    score: 117
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-resource-graph-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Management Client API
-    description: Creates a Microsoft.Purview management client.
+    description: >-
+      Microsoft Purview's solutions in the governance portal provide a unified
+      data governance service that helps you manage your on-premises,
+      multicloud, and software-as-a-service (SaaS) data.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.purview-readme?view=azure-dotnet
     baseURL: https://example.com
     tags:
-      - Tag
+      - Accounts
+      - Groups
+      - Microsoft Purview
+      - Names
+      - Resources
+      - Subscriptions
+      - Microsoft Purview
+      - Microsoft Purview
+      - Microsoft Purview
+      - Microsoft Purview
+      - Microsoft Purview
+      - Patches
+      - Asynchronous
+      - Keys
+      - Listkeys
+      - Microsoft Purview
+      - Default
+      - Information
+      - Microsoft Purview
+      - Scopes
+      - Sets
+      - Microsoft Purview
+      - Microsoft Purview
+      - Available
+      - Microsoft Purview
+      - Operations
+      - Connections
+      - Endpoints
+      - Microsoft Purview
+      - Private
+      - Microsoft Purview
+      - Approves/Rejects
+      - Microsoft Purview
+      - Microsoft Purview
+      - Linkable
+      - Links
+      - Microsoft Purview
+      - Privately
+      - Given
+      - Microsoft Purview
+      - Availability
+      - Checks
+      - Microsoft Purview
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/resourcemanager.purview-readme?view=azure-dotnet
       - type: OpenAPI
         url: properties/purviewmanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-purview-management-client-api
+    score: 1319
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/purviewmanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Resource Mover Service API
     description: >-
       A first party Azure service orchestrating the move of Azure resources from
       one Azure region to another or between zones within a region.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/resourcemover/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Collections
+      - Groups
+      - Microsoft Migrate
+      - Move
+      - Names
+      - Providers
+      - Resources
+      - Subscriptions
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Prepare
+      - Initiate
+      - Microsoft Migrate
+      - Commits
+      - Microsoft Migrate
+      - Discard
+      - Microsoft Migrate
+      - Dependencies
+      - Microsoft Migrate
+      - Resolve
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Unresolved
+      - Bulk
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Operations
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Microsoft Migrate
+      - Required
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/resourcemover/
       - type: OpenAPI
         url: properties/resource-mover-service-api-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-resource-mover-service-api
+    score: 1370
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/resource-mover-service-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Resource Graph Query API
-    description: Azure Resource Graph Query API Reference
+    description: >-
+      This quickstart describes how to run an Azure Resource Graph query with
+      REST API and view the results. The REST API elements are a URI that
+      includes the API version and request body that contains the query. The
+      examples use Azure CLI to sign into Azure and that authenticates your
+      account to run az rest commands.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-rest-api?tabs=powershell
     baseURL: https://example.com
     tags:
-      - Tag
+      - Graphs
+      - Groups
+      - Microsoft Resource
+      - Names
+      - Providers
+      - Queries
+      - Resources
+      - Subscriptions
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-rest-api?tabs=powershell
       - type: OpenAPI
         url: properties/azure-resource-graph-query-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-resource-graph-query-api
+    score: 335
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-resource-graph-query-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Arg Query Generation API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/azureresourcegraph/resourcegraph/query?view=rest-azureresourcegraph-resourcegraph-2023-09-01-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Generate
+      - Graphs
+      - Microsoft Resource
+      - Providers
+      - Queries
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/azureresourcegraph/resourcegraph/query?view=rest-azureresourcegraph-resourcegraph-2023-09-01-preview
       - type: OpenAPI
         url: properties/arg-query-generation-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-arg-query-generation-api
+    description: >-
+      The query language for the Azure Resource Graph supports many operators
+      and functions. Each work and operate based on Kusto Query Language (KQL).
+      To learn about the query language used by Resource Graph, start with the
+      tutorial for KQL.
+    score: 58
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/arg-query-generation-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Site Recovery Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-recoveryservicesdatareplication-readme?view=azure-node-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Available
+      - Groups
+      - Microsoft Recovery
+      - Names
+      - Operations
+      - Resources
+      - Services
+      - Subscriptions
+      - Alerts
+      - Configurations
+      - Configured
+      - Emails
+      - Microsoft Recovery
+      - Notification(alert)
+      - Replication
+      - Settings
+      - Vaults
+      - Microsoft Recovery
+      - Configures
+      - Microsoft Recovery
+      - Notifications
+      - Vault
+      - Appliances
+      - Microsoft Recovery
+      - Case
+      - Eligibility
+      - Errors
+      - Machines
+      - Microsoft Compute
+      - Microsoft Recovery
+      - Protection
+      - Results
+      - Unsuitable
+      - VM
+      - Validations
+      - Virtual
+      - Default
+      - Microsoft Compute
+      - Microsoft Recovery
+      - Azure
+      - Events
+      - Microsoft Recovery
+      - Recovery
+      - Sites
+      - Details
+      - Microsoft Recovery
+      - ASR
+      - Fabrics
+      - Microsoft Recovery
+      - Fabric
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Purges
+      - Checks
+      - Consistency
+      - Microsoft Recovery
+      - AAD
+      - Microsoft Recovery
+      - Migrates
+      - Migratetoaad
+      - Failover
+      - Gateways
+      - Microsoft Recovery
+      - Perform
+      - Process
+      - Reassociate
+      - Servers
+      - Microsoft Recovery
+      - Certificates
+      - Microsoft Recovery
+      - Renew
+      - Renews
+      - Logical
+      - Microsoft Recovery
+      - Networks
+      - Under
+      - Microsoft Recovery
+      - Specified
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Mapping
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Container
+      - Containers
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Discover
+      - Items
+      - Microsoft Recovery
+      - Protectable
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Migrations
+      - Microsoft Recovery
+      - Enables
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Migrate
+      - Microsoft Recovery
+      - Points
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Pause
+      - Microsoft Recovery
+      - Resume
+      - Microsoft Recovery
+      - Resync
+      - Resynchronizes
+      - Microsoft Recovery
+      - Tests
+      - Cleanup
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Protected
+      - Microsoft Recovery
+      - Replicated
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Disk(s)
+      - Disks
+      - Microsoft Recovery
+      - Change
+      - Microsoft Recovery
+      - Cancels
+      - Execute
+      - Microsoft Recovery
+      - Commits
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Planned
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Disables
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Repair
+      - Resynchronize
+      - Microsoft Recovery
+      - Protect
+      - Re
+      - Replication\Reprotect
+      - Reverse
+      - Health
+      - Microsoft Recovery
+      - Resolve
+      - Microsoft Recovery
+      - Providers
+      - Switch
+      - Compute
+      - Microsoft Recovery
+      - Sizes
+      - Targets
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Unplanned
+      - Appliance
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Mobility
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Purge
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Another
+      - Microsoft Recovery
+      - Switches
+      - Switchprotection
+      - Microsoft Recovery
+      - Registered
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Refresh
+      - '"delete'
+      - (if
+      - Any
+      - Assume
+      - Backward
+      - Behavior)
+      - Clients
+      - Compatibility
+      - Continue
+      - Deleting
+      - Empty
+      - Host
+      - Input"
+      - Maintain
+      - Microsoft Recovery
+      - 'Note:'
+      - Objects
+      - Old
+      - Released
+      - Rsp
+      - Single
+      - Than
+      - Unsupported
+      - Used
+      - Classifications
+      - Microsoft Recovery
+      - Storage
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Center
+      - Centers
+      - Microsoft Recovery
+      - Replicationv
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Operation
+      - Microsoft Recovery
+      - Jobs
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Restart
+      - Restarts
+      - Microsoft Recovery
+      - Resumes
+      - Exports
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - View Only
+      - Microsoft Recovery
+      - Policies
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Intent
+      - Intents
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Plans
+      - Microsoft Recovery
+      - Given
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Reprotect
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - View
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Data
+      - Microsoft Recovery
+      - Operating
+      - SRS
+      - Supported
+      - Systems
+      - Microsoft Recovery
+      - Summaries
+      - Microsoft Recovery
+      - Refreshes
+      - Microsoft Recovery
+      - Microsoft Recovery
+      - Always
+      - Microsoft Recovery
+      - Present
+      - Singleton
+      - Microsoft Recovery
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-recoveryservicesdatareplication-readme?view=azure-node-preview
       - type: OpenAPI
         url: properties/siterecoverymanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-site-recovery-management-client-api
+    description: >-
+      This package contains an isomorphic SDK (runs both in Node.js and in
+      browsers) for Azure Site Recovery Management client.
   - name: Microsoft Azure Scheduler Management Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/scheduler/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Collections
+      - Jobs
+      - Microsoft Scheduler
+      - Providers
+      - Subscriptions
+      - Groups
+      - Microsoft Scheduler
+      - Names
+      - Resources
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Enable
+      - Microsoft Scheduler
+      - Disable
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Microsoft Scheduler
+      - Runs
+      - Microsoft Scheduler
+      - History
+      - Microsoft Scheduler
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/scheduler/
       - type: OpenAPI
         url: properties/schedulermanagementclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-scheduler-management-client-api
+    description: >-
+      REST APIs for the Azure Scheduler Service. These APIs allow you to create,
+      manage, and aggregate scheduled jobs.
+    score: 1742
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/schedulermanagementclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Catalog Service Rest API Document API
     description: >-
       Purview Catalog Service is a fully managed cloud service whose users can
@@ -5437,45 +6005,142 @@ apis:
       from their existing investments. This spec defines REST API of Purview
       Catalog Service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/purview/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Atlas
+      - Entities
+      - Bulk
+      - Classifications
+      - Gu
+      - Guid
+      - Names
+      - Attributes
+      - Types
+      - Unique
+      - Sets
+      - Header
+      - Businessmetadata
+      - Bm
+      - Import
+      - Templates
+      - Labels
+      - Glossary
+      - Categories
+      - Partial
+      - Related
+      - Terms
+      - Term
+      - Assigned
+      - Headers
+      - Detailed
+      - Operation
+      - Exports
+      - Terms:delete
+      - Queries
+      - Search
+      - Suggest
+      - Browse
+      - Autocomplete
+      - Lineage
+      - Next
+      - Relationships
+      - Businessmetadatadef
+      - Classificationdef
+      - Entitydef
+      - Enumdef
+      - Relationshipdef
+      - Structdef
+      - Typedef
+      - Typedefs
+      - Termtemplatedef
+      - Collections
+      - Here
+      - Move
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/purview/
       - type: OpenAPI
         url: >-
           properties/purview-catalog-service-rest-api-document-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-purview-catalog-service-rest-api-document-api
+    score: 10064
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/purview-catalog-service-rest-api-document-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Data Plane Account Client API
     description: Creates a Microsoft.Purview data plane account client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://example.com
     baseURL: https://example.com
     tags:
-      - Tag
+      - Listkeys
+      - Regeneratekeys
+      - Collections
+      - Names
+      - Child
+      - Paths
+      - Assignment
+      - Assignments
+      - Contacts
+      - Groups
+      - Scoped
+      - Definitions
+      - Domains
+      - Features
+      - Configurations
+      - Default
+      - Resources
+      - Rules
+      - Sets
     properties:
       - type: Documentation
         url: https://example.com
       - type: OpenAPI
         url: properties/dataplaneaccountclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-data-plane-account-client-api
+    score: 1433
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/dataplaneaccountclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Devops Policies Rest API Document API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-purview-devops-policies-api-is-now-public/ba-p/3818931
     baseURL: https://example.com
     tags:
-      - Tag
+      - Devops
+      - Policies
+      - Auditor
+      - Names
+      - Purview
+      - Resources
+      - Roles
+      - SQL
+      - Security
+      - Monitors
+      - Perf
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-purview-devops-policies-api-is-now-public/ba-p/3818931
       - type: OpenAPI
         url: >-
           properties/purview-devops-policies-rest-api-document-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-purview-devops-policies-rest-api-document-api
+    description: >-
+      Many of our sophisticated customers prefer to interface with Microsoft
+      Purview via scripts rather than via the UI. Microsoft Purview DevOps
+      policies now support a REST API offering full CRUD capability (listing,
+      policies for SQL Performance Monitor, policies for SQL Security Auditor). 
+    score: 403
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/purview-devops-policies-rest-api-document-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Analytics Purview Data Map API
     description: >-
       Purview Data Map Service is a fully managed cloud service whose users can
@@ -5488,113 +6153,360 @@ apis:
       existing investments. This spec defines REST API of Purview Data Map
       Service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/purview/azure.analytics.purview.datamap/versions
     baseURL: https://example.com
     tags:
-      - Tag
+      - Atlas
+      - Entities
+      - Bulk
+      - Classifications
+      - Sets
+      - Attributes
+      - Names
+      - Types
+      - Unique
+      - Businessmetadata
+      - Import
+      - Templates
+      - Gu
+      - Guid
+      - Business
+      - Metadata
+      - Header
+      - Labels
+      - Glossary
+      - Categories
+      - Headers
+      - Detailed
+      - Partial
+      - Terms
+      - Related
+      - Term
+      - Assigned
+      - Lineage
+      - Relationships
+      - Businessmetadatadef
+      - Classificationdef
+      - Entitydef
+      - Enumdef
+      - Relationshipdef
+      - Structdef
+      - Typedef
+      - Typedefs
+      - Move
+      - Next
+      - Autocomplete
+      - Search
+      - Queries
+      - Suggest
+      - Termtemplatedef
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/purview/azure.analytics.purview.datamap/versions
       - type: OpenAPI
         url: properties/azure-analytics-purview-data-map-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-analytics-purview-data-map-api
   - name: Microsoft Azure Purview Self Service Policies Rest API Document API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/purview/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Policies
+      - Self
+      - Services
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/purview/
       - type: OpenAPI
         url: >-
           properties/purview-self-service-policies-rest-api-document-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-purview-self-service-policies-rest-api-document-api
+    description: >-
+      Microsoft Purview Microsoft Purview is a unified data governance service
+      that helps you manage and govern your on-premises, multi-cloud, and
+      software-as-a-service (SaaS) data. Easily create a holistic, up-to-date
+      map of your data landscape with automated data discovery, sensitive data
+      classification, and end-to-end data lineage. Empower data consumers to
+      find valuable, trustworthy data. Manage user access to data in your estate
+      securely and at scale.
+    score: 126
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/purview-self-service-policies-rest-api-document-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Metadata Policies Service Rest API Document API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/purview/tutorial-metadata-policy-collections-apis
     baseURL: https://example.com
     tags:
-      - Tag
+      - Metadata
+      - Roles
+      - Policies
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/purview/tutorial-metadata-policy-collections-apis
       - type: OpenAPI
         url: >-
           properties/purview-metadata-policies-service-rest-api-document-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-purview-metadata-policies-service-rest-api-document-api
+    description: >-
+      In August 2021, access control in Microsoft Purview moved from Azure
+      Identity & Access Management (IAM) (control plane) to Microsoft Purview
+      collections (data plane). This change gives enterprise data curators and
+      administrators more precise, granular access control on their data sources
+      scanned by Microsoft Purview. The change also enables organizations to
+      audit right access and right use of their data.
+    score: 244
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/purview-metadata-policies-service-rest-api-document-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Microsoft Scanning Client API
-    description: Creates a Microsoft.Scanning management client.
+    description: >-
+      Azure Purview Scanning is a fully managed cloud service whose users can
+      scan your data into your data estate (also known as your catalog).
+      Scanning is a process by which the catalog connects directly to a data
+      source on a user-specified schedule.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/javascript/api/overview/azure/purview-scanning-rest-readme?view=azure-node-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Azure
+      - Keys
+      - Names
+      - Vault
+      - Vaults
+      - Classificationrules
+      - Classifications
+      - Rules
+      - Versions
+      - ':Tag'
+      - Collections
+      - Scans
+      - Credentials
+      - Data
+      - Data Source
+      - Sources
+      - Custom
+      - Filters
+      - Integrationruntimes
+      - Integrations
+      - Runtime
+      - Status
+      - ':List'
+      - Authentication
+      - ':Regenerate'
+      - Interactive
+      - Name:disable
+      - Queries
+      - Name:enable
+      - Managed
+      - Managedvirtualnetworks
+      - Networks
+      - Virtual
+      - Endpoints
+      - Managedprivateendpoints
+      - Private
+      - Runs
+      - ':Cancel'
+      - Rulesets
+      - Scanrulesets
+      - Systems
+      - Types
+      - Latest
+      - Default
+      - Triggers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/javascript/api/overview/azure/purview-scanning-rest-readme?view=azure-node-preview
       - type: OpenAPI
         url: properties/microsoftscanningclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-microsoft-scanning-client-api
+    score: 2995
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/microsoftscanningclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Reservation API
     description: This API describe Azure Reservation
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/consumption/reservations-details?view=rest-consumption-2023-05-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Limits
+      - Locations
+      - Microsoft Capacity
+      - Names
+      - Providers
+      - Resources
+      - Services
+      - Subscriptions
+      - Microsoft Capacity
+      - Microsoft Capacity
+      - Microsoft Capacity
+      - Microsoft Capacity
+      - Microsoft Capacity
+      - Auto
+      - Increase
+      - Microsoft Capacity
+      - Quota
+      - Microsoft Capacity
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/consumption/reservations-details?view=rest-consumption-2023-05-01
       - type: OpenAPI
         url: properties/azure-reservation-api-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-reservation-api
+    score: 588
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/azure-reservation-api-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Share Client API
     description: Creates a data plane client for Purview Share.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/analytics.purview.sharing-readme?view=azure-dotnet-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Received
+      - Share
+      - Shares
+      - Unique
+      - Replace
+      - Attached
+      - Detached
+      - Sent
+      - Guid
+      - Invitations
+      - Given
+      - Invitation
+      - Id:notify
+      - Notifies
+      - Recipients
+      - Operation
+      - Resources
+      - Activates
+      - Activation
+      - Code
+      - Combination
+      - Emails
+      - Emails:activate
+      - Tenant
+      - Using
+      - Emails:register
+      - Registers
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/analytics.purview.sharing-readme?view=azure-dotnet-preview
       - type: OpenAPI
         url: properties/purview-share-client-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-purview-share-client-api
+    score: 883
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/purview-share-client-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Distribution Service Rest API Document API
     description: >-
       Purview distribution service enables various Azure RPs to fetch the
       policies and attributes for data governance.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/purview/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Data Source
+      - Preferences
+      - Elements
+      - Policies
+      - Events
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/purview/
       - type: OpenAPI
         url: >-
           properties/purview-distribution-service-rest-api-document-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-purview-distribution-service-rest-api-document-api
+    score: 162
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/purview-distribution-service-rest-api-document-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Microsoft.resource Health API
-    description: The Resource Health Client.
+    description: >+
+      Resource health helps you diagnose and get support when an Azure issue
+      impacts your resources. It informs you about the current and past health
+      of your resources and helps you mitigate issues.
+
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/resourcehealth/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Availability
+      - Health
+      - Microsoft Resource
+      - Providers
+      - Statuses
+      - Subscriptions
+      - Groups
+      - Microsoft Resource
+      - Names
+      - Resources
+      - Microsoft Resource
+      - Operations
+      - Current
+      - Microsoft Resource
+      - URI
+      - Microsoft Resource
+      - Metadata
+      - Microsoft Resource
+      - Microsoft Resource
+      - Events
+      - Impacted
+      - Microsoft Resource
+      - Tracking
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Advisory
+      - Microsoft Resource
+      - Security
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Details
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Child
+      - Microsoft Resource
+      - Microsoft Resource
+      - Microsoft Resource
+      - Emerging
+      - Issues
+      - Microsoft Resource
+      - Microsoft Resource
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/resourcehealth/
       - type: OpenAPI
         url: properties/microsoftresourcehealth-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-microsoft-resource-health-api
+    score: 1219
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/microsoftresourcehealth-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Data Map Service Rest API Document API
     description: >-
       Purview Data Map Service is a fully managed cloud service whose users can
@@ -5603,31 +6515,126 @@ apis:
       their existing investments. This spec defines REST API of Purview Data Map
       Service.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: https://learn.microsoft.com/en-us/rest/api/purview/
     baseURL: https://example.com
     tags:
-      - Tag
+      - Atlas
+      - Entities
+      - Bulk
+      - Classifications
+      - Gu
+      - Guid
+      - Names
+      - Attributes
+      - Types
+      - Unique
+      - Sets
+      - Header
+      - Businessmetadata
+      - Bm
+      - Import
+      - Templates
+      - Labels
+      - Move
+      - Operation
+      - Operations
+      - Glossary
+      - Categories
+      - Partial
+      - Related
+      - Terms
+      - Term
+      - Assigned
+      - Headers
+      - Detailed
+      - Queries
+      - Search
+      - Suggest
+      - Autocomplete
+      - Lineage
+      - Next
+      - Relationships
+      - Businessmetadatadef
+      - Classificationdef
+      - Entitydef
+      - Enumdef
+      - Relationshipdef
+      - Structdef
+      - Typedef
+      - Typedefs
+      - Termtemplatedef
+      - Audit
     properties:
       - type: Documentation
-        url: https://example.com
+        url: https://learn.microsoft.com/en-us/rest/api/purview/
       - type: OpenAPI
         url: >-
           properties/purview-data-map-service-rest-api-document-openapi-original.yml
     aid: >-
       microsoft-azure:microsoft-azure-purview-data-map-service-rest-api-document-api
+    score: 8591
+    overlays:
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/purview-data-map-service-rest-api-document-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Saa S API
-    description: REST APIs for Azure Marketplace SaaS Offers
+    description: >-
+      The SaaS Fulfillment APIs enable publishers, also known as independent
+      software vendors (ISVs), to publish and sell their SaaS applications in
+      Microsoft AppSource, Azure Marketplace, and Azure portal. These APIs
+      enable ISV applications to participate in all commerce enabled channels:
+      direct, partner-led (reseller), and field-led. Integrating with these APIs
+      is a requirement for creating and publishing a transactable SaaS offer in
+      Partner Center.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/partner-center/marketplace-offers/partner-center-portal/pc-saas-fulfillment-apis
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Saa
+      - Operations
+      - Providers
+      - Applications
+      - Groups
+      - Microsoft Saa
+      - Names
+      - Resources
+      - Subscriptions
+      - Microsoft Saa
+      - Saasresources
+      - Microsoft Saa
+      - Microsoft Saa
+      - Microsoft Saa
+      - Microsoft Saa
+      - Access
+      - Microsoft Saa
+      - Tokens
+      - Microsoft Saa
+      - Microsoft Saa
+      - Microsoft Saa
+      - Microsoft Saa
+      - Microsoft Saa
+      - Microsoft Saa
+      - Microsoft Saa
+      - Unsubscribe
+      - Microsoft Saa
+      - Move
+      - Val
+      - Validate
+      - Microsoft Saa
+      - Operation
+      - Results
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/partner-center/marketplace-offers/partner-center-portal/pc-saas-fulfillment-apis
       - type: OpenAPI
         url: properties/saas-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-saa-s-api
+    score: 1121
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/saas-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Purview Workflow Service API
     description: >-
       Workflows are automated, repeatable business processes which allow
@@ -5638,69 +6645,218 @@ apis:
       API of Purview Workflow Service, which could used for creating Purview
       workflow client.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/overview/azure/analytics.purview.workflows-readme?view=azure-dotnet-preview
     baseURL: https://example.com
     tags:
-      - Tag
+      - Workflows
+      - Userrequests
+      - Workflowruns
+      - Runs
+      - Cancels
+      - Workflowtasks
+      - Tasks
+      - Approvals
+      - Approve
+      - Reject
+      - Reassign
+      - Change
+      - Status
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/overview/azure/analytics.purview.workflows-readme?view=azure-dotnet-preview
       - type: OpenAPI
         url: properties/purview-workflow-service-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-purview-workflow-service-api
+    score: 771
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/purview-workflow-service-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Feature Client API
-    description: Feature provider
+    description: >-
+      Azure Feature Exposure Control (AFEC) provides a mechanism for the
+      resource providers to control feature exposure to users. Resource
+      providers typically use this mechanism to provide public/private preview
+      for new features prior to making them generally available. Users need to
+      explicitly register for AFEC features to get access to such functionality.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.fluent.featureclient?view=azure-dotnet-legacy
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Features
+      - Operations
+      - Providers
+      - Features
+      - Microsoft Features
+      - Subscriptions
+      - Microsoft Features
+      - Namespaces
+      - Resources
+      - Feature
+      - Microsoft Features
+      - Names
+      - Microsoft Features
+      - Register
+      - Microsoft Features
+      - Unregister
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.fluent.featureclient?view=azure-dotnet-legacy
       - type: OpenAPI
         url: properties/featureclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-feature-client-api
+    score: 300
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/featureclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Management Lock Client API
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/rest/api/resources/management-locks?view=rest-resources-2016-09-01
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Authorization
+      - Operations
+      - Providers
+      - Groups
+      - Levels
+      - Locks
+      - Management
+      - Microsoft Authorization
+      - Names
+      - Resources
+      - Subscriptions
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Scopes
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Any
+      - Below
+      - Microsoft Authorization
+      - Namespaces
+      - Parents
+      - Paths
+      - Resourcegroups
+      - Types
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/rest/api/resources/management-locks?view=rest-resources-2016-09-01
       - type: OpenAPI
         url: properties/managementlockclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-management-lock-client-api
+    description: >-
+      This API allows users to create or update a management lock at either the
+      resource level or any level below the resource. When a lock is applied at
+      a parent scope, all child resources will also inherit the same lock. To
+      create management locks, users must have access to
+      Microsoft.Authorization/* or Microsoft.Authorization/locks/* actions.
+      These actions are only granted to users with the Owner or User Access
+      Administrator roles.
+    score: 1025
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/managementlockclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Policy Client API
     description: >-
       To manage and control access to your resources, you can define customized
       policies and assign them at a scope.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-policy-readme?view=azure-node-latest
     baseURL: https://example.com
     tags:
-      - Tag
+      - Microsoft Authorization
+      - Names
+      - Subscriptions
+      - Variables
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Groups
+      - Management
+      - Microsoft Authorization
+      - Microsoft Management
+      - Microsoft Authorization
+      - Microsoft Management
+      - Microsoft Authorization
+      - Microsoft Management
+      - Levels
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Management
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-policy-readme?view=azure-node-latest
       - type: OpenAPI
         url: properties/policyclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-policy-client-api
+    score: 410
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/policyclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Resource Private Link Client API
-    description: Provides operations for managing private link resources
+    description: >-
+      This article provides a comprehensive guide on working with existing
+      resource management private links through API operations. It covers how to
+      retrieve and remove existing resources. For creating a resource management
+      private link, you can refer to either the Use portal to create private
+      link for managing Azure resources or Use APIs to create private link for
+      managing Azure resources sections.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://example.com
+    humanURL: >-
+      https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-private-link-access-commands?tabs=azure-cli
     baseURL: https://example.com
     tags:
-      - Tag
+      - Associations
+      - Groups
+      - Links
+      - Management
+      - Microsoft Authorization
+      - Microsoft Management
+      - Pla
+      - Private
+      - Providers
+      - Microsoft Authorization
+      - Microsoft Management
+      - Microsoft Authorization
+      - Microsoft Management
+      - Microsoft Authorization
+      - Microsoft Management
+      - Microsoft Authorization
+      - Names
+      - Resources
+      - Rmpl
+      - Subscriptions
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
+      - Microsoft Authorization
     properties:
       - type: Documentation
-        url: https://example.com
+        url: >-
+          https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-private-link-access-commands?tabs=azure-cli
       - type: OpenAPI
         url: properties/resourceprivatelinkclient-openapi-original.yml
     aid: microsoft-azure:microsoft-azure-resource-private-link-client-api
+    score: 481
+    overlays:
+      - type: API Evangelist Ratings
+        url: overlays/resourceprivatelinkclient-openapi-api-evangelist-ratings.yml
   - name: Microsoft Azure Application Client API
     description: ARM applications
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
