@@ -1,11 +1,15 @@
 ---
 name: Connected
 description: Needs a description.
-https: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/connected.png
-url: https://raw.githubusercontent.com/api-search/cloud/main/_tags/connected.md
-created: '2024-07-05'
-modified: '2024-07-05'
-version: '0.18'
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/connected.png
+url: https://example.com/apis/connected.yml
+created: 2024/4/8
+modified: 2024/4/8
+specificationVersion: '0.16'
 tags:
   - Connected
+apis: []
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
 ---
