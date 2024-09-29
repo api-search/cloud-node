@@ -13,7 +13,8 @@ url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azu
 created: 2023-11-08
 modified: 2024-06-27
 specificationVersion: '0.18'
-tags: []
+tags:
+  - Cloud
 apis:
   - name: Kafka Restproxy APIs
     description: This is a Kafka Restproxy Api lists.

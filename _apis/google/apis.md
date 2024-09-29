@@ -10,7 +10,8 @@ url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/google/apis.m
 created: 2023/11/8
 modified: 2023/11/8
 specificationVersion: '0.16'
-tags: []
+tags:
+  - Cloud
 apis:
   - name: Google Cloud API Gateway
     description: >-
