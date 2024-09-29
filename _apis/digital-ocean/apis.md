@@ -1,4 +1,3 @@
----
 name: Digital Ocean
 description: >
   DigitalOcean Holdings, Inc. is an American multinational technology company
@@ -7,7 +6,8 @@ description: >
   developers, startups, and SMBs with cloud infrastructure-as-a-service
   platforms. 
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: https://raw.githubusercontent.com/api-search/cloud/main/_apis/digital-ocean/apis.md
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/digital-ocean/apis.md
 created: 2024/03/30
 modified: 2024/03/30
 specificationVersion: '0.16'
@@ -75,4 +75,3 @@ aid: digital-ocean
 overlays:
   - type: APIs.io Search
     url: overlays/apis-io-search.yml
----
