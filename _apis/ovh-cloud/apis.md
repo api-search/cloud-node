@@ -1,3 +1,4 @@
+---
 name: OVH Cloud
 description: >-
   We are a cloud provider offering Dedicated Servers, VMware® based Hosted
@@ -63,3 +64,4 @@ maintainers:
     url: http://apievangelist.com
     email: info@apievangelist.com
 aid: ovh-cloud
+---

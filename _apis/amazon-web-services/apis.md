@@ -1,3 +1,4 @@
+---
 aid: amazon-web-services
 type: Overlay
 name: Amazon Web Services
@@ -13339,3 +13340,4 @@ maintainers:
 overlays:
   - type: APIs.io Search
     url: overlays/apis-io-search.yml
+---

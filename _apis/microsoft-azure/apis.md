@@ -1,3 +1,4 @@
+---
 name: Microsoft Azure (One)
 description: >-
   Microsoft Azure, often referred to as Azure is a cloud computing platform run
@@ -1786,3 +1787,4 @@ apis:
       | 
     aid: microsoft-azure-one:translator-text-client
 aid: microsoft-azure-one
+---

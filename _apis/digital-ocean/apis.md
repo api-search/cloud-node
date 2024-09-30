@@ -1,3 +1,4 @@
+---
 name: Digital Ocean
 description: >
   DigitalOcean Holdings, Inc. is an American multinational technology company
@@ -75,3 +76,4 @@ aid: digital-ocean
 overlays:
   - type: APIs.io Search
     url: overlays/apis-io-search.yml
+---
